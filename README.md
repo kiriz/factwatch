@@ -1,5 +1,7 @@
 # FactWatch
 
+**Live site:** https://kiriz.github.io/factwatch/ &nbsp;·&nbsp; **Repo:** https://github.com/kiriz/factwatch
+
 **Facts verified by humans. Kept current by AI.**
 
 FactWatch is an open-source fact-checking site where humans curate the claims and an AI agent (powered by Google Gemini + Search) periodically re-verifies each one. Every reasoning step is logged publicly in the [Observatory](#observatory).
@@ -60,7 +62,7 @@ An editor will review your claim, create the `claims/claim-NNN.md` file, and the
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Clone and install
-git clone https://github.com/YOUR_USERNAME/factwatch
+git clone https://github.com/kiriz/factwatch
 cd factwatch
 uv sync
 

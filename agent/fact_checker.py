@@ -20,7 +20,7 @@ from urllib.parse import urlparse
 
 logger = logging.getLogger("factwatch.fact_checker")
 
-GEMINI_MODEL_NAME = "gemini-2.0-flash-exp"
+GEMINI_MODEL_NAME = "gemini-2.0-flash"
 """Gemini model used for fact-checking with Google Search grounding."""
 
 SCHEMA_VERSION = "1.0"
@@ -94,26 +94,38 @@ def _build_user_prompt(claim: dict[str, Any]) -> str:
     )
 
 
-def _build_model(genai_module: Any) -> Any:
-    """Construct the grounded Gemini model from the ``google.generativeai`` module."""
-    return genai_module.GenerativeModel(
-        model_name=GEMINI_MODEL_NAME,
-        tools="google_search_retrieval",
+def _build_model(api_key: str) -> Any:
+    """Build a thin wrapper around the google-genai client with Search grounding."""
+    from google import genai  # noqa: PLC0415 (deferred on purpose)
+    from google.genai import types  # noqa: PLC0415
+
+    client = genai.Client(api_key=api_key)
+    config = types.GenerateContentConfig(
         system_instruction=SYSTEM_PROMPT,
+        tools=[types.Tool(google_search=types.GoogleSearch())],
     )
+
+    class _Model:
+        def generate_content(self, prompt: str) -> Any:
+            return client.models.generate_content(
+                model=GEMINI_MODEL_NAME,
+                contents=prompt,
+                config=config,
+            )
+
+    return _Model()
 
 
 def _resolve_model(model: Any | None) -> Any:
-    """Return the injected model, or build a real Gemini model if none provided.
-
-    Importing ``google.generativeai`` is deferred to call time so the module can
-    be imported (and tested) without the SDK being configured.
-    """
+    """Return the injected model, or build a real Gemini model if none provided."""
     if model is not None:
         return model
-    import google.generativeai as genai  # noqa: PLC0415 (deferred on purpose)
+    import os  # noqa: PLC0415
 
-    return _build_model(genai)
+    api_key = os.environ.get("GOOGLE_API_KEY", "")
+    if not api_key:
+        raise ValueError("GOOGLE_API_KEY environment variable is not set")
+    return _build_model(api_key)
 
 
 def _extract_text(response: Any) -> str:
