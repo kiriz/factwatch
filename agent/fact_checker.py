@@ -20,7 +20,7 @@ from urllib.parse import urlparse
 
 logger = logging.getLogger("factwatch.fact_checker")
 
-GEMINI_MODEL_NAME = "gemini-2.0-flash-latest"
+GEMINI_MODEL_NAME = "gemini-flash-latest"
 """Gemini model used for fact-checking with Google Search grounding."""
 
 SCHEMA_VERSION = "1.0"
