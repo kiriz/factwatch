@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Observatory — FactWatch</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div>
+        <div class="site-title">FactWatch</div>
+        <div class="site-tagline">Facts verified by humans. Kept current by AI.</div>
+      </div>
+      <nav class="header-nav">
+        <a href="index.html">Claims</a>
+        <a href="observatory.html">Observatory</a>
+        <a href="https://github.com/kiriz/factwatch" target="_blank">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <h1>AI Observatory</h1>
+        <div class="sub">What the agent is doing — every step, every source, every decision.</div>
+      </div>
+
+      <div class="obs-status-bar" id="status-bar">
+        <div>
+          <div class="obs-status-label">Last run</div>
+          <div class="obs-status-value" id="status-last-run">Loading…</div>
+        </div>
+        <div>
+          <div class="obs-status-label">Next scheduled run</div>
+          <div class="obs-status-value" id="status-next-run">—</div>
+        </div>
+        <div>
+          <div class="obs-status-label">Total runs</div>
+          <div class="obs-status-value" id="status-total-runs">—</div>
+        </div>
+      </div>
+
+      <div class="chart-wrap" id="chart-wrap" style="display:none">
+        <h2>Verdict changes per run</h2>
+        <canvas id="changes-chart" height="80" aria-label="Verdict changes per run chart"></canvas>
+      </div>
+
+      <div id="runs-container">
+        <div class="state-msg">
+          <div class="spinner"></div>
+          <p style="margin-top: 16px">Loading run history…</p>
+        </div>
+      </div>
+
+      <div id="run-detail-container"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>Human-curated claims. AI-maintained verdicts.</div>
+      <a href="index.html">View all claims</a>
+    </div>
+  </footer>
+
+  <script src="js/observatory.js"></script>
+</body>
+</html>

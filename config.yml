@@ -1,0 +1,20 @@
+site_title: "FactWatch"
+site_description: "Facts verified by humans. Kept current by AI."
+github_repo: "https://github.com/kiriz/factwatch"
+
+agent_schedule: "0 6 * * *"
+staleness_days: 7
+max_verdict_history: 50
+log_retention_runs: 90
+
+categories:
+  - science
+  - politics
+  - health
+  - technology
+  - economics
+  - social
+  - environment
+  - history
+  - media
+  - law

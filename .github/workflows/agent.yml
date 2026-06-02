@@ -1,0 +1,51 @@
+name: FactWatch AI Agent
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Daily at 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      claim_id:
+        description: 'Specific claim ID to re-check (leave blank for all)'
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  fact-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        run: uv sync --no-dev
+
+      - name: Run fact-check agent
+        run: uv run python agent/run_agent.py
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          CLAIM_ID_FILTER: ${{ github.event.inputs.claim_id }}
+          RUN_ID: run-${{ github.run_id }}
+
+      - name: Commit results
+        run: |
+          git config user.name "FactWatch Agent"
+          git config user.email "factwatch-agent@users.noreply.github.com"
+          git add scores/ logs/ site/data/
+          git diff --staged --quiet || git commit -m \
+            "agent: run $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
+          git push

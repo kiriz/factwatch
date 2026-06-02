@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FactWatch — AI-Maintained Fact Checking</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div>
+        <div class="site-title">FactWatch</div>
+        <div class="site-tagline">Facts verified by humans. Kept current by AI.</div>
+      </div>
+      <nav class="header-nav">
+        <a href="index.html">Claims</a>
+        <a href="observatory.html">Observatory</a>
+        <a href="https://github.com/kiriz/factwatch" target="_blank">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="last-updated" id="last-updated">
+        <span class="dot"></span>
+        <span id="last-updated-text">Loading last run info…</span>
+      </div>
+
+      <div class="filters">
+        <div class="filter-group">
+          <label for="filter-category">Category</label>
+          <select id="filter-category">
+            <option value="">All categories</option>
+            <option value="science">Science</option>
+            <option value="politics">Politics</option>
+            <option value="health">Health</option>
+            <option value="technology">Technology</option>
+            <option value="economics">Economics</option>
+            <option value="social">Social</option>
+            <option value="environment">Environment</option>
+            <option value="history">History</option>
+            <option value="media">Media</option>
+            <option value="law">Law</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-verdict">Verdict</label>
+          <select id="filter-verdict">
+            <option value="">All verdicts</option>
+            <option value="TRUE">True</option>
+            <option value="FALSE">False</option>
+            <option value="MISLEADING">Misleading</option>
+            <option value="UNVERIFIED">Unverified</option>
+            <option value="OUTDATED">Outdated</option>
+            <option value="DISPUTED">Disputed</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="filter-recent">Recently changed</label>
+          <select id="filter-recent">
+            <option value="">Any time</option>
+            <option value="7">Last 7 days</option>
+            <option value="30">Last 30 days</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="claims-container">
+        <div class="state-msg">
+          <div class="spinner"></div>
+          <p style="margin-top: 16px">Loading claims…</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>Human-curated claims. AI-maintained verdicts. Full transparency via the <a href="observatory.html">Observatory</a>.</div>
+      <div>
+        <a href="https://github.com/kiriz/factwatch/issues/new?template=new-claim.md" target="_blank">Submit a claim</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/kiriz/factwatch" target="_blank">View source</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
