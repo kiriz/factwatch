@@ -93,6 +93,7 @@ def write(
     path = scores_path / f"{claim_id}.json"
 
     merged = dict(result)
+    merged.pop("_trace", None)  # trace data lives only in run logs, never in scores/
     merged["claim_id"] = claim_id
 
     existing = _read_existing(path)

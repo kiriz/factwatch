@@ -36,6 +36,143 @@ function nextScheduledRun() {
 
 function verdictClass(v) { return 'verdict-' + (v || 'unverified').toLowerCase(); }
 
+const FLAG_LABELS = {
+  conflicting_sources: 'Conflicting sources',
+  outdated_evidence:   'Outdated evidence',
+  requires_human_review: 'Needs human review',
+  low_source_quality:  'Low source quality',
+};
+
+function domainOf(url) {
+  try {
+    const host = new URL(url).hostname.toLowerCase();
+    return host.startsWith('www.') ? host.slice(4) : host;
+  } catch {
+    return '';
+  }
+}
+
+function formatTokens(n) {
+  if (n == null) return null;
+  if (n >= 1000) return `${(n / 1000).toFixed(1)}k tokens`;
+  return `${n} tokens`;
+}
+
+function subSection(title, bodyHtml, open) {
+  return `
+    <details class="sub-details"${open ? ' open' : ''}>
+      <summary>${escHtml(title)}</summary>
+      <div class="sub-body">${bodyHtml}</div>
+    </details>`;
+}
+
+function renderSearchSection(trace) {
+  const queries = trace.search_queries || [];
+  const results = trace.search_results || [];
+  if (!queries.length && !results.length) return '';
+
+  const chips = queries.length
+    ? `<div class="queries-list">${queries.map(q => `<span class="query-chip">${escHtml(q)}</span>`).join('')}</div>`
+    : '';
+
+  const cards = results.map(r => {
+    const url = r.url || '';
+    const dom = domainOf(url);
+    return `
+      <div class="search-result">
+        <div class="sr-title">${url ? `<a href="${escHtml(url)}" target="_blank" rel="noopener" style="color:inherit">${escHtml(r.title || url)}</a>` : escHtml(r.title || '—')}</div>
+        ${dom ? `<div class="sr-domain">${escHtml(dom)}</div>` : ''}
+        ${r.snippet ? `<div class="sr-snippet">${escHtml(r.snippet)}</div>` : ''}
+      </div>`;
+  }).join('');
+
+  const body = `${chips}${cards ? `<div style="margin-top:var(--space-3)">${cards}</div>` : ''}`;
+  return subSection(`Search — ${queries.length} queries · ${results.length} results found`, body, false);
+}
+
+function renderRequestSection(trace) {
+  if (!trace.prompt) return '';
+  const chars = trace.prompt.length;
+  const kchars = chars >= 1000 ? `${(chars / 1000).toFixed(1)}k chars` : `${chars} chars`;
+  const model = trace.model_name || 'model';
+  const ver = trace.model_version ? ` (${escHtml(trace.model_version)})` : '';
+
+  const tokenRow = `
+    <div class="token-row">
+      <span class="token-chip"><span class="label">input</span>${trace.prompt_tokens ?? '—'}</span>
+      <span class="token-chip"><span class="label">output</span>${trace.response_tokens ?? '—'}</span>
+      <span class="token-chip"><span class="label">total</span>${trace.total_tokens ?? '—'}</span>
+    </div>`;
+
+  const body = `${tokenRow}<pre class="code-pre">${escHtml(trace.prompt)}</pre>`;
+  return subSection(`Prompt — ${kchars} · ${escHtml(model)}${ver}`, body, false);
+}
+
+function renderResponseSection(trace) {
+  if (!trace.raw_response) return '';
+  const body = `<pre class="code-pre">${escHtml(trace.raw_response)}</pre>`;
+  return subSection('Raw Response', body, false);
+}
+
+function renderReasoningSection(trace) {
+  const steps = trace.reasoning_steps || [];
+  const flags = trace.agent_flags || {};
+  const activeFlags = Object.keys(FLAG_LABELS).filter(k => flags[k]);
+
+  const verdictLine = trace.verdict_changed
+    ? `<div class="verdict-change" style="margin-bottom:var(--space-3)">
+         <span class="verdict-badge ${verdictClass(trace.previous_verdict)}">${escHtml(trace.previous_verdict || '—')}</span>
+         <span class="arrow-right">→</span>
+         <span class="verdict-badge ${verdictClass(trace.new_verdict)}">${escHtml(trace.new_verdict || '—')}</span>
+       </div>`
+    : `<div style="margin-bottom:var(--space-3)"><span class="verdict-badge ${verdictClass(trace.new_verdict)}">${escHtml(trace.new_verdict || '—')}</span></div>`;
+
+  const stepsHtml = steps.length
+    ? `<div class="steps-list">${steps.map(s => `<div class="step">${escHtml(s)}</div>`).join('')}</div>`
+    : '<p style="color:var(--text-muted);font-size:0.85rem">No reasoning recorded.</p>';
+
+  const flagsHtml = activeFlags.length
+    ? `<div class="queries-list" style="margin-top:var(--space-3)">${activeFlags.map(k => `<span class="query-chip" style="color:var(--verdict-misleading)">${escHtml(FLAG_LABELS[k])}</span>`).join('')}</div>`
+    : '';
+
+  return subSection('Reasoning & Verdict', `${verdictLine}${stepsHtml}${flagsHtml}`, true);
+}
+
+function renderTraceItem(trace) {
+  const changed = trace.verdict_changed;
+  const tokens = formatTokens(trace.total_tokens);
+  const model = trace.model_name;
+
+  const verdictBadge = changed
+    ? `<span class="verdict-change">
+         <span class="verdict-badge ${verdictClass(trace.previous_verdict)}">${escHtml(trace.previous_verdict || '—')}</span>
+         <span class="arrow-right">→</span>
+         <span class="verdict-badge ${verdictClass(trace.new_verdict)}">${escHtml(trace.new_verdict || '—')}</span>
+       </span>`
+    : `<span class="verdict-badge ${verdictClass(trace.new_verdict)}">${escHtml(trace.new_verdict || '—')}</span>`;
+
+  const sections = [
+    renderSearchSection(trace),
+    renderRequestSection(trace),
+    renderResponseSection(trace),
+    renderReasoningSection(trace),
+  ].join('');
+
+  return `
+    <details class="trace-item" ${changed ? 'open' : ''}>
+      <summary class="trace-summary">
+        <span class="arrow">▶</span>
+        <strong style="flex:1">${escHtml(trace.claim_id)}</strong>
+        ${verdictBadge}
+        <span style="font-size:0.75rem;color:var(--text-muted)">${trace.confidence ?? '—'}%</span>
+        ${model ? `<span class="model-chip">${escHtml(model)}</span>` : ''}
+        ${tokens ? `<span style="font-size:0.72rem;color:var(--text-muted)">${escHtml(tokens)}</span>` : ''}
+        <span style="font-size:0.75rem;color:var(--text-muted)">${trace.processing_time_seconds != null ? `${trace.processing_time_seconds}s` : ''}</span>
+      </summary>
+      <div class="trace-body">${sections}</div>
+    </details>`;
+}
+
 function renderRunDetail(run) {
   const traces = run.claim_traces || [];
   const container = document.getElementById('run-detail-container');
@@ -70,45 +207,7 @@ function renderRunDetail(run) {
       ${run.summary ? `<p style="color:var(--text-muted);font-size:0.875rem;margin-bottom:var(--space-4)">${escHtml(run.summary)}</p>` : ''}
 
       <div class="trace-accordion">
-        ${traces.map(trace => {
-          const changed = trace.verdict_changed;
-          const steps   = trace.reasoning_steps || [];
-          const queries  = trace.search_queries  || [];
-          return `
-            <details class="trace-item" ${changed ? 'open' : ''}>
-              <summary class="trace-summary">
-                <span class="arrow">▶</span>
-                <strong style="flex:1">${escHtml(trace.claim_id)}</strong>
-                ${changed ? `
-                  <span class="verdict-change">
-                    <span class="verdict-badge ${verdictClass(trace.previous_verdict)}">${trace.previous_verdict || '—'}</span>
-                    <span class="arrow-right">→</span>
-                    <span class="verdict-badge ${verdictClass(trace.new_verdict)}">${trace.new_verdict}</span>
-                  </span>
-                ` : `<span class="verdict-badge ${verdictClass(trace.new_verdict)}">${trace.new_verdict}</span>`}
-                <span style="font-size:0.75rem;color:var(--text-muted)">${trace.confidence ?? '—'}%</span>
-                <span style="font-size:0.75rem;color:var(--text-muted)">${trace.processing_time_seconds != null ? `${trace.processing_time_seconds}s` : ''}</span>
-              </summary>
-              <div class="trace-body">
-                ${queries.length ? `
-                  <div>
-                    <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:var(--space-2);text-transform:uppercase;letter-spacing:.05em">Search queries (${queries.length})</div>
-                    <div class="queries-list">${queries.map(q => `<span class="query-chip">${escHtml(q)}</span>`).join('')}</div>
-                  </div>
-                ` : ''}
-                <div>
-                  <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:var(--space-2);text-transform:uppercase;letter-spacing:.05em">Sources: ${trace.sources_found ?? 0} found · ${trace.sources_used ?? 0} used</div>
-                </div>
-                ${steps.length ? `
-                  <div>
-                    <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:var(--space-2);text-transform:uppercase;letter-spacing:.05em">Reasoning steps</div>
-                    <div class="steps-list">${steps.map(s => `<div class="step">${escHtml(s)}</div>`).join('')}</div>
-                  </div>
-                ` : ''}
-              </div>
-            </details>
-          `;
-        }).join('')}
+        ${traces.map(renderTraceItem).join('')}
         ${!traces.length ? '<p style="color:var(--text-muted);font-size:0.875rem">No claim traces in this run log.</p>' : ''}
       </div>
     </div>

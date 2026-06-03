@@ -193,6 +193,20 @@ def _prior_verdict(scores_dir: Path, claim_id: str) -> str | None:
         return None
 
 
+def _split_reasoning_steps(reasoning: str) -> list[str]:
+    """Split a reasoning string into discrete steps.
+
+    Splits on sentence boundaries (". ") and keeps only substantive fragments
+    (>= 20 chars). Falls back to the whole string when nothing qualifies so the
+    Observatory never renders an empty reasoning block.
+    """
+    text = (reasoning or "").strip()
+    if not text:
+        return []
+    steps = [s.strip() for s in text.split(". ") if len(s.strip()) >= 20]
+    return steps or [text]
+
+
 def _check_one(
     claim: dict[str, Any],
     run_id: str,
@@ -212,6 +226,7 @@ def _check_one(
         # miscounted as a change (a new claim has no previous verdict).
         previous_verdict = _prior_verdict(scores_dir, claim_id)
         result = fact_checker.check(claim, run_id=run_id, client=client)
+        llm_trace = result.pop("_trace", {})
         written = score_writer.write(
             claim_id, result, scores_dir=scores_dir, max_history=max_history
         )
@@ -223,12 +238,30 @@ def _check_one(
                 "verdict": written.get("verdict"),
                 "confidence": written.get("confidence"),
                 "verdict_changed": verdict_changed,
+                "previous_verdict": previous_verdict,
+                "new_verdict": written.get("verdict"),
                 "requires_human_review": written.get("agent_flags", {}).get(
                     "requires_human_review", False
                 ),
-                "reasoning_steps": [written.get("reasoning", "")],
+                "agent_flags": written.get("agent_flags", {}),
+                "sources_found": len(llm_trace.get("search_results", [])),
+                "sources_used": len(written.get("sources", [])),
+                "reasoning_steps": _split_reasoning_steps(written.get("reasoning", "")),
                 "error": result.get("verdict") == "UNVERIFIED"
                 and result.get("reasoning", "").startswith("Fact-check failed"),
+            }
+        )
+        trace.update(
+            {
+                "model_name": llm_trace.get("model_name"),
+                "model_version": llm_trace.get("model_version"),
+                "prompt": llm_trace.get("prompt"),
+                "raw_response": llm_trace.get("raw_response"),
+                "prompt_tokens": llm_trace.get("prompt_tokens"),
+                "response_tokens": llm_trace.get("response_tokens"),
+                "total_tokens": llm_trace.get("total_tokens"),
+                "search_queries": llm_trace.get("search_queries", []),
+                "search_results": llm_trace.get("search_results", []),
             }
         )
     except Exception as exc:  # defensive: one bad claim must not abort the run

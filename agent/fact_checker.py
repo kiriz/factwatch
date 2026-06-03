@@ -114,9 +114,7 @@ def _build_user_prompt(claim: dict[str, Any], search_results: list[dict[str, str
     sources_block = ""
     for i, r in enumerate(search_results, 1):
         sources_block += (
-            f"\n[{i}] {r['title']}\n"
-            f"    URL: {r['url']}\n"
-            f"    Excerpt: {r['snippet'][:300]}\n"
+            f"\n[{i}] {r['title']}\n    URL: {r['url']}\n    Excerpt: {r['snippet'][:300]}\n"
         )
     if not sources_block:
         sources_block = "\n(No search results found — base verdict on general knowledge only)\n"
@@ -166,6 +164,29 @@ def _extract_text(response: Any) -> str:
     return ""
 
 
+def _extract_usage(response: Any) -> dict[str, int | None]:
+    """Safely read token usage from a Gemini response.
+
+    Never raises: missing ``usage_metadata`` or fields yield ``None`` values.
+    """
+    usage = getattr(response, "usage_metadata", None)
+    if usage is None:
+        return {"prompt_tokens": None, "response_tokens": None, "total_tokens": None}
+
+    def _read(name: str) -> int | None:
+        value = getattr(usage, name, None)
+        try:
+            return int(value) if value is not None else None
+        except (TypeError, ValueError):
+            return None
+
+    return {
+        "prompt_tokens": _read("prompt_token_count"),
+        "response_tokens": _read("candidates_token_count"),
+        "total_tokens": _read("total_token_count"),
+    }
+
+
 def _coerce_confidence(value: Any) -> int:
     try:
         return max(0, min(100, int(round(float(value)))))
@@ -210,6 +231,39 @@ def _normalize_source(raw: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _build_trace(
+    prompt: str,
+    raw_response: str,
+    usage: dict[str, int | None],
+    search_queries: list[str],
+    search_results: list[dict[str, str]],
+    model_version: str,
+) -> dict[str, Any]:
+    """Assemble the ``_trace`` payload for Observatory rendering.
+
+    This is stripped before scores are written to disk (see ``score_writer``);
+    it lives only in the run log trace.
+    """
+    return {
+        "model_name": GEMINI_MODEL_NAME,
+        "model_version": model_version,
+        "prompt": prompt,
+        "raw_response": raw_response,
+        "prompt_tokens": usage.get("prompt_tokens"),
+        "response_tokens": usage.get("response_tokens"),
+        "total_tokens": usage.get("total_tokens"),
+        "search_queries": list(search_queries),
+        "search_results": [
+            {
+                "url": str(r.get("url", "")),
+                "title": str(r.get("title", "")),
+                "snippet": str(r.get("snippet", "")),
+            }
+            for r in search_results[:MAX_SEARCH_RESULTS]
+        ],
+    }
+
+
 def _build_result(
     claim_id: str,
     run_id: str,
@@ -221,9 +275,7 @@ def _build_result(
         logger.warning("claim %s: unknown verdict %r -> UNVERIFIED", claim_id, verdict)
         verdict = "UNVERIFIED"
     confidence = _coerce_confidence(payload.get("confidence", 0))
-    sources = [
-        _normalize_source(s) for s in (payload.get("sources") or []) if isinstance(s, dict)
-    ]
+    sources = [_normalize_source(s) for s in (payload.get("sources") or []) if isinstance(s, dict)]
     raw_flags = payload.get("agent_flags") or {}
     flags = {
         "conflicting_sources": bool(raw_flags.get("conflicting_sources", False)),
@@ -248,7 +300,16 @@ def _build_result(
     }
 
 
-def _error_result(claim_id: str, run_id: str, reason: str) -> dict[str, Any]:
+def _error_result(
+    claim_id: str,
+    run_id: str,
+    reason: str,
+    *,
+    prompt: str = "",
+    raw_response: str = "",
+    search_queries: list[str] | None = None,
+    search_results: list[dict[str, str]] | None = None,
+) -> dict[str, Any]:
     checked_at = _utc_now_iso()
     return {
         "schema_version": SCHEMA_VERSION,
@@ -267,6 +328,14 @@ def _error_result(claim_id: str, run_id: str, reason: str) -> dict[str, Any]:
             "requires_human_review": True,
             "low_source_quality": True,
         },
+        "_trace": _build_trace(
+            prompt=prompt,
+            raw_response=raw_response,
+            usage={"prompt_tokens": None, "response_tokens": None, "total_tokens": None},
+            search_queries=search_queries or [],
+            search_results=search_results or [],
+            model_version="",
+        ),
     }
 
 
@@ -311,18 +380,49 @@ def check(
         resolved = client if client is not None else _resolve_client()
     except Exception:
         logger.exception("claim %s: failed to build Gemini client", claim_id)
-        return _error_result(claim_id, run_id, "client construction error")
+        return _error_result(
+            claim_id,
+            run_id,
+            "client construction error",
+            prompt=prompt,
+            search_queries=queries,
+            search_results=search_results,
+        )
 
     response = _call_with_retry(resolved, prompt, claim_id, sleep)
     if response is None:
-        return _error_result(claim_id, run_id, "API error after retry")
+        return _error_result(
+            claim_id,
+            run_id,
+            "API error after retry",
+            prompt=prompt,
+            search_queries=queries,
+            search_results=search_results,
+        )
 
     text = _extract_text(response)
     payload = _parse_with_retry(resolved, prompt, text, claim_id)
     if payload is None:
-        return _error_result(claim_id, run_id, "JSON parse error after retry")
+        return _error_result(
+            claim_id,
+            run_id,
+            "JSON parse error after retry",
+            prompt=prompt,
+            raw_response=text,
+            search_queries=queries,
+            search_results=search_results,
+        )
 
-    return _build_result(claim_id, run_id, payload, _utc_now_iso())
+    result = _build_result(claim_id, run_id, payload, _utc_now_iso())
+    result["_trace"] = _build_trace(
+        prompt=prompt,
+        raw_response=text,
+        usage=_extract_usage(response),
+        search_queries=queries,
+        search_results=search_results,
+        model_version=str(getattr(response, "model_version", "") or ""),
+    )
+    return result
 
 
 def _call_with_retry(client: Any, prompt: str, claim_id: str, sleep: Any) -> Any | None:
