@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "claim_id": "claim-004",
+  "verdict": "TRUE",
+  "confidence": 95,
+  "last_checked_at": "2026-06-03T04:55:30Z",
+  "last_changed_at": "2026-06-03T04:55:30Z",
+  "run_id": "run-2026-06-03T045447Z",
+  "sources": [
+    {
+      "url": "https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/",
+      "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence Tools in the Legal Profession - Legal Aggregate - Stanford Law School",
+      "domain": "law.stanford.edu",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "deployed GPT-4, the latest generation Large Language Model (LLM), to take—and pass—the Uniform Bar Exam"
+    },
+    {
+      "url": "https://www.livescience.com/technology/artificial-intelligence/gpt-4-didnt-ace-the-bar-exam-after-all-mit-research-suggests-it-barely-passed",
+      "title": "GPT-4 didn't ace the bar exam after all, MIT research suggests — it didn't even break the 70th percentile",
+      "domain": "livescience.com",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "replicate the GPT-4’s score... it barely passed"
+    },
+    {
+      "url": "https://matthewstubenberg.com/blog/AI+Race+to+100+Percent+on+the+Bar+Exam",
+      "title": "AI Race to 100 Percent on the Bar Exam",
+      "domain": "matthewstubenberg.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "More than two-thirds of the models scored higher than the average human test-taker."
+    }
+  ],
+  "reasoning": "Multiple sources and studies verify that AI models can pass the US bar exam. While the original study's claim that GPT-4 scored in the 90th percentile (top 10%) was disputed by subsequent MIT research—which argued it actually scored around the 68th percentile—both studies confirm that the model successfully passed the exam. A score in the 68th percentile is still above the average human test-taker (the 50th percentile). Furthermore, newer AI models have continued to show improvement, with many consistently scoring above human averages.",
+  "verdict_history": [],
+  "agent_flags": {
+    "conflicting_sources": false,
+    "outdated_evidence": false,
+    "requires_human_review": false,
+    "low_source_quality": false
+  }
+}

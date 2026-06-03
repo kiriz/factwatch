@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "claim_id": "claim-001",
+  "verdict": "TRUE",
+  "confidence": 100,
+  "last_checked_at": "2026-06-03T04:54:59Z",
+  "last_changed_at": "2026-06-03T04:54:59Z",
+  "run_id": "run-2026-06-03T045447Z",
+  "sources": [
+    {
+      "url": "https://science.nasa.gov/earth/earth-observatory/world-of-change/arctic-sea-ice/",
+      "title": "World of Change: Arctic Sea Ice - NASA Science",
+      "domain": "science.nasa.gov",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "satellites have monitored sea ice growth and retreat... detected an overall decline"
+    },
+    {
+      "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
+      "title": "Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov",
+      "domain": "climate.gov",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "average minimum extent for each third of the satellite record has successively declined"
+    },
+    {
+      "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
+      "title": "Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)",
+      "domain": "eea.europa.eu",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "Arctic has lost an area of 71,000km 2 of sea ice per year"
+    }
+  ],
+  "reasoning": "Data from major scientific agencies including NASA, NOAA, and the European Environment Agency consistently demonstrate a statistically significant, long-term decline in Arctic sea ice extent since satellite monitoring began in the late 1970s. Both summer minimums and winter maximums show downward trends that go beyond short-term interannual variability.",
+  "verdict_history": [],
+  "agent_flags": {
+    "conflicting_sources": false,
+    "outdated_evidence": false,
+    "requires_human_review": false,
+    "low_source_quality": false
+  }
+}

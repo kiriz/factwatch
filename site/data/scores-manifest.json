@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "claim_id": "claim-001",
+    "score_file": "scores/claim-001.json"
+  },
+  {
+    "claim_id": "claim-002",
+    "score_file": "scores/claim-002.json"
+  },
+  {
+    "claim_id": "claim-003",
+    "score_file": "scores/claim-003.json"
+  },
+  {
+    "claim_id": "claim-004",
+    "score_file": "scores/claim-004.json"
+  },
+  {
+    "claim_id": "claim-005",
+    "score_file": "scores/claim-005.json"
+  }
+]

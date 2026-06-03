@@ -1,6 +1,9 @@
 {
-  "total_claims": 0,
-  "verdicts": {},
-  "last_run_at": null,
-  "last_run_id": null
+  "total_claims": 5,
+  "verdicts": {
+    "TRUE": 4,
+    "FALSE": 1
+  },
+  "last_run_at": "2026-06-03T04:55:42Z",
+  "last_run_id": "run-2026-06-03T045447Z"
 }

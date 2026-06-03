@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "claim_id": "claim-005",
+  "verdict": "TRUE",
+  "confidence": 98,
+  "last_checked_at": "2026-06-03T04:55:42Z",
+  "last_changed_at": "2026-06-03T04:55:42Z",
+  "run_id": "run-2026-06-03T045447Z",
+  "sources": [
+    {
+      "url": "https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline",
+      "title": "The Federal Budget Timeline & Process",
+      "domain": "fiscalnote.com",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "Congress has only passed all its appropriations measures on time four times"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Continuing_resolution",
+      "title": "Continuing resolution",
+      "domain": "en.wikipedia.org",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "Congress only passed all twelve regular appropriations bills on time in four years"
+    },
+    {
+      "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
+      "title": "How does the government budget process work?",
+      "domain": "usafacts.org",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "for all of the 21st century, Congress has not met the appropriations deadlines"
+    }
+  ],
+  "reasoning": "Historical data confirms that Congress has not passed all of its individual, regular appropriations bills before the start of the fiscal year (October 1) since Fiscal Year 1997 (which was enacted in 1996). Since then, the government has been funded through temporary continuing resolutions, omnibus spending packages, or legislative packages passed after the start of the fiscal year, rather than the timely passage of all 12 discrete appropriations bills.",
+  "verdict_history": [],
+  "agent_flags": {
+    "conflicting_sources": false,
+    "outdated_evidence": false,
+    "requires_human_review": false,
+    "low_source_quality": false
+  }
+}
