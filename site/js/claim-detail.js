@@ -128,7 +128,7 @@ async function init() {
   }
 
   try {
-    const res = await fetch(`../scores/${encodeURIComponent(claimId)}.json`);
+    const res = await fetch(`scores/${encodeURIComponent(claimId)}.json`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const score = await res.json();
     renderClaim(claimId, score);

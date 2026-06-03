@@ -1,7 +1,7 @@
 'use strict';
 
-const INDEX_URL = '../logs/index.json';
-const LOG_BASE  = '../logs/';
+const INDEX_URL = 'logs/index.json';
+const LOG_BASE  = 'logs/';
 
 function escHtml(str) {
   return String(str || '')

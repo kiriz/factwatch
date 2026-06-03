@@ -324,6 +324,11 @@ def run(
             last_run_at=finished_at,
             last_run_id=run_id,
         )
+        site_builder.mirror_scores_and_logs(
+            scores_dir=scores_dir,
+            logs_dir=project_root / "logs",
+            site_dir=project_root / "site",
+        )
     except OSError:
         logger.exception("failed to rebuild site manifests")
 

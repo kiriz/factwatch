@@ -1,14 +1,7 @@
-"""Regenerate the static site data manifests after a fact-checking run.
+"""Regenerate the static site data manifests and mirror scores/logs into site/.
 
-Two files are written under ``site/data``:
-
-``scores-manifest.json``
-    A list of ``{"claim_id", "score_file"}`` entries for active claims only
-    (paused/retired claims are excluded).
-
-``summary.json``
-    Aggregate counts: total active claims, per-verdict tallies, and the
-    last-run metadata.
+After each run, score and log files are copied into ``site/scores/`` and
+``site/logs/`` so that GitHub Pages (which serves only ``site/``) can serve them.
 """
 
 from __future__ import annotations
@@ -16,6 +9,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import shutil
 from pathlib import Path
 from typing import Any
 
@@ -116,3 +110,36 @@ def rebuild_manifests(
     )
 
     return {"manifest": manifest_path, "summary": summary_path}
+
+
+def mirror_scores_and_logs(
+    scores_dir: Path | str = "scores",
+    logs_dir: Path | str = "logs",
+    site_dir: Path | str = "site",
+) -> None:
+    """Copy scores/ and logs/ into site/ so GitHub Pages can serve them.
+
+    GitHub Pages only serves the ``site/`` directory. Score and log files live
+    at the repo root, so they must be mirrored into ``site/scores/`` and
+    ``site/logs/`` after each agent run.
+    """
+    src_scores = Path(scores_dir)
+    src_logs = Path(logs_dir)
+    site = Path(site_dir)
+
+    dst_scores = site / "scores"
+    dst_logs = site / "logs"
+    dst_scores.mkdir(parents=True, exist_ok=True)
+    dst_logs.mkdir(parents=True, exist_ok=True)
+
+    for src in src_scores.glob("*.json"):
+        shutil.copy2(src, dst_scores / src.name)
+
+    for src in src_logs.glob("*.json"):
+        shutil.copy2(src, dst_logs / src.name)
+
+    logger.info(
+        "mirrored %d score files and %d log files into site/",
+        len(list(dst_scores.glob("*.json"))),
+        len(list(dst_logs.glob("*.json"))),
+    )

@@ -45,7 +45,7 @@ jobs:
         run: |
           git config user.name "FactWatch Agent"
           git config user.email "factwatch-agent@users.noreply.github.com"
-          git add scores/ logs/ site/data/
+          git add scores/ logs/ site/
           git diff --staged --quiet || git commit -m \
             "agent: run $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
           git push
