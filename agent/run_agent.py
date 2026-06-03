@@ -197,7 +197,7 @@ def _check_one(
     claim: dict[str, Any],
     run_id: str,
     scores_dir: Path,
-    model: Any | None,
+    client: Any | None,
     max_history: int,
 ) -> dict[str, Any]:
     """Fact-check and persist a single claim, returning a trace entry.
@@ -211,7 +211,7 @@ def _check_one(
         # Capture the prior verdict BEFORE writing so a first-ever check is not
         # miscounted as a change (a new claim has no previous verdict).
         previous_verdict = _prior_verdict(scores_dir, claim_id)
-        result = fact_checker.check(claim, run_id=run_id, model=model)
+        result = fact_checker.check(claim, run_id=run_id, client=client)
         written = score_writer.write(
             claim_id, result, scores_dir=scores_dir, max_history=max_history
         )
@@ -240,7 +240,7 @@ def _check_one(
 def run(
     project_root: Path = PROJECT_ROOT,
     dry_run: bool = False,
-    model: Any | None = None,
+    client: Any | None = None,
 ) -> int:
     """Execute one full agent run and return the process exit code.
 
@@ -250,7 +250,7 @@ def run(
         dry_run: When True, run discovery + staleness filtering and log the
             claims that would be checked, but make no API calls and write
             nothing to disk.
-        model: Optional injected Gemini model passed through to the checker
+        client: Optional injected google-genai Client passed through to the checker
             (used by tests and dry-runs).
 
     Returns:
@@ -293,7 +293,7 @@ def run(
     errors = 0
     verdicts_changed = 0
     for claim in to_check:
-        trace = _check_one(claim, run_id, scores_dir, model, max_history)
+        trace = _check_one(claim, run_id, scores_dir, client, max_history)
         if trace.get("error"):
             errors += 1
         if trace.get("verdict_changed"):

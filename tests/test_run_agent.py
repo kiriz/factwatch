@@ -12,31 +12,41 @@ import pytest
 from agent import run_agent
 
 
-class StubModel:
-    """Returns a canned JSON verdict for every ``generate_content`` call."""
+class StubModels:
+    """Mimics client.models — returns a canned verdict for every call."""
 
     def __init__(self, verdict: str = "TRUE", confidence: int = 90) -> None:
         self._verdict = verdict
         self._confidence = confidence
 
-    def generate_content(self, prompt: str) -> Any:
+    def generate_content(self, model: str, contents: str, config: Any = None) -> Any:
         class _Resp:
-            text = json.dumps(
-                {
-                    "verdict": self._verdict,
-                    "confidence": self._confidence,
-                    "sources": [],
-                    "reasoning": "stub",
-                    "agent_flags": {
-                        "conflicting_sources": False,
-                        "outdated_evidence": False,
-                        "requires_human_review": False,
-                        "low_source_quality": False,
-                    },
-                }
-            )
+            pass
 
-        return _Resp()
+        r = _Resp()
+        r.text = json.dumps(  # type: ignore[attr-defined]
+            {
+                "verdict": self._verdict,
+                "confidence": self._confidence,
+                "sources": [],
+                "reasoning": "stub",
+                "agent_flags": {
+                    "conflicting_sources": False,
+                    "outdated_evidence": False,
+                    "requires_human_review": False,
+                    "low_source_quality": False,
+                },
+            }
+        )
+        r.candidates = []  # type: ignore[attr-defined]
+        return r
+
+
+class StubClient:
+    """Fake google-genai Client for offline tests."""
+
+    def __init__(self, verdict: str = "TRUE", confidence: int = 90) -> None:
+        self.models = StubModels(verdict, confidence)
 
 
 def _make_project(tmp_path: Path, claim_ids: list[str]) -> Path:
@@ -86,7 +96,7 @@ def test_order_by_priority() -> None:
 def test_new_claim_not_counted_as_changed(tmp_path: Path) -> None:
     # Regression: a first-ever verdict must NOT register as verdicts_changed.
     project = _make_project(tmp_path, ["claim-001"])
-    code = run_agent.run(project_root=project, model=StubModel("TRUE"))
+    code = run_agent.run(project_root=project, client=StubClient("TRUE"))
 
     assert code == run_agent.EXIT_OK
     index = json.loads((project / "logs" / "index.json").read_text())
@@ -97,7 +107,7 @@ def test_new_claim_not_counted_as_changed(tmp_path: Path) -> None:
 def test_verdict_flip_counted_as_changed(tmp_path: Path) -> None:
     project = _make_project(tmp_path, ["claim-001"])
     # First run records TRUE.
-    run_agent.run(project_root=project, model=StubModel("TRUE"))
+    run_agent.run(project_root=project, client=StubClient("TRUE"))
     # Force staleness so the second run re-checks: backdate last_checked_at.
     score_path = project / "scores" / "claim-001.json"
     score = json.loads(score_path.read_text())
@@ -107,7 +117,7 @@ def test_verdict_flip_counted_as_changed(tmp_path: Path) -> None:
     score_path.write_text(json.dumps(score))
 
     # Second run flips to FALSE.
-    run_agent.run(project_root=project, model=StubModel("FALSE"))
+    run_agent.run(project_root=project, client=StubClient("FALSE"))
 
     index = json.loads((project / "logs" / "index.json").read_text())
     assert index["runs"][0]["verdicts_changed"] == 1
@@ -115,7 +125,7 @@ def test_verdict_flip_counted_as_changed(tmp_path: Path) -> None:
 
 def test_dry_run_writes_nothing(tmp_path: Path) -> None:
     project = _make_project(tmp_path, ["claim-001", "claim-002"])
-    code = run_agent.run(project_root=project, dry_run=True, model=StubModel())
+    code = run_agent.run(project_root=project, dry_run=True, client=StubClient())
 
     assert code == run_agent.EXIT_OK
     assert list((project / "scores").glob("*.json")) == []
@@ -125,7 +135,7 @@ def test_dry_run_writes_nothing(tmp_path: Path) -> None:
 def test_claim_id_filter_env(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
     project = _make_project(tmp_path, ["claim-001", "claim-002"])
     monkeypatch.setenv("CLAIM_ID_FILTER", "claim-002")
-    run_agent.run(project_root=project, model=StubModel())
+    run_agent.run(project_root=project, client=StubClient())
 
     written = list((project / "scores").glob("*.json"))
     assert [p.name for p in written] == ["claim-002.json"]
@@ -133,13 +143,13 @@ def test_claim_id_filter_env(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) ->
 
 def test_total_failure_when_no_active_claims(tmp_path: Path) -> None:
     project = _make_project(tmp_path, [])
-    code = run_agent.run(project_root=project, model=StubModel())
+    code = run_agent.run(project_root=project, client=StubClient())
     assert code == run_agent.EXIT_TOTAL_FAILURE
 
 
 def test_manifest_and_summary_written(tmp_path: Path) -> None:
     project = _make_project(tmp_path, ["claim-001"])
-    run_agent.run(project_root=project, model=StubModel("TRUE"))
+    run_agent.run(project_root=project, client=StubClient("TRUE"))
 
     manifest = json.loads((project / "site" / "data" / "scores-manifest.json").read_text())
     summary = json.loads((project / "site" / "data" / "summary.json").read_text())
