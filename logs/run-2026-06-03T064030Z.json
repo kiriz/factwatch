@@ -1,0 +1,344 @@
+{
+  "run_id": "run-2026-06-03T064030Z",
+  "started_at": "2026-06-03T06:40:30Z",
+  "finished_at": "2026-06-03T06:41:21Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-001",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 4,
+      "reasoning_steps": [
+        "Satellite data continuously gathered since 1979 by agencies such as NASA, NOAA, and NSIDC confirm a clear, statistically significant long-term decline in Arctic sea ice extent",
+        "While short-term year-to-year fluctuations occur, the overall trend across all seasons—especially the September summer minimum—is strongly downward, with substantial loss in ice area, thickness, and age."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: Arctic sea ice decline since 1979\n\nClaim to verify: \"Arctic sea ice has declined significantly since satellite records began in 1979.\"\n\nHuman context: Frequently cited in climate discussions. NASA and NSIDC maintain continuous satellite records from 1979. Often disputed by climate skeptics who point to short-term recovery years.\n\nVerification guidance: Check NSIDC, NASA, and NOAA data. Look at September minimum extent as the primary metric. Verify trend is statistically significant, not just year-to-year variability.\n\nWeb search results:\n\n[1] Arctic sea ice decline - Wikipedia\n    URL: https://en.wikipedia.org/wiki/Arctic_sea_ice_decline\n    Excerpt: 3 weeks ago - The decline of sea ice in the Arctic has been accelerating during the early twenty-first century, with a decline rate of 4.7% per decade (it has declined over 50% since the first satellite records). Summertime sea ice will likely cease to exist sometime during the 21st century.\n\n[2] Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov\n    URL: https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum\n    Excerpt: October 18, 2022 - In the 2020 Arctic Report Card, experts reported that the average minimum extent for each third of the satellite record has successively declined: 6.85 million square kilometers (2.64 million square miles) for 1979-1992, 6.13 million square ...\n\n[3] Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)\n    URL: https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice\n    Excerpt: November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has lost an area of 71,000km 2 of sea ice per year in summer and 31,000km 2 per year in winter since 1979. The Arctic sea ice area for summer 2025 was the second lowest ever and sea ice is becoming younger and thinner.\n\n[4] Satellites record second lowest Arctic sea ice extent since 1979\n    URL: https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979\n    Excerpt: October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice extent is the second lowest (after the record low of 2012) since the beginning of satellite monitoring in 1979.\n\n[5] Arctic Winter Sea Ice Hits a Record Low, Again - Eos.org\n    URL: https://eos.org/research-and-developments/arctic-winter-sea-ice-hits-a-record-low-again\n    Excerpt: March 27, 2026 - “One or two record low years don’t necessarily mean much by themselves, but in the context of the significant downward trend that we’ve observed since 1979, it reinforces the dramatic change to Arctic sea ice throughout all seasons,” Meier said.\n\n[6] World of Change: Arctic Sea Ice - NASA Science\n    URL: https://science.nasa.gov/earth/earth-observatory/world-of-change/arctic-sea-ice/\n    Excerpt: March 5, 2026 - Since 1978, satellites have monitored sea ice growth and retreat, and they have detected an overall decline in Arctic sea ice. The rate of decline has steepened in the 21st century.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"sources\": [\n    {\n      \"url\": \"https://science.nasa.gov/earth/earth-observatory/world-of-change/arctic-sea-ice/\",\n      \"title\": \"World of Change: Arctic Sea Ice - NASA Science\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"satellites have monitored sea ice growth and retreat... detected an overall decline\"\n    },\n    {\n      \"url\": \"https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum\",\n      \"title\": \"Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"average minimum extent for each third of the satellite record has successively declined\"\n    },\n    {\n      \"url\": \"https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice\",\n      \"title\": \"Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"Arctic has lost an area of 71,000km 2 of sea ice per year... since 1979.\"\n    },\n    {\n      \"url\": \"https://eos.org/research-and-developments/arctic-winter-sea-ice-hits-a-record-low-again\",\n      \"title\": \"Arctic Winter Sea Ice Hits a Record Low, Again - Eos.org\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"significant downward trend that we’ve observed since 1979\"\n    }\n  ],\n  \"reasoning\": \"Satellite data continuously gathered since 1979 by agencies such as NASA, NOAA, and NSIDC confirm a clear, statistically significant long-term decline in Arctic sea ice extent. While short-term year-to-year fluctuations occur, the overall trend across all seasons—especially the September summer minimum—is strongly downward, with substantial loss in ice area, thickness, and age.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1220,
+      "response_tokens": 581,
+      "total_tokens": 2399,
+      "search_queries": [
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+        "Arctic sea ice decline since 1979",
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
+          "title": "Arctic sea ice decline - Wikipedia",
+          "snippet": "3 weeks ago - The decline of sea ice in the Arctic has been accelerating during the early twenty-first century, with a decline rate of 4.7% per decade (it has declined over 50% since the first satellite records). Summertime sea ice will likely cease to exist sometime during the 21st century."
+        },
+        {
+          "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
+          "title": "Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov",
+          "snippet": "October 18, 2022 - In the 2020 Arctic Report Card, experts reported that the average minimum extent for each third of the satellite record has successively declined: 6.85 million square kilometers (2.64 million square miles) for 1979-1992, 6.13 million square ..."
+        },
+        {
+          "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
+          "title": "Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)",
+          "snippet": "November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has lost an area of 71,000km 2 of sea ice per year in summer and 31,000km 2 per year in winter since 1979. The Arctic sea ice area for summer 2025 was the second lowest ever and sea ice is becoming younger and thinner."
+        },
+        {
+          "url": "https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979",
+          "title": "Satellites record second lowest Arctic sea ice extent since 1979",
+          "snippet": "October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice extent is the second lowest (after the record low of 2012) since the beginning of satellite monitoring in 1979."
+        },
+        {
+          "url": "https://eos.org/research-and-developments/arctic-winter-sea-ice-hits-a-record-low-again",
+          "title": "Arctic Winter Sea Ice Hits a Record Low, Again - Eos.org",
+          "snippet": "March 27, 2026 - “One or two record low years don’t necessarily mean much by themselves, but in the context of the significant downward trend that we’ve observed since 1979, it reinforces the dramatic change to Arctic sea ice throughout all seasons,” Meier said."
+        },
+        {
+          "url": "https://science.nasa.gov/earth/earth-observatory/world-of-change/arctic-sea-ice/",
+          "title": "World of Change: Arctic Sea Ice - NASA Science",
+          "snippet": "March 5, 2026 - Since 1978, satellites have monitored sea ice growth and retreat, and they have detected an overall decline in Arctic sea ice. The rate of decline has steepened in the 21st century."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-002",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "The United States gross national debt officially surpassed the $34 trillion mark on December 29, 2023",
+        "This milestone was widely reported by government bodies, including the U.S",
+        "House Committee on the Budget, and confirmed by major news outlets analyzing Treasury data in early January 2024",
+        "Since then, the debt has continued to grow beyond this threshold, exceeding $34.4 trillion by February 2024."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: US federal debt exceeds $34 trillion\n\nClaim to verify: \"The United States national debt has surpassed $34 trillion.\"\n\nHuman context: Widely cited in political and economic commentary. The US Treasury publishes real-time debt figures. Claim became prominent in early 2024 when the debt first crossed this threshold.\n\nVerification guidance: Check US Treasury Fiscal Data (fiscaldata.treasury.gov). Note distinction between gross debt and debt held by the public. Verify current figure — may have grown beyond $34T by time of verification.\n\nWeb search results:\n\n[1] National debt of the United States - Wikipedia\n    URL: https://en.wikipedia.org/wiki/National_debt_of_the_United_States\n    Excerpt: 1 week ago - In February 2024, the total federal government debt rose to $34.4 trillion, after increasing by approximately $1 trillion during each of two separate 100-day periods since the previous June. In 2024, federal interest payments on the national debt surpassed spending on both Medicare and \n\n[2] Understanding the National Debt | U.S. Treasury Fiscal Data\n    URL: https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/\n    Excerpt: April 30, 2026 - This ratio is considered a better indicator of a country’s fiscal situation than just the national debt number because it shows the burden of debt relative to the country’s total economic output and therefore its ability to repay it. The U.S. debt to GDP ratio surpassed 100% in 2013\n\n[3] Debt to the Penny | U.S. Treasury Fiscal Data\n    URL: https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/\n    Excerpt: There are six datasets on Fiscal Data which include the national debt, which is referred to as Total Public Debt Outstanding (TPDO). TPDO is the sum of Debt Held by the Public and Intragovernmental (Intragov) Holdings. Some datasets include debt issued by the Federal Financing Bank (FFB).\n\n[4] National Debt Skyrockets to Highest Level Yet | The U.S. House Committee on the Budget - House Budget Committee\n    URL: https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet\n    Excerpt: January 4, 2024 - On Friday, December 29th the national debt hit $34 trillion.\n\n[5] U.S. national debt hits record $34 trillion as Congress gears up for funding fight | PBS News\n    URL: https://www.pbs.org/newshour/politics/u-s-national-debt-hits-record-34-trillion-as-congress-gears-up-for-funding-fight\n    Excerpt: January 3, 2024 - WASHINGTON (AP) — The federal government's gross national debt has surpassed $34 trillion, a record high that foreshadows the coming political and economic challenges to improve America's balance sheet in the coming years.\n\n[6] US national debt hits record $34 trillion as Congress gears up for funding fight\n    URL: https://apnews.com/article/national-debt-deficits-biden-economy-inflation-record-b4258704f830c7f6e9c5e693748216cb\n    Excerpt: January 3, 2024 - WASHINGTON (AP) — The federal government’s gross national debt has surpassed $34 trillion, a record high that foreshadows the coming political and economic challenges to improve America’s balance sheet in the coming years.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"sources\": [\n    {\n      \"url\": \"https://apnews.com/article/national-debt-deficits-biden-economy-inflation-record-b4258704f830c7f6e9c5e693748216cb\",\n      \"title\": \"US national debt hits record $34 trillion as Congress gears up for funding fight\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"The federal government’s gross national debt has surpassed $34 trillion\"\n    },\n    {\n      \"url\": \"https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet\",\n      \"title\": \"National Debt Skyrockets to Highest Level Yet | The U.S. House Committee on the Budget - House Budget Committee\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"On Friday, December 29th the national debt hit $34 trillion.\"\n    },\n    {\n      \"url\": \"https://www.pbs.org/newshour/politics/u-s-national-debt-hits-record-34-trillion-as-congress-gears-up-for-funding-fight\",\n      \"title\": \"U.S. national debt hits record $34 trillion as Congress gears up for funding fight\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"The federal government's gross national debt has surpassed $34 trillion\"\n    }\n  ],\n  \"reasoning\": \"The United States gross national debt officially surpassed the $34 trillion mark on December 29, 2023. This milestone was widely reported by government bodies, including the U.S. House Committee on the Budget, and confirmed by major news outlets analyzing Treasury data in early January 2024. Since then, the debt has continued to grow beyond this threshold, exceeding $34.4 trillion by February 2024.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1191,
+      "response_tokens": 548,
+      "total_tokens": 2580,
+      "search_queries": [
+        "\"The United States national debt has surpassed $34 trillion.\"",
+        "US federal debt exceeds $34 trillion",
+        "\"The United States national debt has surpassed $34 trillion.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/National_debt_of_the_United_States",
+          "title": "National debt of the United States - Wikipedia",
+          "snippet": "1 week ago - In February 2024, the total federal government debt rose to $34.4 trillion, after increasing by approximately $1 trillion during each of two separate 100-day periods since the previous June. In 2024, federal interest payments on the national debt surpassed spending on both Medicare and national ..."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
+          "title": "Understanding the National Debt | U.S. Treasury Fiscal Data",
+          "snippet": "April 30, 2026 - This ratio is considered a better indicator of a country’s fiscal situation than just the national debt number because it shows the burden of debt relative to the country’s total economic output and therefore its ability to repay it. The U.S. debt to GDP ratio surpassed 100% in 2013 when both debt and GDP were approximately 16.7 trillion."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/",
+          "title": "Debt to the Penny | U.S. Treasury Fiscal Data",
+          "snippet": "There are six datasets on Fiscal Data which include the national debt, which is referred to as Total Public Debt Outstanding (TPDO). TPDO is the sum of Debt Held by the Public and Intragovernmental (Intragov) Holdings. Some datasets include debt issued by the Federal Financing Bank (FFB)."
+        },
+        {
+          "url": "https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet",
+          "title": "National Debt Skyrockets to Highest Level Yet | The U.S. House Committee on the Budget - House Budget Committee",
+          "snippet": "January 4, 2024 - On Friday, December 29th the national debt hit $34 trillion."
+        },
+        {
+          "url": "https://www.pbs.org/newshour/politics/u-s-national-debt-hits-record-34-trillion-as-congress-gears-up-for-funding-fight",
+          "title": "U.S. national debt hits record $34 trillion as Congress gears up for funding fight | PBS News",
+          "snippet": "January 3, 2024 - WASHINGTON (AP) — The federal government's gross national debt has surpassed $34 trillion, a record high that foreshadows the coming political and economic challenges to improve America's balance sheet in the coming years."
+        },
+        {
+          "url": "https://apnews.com/article/national-debt-deficits-biden-economy-inflation-record-b4258704f830c7f6e9c5e693748216cb",
+          "title": "US national debt hits record $34 trillion as Congress gears up for funding fight",
+          "snippet": "January 3, 2024 - WASHINGTON (AP) — The federal government’s gross national debt has surpassed $34 trillion, a record high that foreshadows the coming political and economic challenges to improve America’s balance sheet in the coming years."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-003",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 4,
+      "reasoning_steps": [
+        "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false",
+        "According to genomic researchers, molecular biologists, and major public health organizations such as the National Institutes of Health (NIH) and the CDC, mRNA vaccines do not have the capability to alter human DNA",
+        "The mRNA from the vaccines is translationally active only in the cell cytoplasm and does not enter the cell nucleus where human DNA is stored",
+        "Furthermore, human cells lack the reverse transcriptase enzymes required to convert the vaccine mRNA into DNA, meaning integration into the host genome is biologically impossible",
+        "The mRNA degrades naturally shortly after providing the instructions to produce the spike protein."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: mRNA vaccines alter human DNA\n\nClaim to verify: \"mRNA COVID-19 vaccines alter or permanently change human DNA.\"\n\nHuman context: One of the most widely circulated vaccine misinformation claims during the COVID-19 pandemic. Disputed by virologists, molecular biologists, and major health agencies worldwide.\n\nVerification guidance: Consult peer-reviewed molecular biology literature. Check CDC, WHO, and NIH statements. Key mechanism to verify: mRNA cannot be reverse-transcribed into DNA without reverse transcriptase enzyme. Check if any credible peer-reviewed evidence to the contrary has emerged.\n\nWeb search results:\n\n[1] Potential health risks of mRNA-based vaccine therapy: A hypothesis - PMC\n    URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC9876036/\n    Excerpt: Susceptible individuals would then expectedly have an increased risk of DNA damage, chronic autoinflammation, autoimmunity and cancer.\n\n[2] Understanding COVID-19 mRNA Vaccines\n    URL: https://www.genome.gov/about-genomics/fact-sheets/Understanding-COVID-19-mRNA-Vaccines\n    Excerpt: Aug 30, 2021 · Can mRNA vaccines change your DNA? No. There is no risk of an mRNA vaccine changing your DNA because mRNA does not have the ability to alter DNA ...\n\n[3] You asked, we answered: Can mRNA vaccines alter human DNA?\n    URL: https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna\n    Excerpt: Dec 21, 2020 · No, the vaccines cannot change your DNA. Two of the COVID-19 vaccines approved for emergency use authorization by the US Food and Drug Administration use mRNA.Missing: permanently | Show results with:permanently\n\n[4] Here's What We Know: The Impact of mRNA Vaccines | Patient Care\n    URL: https://weillcornell.org/news/here’s-what-we-know-the-impact-of-mrna-vaccines\n    Excerpt: Sep 25, 2025 · For example, some people fear that the mRNA COVID-19 vaccine changes our DNA. That is impossible, scientists assert. mRNA only operates in ...\n\n[5] Claims that mRNA vaccines change human DNA are back\n    URL: https://hcrl.wustl.edu/claims-that-mrna-vaccines-change-human-dna-are-back/\n    Excerpt: Feb 1, 2024 · Despite being unsupported by research, claims about COVID-19 mRNA vaccines interfering with human DNA continue to circulate.\n\n[6] Fact check: mRNA in Pfizer and Moderna COVID-19 vaccines is not ...\n    URL: https://www.facebook.com/mnhealth/posts/fact-check-mrna-in-pfizer-and-moderna-covid-19-vaccines-is-not-able-to-change-dn/3939251749454586/\n    Excerpt: Apr 23, 2021 · Fact check: mRNA in Pfizer and Moderna COVID-19 vaccines is not able to change DNA because it never enters the center of cells, which is where DNA is made.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"sources\": [\n    {\n      \"url\": \"https://www.genome.gov/about-genomics/fact-sheets/Understanding-COVID-19-mRNA-Vaccines\",\n      \"title\": \"Understanding COVID-19 mRNA Vaccines\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"There is no risk of an mRNA vaccine changing your DNA\"\n    },\n    {\n      \"url\": \"https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna\",\n      \"title\": \"You asked, we answered: Can mRNA vaccines alter human DNA?\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"No, the vaccines cannot change your DNA.\"\n    },\n    {\n      \"url\": \"https://weillcornell.org/news/here’s-what-we-know-the-impact-of-mrna-vaccines\",\n      \"title\": \"Here's What We Know: The Impact of mRNA Vaccines | Patient Care\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"That is impossible, scientists assert.\"\n    },\n    {\n      \"url\": \"https://hcrl.wustl.edu/claims-that-mrna-vaccines-change-human-dna-are-back/\",\n      \"title\": \"Claims that mRNA vaccines change human DNA are back\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"claims about COVID-19 mRNA vaccines interfering with human DNA\"\n    }\n  ],\n  \"reasoning\": \"The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false. According to genomic researchers, molecular biologists, and major public health organizations such as the National Institutes of Health (NIH) and the CDC, mRNA vaccines do not have the capability to alter human DNA. The mRNA from the vaccines is translationally active only in the cell cytoplasm and does not enter the cell nucleus where human DNA is stored. Furthermore, human cells lack the reverse transcriptase enzymes required to convert the vaccine mRNA into DNA, meaning integration into the host genome is biologically impossible. The mRNA degrades naturally shortly after providing the instructions to produce the spike protein.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1092,
+      "response_tokens": 602,
+      "total_tokens": 2334,
+      "search_queries": [
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+        "mRNA vaccines alter human DNA",
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9876036/",
+          "title": "Potential health risks of mRNA-based vaccine therapy: A hypothesis - PMC",
+          "snippet": "Susceptible individuals would then expectedly have an increased risk of DNA damage, chronic autoinflammation, autoimmunity and cancer."
+        },
+        {
+          "url": "https://www.genome.gov/about-genomics/fact-sheets/Understanding-COVID-19-mRNA-Vaccines",
+          "title": "Understanding COVID-19 mRNA Vaccines",
+          "snippet": "Aug 30, 2021 · Can mRNA vaccines change your DNA? No. There is no risk of an mRNA vaccine changing your DNA because mRNA does not have the ability to alter DNA ..."
+        },
+        {
+          "url": "https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna",
+          "title": "You asked, we answered: Can mRNA vaccines alter human DNA?",
+          "snippet": "Dec 21, 2020 · No, the vaccines cannot change your DNA. Two of the COVID-19 vaccines approved for emergency use authorization by the US Food and Drug Administration use mRNA.Missing: permanently | Show results with:permanently"
+        },
+        {
+          "url": "https://weillcornell.org/news/here’s-what-we-know-the-impact-of-mrna-vaccines",
+          "title": "Here's What We Know: The Impact of mRNA Vaccines | Patient Care",
+          "snippet": "Sep 25, 2025 · For example, some people fear that the mRNA COVID-19 vaccine changes our DNA. That is impossible, scientists assert. mRNA only operates in ..."
+        },
+        {
+          "url": "https://hcrl.wustl.edu/claims-that-mrna-vaccines-change-human-dna-are-back/",
+          "title": "Claims that mRNA vaccines change human DNA are back",
+          "snippet": "Feb 1, 2024 · Despite being unsupported by research, claims about COVID-19 mRNA vaccines interfering with human DNA continue to circulate."
+        },
+        {
+          "url": "https://www.facebook.com/mnhealth/posts/fact-check-mrna-in-pfizer-and-moderna-covid-19-vaccines-is-not-able-to-change-dn/3939251749454586/",
+          "title": "Fact check: mRNA in Pfizer and Moderna COVID-19 vaccines is not ...",
+          "snippet": "Apr 23, 2021 · Fact check: mRNA in Pfizer and Moderna COVID-19 vaccines is not able to change DNA because it never enters the center of cells, which is where DNA is made."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-004",
+      "verdict": "TRUE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "Multiple academic and legal studies have confirmed that GPT-4 successfully passed the Uniform Bar Examination (UBE)",
+        "Research by Bommarito and Katz demonstrated that GPT-4 not only exceeded the minimum passing threshold but also performed in the high percentiles (approaching the 90th percentile), significantly outperforming the average human test-taker on multiple-choice questions."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: AI systems now pass the bar exam\n\nClaim to verify: \"AI language models can now pass the US bar examination at above-average scores.\"\n\nHuman context: GPT-4 was reported in early 2023 to pass the bar exam in the top 10% of test takers. Claim is often cited as evidence of AI surpassing human professional capabilities. Subsequent models have also been tested.\n\nVerification guidance: Verify the original GPT-4 bar exam study (Bommarito & Katz, 2023). Check if results have been replicated or updated with newer models. Note: passing score and top-10% are different claims — verify which is accurate.\n\nWeb search results:\n\n[1] GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence ...\n    URL: https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/\n    Excerpt: Apr 19, 2023 · We found that while GPT-3.5 failed the bar, scoring roughly in the bottom 10th percentile, GPT-4 not only passed but approached 90th percentile.\n\n[2] GPT-4 passes the bar exam - PMC - NIH\n    URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/\n    Excerpt: In addition, GPT-4's MBE score is not only more than 15% above the minimum passing threshold, but also outperforms the average human test-taker by more than 7%.\n\n[3] Bar exam score shows AI can keep up with 'human lawyers,' researchers ...\n    URL: https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/\n    Excerpt: Mar 15, 2023 · The newer GPT-4 got nearly 76% of the bar exam's multiple-choice questions right, up from about 50% for ChatGPT, outperforming the average human ...\n\n[4] If you're using AI to try and pass the bar you should not be an attorney\n    URL: https://www.facebook.com/groups/californiabarexam/posts/10161589771262730/\n    Excerpt: May 31, 2025 · AI just passed a law school exam—without studying! A cutting-edge AI model recently scored at the top percentile on multiple U.S. bar exam ...\n\n[5] GPT-4 Passes the Bar Exam\n    URL: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4389233\n    Excerpt: Mar 15, 2023 · GPT-4 significantly outperforms both human test-takers and prior models, demonstrating a 26% increase over ChatGPT and beating humans in five of seven subject ...\n\n[6] ChatGPT 4 has a 90% chance of passing the bar exam... would you ...\n    URL: https://www.facebook.com/colbertlateshow/posts/chatgpt-4-has-a-90-chance-of-passing-the-bar-exam-would-you-let-ai-represent-you/3166740840137312/\n    Excerpt: Mar 15, 2023 · When OpenAI launched its fourth version of ChatGPT last March, the company said it could now beat 90 per cent of law students taking the US bar ...\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 98,\n  \"sources\": [\n    {\n      \"url\": \"https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/\",\n      \"title\": \"GPT-4 passes the bar exam - PMC - NIH\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"outperforms the average human test-taker by more than 7%\"\n    },\n    {\n      \"url\": \"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4389233\",\n      \"title\": \"GPT-4 Passes the Bar Exam\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"GPT-4 significantly outperforms both human test-takers\"\n    },\n    {\n      \"url\": \"https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/\",\n      \"title\": \"GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence ...\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"GPT-4 not only passed but approached 90th percentile\"\n    }\n  ],\n  \"reasoning\": \"Multiple academic and legal studies have confirmed that GPT-4 successfully passed the Uniform Bar Examination (UBE). Research by Bommarito and Katz demonstrated that GPT-4 not only exceeded the minimum passing threshold but also performed in the high percentiles (approaching the 90th percentile), significantly outperforming the average human test-taker on multiple-choice questions.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1200,
+      "response_tokens": 469,
+      "total_tokens": 2590,
+      "search_queries": [
+        "\"AI language models can now pass the US bar examination at above-average scores.\"",
+        "AI systems now pass the bar exam",
+        "\"AI language models can now pass the US bar examination at above-average scores.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/",
+          "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence ...",
+          "snippet": "Apr 19, 2023 · We found that while GPT-3.5 failed the bar, scoring roughly in the bottom 10th percentile, GPT-4 not only passed but approached 90th percentile."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/",
+          "title": "GPT-4 passes the bar exam - PMC - NIH",
+          "snippet": "In addition, GPT-4's MBE score is not only more than 15% above the minimum passing threshold, but also outperforms the average human test-taker by more than 7%."
+        },
+        {
+          "url": "https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/",
+          "title": "Bar exam score shows AI can keep up with 'human lawyers,' researchers ...",
+          "snippet": "Mar 15, 2023 · The newer GPT-4 got nearly 76% of the bar exam's multiple-choice questions right, up from about 50% for ChatGPT, outperforming the average human ..."
+        },
+        {
+          "url": "https://www.facebook.com/groups/californiabarexam/posts/10161589771262730/",
+          "title": "If you're using AI to try and pass the bar you should not be an attorney",
+          "snippet": "May 31, 2025 · AI just passed a law school exam—without studying! A cutting-edge AI model recently scored at the top percentile on multiple U.S. bar exam ..."
+        },
+        {
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4389233",
+          "title": "GPT-4 Passes the Bar Exam",
+          "snippet": "Mar 15, 2023 · GPT-4 significantly outperforms both human test-takers and prior models, demonstrating a 26% increase over ChatGPT and beating humans in five of seven subject ..."
+        },
+        {
+          "url": "https://www.facebook.com/colbertlateshow/posts/chatgpt-4-has-a-90-chance-of-passing-the-bar-exam-would-you-let-ai-represent-you/3166740840137312/",
+          "title": "ChatGPT 4 has a 90% chance of passing the bar exam... would you ...",
+          "snippet": "Mar 15, 2023 · When OpenAI launched its fourth version of ChatGPT last March, the company said it could now beat 90 per cent of law students taking the US bar ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "verdict": "TRUE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 2,
+      "reasoning_steps": [
+        "Data from the Pew Research Center and USAFacts confirms that Congress has not passed all of its required individual appropriations bills on time (prior to the October 1 start of the fiscal year) since fiscal year 1997 (passed in late 1996)",
+        "Since then, the federal government has been funded through temporary continuing resolutions or late-passed omnibus spending packages."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: US Congress passed no budget on time since 1997\n\nClaim to verify: \"The US Congress has not passed a complete federal budget on time since 1997.\"\n\nHuman context: Often cited to illustrate Congressional dysfunction. The claim hinges on the definition of \"on time\" (before October 1, the start of the fiscal year) and \"complete\" (all 12 appropriations bills passed before the deadline).\n\nVerification guidance: Check Congressional Research Service records. Fiscal year starts October 1. Verify if any year between 1998 and present had all 12 appropriations bills enacted before the deadline. Note distinction between omnibus packages and individual bills.\n\nWeb search results:\n\n[1] Congress has long struggled to pass spending bills on time\n    URL: https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/\n    Excerpt: Oct 1, 2025 · Congress has passed all its required appropriations measures on time only four times in nearly five decades.\n\n[2] How does the government budget process work? - USAFacts\n    URL: https://usafacts.org/articles/how-does-the-government-budget-process-work/\n    Excerpt: Sep 18, 2025 · Congress last passed a full budget in 1997. Total appropriation bills passed by the end of the fiscal year, 1977–2025.\n\n[3] Congress Increasingly Fails to Budget-Tue, 02/25/2020 - 12:00\n    URL: https://www.crfb.org/papers/congress-increasingly-fails-budget\n    Excerpt: Feb 25, 2020 · Congress has failed to enact a concurrent budget resolution 11 times – 7 times since 2010. In 7 of those years, the Senate did not even pass its own budget ...\n\n[4] In the nearly five decades that the current system for budgeting and ...\n    URL: https://www.facebook.com/pewresearch/posts/in-the-nearly-five-decades-that-the-current-system-for-budgeting-and-spending-ta/1177935014202557/\n    Excerpt: Oct 3, 2025 · In fact, in the nearly five decades that the current system for budgeting and spending tax dollars has been in place, Congress has passed all ...\n\n[5] Introduction to the Federal Budget Process\n    URL: https://www.cbpp.org/research/federal-budget/introduction-to-the-federal-budget-process\n    Excerpt: Oct 28, 2024 · In recent years, moreover, it has been common for Congress not to pass a budget resolution at all. Instead, the House and Senate may agree to “ ...\n\n[6] It's Not News That Congress's Budget Process Is A Wreck, But It Should Be\n    URL: https://taxpolicycenter.org/taxvox/its-not-news-congresss-budget-process-wreck-it-should-be\n    Excerpt: Oct 9, 2020 · The federal budget process has been broken for decades. In 17 out of the last 46 years, the fiscal year has started with zero appropriations bills completed.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 98,\n  \"sources\": [\n    {\n      \"url\": \"https://usafacts.org/articles/how-does-the-government-budget-process-work/\",\n      \"title\": \"How does the government budget process work? - USAFacts\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"Congress last passed a full budget in 1997.\"\n    },\n    {\n      \"url\": \"https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/\",\n      \"title\": \"Congress has long struggled to pass spending bills on time\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"measures on time only four times in nearly five decades.\"\n    }\n  ],\n  \"reasoning\": \"Data from the Pew Research Center and USAFacts confirms that Congress has not passed all of its required individual appropriations bills on time (prior to the October 1 start of the fiscal year) since fiscal year 1997 (passed in late 1996). Since then, the federal government has been funded through temporary continuing resolutions or late-passed omnibus spending packages.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1134,
+      "response_tokens": 367,
+      "total_tokens": 2662,
+      "search_queries": [
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+        "US Congress passed no budget on time since 1997",
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
+          "title": "Congress has long struggled to pass spending bills on time",
+          "snippet": "Oct 1, 2025 · Congress has passed all its required appropriations measures on time only four times in nearly five decades."
+        },
+        {
+          "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
+          "title": "How does the government budget process work? - USAFacts",
+          "snippet": "Sep 18, 2025 · Congress last passed a full budget in 1997. Total appropriation bills passed by the end of the fiscal year, 1977–2025."
+        },
+        {
+          "url": "https://www.crfb.org/papers/congress-increasingly-fails-budget",
+          "title": "Congress Increasingly Fails to Budget-Tue, 02/25/2020 - 12:00",
+          "snippet": "Feb 25, 2020 · Congress has failed to enact a concurrent budget resolution 11 times – 7 times since 2010. In 7 of those years, the Senate did not even pass its own budget ..."
+        },
+        {
+          "url": "https://www.facebook.com/pewresearch/posts/in-the-nearly-five-decades-that-the-current-system-for-budgeting-and-spending-ta/1177935014202557/",
+          "title": "In the nearly five decades that the current system for budgeting and ...",
+          "snippet": "Oct 3, 2025 · In fact, in the nearly five decades that the current system for budgeting and spending tax dollars has been in place, Congress has passed all ..."
+        },
+        {
+          "url": "https://www.cbpp.org/research/federal-budget/introduction-to-the-federal-budget-process",
+          "title": "Introduction to the Federal Budget Process",
+          "snippet": "Oct 28, 2024 · In recent years, moreover, it has been common for Congress not to pass a budget resolution at all. Instead, the House and Senate may agree to “ ..."
+        },
+        {
+          "url": "https://taxpolicycenter.org/taxvox/its-not-news-congresss-budget-process-wreck-it-should-be",
+          "title": "It's Not News That Congress's Budget Process Is A Wreck, But It Should Be",
+          "snippet": "Oct 9, 2020 · The federal budget process has been broken for decades. In 17 out of the last 46 years, the fiscal year has started with zero appropriations bills completed."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}

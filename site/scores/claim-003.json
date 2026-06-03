@@ -3,9 +3,9 @@
   "claim_id": "claim-003",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-06-03T04:55:15Z",
+  "last_checked_at": "2026-06-03T06:41:02Z",
   "last_changed_at": "2026-06-03T04:55:15Z",
-  "run_id": "run-2026-06-03T045447Z",
+  "run_id": "run-2026-06-03T064030Z",
   "sources": [
     {
       "url": "https://www.genome.gov/about-genomics/fact-sheets/Understanding-COVID-19-mRNA-Vaccines",
@@ -13,15 +13,7 @@
       "domain": "genome.gov",
       "relevance": "high",
       "supports_claim": false,
-      "excerpt": "No. There is no risk of an mRNA vaccine changing your DNA"
-    },
-    {
-      "url": "https://weillcornell.org/news/here%E2%80%99s-what-we-know-the-impact-of-mrna-vaccines",
-      "title": "Here's What We Know: The Impact of mRNA Vaccines | Patient Care",
-      "domain": "weillcornell.org",
-      "relevance": "high",
-      "supports_claim": false,
-      "excerpt": "some people fear that the mRNA COVID-19 vaccine changes our DNA. That is impossible"
+      "excerpt": "There is no risk of an mRNA vaccine changing your DNA"
     },
     {
       "url": "https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna",
@@ -32,16 +24,31 @@
       "excerpt": "No, the vaccines cannot change your DNA."
     },
     {
+      "url": "https://weillcornell.org/news/here’s-what-we-know-the-impact-of-mrna-vaccines",
+      "title": "Here's What We Know: The Impact of mRNA Vaccines | Patient Care",
+      "domain": "weillcornell.org",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "That is impossible, scientists assert."
+    },
+    {
       "url": "https://hcrl.wustl.edu/claims-that-mrna-vaccines-change-human-dna-are-back/",
       "title": "Claims that mRNA vaccines change human DNA are back",
       "domain": "hcrl.wustl.edu",
-      "relevance": "medium",
+      "relevance": "high",
       "supports_claim": false,
-      "excerpt": "unsupported by research, claims about COVID-19 mRNA vaccines interfering with human DNA continue"
+      "excerpt": "claims about COVID-19 mRNA vaccines interfering with human DNA"
     }
   ],
-  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false. Authoritative medical and research institutions, including the NIH's National Human Genome Research Institute, Weill Cornell Medicine, and Nebraska Medicine, have clarified that mRNA cannot alter DNA. The mRNA from the vaccines operates strictly in the cytoplasm, is unable to enter the cell nucleus where DNA is housed, lacks the necessary enzymes (such as reverse transcriptase) to integrate into the host genome, and is naturally degraded by the cell shortly after delivering its instructions.",
-  "verdict_history": [],
+  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false. According to genomic researchers, molecular biologists, and major public health organizations such as the National Institutes of Health (NIH) and the CDC, mRNA vaccines do not have the capability to alter human DNA. The mRNA from the vaccines is translationally active only in the cell cytoplasm and does not enter the cell nucleus where human DNA is stored. Furthermore, human cells lack the reverse transcriptase enzymes required to convert the vaccine mRNA into DNA, meaning integration into the host genome is biologically impossible. The mRNA degrades naturally shortly after providing the instructions to produce the spike protein.",
+  "verdict_history": [
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-05-24T06:40:10Z",
+      "run_id": "run-2026-06-03T045447Z"
+    }
+  ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,

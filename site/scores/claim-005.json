@@ -3,37 +3,36 @@
   "claim_id": "claim-005",
   "verdict": "TRUE",
   "confidence": 98,
-  "last_checked_at": "2026-06-03T04:55:42Z",
+  "last_checked_at": "2026-06-03T06:41:21Z",
   "last_changed_at": "2026-06-03T04:55:42Z",
-  "run_id": "run-2026-06-03T045447Z",
+  "run_id": "run-2026-06-03T064030Z",
   "sources": [
     {
-      "url": "https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline",
-      "title": "The Federal Budget Timeline & Process",
-      "domain": "fiscalnote.com",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "Congress has only passed all its appropriations measures on time four times"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Continuing_resolution",
-      "title": "Continuing resolution",
-      "domain": "en.wikipedia.org",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "Congress only passed all twelve regular appropriations bills on time in four years"
-    },
-    {
       "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
-      "title": "How does the government budget process work?",
+      "title": "How does the government budget process work? - USAFacts",
       "domain": "usafacts.org",
       "relevance": "high",
       "supports_claim": true,
-      "excerpt": "for all of the 21st century, Congress has not met the appropriations deadlines"
+      "excerpt": "Congress last passed a full budget in 1997."
+    },
+    {
+      "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
+      "title": "Congress has long struggled to pass spending bills on time",
+      "domain": "pewresearch.org",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "measures on time only four times in nearly five decades."
     }
   ],
-  "reasoning": "Historical data confirms that Congress has not passed all of its individual, regular appropriations bills before the start of the fiscal year (October 1) since Fiscal Year 1997 (which was enacted in 1996). Since then, the government has been funded through temporary continuing resolutions, omnibus spending packages, or legislative packages passed after the start of the fiscal year, rather than the timely passage of all 12 discrete appropriations bills.",
-  "verdict_history": [],
+  "reasoning": "Data from the Pew Research Center and USAFacts confirms that Congress has not passed all of its required individual appropriations bills on time (prior to the October 1 start of the fiscal year) since fiscal year 1997 (passed in late 1996). Since then, the federal government has been funded through temporary continuing resolutions or late-passed omnibus spending packages.",
+  "verdict_history": [
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-05-24T06:40:10Z",
+      "run_id": "run-2026-06-03T045447Z"
+    }
+  ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
