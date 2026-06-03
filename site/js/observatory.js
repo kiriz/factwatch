@@ -5,261 +5,282 @@ const LOG_BASE  = 'logs/';
 
 function escHtml(str) {
   return String(str || '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
-
 function formatDate(iso) {
   if (!iso) return '—';
   return new Date(iso).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
 }
-
-function relativeTime(isoStr) {
-  const ms = Date.now() - new Date(isoStr).getTime();
-  const minutes = Math.floor(ms / 60000);
-  if (minutes < 60) return `${minutes}m ago`;
-  const hours = Math.floor(minutes / 60);
-  if (hours < 24) return `${hours}h ago`;
-  const days = Math.floor(hours / 24);
-  return `${days}d ago`;
+function relativeTime(iso) {
+  const ms = Date.now() - new Date(iso).getTime();
+  const m = Math.floor(ms / 60000);
+  if (m < 60) return `${m}m ago`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h}h ago`;
+  return `${Math.floor(h / 24)}d ago`;
 }
-
 function nextScheduledRun() {
-  const now = new Date();
-  const next = new Date(now);
+  const next = new Date();
   next.setUTCHours(6, 0, 0, 0);
-  if (next <= now) next.setUTCDate(next.getUTCDate() + 1);
+  if (next <= new Date()) next.setUTCDate(next.getUTCDate() + 1);
   return next;
 }
-
 function verdictClass(v) { return 'verdict-' + (v || 'unverified').toLowerCase(); }
-
-const FLAG_LABELS = {
-  conflicting_sources: 'Conflicting sources',
-  outdated_evidence:   'Outdated evidence',
-  requires_human_review: 'Needs human review',
-  low_source_quality:  'Low source quality',
-};
-
 function domainOf(url) {
-  try {
-    const host = new URL(url).hostname.toLowerCase();
-    return host.startsWith('www.') ? host.slice(4) : host;
-  } catch {
-    return '';
-  }
+  try { const h = new URL(url).hostname; return h.startsWith('www.') ? h.slice(4) : h; }
+  catch { return url; }
 }
-
-function formatTokens(n) {
+function fmtTokens(n) {
   if (n == null) return null;
-  if (n >= 1000) return `${(n / 1000).toFixed(1)}k tokens`;
-  return `${n} tokens`;
+  return n >= 1000 ? `${(n / 1000).toFixed(1)}k` : String(n);
 }
 
-function subSection(title, bodyHtml, open) {
+/* ── Pipeline step renderer ─────────────────────────────── */
+
+function pipelineStep(num, label, meta, bodyHtml, accent) {
   return `
-    <details class="sub-details"${open ? ' open' : ''}>
-      <summary>${escHtml(title)}</summary>
-      <div class="sub-body">${bodyHtml}</div>
-    </details>`;
-}
-
-function renderSearchSection(trace) {
-  const queries = trace.search_queries || [];
-  const results = trace.search_results || [];
-  if (!queries.length && !results.length) return '';
-
-  const chips = queries.length
-    ? `<div class="queries-list">${queries.map(q => `<span class="query-chip">${escHtml(q)}</span>`).join('')}</div>`
-    : '';
-
-  const cards = results.map(r => {
-    const url = r.url || '';
-    const dom = domainOf(url);
-    return `
-      <div class="search-result">
-        <div class="sr-title">${url ? `<a href="${escHtml(url)}" target="_blank" rel="noopener" style="color:inherit">${escHtml(r.title || url)}</a>` : escHtml(r.title || '—')}</div>
-        ${dom ? `<div class="sr-domain">${escHtml(dom)}</div>` : ''}
-        ${r.snippet ? `<div class="sr-snippet">${escHtml(r.snippet)}</div>` : ''}
-      </div>`;
-  }).join('');
-
-  const body = `${chips}${cards ? `<div style="margin-top:var(--space-3)">${cards}</div>` : ''}`;
-  return subSection(`Search — ${queries.length} queries · ${results.length} results found`, body, false);
-}
-
-function renderRequestSection(trace) {
-  if (!trace.prompt) return '';
-  const chars = trace.prompt.length;
-  const kchars = chars >= 1000 ? `${(chars / 1000).toFixed(1)}k chars` : `${chars} chars`;
-  const model = trace.model_name || 'model';
-  const ver = trace.model_version ? ` (${escHtml(trace.model_version)})` : '';
-
-  const tokenRow = `
-    <div class="token-row">
-      <span class="token-chip"><span class="label">input</span>${trace.prompt_tokens ?? '—'}</span>
-      <span class="token-chip"><span class="label">output</span>${trace.response_tokens ?? '—'}</span>
-      <span class="token-chip"><span class="label">total</span>${trace.total_tokens ?? '—'}</span>
+    <div class="ps-step">
+      <div class="ps-left">
+        <div class="ps-num" style="${accent ? `background:${accent};color:#fff` : ''}">${num}</div>
+        <div class="ps-line"></div>
+      </div>
+      <div class="ps-right">
+        <div class="ps-label">
+          <span class="ps-label-title">${label}</span>
+          ${meta ? `<span class="ps-label-meta">${meta}</span>` : ''}
+        </div>
+        <div class="ps-body">${bodyHtml}</div>
+      </div>
     </div>`;
-
-  const body = `${tokenRow}<pre class="code-pre">${escHtml(trace.prompt)}</pre>`;
-  return subSection(`Prompt — ${kchars} · ${escHtml(model)}${ver}`, body, false);
 }
 
-function renderResponseSection(trace) {
-  if (!trace.raw_response) return '';
-  const body = `<pre class="code-pre">${escHtml(trace.raw_response)}</pre>`;
-  return subSection('Raw Response', body, false);
-}
+function renderClaimTrace(trace) {
+  const steps = [];
 
-function renderReasoningSection(trace) {
-  const steps = trace.reasoning_steps || [];
-  const flags = trace.agent_flags || {};
-  const activeFlags = Object.keys(FLAG_LABELS).filter(k => flags[k]);
+  /* ① Claim Input */
+  const claimTitle = trace.claim_id || '—';
+  steps.push(pipelineStep('①', 'Claim Input', null, `
+    <div class="ps-claim-box">
+      <div class="ps-claim-id">${escHtml(claimTitle)}</div>
+    </div>
+  `, '#3b82f6'));
 
-  const verdictLine = trace.verdict_changed
-    ? `<div class="verdict-change" style="margin-bottom:var(--space-3)">
-         <span class="verdict-badge ${verdictClass(trace.previous_verdict)}">${escHtml(trace.previous_verdict || '—')}</span>
-         <span class="arrow-right">→</span>
-         <span class="verdict-badge ${verdictClass(trace.new_verdict)}">${escHtml(trace.new_verdict || '—')}</span>
-       </div>`
-    : `<div style="margin-bottom:var(--space-3)"><span class="verdict-badge ${verdictClass(trace.new_verdict)}">${escHtml(trace.new_verdict || '—')}</span></div>`;
+  /* ② Search */
+  const queries  = trace.search_queries  || [];
+  const results  = trace.search_results  || [];
+  const hasSearch = queries.length || results.length;
+  if (hasSearch) {
+    const qChips = queries.map(q =>
+      `<span class="ps-query-chip">${escHtml(q)}</span>`
+    ).join('');
 
-  const stepsHtml = steps.length
-    ? `<div class="steps-list">${steps.map(s => `<div class="step">${escHtml(s)}</div>`).join('')}</div>`
-    : '<p style="color:var(--text-muted);font-size:0.85rem">No reasoning recorded.</p>';
+    const rCards = results.map(r => `
+      <div class="ps-result-card">
+        <div class="ps-result-title">
+          ${r.url
+            ? `<a href="${escHtml(r.url)}" target="_blank" rel="noopener">${escHtml(r.title || r.url)}</a>`
+            : escHtml(r.title || '—')}
+        </div>
+        <div class="ps-result-domain">${escHtml(domainOf(r.url || ''))}</div>
+        ${r.snippet ? `<div class="ps-result-snippet">${escHtml(r.snippet.slice(0, 200))}</div>` : ''}
+      </div>`).join('');
+
+    steps.push(pipelineStep(
+      '②', 'Web Search',
+      `${queries.length} quer${queries.length === 1 ? 'y' : 'ies'} · ${results.length} results`,
+      `<div class="ps-query-list">${qChips}</div>
+       ${rCards ? `<div class="ps-result-grid">${rCards}</div>` : ''}`,
+      '#8b5cf6'
+    ));
+  }
+
+  /* ③ LLM Request */
+  if (trace.prompt) {
+    const model   = trace.model_name    || 'model';
+    const version = trace.model_version || '';
+    const inTok   = fmtTokens(trace.prompt_tokens);
+    const outTok  = fmtTokens(trace.response_tokens);
+    const totTok  = fmtTokens(trace.total_tokens);
+
+    const tokenRow = (inTok || outTok || totTok) ? `
+      <div class="ps-token-row">
+        ${inTok  ? `<span class="ps-token-chip"><span class="ps-tok-label">input</span>${inTok}</span>`  : ''}
+        ${outTok ? `<span class="ps-token-chip"><span class="ps-tok-label">output</span>${outTok}</span>` : ''}
+        ${totTok ? `<span class="ps-token-chip ps-tok-total"><span class="ps-tok-label">total</span>${totTok}</span>` : ''}
+      </div>` : '';
+
+    const modelBadge = `<span class="ps-model-badge">${escHtml(model)}${version ? ` · <span style="opacity:.7">${escHtml(version)}</span>` : ''}</span>`;
+
+    steps.push(pipelineStep(
+      '③', 'LLM Request',
+      null,
+      `<div class="ps-req-header">${modelBadge}${tokenRow}</div>
+       <pre class="ps-code">${escHtml(trace.prompt)}</pre>`,
+      '#f59e0b'
+    ));
+  }
+
+  /* ④ LLM Response */
+  if (trace.raw_response) {
+    let pretty = trace.raw_response;
+    try { pretty = JSON.stringify(JSON.parse(trace.raw_response), null, 2); } catch { /* keep raw */ }
+    steps.push(pipelineStep(
+      '④', 'LLM Response', null,
+      `<pre class="ps-code ps-response">${escHtml(pretty)}</pre>`,
+      '#10b981'
+    ));
+  }
+
+  /* ⑤ Verdict */
+  const verdict    = trace.new_verdict || trace.verdict || '—';
+  const confidence = trace.confidence  != null ? `${trace.confidence}%` : '—';
+  const prevVerdict = trace.previous_verdict;
+  const changed    = trace.verdict_changed;
+  const reasoning  = (trace.reasoning_steps || []).join(' ');
+  const flags      = trace.agent_flags || {};
+  const activeFlags = Object.entries({
+    conflicting_sources:   'Conflicting sources',
+    outdated_evidence:     'Outdated evidence',
+    requires_human_review: 'Needs human review',
+    low_source_quality:    'Low source quality',
+  }).filter(([k]) => flags[k]);
+
+  const verdictFlow = changed && prevVerdict
+    ? `<span class="verdict-badge ${verdictClass(prevVerdict)}">${escHtml(prevVerdict)}</span>
+       <span class="ps-arrow">→</span>
+       <span class="verdict-badge ${verdictClass(verdict)}">${escHtml(verdict)}</span>`
+    : `<span class="verdict-badge ${verdictClass(verdict)}">${escHtml(verdict)}</span>`;
 
   const flagsHtml = activeFlags.length
-    ? `<div class="queries-list" style="margin-top:var(--space-3)">${activeFlags.map(k => `<span class="query-chip" style="color:var(--verdict-misleading)">${escHtml(FLAG_LABELS[k])}</span>`).join('')}</div>`
-    : '';
+    ? `<div class="ps-flags">${activeFlags.map(([, label]) =>
+        `<span class="ps-flag-chip">${escHtml(label)}</span>`).join('')}</div>` : '';
 
-  return subSection('Reasoning & Verdict', `${verdictLine}${stepsHtml}${flagsHtml}`, true);
-}
+  steps.push(pipelineStep(
+    '⑤', 'Verdict',
+    confidence,
+    `<div class="ps-verdict-row">${verdictFlow}</div>
+     ${reasoning ? `<p class="ps-reasoning">${escHtml(reasoning)}</p>` : ''}
+     ${flagsHtml}`,
+    '#ef4444'
+  ));
 
-function renderTraceItem(trace) {
-  const changed = trace.verdict_changed;
-  const tokens = formatTokens(trace.total_tokens);
-  const model = trace.model_name;
-
-  const verdictBadge = changed
-    ? `<span class="verdict-change">
-         <span class="verdict-badge ${verdictClass(trace.previous_verdict)}">${escHtml(trace.previous_verdict || '—')}</span>
-         <span class="arrow-right">→</span>
-         <span class="verdict-badge ${verdictClass(trace.new_verdict)}">${escHtml(trace.new_verdict || '—')}</span>
-       </span>`
-    : `<span class="verdict-badge ${verdictClass(trace.new_verdict)}">${escHtml(trace.new_verdict || '—')}</span>`;
-
-  const sections = [
-    renderSearchSection(trace),
-    renderRequestSection(trace),
-    renderResponseSection(trace),
-    renderReasoningSection(trace),
-  ].join('');
+  /* ── Assemble trace card ── */
+  const inTok  = fmtTokens(trace.prompt_tokens);
+  const totTok = fmtTokens(trace.total_tokens);
+  const model  = trace.model_name;
 
   return `
-    <details class="trace-item" ${changed ? 'open' : ''}>
-      <summary class="trace-summary">
-        <span class="arrow">▶</span>
-        <strong style="flex:1">${escHtml(trace.claim_id)}</strong>
-        ${verdictBadge}
-        <span style="font-size:0.75rem;color:var(--text-muted)">${trace.confidence ?? '—'}%</span>
-        ${model ? `<span class="model-chip">${escHtml(model)}</span>` : ''}
-        ${tokens ? `<span style="font-size:0.72rem;color:var(--text-muted)">${escHtml(tokens)}</span>` : ''}
-        <span style="font-size:0.75rem;color:var(--text-muted)">${trace.processing_time_seconds != null ? `${trace.processing_time_seconds}s` : ''}</span>
-      </summary>
-      <div class="trace-body">${sections}</div>
-    </details>`;
+    <div class="trace-card" data-claim="${escHtml(trace.claim_id || '')}">
+      <div class="trace-card-header" role="button" tabindex="0" aria-expanded="true">
+        <div class="trace-card-title">
+          <span class="trace-card-id">${escHtml(trace.claim_id || '—')}</span>
+          ${changed
+            ? `<span class="verdict-badge ${verdictClass(trace.previous_verdict)}">${escHtml(trace.previous_verdict || '—')}</span>
+               <span class="ps-arrow">→</span>
+               <span class="verdict-badge ${verdictClass(verdict)}">${escHtml(verdict)}</span>`
+            : `<span class="verdict-badge ${verdictClass(verdict)}">${escHtml(verdict)}</span>`}
+          <span style="font-size:.8rem;color:var(--text-muted)">${escHtml(confidence)}</span>
+        </div>
+        <div class="trace-card-meta">
+          ${model ? `<span class="ps-model-badge">${escHtml(model)}</span>` : ''}
+          ${totTok ? `<span class="ps-token-chip ps-tok-total"><span class="ps-tok-label">tokens</span>${totTok}</span>` : ''}
+          ${inTok  ? `<span class="ps-token-chip"><span class="ps-tok-label">in</span>${inTok}</span>`  : ''}
+          <span class="trace-toggle-icon">▾</span>
+        </div>
+      </div>
+      <div class="trace-card-body">
+        <div class="ps-pipeline">${steps.join('')}</div>
+      </div>
+    </div>`;
 }
 
+/* ── Run detail ───────────────────────────────────────────── */
+
 function renderRunDetail(run) {
-  const traces = run.claim_traces || [];
+  const traces  = run.claim_traces || [];
   const container = document.getElementById('run-detail-container');
 
   container.innerHTML = `
     <div class="run-detail" id="${escHtml(run.run_id)}">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--space-4)">
-        <h2 style="font-size:1rem;font-weight:600">Run: <code>${escHtml(run.run_id)}</code></h2>
-        <a href="${LOG_BASE}${encodeURIComponent(run.run_id)}.json" target="_blank"
-           style="font-size:0.8rem;color:var(--text-muted)">View raw JSON →</a>
+      <div class="run-detail-top">
+        <div>
+          <h2 class="run-detail-title">Run <code>${escHtml(run.run_id)}</code></h2>
+          <div style="font-size:.8rem;color:var(--text-muted);margin-top:2px">${formatDate(run.started_at)}</div>
+        </div>
+        <div style="display:flex;gap:var(--space-3);align-items:center">
+          ${traces.length > 1
+            ? `<button class="obs-btn" id="btn-expand-all">Expand all</button>
+               <button class="obs-btn" id="btn-collapse-all">Collapse all</button>`
+            : ''}
+          <a href="${LOG_BASE}${encodeURIComponent(run.run_id)}.json" target="_blank" class="obs-btn">Raw JSON ↗</a>
+        </div>
       </div>
 
       <div class="run-stats">
-        <div class="stat-box">
-          <div class="stat-label">Duration</div>
-          <div class="stat-value">${run.duration_seconds != null ? `${run.duration_seconds}s` : '—'}</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-label">Claims</div>
-          <div class="stat-value">${run.claims_processed ?? '—'}</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-label">Changed</div>
-          <div class="stat-value" style="color:${run.verdicts_changed ? 'var(--verdict-misleading)' : 'inherit'}">${run.verdicts_changed ?? 0}</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-label">Errors</div>
-          <div class="stat-value" style="color:${run.errors ? 'var(--verdict-false)' : 'inherit'}">${run.errors ?? 0}</div>
-        </div>
+        <div class="stat-box"><div class="stat-label">Duration</div><div class="stat-value">${run.duration_seconds != null ? `${run.duration_seconds}s` : '—'}</div></div>
+        <div class="stat-box"><div class="stat-label">Claims</div><div class="stat-value">${run.claims_processed ?? traces.length}</div></div>
+        <div class="stat-box"><div class="stat-label">Changed</div><div class="stat-value" style="color:${(run.verdicts_changed || 0) > 0 ? 'var(--verdict-misleading)' : 'inherit'}">${run.verdicts_changed ?? 0}</div></div>
+        <div class="stat-box"><div class="stat-label">Errors</div><div class="stat-value" style="color:${(run.errors || 0) > 0 ? 'var(--verdict-false)' : 'inherit'}">${run.errors ?? 0}</div></div>
       </div>
 
-      ${run.summary ? `<p style="color:var(--text-muted);font-size:0.875rem;margin-bottom:var(--space-4)">${escHtml(run.summary)}</p>` : ''}
+      ${traces.length
+        ? `<div class="trace-list" id="trace-list">${traces.map(renderClaimTrace).join('')}</div>`
+        : '<p style="color:var(--text-muted)">No claim traces in this run log.</p>'}
+    </div>`;
 
-      <div class="trace-accordion">
-        ${traces.map(renderTraceItem).join('')}
-        ${!traces.length ? '<p style="color:var(--text-muted);font-size:0.875rem">No claim traces in this run log.</p>' : ''}
-      </div>
-    </div>
-  `;
+  /* toggle logic */
+  container.querySelectorAll('.trace-card-header').forEach(hdr => {
+    hdr.addEventListener('click', () => toggleCard(hdr.closest('.trace-card')));
+    hdr.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') toggleCard(hdr.closest('.trace-card')); });
+  });
+
+  const btnExpand   = container.querySelector('#btn-expand-all');
+  const btnCollapse = container.querySelector('#btn-collapse-all');
+  if (btnExpand)   btnExpand.addEventListener('click',   () => setAll(true));
+  if (btnCollapse) btnCollapse.addEventListener('click', () => setAll(false));
 
   container.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+function toggleCard(card) {
+  const open = card.classList.toggle('trace-open');
+  card.querySelector('.trace-card-header').setAttribute('aria-expanded', open);
+}
+function setAll(open) {
+  document.querySelectorAll('.trace-card').forEach(c => {
+    c.classList.toggle('trace-open', open);
+    c.querySelector('.trace-card-header').setAttribute('aria-expanded', open);
+  });
+}
+
+/* ── Run list ─────────────────────────────────────────────── */
+
 function drawChart(runs) {
   const canvas = document.getElementById('changes-chart');
-  if (!canvas.getContext) return;
-  const ctx = canvas.getContext('2d');
-
+  if (!canvas || !canvas.getContext) return;
+  const ctx    = canvas.getContext('2d');
   const recent = runs.slice(0, 20).reverse();
   const maxVal = Math.max(1, ...recent.map(r => r.verdicts_changed ?? 0));
   const barW   = Math.floor(canvas.width / (recent.length + 1));
   const padV   = 8;
   const h      = canvas.height;
-
   ctx.clearRect(0, 0, canvas.width, h);
-
   recent.forEach((run, i) => {
-    const val     = run.verdicts_changed ?? 0;
-    const barH    = Math.round(((h - padV * 2) * val) / maxVal);
-    const x       = i * barW + Math.floor(barW * 0.1);
-    const w       = Math.floor(barW * 0.8);
-    const y       = h - padV - barH;
-
+    const val  = run.verdicts_changed ?? 0;
+    const barH = Math.round(((h - padV * 2) * val) / maxVal);
+    const x    = i * barW + Math.floor(barW * 0.1);
+    const w    = Math.floor(barW * 0.8);
     ctx.fillStyle = val > 0 ? '#f97316' : '#334155';
     ctx.beginPath();
-    ctx.roundRect(x, y, w, Math.max(barH, 2), 2);
+    ctx.roundRect(x, h - padV - Math.max(barH, 2), w, Math.max(barH, 2), 2);
     ctx.fill();
   });
-
   document.getElementById('chart-wrap').style.display = '';
-}
-
-async function loadRunDetail(runId) {
-  try {
-    const res = await fetch(`${LOG_BASE}${encodeURIComponent(runId)}.json`);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const run = await res.json();
-    renderRunDetail(run);
-  } catch (err) {
-    document.getElementById('run-detail-container').innerHTML =
-      `<div class="state-msg"><p>Could not load run log: ${escHtml(err.message)}</p></div>`;
-  }
 }
 
 function renderRunList(runs) {
   const container = document.getElementById('runs-container');
-
   if (!runs.length) {
     container.innerHTML = '<div class="state-msg"><p>No agent runs recorded yet.</p></div>';
     return;
@@ -270,12 +291,10 @@ function renderRunList(runs) {
 
   runs.slice(0, 10).forEach((run, i) => {
     const row = document.createElement('div');
-    row.className = 'run-row';
-    if (i === 0) row.classList.add('selected');
+    row.className = 'run-row' + (i === 0 ? ' selected' : '');
     row.setAttribute('role', 'button');
     row.tabIndex = 0;
     row.dataset.runId = run.run_id;
-
     row.innerHTML = `
       <span class="run-id">${escHtml(run.run_id)}</span>
       <span title="${escHtml(run.started_at)}">${formatDate(run.started_at)}</span>
@@ -283,25 +302,21 @@ function renderRunList(runs) {
       ${(run.verdicts_changed ?? 0) > 0
         ? `<span class="run-badge changed">${run.verdicts_changed} changed</span>`
         : '<span class="run-badge">no changes</span>'}
-      ${(run.errors ?? 0) > 0 ? `<span class="run-badge" style="color:var(--verdict-false)">${run.errors} errors</span>` : ''}
-    `;
+      ${(run.errors ?? 0) > 0 ? `<span class="run-badge" style="color:var(--verdict-false)">${run.errors} errors</span>` : ''}`;
 
-    row.addEventListener('click', () => {
+    const select = () => {
       list.querySelectorAll('.run-row').forEach(r => r.classList.remove('selected'));
       row.classList.add('selected');
       loadRunDetail(run.run_id);
-    });
-    row.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') row.click(); });
-
+    };
+    row.addEventListener('click', select);
+    row.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') select(); });
     list.appendChild(row);
   });
 
   container.replaceChildren(list);
-
-  // Auto-load the first run
   if (runs.length) loadRunDetail(runs[0].run_id);
 
-  // Handle hash anchor
   const hash = window.location.hash.slice(1);
   if (hash) {
     const target = list.querySelector(`[data-run-id="${CSS.escape(hash)}"]`);
@@ -309,9 +324,26 @@ function renderRunList(runs) {
   }
 }
 
+async function loadRunDetail(runId) {
+  const container = document.getElementById('run-detail-container');
+  container.innerHTML = '<div class="state-msg"><div class="spinner"></div><p style="margin-top:12px">Loading trace…</p></div>';
+  try {
+    const res = await fetch(`${LOG_BASE}${encodeURIComponent(runId)}.json`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const run = await res.json();
+    renderRunDetail(run);
+    /* auto-expand first claim */
+    const first = document.querySelector('.trace-card');
+    if (first && !first.classList.contains('trace-open')) toggleCard(first);
+  } catch (err) {
+    container.innerHTML = `<div class="state-msg"><p>Could not load run log: ${escHtml(err.message)}</p></div>`;
+  }
+}
+
+/* ── Init ─────────────────────────────────────────────────── */
+
 async function init() {
-  const next = nextScheduledRun();
-  document.getElementById('status-next-run').textContent = formatDate(next.toISOString());
+  document.getElementById('status-next-run').textContent = formatDate(nextScheduledRun().toISOString());
 
   try {
     const res = await fetch(INDEX_URL);
@@ -319,15 +351,12 @@ async function init() {
     const { runs } = await res.json();
 
     document.getElementById('status-total-runs').textContent = runs.length;
-
     if (runs.length) {
       const last = runs[0];
       document.getElementById('status-last-run').textContent =
         `${relativeTime(last.started_at)} (${formatDate(last.started_at)})`;
-
       const today = new Date().toISOString().slice(0, 10);
-      const ran   = runs.some(r => r.started_at?.startsWith(today));
-      if (!ran) {
+      if (!runs.some(r => r.started_at?.startsWith(today))) {
         document.getElementById('status-last-run').textContent += ' · Run in progress…';
       }
     } else {
