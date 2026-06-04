@@ -172,7 +172,9 @@ def _select_claims(
         if claim_id_filter and claim_id != claim_id_filter:
             skipped.append(claim_id)
             continue
-        if should_check(claim_id, scores_dir, staleness_days):
+        # An explicit single-claim dispatch is a deliberate "re-check now" — it
+        # bypasses the staleness window. Scheduled runs still honor staleness.
+        if claim_id_filter == claim_id or should_check(claim_id, scores_dir, staleness_days):
             to_check.append(claim)
         else:
             logger.info("skipping fresh claim %s (within staleness window)", claim_id)
