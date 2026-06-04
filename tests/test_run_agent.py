@@ -153,6 +153,6 @@ def test_manifest_and_summary_written(tmp_path: Path) -> None:
 
     manifest = json.loads((project / "site" / "data" / "scores-manifest.json").read_text())
     summary = json.loads((project / "site" / "data" / "summary.json").read_text())
-    assert manifest == [{"claim_id": "claim-001", "score_file": "scores/claim-001.json"}]
+    assert manifest == [{"claim_id": "claim-001", "title": "t", "category": "", "score_file": "scores/claim-001.json"}]
     assert summary["verdicts"] == {"TRUE": 1}
     assert summary["total_claims"] == 1

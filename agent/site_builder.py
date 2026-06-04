@@ -86,7 +86,12 @@ def rebuild_manifests(
             logger.warning("active claim missing id; skipping in manifest")
             continue
         score_file = f"scores/{claim_id}.json"
-        manifest.append({"claim_id": claim_id, "score_file": score_file})
+        manifest.append({
+            "claim_id": claim_id,
+            "title": str(claim.get("title", claim_id)),
+            "category": str(claim.get("category", "")),
+            "score_file": score_file,
+        })
 
         verdict = _read_verdict(scores_path / f"{claim_id}.json")
         if verdict:

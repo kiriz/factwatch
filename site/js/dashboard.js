@@ -35,22 +35,24 @@ function wasChangedRecently(score, days) {
   return ms < days * 86400000;
 }
 
-function renderCard(score, claimId) {
+function renderCard(score, claimId, manifestTitle) {
   const recentlyChanged = wasChangedRecently(score, 7);
   const needsReview = score.agent_flags?.requires_human_review;
+  const displayTitle = manifestTitle || score.title || claimId;
+  const category = score.category || manifestTitle?.category || '';
 
   const card = document.createElement('article');
   card.className = 'claim-card';
   card.setAttribute('role', 'button');
-  card.setAttribute('aria-label', `View details for ${claimId}`);
+  card.setAttribute('aria-label', `View details for ${displayTitle}`);
   card.tabIndex = 0;
-  card.dataset.category = score.category || '';
+  card.dataset.category = category;
   card.dataset.verdict   = score.verdict;
   card.dataset.changedAt = score.last_changed_at || '';
 
   card.innerHTML = `
     <div class="claim-card-header">
-      <div class="claim-title">${escHtml(score.title || claimId)}</div>
+      <div class="claim-title">${escHtml(displayTitle)}</div>
       <div class="claim-icons">
         ${recentlyChanged ? '<span title="Verdict changed in last 7 days">⚠</span>' : ''}
         ${needsReview     ? '<span title="Requires human review">🔍</span>' : ''}
@@ -89,8 +91,9 @@ function applyFilters(scores) {
   const verdict = document.getElementById('filter-verdict').value;
   const recent  = parseInt(document.getElementById('filter-recent').value, 10) || 0;
 
-  return scores.filter(({ score }) => {
-    if (cat     && score.category !== cat)       return false;
+  return scores.filter(({ score, category }) => {
+    const effectiveCategory = score.category || category || '';
+    if (cat     && effectiveCategory !== cat)    return false;
     if (verdict && score.verdict  !== verdict)   return false;
     if (recent  && !wasChangedRecently(score, recent)) return false;
     return true;
@@ -110,7 +113,7 @@ function renderGrid() {
 
   const grid = document.createElement('div');
   grid.className = 'claims-grid';
-  filtered.forEach(({ claimId, score }) => grid.appendChild(renderCard(score, claimId)));
+  filtered.forEach(({ claimId, score, title }) => grid.appendChild(renderCard(score, claimId, title)));
   container.replaceChildren(grid);
 }
 
@@ -133,10 +136,10 @@ async function loadScores() {
   }
 
   const results = await Promise.allSettled(
-    manifest.map(({ claim_id, score_file }) =>
+    manifest.map(({ claim_id, title, category, score_file }) =>
       fetch(score_file)
         .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
-        .then(score => ({ claimId: claim_id, score }))
+        .then(score => ({ claimId: claim_id, title: title || claim_id, category, score }))
     )
   );
 

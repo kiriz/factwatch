@@ -238,6 +238,8 @@ def _check_one(
             compiled_path=compiled_path,
         )
         llm_trace = result.pop("_trace", {})
+        result["title"] = str(claim.get("title", ""))
+        result["category"] = str(claim.get("category", ""))
         written = score_writer.write(
             claim_id, result, scores_dir=scores_dir, max_history=max_history
         )
