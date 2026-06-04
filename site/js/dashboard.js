@@ -42,15 +42,16 @@ function verdictClass(v) {
 }
 
 function verdictColour(v) {
+  // Reference the themed kiri-ux verdict tokens so card borders track the theme.
   const map = {
-    TRUE:        '#22c55e',
-    FALSE:       '#ef4444',
-    MISLEADING:  '#f97316',
-    UNVERIFIED:  '#94a3b8',
-    OUTDATED:    '#eab308',
-    DISPUTED:    '#a855f7',
+    TRUE:        'var(--verdict-true)',
+    FALSE:       'var(--verdict-false)',
+    MISLEADING:  'var(--verdict-misleading)',
+    UNVERIFIED:  'var(--verdict-unverified)',
+    OUTDATED:    'var(--verdict-outdated)',
+    DISPUTED:    'var(--verdict-disputed)',
   };
-  return map[v] || '#94a3b8';
+  return map[v] || 'var(--verdict-unverified)';
 }
 
 function relativeTime(isoStr) {

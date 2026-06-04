@@ -3,6 +3,24 @@
  * FactWatch class working while removing all hardcoded hex — the migration goal.
  * Change a kiri-ux token and FactWatch follows. Light mode comes free via
  * <html data-theme="light">. (kiri-ux migration 2026-06-04) */
+
+/* Material-on-paper: in light mode white cards lift off the ivory page with a
+ * soft warm shadow + hairline border (Anthropic + Google aesthetic). */
+[data-theme="light"] .claim-card,
+[data-theme="light"] .card-news,
+[data-theme="light"] .section-card,
+[data-theme="light"] .claim-hero,
+[data-theme="light"] .run-detail,
+[data-theme="light"] .stat-box,
+[data-theme="light"] .source-card {
+  box-shadow: 0 1px 2px hsl(38 28% 32% / 0.06), 0 2px 8px hsl(38 28% 32% / 0.06);
+}
+[data-theme="light"] .claim-card:hover,
+[data-theme="light"] .card-news:hover,
+[data-theme="light"] .source-card:hover {
+  box-shadow: 0 2px 4px hsl(38 28% 32% / 0.08), 0 6px 16px hsl(38 28% 32% / 0.10);
+}
+
 :root {
   --verdict-true:       var(--color-viz-positive);
   --verdict-false:      var(--color-viz-negative);
