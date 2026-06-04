@@ -128,6 +128,18 @@ select, input[type="range"] {
 select { cursor: pointer; }
 select:focus { outline: 2px solid var(--accent); }
 
+/* ── Sort bar ──────────────────────────────────────────── */
+
+.sort-bar { display:flex; align-items:center; gap:var(--space-2); flex-wrap:wrap; margin-bottom:var(--space-4); }
+.sort-label { font-size:0.8rem; color:var(--text-muted); }
+.sort-btn { background:var(--bg-card); border:1px solid var(--border); border-radius:999px; color:var(--text-muted); padding:4px 14px; font-size:0.8rem; cursor:pointer; transition:border-color 0.15s,color 0.15s; white-space:nowrap; }
+.sort-btn:hover { border-color:var(--accent); color:var(--text-primary); }
+.sort-btn.sort-active { border-color:var(--accent); color:var(--accent); background:color-mix(in srgb,var(--accent) 10%,transparent); }
+
+/* trending & view badges on cards */
+.trend-badge { font-size:1rem; }
+.view-count { font-size:0.72rem; color:var(--text-muted); background:var(--bg-elevated); border-radius:999px; padding:1px 8px; }
+
 /* ── Claims grid ───────────────────────────────────────── */
 
 .claims-grid {

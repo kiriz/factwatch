@@ -3,7 +3,7 @@
   "claim_id": "claim-002",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-06-03T06:40:54Z",
+  "last_checked_at": "2026-05-25T04:11:00Z",
   "last_changed_at": "2026-06-03T04:55:08Z",
   "run_id": "run-2026-06-03T064030Z",
   "sources": [
@@ -13,7 +13,7 @@
       "domain": "apnews.com",
       "relevance": "high",
       "supports_claim": true,
-      "excerpt": "The federal government’s gross national debt has surpassed $34 trillion"
+      "excerpt": "The federal government\u2019s gross national debt has surpassed $34 trillion"
     },
     {
       "url": "https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet",

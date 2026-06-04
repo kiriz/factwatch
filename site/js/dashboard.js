@@ -1,7 +1,41 @@
 'use strict';
 
-const MANIFEST_URL = 'data/scores-manifest.json';
-const SUMMARY_URL  = 'data/summary.json';
+const MANIFEST_URL  = 'data/scores-manifest.json';
+const SUMMARY_URL   = 'data/summary.json';
+const COUNT_BASE    = 'https://api.counterapi.dev/v1/factwatch-claims';
+const LS_VIEWS_KEY  = 'fw_views'; // localStorage: {claimId: count}
+
+/* ── View counter (CountAPI.dev — free, no auth) ──────────── */
+
+function getLocalViews() {
+  try { return JSON.parse(localStorage.getItem(LS_VIEWS_KEY) || '{}'); }
+  catch { return {}; }
+}
+function bumpLocalView(claimId) {
+  const v = getLocalViews();
+  v[claimId] = (v[claimId] || 0) + 1;
+  try { localStorage.setItem(LS_VIEWS_KEY, JSON.stringify(v)); } catch { /* quota */ }
+}
+
+/* Fetch live view counts from CountAPI.dev for all claim IDs. Returns {} on error. */
+async function fetchViewCounts(claimIds) {
+  const results = await Promise.allSettled(
+    claimIds.map(id =>
+      fetch(`${COUNT_BASE}/${encodeURIComponent(id)}/get`)
+        .then(r => r.ok ? r.json() : null)
+        .then(d => ({ id, count: d?.count ?? 0 }))
+    )
+  );
+  const map = {};
+  results.forEach(r => { if (r.status === 'fulfilled' && r.value) map[r.value.id] = r.value.count; });
+  return map;
+}
+
+/* Increment view counter on CountAPI.dev (fire-and-forget). */
+function trackView(claimId) {
+  bumpLocalView(claimId);
+  fetch(`${COUNT_BASE}/${encodeURIComponent(claimId)}/up`).catch(() => {});
+}
 
 function verdictClass(v) {
   return 'verdict-' + v.toLowerCase();
@@ -35,11 +69,13 @@ function wasChangedRecently(score, days) {
   return ms < days * 86400000;
 }
 
-function renderCard(score, claimId, manifestTitle) {
+function renderCard({ score, claimId, title: manifestTitle, category: manifestCategory }) {
   const recentlyChanged = wasChangedRecently(score, 7);
-  const needsReview = score.agent_flags?.requires_human_review;
-  const displayTitle = manifestTitle || score.title || claimId;
-  const category = score.category || manifestTitle?.category || '';
+  const needsReview     = score.agent_flags?.requires_human_review;
+  const displayTitle    = manifestTitle || score.title || claimId;
+  const category        = score.category || manifestCategory || '';
+  const trending        = score.trending_score ?? null;
+  const views           = viewCounts[claimId] ?? getLocalViews()[claimId] ?? 0;
 
   const card = document.createElement('article');
   card.className = 'claim-card';
@@ -50,12 +86,22 @@ function renderCard(score, claimId, manifestTitle) {
   card.dataset.verdict   = score.verdict;
   card.dataset.changedAt = score.last_changed_at || '';
 
+  /* trending badge: fire (hot) if score ≥ 7, spark if 4-6 */
+  const trendBadge = trending === null ? '' :
+    trending >= 7 ? '<span class="trend-badge trend-hot"  title="Trending this week">🔥</span>' :
+    trending >= 4 ? '<span class="trend-badge trend-warm" title="Active this week">⚡</span>' : '';
+
+  const viewBadge = views > 0
+    ? `<span class="view-count" title="${views} views">${views >= 1000 ? `${(views/1000).toFixed(1)}k` : views} views</span>`
+    : '';
+
   card.innerHTML = `
     <div class="claim-card-header">
       <div class="claim-title">${escHtml(displayTitle)}</div>
       <div class="claim-icons">
+        ${trendBadge}
         ${recentlyChanged ? '<span title="Verdict changed in last 7 days">⚠</span>' : ''}
-        ${needsReview     ? '<span title="Requires human review">🔍</span>' : ''}
+        ${needsReview     ? '<span title="Requires human review">🔍</span>'         : ''}
       </div>
     </div>
     <div>
@@ -67,12 +113,18 @@ function renderCard(score, claimId, manifestTitle) {
       </div>
     </div>
     <div class="claim-meta">
-      <span class="category-tag">${escHtml(score.category || 'general')}</span>
-      <span title="${score.last_checked_at}">Checked ${relativeTime(score.last_checked_at)}</span>
+      <span class="category-tag">${escHtml(category || 'general')}</span>
+      <div style="display:flex;gap:6px;align-items:center">
+        ${viewBadge}
+        <span title="${score.last_checked_at}">Checked ${relativeTime(score.last_checked_at)}</span>
+      </div>
     </div>
   `;
 
-  card.addEventListener('click', () => { window.location.href = `claim.html?id=${encodeURIComponent(claimId)}`; });
+  card.addEventListener('click', () => {
+    trackView(claimId);
+    window.location.href = `claim.html?id=${encodeURIComponent(claimId)}`;
+  });
   card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') card.click(); });
 
   return card;
@@ -100,11 +152,48 @@ function applyFilters(scores) {
   });
 }
 
-let allScores = [];
+let allScores  = [];
+let viewCounts = {}; // claimId → live count from CountAPI
+let currentSort = 'trending'; // trending | views | confidence | recent | az
+
+function popularityScore(item) {
+  const trending = item.score.trending_score ?? 0;          // 0-10 agent signal
+  const views    = viewCounts[item.claimId] ?? getLocalViews()[item.claimId] ?? 0;
+  const viewNorm = Math.min(views / 20, 10);                // normalise to 0-10
+  return trending * 0.6 + viewNorm * 0.4;
+}
+
+function applySortAndFilter(scores) {
+  const cat     = document.getElementById('filter-category').value;
+  const verdict = document.getElementById('filter-verdict').value;
+  const recent  = parseInt(document.getElementById('filter-recent').value, 10) || 0;
+  const sort    = currentSort;
+
+  let filtered = scores.filter(({ score, category }) => {
+    const effectiveCategory = score.category || category || '';
+    if (cat     && effectiveCategory !== cat)    return false;
+    if (verdict && score.verdict  !== verdict)   return false;
+    if (recent  && !wasChangedRecently(score, recent)) return false;
+    return true;
+  });
+
+  filtered.sort((a, b) => {
+    switch (sort) {
+      case 'trending':    return popularityScore(b) - popularityScore(a);
+      case 'views':       return (viewCounts[b.claimId] ?? 0) - (viewCounts[a.claimId] ?? 0);
+      case 'confidence':  return (b.score.confidence ?? 0) - (a.score.confidence ?? 0);
+      case 'recent':      return new Date(b.score.last_changed_at || 0) - new Date(a.score.last_changed_at || 0);
+      case 'az':          return (a.title || '').localeCompare(b.title || '');
+      default:            return 0;
+    }
+  });
+
+  return filtered;
+}
 
 function renderGrid() {
   const container = document.getElementById('claims-container');
-  const filtered  = applyFilters(allScores);
+  const filtered  = applySortAndFilter(allScores);
 
   if (!filtered.length) {
     container.innerHTML = '<div class="state-msg"><p>No claims match the current filters.</p></div>';
@@ -113,7 +202,7 @@ function renderGrid() {
 
   const grid = document.createElement('div');
   grid.className = 'claims-grid';
-  filtered.forEach(({ claimId, score, title }) => grid.appendChild(renderCard(score, claimId, title)));
+  filtered.forEach(item => grid.appendChild(renderCard(item)));
   container.replaceChildren(grid);
 }
 
@@ -154,7 +243,13 @@ async function loadScores() {
     return;
   }
 
-  renderGrid();
+  // Fetch live view counts in background then re-render
+  fetchViewCounts(allScores.map(s => s.claimId)).then(counts => {
+    viewCounts = counts;
+    renderGrid();
+  });
+
+  renderGrid(); // initial render with local counts
 }
 
 async function loadSummary() {
@@ -172,6 +267,14 @@ async function loadSummary() {
 document.getElementById('filter-category').addEventListener('change', renderGrid);
 document.getElementById('filter-verdict').addEventListener('change', renderGrid);
 document.getElementById('filter-recent').addEventListener('change', renderGrid);
+
+document.querySelectorAll('.sort-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    currentSort = btn.dataset.sort;
+    document.querySelectorAll('.sort-btn').forEach(b => b.classList.toggle('sort-active', b === btn));
+    renderGrid();
+  });
+});
 
 loadSummary();
 loadScores();

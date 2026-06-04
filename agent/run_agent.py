@@ -240,6 +240,9 @@ def _check_one(
         llm_trace = result.pop("_trace", {})
         result["title"] = str(claim.get("title", ""))
         result["category"] = str(claim.get("category", ""))
+        result["trending_score"] = fact_checker.compute_trending_score(
+            str(claim.get("title", "") or claim.get("claim_text", ""))
+        )
         written = score_writer.write(
             claim_id, result, scores_dir=scores_dir, max_history=max_history
         )

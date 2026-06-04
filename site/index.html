@@ -67,6 +67,15 @@
         </div>
       </div>
 
+      <div class="sort-bar" role="group" aria-label="Sort claims by">
+        <span class="sort-label">Sort:</span>
+        <button class="sort-btn sort-active" data-sort="trending" title="Internet discussion this week + site views">🔥 Trending</button>
+        <button class="sort-btn" data-sort="views"      title="Total site views">👁 Most viewed</button>
+        <button class="sort-btn" data-sort="confidence" title="Agent confidence score">✓ Confidence</button>
+        <button class="sort-btn" data-sort="recent"     title="Verdict changed most recently">⏱ Recent changes</button>
+        <button class="sort-btn" data-sort="az"         title="Alphabetical">A–Z</button>
+      </div>
+
       <div id="claims-container">
         <div class="state-msg">
           <div class="spinner"></div>
@@ -87,7 +96,7 @@
     </div>
   </footer>
 
-  <script src="js/dashboard.js?v=2"></script>
+  <script src="js/dashboard.js?v=3"></script>
 </body>
 </html>
 <!-- Wed Jun  3 04:23:05 UTC 2026 -->

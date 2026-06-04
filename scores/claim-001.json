@@ -3,7 +3,7 @@
   "claim_id": "claim-001",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-06-03T06:40:43Z",
+  "last_checked_at": "2026-05-25T04:11:00Z",
   "last_changed_at": "2026-06-03T04:54:59Z",
   "run_id": "run-2026-06-03T064030Z",
   "sources": [
@@ -37,10 +37,10 @@
       "domain": "eos.org",
       "relevance": "high",
       "supports_claim": true,
-      "excerpt": "significant downward trend that we’ve observed since 1979"
+      "excerpt": "significant downward trend that we\u2019ve observed since 1979"
     }
   ],
-  "reasoning": "Satellite data continuously gathered since 1979 by agencies such as NASA, NOAA, and NSIDC confirm a clear, statistically significant long-term decline in Arctic sea ice extent. While short-term year-to-year fluctuations occur, the overall trend across all seasons—especially the September summer minimum—is strongly downward, with substantial loss in ice area, thickness, and age.",
+  "reasoning": "Satellite data continuously gathered since 1979 by agencies such as NASA, NOAA, and NSIDC confirm a clear, statistically significant long-term decline in Arctic sea ice extent. While short-term year-to-year fluctuations occur, the overall trend across all seasons\u2014especially the September summer minimum\u2014is strongly downward, with substantial loss in ice area, thickness, and age.",
   "verdict_history": [
     {
       "verdict": "TRUE",

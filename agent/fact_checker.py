@@ -96,6 +96,22 @@ def _search(query: str, max_results: int = MAX_SEARCH_RESULTS) -> list[dict[str,
         return []
 
 
+def compute_trending_score(query: str) -> int:
+    """Return 0-10 score: count of DDG results published in the past week.
+
+    Higher = more internet discussion right now. Returns 0 on any error so a
+    search failure never breaks a fact-check run.
+    """
+    try:
+        from ddgs import DDGS  # noqa: PLC0415
+
+        results = list(DDGS().text(query, timelimit="w", max_results=10) or [])
+        return min(len(results), 10)
+    except Exception:
+        logger.debug("trending score search failed for %r", query, exc_info=True)
+        return 0
+
+
 def _build_search_queries(claim: dict[str, Any]) -> list[str]:
     """Generate 2–3 search queries from a claim definition."""
     title = claim.get("title", "")

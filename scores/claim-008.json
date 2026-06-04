@@ -3,7 +3,7 @@
   "claim_id": "claim-008",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-06-04T01:04:56Z",
+  "last_checked_at": "2026-05-25T04:11:00Z",
   "last_changed_at": "2026-06-04T01:04:56Z",
   "run_id": "run-2026-06-04T010331Z",
   "sources": [
@@ -21,7 +21,7 @@
       "domain": "biologynotes.site",
       "relevance": "high",
       "supports_claim": true,
-      "excerpt": "Two branchial hearts – These pump blood to the gills, where oxygen is absorbed"
+      "excerpt": "Two branchial hearts \u2013 These pump blood to the gills, where oxygen is absorbed"
     },
     {
       "url": "https://biologyinsights.com/do-octopus-bleed-the-science-of-their-blue-blood-3-hearts/",

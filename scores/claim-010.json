@@ -3,7 +3,7 @@
   "claim_id": "claim-010",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-06-04T01:04:12Z",
+  "last_checked_at": "2026-05-25T04:11:00Z",
   "last_changed_at": "2026-06-04T01:04:12Z",
   "run_id": "run-2026-06-04T010331Z",
   "sources": [
@@ -25,11 +25,11 @@
     },
     {
       "url": "https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/",
-      "title": "Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative – ICA",
+      "title": "Bitcoin Consumes as Much Electricity as Argentina\u2014Cash Is the Sustainable Alternative \u2013 ICA",
       "domain": "currencyassociation.org",
       "relevance": "high",
       "supports_claim": true,
-      "excerpt": "Bitcoin consumes as much electricity as an entire country—Argentina"
+      "excerpt": "Bitcoin consumes as much electricity as an entire country\u2014Argentina"
     }
   ],
   "reasoning": "Multiple reports from the University of Cambridge (CBECI) and the International Monetary Fund (IMF) consistently confirm that Bitcoin's annual electricity consumption (estimated between 120 and 140 TWh) meets or exceeds the total electricity consumption of entire nations, including Argentina.",

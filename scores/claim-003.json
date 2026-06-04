@@ -3,7 +3,7 @@
   "claim_id": "claim-003",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-06-03T06:41:02Z",
+  "last_checked_at": "2026-05-25T04:11:00Z",
   "last_changed_at": "2026-06-03T04:55:15Z",
   "run_id": "run-2026-06-03T064030Z",
   "sources": [
@@ -24,7 +24,7 @@
       "excerpt": "No, the vaccines cannot change your DNA."
     },
     {
-      "url": "https://weillcornell.org/news/here’s-what-we-know-the-impact-of-mrna-vaccines",
+      "url": "https://weillcornell.org/news/here\u2019s-what-we-know-the-impact-of-mrna-vaccines",
       "title": "Here's What We Know: The Impact of mRNA Vaccines | Patient Care",
       "domain": "weillcornell.org",
       "relevance": "high",
