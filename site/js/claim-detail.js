@@ -1,117 +1,128 @@
 'use strict';
 
+const MANIFEST_URL = 'data/scores-manifest.json';
+
 function escHtml(str) {
   return String(str || '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-function verdictClass(v) { return 'verdict-' + v.toLowerCase(); }
+function verdictClass(v) { return 'verdict-' + String(v || 'unverified').toLowerCase(); }
 function verdictColour(v) {
-  const map = { TRUE:'#22c55e', FALSE:'#ef4444', MISLEADING:'#f97316', UNVERIFIED:'#94a3b8', OUTDATED:'#eab308', DISPUTED:'#a855f7' };
-  return map[v] || '#94a3b8';
+  const map = { TRUE:'var(--color-viz-positive)', FALSE:'var(--color-viz-negative)',
+    MISLEADING:'var(--color-viz-caution)', UNVERIFIED:'var(--color-viz-neutral)',
+    OUTDATED:'var(--color-viz-stale)', DISPUTED:'var(--color-viz-special)' };
+  return map[v] || 'var(--color-viz-neutral)';
 }
-
+function verdictGloss(v) {
+  return ({ TRUE:'Accurate based on strong evidence', FALSE:'Demonstrably incorrect',
+    MISLEADING:'Contains truth but framed to deceive', UNVERIFIED:'Insufficient public evidence',
+    OUTDATED:'Was true; evidence no longer supports it', DISPUTED:'Credible sources disagree' })[v] || '';
+}
 function formatDate(iso) {
   if (!iso) return '—';
   return new Date(iso).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
 }
+function relativeTime(iso) {
+  if (!iso) return '';
+  const ms = Date.now() - new Date(iso).getTime();
+  const d = Math.floor(ms / 86400000);
+  if (d === 0) return 'today';
+  if (d === 1) return 'yesterday';
+  return `${d} days ago`;
+}
 
-function renderClaim(claimId, score) {
-  document.title = `${escHtml(score.title || claimId)} — FactWatch`;
+function renderClaim(claimId, score, meta) {
+  const title    = meta.title || score.title || claimId;
+  const category = meta.category || score.category || '';
+  const claimText = meta.claim_text || '';
+  document.title = `${title} — FactWatch`;
 
-  const flags = score.agent_flags || {};
+  const flags   = score.agent_flags || {};
   const history = score.verdict_history || [];
   const sources = score.sources || [];
+  const vColour = verdictColour(score.verdict);
+  const activeFlags = [
+    ['conflicting_sources',  'Conflicting sources'],
+    ['outdated_evidence',    'Outdated evidence'],
+    ['requires_human_review','Needs human review'],
+    ['low_source_quality',   'Low source quality'],
+  ].filter(([k]) => flags[k]);
 
   const content = document.getElementById('claim-content');
   content.innerHTML = `
-    <div class="detail-header">
-      <div class="page-header">
-        <h1>${escHtml(score.title || claimId)}</h1>
-        <div class="sub">ID: ${escHtml(claimId)} · Category: ${escHtml(score.category || '—')}</div>
+    <article class="claim-hero" style="--hero-accent:${vColour}">
+      <div class="claim-hero__meta">
+        ${category ? `<span class="category-tag">${escHtml(category)}</span>` : ''}
+        <span class="claim-hero__id">${escHtml(claimId)}</span>
       </div>
-      <div class="detail-verdict-row">
-        <span class="verdict-badge ${verdictClass(score.verdict)}">${score.verdict}</span>
-        <div>
-          <div class="confidence-label">Confidence: <strong>${score.confidence}%</strong></div>
-          <div class="confidence-bar" style="width:200px;margin-top:4px"
-               role="progressbar" aria-valuenow="${score.confidence}" aria-valuemin="0" aria-valuemax="100">
-            <div class="confidence-fill" style="width:${score.confidence}%;background:${verdictColour(score.verdict)}"></div>
+      <h1 class="claim-hero__title">${escHtml(title)}</h1>
+      ${claimText ? `<blockquote class="claim-hero__statement">${escHtml(claimText)}</blockquote>` : ''}
+      <div class="claim-hero__verdict">
+        <span class="verdict-badge verdict-badge--lg ${verdictClass(score.verdict)}">${escHtml(score.verdict)}</span>
+        <div class="claim-hero__verdict-detail">
+          <div class="claim-hero__gloss">${escHtml(verdictGloss(score.verdict))}</div>
+          <div class="confidence-bar" role="progressbar" aria-valuenow="${score.confidence}" aria-valuemin="0" aria-valuemax="100">
+            <div class="confidence-fill" style="width:${score.confidence}%;background:${vColour}"></div>
           </div>
-        </div>
-        <div style="font-size:0.85rem;color:var(--text-muted)">
-          Last checked: ${formatDate(score.last_checked_at)}<br>
-          ${score.last_changed_at ? `Verdict changed: ${formatDate(score.last_changed_at)}` : 'No verdict change recorded'}
+          <div class="claim-hero__conf-label">${score.confidence}% confidence · checked ${relativeTime(score.last_checked_at)}</div>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="section-card">
-      <h2>Agent Reasoning</h2>
-      <p style="line-height:1.7">${escHtml(score.reasoning || 'No reasoning recorded for this claim.')}</p>
-    </div>
+    <section class="section-card">
+      <h2>Why this verdict</h2>
+      <p class="claim-reasoning">${escHtml(score.reasoning || 'No reasoning recorded for this claim.')}</p>
+    </section>
 
-    <div class="section-card">
-      <h2>Sources (${sources.length})</h2>
+    <section class="section-card">
+      <h2>Sources <span class="count-pill">${sources.length}</span></h2>
       ${sources.length ? `
-        <div class="sources-list">
+        <div class="source-grid">
           ${sources.map(s => `
-            <div class="source-item">
-              <div class="relevance-dot relevance-${escHtml(s.relevance || 'low')}"></div>
-              <div>
-                <div class="source-title">
-                  <a href="${escHtml(s.url)}" target="_blank" rel="noopener">${escHtml(s.title || s.domain)}</a>
-                </div>
-                <div class="source-domain">${escHtml(s.domain)} · ${s.supports_claim ? '✓ Supports' : '✗ Contradicts'} · Relevance: ${escHtml(s.relevance)}</div>
-                ${s.excerpt ? `<div class="source-excerpt">"${escHtml(s.excerpt)}"</div>` : ''}
+            <a class="source-card" href="${escHtml(s.url)}" target="_blank" rel="noopener">
+              <div class="source-card__head">
+                <span class="relevance-dot relevance-${escHtml(s.relevance || 'low')}" title="Relevance: ${escHtml(s.relevance || 'low')}"></span>
+                <span class="source-card__domain">${escHtml(s.domain || '')}</span>
+                <span class="source-card__stance ${s.supports_claim ? 'stance-support' : 'stance-contra'}">${s.supports_claim ? 'supports' : 'contradicts'}</span>
               </div>
-            </div>
+              <div class="source-card__title">${escHtml(s.title || s.domain || s.url)}</div>
+              ${s.excerpt ? `<div class="source-card__excerpt">“${escHtml(s.excerpt)}”</div>` : ''}
+            </a>
           `).join('')}
         </div>
-      ` : '<p style="color:var(--text-muted)">No sources recorded.</p>'}
-    </div>
+      ` : '<p class="muted">No sources recorded.</p>'}
+    </section>
 
-    <div class="section-card">
-      <h2>Agent Flags</h2>
-      <div class="flags-grid">
-        ${[
-          ['conflicting_sources',  'Conflicting sources',   flags.conflicting_sources],
-          ['outdated_evidence',    'Outdated evidence',     flags.outdated_evidence],
-          ['requires_human_review','Requires human review', flags.requires_human_review],
-          ['low_source_quality',   'Low source quality',    flags.low_source_quality],
-        ].map(([, label, on]) => `
-          <div class="flag-item ${on ? 'flag-on' : 'flag-off'}">
-            <span>${on ? '⚠' : '✓'}</span>
-            <span>${label}</span>
-          </div>
-        `).join('')}
-      </div>
-    </div>
+    ${activeFlags.length ? `
+      <section class="section-card section-card--flagged">
+        <h2>⚠ Flags</h2>
+        <div class="flag-chips">
+          ${activeFlags.map(([, label]) => `<span class="flag-chip">${escHtml(label)}</span>`).join('')}
+        </div>
+      </section>
+    ` : ''}
 
-    <div class="section-card">
-      <h2>Verdict History (${history.length})</h2>
+    <section class="section-card">
+      <h2>Verdict history <span class="count-pill">${history.length}</span></h2>
       ${history.length ? `
         <div class="verdict-timeline">
           ${[...history].reverse().map(h => `
             <div class="timeline-entry">
-              <span class="timeline-date">${formatDate(h.recorded_at)}</span>
-              <span class="verdict-badge ${verdictClass(h.verdict)}">${h.verdict}</span>
-              <span class="timeline-conf">${h.confidence}% confidence</span>
-              <span style="font-size:0.75rem;color:var(--text-muted);margin-left:auto">
-                <a href="observatory.html#${escHtml(h.run_id)}" style="color:var(--text-muted)">Run log →</a>
-              </span>
+              <span class="verdict-badge ${verdictClass(h.verdict)}">${escHtml(h.verdict)}</span>
+              <span class="timeline-conf">${h.confidence}%</span>
+              <span class="timeline-date">${formatDate(h.checked_at || h.recorded_at)}</span>
+              ${h.run_id ? `<a class="timeline-run" href="observatory.html#${escHtml(h.run_id)}">run log →</a>` : ''}
             </div>
           `).join('')}
         </div>
-      ` : '<p style="color:var(--text-muted)">No history recorded yet.</p>'}
-    </div>
+      ` : '<p class="muted">First check — no prior verdicts yet.</p>'}
+    </section>
 
     ${score.run_id ? `
-      <div style="text-align:center;margin-top:var(--space-6)">
-        <a href="observatory.html#${escHtml(score.run_id)}">View agent run that produced this verdict →</a>
+      <div class="claim-footer-link">
+        <a class="btn-link" href="observatory.html#${escHtml(score.run_id)}">🔭 See the full agent trace that produced this verdict →</a>
       </div>
     ` : ''}
   `;
@@ -128,10 +139,20 @@ async function init() {
   }
 
   try {
-    const res = await fetch(`scores/${encodeURIComponent(claimId)}.json`);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const score = await res.json();
-    renderClaim(claimId, score);
+    // Fetch score + manifest together; manifest carries title/category/claim_text.
+    const [scoreRes, manifestRes] = await Promise.all([
+      fetch(`scores/${encodeURIComponent(claimId)}.json`),
+      fetch(MANIFEST_URL).catch(() => null),
+    ]);
+    if (!scoreRes.ok) throw new Error(`HTTP ${scoreRes.status}`);
+    const score = await scoreRes.json();
+
+    let meta = {};
+    if (manifestRes && manifestRes.ok) {
+      const manifest = await manifestRes.json();
+      meta = manifest.find(m => m.claim_id === claimId) || {};
+    }
+    renderClaim(claimId, score, meta);
   } catch (err) {
     content.innerHTML = `<div class="state-msg">
       <p>Could not load claim <strong>${escHtml(claimId)}</strong>.</p>

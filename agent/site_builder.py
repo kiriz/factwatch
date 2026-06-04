@@ -90,6 +90,7 @@ def rebuild_manifests(
             "claim_id": claim_id,
             "title": str(claim.get("title", claim_id)),
             "category": str(claim.get("category", "")),
+            "claim_text": str(claim.get("claim_text", "")),
             "score_file": score_file,
         })
 
