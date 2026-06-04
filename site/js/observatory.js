@@ -59,10 +59,13 @@ function renderClaimTrace(trace) {
   const steps = [];
 
   /* ① Claim Input */
-  const claimTitle = trace.claim_id || '—';
-  steps.push(pipelineStep('①', 'Claim Input', null, `
+  const claimTitle = trace.claim_title || trace.claim_id || '—';
+  const claimText  = trace.claim_text  || '';
+  const category   = trace.category    || '';
+  steps.push(pipelineStep('①', 'Claim Input', category || null, `
     <div class="ps-claim-box">
       <div class="ps-claim-id">${escHtml(claimTitle)}</div>
+      ${claimText ? `<div class="ps-claim-text">"${escHtml(claimText)}"</div>` : ''}
     </div>
   `, '#3b82f6'));
 
@@ -169,12 +172,13 @@ function renderClaimTrace(trace) {
   const inTok  = fmtTokens(trace.prompt_tokens);
   const totTok = fmtTokens(trace.total_tokens);
   const model  = trace.model_name;
+  const displayTitle = trace.claim_title || trace.claim_id || '—';
 
   return `
     <div class="trace-card" data-claim="${escHtml(trace.claim_id || '')}">
       <div class="trace-card-header" role="button" tabindex="0" aria-expanded="true">
         <div class="trace-card-title">
-          <span class="trace-card-id">${escHtml(trace.claim_id || '—')}</span>
+          <span class="trace-card-id">${escHtml(displayTitle)}</span>
           ${changed
             ? `<span class="verdict-badge ${verdictClass(trace.previous_verdict)}">${escHtml(trace.previous_verdict || '—')}</span>
                <span class="ps-arrow">→</span>

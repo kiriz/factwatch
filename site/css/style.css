@@ -413,7 +413,8 @@ select:focus { outline: 2px solid var(--accent); }
 
 /* step 1 — claim */
 .ps-claim-box { background:var(--bg-elevated); border-left:3px solid var(--accent); border-radius:0 var(--radius-sm) var(--radius-sm) 0; padding:var(--space-3) var(--space-4); }
-.ps-claim-id { font-family:monospace; font-size:0.9rem; font-weight:600; }
+.ps-claim-id { font-size:0.95rem; font-weight:700; margin-bottom:4px; }
+.ps-claim-text { font-size:0.85rem; color:var(--text-muted); font-style:italic; line-height:1.5; }
 
 /* step 2 — search */
 .ps-query-list { display:flex; flex-wrap:wrap; gap:var(--space-2); margin-bottom:var(--space-3); }

@@ -220,7 +220,12 @@ def _check_one(
     ``error`` set so the caller can record a partial-failure exit code.
     """
     claim_id = str(claim.get("id", ""))
-    trace: dict[str, Any] = {"claim_id": claim_id}
+    trace: dict[str, Any] = {
+        "claim_id": claim_id,
+        "claim_title": str(claim.get("title", "")),
+        "claim_text": str(claim.get("claim_text", "")),
+        "category": str(claim.get("category", "")),
+    }
     try:
         # Capture the prior verdict BEFORE writing so a first-ever check is not
         # miscounted as a change (a new claim has no previous verdict).
