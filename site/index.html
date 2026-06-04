@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="kiri-ux/tokens/themes/base.css?v=4">
   <link rel="stylesheet" href="kiri-ux/tokens/themes/light.css?v=4">
   <link rel="stylesheet" href="kiri-ux/tokens/themes/factwatch.css?v=4">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
   <header>
@@ -25,64 +25,64 @@
   </header>
 
   <main>
-    <div class="container">
-      <div class="last-updated" id="last-updated">
-        <span class="dot"></span>
-        <span id="last-updated-text">Loading last run info…</span>
-      </div>
+    <div class="layout-with-sidebar">
+      <aside class="filter-sidebar">
+        <div class="filter-panel">
+          <h2 class="filter-panel__heading">Filter</h2>
+          <div class="filter-group">
+            <label for="filter-category">Category</label>
+            <select id="filter-category">
+              <option value="">All categories</option>
+              <option value="science">Science</option>
+              <option value="politics">Politics</option>
+              <option value="health">Health</option>
+              <option value="technology">Technology</option>
+              <option value="economics">Economics</option>
+              <option value="social">Social</option>
+              <option value="environment">Environment</option>
+              <option value="history">History</option>
+              <option value="media">Media</option>
+              <option value="law">Law</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-verdict">Verdict</label>
+            <select id="filter-verdict">
+              <option value="">All verdicts</option>
+              <option value="TRUE">True</option>
+              <option value="FALSE">False</option>
+              <option value="MISLEADING">Misleading</option>
+              <option value="UNVERIFIED">Unverified</option>
+              <option value="OUTDATED">Outdated</option>
+              <option value="DISPUTED">Disputed</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="filter-recent">Recently changed</label>
+            <select id="filter-recent">
+              <option value="">Any time</option>
+              <option value="7">Last 7 days</option>
+              <option value="30">Last 30 days</option>
+            </select>
+          </div>
 
-      <div class="filters">
-        <div class="filter-group">
-          <label for="filter-category">Category</label>
-          <select id="filter-category">
-            <option value="">All categories</option>
-            <option value="science">Science</option>
-            <option value="politics">Politics</option>
-            <option value="health">Health</option>
-            <option value="technology">Technology</option>
-            <option value="economics">Economics</option>
-            <option value="social">Social</option>
-            <option value="environment">Environment</option>
-            <option value="history">History</option>
-            <option value="media">Media</option>
-            <option value="law">Law</option>
-          </select>
+          <h2 class="filter-panel__heading">Sort</h2>
+          <div class="sort-bar sort-bar--vertical" role="group" aria-label="Sort claims by">
+            <button class="sort-btn sort-active" data-sort="trending" title="Internet discussion this week + site views">🔥 Trending</button>
+            <button class="sort-btn" data-sort="views"      title="Total site views">👁 Most viewed</button>
+            <button class="sort-btn" data-sort="confidence" title="Agent confidence score">✓ Confidence</button>
+            <button class="sort-btn" data-sort="recent"     title="Verdict changed most recently">⏱ Recent changes</button>
+            <button class="sort-btn" data-sort="az"         title="Alphabetical">A–Z</button>
+          </div>
         </div>
-        <div class="filter-group">
-          <label for="filter-verdict">Verdict</label>
-          <select id="filter-verdict">
-            <option value="">All verdicts</option>
-            <option value="TRUE">True</option>
-            <option value="FALSE">False</option>
-            <option value="MISLEADING">Misleading</option>
-            <option value="UNVERIFIED">Unverified</option>
-            <option value="OUTDATED">Outdated</option>
-            <option value="DISPUTED">Disputed</option>
-          </select>
-        </div>
-        <div class="filter-group">
-          <label for="filter-recent">Recently changed</label>
-          <select id="filter-recent">
-            <option value="">Any time</option>
-            <option value="7">Last 7 days</option>
-            <option value="30">Last 30 days</option>
-          </select>
-        </div>
-      </div>
+      </aside>
 
-      <div class="sort-bar" role="group" aria-label="Sort claims by">
-        <span class="sort-label">Sort:</span>
-        <button class="sort-btn sort-active" data-sort="trending" title="Internet discussion this week + site views">🔥 Trending</button>
-        <button class="sort-btn" data-sort="views"      title="Total site views">👁 Most viewed</button>
-        <button class="sort-btn" data-sort="confidence" title="Agent confidence score">✓ Confidence</button>
-        <button class="sort-btn" data-sort="recent"     title="Verdict changed most recently">⏱ Recent changes</button>
-        <button class="sort-btn" data-sort="az"         title="Alphabetical">A–Z</button>
-      </div>
-
-      <div id="claims-container">
-        <div class="state-msg">
-          <div class="spinner"></div>
-          <p style="margin-top: 16px">Loading claims…</p>
+      <div class="claims-main">
+        <div id="claims-container">
+          <div class="state-msg">
+            <div class="spinner"></div>
+            <p style="margin-top: 16px">Loading claims…</p>
+          </div>
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@
     </div>
   </footer>
 
-  <script src="js/dashboard.js?v=6"></script>
+  <script src="js/dashboard.js?v=7"></script>
 </body>
 </html>
 <!-- Wed Jun  3 04:23:05 UTC 2026 -->

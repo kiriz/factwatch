@@ -252,11 +252,12 @@ async function loadScores() {
 }
 
 async function loadSummary() {
+  const el = document.getElementById('last-updated-text');
+  if (!el) return; // last-updated bar removed from the page
   try {
-    const res = await fetch(SUMMARY_URL);
+    const res = await fetch(SUMMARY_URL, { cache: 'no-cache' });
     if (!res.ok) return;
     const summary = await res.json();
-    const el = document.getElementById('last-updated-text');
     if (summary.last_run_at) {
       el.textContent = `Last updated by AI: ${relativeTime(summary.last_run_at)} · ${summary.total_claims} claims`;
     }
