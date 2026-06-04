@@ -1,0 +1,3 @@
+[submodule "site/kiri-ux"]
+	path = site/kiri-ux
+	url = https://github.com/kiriz/kiri-ux

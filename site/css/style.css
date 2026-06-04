@@ -1,27 +1,30 @@
+/* FactWatch tokens now SOURCE from kiri-ux (loaded via kiri-ux/tokens/themes/
+ * base.css + factwatch.css before this file). These aliases keep every existing
+ * FactWatch class working while removing all hardcoded hex — the migration goal.
+ * Change a kiri-ux token and FactWatch follows. Light mode comes free via
+ * <html data-theme="light">. (kiri-ux migration 2026-06-04) */
 :root {
-  --verdict-true:       #22c55e;
-  --verdict-false:      #ef4444;
-  --verdict-misleading: #f97316;
-  --verdict-unverified: #94a3b8;
-  --verdict-outdated:   #eab308;
-  --verdict-disputed:   #a855f7;
+  --verdict-true:       var(--color-viz-positive);
+  --verdict-false:      var(--color-viz-negative);
+  --verdict-misleading: var(--color-viz-caution);
+  --verdict-unverified: var(--color-viz-neutral);
+  --verdict-outdated:   var(--color-viz-stale);
+  --verdict-disputed:   var(--color-viz-special);
 
-  --bg-primary:  #0f172a;
-  --bg-card:     #1e293b;
-  --bg-elevated: #263347;
-  --text-primary: #f1f5f9;
-  --text-muted:   #94a3b8;
-  --accent:       #3b82f6;
-  --border:       #334155;
+  --bg-primary:  var(--color-surface);
+  --bg-card:     var(--color-surface-raised);
+  --bg-elevated: var(--color-surface-active);
+  --text-primary: var(--color-on-surface);
+  --text-muted:   var(--color-on-surface-muted);
+  --accent:       var(--color-primary-text);
+  --border:       var(--color-border);
 
-  --radius: 8px;
-  --radius-sm: 4px;
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-6: 24px;
-  --space-8: 32px;
+  /* --space-1..4 and --radius-sm are identical names+values in kiri-ux —
+   * inherited directly, not re-aliased (a self-reference would be circular).
+   * Only the names that differ from kiri-ux are mapped here. */
+  --radius: var(--radius-md);          /* 8px */
+  --space-6: var(--space-5);           /* FactWatch 24px → kiri-ux space-5 */
+  --space-8: var(--space-6);           /* FactWatch 32px → kiri-ux space-6 */
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
