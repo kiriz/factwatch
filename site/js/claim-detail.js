@@ -142,7 +142,7 @@ async function init() {
     // Fetch score + manifest together; manifest carries title/category/claim_text.
     const [scoreRes, manifestRes] = await Promise.all([
       fetch(`scores/${encodeURIComponent(claimId)}.json`),
-      fetch(MANIFEST_URL).catch(() => null),
+      fetch(MANIFEST_URL, { cache: 'no-cache' }).catch(() => null),
     ]);
     if (!scoreRes.ok) throw new Error(`HTTP ${scoreRes.status}`);
     const score = await scoreRes.json();
