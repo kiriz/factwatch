@@ -3,12 +3,68 @@
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
   "confidence": 90,
-  "last_checked_at": "2026-06-04T21:10:11Z",
+  "last_checked_at": "2026-06-04T21:24:29Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-06-04T210946Z",
-  "sources": [],
-  "reasoning": "The claim mischaracterizes the findings of a widely cited March 2023 study by Goldman Sachs. The report did not state that generative AI \"will replace\" 300 million jobs. Rather, it estimated that generative AI *could expose* the equivalent of 300 million full-time jobs globally to automation. \"Exposure to automation\" means that certain tasks within a job could be automated, but it does not equate to outright job elimination; in fact, the report notes that most jobs and industries are only partially exposed to automation and are more likely to be complemented rather than substituted by AI. Furthermore, presenting a projection as an absolute certainty (\"will\") ignores the economic nuances of job creation and productivity boosts that typically accompany technological shifts.",
-  "verdict_history": [],
+  "run_id": "run-2026-06-04T212406Z",
+  "sources": [
+    {
+      "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
+      "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
+      "domain": "nexford.edu",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "April 6, 2026 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
+    },
+    {
+      "url": "https://www.bbc.com/news/technology-65102150",
+      "title": "AI could replace equivalent of 300 million jobs - report",
+      "domain": "bbc.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 28, 2023 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
+    },
+    {
+      "url": "https://economictimes.indiatimes.com/tech/technology/generative-ai-could-replace-300-million-jobs-goldman-sachs-report/articleshow/99085074.cms",
+      "title": "goldman sachs: Generative AI could replace 300 million jobs: Goldman Sachs report - The Economic Times",
+      "domain": "economictimes.indiatimes.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 29, 2023 - ... Generative AI has already made a huge impact on how"
+    },
+    {
+      "url": "https://www.bbc.com/news/technology-65102150.amp",
+      "title": "AI could replace equivalent of 300 million jobs - report - BBC News",
+      "domain": "bbc.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 28, 2023 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
+    },
+    {
+      "url": "https://aibusiness.com/nlp/goldman-sachs-generative-ai-could-replace-300-million-jobs",
+      "title": "Goldman Sachs: Generative AI Could Replace 300 Million Jobs",
+      "domain": "aibusiness.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 29, 2023 - The report’s authors, which include ... exposed to some degree of"
+    },
+    {
+      "url": "https://www.forbes.com/sites/jackkelly/2025/04/25/the-jobs-that-will-fall-first-as-ai-takes-over-the-workplace/",
+      "title": "Jobs AI Will Replace First in the Workplace Shift",
+      "domain": "forbes.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "April 30, 2025 - Goldman Sachs predicts up that to 50% of jobs could be"
+    }
+  ],
+  "reasoning": "The claim that generative AI \"will replace\" 300 million jobs worldwide is a misleading overstatement of the actual source study. This figure originates from a March 2023 report by Goldman Sachs, which estimated that generative AI *could expose* the equivalent of 300 million full-time jobs globally to automation. Crucially, the report did not state that these jobs would be definitively eliminated or replaced. Instead, it argued that while about two-thirds of current jobs are exposed to some degree of AI automation, most of those occupations will be complemented rather than substituted by AI. Representing a projection of \"automation exposure\" as a definitive prediction of outright job replacement distorts the study's actual findings.",
+  "verdict_history": [
+    {
+      "verdict": "MISLEADING",
+      "confidence": 90,
+      "checked_at": "2026-06-04T21:10:11Z",
+      "run_id": "run-2026-06-04T210946Z"
+    }
+  ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
