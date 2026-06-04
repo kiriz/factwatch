@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "claim_id": "claim-007",
+  "verdict": "FALSE",
+  "confidence": 100,
+  "last_checked_at": "2026-06-04T01:03:50Z",
+  "last_changed_at": "2026-06-04T01:03:50Z",
+  "run_id": "run-2026-06-04T010331Z",
+  "sources": [
+    {
+      "url": "https://www.scientificamerican.com/article/is-chinas-great-wall-visible-from-space/",
+      "title": "Is China's Great Wall Visible from Space?",
+      "domain": "scientificamerican.com",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "the Great Wall of China is not visible from orbit to the naked eye"
+    },
+    {
+      "url": "https://www.msn.com/en-in/news/world/nasa-just-confirmed-that-largest-structure-visible-from-space-isnt-actually-the-great-wall-of-china/ar-AA1GXeFK",
+      "title": "NASA just confirmed that largest structure visible from space isn't actually the Great Wall of China",
+      "domain": "msn.com",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "NASA confirms that its narrow width and earth-toned materials make it difficult to spot"
+    },
+    {
+      "url": "https://www.sciencefocus.com/planet-earth/is-the-great-wall-of-china-really-visible-from-space",
+      "title": "Is the Great Wall of China really visible from space?",
+      "domain": "sciencefocus.com",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "Contrary to popular belief, the Great Wall of China is a thin structure"
+    }
+  ],
+  "reasoning": "Numerous astronauts, including China's own Yang Liwei, and space agencies like NASA have debunked this claim. The Great Wall is relatively narrow (usually less than 9 meters wide) and is constructed of materials that blend in color with the surrounding terrain, making it impossible to see with the naked eye from orbit without magnification. Additionally, other larger, high-contrast man-made structures (such as desert highways, airports, and large greenhouse complexes) are visible from low Earth orbit, meaning the Great Wall is neither visible nor unique in this regard.",
+  "verdict_history": [],
+  "agent_flags": {
+    "conflicting_sources": false,
+    "outdated_evidence": false,
+    "requires_human_review": false,
+    "low_source_quality": false
+  }
+}

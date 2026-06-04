@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "claim_id": "claim-015",
+  "verdict": "TRUE",
+  "confidence": 100,
+  "last_checked_at": "2026-06-04T01:04:50Z",
+  "last_changed_at": "2026-06-04T01:04:50Z",
+  "run_id": "run-2026-06-04T010331Z",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+      "title": "AlphaGo versus Lee Sedol - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "five-game Go match between top Go player Lee Sedol and AlphaGo... March 2016"
+    },
+    {
+      "url": "https://www.smartweb.jp/en/glossary/alphago/",
+      "title": "AlphaGo | SmartWeb",
+      "domain": "smartweb.jp",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "defeated world Go champion Lee Sedol with a 4-1 victory in 2016"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest",
+      "title": "Google's AlphaGo AI defeats human in first game of Go contest",
+      "domain": "theguardian.com",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "an achievement many thought was at least a decade away"
+    }
+  ],
+  "reasoning": "The claim is completely accurate. In March 2016, DeepMind's AlphaGo played a historic five-game match against Lee Sedol, one of the greatest Go players of the modern era, and won 4-1. Prior to AlphaGo's breakthrough (beginning with its victory over Fan Hui in late 2015), AI experts and Go players widely believed that a computer beating a top-tier professional Go player was at least a decade away due to the immense complexity of the game.",
+  "verdict_history": [],
+  "agent_flags": {
+    "conflicting_sources": false,
+    "outdated_evidence": false,
+    "requires_human_review": false,
+    "low_source_quality": false
+  }
+}

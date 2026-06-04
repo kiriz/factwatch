@@ -1,0 +1,709 @@
+{
+  "run_id": "run-2026-06-04T010331Z",
+  "started_at": "2026-06-04T01:03:31Z",
+  "finished_at": "2026-06-04T01:05:13Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": null,
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 4,
+      "reasoning_steps": [
+        "Decades of rigorous neuroscience research have thoroughly debunked the assertion that humans only use 10% of their brains",
+        "Modern neuroimaging technologies, such as fMRI and PET scans, demonstrate that almost all areas of the brain are active during routine daily tasks, and even during sleep",
+        "Furthermore, any brain regions left genuinely unused due to injury or disease rapidly degrade (atrophy) or are repurposed, confirming that there is no dormant, untapped 90% of brain tissue in healthy individuals."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: Humans only use 10% of their brains\n\nClaim to verify: \"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"\n\nHuman context: One of the most persistent myths in popular science. Cited in self-help books, movies (Lucy, Limitless), and advertising for cognitive supplements. Despite decades of neuroscience research, the claim refuses to die.\n\nVerification guidance: Check neuroimaging studies (fMRI, PET). Verify whether any region of the brain is truly inactive. Look at what happens to brain tissue when it's genuinely unused (it atrophies). Check scientific consensus from neuroscience organizations.\n\nWeb search results:\n\n[1] Ten-percent-of-the-brain myth - Wikipedia\n    URL: https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth\n    Excerpt: The ten-percent-of-the-brain myth or ninety-percent-of-the-brain myth states that humans generally use only one-tenth of their brains.\n\n[2] Myth: We Only Use 10% of Our Brains\n    URL: https://www.psychologicalscience.org/uncategorized/myth-we-only-use-10-of-our-brains.html\n    Excerpt: Aug 29, 2018 · It was the basis of the movie Lucy (2014), which depicted what supposedly would happen if a person actually used all 100% of her brainpower.\n\n[3] Do We Really Use Only 10 Percent of Our Brain? - Britannica\n    URL: https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain\n    Excerpt: So how did we come to believe that 90 percent of our brain is useless? The myth is often incorrectly attributed to 19th-century psychologist William James, who ...\n\n[4] You may have heard the myth that we only use 10 percent of our brain. In ...\n    URL: https://www.facebook.com/multicarehealthsystem/posts/you-may-have-heard-the-myth-that-we-only-use-10-percent-of-our-brain-in-reality-/1467746318731626/\n    Excerpt: 5 days ago · But what if I told you... that's a total myth? The 10% myth originated from misinterpreted neurological studies and misquoted scientists. It ...\n\n[5] Do People Only Use 10 Percent of Their Brains? - Scientific American\n    URL: https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/\n    Excerpt: Feb 7, 2008 · The \"10 percent myth\" is so wrong it is almost laughable, says neurologist Barry Gordon at Johns Hopkins School of Medicine in Baltimore.\n\n[6] When you use 69% of your brain - Facebook\n    URL: https://www.facebook.com/berriedalivemn/posts/when-you-use-69-of-your-brain/1367109421442057/\n    Excerpt: Oct 25, 2025 · There are quite a few myths regarding the brain. But one of them that is often quoted is the fact that we only use 10% of our brain. The fact is ...\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"sources\": [\n    {\n      \"url\": \"https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/\",\n      \"title\": \"Do People Only Use 10 Percent of Their Brains? - Scientific American\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"The '10 percent myth' is so wrong it is almost laughable\"\n    },\n    {\n      \"url\": \"https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth\",\n      \"title\": \"Ten-percent-of-the-brain myth - Wikipedia\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"The ten-percent-of-the-brain myth... states that humans generally use only one-tenth\"\n    },\n    {\n      \"url\": \"https://www.psychologicalscience.org/uncategorized/myth-we-only-use-10-of-our-brains.html\",\n      \"title\": \"Myth: We Only Use 10% of Our Brains\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"Myth: We Only Use 10% of Our Brains\"\n    },\n    {\n      \"url\": \"https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain\",\n      \"title\": \"Do We Really Use Only 10 Percent of Our Brain? - Britannica\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"how did we come to believe that 90 percent of our brain is useless?\"\n    }\n  ],\n  \"reasoning\": \"Decades of rigorous neuroscience research have thoroughly debunked the assertion that humans only use 10% of their brains. Modern neuroimaging technologies, such as fMRI and PET scans, demonstrate that almost all areas of the brain are active during routine daily tasks, and even during sleep. Furthermore, any brain regions left genuinely unused due to injury or disease rapidly degrade (atrophy) or are repurposed, confirming that there is no dormant, untapped 90% of brain tissue in healthy individuals.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1142,
+      "response_tokens": 602,
+      "total_tokens": 3053,
+      "search_queries": [
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+        "Humans only use 10% of their brains",
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
+          "title": "Ten-percent-of-the-brain myth - Wikipedia",
+          "snippet": "The ten-percent-of-the-brain myth or ninety-percent-of-the-brain myth states that humans generally use only one-tenth of their brains."
+        },
+        {
+          "url": "https://www.psychologicalscience.org/uncategorized/myth-we-only-use-10-of-our-brains.html",
+          "title": "Myth: We Only Use 10% of Our Brains",
+          "snippet": "Aug 29, 2018 · It was the basis of the movie Lucy (2014), which depicted what supposedly would happen if a person actually used all 100% of her brainpower."
+        },
+        {
+          "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
+          "title": "Do We Really Use Only 10 Percent of Our Brain? - Britannica",
+          "snippet": "So how did we come to believe that 90 percent of our brain is useless? The myth is often incorrectly attributed to 19th-century psychologist William James, who ..."
+        },
+        {
+          "url": "https://www.facebook.com/multicarehealthsystem/posts/you-may-have-heard-the-myth-that-we-only-use-10-percent-of-our-brain-in-reality-/1467746318731626/",
+          "title": "You may have heard the myth that we only use 10 percent of our brain. In ...",
+          "snippet": "5 days ago · But what if I told you... that's a total myth? The 10% myth originated from misinterpreted neurological studies and misquoted scientists. It ..."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+          "title": "Do People Only Use 10 Percent of Their Brains? - Scientific American",
+          "snippet": "Feb 7, 2008 · The \"10 percent myth\" is so wrong it is almost laughable, says neurologist Barry Gordon at Johns Hopkins School of Medicine in Baltimore."
+        },
+        {
+          "url": "https://www.facebook.com/berriedalivemn/posts/when-you-use-69-of-your-brain/1367109421442057/",
+          "title": "When you use 69% of your brain - Facebook",
+          "snippet": "Oct 25, 2025 · There are quite a few myths regarding the brain. But one of them that is often quoted is the fact that we only use 10% of our brain. The fact is ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-007",
+      "claim_title": "Great Wall of China visible from space",
+      "claim_text": "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": null,
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "Numerous astronauts, including China's own Yang Liwei, and space agencies like NASA have debunked this claim",
+        "The Great Wall is relatively narrow (usually less than 9 meters wide) and is constructed of materials that blend in color with the surrounding terrain, making it impossible to see with the naked eye from orbit without magnification",
+        "Additionally, other larger, high-contrast man-made structures (such as desert highways, airports, and large greenhouse complexes) are visible from low Earth orbit, meaning the Great Wall is neither visible nor unique in this regard."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: Great Wall of China visible from space\n\nClaim to verify: \"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"\n\nHuman context: Appears in textbooks worldwide and was repeated for decades as fact. Chinese astronaut Yang Liwei attempted to see it from orbit in 2003 and could not. NASA has weighed in. Yet the myth persists in curricula.\n\nVerification guidance: Check astronaut accounts, NASA statements, and optical physics. The wall is roughly 9 meters wide — compare to road widths. Verify what actually IS visible from low Earth orbit with the naked eye.\n\nWeb search results:\n\n[1] Can you see the Great Wall of China from space? - BBC Sky at ...\n    URL: https://www.skyatnightmagazine.com/space-science/can-you-see-great-wall-china-from-space\n    Excerpt: Feb 27, 2024 · When it comes to spaceflight and astronomy, many myths abound, one of the biggest being the idea that you can see the Great Wall of China from space. For example, there are plenty of strange things astronomers used to believe about the Moon. One space-based myth that we all have heard\n\n[2] NASA just confirmed that largest structure visible from space ...\n    URL: https://www.msn.com/en-in/news/world/nasa-just-confirmed-that-largest-structure-visible-from-space-isnt-actually-the-great-wall-of-china/ar-AA1GXeFK\n    Excerpt: Despite its fame, the Great Wall of China isnt the most visible human-made structure from space. NASA confirms that its narrow width and earth-toned materials make it difficult to spot, debunking ...\n\n[3] Fact Check: Is The Great Wall Of China Visible From Space?Is The Great Wall of China Visible From Space? Here’s The ...Is the Great Wall of China really visible from space?Is China's Great Wall Visible from Space? - Scientific AmericanFact or Fiction: The Great Wall of China Is Visible From Space\n    URL: https://www.timesnownews.com/travel/news/fact-check-is-the-great-wall-of-china-visible-from-space-article-112466738\n    Excerpt: Aug 17, 2024 · “The Great Wall of China is the only man-made structure that is visible from space.” As kids, this was one of the most popular statements that made us wonder at the sheer size of this wall. And this statement has stuck around for a long time; in fact from before the first man planted \n\n[4] Is The Great Wall of China Visible From Space? Here’s The ...\n    URL: https://www.news18.com/viral/is-the-great-wall-of-china-visible-from-space-heres-the-truth-8885475.html\n    Excerpt: May 10, 2024 · The Great Wall of China is one of the most amazing pieces of architecture and the largest man-made project in the world. The Wall extends 5 km north of Shanhai Pass, a fortress built in the Ming Dynasty, where it juts (to stick out further than the surrounding surface) into the sea. A\n\n[5] Is the Great Wall of China really visible from space?\n    URL: https://www.sciencefocus.com/planet-earth/is-the-great-wall-of-china-really-visible-from-space\n    Excerpt: Is the Great Wall of China really visible from space? Contrary to popular belief, the Great Wall of China is a thin structure that blends in well with the surrounding landscape, making it very hard to spot.\n\n[6] Is China's Great Wall Visible from Space? - Scientific American\n    URL: https://www.scientificamerican.com/article/is-chinas-great-wall-visible-from-space/\n    Excerpt: Feb 21, 2008 · Choose a legend: The Great Wall of China is the one of the few man-made structures visible from orbit. Or, more remarkably, it's the only human artifact on Earth visible from the moon. Both are ...\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"sources\": [\n    {\n      \"url\": \"https://www.scientificamerican.com/article/is-chinas-great-wall-visible-from-space/\",\n      \"title\": \"Is China's Great Wall Visible from Space?\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"the Great Wall of China is not visible from orbit to the naked eye\"\n    },\n    {\n      \"url\": \"https://www.msn.com/en-in/news/world/nasa-just-confirmed-that-largest-structure-visible-from-space-isnt-actually-the-great-wall-of-china/ar-AA1GXeFK\",\n      \"title\": \"NASA just confirmed that largest structure visible from space isn't actually the Great Wall of China\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"NASA confirms that its narrow width and earth-toned materials make it difficult to spot\"\n    },\n    {\n      \"url\": \"https://www.sciencefocus.com/planet-earth/is-the-great-wall-of-china-really-visible-from-space\",\n      \"title\": \"Is the Great Wall of China really visible from space?\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"Contrary to popular belief, the Great Wall of China is a thin structure\"\n    }\n  ],\n  \"reasoning\": \"Numerous astronauts, including China's own Yang Liwei, and space agencies like NASA have debunked this claim. The Great Wall is relatively narrow (usually less than 9 meters wide) and is constructed of materials that blend in color with the surrounding terrain, making it impossible to see with the naked eye from orbit without magnification. Additionally, other larger, high-contrast man-made structures (such as desert highways, airports, and large greenhouse complexes) are visible from low Earth orbit, meaning the Great Wall is neither visible nor unique in this regard.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1297,
+      "response_tokens": 531,
+      "total_tokens": 2315,
+      "search_queries": [
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+        "Great Wall of China visible from space",
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.skyatnightmagazine.com/space-science/can-you-see-great-wall-china-from-space",
+          "title": "Can you see the Great Wall of China from space? - BBC Sky at ...",
+          "snippet": "Feb 27, 2024 · When it comes to spaceflight and astronomy, many myths abound, one of the biggest being the idea that you can see the Great Wall of China from space. For example, there are plenty of strange things astronomers used to believe about the Moon. One space-based myth that we all have heard is the idea the Great Wall of China is the only human-made structure that can be seen from space."
+        },
+        {
+          "url": "https://www.msn.com/en-in/news/world/nasa-just-confirmed-that-largest-structure-visible-from-space-isnt-actually-the-great-wall-of-china/ar-AA1GXeFK",
+          "title": "NASA just confirmed that largest structure visible from space ...",
+          "snippet": "Despite its fame, the Great Wall of China isnt the most visible human-made structure from space. NASA confirms that its narrow width and earth-toned materials make it difficult to spot, debunking ..."
+        },
+        {
+          "url": "https://www.timesnownews.com/travel/news/fact-check-is-the-great-wall-of-china-visible-from-space-article-112466738",
+          "title": "Fact Check: Is The Great Wall Of China Visible From Space?Is The Great Wall of China Visible From Space? Here’s The ...Is the Great Wall of China really visible from space?Is China's Great Wall Visible from Space? - Scientific AmericanFact or Fiction: The Great Wall of China Is Visible From Space",
+          "snippet": "Aug 17, 2024 · “The Great Wall of China is the only man-made structure that is visible from space.” As kids, this was one of the most popular statements that made us wonder at the sheer size of this wall. And this statement has stuck around for a long time; in fact from before the first man planted his feet on ... May 10, 2024 · The Great Wall of China is one of the most amazing pieces of architecture and the largest man-made project in the world. The Wall extends 5 km north of Shanhai Pass, a fortress built in the Ming Dynasty, where it juts (to stick out further than the surrounding surface) into the sea. At this fortress ... Is the Great Wall of China really visible from space? Contrary to popular belief, the Great Wall of China is a thin structure that blends in well with the surrounding landscape, making it very hard to spot. Feb 21, 2008 · Choose a legend: The Great Wall of China is the one of the few man-made structures visible from orbit. Or, more remarkably, it's the only human artifact on Earth visible from the moon. Both are ... Jan 24, 2023 · It’s a commonly held belief that the Great Wall of China is the only man-made structure that can be seen from space. Today, we put this notion to the test. Read on to know whether it’s a fact ..."
+        },
+        {
+          "url": "https://www.news18.com/viral/is-the-great-wall-of-china-visible-from-space-heres-the-truth-8885475.html",
+          "title": "Is The Great Wall of China Visible From Space? Here’s The ...",
+          "snippet": "May 10, 2024 · The Great Wall of China is one of the most amazing pieces of architecture and the largest man-made project in the world. The Wall extends 5 km north of Shanhai Pass, a fortress built in the Ming Dynasty, where it juts (to stick out further than the surrounding surface) into the sea. At this fortress ..."
+        },
+        {
+          "url": "https://www.sciencefocus.com/planet-earth/is-the-great-wall-of-china-really-visible-from-space",
+          "title": "Is the Great Wall of China really visible from space?",
+          "snippet": "Is the Great Wall of China really visible from space? Contrary to popular belief, the Great Wall of China is a thin structure that blends in well with the surrounding landscape, making it very hard to spot."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/is-chinas-great-wall-visible-from-space/",
+          "title": "Is China's Great Wall Visible from Space? - Scientific American",
+          "snippet": "Feb 21, 2008 · Choose a legend: The Great Wall of China is the one of the few man-made structures visible from orbit. Or, more remarkably, it's the only human artifact on Earth visible from the moon. Both are ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_title": "Napoleon was unusually short",
+      "claim_text": "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": null,
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "The claim that Napoleon Bonaparte was unusually short and around 5 feet 2 inches tall is false",
+        "The height of 5 feet 2 inches was recorded in pre-metric French units (French feet and inches), which were longer than English units",
+        "In modern English measurements, Napoleon was actually about 5 feet 6 inches (or 1.68 meters) tall, which was average or even slightly above average for a French man of his era."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: Napoleon was unusually short\n\nClaim to verify: \"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"\n\nHuman context: The \"Napoleon complex\" — aggressive behavior to compensate for short stature — is named after him. The myth largely originated from British wartime propaganda and a confusion between French and English inches. His actual height is contested.\n\nVerification guidance: Check historical records of Napoleon's height in French inches vs English inches. Verify average male height in early 19th century France. Look at accounts from contemporaries and his physician's records. The British caricaturist James Gillray's role in perpetuating the myth is worth examining.\n\nWeb search results:\n\n[1] Napoleon complex - Wikipedia\n    URL: https://en.wikipedia.org/wiki/Napoleon_complex\n    Excerpt: 2 weeks ago - The Napoleon complex is named after Napoleon Bonaparte, the first emperor of the French, who was estimated to have been 5 feet 2 inches tall (in pre–metric system French measures), which equals around 1.57 metres, imperial measure.\n\n[2] Was Napoleon Bonaparte Really Short?\n    URL: https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108\n    Excerpt: May 13, 2025 - It turns out that Napoleon Bonaparte wasn't particularly short at all. Napoleon's height is sometimes described as being 5 foot 2 inches tall, which would definitely make him short for his era.\n\n[3] Was Napoleon Short? Origins of the 'Napoleon Complex' | HISTORY\n    URL: https://www.history.com/articles/napoleon-complex-short\n    Excerpt: Three French sources—his valet Constant, General Gourgaud, and his personal physician Francesco Antommarchi—said that Napoleon's height was just over ‘5 pieds 2 pouces’ (5’2”). Applying the French measurements of the time, that equals around 1.67 meters, or just under 5’6”, which is a little above a\n\n[4] Was Napoleon Short? | Britannica\n    URL: https://www.britannica.com/story/was-napoleon-short\n    Excerpt: March 11, 2026 - Several sources note that his elite guards were taller than most Frenchmen, and thus Napoleon had the appearance of being shorter than he really was. Yet interpretations of Napoleon’s death certificate estimate that his height when he died ...\n\n[5] How Tall Was Napoleon Bonaparte? Actually Pretty Average | HowStuffWorks\n    URL: https://history.howstuffworks.com/history-vs-myth/napoleon-short.htm\n    Excerpt: August 27, 2024 - At the time of his death, he measured 5 feet, 2 inches, in French units, the equivalent of about 5 feet, 6 inches, (169 centimeters) in modern measurement units, notes the National Gallery of Victoria.\n\n[6] Napoleon Bonaparte Having Been Short is a Myth\n    URL: http://www.todayifoundout.com/index.php/2010/03/napolean-bonaparte-having-been-short-is-a-myth/\n    Excerpt: June 25, 2014 - The myth that he was short stems primarily from the fact that he is listed as 5 feet 2 inches tall at the time of his death. However, this is 5 feet 2 inches in French units. In modern international units, he was just shy of 5 feet 7 inches.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"sources\": [\n    {\n      \"url\": \"https://www.history.com/articles/napoleon-complex-short\",\n      \"title\": \"Was Napoleon Short? Origins of the 'Napoleon Complex' | HISTORY\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"French measurements of the time, that equals around 1.67 meters\"\n    },\n    {\n      \"url\": \"https://history.howstuffworks.com/history-vs-myth/napoleon-short.htm\",\n      \"title\": \"How Tall Was Napoleon Bonaparte? Actually Pretty Average | HowStuffWorks\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"equivalent of about 5 feet, 6 inches\"\n    },\n    {\n      \"url\": \"http://www.todayifoundout.com/index.php/2010/03/napolean-bonaparte-having-been-short-is-a-myth/\",\n      \"title\": \"Napoleon Bonaparte Having Been Short is a Myth\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"In modern international units, he was just shy of 5 feet 7 inches\"\n    }\n  ],\n  \"reasoning\": \"The claim that Napoleon Bonaparte was unusually short and around 5 feet 2 inches tall is false. The height of 5 feet 2 inches was recorded in pre-metric French units (French feet and inches), which were longer than English units. In modern English measurements, Napoleon was actually about 5 feet 6 inches (or 1.68 meters) tall, which was average or even slightly above average for a French man of his era.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1140,
+      "response_tokens": 469,
+      "total_tokens": 3344,
+      "search_queries": [
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+        "Napoleon was unusually short",
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Napoleon_complex",
+          "title": "Napoleon complex - Wikipedia",
+          "snippet": "2 weeks ago - The Napoleon complex is named after Napoleon Bonaparte, the first emperor of the French, who was estimated to have been 5 feet 2 inches tall (in pre–metric system French measures), which equals around 1.57 metres, imperial measure."
+        },
+        {
+          "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
+          "title": "Was Napoleon Bonaparte Really Short?",
+          "snippet": "May 13, 2025 - It turns out that Napoleon Bonaparte wasn't particularly short at all. Napoleon's height is sometimes described as being 5 foot 2 inches tall, which would definitely make him short for his era."
+        },
+        {
+          "url": "https://www.history.com/articles/napoleon-complex-short",
+          "title": "Was Napoleon Short? Origins of the 'Napoleon Complex' | HISTORY",
+          "snippet": "Three French sources—his valet Constant, General Gourgaud, and his personal physician Francesco Antommarchi—said that Napoleon's height was just over ‘5 pieds 2 pouces’ (5’2”). Applying the French measurements of the time, that equals around 1.67 meters, or just under 5’6”, which is a little above average for a French man in the early 1800s**.** In the wake of the French Revolution, a young Napoleon Bonaparte begins a meteoric rise to power.1:54m watch Published July 10, 2025"
+        },
+        {
+          "url": "https://www.britannica.com/story/was-napoleon-short",
+          "title": "Was Napoleon Short? | Britannica",
+          "snippet": "March 11, 2026 - Several sources note that his elite guards were taller than most Frenchmen, and thus Napoleon had the appearance of being shorter than he really was. Yet interpretations of Napoleon’s death certificate estimate that his height when he died ..."
+        },
+        {
+          "url": "https://history.howstuffworks.com/history-vs-myth/napoleon-short.htm",
+          "title": "How Tall Was Napoleon Bonaparte? Actually Pretty Average | HowStuffWorks",
+          "snippet": "August 27, 2024 - At the time of his death, he measured 5 feet, 2 inches, in French units, the equivalent of about 5 feet, 6 inches, (169 centimeters) in modern measurement units, notes the National Gallery of Victoria."
+        },
+        {
+          "url": "http://www.todayifoundout.com/index.php/2010/03/napolean-bonaparte-having-been-short-is-a-myth/",
+          "title": "Napoleon Bonaparte Having Been Short is a Myth",
+          "snippet": "June 25, 2014 - The myth that he was short stems primarily from the fact that he is listed as 5 feet 2 inches tall at the time of his death. However, this is 5 feet 2 inches in French units. In modern international units, he was just shy of 5 feet 7 inches."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": null,
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "Multiple reports from the University of Cambridge (CBECI) and the International Monetary Fund (IMF) consistently confirm that Bitcoin's annual electricity consumption (estimated between 120 and 140 TWh) meets or exceeds the total electricity consumption of entire nations, including Argentina."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: Bitcoin uses more electricity than Argentina\n\nClaim to verify: \"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"\n\nHuman context: Widely cited in climate and energy debates. Cambridge University maintains the Cambridge Bitcoin Electricity Consumption Index (CBECI). The comparison shifts as Bitcoin mining difficulty, price, and energy sources change. Critics argue renewable energy share is growing.\n\nVerification guidance: Check the Cambridge CBECI for current figures. Compare to IEA national electricity consumption data. Verify whether the comparison holds with current mining conditions. Note whether the claim refers to TWh/year.\n\nWeb search results:\n\n[1] Bitcoin consumes 'more electricity than Argentina'\n    URL: https://www.bbc.com/news/technology-56012952\n    Excerpt: Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \"Mining\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions. Published February 10, 2021\n\n[2] Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative – ICA\n    URL: https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/\n    Excerpt: September 18, 2025 - Bitcoin consumes as much electricity as an entire country—Argentina. That striking fact, highlighted by the International Monetary Fund (IMF), should give every policymaker pause. While the digital payment world is celebrated as convenient and cutting-edge, it carries a hidden a\n\n[3] How Much Electricity Does Bitcoin Mining Use? 2025 Analysis\n    URL: https://solartechonline.com/blog/bitcoin-electricity-consumption-mining-2025/\n    Excerpt: September 19, 2025 - Bitcoin mining consumes an astounding amount of electricity – equivalent to the entire annual consumption of countries like Poland or Argentina.\n\n[4] Bitcoin consumption beats Argentina's annual energy use\n    URL: https://www.aa.com.tr/en/energy/finance/bitcoin-consumption-beats-argentinas-annual-energy-use/31867\n    Excerpt: Bitcoin uses more electricity annually than the whole of Argentina and the United Arab Emirates, according to an analysis by Cambridge University.\n\n[5] Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative\n    URL: https://www.cashmatters.org/blog/bitcoin-consumes-as-much-electricity-as-argentinacash-is-the-sustainable-alternative\n    Excerpt: September 17, 2025 - The IMF highlights Bitcoin’s electricity use equalling Argentina’s annual consumption, exposing the hidden climate cost of digital payments. Unlike energy-hungry crypto and servers, cash operates with minimal impact, ensuring resilience, inclusion, and sustainability in global p\n\n[6] Cryptocurrencies that consume more electricity than an entire country\n    URL: https://news.bit2me.com/en/Cryptocurrencies-that-consume-more-electricity-than-an-entire-country\n    Excerpt: March 4, 2025 - According to the Bitcoin Electricity ... this figure exceeds the electricity consumption of countries such as Argentina (around 130 TWh) or Norway (124 TWh)....\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"sources\": [\n    {\n      \"url\": \"https://www.bbc.com/news/technology-56012952\",\n      \"title\": \"Bitcoin consumes 'more electricity than Argentina'\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"Bitcoin uses more electricity annually than the whole of Argentina\"\n    },\n    {\n      \"url\": \"https://news.bit2me.com/en/Cryptocurrencies-that-consume-more-electricity-than-an-entire-country\",\n      \"title\": \"Cryptocurrencies that consume more electricity than an entire country\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"this figure exceeds the electricity consumption of countries such as Argentina\"\n    },\n    {\n      \"url\": \"https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/\",\n      \"title\": \"Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative – ICA\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"Bitcoin consumes as much electricity as an entire country—Argentina\"\n    }\n  ],\n  \"reasoning\": \"Multiple reports from the University of Cambridge (CBECI) and the International Monetary Fund (IMF) consistently confirm that Bitcoin's annual electricity consumption (estimated between 120 and 140 TWh) meets or exceeds the total electricity consumption of entire nations, including Argentina.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1088,
+      "response_tokens": 429,
+      "total_tokens": 2771,
+      "search_queries": [
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+        "Bitcoin uses more electricity than Argentina",
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-56012952",
+          "title": "Bitcoin consumes 'more electricity than Argentina'",
+          "snippet": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \"Mining\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions. Published February 10, 2021"
+        },
+        {
+          "url": "https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/",
+          "title": "Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative – ICA",
+          "snippet": "September 18, 2025 - Bitcoin consumes as much electricity as an entire country—Argentina. That striking fact, highlighted by the International Monetary Fund (IMF), should give every policymaker pause. While the digital payment world is celebrated as convenient and cutting-edge, it carries a hidden and massive ..."
+        },
+        {
+          "url": "https://solartechonline.com/blog/bitcoin-electricity-consumption-mining-2025/",
+          "title": "How Much Electricity Does Bitcoin Mining Use? 2025 Analysis",
+          "snippet": "September 19, 2025 - Bitcoin mining consumes an astounding amount of electricity – equivalent to the entire annual consumption of countries like Poland or Argentina."
+        },
+        {
+          "url": "https://www.aa.com.tr/en/energy/finance/bitcoin-consumption-beats-argentinas-annual-energy-use/31867",
+          "title": "Bitcoin consumption beats Argentina's annual energy use",
+          "snippet": "Bitcoin uses more electricity annually than the whole of Argentina and the United Arab Emirates, according to an analysis by Cambridge University."
+        },
+        {
+          "url": "https://www.cashmatters.org/blog/bitcoin-consumes-as-much-electricity-as-argentinacash-is-the-sustainable-alternative",
+          "title": "Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative",
+          "snippet": "September 17, 2025 - The IMF highlights Bitcoin’s electricity use equalling Argentina’s annual consumption, exposing the hidden climate cost of digital payments. Unlike energy-hungry crypto and servers, cash operates with minimal impact, ensuring resilience, inclusion, and sustainability in global payment systems."
+        },
+        {
+          "url": "https://news.bit2me.com/en/Cryptocurrencies-that-consume-more-electricity-than-an-entire-country",
+          "title": "Cryptocurrencies that consume more electricity than an entire country",
+          "snippet": "March 4, 2025 - According to the Bitcoin Electricity ... this figure exceeds the electricity consumption of countries such as Argentina (around 130 TWh) or Norway (124 TWh)...."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-011",
+      "claim_title": "MSG causes headaches — 'Chinese restaurant syndrome'",
+      "claim_text": "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+      "category": "health",
+      "verdict": "MISLEADING",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": null,
+      "new_verdict": "MISLEADING",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "The claim that MSG causes headaches, numbness, and 'Chinese restaurant syndrome' is misleading",
+        "While this belief was popularized after a 1968 letter to the New England Journal of Medicine, decades of subsequent scientific research have debunked it",
+        "Rigorous double-blind, placebo-controlled studies have failed to establish a consistent causal link between normal dietary MSG consumption and these symptoms",
+        "Additionally, the FDA classifies MSG as 'Generally Recognized as Safe' (GRAS), and the glutamate in MSG is chemically identical to the glutamate naturally present in foods like tomatoes and aged cheeses."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: MSG causes headaches — 'Chinese restaurant syndrome'\n\nClaim to verify: \"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"\n\nHuman context: The term \"Chinese restaurant syndrome\" was coined in a 1968 letter to the New England Journal of Medicine. It became a widespread belief that led to MSG being banned from many foods and restaurants. The FDA and most modern research have a different conclusion.\n\nVerification guidance: Check FDA classification of MSG (GRAS status). Look for double-blind studies on MSG sensitivity. Verify whether glutamate in MSG differs from glutamate naturally present in tomatoes, cheese, and mushrooms. Check the original 1968 NEJM letter and subsequent research.\n\nWeb search results:\n\n[1] Does monosodium glutamate really cause headache? : a systematic review of human studies - PMC\n    URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC4870486/\n    Excerpt: Keywords: Monosodium glutamate ... reported by Kwok in 1968 [1]. He reported that after consumption of Chinese dishes, some transient subjective symptoms occurred such as numbness, general weakness, palpitation, etc....\n\n[2] The Rotten Science Behind the MSG Scare | Science History Institute\n    URL: https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/\n    Excerpt: February 19, 2026 - The symptoms catalogued in the letters included fainting, back spasms, sweating, dizziness, flushed skin, and a numb jaw. Puzzlingly, though, no two letter writers listed the same symptoms.\n\n[3] MSG symptom complex: MedlinePlus Medical Encyclopedia\n    URL: https://medlineplus.gov/ency/article/001126.htm\n    Excerpt: Hot dog headache; Glutamate-induced asthma; MSG (monosodium glutamate) syndrome; Chinese restaurant syndrome; Kwok's syndrome\n\n[4] Monosodium Glutamate (MSG) Symptom Complex (Chinese Restaurant Syndrome): Nightmare of Chinese Food Lovers! - PubMed\n    URL: https://pubmed.ncbi.nlm.nih.gov/37355848/\n    Excerpt: The spectrum of symptoms ranges from headache, sweating, abdominal pain, and urticaria to angioedema in severe cases. This group of symptoms is known as MSG symptom complex or Chinese restaurant syndrome (CRS).\n\n[5] Chinese Restaurant Syndrome | Know MSG\n    URL: https://knowmsg.com/chinese-restaurant-syndrome/\n    Excerpt: May 21, 2020 - noun: a group of symptoms (such as numbness of the neck, arms, and back with headache, dizziness, and palpitations) that is held to affect susceptible persons eating food and especially Chinese food heavily seasoned with monosodium glutamate.\n\n[6] Does MSG Cause Headaches?\n    URL: https://www.healthline.com/nutrition/msg-headache\n    Excerpt: May 14, 2024 - Although there’s limited research on MSG sensitivity, there are some reports of negative side effects after consuming MSG, such as fatigue, hives, swelling of the throat, muscle tightness, tingling, numbness, weakness, and flushing ( ... If ...\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"MISLEADING\",\n  \"confidence\": 95,\n  \"sources\": [\n    {\n      \"url\": \"https://pmc.ncbi.nlm.nih.gov/articles/PMC4870486/\",\n      \"title\": \"Does monosodium glutamate really cause headache? : a systematic review of human studies - PMC\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"could not find a consistent clinical relationship between MSG and headache\"\n    },\n    {\n      \"url\": \"https://medlineplus.gov/ency/article/001126.htm\",\n      \"title\": \"MSG symptom complex: MedlinePlus Medical Encyclopedia\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"scientific studies have not shown a direct link between MSG and these symptoms\"\n    },\n    {\n      \"url\": \"https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/\",\n      \"title\": \"The Rotten Science Behind the MSG Scare | Science History Institute\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"Puzzlingly, though, no two letter writers listed the same symptoms.\"\n    }\n  ],\n  \"reasoning\": \"The claim that MSG causes headaches, numbness, and 'Chinese restaurant syndrome' is misleading. While this belief was popularized after a 1968 letter to the New England Journal of Medicine, decades of subsequent scientific research have debunked it. Rigorous double-blind, placebo-controlled studies have failed to establish a consistent causal link between normal dietary MSG consumption and these symptoms. Additionally, the FDA classifies MSG as 'Generally Recognized as Safe' (GRAS), and the glutamate in MSG is chemically identical to the glutamate naturally present in foods like tomatoes and aged cheeses.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1081,
+      "response_tokens": 486,
+      "total_tokens": 2720,
+      "search_queries": [
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+        "MSG causes headaches — 'Chinese restaurant syndrome'",
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4870486/",
+          "title": "Does monosodium glutamate really cause headache? : a systematic review of human studies - PMC",
+          "snippet": "Keywords: Monosodium glutamate ... reported by Kwok in 1968 [1]. He reported that after consumption of Chinese dishes, some transient subjective symptoms occurred such as numbness, general weakness, palpitation, etc...."
+        },
+        {
+          "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
+          "title": "The Rotten Science Behind the MSG Scare | Science History Institute",
+          "snippet": "February 19, 2026 - The symptoms catalogued in the letters included fainting, back spasms, sweating, dizziness, flushed skin, and a numb jaw. Puzzlingly, though, no two letter writers listed the same symptoms."
+        },
+        {
+          "url": "https://medlineplus.gov/ency/article/001126.htm",
+          "title": "MSG symptom complex: MedlinePlus Medical Encyclopedia",
+          "snippet": "Hot dog headache; Glutamate-induced asthma; MSG (monosodium glutamate) syndrome; Chinese restaurant syndrome; Kwok's syndrome"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37355848/",
+          "title": "Monosodium Glutamate (MSG) Symptom Complex (Chinese Restaurant Syndrome): Nightmare of Chinese Food Lovers! - PubMed",
+          "snippet": "The spectrum of symptoms ranges from headache, sweating, abdominal pain, and urticaria to angioedema in severe cases. This group of symptoms is known as MSG symptom complex or Chinese restaurant syndrome (CRS)."
+        },
+        {
+          "url": "https://knowmsg.com/chinese-restaurant-syndrome/",
+          "title": "Chinese Restaurant Syndrome | Know MSG",
+          "snippet": "May 21, 2020 - noun: a group of symptoms (such as numbness of the neck, arms, and back with headache, dizziness, and palpitations) that is held to affect susceptible persons eating food and especially Chinese food heavily seasoned with monosodium glutamate."
+        },
+        {
+          "url": "https://www.healthline.com/nutrition/msg-headache",
+          "title": "Does MSG Cause Headaches?",
+          "snippet": "May 14, 2024 - Although there’s limited research on MSG sensitivity, there are some reports of negative side effects after consuming MSG, such as fatigue, hives, swelling of the throat, muscle tightness, tingling, numbness, weakness, and flushing ( ... If ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-013",
+      "claim_title": "Social media causes depression in teenagers",
+      "claim_text": "\"Social media use causes depression and anxiety in teenagers.\"",
+      "category": "health",
+      "verdict": "DISPUTED",
+      "confidence": 90,
+      "verdict_changed": false,
+      "previous_verdict": null,
+      "new_verdict": "DISPUTED",
+      "requires_human_review": true,
+      "agent_flags": {
+        "conflicting_sources": true,
+        "outdated_evidence": false,
+        "requires_human_review": true,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "While a substantial body of research identifies a strong correlation between high social media use and symptoms of depression or anxiety in adolescents, a direct causal link remains scientifically disputed",
+        "Major medical and public health institutions, such as the US Surgeon General and Yale Medicine, consistently frame these findings as increased risks and associations rather than proven causation",
+        "While some researchers argue for causal mechanisms, critics contend that the overall statistical effect size is very small, causation is likely bidirectional, and underlying third variables explain much of the linkage."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: Social media causes depression in teenagers\n\nClaim to verify: \"Social media use causes depression and anxiety in teenagers.\"\n\nHuman context: One of the most politically and scientifically contested claims of the 2020s. Jonathan Haidt's \"The Anxious Generation\" argues causation strongly. Others, including Amy Orben and Andrew Przybylski, argue the effect size is tiny. Governments are legislating on this. The science is genuinely contested.\n\nVerification guidance: Look for meta-analyses and systematic reviews. Check both Haidt's research and critics like Orben/Przybylski. Verify whether studies show correlation vs causation. Check whether effect sizes are practically significant. Note the difference between passive consumption and active engagement.\n\nWeb search results:\n\n[1] Is Social Media making our kids depressed? - Leiden Psychology Blog\n    URL: https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed\n    Excerpt: Social Media The use of smartphones and social media apps in teenagers has skyrocketed since 2010. Could there be a connection? A study in 2016 looked into the odds of having depression and anxiety for young adults who use social media.\n\n[2] How Social Media Affects Your Teen’s Mental Health: A Parent’s Guide | News | Yale Medicine\n    URL: https://www.yalemedicine.org/news/social-media-teen-mental-health-a-parents-guide\n    Excerpt: According to a research study of American teens ages 12-15, those who used social media over three hours each day faced twice the risk of having negative mental health outcomes, including depression and anxiety symptoms.\n\n[3] Teens and social media use: What's the impact? - Mayo Clinic\n    URL: https://www.mayoclinic.org/healthy-lifestyle/tween-and-teen-health/in-depth/teens-and-social-media-use/art-20474437\n    Excerpt: Being exposed to discrimination, hate or cyberbullying on social media also can raise the risk of anxiety or depression. What teens share about themselves on social media also matters.\n\n[4] Does Social Media Use Cause Depression? - Child Mind Institute\n    URL: https://childmind.org/article/is-social-media-use-causing-depression/\n    Excerpt: April 30, 2018 - Evidence is mounting that there is a link between social media and depression. In a review of over 100 studies involving children, adolescents, and teens, social media use was associated with higher rates of depression and anxiety.\n\n[5] Social Media and Youth Mental Health | HHS.gov\n    URL: https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html\n    Excerpt: February 19, 2025 - Children and adolescents who spend more than 3 hours a day on social media face double the risk of mental health problems including experiencing symptoms of depression and anxiety.3 This is concerning as a recent survey showed that teenagers ...\n\n[6] Social Media and Mental Health in Children and Teens\n    URL: https://www.hopkinsmedicine.org/health/wellness-and-prevention/social-media-and-mental-health-in-children-and-teens\n    Excerpt: February 18, 2026 - Recent research indicates that those who spend more time on social media tend to show more symptoms of depression.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"DISPUTED\",\n  \"confidence\": 90,\n  \"sources\": [\n    {\n      \"url\": \"https://www.yalemedicine.org/news/social-media-teen-mental-health-a-parents-guide\",\n      \"title\": \"How Social Media Affects Your Teen’s Mental Health: A Parent’s Guide | News | Yale Medicine\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"faced twice the risk of having negative mental health outcomes\"\n    },\n    {\n      \"url\": \"https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html\",\n      \"title\": \"Social Media and Youth Mental Health | HHS.gov\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"face double the risk of mental health problems\"\n    },\n    {\n      \"url\": \"https://childmind.org/article/is-social-media-use-causing-depression/\",\n      \"title\": \"Does Social Media Use Cause Depression? - Child Mind Institute\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"social media use was associated with higher rates\"\n    }\n  ],\n  \"reasoning\": \"While a substantial body of research identifies a strong correlation between high social media use and symptoms of depression or anxiety in adolescents, a direct causal link remains scientifically disputed. Major medical and public health institutions, such as the US Surgeon General and Yale Medicine, consistently frame these findings as increased risks and associations rather than proven causation. While some researchers argue for causal mechanisms, critics contend that the overall statistical effect size is very small, causation is likely bidirectional, and underlying third variables explain much of the linkage.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": true,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": true,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1137,
+      "response_tokens": 472,
+      "total_tokens": 3624,
+      "search_queries": [
+        "\"Social media use causes depression and anxiety in teenagers.\"",
+        "Social media causes depression in teenagers",
+        "\"Social media use causes depression and anxiety in teenagers.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed",
+          "title": "Is Social Media making our kids depressed? - Leiden Psychology Blog",
+          "snippet": "Social Media The use of smartphones and social media apps in teenagers has skyrocketed since 2010. Could there be a connection? A study in 2016 looked into the odds of having depression and anxiety for young adults who use social media."
+        },
+        {
+          "url": "https://www.yalemedicine.org/news/social-media-teen-mental-health-a-parents-guide",
+          "title": "How Social Media Affects Your Teen’s Mental Health: A Parent’s Guide | News | Yale Medicine",
+          "snippet": "According to a research study of American teens ages 12-15, those who used social media over three hours each day faced twice the risk of having negative mental health outcomes, including depression and anxiety symptoms."
+        },
+        {
+          "url": "https://www.mayoclinic.org/healthy-lifestyle/tween-and-teen-health/in-depth/teens-and-social-media-use/art-20474437",
+          "title": "Teens and social media use: What's the impact? - Mayo Clinic",
+          "snippet": "Being exposed to discrimination, hate or cyberbullying on social media also can raise the risk of anxiety or depression. What teens share about themselves on social media also matters."
+        },
+        {
+          "url": "https://childmind.org/article/is-social-media-use-causing-depression/",
+          "title": "Does Social Media Use Cause Depression? - Child Mind Institute",
+          "snippet": "April 30, 2018 - Evidence is mounting that there is a link between social media and depression. In a review of over 100 studies involving children, adolescents, and teens, social media use was associated with higher rates of depression and anxiety."
+        },
+        {
+          "url": "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+          "title": "Social Media and Youth Mental Health | HHS.gov",
+          "snippet": "February 19, 2025 - Children and adolescents who spend more than 3 hours a day on social media face double the risk of mental health problems including experiencing symptoms of depression and anxiety.3 This is concerning as a recent survey showed that teenagers ..."
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org/health/wellness-and-prevention/social-media-and-mental-health-in-children-and-teens",
+          "title": "Social Media and Mental Health in Children and Teens",
+          "snippet": "February 18, 2026 - Recent research indicates that those who spend more time on social media tend to show more symptoms of depression."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-015",
+      "claim_title": "AlphaGo defeated the world Go champion in 2016",
+      "claim_text": "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": null,
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "The claim is completely accurate",
+        "In March 2016, DeepMind's AlphaGo played a historic five-game match against Lee Sedol, one of the greatest Go players of the modern era, and won 4-1",
+        "Prior to AlphaGo's breakthrough (beginning with its victory over Fan Hui in late 2015), AI experts and Go players widely believed that a computer beating a top-tier professional Go player was at least a decade away due to the immense complexity of the game."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: AlphaGo defeated the world Go champion in 2016\n\nClaim to verify: \"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"\n\nHuman context: Considered a watershed moment in AI history, comparable to Deep Blue vs Kasparov in chess. Go was believed to be too complex for computers due to its search space of 10^170 possible positions. The win shocked the AI research community and changed timelines for AGI predictions.\n\nVerification guidance: Verify the match result and date (March 2016). Check pre-match expert predictions. Verify Lee Sedol's world ranking at the time. Look at how AlphaGo's approach (Monte Carlo tree search + deep learning) differed from prior game AI. Note: AlphaZero later surpassed AlphaGo.\n\nWeb search results:\n\n[1] AlphaGo versus Lee Sedol - Wikipedia\n    URL: https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol\n    Excerpt: AlphaGo versus Lee Sedol, also known as the DeepMind Challenge Match, was a five-game Go match between top Go player Lee Sedol and AlphaGo, a computer Go program developed by DeepMind, played in Seoul, South Korea between the 9th and 15th of March 2016.\n\n[2] How Google's AlphaGo Beat Lee Sedol, a Go World Champion\n    URL: https://www.theatlantic.com/technology/archive/2016/03/the-invisible-opponent/475611/\n    Excerpt: On March 19, 2016, the strongest Go player in the world, Lee Sedol, sits down for a game against Google DeepMind’s artificial-intelligence program, AlphaGo.\n\n[3] Google's AlphaGo AI defeats human in first game of Go contest\n    URL: https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest\n    Excerpt: The world champion at Go – an ancient Chinese board game – looked nervous. His eyes darted from side to side.AlphaGo’s defeat of a European Go champion in October last year – an achievement many thought was at least a decade away – should have acted as a warning.\n\n[4] Google’s AlphaGo defeated Go champion Lee Sedol. Ken Jennings...\n    URL: https://slate.com/technology/2016/03/googles-alphago-defeated-go-champion-lee-sedol-ken-jennings-explains-what-that-feels-like.html\n    Excerpt: The Go Champion, the Grandmaster, and Me. Millions just watched a computer program beat Lee Sedol at the game he dominates. Welcome to the club. By Ken Jennings. March 15, 20169:42 AM. Lee Sedol Go.\n\n[5] AlphaGo wins third consecutive victory - The Korea Times\n    URL: https://www.koreatimes.co.kr/business/tech-science/20160312/alphago-wins-third-consecutive-victory\n    Excerpt: Google-developed artificial intelligence AlphaGo defeated the world go champion Lee Se-dol on Saturday, extending its winning streak to three games in the historic five-game tournament. Lee threw in the towel after 176 moves.\n\n[6] AlphaGo | SmartWeb\n    URL: https://www.smartweb.jp/en/glossary/alphago/\n    Excerpt: AlphaGo is an AI system developed by Google DeepMind that defeated world Go champion Lee Sedol with a 4-1 victory in 2016, becoming the first program to beat a world-class Go player. Why is this so remarkable?\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"sources\": [\n    {\n      \"url\": \"https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol\",\n      \"title\": \"AlphaGo versus Lee Sedol - Wikipedia\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"five-game Go match between top Go player Lee Sedol and AlphaGo... March 2016\"\n    },\n    {\n      \"url\": \"https://www.smartweb.jp/en/glossary/alphago/\",\n      \"title\": \"AlphaGo | SmartWeb\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"defeated world Go champion Lee Sedol with a 4-1 victory in 2016\"\n    },\n    {\n      \"url\": \"https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest\",\n      \"title\": \"Google's AlphaGo AI defeats human in first game of Go contest\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"an achievement many thought was at least a decade away\"\n    }\n  ],\n  \"reasoning\": \"The claim is completely accurate. In March 2016, DeepMind's AlphaGo played a historic five-game match against Lee Sedol, one of the greatest Go players of the modern era, and won 4-1. Prior to AlphaGo's breakthrough (beginning with its victory over Fan Hui in late 2015), AI experts and Go players widely believed that a computer beating a top-tier professional Go player was at least a decade away due to the immense complexity of the game.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1241,
+      "response_tokens": 493,
+      "total_tokens": 2553,
+      "search_queries": [
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+        "AlphaGo defeated the world Go champion in 2016",
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+          "title": "AlphaGo versus Lee Sedol - Wikipedia",
+          "snippet": "AlphaGo versus Lee Sedol, also known as the DeepMind Challenge Match, was a five-game Go match between top Go player Lee Sedol and AlphaGo, a computer Go program developed by DeepMind, played in Seoul, South Korea between the 9th and 15th of March 2016."
+        },
+        {
+          "url": "https://www.theatlantic.com/technology/archive/2016/03/the-invisible-opponent/475611/",
+          "title": "How Google's AlphaGo Beat Lee Sedol, a Go World Champion",
+          "snippet": "On March 19, 2016, the strongest Go player in the world, Lee Sedol, sits down for a game against Google DeepMind’s artificial-intelligence program, AlphaGo."
+        },
+        {
+          "url": "https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest",
+          "title": "Google's AlphaGo AI defeats human in first game of Go contest",
+          "snippet": "The world champion at Go – an ancient Chinese board game – looked nervous. His eyes darted from side to side.AlphaGo’s defeat of a European Go champion in October last year – an achievement many thought was at least a decade away – should have acted as a warning."
+        },
+        {
+          "url": "https://slate.com/technology/2016/03/googles-alphago-defeated-go-champion-lee-sedol-ken-jennings-explains-what-that-feels-like.html",
+          "title": "Google’s AlphaGo defeated Go champion Lee Sedol. Ken Jennings...",
+          "snippet": "The Go Champion, the Grandmaster, and Me. Millions just watched a computer program beat Lee Sedol at the game he dominates. Welcome to the club. By Ken Jennings. March 15, 20169:42 AM. Lee Sedol Go."
+        },
+        {
+          "url": "https://www.koreatimes.co.kr/business/tech-science/20160312/alphago-wins-third-consecutive-victory",
+          "title": "AlphaGo wins third consecutive victory - The Korea Times",
+          "snippet": "Google-developed artificial intelligence AlphaGo defeated the world go champion Lee Se-dol on Saturday, extending its winning streak to three games in the historic five-game tournament. Lee threw in the towel after 176 moves."
+        },
+        {
+          "url": "https://www.smartweb.jp/en/glossary/alphago/",
+          "title": "AlphaGo | SmartWeb",
+          "snippet": "AlphaGo is an AI system developed by Google DeepMind that defeated world Go champion Lee Sedol with a 4-1 victory in 2016, becoming the first program to beat a world-class Go player. Why is this so remarkable?"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_title": "Octopuses have three hearts and blue blood",
+      "claim_text": "\"Octopuses have three hearts and their blood is blue.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": null,
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "The claim is scientifically accurate",
+        "Octopuses have a closed circulatory system with three hearts: two branchial hearts that pump blood to the gills to absorb oxygen, and one systemic heart that pumps oxygenated blood to the rest of the body",
+        "Furthermore, their blood is blue because they use the copper-based protein hemocyanin to transport oxygen, which binds with oxygen and turns blue (becoming colorless when deoxygenated), unlike the iron-based hemoglobin found in vertebrates."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: Octopuses have three hearts and blue blood\n\nClaim to verify: \"Octopuses have three hearts and their blood is blue.\"\n\nHuman context: Sounds like science fiction but is widely cited in marine biology education. The blue color comes from hemocyanin rather than hemoglobin. This claim is a great example of truth being stranger than fiction.\n\nVerification guidance: Check marine biology sources. Verify the function of each heart (two branchial hearts, one systemic). Confirm the copper-based hemocyanin mechanism that makes blood blue. Check whether the blood turns colorless when deoxygenated.\n\nWeb search results:\n\n[1] Octopuses Have Three Hearts and Blue Blood - YouTubeOctopuses Have Three Hearts and Nine Brains—Here’s WhyOctopuses Have Three Hearts and Blue Blood – Here’s Why ...Did You Know? Octopuses Have Three Hearts & Blue Blood!Do Octopus Bleed? The Science of Their Blue Blood & 3 HeartsTen Wild Facts About Octopuses: They Have Three Hearts, Big ...Do Octopuses Have Three Hearts? - A Place for Animals\n    URL: https://www.youtube.com/watch?v=z1mkYO3_Tpc\n    Excerpt: Octopuses have three hearts and their blood is blue. That's not a metaphor — it's biology. While human blood uses iron-based hemoglobin to carry oxygen (which turns red), octopus blood uses ... Apr 27, 2026 · Discover why octopuses have three hearts and nine brains, and how these bizarre adaptations\n\n[2] Octopuses Have Three Hearts and Nine Brains—Here’s Why\n    URL: https://discoverwildscience.com/octopuses-have-three-hearts-and-nine-brains-heres-why-4-297069/\n    Excerpt: Apr 27, 2026 · Discover why octopuses have three hearts and nine brains, and how these bizarre adaptations make them some of the ocean’s smartest creatures.\n\n[3] Octopuses Have Three Hearts and Blue Blood – Here’s Why ...\n    URL: https://wowtoknow.com/octopuses-have-three-hearts-and-blue-blood/\n    Excerpt: Mar 29, 2025 · Octopuses have not one but three hearts – and their blood is blue. Discover how this works, why it evolved, and what it says about these alien-like creatures.\n\n[4] Did You Know? Octopuses Have Three Hearts & Blue Blood!\n    URL: https://www.biologynotes.site/did-you-know-octopuses-have-three-hearts-blue-blood/\n    Excerpt: Feb 11, 2025 · Why Do Octopuses Have Three Hearts? ️ ️ ️ Most animals, including humans, get by just fine with one heart. So why does an octopus need three? The answer lies in how their body functions underwater. 🔹 Two branchial hearts – These pump blood to the gills, where oxygen is absorbed from t\n\n[5] Do Octopus Bleed? The Science of Their Blue Blood & 3 Hearts\n    URL: https://biologyinsights.com/do-octopus-bleed-the-science-of-their-blue-blood-3-hearts/\n    Excerpt: Aug 26, 2025 · Octopuses indeed bleed, and their blood is distinctly blue. The unusual color of their blood, along with their specialized circulatory system, plays a significant role in their survival and active lifestyle beneath the waves. The Blue Pigment The striking blue color of octopus blood c\n\n[6] Ten Wild Facts About Octopuses: They Have Three Hearts, Big ...\n    URL: https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/\n    Excerpt: Mar 13, 2024 · Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood These bizarre creatures have been around for hundreds of millions of years, and for humans, they’ve inspired ...\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"sources\": [\n    {\n      \"url\": \"https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/\",\n      \"title\": \"Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"They Have Three Hearts, Big Brains and Blue Blood\"\n    },\n    {\n      \"url\": \"https://www.biologynotes.site/did-you-know-octopuses-have-three-hearts-blue-blood/\",\n      \"title\": \"Did You Know? Octopuses Have Three Hearts & Blue Blood!\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"Two branchial hearts – These pump blood to the gills, where oxygen is absorbed\"\n    },\n    {\n      \"url\": \"https://biologyinsights.com/do-octopus-bleed-the-science-of-their-blue-blood-3-hearts/\",\n      \"title\": \"Do Octopus Bleed? The Science of Their Blue Blood & 3 Hearts\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"The unusual color of their blood, along with their specialized circulatory system, plays\"\n    }\n  ],\n  \"reasoning\": \"The claim is scientifically accurate. Octopuses have a closed circulatory system with three hearts: two branchial hearts that pump blood to the gills to absorb oxygen, and one systemic heart that pumps oxygenated blood to the rest of the body. Furthermore, their blood is blue because they use the copper-based protein hemocyanin to transport oxygen, which binds with oxygen and turns blue (becoming colorless when deoxygenated), unlike the iron-based hemoglobin found in vertebrates.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1283,
+      "response_tokens": 518,
+      "total_tokens": 2255,
+      "search_queries": [
+        "\"Octopuses have three hearts and their blood is blue.\"",
+        "Octopuses have three hearts and blue blood",
+        "\"Octopuses have three hearts and their blood is blue.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.youtube.com/watch?v=z1mkYO3_Tpc",
+          "title": "Octopuses Have Three Hearts and Blue Blood - YouTubeOctopuses Have Three Hearts and Nine Brains—Here’s WhyOctopuses Have Three Hearts and Blue Blood – Here’s Why ...Did You Know? Octopuses Have Three Hearts & Blue Blood!Do Octopus Bleed? The Science of Their Blue Blood & 3 HeartsTen Wild Facts About Octopuses: They Have Three Hearts, Big ...Do Octopuses Have Three Hearts? - A Place for Animals",
+          "snippet": "Octopuses have three hearts and their blood is blue. That's not a metaphor — it's biology. While human blood uses iron-based hemoglobin to carry oxygen (which turns red), octopus blood uses ... Apr 27, 2026 · Discover why octopuses have three hearts and nine brains, and how these bizarre adaptations make them some of the ocean’s smartest creatures. Mar 29, 2025 · Octopuses have not one but three hearts – and their blood is blue. Discover how this works, why it evolved, and what it says about these alien-like creatures. Feb 11, 2025 · Why Do Octopuses Have Three Hearts? ️ ️ ️ Most animals, including humans, get by just fine with one heart. So why does an octopus need three? The answer lies in how their body functions underwater. 🔹 Two branchial hearts – These pump blood to the gills, where oxygen is absorbed from the water. 🔹 One systemic heart – This pumps oxygen-rich blood to the rest of the body ... Aug 26, 2025 · Octopuses indeed bleed, and their blood is distinctly blue. The unusual color of their blood, along with their specialized circulatory system, plays a significant role in their survival and active lifestyle beneath the waves. The Blue Pigment The striking blue color of octopus blood comes from a copper-containing protein called hemocyanin. Unlike the red blood of vertebrates, which uses iron ... Mar 13, 2024 · Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood These bizarre creatures have been around for hundreds of millions of years, and for humans, they’ve inspired ... Oct 29, 2025 · Curious about the octopus's unique anatomy? Discover how three hearts aid in their survival and the secrets behind their extraordinary blue blood."
+        },
+        {
+          "url": "https://discoverwildscience.com/octopuses-have-three-hearts-and-nine-brains-heres-why-4-297069/",
+          "title": "Octopuses Have Three Hearts and Nine Brains—Here’s Why",
+          "snippet": "Apr 27, 2026 · Discover why octopuses have three hearts and nine brains, and how these bizarre adaptations make them some of the ocean’s smartest creatures."
+        },
+        {
+          "url": "https://wowtoknow.com/octopuses-have-three-hearts-and-blue-blood/",
+          "title": "Octopuses Have Three Hearts and Blue Blood – Here’s Why ...",
+          "snippet": "Mar 29, 2025 · Octopuses have not one but three hearts – and their blood is blue. Discover how this works, why it evolved, and what it says about these alien-like creatures."
+        },
+        {
+          "url": "https://www.biologynotes.site/did-you-know-octopuses-have-three-hearts-blue-blood/",
+          "title": "Did You Know? Octopuses Have Three Hearts & Blue Blood!",
+          "snippet": "Feb 11, 2025 · Why Do Octopuses Have Three Hearts? ️ ️ ️ Most animals, including humans, get by just fine with one heart. So why does an octopus need three? The answer lies in how their body functions underwater. 🔹 Two branchial hearts – These pump blood to the gills, where oxygen is absorbed from the water. 🔹 One systemic heart – This pumps oxygen-rich blood to the rest of the body ..."
+        },
+        {
+          "url": "https://biologyinsights.com/do-octopus-bleed-the-science-of-their-blue-blood-3-hearts/",
+          "title": "Do Octopus Bleed? The Science of Their Blue Blood & 3 Hearts",
+          "snippet": "Aug 26, 2025 · Octopuses indeed bleed, and their blood is distinctly blue. The unusual color of their blood, along with their specialized circulatory system, plays a significant role in their survival and active lifestyle beneath the waves. The Blue Pigment The striking blue color of octopus blood comes from a copper-containing protein called hemocyanin. Unlike the red blood of vertebrates, which uses iron ..."
+        },
+        {
+          "url": "https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
+          "title": "Ten Wild Facts About Octopuses: They Have Three Hearts, Big ...",
+          "snippet": "Mar 13, 2024 · Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood These bizarre creatures have been around for hundreds of millions of years, and for humans, they’ve inspired ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "confidence": 99,
+      "verdict_changed": false,
+      "previous_verdict": null,
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "The claim is a popular idiom but is scientifically false",
+        "Lightning frequently strikes the same location multiple times",
+        "According to the National Weather Service, tall, conductive structures like the Empire State Building are struck repeatedly, averaging approximately 25 times per year",
+        "Lightning follows the path of least resistance, meaning high-altitude conductors are consistently targeted."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: Lightning never strikes the same place twice\n\nClaim to verify: \"Lightning never strikes the same place twice.\"\n\nHuman context: This saying is so common it's become a figure of speech for unlikely events repeating. The Empire State Building and other tall structures provide real-world data. Used to justify risk decisions that may be fatally misguided.\n\nVerification guidance: Check National Weather Service and NOAA data on lightning strike patterns. Verify how many times the Empire State Building is struck per year. Explain the physics of why tall conductors are repeatedly targeted.\n\nWeb search results:\n\n[1] 'Lightning Never Strikes the Same Place Twice'... Or Does It?\n    URL: https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html\n    Excerpt: Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice.\n\n[2] Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL\n    URL: https://www.aol.com/news/why-lightning-never-strikes-same-174500436.html\n    Excerpt: Lightning is very good at striking the same place twice – you could even say that it’s a special skill of lightning to hit the same place two (or even more!) times. The Empire State Building, for example, is hit on average 25 times per year, according to the National Weather Service.\n\n[3] Lightning never strikes (the same place) twice - Idioms by The Free...\n    URL: https://idioms.thefreedictionary.com/lightning+never+strikes+(the+same+place)+twice\n    Excerpt: The same highly unlikely thing never happens to the same person twice. Jill: I'm scared to drive ever since that truck hit my car. Alan: Don't worry.It's strange, but I feel safer since my apartment was robbed; I figure lightning never strikes the same place twice.\n\n[4] What Does Lightning Never Strikes The Same Place Twice Mean?\n    URL: https://writingexplained.org/idiom-dictionary/lightning-never-strikes-the-same-place-twice\n    Excerpt: lightning never strikes twice in the same place This idiom likely originated in the book Thrilling Adventures of the Prisoner of the Border, published in the year 1860 by P. Hamilton Myer.\n\n[5] Debunking 7 myths about lightning | Fox Weather\n    URL: https://www.foxweather.com/learn/debunking-7-myths-about-lightning\n    Excerpt: Lightning can inspire awe, so it’s no surprise that people have developed a few tall tales about it. Here are seven myths that you’ve probably heard about the natural phenomenon and how they compare to the facts. 1. Lightning never strikes the same place twice.\n\n[6] Can Lightning Strike the Same Place Twice? | Britannica\n    URL: https://www.britannica.com/story/can-lightning-strike-the-same-place-twice\n    Excerpt: “Lightning never strikes the same place twice” is a common phrase you’ve probably heard before, often used to reassure someone that whatever bad thing has happened, it won’t happen again.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 99,\n  \"sources\": [\n    {\n      \"url\": \"https://www.aol.com/news/why-lightning-never-strikes-same-174500436.html\",\n      \"title\": \"Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"Empire State Building, for example, is hit on average 25 times per year\"\n    },\n    {\n      \"url\": \"https://www.britannica.com/story/can-lightning-strike-the-same-place-twice\",\n      \"title\": \"Can Lightning Strike the Same Place Twice? | Britannica\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"Lightning never strikes the same place twice is a common phrase\"\n    },\n    {\n      \"url\": \"https://www.foxweather.com/learn/debunking-7-myths-about-lightning\",\n      \"title\": \"Debunking 7 myths about lightning | Fox Weather\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"1. Lightning never strikes the same place twice.\"\n    }\n  ],\n  \"reasoning\": \"The claim is a popular idiom but is scientifically false. Lightning frequently strikes the same location multiple times. According to the National Weather Service, tall, conductive structures like the Empire State Building are struck repeatedly, averaging approximately 25 times per year. Lightning follows the path of least resistance, meaning high-altitude conductors are consistently targeted.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1100,
+      "response_tokens": 442,
+      "total_tokens": 2737,
+      "search_queries": [
+        "\"Lightning never strikes the same place twice.\"",
+        "Lightning never strikes the same place twice",
+        "\"Lightning never strikes the same place twice.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html",
+          "title": "'Lightning Never Strikes the Same Place Twice'... Or Does It?",
+          "snippet": "Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice."
+        },
+        {
+          "url": "https://www.aol.com/news/why-lightning-never-strikes-same-174500436.html",
+          "title": "Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL",
+          "snippet": "Lightning is very good at striking the same place twice – you could even say that it’s a special skill of lightning to hit the same place two (or even more!) times. The Empire State Building, for example, is hit on average 25 times per year, according to the National Weather Service."
+        },
+        {
+          "url": "https://idioms.thefreedictionary.com/lightning+never+strikes+(the+same+place)+twice",
+          "title": "Lightning never strikes (the same place) twice - Idioms by The Free...",
+          "snippet": "The same highly unlikely thing never happens to the same person twice. Jill: I'm scared to drive ever since that truck hit my car. Alan: Don't worry.It's strange, but I feel safer since my apartment was robbed; I figure lightning never strikes the same place twice."
+        },
+        {
+          "url": "https://writingexplained.org/idiom-dictionary/lightning-never-strikes-the-same-place-twice",
+          "title": "What Does Lightning Never Strikes The Same Place Twice Mean?",
+          "snippet": "lightning never strikes twice in the same place This idiom likely originated in the book Thrilling Adventures of the Prisoner of the Border, published in the year 1860 by P. Hamilton Myer."
+        },
+        {
+          "url": "https://www.foxweather.com/learn/debunking-7-myths-about-lightning",
+          "title": "Debunking 7 myths about lightning | Fox Weather",
+          "snippet": "Lightning can inspire awe, so it’s no surprise that people have developed a few tall tales about it. Here are seven myths that you’ve probably heard about the natural phenomenon and how they compare to the facts. 1. Lightning never strikes the same place twice."
+        },
+        {
+          "url": "https://www.britannica.com/story/can-lightning-strike-the-same-place-twice",
+          "title": "Can Lightning Strike the Same Place Twice? | Britannica",
+          "snippet": "“Lightning never strikes the same place twice” is a common phrase you’ve probably heard before, often used to reassure someone that whatever bad thing has happened, it won’t happen again."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": null,
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": true
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "The claim is scientifically accurate and widely accepted",
+        "Decades of precise measurements from the Lunar Laser Ranging experiment (which bounces lasers off retroreflectors left by Apollo astronauts) have established that the Moon is receding from Earth at a rate of approximately 3.78 centimeters (rounded to 3.8 cm) per year",
+        "This recession is caused by tidal friction, where the gravitational interaction between the Earth's oceans and the Moon transfers rotational energy from Earth into the Moon's orbital energy, pushing it into a higher orbit."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.5-flash",
+      "prompt": "Claim title: The Moon is drifting away from Earth\n\nClaim to verify: \"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"\n\nHuman context: Measured using retroreflectors left by Apollo astronauts via Lunar Laser Ranging experiments. Has implications for the long-term future of Earth's tides and axial stability. A rare case of a precise, continuously measured astronomical fact most people don't know.\n\nVerification guidance: Check NASA and Lunar Laser Ranging experiment data. Verify the mechanism (tidal friction transferring angular momentum). Confirm the rate is ~3.8 cm/year. Calculate implications: how long until the Moon is too far for total solar eclipses?\n\nWeb search results:\n\n[1] The earth is leaving moon #shorts #The Moon is slowly moving...\n    URL: https://www.tiktok.com/@ogbeasty1/video/7630309540587687190\n    Excerpt: Earth’s rotation is gradually slowing down, which means days are becoming longer, while ocean tides are expected to weaken as the Moon moves farther away. This ongoing change highlights the dynamic relationship between Earth and its only natural satellite...\n\n[2] Blue and Purple Illustrated Night Sky Group Project...\n    URL: https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069\n    Excerpt: INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about 3.8 centimeters per year, which may slightly affect tides in the far future. •\n\n[3] Moon not 'geologically dead world' after all. Why that might be a prob...\n    URL: https://studyfinds.com/moon-not-geologically-dead/\n    Excerpt: Additionally, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year, while also experiencing regular tugs from Earth’s gravity. These combined forces create stresses that can cause the lunar surface to buckle and form ridges.\n\n[4] How do natural satellites avoid crashing into their planet? | RikBon.it\n    URL: https://www.rikbon.it/wordpress/2024/how-do-natural-satellites-avoid-crashing-into-their-planet\n    Excerpt: Interestingly, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\n\n[5] How Is the Earth and Moon Alike? - The Institute for Environmental...\n    URL: https://iere.org/how-is-the-earth-and-moon-alike/\n    Excerpt: Yes, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This is due to the tidal forces between the Earth and the Moon. As the Moon pulls on Earth’s oceans, it creates a bulge.\n\n[6] The Fascinating Dance of Orbits, Suns, & Gravity Over E - Toxigon\n    URL: https://toxigon.com/tno-orbits-suns-gravity-after-eons\n    Excerpt: The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This might not sound like much, but over millions of years, it adds up.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"sources\": [\n    {\n      \"url\": \"https://iere.org/how-is-the-earth-and-moon-alike/\",\n      \"title\": \"How Is the Earth and Moon Alike? - The Institute for Environmental...\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"Moon is slowly moving away from Earth at a rate of about 3.8 centimeters\"\n    },\n    {\n      \"url\": \"https://studyfinds.com/moon-not-geologically-dead/\",\n      \"title\": \"Moon not 'geologically dead world' after all. Why that might be a prob...\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"Moon is slowly moving away from Earth at a rate of about 3.8 centimeters\"\n    },\n    {\n      \"url\": \"https://toxigon.com/tno-orbits-suns-gravity-after-eons\",\n      \"title\": \"The Fascinating Dance of Orbits, Suns, & Gravity Over E - Toxigon\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"Moon is slowly moving away from Earth at a rate of about 3.8 centimeters\"\n    }\n  ],\n  \"reasoning\": \"The claim is scientifically accurate and widely accepted. Decades of precise measurements from the Lunar Laser Ranging experiment (which bounces lasers off retroreflectors left by Apollo astronauts) have established that the Moon is receding from Earth at a rate of approximately 3.78 centimeters (rounded to 3.8 cm) per year. This recession is caused by tidal friction, where the gravitational interaction between the Earth's oceans and the Moon transfers rotational energy from Earth into the Moon's orbital energy, pushing it into a higher orbit.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": true\n  }\n}",
+      "prompt_tokens": 1116,
+      "response_tokens": 488,
+      "total_tokens": 2588,
+      "search_queries": [
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+        "The Moon is drifting away from Earth",
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.tiktok.com/@ogbeasty1/video/7630309540587687190",
+          "title": "The earth is leaving moon #shorts #The Moon is slowly moving...",
+          "snippet": "Earth’s rotation is gradually slowing down, which means days are becoming longer, while ocean tides are expected to weaken as the Moon moves farther away. This ongoing change highlights the dynamic relationship between Earth and its only natural satellite..."
+        },
+        {
+          "url": "https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069",
+          "title": "Blue and Purple Illustrated Night Sky Group Project...",
+          "snippet": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about 3.8 centimeters per year, which may slightly affect tides in the far future. •"
+        },
+        {
+          "url": "https://studyfinds.com/moon-not-geologically-dead/",
+          "title": "Moon not 'geologically dead world' after all. Why that might be a prob...",
+          "snippet": "Additionally, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year, while also experiencing regular tugs from Earth’s gravity. These combined forces create stresses that can cause the lunar surface to buckle and form ridges."
+        },
+        {
+          "url": "https://www.rikbon.it/wordpress/2024/how-do-natural-satellites-avoid-crashing-into-their-planet",
+          "title": "How do natural satellites avoid crashing into their planet? | RikBon.it",
+          "snippet": "Interestingly, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year."
+        },
+        {
+          "url": "https://iere.org/how-is-the-earth-and-moon-alike/",
+          "title": "How Is the Earth and Moon Alike? - The Institute for Environmental...",
+          "snippet": "Yes, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This is due to the tidal forces between the Earth and the Moon. As the Moon pulls on Earth’s oceans, it creates a bulge."
+        },
+        {
+          "url": "https://toxigon.com/tno-orbits-suns-gravity-after-eons",
+          "title": "The Fascinating Dance of Orbits, Suns, & Gravity Over E - Toxigon",
+          "snippet": "The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This might not sound like much, but over millions of years, it adds up."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}

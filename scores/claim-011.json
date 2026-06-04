@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "claim_id": "claim-011",
+  "verdict": "MISLEADING",
+  "confidence": 95,
+  "last_checked_at": "2026-06-04T01:04:24Z",
+  "last_changed_at": "2026-06-04T01:04:24Z",
+  "run_id": "run-2026-06-04T010331Z",
+  "sources": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4870486/",
+      "title": "Does monosodium glutamate really cause headache? : a systematic review of human studies - PMC",
+      "domain": "pmc.ncbi.nlm.nih.gov",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "could not find a consistent clinical relationship between MSG and headache"
+    },
+    {
+      "url": "https://medlineplus.gov/ency/article/001126.htm",
+      "title": "MSG symptom complex: MedlinePlus Medical Encyclopedia",
+      "domain": "medlineplus.gov",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "scientific studies have not shown a direct link between MSG and these symptoms"
+    },
+    {
+      "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
+      "title": "The Rotten Science Behind the MSG Scare | Science History Institute",
+      "domain": "sciencehistory.org",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "Puzzlingly, though, no two letter writers listed the same symptoms."
+    }
+  ],
+  "reasoning": "The claim that MSG causes headaches, numbness, and 'Chinese restaurant syndrome' is misleading. While this belief was popularized after a 1968 letter to the New England Journal of Medicine, decades of subsequent scientific research have debunked it. Rigorous double-blind, placebo-controlled studies have failed to establish a consistent causal link between normal dietary MSG consumption and these symptoms. Additionally, the FDA classifies MSG as 'Generally Recognized as Safe' (GRAS), and the glutamate in MSG is chemically identical to the glutamate naturally present in foods like tomatoes and aged cheeses.",
+  "verdict_history": [],
+  "agent_flags": {
+    "conflicting_sources": false,
+    "outdated_evidence": false,
+    "requires_human_review": false,
+    "low_source_quality": false
+  }
+}

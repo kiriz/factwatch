@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "claim_id": "claim-008",
+  "verdict": "TRUE",
+  "confidence": 100,
+  "last_checked_at": "2026-06-04T01:04:56Z",
+  "last_changed_at": "2026-06-04T01:04:56Z",
+  "run_id": "run-2026-06-04T010331Z",
+  "sources": [
+    {
+      "url": "https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
+      "title": "Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood",
+      "domain": "smithsonianmag.com",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "They Have Three Hearts, Big Brains and Blue Blood"
+    },
+    {
+      "url": "https://www.biologynotes.site/did-you-know-octopuses-have-three-hearts-blue-blood/",
+      "title": "Did You Know? Octopuses Have Three Hearts & Blue Blood!",
+      "domain": "biologynotes.site",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "Two branchial hearts – These pump blood to the gills, where oxygen is absorbed"
+    },
+    {
+      "url": "https://biologyinsights.com/do-octopus-bleed-the-science-of-their-blue-blood-3-hearts/",
+      "title": "Do Octopus Bleed? The Science of Their Blue Blood & 3 Hearts",
+      "domain": "biologyinsights.com",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "The unusual color of their blood, along with their specialized circulatory system, plays"
+    }
+  ],
+  "reasoning": "The claim is scientifically accurate. Octopuses have a closed circulatory system with three hearts: two branchial hearts that pump blood to the gills to absorb oxygen, and one systemic heart that pumps oxygenated blood to the rest of the body. Furthermore, their blood is blue because they use the copper-based protein hemocyanin to transport oxygen, which binds with oxygen and turns blue (becoming colorless when deoxygenated), unlike the iron-based hemoglobin found in vertebrates.",
+  "verdict_history": [],
+  "agent_flags": {
+    "conflicting_sources": false,
+    "outdated_evidence": false,
+    "requires_human_review": false,
+    "low_source_quality": false
+  }
+}

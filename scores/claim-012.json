@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "claim_id": "claim-012",
+  "verdict": "FALSE",
+  "confidence": 99,
+  "last_checked_at": "2026-06-04T01:05:05Z",
+  "last_changed_at": "2026-06-04T01:05:05Z",
+  "run_id": "run-2026-06-04T010331Z",
+  "sources": [
+    {
+      "url": "https://www.aol.com/news/why-lightning-never-strikes-same-174500436.html",
+      "title": "Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL",
+      "domain": "aol.com",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "Empire State Building, for example, is hit on average 25 times per year"
+    },
+    {
+      "url": "https://www.britannica.com/story/can-lightning-strike-the-same-place-twice",
+      "title": "Can Lightning Strike the Same Place Twice? | Britannica",
+      "domain": "britannica.com",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "Lightning never strikes the same place twice is a common phrase"
+    },
+    {
+      "url": "https://www.foxweather.com/learn/debunking-7-myths-about-lightning",
+      "title": "Debunking 7 myths about lightning | Fox Weather",
+      "domain": "foxweather.com",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "1. Lightning never strikes the same place twice."
+    }
+  ],
+  "reasoning": "The claim is a popular idiom but is scientifically false. Lightning frequently strikes the same location multiple times. According to the National Weather Service, tall, conductive structures like the Empire State Building are struck repeatedly, averaging approximately 25 times per year. Lightning follows the path of least resistance, meaning high-altitude conductors are consistently targeted.",
+  "verdict_history": [],
+  "agent_flags": {
+    "conflicting_sources": false,
+    "outdated_evidence": false,
+    "requires_human_review": false,
+    "low_source_quality": false
+  }
+}

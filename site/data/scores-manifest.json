@@ -12,11 +12,51 @@
     "score_file": "scores/claim-003.json"
   },
   {
+    "claim_id": "claim-006",
+    "score_file": "scores/claim-006.json"
+  },
+  {
+    "claim_id": "claim-007",
+    "score_file": "scores/claim-007.json"
+  },
+  {
+    "claim_id": "claim-009",
+    "score_file": "scores/claim-009.json"
+  },
+  {
+    "claim_id": "claim-010",
+    "score_file": "scores/claim-010.json"
+  },
+  {
+    "claim_id": "claim-011",
+    "score_file": "scores/claim-011.json"
+  },
+  {
+    "claim_id": "claim-013",
+    "score_file": "scores/claim-013.json"
+  },
+  {
+    "claim_id": "claim-015",
+    "score_file": "scores/claim-015.json"
+  },
+  {
     "claim_id": "claim-004",
     "score_file": "scores/claim-004.json"
   },
   {
     "claim_id": "claim-005",
     "score_file": "scores/claim-005.json"
+  },
+  {
+    "claim_id": "claim-008",
+    "score_file": "scores/claim-008.json"
+  },
+  {
+    "claim_id": "claim-012",
+    "score_file": "scores/claim-012.json"
+  },
+  {
+    "claim_id": "claim-014",
+    "score_file": "scores/claim-014.json"
   }
 ]

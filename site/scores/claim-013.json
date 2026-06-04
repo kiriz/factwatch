@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "claim_id": "claim-013",
+  "verdict": "DISPUTED",
+  "confidence": 90,
+  "last_checked_at": "2026-06-04T01:04:39Z",
+  "last_changed_at": "2026-06-04T01:04:39Z",
+  "run_id": "run-2026-06-04T010331Z",
+  "sources": [
+    {
+      "url": "https://www.yalemedicine.org/news/social-media-teen-mental-health-a-parents-guide",
+      "title": "How Social Media Affects Your Teen’s Mental Health: A Parent’s Guide | News | Yale Medicine",
+      "domain": "yalemedicine.org",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "faced twice the risk of having negative mental health outcomes"
+    },
+    {
+      "url": "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+      "title": "Social Media and Youth Mental Health | HHS.gov",
+      "domain": "hhs.gov",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "face double the risk of mental health problems"
+    },
+    {
+      "url": "https://childmind.org/article/is-social-media-use-causing-depression/",
+      "title": "Does Social Media Use Cause Depression? - Child Mind Institute",
+      "domain": "childmind.org",
+      "relevance": "high",
+      "supports_claim": false,
+      "excerpt": "social media use was associated with higher rates"
+    }
+  ],
+  "reasoning": "While a substantial body of research identifies a strong correlation between high social media use and symptoms of depression or anxiety in adolescents, a direct causal link remains scientifically disputed. Major medical and public health institutions, such as the US Surgeon General and Yale Medicine, consistently frame these findings as increased risks and associations rather than proven causation. While some researchers argue for causal mechanisms, critics contend that the overall statistical effect size is very small, causation is likely bidirectional, and underlying third variables explain much of the linkage.",
+  "verdict_history": [],
+  "agent_flags": {
+    "conflicting_sources": true,
+    "outdated_evidence": false,
+    "requires_human_review": true,
+    "low_source_quality": false
+  }
+}
