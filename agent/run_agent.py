@@ -213,6 +213,7 @@ def _check_one(
     scores_dir: Path,
     client: Any | None,
     max_history: int,
+    compiled_path: Path | None = None,
 ) -> dict[str, Any]:
     """Fact-check and persist a single claim, returning a trace entry.
 
@@ -230,7 +231,12 @@ def _check_one(
         # Capture the prior verdict BEFORE writing so a first-ever check is not
         # miscounted as a change (a new claim has no previous verdict).
         previous_verdict = _prior_verdict(scores_dir, claim_id)
-        result = fact_checker.check(claim, run_id=run_id, client=client)
+        result = fact_checker.check(
+            claim,
+            run_id=run_id,
+            client=client,
+            compiled_path=compiled_path,
+        )
         llm_trace = result.pop("_trace", {})
         written = score_writer.write(
             claim_id, result, scores_dir=scores_dir, max_history=max_history
@@ -265,6 +271,7 @@ def _check_one(
                 "prompt_tokens": llm_trace.get("prompt_tokens"),
                 "response_tokens": llm_trace.get("response_tokens"),
                 "total_tokens": llm_trace.get("total_tokens"),
+                "dspy_used": llm_trace.get("dspy_used", False),
                 "search_queries": llm_trace.get("search_queries", []),
                 "search_results": llm_trace.get("search_results", []),
             }
@@ -279,6 +286,7 @@ def run(
     project_root: Path = PROJECT_ROOT,
     dry_run: bool = False,
     client: Any | None = None,
+    compiled_path: Path | None = None,
 ) -> int:
     """Execute one full agent run and return the process exit code.
 
@@ -290,6 +298,7 @@ def run(
             nothing to disk.
         client: Optional injected google-genai Client passed through to the checker
             (used by tests and dry-runs).
+        compiled_path: Optional compiled DSPy program path threaded to the checker.
 
     Returns:
         ``0`` on full success, ``1`` if some claims errored, ``2`` on total
@@ -331,7 +340,7 @@ def run(
     errors = 0
     verdicts_changed = 0
     for claim in to_check:
-        trace = _check_one(claim, run_id, scores_dir, client, max_history)
+        trace = _check_one(claim, run_id, scores_dir, client, max_history, compiled_path)
         if trace.get("error"):
             errors += 1
         if trace.get("verdict_changed"):
@@ -410,6 +419,11 @@ def main(argv: list[str] | None = None) -> int:
         default=PROJECT_ROOT,
         help="project root containing config.yml, claims/, scores/, logs/, site/",
     )
+    parser.add_argument(
+        "--optimize",
+        action="store_true",
+        help="Run DSPy BootstrapFewShot optimization before fact-checking",
+    )
     args = parser.parse_args(argv)
 
     logging.basicConfig(
@@ -417,7 +431,17 @@ def main(argv: list[str] | None = None) -> int:
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
 
-    return run(project_root=args.project_root, dry_run=args.dry_run)
+    compiled_path: Path | None = None
+    if args.optimize:
+        from agent import optimize
+
+        compiled_path = optimize.run_optimization(args.project_root)
+        if compiled_path is None:
+            print("DSPy optimization failed; continuing without a compiled program")
+        else:
+            print(f"DSPy optimization output: {compiled_path}")
+
+    return run(project_root=args.project_root, dry_run=args.dry_run, compiled_path=compiled_path)
 
 
 if __name__ == "__main__":

@@ -88,7 +88,9 @@ def test_parses_valid_json_response() -> None:
 
 def test_unverified_result_on_exception() -> None:
     client = FakeClient([RuntimeError("boom"), RuntimeError("boom again")])
-    result = fact_checker.check(CLAIM, run_id="run-x", client=client, sleep=lambda _: None, searcher=_no_search)
+    result = fact_checker.check(
+        CLAIM, run_id="run-x", client=client, sleep=lambda _: None, searcher=_no_search
+    )
     assert result["verdict"] == "UNVERIFIED"
     assert result["confidence"] == 0
     assert result["agent_flags"]["requires_human_review"] is True
@@ -158,3 +160,55 @@ def test_unknown_verdict_coerced_to_unverified(bad_verdict: str) -> None:
     client = FakeClient([FakeResponse(text=_payload(bad_verdict, 90))])
     result = fact_checker.check(CLAIM, run_id="run-x", client=client, searcher=_no_search)
     assert result["verdict"] == "UNVERIFIED"
+
+
+def test_direct_path_marks_dspy_unused() -> None:
+    # An injected client always drives the direct Gemini path; the trace must
+    # record that DSPy was not used.
+    client = FakeClient([FakeResponse(text=_payload("TRUE", 90))])
+    result = fact_checker.check(CLAIM, run_id="run-x", client=client, searcher=_no_search)
+    assert result["_trace"]["dspy_used"] is False
+
+
+def test_dspy_path_taken_when_client_none(monkeypatch: pytest.MonkeyPatch) -> None:
+    # In production (client=None) the DSPy helpers run; when they succeed the
+    # trace is flagged dspy_used=True and the DSPy verdict is used directly.
+    monkeypatch.setattr(fact_checker, "_generate_queries_dspy", lambda claim: ["q1", "q2", "q3"])
+    monkeypatch.setattr(
+        fact_checker,
+        "_fact_check_dspy",
+        lambda claim, search_results_text, compiled_path=None: {
+            "verdict": "FALSE",
+            "confidence": 88,
+            "reasoning": "DSPy structured verdict.",
+            "conflicting_sources": False,
+            "outdated_evidence": False,
+            "requires_human_review": False,
+            "low_source_quality": False,
+        },
+    )
+    result = fact_checker.check(CLAIM, run_id="run-x", client=None, searcher=_no_search)
+    assert result["verdict"] == "FALSE"
+    assert result["confidence"] == 88
+    assert result["_trace"]["dspy_used"] is True
+    assert result["agent_flags"]["requires_human_review"] is False
+
+
+def test_dspy_failure_falls_back_to_direct(monkeypatch: pytest.MonkeyPatch) -> None:
+    # When DSPy raises, the surrounding helpers swallow it (queries -> [],
+    # fact_check -> None) and the direct Gemini path runs unharmed.
+    def boom(*args: Any, **kwargs: Any) -> Any:
+        raise RuntimeError("dspy exploded")
+
+    monkeypatch.setattr(fact_checker, "_generate_queries_dspy", boom)
+    monkeypatch.setattr(fact_checker, "_fact_check_dspy", boom)
+    monkeypatch.setattr(
+        fact_checker,
+        "_resolve_client",
+        lambda: FakeClient([FakeResponse(text=_payload("TRUE", 91))]),
+    )
+
+    result = fact_checker.check(CLAIM, run_id="run-x", client=None, searcher=_no_search)
+    assert result["verdict"] == "TRUE"
+    assert result["confidence"] == 91
+    assert result["_trace"]["dspy_used"] is False

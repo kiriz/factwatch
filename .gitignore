@@ -9,3 +9,4 @@ __pycache__/
 htmlcov/
 dist/
 *.egg-info/
+agent/compiled/*.json

@@ -13,14 +13,17 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
 logger = logging.getLogger("factwatch.fact_checker")
 
 GEMINI_MODEL_NAME = "gemini-flash-latest"
+DSPY_LITE_MODEL_NAME = "gemini-2.0-flash-lite"
 SCHEMA_VERSION = "1.0"
 VALID_VERDICTS = frozenset({"TRUE", "FALSE", "MISLEADING", "UNVERIFIED", "OUTDATED", "DISPUTED"})
 CONFIDENCE_REVIEW_THRESHOLD = 50
@@ -131,9 +134,7 @@ def _build_user_prompt(claim: dict[str, Any], search_results: list[dict[str, str
 
 def _resolve_client() -> Any:
     """Build a google-genai Client from GOOGLE_API_KEY env var."""
-    import os  # noqa: PLC0415
-
-    from google import genai  # noqa: PLC0415
+    from google import genai
 
     api_key = os.environ.get("GOOGLE_API_KEY", "")
     if not api_key:
@@ -237,7 +238,9 @@ def _build_trace(
     usage: dict[str, int | None],
     search_queries: list[str],
     search_results: list[dict[str, str]],
+    model_name: str,
     model_version: str,
+    dspy_used: bool,
 ) -> dict[str, Any]:
     """Assemble the ``_trace`` payload for Observatory rendering.
 
@@ -245,13 +248,14 @@ def _build_trace(
     it lives only in the run log trace.
     """
     return {
-        "model_name": GEMINI_MODEL_NAME,
+        "model_name": model_name,
         "model_version": model_version,
         "prompt": prompt,
         "raw_response": raw_response,
         "prompt_tokens": usage.get("prompt_tokens"),
         "response_tokens": usage.get("response_tokens"),
         "total_tokens": usage.get("total_tokens"),
+        "dspy_used": dspy_used,
         "search_queries": list(search_queries),
         "search_results": [
             {
@@ -309,6 +313,8 @@ def _error_result(
     raw_response: str = "",
     search_queries: list[str] | None = None,
     search_results: list[dict[str, str]] | None = None,
+    model_name: str = GEMINI_MODEL_NAME,
+    dspy_used: bool = False,
 ) -> dict[str, Any]:
     checked_at = _utc_now_iso()
     return {
@@ -334,8 +340,119 @@ def _error_result(
             usage={"prompt_tokens": None, "response_tokens": None, "total_tokens": None},
             search_queries=search_queries or [],
             search_results=search_results or [],
+            model_name=model_name,
             model_version="",
+            dspy_used=dspy_used,
         ),
+    }
+
+
+def _render_search_results_text(search_results: list[dict[str, str]]) -> str:
+    if not search_results:
+        return "(No search results found)"
+
+    parts: list[str] = []
+    for i, result in enumerate(search_results, 1):
+        parts.append(
+            (
+                f"[{i}] {str(result.get('title', '') or '')}\n"
+                f"URL: {str(result.get('url', '') or '')}\n"
+                f"Excerpt: {str(result.get('snippet', '') or '')[:300]}"
+            ).strip()
+        )
+    return "\n\n".join(parts)
+
+
+def _generate_queries_dspy(claim: dict[str, Any]) -> list[str]:
+    api_key = os.environ.get("GOOGLE_API_KEY", "")
+    if not api_key:
+        return []
+
+    try:
+        from agent import dspy_checker
+
+        lite_model_name = os.environ.get("FACTWATCH_LITE_MODEL", DSPY_LITE_MODEL_NAME)
+        lite_lm = dspy_checker.build_lm(lite_model_name, api_key)
+        return dspy_checker.generate_queries(claim, lite_lm)
+    except Exception:
+        logger.exception("claim %s: DSPy query generation unavailable", claim.get("id", "unknown"))
+        return []
+
+
+def _fact_check_dspy(
+    claim: dict[str, Any],
+    search_results_text: str,
+    compiled_path: Path | None = None,
+) -> dict[str, Any] | None:
+    api_key = os.environ.get("GOOGLE_API_KEY", "")
+    if not api_key:
+        return None
+
+    try:
+        from agent import dspy_checker
+
+        main_model_name = os.environ.get("FACTWATCH_MAIN_MODEL", GEMINI_MODEL_NAME)
+        main_lm = dspy_checker.build_lm(main_model_name, api_key)
+        return dspy_checker.fact_check(
+            claim_text=str(claim.get("claim_text", "") or ""),
+            search_results_text=search_results_text,
+            verification_notes=str(claim.get("verification_notes", "") or ""),
+            main_lm=main_lm,
+            compiled_path=compiled_path,
+        )
+    except Exception:
+        logger.exception("claim %s: DSPy fact-check unavailable", claim.get("id", "unknown"))
+        return None
+
+
+def _fact_check_direct(
+    claim: dict[str, Any],
+    search_results: list[dict[str, str]],
+    client: Any | None,
+    sleep: Any,
+) -> tuple[dict[str, Any] | None, dict[str, Any]]:
+    claim_id = str(claim.get("id", "")) or "unknown"
+    prompt = _build_user_prompt(claim, search_results)
+
+    try:
+        resolved = client if client is not None else _resolve_client()
+    except Exception:
+        logger.exception("claim %s: failed to build Gemini client", claim_id)
+        return None, {
+            "reason": "client construction error",
+            "prompt": prompt,
+            "raw_response": "",
+            "usage": {"prompt_tokens": None, "response_tokens": None, "total_tokens": None},
+            "model_version": "",
+        }
+
+    response = _call_with_retry(resolved, prompt, claim_id, sleep)
+    if response is None:
+        return None, {
+            "reason": "API error after retry",
+            "prompt": prompt,
+            "raw_response": "",
+            "usage": {"prompt_tokens": None, "response_tokens": None, "total_tokens": None},
+            "model_version": "",
+        }
+
+    text = _extract_text(response)
+    payload = _parse_with_retry(resolved, prompt, text, claim_id)
+    if payload is None:
+        return None, {
+            "reason": "JSON parse error after retry",
+            "prompt": prompt,
+            "raw_response": text,
+            "usage": {"prompt_tokens": None, "response_tokens": None, "total_tokens": None},
+            "model_version": str(getattr(response, "model_version", "") or ""),
+        }
+
+    return payload, {
+        "reason": "",
+        "prompt": prompt,
+        "raw_response": text,
+        "usage": _extract_usage(response),
+        "model_version": str(getattr(response, "model_version", "") or ""),
     }
 
 
@@ -343,6 +460,7 @@ def check(
     claim: dict[str, Any],
     run_id: str = "",
     client: Any | None = None,
+    compiled_path: Path | None = None,
     *,
     sleep: Any = time.sleep,
     searcher: Any = _search,
@@ -353,13 +471,24 @@ def check(
         claim: Claim definition with keys: id, title, claim_text, context, verification_notes.
         run_id: Current run identifier embedded in the result.
         client: Optional pre-built google-genai Client (for testing).
+        compiled_path: Optional compiled DSPy program path for the production path.
         sleep: Backoff sleep injection (for testing).
         searcher: Search function injection (for testing).
     """
     claim_id = str(claim.get("id", "")) or "unknown"
 
+    # Tests inject a client to exercise the direct Gemini path deterministically.
+    # Preserve that behavior exactly by only attempting DSPy in the production path.
+    if client is None:
+        try:
+            queries = _generate_queries_dspy(claim) or _build_search_queries(claim)
+        except Exception:
+            logger.exception("claim %s: DSPy query generation crashed; using fallback", claim_id)
+            queries = _build_search_queries(claim)
+    else:
+        queries = _build_search_queries(claim)
+
     # Step 1: gather search results
-    queries = _build_search_queries(claim)
     seen_urls: set[str] = set()
     search_results: list[dict[str, str]] = []
     for q in queries:
@@ -373,54 +502,81 @@ def check(
         "claim %s: %d search results from %d queries", claim_id, len(search_results), len(queries)
     )
 
-    # Step 2: build prompt and call Gemini
-    prompt = _build_user_prompt(claim, search_results)
+    search_results_text = _render_search_results_text(search_results)
+    dspy_payload: dict[str, Any] | None = None
+    if client is None:
+        try:
+            dspy_payload = _fact_check_dspy(claim, search_results_text, compiled_path=compiled_path)
+        except Exception:
+            logger.exception("claim %s: DSPy fact-check crashed; using direct fallback", claim_id)
+            dspy_payload = None
 
-    try:
-        resolved = client if client is not None else _resolve_client()
-    except Exception:
-        logger.exception("claim %s: failed to build Gemini client", claim_id)
-        return _error_result(
+    if dspy_payload is not None:
+        checked_at = _utc_now_iso()
+        main_model_name = os.environ.get("FACTWATCH_MAIN_MODEL", GEMINI_MODEL_NAME)
+        result = _build_result(
             claim_id,
             run_id,
-            "client construction error",
-            prompt=prompt,
+            {
+                "verdict": dspy_payload.get("verdict"),
+                "confidence": dspy_payload.get("confidence"),
+                "sources": [],
+                "reasoning": dspy_payload.get("reasoning"),
+                "agent_flags": {
+                    "conflicting_sources": dspy_payload.get("conflicting_sources", False),
+                    "outdated_evidence": dspy_payload.get("outdated_evidence", False),
+                    "requires_human_review": dspy_payload.get("requires_human_review", False),
+                    "low_source_quality": dspy_payload.get("low_source_quality", False),
+                },
+            },
+            checked_at,
+        )
+        result["_trace"] = _build_trace(
+            prompt=json.dumps(
+                {
+                    "claim_text": str(claim.get("claim_text", "") or ""),
+                    "verification_notes": str(claim.get("verification_notes", "") or ""),
+                    "search_results": search_results_text,
+                },
+                indent=2,
+                ensure_ascii=False,
+            ),
+            raw_response=json.dumps(dspy_payload, indent=2, ensure_ascii=False),
+            usage={"prompt_tokens": None, "response_tokens": None, "total_tokens": None},
             search_queries=queries,
             search_results=search_results,
+            model_name=main_model_name,
+            model_version="",
+            dspy_used=True,
         )
+        return result
 
-    response = _call_with_retry(resolved, prompt, claim_id, sleep)
-    if response is None:
-        return _error_result(
-            claim_id,
-            run_id,
-            "API error after retry",
-            prompt=prompt,
-            search_queries=queries,
-            search_results=search_results,
-        )
-
-    text = _extract_text(response)
-    payload = _parse_with_retry(resolved, prompt, text, claim_id)
+    payload, direct_meta = _fact_check_direct(claim, search_results, client, sleep)
     if payload is None:
         return _error_result(
             claim_id,
             run_id,
-            "JSON parse error after retry",
-            prompt=prompt,
-            raw_response=text,
+            str(direct_meta.get("reason", "unknown error")),
+            prompt=str(direct_meta.get("prompt", "")),
+            raw_response=str(direct_meta.get("raw_response", "")),
             search_queries=queries,
             search_results=search_results,
+            model_name=GEMINI_MODEL_NAME,
+            dspy_used=False,
         )
 
     result = _build_result(claim_id, run_id, payload, _utc_now_iso())
     result["_trace"] = _build_trace(
-        prompt=prompt,
-        raw_response=text,
-        usage=_extract_usage(response),
+        prompt=str(direct_meta.get("prompt", "")),
+        raw_response=str(direct_meta.get("raw_response", "")),
+        usage=direct_meta.get("usage", {})
+        if isinstance(direct_meta.get("usage"), dict)
+        else {"prompt_tokens": None, "response_tokens": None, "total_tokens": None},
         search_queries=queries,
         search_results=search_results,
-        model_version=str(getattr(response, "model_version", "") or ""),
+        model_name=GEMINI_MODEL_NAME,
+        model_version=str(direct_meta.get("model_version", "")),
+        dspy_used=False,
     )
     return result
 
