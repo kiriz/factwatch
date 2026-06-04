@@ -95,29 +95,27 @@ function renderCard({ score, claimId, title: manifestTitle, category: manifestCa
     ? `<span class="view-count" title="${views} views">${views >= 1000 ? `${(views/1000).toFixed(1)}k` : views} views</span>`
     : '';
 
+  /* left border colour = verdict colour */
+  card.style.borderLeftColor = verdictColour(score.verdict);
+
   card.innerHTML = `
-    <div class="claim-card-header">
+    <div class="claim-card-top">
       <div class="claim-title">${escHtml(displayTitle)}</div>
-      <div class="claim-icons">
-        ${trendBadge}
-        ${recentlyChanged ? '<span title="Verdict changed in last 7 days">⚠</span>' : ''}
-        ${needsReview     ? '<span title="Requires human review">🔍</span>'         : ''}
+      <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
+        <span class="verdict-badge ${verdictClass(score.verdict)}">${score.verdict}</span>
+        <span class="confidence-num">${score.confidence}%</span>
+        <div class="claim-icons">
+          ${trendBadge}
+          ${recentlyChanged ? '<span title="Verdict changed in last 7 days">⚠</span>' : ''}
+          ${needsReview     ? '<span title="Requires human review">🔍</span>'         : ''}
+        </div>
       </div>
     </div>
-    <div>
-      <span class="verdict-badge ${verdictClass(score.verdict)}">${score.verdict}</span>
-    </div>
-    <div>
-      <div class="confidence-bar" role="progressbar" aria-valuenow="${score.confidence}" aria-valuemin="0" aria-valuemax="100">
-        <div class="confidence-fill" style="width:${score.confidence}%;background:${verdictColour(score.verdict)}"></div>
-      </div>
-    </div>
-    <div class="claim-meta">
+    <div class="claim-card-bottom">
       <span class="category-tag">${escHtml(category || 'general')}</span>
-      <div style="display:flex;gap:6px;align-items:center">
-        ${viewBadge}
-        <span title="${score.last_checked_at}">Checked ${relativeTime(score.last_checked_at)}</span>
-      </div>
+      <span>·</span>
+      ${viewBadge ? viewBadge + '<span>·</span>' : ''}
+      <span title="${escHtml(score.last_checked_at || '')}">checked ${relativeTime(score.last_checked_at)}</span>
     </div>
   `;
 
