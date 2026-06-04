@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "claim_id": "claim-016",
+  "verdict": "MISLEADING",
+  "confidence": 90,
+  "last_checked_at": "2026-06-04T21:10:11Z",
+  "last_changed_at": "2026-06-04T21:10:11Z",
+  "run_id": "run-2026-06-04T210946Z",
+  "sources": [],
+  "reasoning": "The claim mischaracterizes the findings of a widely cited March 2023 study by Goldman Sachs. The report did not state that generative AI \"will replace\" 300 million jobs. Rather, it estimated that generative AI *could expose* the equivalent of 300 million full-time jobs globally to automation. \"Exposure to automation\" means that certain tasks within a job could be automated, but it does not equate to outright job elimination; in fact, the report notes that most jobs and industries are only partially exposed to automation and are more likely to be complemented rather than substituted by AI. Furthermore, presenting a projection as an absolute certainty (\"will\") ignores the economic nuances of job creation and productivity boosts that typically accompany technological shifts.",
+  "verdict_history": [],
+  "agent_flags": {
+    "conflicting_sources": false,
+    "outdated_evidence": false,
+    "requires_human_review": false,
+    "low_source_quality": false
+  },
+  "title": "Generative AI will replace 300 million jobs",
+  "category": "economics",
+  "trending_score": 10
+}
