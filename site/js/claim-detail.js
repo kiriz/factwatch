@@ -113,18 +113,15 @@ function renderClaim(claimId, score, meta) {
               <span class="verdict-badge ${verdictClass(h.verdict)}">${escHtml(h.verdict)}</span>
               <span class="timeline-conf">${h.confidence}%</span>
               <span class="timeline-date">${formatDate(h.checked_at || h.recorded_at)}</span>
-              ${h.run_id ? `<a class="timeline-run" href="observatory.html#${escHtml(h.run_id)}">run log →</a>` : ''}
             </div>
           `).join('')}
         </div>
       ` : '<p class="muted">First check — no prior verdicts yet.</p>'}
     </section>
 
-    ${score.run_id ? `
-      <div class="claim-footer-link">
-        <a class="btn-link" href="observatory.html#${escHtml(score.run_id)}">🔭 See the full agent trace that produced this verdict →</a>
-      </div>
-    ` : ''}
+    <div class="claim-footer-link">
+      <a class="btn-link" href="observatory.html?claim=${encodeURIComponent(claimId)}">🔭 See the full agent trace that produced this verdict →</a>
+    </div>
   `;
 }
 

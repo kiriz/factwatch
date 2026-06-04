@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="kiri-ux/tokens/themes/base.css?v=4">
   <link rel="stylesheet" href="kiri-ux/tokens/themes/light.css?v=4">
   <link rel="stylesheet" href="kiri-ux/tokens/themes/factwatch.css?v=4">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
   <header>
@@ -26,39 +26,12 @@
 
   <main>
     <div class="container">
-      <div class="page-header">
-        <h1>AI Observatory</h1>
-        <div class="sub">What the agent is doing — every step, every source, every decision.</div>
-      </div>
-
-      <div class="obs-status-bar" id="status-bar">
-        <div>
-          <div class="obs-status-label">Last run</div>
-          <div class="obs-status-value" id="status-last-run">Loading…</div>
-        </div>
-        <div>
-          <div class="obs-status-label">Next scheduled run</div>
-          <div class="obs-status-value" id="status-next-run">—</div>
-        </div>
-        <div>
-          <div class="obs-status-label">Total runs</div>
-          <div class="obs-status-value" id="status-total-runs">—</div>
-        </div>
-      </div>
-
-      <div class="chart-wrap" id="chart-wrap" style="display:none">
-        <h2>Verdict changes per run</h2>
-        <canvas id="changes-chart" height="80" aria-label="Verdict changes per run chart"></canvas>
-      </div>
-
-      <div id="runs-container">
+      <div id="obs-content">
         <div class="state-msg">
           <div class="spinner"></div>
-          <p style="margin-top: 16px">Loading run history…</p>
+          <p style="margin-top: 16px">Loading…</p>
         </div>
       </div>
-
-      <div id="run-detail-container"></div>
     </div>
   </main>
 
@@ -69,6 +42,6 @@
     </div>
   </footer>
 
-  <script src="js/observatory.js?v=2"></script>
+  <script src="js/observatory.js?v=3"></script>
 </body>
 </html>

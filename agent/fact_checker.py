@@ -530,13 +530,26 @@ def check(
     if dspy_payload is not None:
         checked_at = _utc_now_iso()
         main_model_name = os.environ.get("FACTWATCH_MAIN_MODEL", GEMINI_MODEL_NAME)
+        # DSPy returns verdict/reasoning/flags but no source list, so surface the
+        # web results the agent actually consulted as the sources for this verdict.
+        dspy_sources = [
+            {
+                "url": r.get("url", ""),
+                "title": r.get("title", ""),
+                "relevance": "medium",
+                "supports_claim": True,
+                "excerpt": r.get("snippet", ""),
+            }
+            for r in search_results
+            if r.get("url")
+        ]
         result = _build_result(
             claim_id,
             run_id,
             {
                 "verdict": dspy_payload.get("verdict"),
                 "confidence": dspy_payload.get("confidence"),
-                "sources": [],
+                "sources": dspy_sources,
                 "reasoning": dspy_payload.get("reasoning"),
                 "agent_flags": {
                     "conflicting_sources": dspy_payload.get("conflicting_sources", False),
