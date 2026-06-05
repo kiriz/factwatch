@@ -1,58 +1,34 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-003",
-  "verdict": "FALSE",
-  "confidence": 100,
-  "last_checked_at": "2026-05-25T04:11:00Z",
-  "last_changed_at": "2026-06-03T04:55:15Z",
-  "run_id": "run-2026-06-03T064030Z",
-  "sources": [
-    {
-      "url": "https://www.genome.gov/about-genomics/fact-sheets/Understanding-COVID-19-mRNA-Vaccines",
-      "title": "Understanding COVID-19 mRNA Vaccines",
-      "domain": "genome.gov",
-      "relevance": "high",
-      "supports_claim": false,
-      "excerpt": "There is no risk of an mRNA vaccine changing your DNA"
-    },
-    {
-      "url": "https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna",
-      "title": "You asked, we answered: Can mRNA vaccines alter human DNA?",
-      "domain": "nebraskamed.com",
-      "relevance": "high",
-      "supports_claim": false,
-      "excerpt": "No, the vaccines cannot change your DNA."
-    },
-    {
-      "url": "https://weillcornell.org/news/here\u2019s-what-we-know-the-impact-of-mrna-vaccines",
-      "title": "Here's What We Know: The Impact of mRNA Vaccines | Patient Care",
-      "domain": "weillcornell.org",
-      "relevance": "high",
-      "supports_claim": false,
-      "excerpt": "That is impossible, scientists assert."
-    },
-    {
-      "url": "https://hcrl.wustl.edu/claims-that-mrna-vaccines-change-human-dna-are-back/",
-      "title": "Claims that mRNA vaccines change human DNA are back",
-      "domain": "hcrl.wustl.edu",
-      "relevance": "high",
-      "supports_claim": false,
-      "excerpt": "claims about COVID-19 mRNA vaccines interfering with human DNA"
-    }
-  ],
-  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false. According to genomic researchers, molecular biologists, and major public health organizations such as the National Institutes of Health (NIH) and the CDC, mRNA vaccines do not have the capability to alter human DNA. The mRNA from the vaccines is translationally active only in the cell cytoplasm and does not enter the cell nucleus where human DNA is stored. Furthermore, human cells lack the reverse transcriptase enzymes required to convert the vaccine mRNA into DNA, meaning integration into the host genome is biologically impossible. The mRNA degrades naturally shortly after providing the instructions to produce the spike protein.",
+  "verdict": "UNVERIFIED",
+  "confidence": 0,
+  "last_checked_at": "2026-06-05T07:36:18Z",
+  "last_changed_at": "2026-06-05T07:36:18Z",
+  "run_id": "run-2026-06-05T073027Z",
+  "sources": [],
+  "reasoning": "Fact-check failed: API error after retry",
   "verdict_history": [
     {
       "verdict": "FALSE",
       "confidence": 100,
       "checked_at": "2026-05-24T06:40:10Z",
       "run_id": "run-2026-06-03T045447Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-05-25T04:11:00Z",
+      "run_id": "run-2026-06-03T064030Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": false,
-    "low_source_quality": false
-  }
+    "requires_human_review": true,
+    "low_source_quality": true
+  },
+  "title": "mRNA vaccines alter human DNA",
+  "category": "health",
+  "trending_score": 10
 }

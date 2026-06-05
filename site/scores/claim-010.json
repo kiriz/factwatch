@@ -1,43 +1,28 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-010",
-  "verdict": "TRUE",
-  "confidence": 95,
-  "last_checked_at": "2026-05-25T04:11:00Z",
-  "last_changed_at": "2026-06-04T01:04:12Z",
-  "run_id": "run-2026-06-04T010331Z",
-  "sources": [
+  "verdict": "UNVERIFIED",
+  "confidence": 0,
+  "last_checked_at": "2026-06-05T07:40:01Z",
+  "last_changed_at": "2026-06-05T07:40:01Z",
+  "run_id": "run-2026-06-05T073027Z",
+  "sources": [],
+  "reasoning": "Fact-check failed: API error after retry",
+  "verdict_history": [
     {
-      "url": "https://www.bbc.com/news/technology-56012952",
-      "title": "Bitcoin consumes 'more electricity than Argentina'",
-      "domain": "bbc.com",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "Bitcoin uses more electricity annually than the whole of Argentina"
-    },
-    {
-      "url": "https://news.bit2me.com/en/Cryptocurrencies-that-consume-more-electricity-than-an-entire-country",
-      "title": "Cryptocurrencies that consume more electricity than an entire country",
-      "domain": "news.bit2me.com",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "this figure exceeds the electricity consumption of countries such as Argentina"
-    },
-    {
-      "url": "https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/",
-      "title": "Bitcoin Consumes as Much Electricity as Argentina\u2014Cash Is the Sustainable Alternative \u2013 ICA",
-      "domain": "currencyassociation.org",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "Bitcoin consumes as much electricity as an entire country\u2014Argentina"
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-05-25T04:11:00Z",
+      "run_id": "run-2026-06-04T010331Z"
     }
   ],
-  "reasoning": "Multiple reports from the University of Cambridge (CBECI) and the International Monetary Fund (IMF) consistently confirm that Bitcoin's annual electricity consumption (estimated between 120 and 140 TWh) meets or exceeds the total electricity consumption of entire nations, including Argentina.",
-  "verdict_history": [],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": false,
-    "low_source_quality": false
-  }
+    "requires_human_review": true,
+    "low_source_quality": true
+  },
+  "title": "Bitcoin uses more electricity than Argentina",
+  "category": "economics",
+  "trending_score": 10
 }

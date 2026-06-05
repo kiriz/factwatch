@@ -1,43 +1,28 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-014",
-  "verdict": "TRUE",
-  "confidence": 100,
-  "last_checked_at": "2026-05-25T04:11:00Z",
-  "last_changed_at": "2026-06-04T01:05:13Z",
-  "run_id": "run-2026-06-04T010331Z",
-  "sources": [
+  "verdict": "UNVERIFIED",
+  "confidence": 0,
+  "last_checked_at": "2026-06-05T07:47:04Z",
+  "last_changed_at": "2026-06-05T07:47:04Z",
+  "run_id": "run-2026-06-05T073027Z",
+  "sources": [],
+  "reasoning": "Fact-check failed: API error after retry",
+  "verdict_history": [
     {
-      "url": "https://iere.org/how-is-the-earth-and-moon-alike/",
-      "title": "How Is the Earth and Moon Alike? - The Institute for Environmental...",
-      "domain": "iere.org",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "Moon is slowly moving away from Earth at a rate of about 3.8 centimeters"
-    },
-    {
-      "url": "https://studyfinds.com/moon-not-geologically-dead/",
-      "title": "Moon not 'geologically dead world' after all. Why that might be a prob...",
-      "domain": "studyfinds.com",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "Moon is slowly moving away from Earth at a rate of about 3.8 centimeters"
-    },
-    {
-      "url": "https://toxigon.com/tno-orbits-suns-gravity-after-eons",
-      "title": "The Fascinating Dance of Orbits, Suns, & Gravity Over E - Toxigon",
-      "domain": "toxigon.com",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "Moon is slowly moving away from Earth at a rate of about 3.8 centimeters"
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-05-25T04:11:00Z",
+      "run_id": "run-2026-06-04T010331Z"
     }
   ],
-  "reasoning": "The claim is scientifically accurate and widely accepted. Decades of precise measurements from the Lunar Laser Ranging experiment (which bounces lasers off retroreflectors left by Apollo astronauts) have established that the Moon is receding from Earth at a rate of approximately 3.78 centimeters (rounded to 3.8 cm) per year. This recession is caused by tidal friction, where the gravitational interaction between the Earth's oceans and the Moon transfers rotational energy from Earth into the Moon's orbital energy, pushing it into a higher orbit.",
-  "verdict_history": [],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": false,
+    "requires_human_review": true,
     "low_source_quality": true
-  }
+  },
+  "title": "The Moon is drifting away from Earth",
+  "category": "science",
+  "trending_score": 10
 }

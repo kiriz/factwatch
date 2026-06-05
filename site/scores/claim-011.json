@@ -3,41 +3,75 @@
   "claim_id": "claim-011",
   "verdict": "MISLEADING",
   "confidence": 95,
-  "last_checked_at": "2026-05-25T04:11:00Z",
+  "last_checked_at": "2026-06-05T07:42:00Z",
   "last_changed_at": "2026-06-04T01:04:24Z",
-  "run_id": "run-2026-06-04T010331Z",
+  "run_id": "run-2026-06-05T073027Z",
   "sources": [
     {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4870486/",
       "title": "Does monosodium glutamate really cause headache? : a systematic review of human studies - PMC",
       "domain": "pmc.ncbi.nlm.nih.gov",
-      "relevance": "high",
-      "supports_claim": false,
-      "excerpt": "could not find a consistent clinical relationship between MSG and headache"
-    },
-    {
-      "url": "https://medlineplus.gov/ency/article/001126.htm",
-      "title": "MSG symptom complex: MedlinePlus Medical Encyclopedia",
-      "domain": "medlineplus.gov",
-      "relevance": "high",
-      "supports_claim": false,
-      "excerpt": "scientific studies have not shown a direct link between MSG and these symptoms"
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Keywords: Monosodium glutamate ... reported by Kwok in 1968 [1]. He reported that after consumption"
     },
     {
       "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
       "title": "The Rotten Science Behind the MSG Scare | Science History Institute",
       "domain": "sciencehistory.org",
-      "relevance": "high",
-      "supports_claim": false,
-      "excerpt": "Puzzlingly, though, no two letter writers listed the same symptoms."
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "February 19, 2026 - The symptoms catalogued in the letters included fainting, back spasms, sweating,"
+    },
+    {
+      "url": "https://medlineplus.gov/ency/article/001126.htm",
+      "title": "MSG symptom complex: MedlinePlus Medical Encyclopedia",
+      "domain": "medlineplus.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Hot dog headache; Glutamate-induced asthma; MSG (monosodium glutamate) syndrome; Chinese restaurant syndrome; Kwok's syndrome"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37355848/",
+      "title": "Monosodium Glutamate (MSG) Symptom Complex (Chinese Restaurant Syndrome): Nightmare of Chinese Food Lovers! - PubMed",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The spectrum of symptoms ranges from headache, sweating, abdominal pain, and urticaria to angioedema in"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6952072/",
+      "title": "A review of the alleged health hazards of monosodium glutamate - PMC",
+      "domain": "pmc.ncbi.nlm.nih.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The “Chinese restaurant syndrome” ... (Freeman, 2006), consists of a series of symptoms such as"
+    },
+    {
+      "url": "https://knowmsg.com/chinese-restaurant-syndrome/",
+      "title": "Chinese Restaurant Syndrome | Know MSG",
+      "domain": "knowmsg.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "May 21, 2020 - noun: a group of symptoms (such as numbness of the neck,"
     }
   ],
-  "reasoning": "The claim that MSG causes headaches, numbness, and 'Chinese restaurant syndrome' is misleading. While this belief was popularized after a 1968 letter to the New England Journal of Medicine, decades of subsequent scientific research have debunked it. Rigorous double-blind, placebo-controlled studies have failed to establish a consistent causal link between normal dietary MSG consumption and these symptoms. Additionally, the FDA classifies MSG as 'Generally Recognized as Safe' (GRAS), and the glutamate in MSG is chemically identical to the glutamate naturally present in foods like tomatoes and aged cheeses.",
-  "verdict_history": [],
+  "reasoning": "The claim that MSG (monosodium glutamate) causes headaches, numbness, and other symptoms—collectively referred to as \"Chinese restaurant syndrome\" or \"MSG symptom complex\"—is misleading. \n\nWhile these symptoms have historically been attributed to MSG, scientific consensus and major food safety authorities, including the US Food and Drug Administration (FDA) and the World Health Organization (WHO), have found no consistent causal link between typical dietary levels of MSG and these adverse reactions. \n\nKey points of scientific evidence include:\n1. **FDA Status:** The FDA classifies MSG as \"generally recognized as safe\" (GRAS), placing it in the same category as salt, pepper, and vinegar.\n2. **Chemical Identity:** Glutamate from MSG is chemically identical to the glutamate found naturally in foods like tomatoes, mushrooms, and aged cheeses, which the human body metabolizes in the exact same way.\n3. **Lack of Causal Evidence:** Rigorous double-blind, placebo-controlled studies have repeatedly failed to establish a reliable connection between normal MSG consumption and the symptoms of \"Chinese restaurant syndrome.\" Some studies have shown that extremely high doses (3 grams or more on an empty stomach, which is far beyond what is typically consumed in a meal) might trigger mild, transient symptoms in a small subset of sensitive individuals, but these conditions do not reflect real-world exposure. \n4. **Origin of the Term:** The term \"Chinese restaurant syndrome\" originated from a single 1968 letter to the New England Journal of Medicine that speculated on several potential causes for mild post-meal symptoms. Subsequent panic was fueled by flawed studies and cultural biases rather than robust scientific proof.",
+  "verdict_history": [
+    {
+      "verdict": "MISLEADING",
+      "confidence": 95,
+      "checked_at": "2026-05-25T04:11:00Z",
+      "run_id": "run-2026-06-04T010331Z"
+    }
+  ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
     "requires_human_review": false,
     "low_source_quality": false
-  }
+  },
+  "title": "MSG causes headaches — 'Chinese restaurant syndrome'",
+  "category": "health",
+  "trending_score": 10
 }

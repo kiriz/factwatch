@@ -1,50 +1,34 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-002",
-  "verdict": "TRUE",
-  "confidence": 100,
-  "last_checked_at": "2026-05-25T04:11:00Z",
-  "last_changed_at": "2026-06-03T04:55:08Z",
-  "run_id": "run-2026-06-03T064030Z",
-  "sources": [
-    {
-      "url": "https://apnews.com/article/national-debt-deficits-biden-economy-inflation-record-b4258704f830c7f6e9c5e693748216cb",
-      "title": "US national debt hits record $34 trillion as Congress gears up for funding fight",
-      "domain": "apnews.com",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "The federal government\u2019s gross national debt has surpassed $34 trillion"
-    },
-    {
-      "url": "https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet",
-      "title": "National Debt Skyrockets to Highest Level Yet | The U.S. House Committee on the Budget - House Budget Committee",
-      "domain": "budget.house.gov",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "On Friday, December 29th the national debt hit $34 trillion."
-    },
-    {
-      "url": "https://www.pbs.org/newshour/politics/u-s-national-debt-hits-record-34-trillion-as-congress-gears-up-for-funding-fight",
-      "title": "U.S. national debt hits record $34 trillion as Congress gears up for funding fight",
-      "domain": "pbs.org",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "The federal government's gross national debt has surpassed $34 trillion"
-    }
-  ],
-  "reasoning": "The United States gross national debt officially surpassed the $34 trillion mark on December 29, 2023. This milestone was widely reported by government bodies, including the U.S. House Committee on the Budget, and confirmed by major news outlets analyzing Treasury data in early January 2024. Since then, the debt has continued to grow beyond this threshold, exceeding $34.4 trillion by February 2024.",
+  "verdict": "UNVERIFIED",
+  "confidence": 0,
+  "last_checked_at": "2026-06-05T07:33:10Z",
+  "last_changed_at": "2026-06-05T07:33:10Z",
+  "run_id": "run-2026-06-05T073027Z",
+  "sources": [],
+  "reasoning": "Fact-check failed: API error after retry",
   "verdict_history": [
     {
       "verdict": "TRUE",
       "confidence": 100,
       "checked_at": "2026-05-24T06:40:10Z",
       "run_id": "run-2026-06-03T045447Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-05-25T04:11:00Z",
+      "run_id": "run-2026-06-03T064030Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": false,
-    "low_source_quality": false
-  }
+    "requires_human_review": true,
+    "low_source_quality": true
+  },
+  "title": "US federal debt exceeds $34 trillion",
+  "category": "economics",
+  "trending_score": 10
 }

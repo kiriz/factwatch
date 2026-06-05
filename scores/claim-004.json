@@ -1,50 +1,34 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-004",
-  "verdict": "TRUE",
-  "confidence": 98,
-  "last_checked_at": "2026-05-25T04:11:00Z",
-  "last_changed_at": "2026-06-03T04:55:30Z",
-  "run_id": "run-2026-06-03T064030Z",
-  "sources": [
-    {
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/",
-      "title": "GPT-4 passes the bar exam - PMC - NIH",
-      "domain": "pmc.ncbi.nlm.nih.gov",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "outperforms the average human test-taker by more than 7%"
-    },
-    {
-      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4389233",
-      "title": "GPT-4 Passes the Bar Exam",
-      "domain": "papers.ssrn.com",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "GPT-4 significantly outperforms both human test-takers"
-    },
-    {
-      "url": "https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/",
-      "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence ...",
-      "domain": "law.stanford.edu",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "GPT-4 not only passed but approached 90th percentile"
-    }
-  ],
-  "reasoning": "Multiple academic and legal studies have confirmed that GPT-4 successfully passed the Uniform Bar Examination (UBE). Research by Bommarito and Katz demonstrated that GPT-4 not only exceeded the minimum passing threshold but also performed in the high percentiles (approaching the 90th percentile), significantly outperforming the average human test-taker on multiple-choice questions.",
+  "verdict": "UNVERIFIED",
+  "confidence": 0,
+  "last_checked_at": "2026-06-05T07:44:30Z",
+  "last_changed_at": "2026-06-05T07:44:30Z",
+  "run_id": "run-2026-06-05T073027Z",
+  "sources": [],
+  "reasoning": "Fact-check failed: API error after retry",
   "verdict_history": [
     {
       "verdict": "TRUE",
       "confidence": 95,
       "checked_at": "2026-05-24T06:40:10Z",
       "run_id": "run-2026-06-03T045447Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-05-25T04:11:00Z",
+      "run_id": "run-2026-06-03T064030Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": false,
-    "low_source_quality": false
-  }
+    "requires_human_review": true,
+    "low_source_quality": true
+  },
+  "title": "AI systems now pass the bar exam",
+  "category": "technology",
+  "trending_score": 10
 }

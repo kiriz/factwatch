@@ -1,11 +1,10 @@
 {
   "total_claims": 16,
   "verdicts": {
-    "TRUE": 8,
-    "FALSE": 5,
-    "MISLEADING": 2,
-    "DISPUTED": 1
+    "UNVERIFIED": 13,
+    "FALSE": 1,
+    "MISLEADING": 2
   },
-  "last_run_at": "2026-06-04T21:24:31Z",
-  "last_run_id": "run-2026-06-04T212406Z"
+  "last_run_at": "2026-06-05T07:47:06Z",
+  "last_run_id": "run-2026-06-05T073027Z"
 }

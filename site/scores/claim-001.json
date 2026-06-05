@@ -1,58 +1,34 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-001",
-  "verdict": "TRUE",
-  "confidence": 100,
-  "last_checked_at": "2026-05-25T04:11:00Z",
-  "last_changed_at": "2026-06-03T04:54:59Z",
-  "run_id": "run-2026-06-03T064030Z",
-  "sources": [
-    {
-      "url": "https://science.nasa.gov/earth/earth-observatory/world-of-change/arctic-sea-ice/",
-      "title": "World of Change: Arctic Sea Ice - NASA Science",
-      "domain": "science.nasa.gov",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "satellites have monitored sea ice growth and retreat... detected an overall decline"
-    },
-    {
-      "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
-      "title": "Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov",
-      "domain": "climate.gov",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "average minimum extent for each third of the satellite record has successively declined"
-    },
-    {
-      "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
-      "title": "Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)",
-      "domain": "eea.europa.eu",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "Arctic has lost an area of 71,000km 2 of sea ice per year... since 1979."
-    },
-    {
-      "url": "https://eos.org/research-and-developments/arctic-winter-sea-ice-hits-a-record-low-again",
-      "title": "Arctic Winter Sea Ice Hits a Record Low, Again - Eos.org",
-      "domain": "eos.org",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "significant downward trend that we\u2019ve observed since 1979"
-    }
-  ],
-  "reasoning": "Satellite data continuously gathered since 1979 by agencies such as NASA, NOAA, and NSIDC confirm a clear, statistically significant long-term decline in Arctic sea ice extent. While short-term year-to-year fluctuations occur, the overall trend across all seasons\u2014especially the September summer minimum\u2014is strongly downward, with substantial loss in ice area, thickness, and age.",
+  "verdict": "UNVERIFIED",
+  "confidence": 0,
+  "last_checked_at": "2026-06-05T07:32:30Z",
+  "last_changed_at": "2026-06-05T07:32:30Z",
+  "run_id": "run-2026-06-05T073027Z",
+  "sources": [],
+  "reasoning": "Fact-check failed: API error after retry",
   "verdict_history": [
     {
       "verdict": "TRUE",
       "confidence": 100,
       "checked_at": "2026-05-24T06:40:10Z",
       "run_id": "run-2026-06-03T045447Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-05-25T04:11:00Z",
+      "run_id": "run-2026-06-03T064030Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": false,
-    "low_source_quality": false
-  }
+    "requires_human_review": true,
+    "low_source_quality": true
+  },
+  "title": "Arctic sea ice decline since 1979",
+  "category": "science",
+  "trending_score": 10
 }

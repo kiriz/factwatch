@@ -1,42 +1,34 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-005",
-  "verdict": "TRUE",
-  "confidence": 98,
-  "last_checked_at": "2026-05-25T04:11:00Z",
-  "last_changed_at": "2026-06-03T04:55:42Z",
-  "run_id": "run-2026-06-03T064030Z",
-  "sources": [
-    {
-      "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
-      "title": "How does the government budget process work? - USAFacts",
-      "domain": "usafacts.org",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "Congress last passed a full budget in 1997."
-    },
-    {
-      "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
-      "title": "Congress has long struggled to pass spending bills on time",
-      "domain": "pewresearch.org",
-      "relevance": "high",
-      "supports_claim": true,
-      "excerpt": "measures on time only four times in nearly five decades."
-    }
-  ],
-  "reasoning": "Data from the Pew Research Center and USAFacts confirms that Congress has not passed all of its required individual appropriations bills on time (prior to the October 1 start of the fiscal year) since fiscal year 1997 (passed in late 1996). Since then, the federal government has been funded through temporary continuing resolutions or late-passed omnibus spending packages.",
+  "verdict": "UNVERIFIED",
+  "confidence": 0,
+  "last_checked_at": "2026-06-05T07:45:09Z",
+  "last_changed_at": "2026-06-05T07:45:09Z",
+  "run_id": "run-2026-06-05T073027Z",
+  "sources": [],
+  "reasoning": "Fact-check failed: API error after retry",
   "verdict_history": [
     {
       "verdict": "TRUE",
       "confidence": 98,
       "checked_at": "2026-05-24T06:40:10Z",
       "run_id": "run-2026-06-03T045447Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-05-25T04:11:00Z",
+      "run_id": "run-2026-06-03T064030Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": false,
-    "low_source_quality": false
-  }
+    "requires_human_review": true,
+    "low_source_quality": true
+  },
+  "title": "US Congress passed no budget on time since 1997",
+  "category": "politics",
+  "trending_score": 10
 }
