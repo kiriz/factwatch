@@ -10,3 +10,7 @@ htmlcov/
 dist/
 *.egg-info/
 agent/compiled/*.json
+
+coverage.xml
+.coverage
+htmlcov/

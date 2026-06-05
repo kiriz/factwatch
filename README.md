@@ -1,5 +1,13 @@
 # FactWatch
 
+[![CI](https://github.com/kiriz/factwatch/actions/workflows/ci.yml/badge.svg)](https://github.com/kiriz/factwatch/actions/workflows/ci.yml)
+[![Coverage](.github/badges/coverage.svg)](https://github.com/kiriz/factwatch/actions/workflows/ci.yml)
+[![AI Agent](https://github.com/kiriz/factwatch/actions/workflows/agent.yml/badge.svg)](https://github.com/kiriz/factwatch/actions/workflows/agent.yml)
+[![Pages](https://github.com/kiriz/factwatch/actions/workflows/pages.yml/badge.svg)](https://github.com/kiriz/factwatch/actions/workflows/pages.yml)
+[![Live site](https://img.shields.io/badge/live-kiriz.github.io%2Ffactwatch-3b82f6)](https://kiriz.github.io/factwatch/)
+[![Python](https://img.shields.io/badge/python-3.12-blue)](https://www.python.org/)
+[![Powered by Gemini](https://img.shields.io/badge/AI-Google%20Gemini-8b5cf6)](https://ai.google.dev/)
+
 **Live site:** https://kiriz.github.io/factwatch/ &nbsp;·&nbsp; **Repo:** https://github.com/kiriz/factwatch
 
 **Facts verified by humans. Kept current by AI.**
