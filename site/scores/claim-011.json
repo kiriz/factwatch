@@ -1,12 +1,20 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-011",
-  "verdict": "MISLEADING",
+  "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-06-05T07:42:00Z",
-  "last_changed_at": "2026-06-04T01:04:24Z",
-  "run_id": "run-2026-06-05T073027Z",
+  "last_checked_at": "2026-06-09T23:44:58Z",
+  "last_changed_at": "2026-06-09T23:44:58Z",
+  "run_id": "run-2026-06-09T234226Z",
   "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Monosodium_glutamate",
+      "title": "Monosodium glutamate - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "3 weeks ago - It is a popular misconception that MSG can cause headaches and"
+    },
     {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4870486/",
       "title": "Does monosodium glutamate really cause headache? : a systematic review of human studies - PMC",
@@ -40,29 +48,27 @@
       "excerpt": "The spectrum of symptoms ranges from headache, sweating, abdominal pain, and urticaria to angioedema in"
     },
     {
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6952072/",
-      "title": "A review of the alleged health hazards of monosodium glutamate - PMC",
-      "domain": "pmc.ncbi.nlm.nih.gov",
+      "url": "https://www.rxlist.com/chinese_restaurant_syndrome/definition.htm",
+      "title": "Medical Definition of Chinese restaurant syndrome",
+      "domain": "rxlist.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The “Chinese restaurant syndrome” ... (Freeman, 2006), consists of a series of symptoms such as"
-    },
-    {
-      "url": "https://knowmsg.com/chinese-restaurant-syndrome/",
-      "title": "Chinese Restaurant Syndrome | Know MSG",
-      "domain": "knowmsg.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "May 21, 2020 - noun: a group of symptoms (such as numbness of the neck,"
+      "excerpt": "March 29, 2021 - Chinese restaurant syndrome: A syndrome first described in 1968 in people"
     }
   ],
-  "reasoning": "The claim that MSG (monosodium glutamate) causes headaches, numbness, and other symptoms—collectively referred to as \"Chinese restaurant syndrome\" or \"MSG symptom complex\"—is misleading. \n\nWhile these symptoms have historically been attributed to MSG, scientific consensus and major food safety authorities, including the US Food and Drug Administration (FDA) and the World Health Organization (WHO), have found no consistent causal link between typical dietary levels of MSG and these adverse reactions. \n\nKey points of scientific evidence include:\n1. **FDA Status:** The FDA classifies MSG as \"generally recognized as safe\" (GRAS), placing it in the same category as salt, pepper, and vinegar.\n2. **Chemical Identity:** Glutamate from MSG is chemically identical to the glutamate found naturally in foods like tomatoes, mushrooms, and aged cheeses, which the human body metabolizes in the exact same way.\n3. **Lack of Causal Evidence:** Rigorous double-blind, placebo-controlled studies have repeatedly failed to establish a reliable connection between normal MSG consumption and the symptoms of \"Chinese restaurant syndrome.\" Some studies have shown that extremely high doses (3 grams or more on an empty stomach, which is far beyond what is typically consumed in a meal) might trigger mild, transient symptoms in a small subset of sensitive individuals, but these conditions do not reflect real-world exposure. \n4. **Origin of the Term:** The term \"Chinese restaurant syndrome\" originated from a single 1968 letter to the New England Journal of Medicine that speculated on several potential causes for mild post-meal symptoms. Subsequent panic was fueled by flawed studies and cultural biases rather than robust scientific proof.",
+  "reasoning": "The claim that MSG causes headaches, numbness, and other symptoms associated with \"Chinese restaurant syndrome\" is false and has been debunked by scientific consensus. \n\nThe term \"Chinese restaurant syndrome\" originated from a single letter written to the New England Journal of Medicine in 1968, which speculated on the cause of post-meal symptoms. Since then, numerous rigorous, double-blind, placebo-controlled studies have failed to establish any reliable causal link between monosodium glutamate (MSG) and these symptoms when consumed in normal dietary amounts. \n\nBoth the U.S. Food and Drug Administration (FDA) and the World Health Organization (WHO) classify MSG as \"generally recognized as safe\" (GRAS). Chemically, the glutamate in MSG is identical to the natural glutamate found in foods like tomatoes, cheese, and mushrooms, which do not trigger such reactions. While a very small subset of the population might exhibit transient, mild sensitivity when consuming massive doses (3 grams or more) of MSG on an empty stomach without food, MSG does not cause these symptoms under normal eating conditions.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
       "confidence": 95,
       "checked_at": "2026-05-25T04:11:00Z",
       "run_id": "run-2026-06-04T010331Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 95,
+      "checked_at": "2026-05-30T23:42:07Z",
+      "run_id": "run-2026-06-05T073027Z"
     }
   ],
   "agent_flags": {

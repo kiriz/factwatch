@@ -1,13 +1,62 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-005",
-  "verdict": "UNVERIFIED",
-  "confidence": 0,
-  "last_checked_at": "2026-05-30T23:42:07Z",
-  "last_changed_at": "2026-06-05T07:45:09Z",
-  "run_id": "run-2026-06-05T073027Z",
-  "sources": [],
-  "reasoning": "Fact-check failed: API error after retry",
+  "verdict": "TRUE",
+  "confidence": 100,
+  "last_checked_at": "2026-06-09T23:46:49Z",
+  "last_changed_at": "2026-06-09T23:46:49Z",
+  "run_id": "run-2026-06-09T234226Z",
+  "sources": [
+    {
+      "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
+      "title": "Congress has long struggled to pass spending bills on time",
+      "domain": "pewresearch.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Oct 1, 2025 · Congress has passed all its required appropriations measures on time only"
+    },
+    {
+      "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
+      "title": "How does the government budget process work? - USAFacts",
+      "domain": "usafacts.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Sep 18, 2025 · Congress hasn't passed a full budget on time since 1997. How"
+    },
+    {
+      "url": "https://www.crfb.org/papers/congress-increasingly-fails-budget",
+      "title": "Congress Increasingly Fails to Budget-Tue, 02/25/2020 - 12:00",
+      "domain": "crfb.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Feb 25, 2020 · In 2018, for the first time under the modern budget process,"
+    },
+    {
+      "url": "https://www.facebook.com/pewresearch/posts/in-the-nearly-five-decades-that-the-current-system-for-budgeting-and-spending-ta/1177935014202557/",
+      "title": "In the nearly five decades that the current system for budgeting and ...",
+      "domain": "facebook.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Oct 3, 2025 · In the nearly five decades that the current system for budgeting"
+    },
+    {
+      "url": "https://taxpolicycenter.org/taxvox/its-not-news-congresss-budget-process-wreck-it-should-be",
+      "title": "It's Not News That Congress's Budget Process Is A Wreck, But It Should Be",
+      "domain": "taxpolicycenter.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Oct 9, 2020 · The last time Congress did its job was 1997: Bill Clinton"
+    },
+    {
+      "url": "https://history.house.gov/Institution/Origins-Development/Power-of-the-Purse/Budget/",
+      "title": "Budget | US House of Representatives: History, Art & Archives",
+      "domain": "history.house.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Congress was frequently unable to pass appropriations bills according to the schedule set by the"
+    }
+  ],
+  "reasoning": "According to data from the Congressional Research Service, the Pew Research Center, and USAFacts, the U.S. Congress has not passed all of its individual, regular appropriations bills on time since Fiscal Year 1997 (which were passed before the October 1, 1996 deadline). In the years since, Congress has consistently relied on continuing resolutions, omnibus spending packages, or legislative packages passed after the start of the fiscal year to fund the government.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -20,13 +69,19 @@
       "confidence": 98,
       "checked_at": "2026-05-25T04:11:00Z",
       "run_id": "run-2026-06-03T064030Z"
+    },
+    {
+      "verdict": "UNVERIFIED",
+      "confidence": 0,
+      "checked_at": "2026-05-30T23:42:07Z",
+      "run_id": "run-2026-06-05T073027Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": true,
-    "low_source_quality": true
+    "requires_human_review": false,
+    "low_source_quality": false
   },
   "title": "US Congress passed no budget on time since 1997",
   "category": "politics",

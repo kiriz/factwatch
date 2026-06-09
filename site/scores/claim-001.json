@@ -1,13 +1,62 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-001",
-  "verdict": "UNVERIFIED",
-  "confidence": 0,
-  "last_checked_at": "2026-06-05T07:32:30Z",
-  "last_changed_at": "2026-06-05T07:32:30Z",
-  "run_id": "run-2026-06-05T073027Z",
-  "sources": [],
-  "reasoning": "Fact-check failed: API error after retry",
+  "verdict": "TRUE",
+  "confidence": 100,
+  "last_checked_at": "2026-06-09T23:42:49Z",
+  "last_changed_at": "2026-06-09T23:42:49Z",
+  "run_id": "run-2026-06-09T234226Z",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
+      "title": "Arctic sea ice decline - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "1 month ago - The decline of sea ice in the Arctic has been accelerating"
+    },
+    {
+      "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
+      "title": "Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov",
+      "domain": "climate.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "October 18, 2022 - In the 2020 Arctic Report Card, experts reported that the average"
+    },
+    {
+      "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
+      "title": "Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)",
+      "domain": "eea.europa.eu",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has"
+    },
+    {
+      "url": "https://eos.org/research-and-developments/arctic-winter-sea-ice-hits-a-record-low-again",
+      "title": "Arctic Winter Sea Ice Hits a Record Low, Again - Eos.org",
+      "domain": "eos.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 27, 2026 - “One or two record low years don’t necessarily mean much by"
+    },
+    {
+      "url": "https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979",
+      "title": "Satellites record second lowest Arctic sea ice extent since 1979",
+      "domain": "unep.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice"
+    },
+    {
+      "url": "https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era",
+      "title": "How was Arctic sea ice measured before the satellite era? | National Snow and Ice Data Center",
+      "domain": "nsidc.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was"
+    }
+  ],
+  "reasoning": "The claim is fully supported by comprehensive scientific data. Continuous satellite monitoring of Arctic sea ice began in 1979. Data from major scientific organizations—including NASA, NOAA, the National Snow and Ice Data Center (NSIDC), and the European Environment Agency—confirm a highly significant, long-term downward trend in both Arctic sea ice extent and thickness. This decline is apparent in all seasons but is most pronounced during the annual late-summer minimum in September, which has decreased by over 12% per decade relative to the 1981–2010 average.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -20,13 +69,19 @@
       "confidence": 100,
       "checked_at": "2026-05-25T04:11:00Z",
       "run_id": "run-2026-06-03T064030Z"
+    },
+    {
+      "verdict": "UNVERIFIED",
+      "confidence": 0,
+      "checked_at": "2026-05-30T23:42:07Z",
+      "run_id": "run-2026-06-05T073027Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": true,
-    "low_source_quality": true
+    "requires_human_review": false,
+    "low_source_quality": false
   },
   "title": "Arctic sea ice decline since 1979",
   "category": "science",

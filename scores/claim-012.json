@@ -1,26 +1,81 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-012",
-  "verdict": "UNVERIFIED",
-  "confidence": 0,
-  "last_checked_at": "2026-05-30T23:42:07Z",
-  "last_changed_at": "2026-06-05T07:46:27Z",
-  "run_id": "run-2026-06-05T073027Z",
-  "sources": [],
-  "reasoning": "Fact-check failed: API error after retry",
+  "verdict": "FALSE",
+  "confidence": 100,
+  "last_checked_at": "2026-06-09T23:47:23Z",
+  "last_changed_at": "2026-06-09T23:47:23Z",
+  "run_id": "run-2026-06-09T234226Z",
+  "sources": [
+    {
+      "url": "https://www.britannica.com/story/can-lightning-strike-the-same-place-twice",
+      "title": "Can Lightning Strike the Same Place Twice? - Britannica",
+      "domain": "britannica.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Lightning never strikes the same place twice” is a common phrase you've probably heard before,"
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/lightning+never+strikes+(the+same+place)+twice",
+      "title": "lightning never strikes (the same place) twice - Merriam-Webster",
+      "domain": "merriam-webster.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The meaning of LIGHTNING NEVER STRIKES (THE SAME PLACE) TWICE is —used to say that"
+    },
+    {
+      "url": "https://www.weather.gov/safety/lightning-myths",
+      "title": "Lightning Myths - National Weather Service",
+      "domain": "weather.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Myth: Lightning never strikes the same place twice. Fact: Lightning often strikes the same place"
+    },
+    {
+      "url": "https://www.facebook.com/CBSPittsburgh/posts/hey-ray-youve-heard-the-saying-lightning-never-strikes-twice-but-is-it-true-ray-/1377074114467443/",
+      "title": "HEY RAY! You've heard the saying, \"Lightning never strikes twice,\" but ...",
+      "domain": "facebook.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Apr 11, 2026 · Before we get to the facts, let's debunk the myth that"
+    },
+    {
+      "url": "https://wu-next-core-us-east-1-aws.wunderground.com/article/science/weather-explainers/news/2025-03-17-lightning-never-strikes-twice-fact-fiction",
+      "title": "Why 'Lightning Never Strikes The Same Place Twice' Is An Imperfect ...",
+      "domain": "wu-next-core-us-east-1-aws.wunderground.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Mar 17, 2025 · Lightning never strikes the same place twice” is a common idiom"
+    },
+    {
+      "url": "https://www.reddit.com/r/whoathatsinteresting/comments/1tzpnn3/and_they_say_lightning_never_strikes_the_same/",
+      "title": "And they say lightning never strikes the same place more than once",
+      "domain": "reddit.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "2 days ago · ... with lightning rods is that they're single use only… seeing"
+    }
+  ],
+  "reasoning": "The claim \"Lightning never strikes the same place twice\" is a well-known myth that is scientifically false. According to the National Weather Service (NWS), lightning frequently strikes the same location repeatedly, especially if it is a tall, pointed, and isolated structure. From a physics perspective, lightning seeks the path of least resistance to ground. Tall conductors (such as skyscrapers, towers, and lightning rods) concentrate the electrical field at their peaks, initiating upward leaders that connect with descending stepped leaders from storm clouds. A famous real-world example is the Empire State Building in New York City, which is struck by lightning an average of 25 times every year.",
   "verdict_history": [
     {
       "verdict": "FALSE",
       "confidence": 99,
       "checked_at": "2026-05-25T04:11:00Z",
       "run_id": "run-2026-06-04T010331Z"
+    },
+    {
+      "verdict": "UNVERIFIED",
+      "confidence": 0,
+      "checked_at": "2026-05-30T23:42:07Z",
+      "run_id": "run-2026-06-05T073027Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": true,
-    "low_source_quality": true
+    "requires_human_review": false,
+    "low_source_quality": false
   },
   "title": "Lightning never strikes the same place twice",
   "category": "science",

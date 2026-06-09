@@ -1,13 +1,62 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-003",
-  "verdict": "UNVERIFIED",
-  "confidence": 0,
-  "last_checked_at": "2026-06-05T07:36:18Z",
-  "last_changed_at": "2026-06-05T07:36:18Z",
-  "run_id": "run-2026-06-05T073027Z",
-  "sources": [],
-  "reasoning": "Fact-check failed: API error after retry",
+  "verdict": "FALSE",
+  "confidence": 100,
+  "last_checked_at": "2026-06-09T23:43:28Z",
+  "last_changed_at": "2026-06-09T23:43:28Z",
+  "run_id": "run-2026-06-09T234226Z",
+  "sources": [
+    {
+      "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
+      "title": "Do mRNA Vaccines Permanently Alter Human DNA, Making You a Genetically Modified Organism? By Brian Simpson",
+      "domain": "blog.alor.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "They want you to accept them as any other conventional vaccine. mRNA-Based Medicines Designed to"
+    },
+    {
+      "url": "https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/",
+      "title": "No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA” | Science-Based Medicine",
+      "domain": "sciencebasedmedicine.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are"
+    },
+    {
+      "url": "https://med.stanford.edu/news/all-news/2025/12/myocarditis-vaccine-covid.html",
+      "title": "Stanford Medicine study shows why mRNA COVID-19 vaccine can cause myocarditis",
+      "domain": "med.stanford.edu",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "December 10, 2025 - Elevated inflammatory cytokine signaling could be a class effect of mRNA"
+    },
+    {
+      "url": "https://www.medscape.com/viewarticle/mrna-works-differently-than-we-thought-and-s-good-2026a1000gzv",
+      "title": "mRNA Works Differently Than We Thought (and That’s Good)",
+      "domain": "medscape.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "2 weeks ago - “That turned out not to be the case.” · Brown was"
+    },
+    {
+      "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
+      "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
+      "domain": "respectfulinsolence.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 9, 2022 - They didn’t, and here we are, ... of the revenge of"
+    },
+    {
+      "url": "https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/",
+      "title": "Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST",
+      "domain": "route66post.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents"
+    }
+  ],
+  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false. According to consensus from major global health authorities (including the CDC, WHO, and NIH) and peer-reviewed molecular biology literature, mRNA vaccines cannot modify human DNA. \n\nMechanistically, the mRNA delivered by the vaccine does not enter the cell's nucleus, which is where human DNA is housed. Instead, it remains in the cytoplasm, where cellular machinery uses it to produce the spike protein before the mRNA is rapidly degraded. Furthermore, human cells do not possess the necessary enzymes (such as reverse transcriptase and integrase) to convert foreign mRNA into DNA and integrate it into the host genome. \n\nWhile some fringe sources point to highly criticized in vitro studies (such as a 2022 study by Aldén et al. using Huh7 liver cancer cells) to claim that reverse transcription can occur, these laboratory conditions do not replicate human physiology, and the study did not demonstrate integration into the host genome or permanent alteration of human DNA.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -20,13 +69,19 @@
       "confidence": 100,
       "checked_at": "2026-05-25T04:11:00Z",
       "run_id": "run-2026-06-03T064030Z"
+    },
+    {
+      "verdict": "UNVERIFIED",
+      "confidence": 0,
+      "checked_at": "2026-05-30T23:42:07Z",
+      "run_id": "run-2026-06-05T073027Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": true,
-    "low_source_quality": true
+    "requires_human_review": false,
+    "low_source_quality": false
   },
   "title": "mRNA vaccines alter human DNA",
   "category": "health",

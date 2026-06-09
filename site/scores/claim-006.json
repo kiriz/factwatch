@@ -1,26 +1,81 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-006",
-  "verdict": "UNVERIFIED",
-  "confidence": 0,
-  "last_checked_at": "2026-06-05T07:37:40Z",
-  "last_changed_at": "2026-06-05T07:37:40Z",
-  "run_id": "run-2026-06-05T073027Z",
-  "sources": [],
-  "reasoning": "Fact-check failed: API error after retry",
+  "verdict": "FALSE",
+  "confidence": 100,
+  "last_checked_at": "2026-06-09T23:43:44Z",
+  "last_changed_at": "2026-06-09T23:43:44Z",
+  "run_id": "run-2026-06-09T234226Z",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
+      "title": "Ten-percent-of-the-brain myth - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The ten-percent-of-the-brain myth or ninety-percent-of-the-brain myth states that humans generally use only one-tenth of their"
+    },
+    {
+      "url": "https://www.psychologicalscience.org/uncategorized/myth-we-only-use-10-of-our-brains.html",
+      "title": "Myth: We Only Use 10% of Our Brains",
+      "domain": "psychologicalscience.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Aug 29, 2018 · It was the basis of the movie Lucy (2014), which depicted"
+    },
+    {
+      "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
+      "title": "Do We Really Use Only 10 Percent of Our Brain? - Britannica",
+      "domain": "britannica.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "So how did we come to believe that 90 percent of our brain is useless?"
+    },
+    {
+      "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+      "title": "Do People Only Use 10 Percent of Their Brains? - Scientific American",
+      "domain": "scientificamerican.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Feb 7, 2008 · The \"10 percent myth\" is so wrong it is almost laughable,"
+    },
+    {
+      "url": "https://www.facebook.com/plymouthuni/posts/we-only-use-around-10-of-our-brain-at-any-moment-is-this-a-fact-or-a-myththe-hum/783102453862326/",
+      "title": "We only use around 10% of our brain at any moment – is this a fact or a ...",
+      "domain": "facebook.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Jan 15, 2024 · The idea that we use 10 percent of our brain is"
+    },
+    {
+      "url": "https://www.medicalnewstoday.com/articles/321060",
+      "title": "How much of our brain do we actually use? Brain facts and myths",
+      "domain": "medicalnewstoday.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Because of the organ's complexity, scientists are still learning about the brain. The notion that"
+    }
+  ],
+  "reasoning": "The claim that humans only use 10% of their brain is a well-known and thoroughly debunked neurological myth. Scientific consensus from neurologists and cognitive scientists, supported by advanced neuroimaging techniques such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET) scans, demonstrates that virtually all parts of the brain are active throughout the day. Even simple tasks or periods of sleep engage nearly the entire brain over time. Furthermore, brain tissue that goes unused typically atrophies or degrades, yet healthy adults do not possess large regions of dormant brain mass.",
   "verdict_history": [
     {
       "verdict": "FALSE",
       "confidence": 100,
       "checked_at": "2026-05-25T04:11:00Z",
       "run_id": "run-2026-06-04T010331Z"
+    },
+    {
+      "verdict": "UNVERIFIED",
+      "confidence": 0,
+      "checked_at": "2026-05-30T23:42:07Z",
+      "run_id": "run-2026-06-05T073027Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": true,
-    "low_source_quality": true
+    "requires_human_review": false,
+    "low_source_quality": false
   },
   "title": "Humans only use 10% of their brains",
   "category": "health",

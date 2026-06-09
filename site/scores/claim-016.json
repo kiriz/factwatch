@@ -2,67 +2,73 @@
   "schema_version": "1.0",
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
-  "confidence": 90,
-  "last_checked_at": "2026-06-04T21:24:29Z",
+  "confidence": 95,
+  "last_checked_at": "2026-06-09T23:46:06Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-06-04T212406Z",
+  "run_id": "run-2026-06-09T234226Z",
   "sources": [
+    {
+      "url": "https://www.bbc.co.uk/news/technology-65102150",
+      "title": "AI could replace equivalent of 300 million jobs - report - BBC News",
+      "domain": "bbc.co.uk",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by"
+    },
     {
       "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
       "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
       "domain": "nexford.edu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "April 6, 2026 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
+      "excerpt": "Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by"
     },
     {
-      "url": "https://www.bbc.com/news/technology-65102150",
-      "title": "AI could replace equivalent of 300 million jobs - report",
+      "url": "https://www.bbc.com/worklife/article/20230418-ai-anxiety-artificial-intelligence-replace-jobs",
+      "title": "The anxiety of being replaced by AI",
       "domain": "bbc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 28, 2023 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
+      "excerpt": "AI anxiety: The workers who fear losing their jobs to artificial intelligence.In March, Goldman Sachs"
     },
     {
-      "url": "https://economictimes.indiatimes.com/tech/technology/generative-ai-could-replace-300-million-jobs-goldman-sachs-report/articleshow/99085074.cms",
-      "title": "goldman sachs: Generative AI could replace 300 million jobs: Goldman Sachs report - The Economic Times",
-      "domain": "economictimes.indiatimes.com",
+      "url": "https://ghspomegranate.com/4077/features/ai-will-replace-300-million-jobs-within-the-next-decade/",
+      "title": "AI will replace 300 million jobs within the next decade.",
+      "domain": "ghspomegranate.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 29, 2023 - ... Generative AI has already made a huge impact on how"
+      "excerpt": "As AI grows more sophisticated, widespread, and sought after, it is expected to replace the"
     },
     {
-      "url": "https://www.bbc.com/news/technology-65102150.amp",
-      "title": "AI could replace equivalent of 300 million jobs - report - BBC News",
-      "domain": "bbc.com",
+      "url": "https://inf.news/en/tech/d10233909a9298ee151f544ffe315525.html",
+      "title": "AI will replace 300 million jobs, and ordinary people's lives will...",
+      "domain": "inf.news",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 28, 2023 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
+      "excerpt": "The most surprising part about this AI revolution is that many people thought it would"
     },
     {
-      "url": "https://aibusiness.com/nlp/goldman-sachs-generative-ai-could-replace-300-million-jobs",
-      "title": "Goldman Sachs: Generative AI Could Replace 300 Million Jobs",
-      "domain": "aibusiness.com",
+      "url": "https://www.tiktok.com/discover/ai-will-replace-all-jobs-by-2030",
+      "title": "Ai Will Replace All Jobs by 2030 | TikTok",
+      "domain": "tiktok.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 29, 2023 - The report’s authors, which include ... exposed to some degree of"
-    },
-    {
-      "url": "https://www.forbes.com/sites/jackkelly/2025/04/25/the-jobs-that-will-fall-first-as-ai-takes-over-the-workplace/",
-      "title": "Jobs AI Will Replace First in the Workplace Shift",
-      "domain": "forbes.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "April 30, 2025 - Goldman Sachs predicts up that to 50% of jobs could be"
+      "excerpt": "AI Will Replace 300 Million Jobs by 2030—Are You Ready or at Risk? Goldman Sachs"
     }
   ],
-  "reasoning": "The claim that generative AI \"will replace\" 300 million jobs worldwide is a misleading overstatement of the actual source study. This figure originates from a March 2023 report by Goldman Sachs, which estimated that generative AI *could expose* the equivalent of 300 million full-time jobs globally to automation. Crucially, the report did not state that these jobs would be definitively eliminated or replaced. Instead, it argued that while about two-thirds of current jobs are exposed to some degree of AI automation, most of those occupations will be complemented rather than substituted by AI. Representing a projection of \"automation exposure\" as a definitive prediction of outright job replacement distorts the study's actual findings.",
+  "reasoning": "The claim that \"generative AI will replace 300 million jobs worldwide\" is a common mischaracterization of a March 2023 report by Goldman Sachs. The report actually estimated that generative AI could \"expose\" the equivalent of 300 million full-time jobs globally to automation, meaning that certain tasks within those jobs could be automated. It did not project that 300 million actual workers would lose their jobs or be fully replaced. In fact, the report emphasized that most jobs and industries are only partially exposed to automation and are more likely to be complemented rather than substituted by AI, which could ultimately boost global productivity and create new employment opportunities.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
       "confidence": 90,
       "checked_at": "2026-06-04T21:10:11Z",
       "run_id": "run-2026-06-04T210946Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 90,
+      "checked_at": "2026-05-30T23:42:07Z",
+      "run_id": "run-2026-06-04T212406Z"
     }
   ],
   "agent_flags": {

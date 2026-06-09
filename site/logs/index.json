@@ -1,6 +1,13 @@
 {
   "runs": [
     {
+      "run_id": "run-2026-06-09T234226Z",
+      "started_at": "2026-06-09T23:42:26Z",
+      "claims_processed": 16,
+      "verdicts_changed": 14,
+      "errors": 0
+    },
+    {
       "run_id": "run-2026-06-09T071518Z",
       "started_at": "2026-06-09T07:15:18Z",
       "claims_processed": 0,
