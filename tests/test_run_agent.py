@@ -123,6 +123,32 @@ def test_verdict_flip_counted_as_changed(tmp_path: Path) -> None:
     assert index["runs"][0]["verdicts_changed"] == 1
 
 
+def test_transient_failure_keeps_prior_verdict(tmp_path: Path) -> None:
+    # A flaky API run must NOT clobber a good verdict with UNVERIFIED 0%.
+    project = _make_project(tmp_path, ["claim-001"])
+    run_agent.run(project_root=project, client=StubClient("TRUE", 90))
+    score_path = project / "scores" / "claim-001.json"
+    score = json.loads(score_path.read_text())
+    score["last_checked_at"] = (datetime.now(timezone.utc) - timedelta(days=30)).strftime(
+        "%Y-%m-%dT%H:%M:%SZ"
+    )
+    score_path.write_text(json.dumps(score))
+
+    # Second run: the API fails (client raises on every call) -> error result.
+    class FailingModels:
+        def generate_content(self, model: str, contents: str, config: Any = None) -> Any:
+            raise RuntimeError("API down")
+
+    class FailingClient:
+        models = FailingModels()
+
+    run_agent.run(project_root=project, client=FailingClient())
+
+    after = json.loads(score_path.read_text())
+    assert after["verdict"] == "TRUE"          # prior verdict preserved
+    assert after["confidence"] == 90
+
+
 def test_dry_run_writes_nothing(tmp_path: Path) -> None:
     project = _make_project(tmp_path, ["claim-001", "claim-002"])
     code = run_agent.run(project_root=project, dry_run=True, client=StubClient())

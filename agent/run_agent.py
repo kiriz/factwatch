@@ -240,6 +240,33 @@ def _check_one(
             compiled_path=compiled_path,
         )
         llm_trace = result.pop("_trace", {})
+
+        # Resilience: a transient fact-check failure (UNVERIFIED + "Fact-check
+        # failed") must NOT clobber a previously good verdict. Keep the prior
+        # score so a flaky API run can't blank the site; the claim re-checks on
+        # the next run. Only write the error result for never-verified claims.
+        is_error = result.get("verdict") == "UNVERIFIED" and str(
+            result.get("reasoning", "")
+        ).startswith("Fact-check failed")
+        if is_error and previous_verdict not in (None, "UNVERIFIED"):
+            logger.warning(
+                "claim %s: fact-check failed (%s); keeping prior verdict %s",
+                claim_id,
+                result.get("reasoning"),
+                previous_verdict,
+            )
+            trace.update(
+                {
+                    "verdict": previous_verdict,
+                    "new_verdict": previous_verdict,
+                    "verdict_changed": False,
+                    "error": True,
+                    "error_detail": result.get("reasoning"),
+                    "reasoning_steps": [f"Re-check failed; kept prior verdict {previous_verdict}."],
+                }
+            )
+            return trace
+
         result["title"] = str(claim.get("title", ""))
         result["category"] = str(claim.get("category", ""))
         result["trending_score"] = fact_checker.compute_trending_score(
