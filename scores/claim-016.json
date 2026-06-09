@@ -3,7 +3,7 @@
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
   "confidence": 90,
-  "last_checked_at": "2026-06-04T21:24:29Z",
+  "last_checked_at": "2026-05-30T23:42:07Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
   "run_id": "run-2026-06-04T212406Z",
   "sources": [
@@ -45,7 +45,7 @@
       "domain": "aibusiness.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 29, 2023 - The report’s authors, which include ... exposed to some degree of"
+      "excerpt": "March 29, 2023 - The report\u2019s authors, which include ... exposed to some degree of"
     },
     {
       "url": "https://www.forbes.com/sites/jackkelly/2025/04/25/the-jobs-that-will-fall-first-as-ai-takes-over-the-workplace/",

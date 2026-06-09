@@ -3,7 +3,7 @@
   "claim_id": "claim-007",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-06-05T07:38:24Z",
+  "last_checked_at": "2026-05-30T23:42:07Z",
   "last_changed_at": "2026-06-04T01:03:50Z",
   "run_id": "run-2026-06-05T073027Z",
   "sources": [
@@ -13,7 +13,7 @@
       "domain": "skyatnightmagazine.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 27, 2024 · One space-based myth that we all have heard is the idea"
+      "excerpt": "Feb 27, 2024 \u00b7 One space-based myth that we all have heard is the idea"
     },
     {
       "url": "https://www.msn.com/en-in/news/world/nasa-just-confirmed-that-largest-structure-visible-from-space-isnt-actually-the-great-wall-of-china/ar-AA1GXeFK",
@@ -29,7 +29,7 @@
       "domain": "nasa.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Apr 2, 2009 · Despite myths to the contrary, the wall isn't visible from the"
+      "excerpt": "Apr 2, 2009 \u00b7 Despite myths to the contrary, the wall isn't visible from the"
     },
     {
       "url": "https://www.thetravel.com/what-is-largest-structure-visible-from-space-according-to-nasa/",
@@ -37,7 +37,7 @@
       "domain": "thetravel.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jun 17, 2025 · Experts have long attributed the Great Wall of China, a magnificent"
+      "excerpt": "Jun 17, 2025 \u00b7 Experts have long attributed the Great Wall of China, a magnificent"
     },
     {
       "url": "https://www.sciencefocus.com/planet-earth/is-the-great-wall-of-china-really-visible-from-space",
@@ -53,10 +53,10 @@
       "domain": "scientificamerican.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 21, 2008 · Choose a legend: The Great Wall of China is the one"
+      "excerpt": "Feb 21, 2008 \u00b7 Choose a legend: The Great Wall of China is the one"
     }
   ],
-  "reasoning": "The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth. NASA and astronauts have repeatedly confirmed that the Great Wall is not visible to the naked eye from low Earth orbit (and certainly not from the Moon) because it is relatively narrow (about 5 to 9 meters wide) and constructed from materials that blend in with the surrounding natural terrain. Additionally, other man-made structures, such as major highways, airports, and the massive sprawl of plastic greenhouses in Almería, Spain, are visible to the naked eye from low Earth orbit, making the claim false on both counts.",
+  "reasoning": "The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth. NASA and astronauts have repeatedly confirmed that the Great Wall is not visible to the naked eye from low Earth orbit (and certainly not from the Moon) because it is relatively narrow (about 5 to 9 meters wide) and constructed from materials that blend in with the surrounding natural terrain. Additionally, other man-made structures, such as major highways, airports, and the massive sprawl of plastic greenhouses in Almer\u00eda, Spain, are visible to the naked eye from low Earth orbit, making the claim false on both counts.",
   "verdict_history": [
     {
       "verdict": "FALSE",
