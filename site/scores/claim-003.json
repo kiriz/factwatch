@@ -3,9 +3,9 @@
   "claim_id": "claim-003",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-06-09T23:43:28Z",
+  "last_checked_at": "2026-06-17T07:52:21Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-06-09T234226Z",
+  "run_id": "run-2026-06-17T075113Z",
   "sources": [
     {
       "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
@@ -37,7 +37,7 @@
       "domain": "medscape.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "2 weeks ago - “That turned out not to be the case.” · Brown was"
+      "excerpt": "3 weeks ago - “That turned out not to be the case.” · Brown was"
     },
     {
       "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
@@ -56,7 +56,7 @@
       "excerpt": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents"
     }
   ],
-  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false. According to consensus from major global health authorities (including the CDC, WHO, and NIH) and peer-reviewed molecular biology literature, mRNA vaccines cannot modify human DNA. \n\nMechanistically, the mRNA delivered by the vaccine does not enter the cell's nucleus, which is where human DNA is housed. Instead, it remains in the cytoplasm, where cellular machinery uses it to produce the spike protein before the mRNA is rapidly degraded. Furthermore, human cells do not possess the necessary enzymes (such as reverse transcriptase and integrase) to convert foreign mRNA into DNA and integrate it into the host genome. \n\nWhile some fringe sources point to highly criticized in vitro studies (such as a 2022 study by Aldén et al. using Huh7 liver cancer cells) to claim that reverse transcription can occur, these laboratory conditions do not replicate human physiology, and the study did not demonstrate integration into the host genome or permanent alteration of human DNA.",
+  "reasoning": "According to the overwhelming consensus of the global scientific and medical community, including the CDC, WHO, and NIH, mRNA COVID-19 vaccines do not and cannot alter or permanently change human DNA. \n\nThis is due to basic molecular biology:\n1. **Cellular Location**: Human DNA is housed inside the cell nucleus. The mRNA from the vaccine enters the cytoplasm of the cell to instruct ribosomes to create the spike protein, but it never enters the nucleus where the DNA is kept.\n2. **Lack of Reverse Transcription Machinery**: The human body naturally lacks the reverse transcriptase enzymes required to convert RNA back into DNA. Without this mechanism, mRNA cannot write itself into the host genome.\n3. **Rapid Degradation**: The vaccine mRNA is highly unstable and is completely broken down and cleared by cellular processes within a few days.\n\nFringe claims often misinterpret a 2022 in-vitro study (Aldén et al.) using Huh-7 liver cancer cells to claim Pfizer's vaccine alters DNA. However, independent molecular biologists have pointed out that this study did not demonstrate integration of the vaccine sequence into the cell's genomic DNA, nor do those laboratory conditions in abnormal cancer cells translate to what occurs inside a living human body. Therefore, the claim is scientifically false.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -75,13 +75,19 @@
       "confidence": 0,
       "checked_at": "2026-05-30T23:42:07Z",
       "run_id": "run-2026-06-05T073027Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-06-09T23:43:28Z",
+      "run_id": "run-2026-06-09T234226Z"
     }
   ],
   "agent_flags": {
-    "conflicting_sources": false,
+    "conflicting_sources": true,
     "outdated_evidence": false,
     "requires_human_review": false,
-    "low_source_quality": false
+    "low_source_quality": true
   },
   "title": "mRNA vaccines alter human DNA",
   "category": "health",

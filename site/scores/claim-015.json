@@ -3,9 +3,9 @@
   "claim_id": "claim-015",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-06-09T23:45:43Z",
+  "last_checked_at": "2026-06-17T07:55:01Z",
   "last_changed_at": "2026-06-09T23:45:43Z",
-  "run_id": "run-2026-06-09T234226Z",
+  "run_id": "run-2026-06-17T075113Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "In the aftermath of his match against AlphaGo, Fan Hui noted that the game had"
+      "excerpt": "AlphaGo versus Lee Sedol, also known as the DeepMind Challenge Match, was a five-game Go"
     },
     {
       "url": "https://www.theatlantic.com/technology/archive/2016/03/the-invisible-opponent/475611/",
@@ -29,7 +29,7 @@
       "domain": "theguardian.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Lee Sedol started with a bow, a traditional Korean gesture of respect for an opponent"
+      "excerpt": "The world champion at Go – an ancient Chinese board game – looked nervous. His"
     },
     {
       "url": "https://slate.com/technology/2016/03/googles-alphago-defeated-go-champion-lee-sedol-ken-jennings-explains-what-that-feels-like.html",
@@ -37,15 +37,7 @@
       "domain": "slate.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Google’s DeepMind artificial intelligence team likes to say that there are more possible Go boards"
-    },
-    {
-      "url": "https://www.fastcompany.com/90402503/the-10-most-important-moments-in-ai-so-far",
-      "title": "The 10 most important moments in AI (so far) - Fast Company",
-      "domain": "fastcompany.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "10. AlphaGo Defeats human Go champion (2016). Back in 2013, researchers at a British startup"
+      "excerpt": "The Go Champion, the Grandmaster, and Me. Millions just watched a computer program beat Lee"
     },
     {
       "url": "https://www.koreatimes.co.kr/business/tech-science/20160312/alphago-wins-third-consecutive-victory",
@@ -54,9 +46,17 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Google-developed artificial intelligence AlphaGo defeated the world go champion Lee Se-dol on Saturday, extending its"
+    },
+    {
+      "url": "https://www.fastcompany.com/90402503/the-10-most-important-moments-in-ai-so-far",
+      "title": "The 10 most important moments in AI (so far) - Fast Company",
+      "domain": "fastcompany.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "10. AlphaGo Defeats human Go champion (2016). Back in 2013, researchers at a British startup"
     }
   ],
-  "reasoning": "In March 2016, Google DeepMind's AlphaGo competed against Lee Sedol, a 9-dan professional who held 18 international titles and was widely considered the top Go player of the era. AlphaGo won the match 4 games to 1, with Lee Sedol winning only the fourth game. Prior to AlphaGo's success (first demonstrated against European champion Fan Hui in late 2015 and then Lee Sedol in 2016), artificial intelligence experts and Go players widely believed that a computer defeating a top human professional was at least a decade away, making this achievement roughly ten years ahead of most expert projections.",
+  "reasoning": "In March 2016, Google DeepMind's artificial intelligence program AlphaGo defeated Lee Sedol, an 18-time world champion and one of the top-ranked Go players in history, in a landmark five-game match by a score of 4 games to 1. Before AlphaGo's rapid rise (including its earlier victory over European champion Fan Hui), computer scientists and Go experts widely believed that a machine beating a top-tier professional human Go player was an achievement at least a decade away, making this milestone significantly ahead of schedule.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -69,6 +69,12 @@
       "confidence": 0,
       "checked_at": "2026-05-30T23:42:07Z",
       "run_id": "run-2026-06-05T073027Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-06-09T23:45:43Z",
+      "run_id": "run-2026-06-09T234226Z"
     }
   ],
   "agent_flags": {

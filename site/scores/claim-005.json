@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-005",
   "verdict": "TRUE",
-  "confidence": 100,
-  "last_checked_at": "2026-06-09T23:46:49Z",
+  "confidence": 95,
+  "last_checked_at": "2026-06-17T07:56:11Z",
   "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-06-09T234226Z",
+  "run_id": "run-2026-06-17T075113Z",
   "sources": [
     {
-      "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
-      "title": "Congress has long struggled to pass spending bills on time",
-      "domain": "pewresearch.org",
+      "url": "https://en.wikipedia.org/wiki/Budget_sequestration",
+      "title": "Budget sequestration - Wikipedia",
+      "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Oct 1, 2025 · Congress has passed all its required appropriations measures on time only"
+      "excerpt": "Budget sequestration is a provision of United States law that causes an across-the-board reduction in"
     },
     {
-      "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
-      "title": "How does the government budget process work? - USAFacts",
-      "domain": "usafacts.org",
+      "url": "https://www.congress.gov/public-laws/117th-congress",
+      "title": "congress.gov/public-laws/117th-congress",
+      "domain": "congress.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Sep 18, 2025 · Congress hasn't passed a full budget on time since 1997. How"
+      "excerpt": "Tags: US Congress Laws And Legislation Public And Private Laws."
     },
     {
-      "url": "https://www.crfb.org/papers/congress-increasingly-fails-budget",
-      "title": "Congress Increasingly Fails to Budget-Tue, 02/25/2020 - 12:00",
-      "domain": "crfb.org",
+      "url": "https://www.britannica.com/topic/Congress-of-the-United-States",
+      "title": "Congress of the United States | Members, Seats, Term... | Britannica",
+      "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 25, 2020 · In 2018, for the first time under the modern budget process,"
+      "excerpt": "Of common interest to both houses of Congress are also such matters as government printing,"
     },
     {
-      "url": "https://www.facebook.com/pewresearch/posts/in-the-nearly-five-decades-that-the-current-system-for-budgeting-and-spending-ta/1177935014202557/",
-      "title": "In the nearly five decades that the current system for budgeting and ...",
-      "domain": "facebook.com",
+      "url": "https://www.usa.gov/federal-budget-process",
+      "title": "The federal budget process | USAGov",
+      "domain": "usa.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Oct 3, 2025 · In the nearly five decades that the current system for budgeting"
+      "excerpt": "Learn about the federal government’s budget process, from the president’s budget plan to Congress’s work"
     },
     {
-      "url": "https://taxpolicycenter.org/taxvox/its-not-news-congresss-budget-process-wreck-it-should-be",
-      "title": "It's Not News That Congress's Budget Process Is A Wreck, But It Should Be",
-      "domain": "taxpolicycenter.org",
+      "url": "https://trendingpoliticsnews.com/breaking-u-s-congressman-passes-away-mace/",
+      "title": "BREAKING: U.S. Congressman Passes Away",
+      "domain": "trendingpoliticsnews.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Oct 9, 2020 · The last time Congress did its job was 1997: Bill Clinton"
+      "excerpt": "(D-NJ) announced his passing at the age of 87. The congressman, known for his deep-rooted.Serving"
     },
     {
-      "url": "https://history.house.gov/Institution/Origins-Development/Power-of-the-Purse/Budget/",
-      "title": "Budget | US House of Representatives: History, Art & Archives",
-      "domain": "history.house.gov",
+      "url": "https://www.nytimes.com/2013/09/28/us/politics/obamas-remarks-on-iran-and-the-budget-debate-in-congress.html",
+      "title": "Obama’s Remarks on Iran and the Budget Debate in Congress - The...",
+      "domain": "nytimes.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Congress was frequently unable to pass appropriations bills according to the schedule set by the"
+      "excerpt": "Here at home, the United States Congress has two pressing responsibilities: Pass the budget on"
     }
   ],
-  "reasoning": "According to data from the Congressional Research Service, the Pew Research Center, and USAFacts, the U.S. Congress has not passed all of its individual, regular appropriations bills on time since Fiscal Year 1997 (which were passed before the October 1, 1996 deadline). In the years since, Congress has consistently relied on continuing resolutions, omnibus spending packages, or legislative packages passed after the start of the fiscal year to fund the government.",
+  "reasoning": "According to records from the Congressional Research Service (CRS) and historical budget data, the last time Congress passed all of its regular annual appropriations bills on time (before the October 1 deadline marking the start of the fiscal year) was for Fiscal Year 1997 (which was enacted in late September 1996). Since then, Congress has not passed a complete federal budget on time, relying instead on a combination of continuing resolutions (CRs) and omnibus spending packages passed after the deadline to maintain government operations.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -75,6 +75,12 @@
       "confidence": 0,
       "checked_at": "2026-05-30T23:42:07Z",
       "run_id": "run-2026-06-05T073027Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-06-09T23:46:49Z",
+      "run_id": "run-2026-06-09T234226Z"
     }
   ],
   "agent_flags": {

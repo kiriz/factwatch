@@ -3,9 +3,9 @@
   "claim_id": "claim-013",
   "verdict": "DISPUTED",
   "confidence": 90,
-  "last_checked_at": "2026-06-09T23:45:22Z",
+  "last_checked_at": "2026-06-17T07:54:38Z",
   "last_changed_at": "2026-06-09T23:45:22Z",
-  "run_id": "run-2026-06-09T234226Z",
+  "run_id": "run-2026-06-17T075113Z",
   "sources": [
     {
       "url": "https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed",
@@ -24,12 +24,28 @@
       "excerpt": "2. Student uses the model’s thesis: “Excessive social media use causes depression and anxiety in"
     },
     {
-      "url": "https://missionprephealthcare.com/mental-health-resources/depression/social-media-linked-to-teen-depression/",
-      "title": "Does Social Media Cause Depression? What Teens Need to Know",
-      "domain": "missionprephealthcare.com",
+      "url": "https://www.nampaimagine.com/mental-health-blog/can-social-media-cause-depression-in-teens/",
+      "title": "Can Social Media Cause Depression in Teens? | Idaho",
+      "domain": "nampaimagine.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Learn about the risks of social media on teen mental health, ways to prevent this,"
+      "excerpt": "Social media can be a significant contributor to the overall state of mental health for"
+    },
+    {
+      "url": "https://www.orchidrecoverycenter.com/blog/social-media-causes-depression-and-anxiety-in-teens/",
+      "title": "Social Media Causes Depression and Anxiety in Teens",
+      "domain": "orchidrecoverycenter.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "According to a new study, the need to be constantly available and respond 24/7 on"
+    },
+    {
+      "url": "https://www.theguardian.com/media/2026/mar/22/study-children-social-media-anxiety-depression",
+      "title": "Study links children’s social media use with anxiety and depression...",
+      "domain": "theguardian.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Children who are on social media for more than three hours a day are more"
     },
     {
       "url": "https://www.newportacademy.com/resources/well-being/effect-of-social-media-on-teenagers/",
@@ -40,39 +56,23 @@
       "excerpt": "How does social media affect teenagers? Discover the negative impact of social media on adolescents"
     },
     {
-      "url": "https://www.nampaimagine.com/mental-health-blog/can-social-media-cause-depression-in-teens/",
-      "title": "Can Social Media Cause Depression in Teens? | Idaho",
-      "domain": "nampaimagine.com",
+      "url": "https://www.linkedin.com/pulse/social-media-leading-cause-depression-teenagers-jessica-a-bush",
+      "title": "Is Social Media a Leading Cause of Depression in Teenagers?",
+      "domain": "linkedin.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Social media use has also been linked to cyberbullying, which is a major factor in"
+      "excerpt": "Social media’s contribution to development of depressive symptoms is best illustrated through the following considerable"
     },
     {
-      "url": "https://www.mayoclinic.org/healthy-lifestyle/tween-and-teen-health/in-depth/teens-and-social-media-use/art-20474437",
-      "title": "Teens and social media use: What's the impact? - Mayo Clinic",
-      "domain": "mayoclinic.org",
+      "url": "https://www.wusf.org/2023-04-25/the-truth-about-teens-social-media-and-the-mental-health-crisis",
+      "title": "The truth about teens, social media and the mental health crisis | WUSF",
+      "domain": "wusf.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Social media lets teens create online identities, chat with others and build social networks. These"
-    },
-    {
-      "url": "https://medium.com/@reynolow/teenagers-death-by-social-media-d71d0d019b41",
-      "title": "Teenagers: Death by Social Media. | Medium",
-      "domain": "medium.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Social media is a relatively new concept that has only recently started to gain hold"
-    },
-    {
-      "url": "https://healthcare.utah.edu/healthfeed/2023/01/impact-of-social-media-teens-mental-health",
-      "title": "The Impact of Social Media on Teens' Mental Health | University of...",
-      "domain": "healthcare.utah.edu",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Young adults who use social media are three times as likely to suffer from depression."
+      "excerpt": "Is social media causing the mental health challenges? Finally, research can answer that question.Murky picture"
     }
   ],
-  "reasoning": "Whether social media use directly *causes* depression and anxiety in teenagers is a subject of intense scientific debate and is highly disputed among researchers. \n\nWhile some scholars, such as Jonathan Haidt, argue that there is a causal link (particularly for adolescent girls) pointing to the rise of mental health issues coinciding with the widespread adoption of smartphones and social media, many other psychologists and meta-analyses disagree. Prominent researchers like Amy Orben and Andrew Przybylski have published systematic reviews indicating that the association between social media use and adolescent well-being is extremely small, explaining only a tiny fraction of the variance in mental health (similar in impact to eating potatoes or wearing glasses).\n\nMost available scientific literature relies on correlational data, making it difficult to establish direct causation. Longitudinal studies suggest a bidirectional relationship, meaning that teenagers who already suffer from depression or anxiety may turn to social media more frequently as a coping mechanism. Furthermore, the effects depend heavily on individual vulnerabilities, gender, and how the platforms are used—distinguishing between active engagement (connecting with friends) and passive consumption (scrolling and social comparison). Because of these conflicting findings and the lack of definitive consensus on causation versus correlation, the claim remains disputed.",
+  "reasoning": "Whether social media use directly *causes* depression and anxiety in teenagers is a subject of intense debate among psychologists, neuroscientists, and public health experts. \n\nWhile numerous longitudinal and cross-sectional studies show a correlation between heavy social media use and increased symptoms of depression and anxiety, establishing a definitive causal relationship remains controversial. Prominent researchers like Jonathan Haidt argue that the rise of social media and smartphones in the early 2010s is a primary driver of the youth mental health crisis, pointing to laboratory experiments and the negative effects of social comparison, cyberbullying, and sleep deprivation. \n\nConversely, major systematic reviews and meta-analyses (including prominent work by researchers Amy Orben and Andrew Przybylski) find that the overall statistical association between digital technology use and adolescent well-being is extremely small—explaining less than 1% of the variance in mental health. Critics of the simple causal narrative emphasize that the evidence is largely correlational and subject to reverse causality (i.e., depressed or anxious teens may seek out social media as a coping mechanism). Furthermore, research indicates that the impact depends heavily on individual vulnerability and how the technology is used, differentiating between active social engagement and passive scrolling. Because the scientific community is deeply divided over the strength and direction of this relationship, the claim cannot be verified as an absolute fact.",
   "verdict_history": [
     {
       "verdict": "DISPUTED",
@@ -85,6 +85,12 @@
       "confidence": 0,
       "checked_at": "2026-05-30T23:42:07Z",
       "run_id": "run-2026-06-05T073027Z"
+    },
+    {
+      "verdict": "DISPUTED",
+      "confidence": 90,
+      "checked_at": "2026-06-09T23:45:22Z",
+      "run_id": "run-2026-06-09T234226Z"
     }
   ],
   "agent_flags": {

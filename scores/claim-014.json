@@ -3,60 +3,60 @@
   "claim_id": "claim-014",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-06-09T23:47:39Z",
+  "last_checked_at": "2026-06-17T07:57:00Z",
   "last_changed_at": "2026-06-09T23:47:39Z",
-  "run_id": "run-2026-06-09T234226Z",
+  "run_id": "run-2026-06-17T075113Z",
   "sources": [
     {
-      "url": "https://www.facebook.com/groups/physicsisfun109/posts/948135134531998/",
-      "title": "Moon moving away from Earth at 3.8 cm per year - Facebook",
-      "domain": "facebook.com",
+      "url": "https://www.tiktok.com/@ogbeasty1/video/7630309540587687190",
+      "title": "The earth is leaving moon #shorts #The Moon is slowly moving...",
+      "domain": "tiktok.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 14, 2026 · The moon is slowly moving away from Earth at a rate"
+      "excerpt": "Earth’s rotation is gradually slowing down, which means days are becoming longer, while ocean tides"
     },
     {
-      "url": "https://www.ck12.org/flexi/algebra-ii/average-and-instantaneous-rates-of-change/if-the-moon-is-slowly-moving-away-from-earth-at-a-rate-of-about-3-8-centimeters-per-year-how-might-this-affect-total-solar-eclipses-in-the-future-can-you-explain-your-reasoning/",
-      "title": "If the moon is slowly moving away from Earth at a rate of about 3.8 ...",
-      "domain": "ck12.org",
+      "url": "https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069",
+      "title": "Blue and Purple Illustrated Night Sky Group Project...",
+      "domain": "slideshare.net",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "If the moon is slowly moving away from Earth at a rate of about 3.8"
+      "excerpt": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about"
     },
     {
-      "url": "https://www.facebook.com/groups/beginnersphotographygroup/posts/24295212933433310/",
-      "title": "Moon moving away from Earth at 1.5 inches per year - Facebook",
-      "domain": "facebook.com",
+      "url": "https://www.rikbon.it/wordpress/2024/how-do-natural-satellites-avoid-crashing-into-their-planet",
+      "title": "How do natural satellites avoid crashing into their planet? | RikBon.it",
+      "domain": "rikbon.it",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Aug 10, 2025 · ... The moon is slowly moving away from Earth at a"
+      "excerpt": "Interestingly, the Moon is slowly moving away from Earth at a rate of about 3.8"
     },
     {
-      "url": "https://www.reddit.com/r/DebateReligion/comments/1e3bx7t/sun_moon_sizes_relative_to_their_distances_from/",
-      "title": "Sun & Moon sizes relative to their distances from Earth are ... - Reddit",
-      "domain": "reddit.com",
+      "url": "https://iere.org/how-is-the-earth-and-moon-alike/",
+      "title": "How Is the Earth and Moon Alike? - The Institute for Environmental...",
+      "domain": "iere.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jul 14, 2024 · ... The moon is slowly moving away from Earth at a"
+      "excerpt": "Yes, the Moon is slowly moving away from Earth at a rate of about 3.8"
     },
     {
-      "url": "https://studyfinds.com/moon-not-geologically-dead/",
-      "title": "Moon not 'geologically dead world' after all. Why that might be a problem",
-      "domain": "studyfinds.com",
+      "url": "https://jeanglass.com/facts-about-the-moon/",
+      "title": "Facts about the moon - jeanglass.com",
+      "domain": "jeanglass.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jan 29, 2025 · Additionally, the Moon is slowly moving away from Earth at a"
+      "excerpt": "Worth knowing: The Moon is slowly moving away from Earth at a rate of about"
     },
     {
-      "url": "https://www.facebook.com/techinsider/posts/the-moon-is-moving-away-from-earth-at-a-rate-of-38-centimeters-15-inches-per-yea/1757648131100202/",
-      "title": "The moon is moving away from Earth at a rate of 3.8 centimeters (1.5 ...",
-      "domain": "facebook.com",
+      "url": "https://quotepoem.com/rule/fascinating-facts-about-the-moon-for-kids/",
+      "title": "Fascinating Moon Facts for Kids: Learn and Explore the Wonders of...",
+      "domain": "quotepoem.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jun 20, 2020 · The moon is slowly moving away from Earth at a rate"
+      "excerpt": "The moon is slowly moving away from Earth at a rate of about 3.8 centimeters"
     }
   ],
-  "reasoning": "The claim is scientifically accurate and widely verified by space agencies such as NASA. Precise measurements obtained via the Lunar Laser Ranging Experiment—which bounces lasers off retroreflectors placed on the lunar surface during the Apollo missions—confirm that the Moon is moving away from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This phenomenon, known as lunar recession, is caused by tidal friction. The gravitational pull of the Moon creates tidal bulges on Earth, and because Earth rotates faster than the Moon orbits it, these bulges pull the Moon forward, transferring rotational kinetic energy into orbital energy and gradually pushing the Moon into a higher, wider orbit. At this rate, in approximately 500 million to 1 billion years, the Moon will be too far from Earth to completely cover the Sun, meaning total solar eclipses will no longer occur.",
+  "reasoning": "The claim is scientifically accurate. Data from the Lunar Laser Ranging experiment, which has measured the distance between the Earth and the Moon using retroreflectors left by the Apollo missions since 1969, confirms that the Moon is moving away from Earth at a rate of approximately 3.8 centimeters (1.5 inches) per year. \n\nThis orbital recession is caused by tidal friction. The gravitational pull of the Moon creates tidal bulges in Earth's oceans. Because Earth rotates faster than the Moon orbits it, the tidal bulges are carried slightly ahead of the Earth-Moon line. This exerts a gravitational pull on the Moon, transferring angular momentum from Earth's rotation to the Moon's orbit, which pushes the Moon into a higher, larger orbit while gradually slowing down Earth's rotation.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -69,6 +69,12 @@
       "confidence": 0,
       "checked_at": "2026-05-30T23:42:07Z",
       "run_id": "run-2026-06-05T073027Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-06-09T23:47:39Z",
+      "run_id": "run-2026-06-09T234226Z"
     }
   ],
   "agent_flags": {

@@ -3,9 +3,9 @@
   "claim_id": "claim-012",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-06-09T23:47:23Z",
+  "last_checked_at": "2026-06-17T07:56:44Z",
   "last_changed_at": "2026-06-09T23:47:23Z",
-  "run_id": "run-2026-06-09T234226Z",
+  "run_id": "run-2026-06-17T075113Z",
   "sources": [
     {
       "url": "https://www.britannica.com/story/can-lightning-strike-the-same-place-twice",
@@ -32,14 +32,6 @@
       "excerpt": "Myth: Lightning never strikes the same place twice. Fact: Lightning often strikes the same place"
     },
     {
-      "url": "https://www.facebook.com/CBSPittsburgh/posts/hey-ray-youve-heard-the-saying-lightning-never-strikes-twice-but-is-it-true-ray-/1377074114467443/",
-      "title": "HEY RAY! You've heard the saying, \"Lightning never strikes twice,\" but ...",
-      "domain": "facebook.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Apr 11, 2026 · Before we get to the facts, let's debunk the myth that"
-    },
-    {
       "url": "https://wu-next-core-us-east-1-aws.wunderground.com/article/science/weather-explainers/news/2025-03-17-lightning-never-strikes-twice-fact-fiction",
       "title": "Why 'Lightning Never Strikes The Same Place Twice' Is An Imperfect ...",
       "domain": "wu-next-core-us-east-1-aws.wunderground.com",
@@ -48,15 +40,23 @@
       "excerpt": "Mar 17, 2025 · Lightning never strikes the same place twice” is a common idiom"
     },
     {
-      "url": "https://www.reddit.com/r/whoathatsinteresting/comments/1tzpnn3/and_they_say_lightning_never_strikes_the_same/",
-      "title": "And they say lightning never strikes the same place more than once",
+      "url": "https://www.reddit.com/r/theydidthemath/comments/11255kj/request_if_lightning_really_doesnt_strike_the/",
+      "title": "[request] if lightning really doesn't strike the same place twice, starting ...",
       "domain": "reddit.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "2 days ago · ... with lightning rods is that they're single use only… seeing"
+      "excerpt": "Feb 14, 2023 · The idea that lightning never strikes the same place twice is"
+    },
+    {
+      "url": "https://www.westeamahead.org/blog/2025/2/5/mythbuster-lightning-never-strikes-the-same-place-twice",
+      "title": "MythBuster: Lightning Never Strikes the Same Place Twice",
+      "domain": "westeamahead.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Feb 5, 2025 · Discover the truth behind the myth that lightning never strikes the"
     }
   ],
-  "reasoning": "The claim \"Lightning never strikes the same place twice\" is a well-known myth that is scientifically false. According to the National Weather Service (NWS), lightning frequently strikes the same location repeatedly, especially if it is a tall, pointed, and isolated structure. From a physics perspective, lightning seeks the path of least resistance to ground. Tall conductors (such as skyscrapers, towers, and lightning rods) concentrate the electrical field at their peaks, initiating upward leaders that connect with descending stepped leaders from storm clouds. A famous real-world example is the Empire State Building in New York City, which is struck by lightning an average of 25 times every year.",
+  "reasoning": "The claim \"lightning never strikes the same place twice\" is a well-documented myth. According to the National Weather Service (NWS) and meteorologists, lightning frequently strikes the same location repeatedly, particularly tall, isolated, and pointed objects. This is because these structures provide a path of least resistance for the electrical discharge between the ground and the clouds. For example, the Empire State Building in New York City is struck by lightning an average of 25 times per year.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -69,6 +69,12 @@
       "confidence": 0,
       "checked_at": "2026-05-30T23:42:07Z",
       "run_id": "run-2026-06-05T073027Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-06-09T23:47:23Z",
+      "run_id": "run-2026-06-09T234226Z"
     }
   ],
   "agent_flags": {

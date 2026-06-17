@@ -3,9 +3,9 @@
   "claim_id": "claim-001",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-06-09T23:42:49Z",
+  "last_checked_at": "2026-06-17T07:51:39Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-06-09T234226Z",
+  "run_id": "run-2026-06-17T075113Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "1 month ago - The decline of sea ice in the Arctic has been accelerating"
+      "excerpt": "May 12, 2026 - The decline of sea ice in the Arctic has been accelerating"
     },
     {
       "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
@@ -56,7 +56,7 @@
       "excerpt": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was"
     }
   ],
-  "reasoning": "The claim is fully supported by comprehensive scientific data. Continuous satellite monitoring of Arctic sea ice began in 1979. Data from major scientific organizations—including NASA, NOAA, the National Snow and Ice Data Center (NSIDC), and the European Environment Agency—confirm a highly significant, long-term downward trend in both Arctic sea ice extent and thickness. This decline is apparent in all seasons but is most pronounced during the annual late-summer minimum in September, which has decreased by over 12% per decade relative to the 1981–2010 average.",
+  "reasoning": "Scientific consensus and satellite observation data from leading institutions, including NOAA, the National Snow and Ice Data Center (NSIDC), and the European Environment Agency (EEA), confirm that Arctic sea ice has declined significantly since continuous satellite monitoring began in 1979. The decline is statistically significant across all seasons, particularly in the summer, with the September minimum extent decreasing by approximately 12% to 13% per decade relative to the 1981–2010 average.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -75,6 +75,12 @@
       "confidence": 0,
       "checked_at": "2026-05-30T23:42:07Z",
       "run_id": "run-2026-06-05T073027Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-06-09T23:42:49Z",
+      "run_id": "run-2026-06-09T234226Z"
     }
   ],
   "agent_flags": {
