@@ -3,9 +3,9 @@
   "claim_id": "claim-009",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-06-17T07:53:26Z",
+  "last_checked_at": "2026-06-26T07:22:10Z",
   "last_changed_at": "2026-06-09T23:44:21Z",
-  "run_id": "run-2026-06-17T075113Z",
+  "run_id": "run-2026-06-26T071848Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Napoleon_complex",
@@ -13,50 +13,50 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The Napoleon complex, also known as Napoleon syndrome and short-man syndrome is a term to"
+      "excerpt": "May 19, 2026 - Both commonly and in psychology, the Napoleon complex is regarded as"
     },
     {
-      "url": "https://allthatsinteresting.com/how-tall-was-napoleon",
-      "title": "How Tall Was Napoleon? The Truth About His Height",
-      "domain": "allthatsinteresting.com",
+      "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
+      "title": "Was Napoleon Bonaparte Really Short?",
+      "domain": "thoughtco.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "One of the main reasons people believe Napoleon Bonaparte was unusually short stems from the"
+      "excerpt": "May 13, 2025 - It turns out that Napoleon Bonaparte wasn't particularly short at all."
     },
     {
-      "url": "https://www.dailymotion.com/video/xaal2ny",
-      "title": "Was Napoleon Bonaparte Short? The Secret Math... - video Dailymotion",
-      "domain": "dailymotion.com",
+      "url": "https://www.history.com/articles/napoleon-complex-short",
+      "title": "Was Napoleon Short? Origins of the 'Napoleon Complex' | HISTORY",
+      "domain": "history.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "00:10So is it actually true that Napoleon Bonaparte was unusually short? 00:14The short answer is"
+      "excerpt": "Three French sources—his valet Constant, General Gourgaud, and his personal physician Francesco Antommarchi—said that Napoleon's"
     },
     {
-      "url": "https://www.tiktok.com/discover/me-after-realizing-napoleon-is-so-short",
-      "title": "Me After Realizing Napoleon Is So Short | TikTok",
-      "domain": "tiktok.com",
+      "url": "https://www.britannica.com/story/was-napoleon-short",
+      "title": "Was Napoleon Short? | Britannica",
+      "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Was Napoleon really that short? Napoleon's True Height: Debunking the Short Myth. Discover Napoleon Bonaparte's"
+      "excerpt": "June 13, 2025 - Several sources note that his elite guards were taller than most"
     },
     {
-      "url": "https://captionzz.com/napoleon-height/",
-      "title": "Napoleon Height: How Tall Was Napoleon Bonaparte? - captionzz.com",
-      "domain": "captionzz.com",
+      "url": "https://oralhistory.ws/resources/did-napoleon-really-have-a-height-complex/",
+      "title": "Was Napoleon Really Short? Debunking the Height Myth",
+      "domain": "oralhistory.ws",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Many people search for “how tall was Napoleon” because of the long-standing myth that he"
+      "excerpt": "July 25, 2025 - The misunderstanding: Napoleon was famously 5 feet 2 inches tall."
     },
     {
-      "url": "https://www.publicpeople.org/how-tall-was-napoleon-bonaparte.htm",
-      "title": "How Tall Was Napoleon Bonaparte?",
-      "domain": "publicpeople.org",
+      "url": "http://www.todayifoundout.com/index.php/2010/03/napolean-bonaparte-having-been-short-is-a-myth/",
+      "title": "Napoleon Bonaparte Having Been Short is a Myth",
+      "domain": "todayifoundout.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Historians have often depicted Napoleon Bonaparte as unusually short, although evidence shows that he probably"
+      "excerpt": "June 25, 2014 - The myth that he was short stems primarily from the fact"
     }
   ],
-  "reasoning": "The claim that Napoleon Bonaparte was unusually short (around 5 feet 2 inches) is false, stemming from a historical misunderstanding of French and English measurement systems. At his death, Napoleon's height was recorded as 5 feet 2 inches in French units (specifically *pieds de roi*). However, a French inch (*pouce*) was longer than a British inch. When converted to modern English measurements, Napoleon was actually about 5 feet 6 inches to 5 feet 7 inches tall (approximately 1.68 to 1.70 meters). During the early 19th century, the average height for a French male was around 5 feet 5 inches, meaning Napoleon was of average or even slightly above-average height. The myth of his shortness was perpetuated by British wartime propaganda—most notably through the caricatures of James Gillray—and by his imperial guard, who were exceptionally tall, making Napoleon look shorter by comparison.",
+  "reasoning": "The claim that Napoleon Bonaparte was unusually short and around 5 feet 2 inches tall is false. This persistent myth stems from a misunderstanding of historical measurement units. Following his death, Napoleon's height was recorded as 5 feet 2 inches in pre-metric French units (\"pieds\" and \"pouces\"). Because a French inch (\"pouce\") was longer than an English inch, 5'2\" in French measurements translates to approximately 5 feet 6 inches to 5 feet 7 inches (about 1.67 to 1.68 meters) in modern imperial/English measurements. During the early 19th century, the average height for an adult French male was around 5 feet 5 inches, meaning Napoleon was actually of average or even slightly above-average height for his time.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -75,6 +75,12 @@
       "confidence": 98,
       "checked_at": "2026-06-09T23:44:21Z",
       "run_id": "run-2026-06-09T234226Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-06-17T07:53:26Z",
+      "run_id": "run-2026-06-17T075113Z"
     }
   ],
   "agent_flags": {

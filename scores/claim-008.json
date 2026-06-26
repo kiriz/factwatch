@@ -3,60 +3,60 @@
   "claim_id": "claim-008",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-06-17T07:56:27Z",
+  "last_checked_at": "2026-06-26T07:25:26Z",
   "last_changed_at": "2026-06-09T23:47:06Z",
-  "run_id": "run-2026-06-17T075113Z",
+  "run_id": "run-2026-06-26T071848Z",
   "sources": [
     {
-      "url": "https://www.facebook.com/bbcearth/posts/octopuses-have-blue-blood-no-bones-and-three-hearts-octopusinmyhouse/2710373088996230/",
-      "title": "Octopuses have blue blood, no bones and three hearts ... - Facebook",
-      "domain": "facebook.com",
+      "url": "https://www.scienceabc.com/nature/animals/why-do-octopuses-have-three-hearts",
+      "title": "Octopus Hearts: How Many Hearts Does An Octopus Have?",
+      "domain": "scienceabc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Aug 20, 2019 · Octopuses have three hearts, and their blood is blue due to"
+      "excerpt": "Feb 29, 2020 · Octopuses have three hearts: two branchial hearts that pump blood through"
     },
     {
-      "url": "https://www.facebook.com/groups/1843562646471238/posts/1981552332672268/",
-      "title": "Octopuses have three hearts and blue blood - Facebook",
-      "domain": "facebook.com",
+      "url": "https://wowtoknow.com/octopuses-have-three-hearts-and-blue-blood/",
+      "title": "Octopuses Have Three Hearts and Blue Blood – Here’s Why ...",
+      "domain": "wowtoknow.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Aug 1, 2025 · #kamaremixknowledge **Octopuses have three hearts, and their blood is blue. **"
+      "excerpt": "Mar 29, 2025 · Octopuses have three hearts and blue blood, and those two traits"
     },
     {
-      "url": "https://www.reddit.com/r/AskReddit/comments/1sbptu3/whats_a_random_fact_you_know_but_have_never_had/",
-      "title": "What's a random fact you know but have never had the chance to share?",
-      "domain": "reddit.com",
+      "url": "https://biologyinsights.com/do-octopus-bleed-the-science-of-their-blue-blood-3-hearts/",
+      "title": "Do Octopus Bleed? The Science of Their Blue Blood & 3 Hearts",
+      "domain": "biologyinsights.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Apr 3, 2026 · Octopuses have three hearts and their blood is blue because it"
+      "excerpt": "Aug 26, 2025 · Octopuses indeed bleed, and their blood is distinctly blue. The unusual"
     },
     {
-      "url": "https://www.facebook.com/groups/849994733672039/posts/1305918508079657/",
-      "title": "Which animal has three hearts and blue blood? - Facebook",
-      "domain": "facebook.com",
+      "url": "https://www.biologynotes.site/did-you-know-octopuses-have-three-hearts-blue-blood/",
+      "title": "Did You Know? Octopuses Have Three Hearts & Blue Blood!",
+      "domain": "biologynotes.site",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Mar 9, 2026 · Caption: \"Did you know octopuses have three hearts and their blood"
+      "excerpt": "Feb 11, 2025 · Octopuses are unlike any other creature in many ways, and their"
     },
     {
-      "url": "https://x.com/mindfulheal/status/1904731984716587144",
-      "title": "I just learnt that octopuses have three hearts and their blood is blue ...",
-      "domain": "x.com",
+      "url": "https://plantbasedtreaty.org/octopus-have-three-hearts/",
+      "title": "Did You Know Octopus Have Three Hearts And Blue Blood? These ...",
+      "domain": "plantbasedtreaty.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "I just learnt that octopuses have three hearts and their blood is blue. Basically, they're"
+      "excerpt": "Jul 1, 2025 · With three functioning hearts, two of them work to move blood"
     },
     {
-      "url": "https://dandys-world-robloxhorror.fandom.com/f/p/4400000000000332935",
-      "title": "octopuses have three hearts and their blood is blue due to a copper ...",
-      "domain": "dandys-world-robloxhorror.fandom.com",
+      "url": "https://thesavemovement.org/did-you-know-octopus-have-three-hearts-and-blue-blood-these-magnificent-marine-mollusks-are-being-exploited-and-need-our-help/",
+      "title": "Did You Know Octopus Have Three Hearts And Blue Blood? These ...",
+      "domain": "thesavemovement.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "octopuses have three hearts and their blood is blue due to a copper-based molecule called"
+      "excerpt": "May 24, 2025 · With three functioning hearts, two of them work to move blood"
     }
   ],
-  "reasoning": "The claim that octopuses have three hearts and blue blood is scientifically accurate. Octopuses possess three hearts: two branchial hearts that pump deoxygenated blood through the gills, and one systemic heart that pumps oxygenated blood throughout the rest of the body. Their blood is blue because they use a copper-rich protein called hemocyanin to transport oxygen instead of the iron-based hemoglobin found in vertebrates. Hemocyanin is blue when bound to oxygen, though it becomes colorless when deoxygenated.",
+  "reasoning": "The claim is entirely accurate. Octopuses possess three hearts and blue blood, which are evolutionary adaptations for survival in their marine environments:\n1. **Three Hearts**: An octopus has two branchial hearts and one systemic heart. The two branchial hearts pump deoxygenated blood through the gills to load up on oxygen, while the single systemic heart circulates the oxygenated blood to the rest of the body.\n2. **Blue Blood**: Unlike humans and other vertebrates who use iron-based hemoglobin (giving blood a red color), octopuses use a copper-based protein called hemocyanin to transport oxygen. Because hemocyanin contains copper, it turns blue when bound to oxygen (oxygenated blood) and becomes colorless when deoxygenated.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -75,6 +75,12 @@
       "confidence": 100,
       "checked_at": "2026-06-09T23:47:06Z",
       "run_id": "run-2026-06-09T234226Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-06-17T07:56:27Z",
+      "run_id": "run-2026-06-17T075113Z"
     }
   ],
   "agent_flags": {

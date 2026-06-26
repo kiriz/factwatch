@@ -3,9 +3,9 @@
   "claim_id": "claim-006",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-06-17T07:52:41Z",
+  "last_checked_at": "2026-06-26T07:21:33Z",
   "last_changed_at": "2026-06-09T23:43:44Z",
-  "run_id": "run-2026-06-17T075113Z",
+  "run_id": "run-2026-06-26T071848Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "4 days ago - Torre writes that, even at rest, a person likely uses as"
+      "excerpt": "2 weeks ago - Although several parts of the brain ... remains unclear. Perhaps the"
     },
     {
       "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
@@ -29,15 +29,15 @@
       "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "2 weeks ago - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows"
+      "excerpt": "May 22, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows"
     },
     {
-      "url": "https://educationalneuroscience.org.uk/wordpress/resources/neuromyth-or-neurofact/we-only-use-10-of-our-brains/",
-      "title": "We only use 10% of our brains | Centre for Educational Neuroscience",
-      "domain": "educationalneuroscience.org.uk",
+      "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
+      "title": "Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today",
+      "domain": "psychologytoday.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "In a recent survey, 43-59% of teachers from around the world reported that they thought"
+      "excerpt": "May 15, 2025 - The 10 percent brain myth is false. We use our entire"
     },
     {
       "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
@@ -48,15 +48,15 @@
       "excerpt": "February 20, 2024 - Adding to that mystery is the ... brain. If only regular"
     },
     {
-      "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
-      "title": "Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today",
-      "domain": "psychologytoday.com",
+      "url": "https://educationalneuroscience.org.uk/wordpress/resources/neuromyth-or-neurofact/we-only-use-10-of-our-brains/",
+      "title": "We only use 10% of our brains | Centre for Educational Neuroscience",
+      "domain": "educationalneuroscience.org.uk",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 15, 2025 - The 10 percent brain myth is false. We use our entire"
+      "excerpt": "In a recent survey, 43-59% of teachers from around the world reported that they thought"
     }
   ],
-  "reasoning": "The claim that humans only use 10% of their brain capacity is a well-documented scientific myth. Modern neuroimaging technologies, such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET) scans, show that virtually all parts of the brain are active throughout the day, even during sleep or simple tasks. There is no large \"dormant\" or \"untapped\" area of the brain. Furthermore, from an evolutionary perspective, the brain is an energy-intensive organ (consuming about 20% of the body's energy); keeping 90% of it unused would be highly inefficient, and unused brain tissue typically degenerates or atrophies over time.",
+  "reasoning": "The claim that humans only use 10% of their brain is a widespread and long-debated neuro-myth. Modern neuroscience has thoroughly debunked this concept. Neuroimaging technologies such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET) scans show that virtually all parts of the brain are active throughout the day, even during sleep or simple tasks. Furthermore, if 90% of the brain were unused, damage to those \"dormant\" areas would have no impact on a person, yet in reality, damage to even minor areas of the brain can result in severe cognitive or physical deficits. Unused brain tissue also rapidly degenerates (atrophies), which does not happen in healthy brains.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -75,6 +75,12 @@
       "confidence": 100,
       "checked_at": "2026-06-09T23:43:44Z",
       "run_id": "run-2026-06-09T234226Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-06-17T07:52:41Z",
+      "run_id": "run-2026-06-17T075113Z"
     }
   ],
   "agent_flags": {

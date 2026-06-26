@@ -3,60 +3,60 @@
   "claim_id": "claim-004",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-06-17T07:55:47Z",
+  "last_checked_at": "2026-06-26T07:24:28Z",
   "last_changed_at": "2026-06-09T23:46:29Z",
-  "run_id": "run-2026-06-17T075113Z",
+  "run_id": "run-2026-06-26T071848Z",
   "sources": [
     {
-      "url": "https://www.linkedin.com/pulse/what-future-ai-isnt-making-machines-think-like-us-why-ayyasamy-aqrdc",
-      "title": "What if the future of AI isn't about making machines think like us, but...",
-      "domain": "linkedin.com",
+      "url": "https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/",
+      "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence ...",
+      "domain": "law.stanford.edu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Meanwhile, AI systems can now: Pass the bar exam in the 90th percentile. Outperform human"
+      "excerpt": "Apr 19, 2023 · We found that while GPT-3.5 failed the bar, scoring roughly in"
     },
     {
-      "url": "https://www.tiktok.com/discover/me-after-using-chatgpt-to-pass-bar-exam",
-      "title": "Me After Using Chatgpt to Pass Bar Exam | TikTok",
-      "domain": "tiktok.com",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/",
+      "title": "GPT-4 passes the bar exam - PMC - NIH",
+      "domain": "pmc.ncbi.nlm.nih.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "ChatGPT for bar exam success, humorous legal stories, passing bar exam tips, using technology in"
+      "excerpt": "GPT-4 scores an average of 4.2/6.0. GPT-4 scores approximately 297 points, significantly in excess of"
     },
     {
-      "url": "https://www.techbuzz.ai/articles/anthropic-won-t-say-claude-isn-t-conscious",
-      "title": "Anthropic Won't Say Claude Isn't Conscious | The Tech Buzz",
-      "domain": "techbuzz.ai",
+      "url": "https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/",
+      "title": "Bar exam score shows AI can keep up with 'human lawyers,' researchers ...",
+      "domain": "reuters.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AI systems now pass the bar exam, write production code, and engage in conversations that"
+      "excerpt": "Mar 15, 2023 · The newer GPT-4 got nearly 76% of the bar exam's multiple-choice"
     },
     {
-      "url": "https://www.jordannews.jo/Section-36/Opinion/The-surprising-thing-AI-engineers-will-tell-you-if-you-let-them-28249",
-      "title": "The surprising thing AI engineers will tell you if you let the...",
-      "domain": "jordannews.jo",
+      "url": "https://www.facebook.com/groups/californiabarexam/posts/10162986827467730/",
+      "title": "Did AI help with bar exam preparation? - Facebook",
+      "domain": "facebook.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "You can use them to write code, pass the bar exam, draw up contracts, create"
+      "excerpt": "May 4, 2026 · if you score an average 62.5 (raw)on the Bar, based on"
     },
     {
-      "url": "https://www.brannoncanhelp.com/blog/what-does-bar-stand-for-in-the-bar-exam-or-bar-association/",
-      "title": "What Does Bar Stand for in the Bar Exam or Bar Association?",
-      "domain": "brannoncanhelp.com",
+      "url": "https://www.facebook.com/colbertlateshow/posts/chatgpt-4-has-a-90-chance-of-passing-the-bar-exam-would-you-let-ai-represent-you/3166740840137312/",
+      "title": "ChatGPT 4 has a 90% chance of passing the bar exam... would you ...",
+      "domain": "facebook.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The bar exam covers federal and state laws as they apply to the state where"
+      "excerpt": "Mar 15, 2023 · When OpenAI launched its fourth version of ChatGPT last March, the"
     },
     {
-      "url": "https://testmaxprep.com/blog/bar-exam/about-to-give-up-woman-finally-passes-bar-exam-on-6th-attempt",
-      "title": "About To Give Up, Woman Finally Passes Bar Exam On 6th Attempt",
-      "domain": "testmaxprep.com",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4389233",
+      "title": "GPT-4 Passes the Bar Exam",
+      "domain": "papers.ssrn.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Last year, you met Sheila. Now, meet Marsha Teasely, a graduate of Peoples College of"
+      "excerpt": "Mar 15, 2023 · GPT-4 significantly outperforms both human test-takers and. GPT-4 scores an average"
     }
   ],
-  "reasoning": "In March 2023, researchers Daniel Martin Katz, Michael J. Bommarito II, Shang Gao, and Pablo Arredondo published a study demonstrating that OpenAI's GPT-4 successfully passed the Uniform Bar Exam (UBE). GPT-4 scored a 298, which comfortably exceeds the passing threshold of any U.S. jurisdiction (the highest of which is 270) and placed it in the 90th percentile of test-takers overall. Although subsequent academic critiques (such as a study by Eric Martinez) suggested that the \"90th percentile\" figure might be slightly overstated due to comparing GPT-4's mock exam performance to actual July exam administrations (proposing instead a range around the 68th percentile when compared to all test-takers), both assessments confirm that the AI model passed the exam with a score well above the average. Newer models like Claude 3 and GPT-4o have further solidified these capabilities.",
+  "reasoning": "In a landmark 2023 study (\"GPT-4 Passes the Bar Exam\" by Bommarito & Katz), researchers demonstrated that OpenAI's GPT-4 passed the Uniform Bar Exam (UBE) with an estimated score of 297. This score is significantly higher than the minimum passing threshold in all UBE jurisdictions (which ranges from 260 to 270). While some subsequent academic critiques argued that the \"90th percentile\" claim originally made by OpenAI was slightly overstated—suggesting GPT-4 actually scored closer to the 68th percentile when compared to the full pool of real-world test-takers who pass the exam—either metric is comfortably above the 50th percentile. Thus, it is well-established that AI language models can now pass the US bar exam with above-average scores.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -81,6 +81,12 @@
       "confidence": 95,
       "checked_at": "2026-06-09T23:46:29Z",
       "run_id": "run-2026-06-09T234226Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-06-17T07:55:47Z",
+      "run_id": "run-2026-06-17T075113Z"
     }
   ],
   "agent_flags": {

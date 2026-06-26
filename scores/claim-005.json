@@ -2,34 +2,26 @@
   "schema_version": "1.0",
   "claim_id": "claim-005",
   "verdict": "TRUE",
-  "confidence": 95,
-  "last_checked_at": "2026-06-17T07:56:11Z",
+  "confidence": 100,
+  "last_checked_at": "2026-06-26T07:25:05Z",
   "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-06-17T075113Z",
+  "run_id": "run-2026-06-26T071848Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Budget_sequestration",
-      "title": "Budget sequestration - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/United_States_federal_budget",
+      "title": "United States federal budget - Wikipedia",
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Budget sequestration is a provision of United States law that causes an across-the-board reduction in"
+      "excerpt": "The actual and projected budget deficit of the United States federal budget by the CBO.Each"
     },
     {
-      "url": "https://www.congress.gov/public-laws/117th-congress",
-      "title": "congress.gov/public-laws/117th-congress",
-      "domain": "congress.gov",
+      "url": "https://www.govtrack.us/congress/members",
+      "title": "govtrack.us/congress/members",
+      "domain": "govtrack.us",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Tags: US Congress Laws And Legislation Public And Private Laws."
-    },
-    {
-      "url": "https://www.britannica.com/topic/Congress-of-the-United-States",
-      "title": "Congress of the United States | Members, Seats, Term... | Britannica",
-      "domain": "britannica.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Of common interest to both houses of Congress are also such matters as government printing,"
+      "excerpt": "Congressional Representative by clicking on this link on GovTrack.us."
     },
     {
       "url": "https://www.usa.gov/federal-budget-process",
@@ -37,26 +29,34 @@
       "domain": "usa.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Learn about the federal government’s budget process, from the president’s budget plan to Congress’s work"
+      "excerpt": "Learn about the federal government’s budget process. Steps include the president creating the budget plan"
     },
     {
-      "url": "https://trendingpoliticsnews.com/breaking-u-s-congressman-passes-away-mace/",
-      "title": "BREAKING: U.S. Congressman Passes Away",
-      "domain": "trendingpoliticsnews.com",
+      "url": "https://www.bbc.com/news/articles/c7vnnv6n29no",
+      "title": "US House approves Trump-backed budget bill",
+      "domain": "bbc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "(D-NJ) announced his passing at the age of 87. The congressman, known for his deep-rooted.Serving"
+      "excerpt": "The US House of Representatives has passed a budget bill that includes trillions of dollars"
     },
     {
-      "url": "https://www.nytimes.com/2013/09/28/us/politics/obamas-remarks-on-iran-and-the-budget-debate-in-congress.html",
-      "title": "Obama’s Remarks on Iran and the Budget Debate in Congress - The...",
-      "domain": "nytimes.com",
+      "url": "https://nlihc.org/resource/congress-passes-and-president-trump-signs-law-year-long-stopgap-funding-bill-underfunding",
+      "title": "Congress Passes and President Trump Signs into Law Year-Long...",
+      "domain": "nlihc.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Here at home, the United States Congress has two pressing responsibilities: Pass the budget on"
+      "excerpt": "The bill does not provide additional spending for disaster recovery, nor does it address the"
+    },
+    {
+      "url": "https://blakemoore.house.gov/media/press-releases/budget-committee-unanimously-passes-congressman-moores-bipartisan-bill-to-improve-congressional-access-to-budget-and-economic-figures",
+      "title": "House Budget Committee Unanimously Passes Congressman...",
+      "domain": "blakemoore.house.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "WASHINGTON – The House Budget Committee passed Congressman Blake Moore’s Increasing Baseline Updates Act by"
     }
   ],
-  "reasoning": "According to records from the Congressional Research Service (CRS) and historical budget data, the last time Congress passed all of its regular annual appropriations bills on time (before the October 1 deadline marking the start of the fiscal year) was for Fiscal Year 1997 (which was enacted in late September 1996). Since then, Congress has not passed a complete federal budget on time, relying instead on a combination of continuing resolutions (CRs) and omnibus spending packages passed after the deadline to maintain government operations.",
+  "reasoning": "According to data from the Congressional Research Service (CRS), the Pew Research Center, and the Peter G. Peterson Foundation, the U.S. Congress has not passed all of its regular, individual annual appropriations bills on time (before the start of the new fiscal year on October 1) since Fiscal Year 1997. For FY 1997, the final appropriations bills were signed into law on September 30, 1996. Since then, Congress has consistently relied on continuing resolutions (CRs), omnibus spending packages, or late-season agreements passed well after the October 1 deadline to keep the federal government funded, making the statement historically accurate.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -81,6 +81,12 @@
       "confidence": 100,
       "checked_at": "2026-06-09T23:46:49Z",
       "run_id": "run-2026-06-09T234226Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-06-17T07:56:11Z",
+      "run_id": "run-2026-06-17T075113Z"
     }
   ],
   "agent_flags": {

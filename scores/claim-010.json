@@ -3,60 +3,60 @@
   "claim_id": "claim-010",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-06-17T07:53:45Z",
+  "last_checked_at": "2026-06-26T07:22:32Z",
   "last_changed_at": "2026-06-09T23:44:37Z",
-  "run_id": "run-2026-06-17T075113Z",
+  "run_id": "run-2026-06-26T071848Z",
   "sources": [
     {
-      "url": "https://www.facebook.com/IMFAfrica/posts/bitcoin-consumes-as-much-electricity-as-argentina-but-isnt-counted-in-gdp-becaus/1062532036065754/",
-      "title": "Bitcoin consumes as much electricity as Argentina but isn't counted in ...",
-      "domain": "facebook.com",
+      "url": "https://www.bbc.com/news/technology-56012952",
+      "title": "Bitcoin consumes 'more electricity than Argentina'",
+      "domain": "bbc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Aug 2, 2025 · Bitcoin consumes as much electricity as Argentina but isn't counted in"
+      "excerpt": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests."
     },
     {
-      "url": "https://www.reddit.com/r/technology/comments/lgw130/bitcoin_uses_more_electricity_annually_than_the/",
-      "title": "Bitcoin uses more electricity annually than the whole of Argentina ... - Reddit",
-      "domain": "reddit.com",
+      "url": "https://www.aol.com/news/bitcoin-cryptocurrency-consumes-more-electricity-than-argentina-140323187.html",
+      "title": "Bitcoin consumes more electricity than Argentina, UAE, and the...",
+      "domain": "aol.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 10, 2021 · The electricity usage is surprising, but it's the economic instability and"
+      "excerpt": "If Bitcoin (BTC-USD) were a country, it would be in the top 30 energy users"
     },
     {
-      "url": "https://www.theguardian.com/technology/2021/feb/27/bitcoin-mining-electricity-use-environmental-impact",
-      "title": "Electricity needed to mine bitcoin is more than used by 'entire countries'",
-      "domain": "theguardian.com",
+      "url": "https://www.bbc.co.uk/news/technology-56012952",
+      "title": "Bitcoin consumes 'more electricity than Argentina' - BBC News",
+      "domain": "bbc.co.uk",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 27, 2021 · Cambridge's Centre for Alternative Finances estimates that bitcoin's annualised electricity consumption"
+      "excerpt": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests."
     },
     {
-      "url": "https://www.linkedin.com/pulse/global-disparity-bitcoins-electricity-consumption-data-hassani-auc7e",
-      "title": "The Global Disparity in Bitcoin's Electricity Consumption: Data Insights",
-      "domain": "linkedin.com",
+      "url": "https://www.youtube.com/watch?v=UL8OsZTnNPM",
+      "title": "Bitcoin uses more electricity annually than the whole of Argentina...",
+      "domain": "youtube.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Nov 16, 2023 · It's alarming to realize that Bitcoin's annual energy consumption surpasses that"
+      "excerpt": "welcome back to U i E TV channel please subscribe to our channel for further"
     },
     {
-      "url": "https://www.nytimes.com/interactive/2021/09/03/climate/bitcoin-carbon-footprint-electricity.html",
-      "title": "Bitcoin Uses More Electricity Than Many Countries. How Is That ...",
-      "domain": "nytimes.com",
+      "url": "https://www.intelligentliving.co/bitcoin-consumes-more-electricity-than-argentina/",
+      "title": "Bitcoin Mining Consumes More Electricity Annually Than Argentina",
+      "domain": "intelligentliving.co",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Sep 3, 2021 · The process of creating Bitcoin to spend or trade consumes around"
+      "excerpt": "“Bitcoin is literally anti-efficient. So, more efficient mining hardware won’t help – it’ll just be"
     },
     {
-      "url": "https://ieeexplore.ieee.org/iel8/6287639/10820123/11015703.pdf",
-      "title": "Comparing Electricity Consumption Per Use of Blockchain and ...",
-      "domain": "ieeexplore.ieee.org",
+      "url": "https://academy.gomining.com/articles/bitcoins-electricity-consumption-explained",
+      "title": "Bitcoin Energy Consumption 2025 | GoMining Academy",
+      "domain": "academy.gomining.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jun 4, 2025 · According to Table 2, Bitcoin's electricity consumption is 121.1TWh per year"
+      "excerpt": "You’ve probably seen the headlines—“Bitcoin uses more electricity than Argentina!” or “One Bitcoin transaction could"
     }
   ],
-  "reasoning": "According to estimates from the Cambridge Bitcoin Electricity Consumption Index (CBECI) and reports from institutions like the IMF and the International Energy Agency (IEA), Bitcoin's annualized electricity consumption has consistently hovered between 110 TWh and over 160 TWh in recent years. For comparison, Argentina's annual electricity consumption is estimated to be around 125 to 130 TWh. Because Bitcoin's estimated annual electricity demand routinely meets or exceeds this range, the claim that its consumption exceeds that of entire countries like Argentina is factually true and supported by data from academic and international institutions.",
+  "reasoning": "According to the Cambridge Bitcoin Electricity Consumption Index (CBECI) maintained by the Cambridge Centre for Alternative Finance, Bitcoin's annualized electricity consumption is estimated to be between 120 and 160 Terawatt-hours (TWh). This exceeds the annual electricity consumption of several mid-sized countries, including Argentina, which consumes approximately 125 to 130 TWh per year. Multiple reputable news and research organizations have verified this comparison using official energy statistics and the CBECI tool.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -75,6 +75,12 @@
       "confidence": 95,
       "checked_at": "2026-06-09T23:44:37Z",
       "run_id": "run-2026-06-09T234226Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-06-17T07:53:45Z",
+      "run_id": "run-2026-06-17T075113Z"
     }
   ],
   "agent_flags": {

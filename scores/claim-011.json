@@ -1,28 +1,12 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-011",
-  "verdict": "MISLEADING",
+  "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-06-17T07:54:12Z",
-  "last_changed_at": "2026-06-17T07:54:12Z",
-  "run_id": "run-2026-06-17T075113Z",
+  "last_checked_at": "2026-06-26T07:22:53Z",
+  "last_changed_at": "2026-06-26T07:22:53Z",
+  "run_id": "run-2026-06-26T071848Z",
   "sources": [
-    {
-      "url": "https://en.wikipedia.org/wiki/Monosodium_glutamate",
-      "title": "Monosodium glutamate - Wikipedia",
-      "domain": "en.wikipedia.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "\"There is no convincing evidence that MSG is a significant factor in causing systemic reactions"
-    },
-    {
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5278591/",
-      "title": "Chinese Restaurant Syndrome - PMC",
-      "domain": "pmc.ncbi.nlm.nih.gov",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Introduction. Chinese food and soups contain monosodium glutamate (MSG) as the main addictive ingredient. A"
-    },
     {
       "url": "https://www.bbc.com/news/world-us-canada-51139005",
       "title": "'Chinese Restaurant Syndrome' - what is it and is it racist?",
@@ -32,20 +16,28 @@
       "excerpt": "What is 'Chinese Restaurant Syndrome'? Tucked between \"Chinese red\" and \"Chinese rose\", the disputed entry"
     },
     {
-      "url": "https://www.theguardian.com/lifeandstyle/2018/may/21/chinese-restaurant-syndrome-has-msg-been-unfairly-demonised",
-      "title": "Chinese restaurant syndrome: has MSG been... | The Guardian",
-      "domain": "theguardian.com",
+      "url": "https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome",
+      "title": "50 years ago, MSG in Chinese food got a bad rap | Science News",
+      "domain": "sciencenews.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The additive monosodium glutamate has been blamed for everything from headaches to chest pain. Now,"
+      "excerpt": "March 8, 1969 cover Chinese Restaurant syndrome varies —.In the Feb. 21 Science, [researchers] report"
     },
     {
-      "url": "https://www.scmp.com/lifestyle/health-beauty/article/1880468/does-common-flavour-enhancer-msg-cause-aches-and-pains",
-      "title": "MSG makes food so tasty, so why shouldn't we eat it? | South China...",
-      "domain": "scmp.com",
+      "url": "https://zoe.com/learn/msg",
+      "title": "MSG: All You Need To Know",
+      "domain": "zoe.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "According to Charmain Tan, registered dietitian at Seventeen Nutrition Consultants, MSG does indeed have the"
+      "excerpt": "The term “Chinese restaurant syndrome” has racist connotations and, after some pressure from Ajinomoto via"
+    },
+    {
+      "url": "https://circledna.com/blog/the-science-behind-msg-debunking-myths-and-understanding-its-safety/",
+      "title": "The Science Behind MSG: Debunking Myths and Understanding Its...",
+      "domain": "circledna.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The term “Chinese Restaurant Syndrome” originated from a letter published in the New England Journal"
     },
     {
       "url": "https://theconversation.com/msg-is-back-is-the-idea-its-bad-for-us-just-a-myth-or-food-science-237871",
@@ -54,9 +46,17 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Can MSG cause reactions? A very small percentage of people may have hypersensitivities to MSG."
+    },
+    {
+      "url": "https://www.theguardian.com/lifeandstyle/2005/jul/10/foodanddrink.features3",
+      "title": "If MSG is so bad for you, why doesn't everyone in Asia... | The Guardian",
+      "domain": "theguardian.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "And so was born Chinese restaurant syndrome (CRS) and a medico-academic industry dedicated to the"
     }
   ],
-  "reasoning": "Major scientific and regulatory bodies, including the US Food and Drug Administration (FDA), the World Health Organization (WHO), and the European Food Safety Authority (EFSA), classify monosodium glutamate (MSG) as \"generally recognized as safe\" (GRAS). Rigorous, double-blind, placebo-controlled studies have consistently failed to establish a causal link between typical dietary consumption of MSG and symptoms like headaches, numbness, or chest pain. The term \"Chinese restaurant syndrome\" originated from a single anecdotal letter to the New England Journal of Medicine in 1968 and has since been debunked as a myth with xenophobic origins. Furthermore, the glutamate in MSG is chemically identical to the glutamate naturally present in foods like tomatoes, cheese, and mushrooms, which do not produce these symptoms. While a very small subset of the population may exhibit temporary sensitivity to massive doses of MSG consumed without food, MSG does not cause these symptoms under normal eating conditions.",
+  "reasoning": "The claim that MSG causes \"Chinese restaurant syndrome\" (characterized by headaches, numbness, and other symptoms) has been thoroughly debunked by scientific consensus. \n\n1. **Safety Status**: The U.S. Food and Drug Administration (FDA) classifies MSG as \"Generally Recognized as Safe\" (GRAS), placing it in the same category as salt, pepper, and vinegar.\n2. **Scientific Studies**: Numerous rigorous, double-blind, placebo-controlled studies have failed to establish a causal relationship between MSG consumption and these symptoms in the general public when consumed in normal dietary amounts. \n3. **Chemical Identity**: The glutamate in MSG is chemically identical to the glutamate naturally present in foods like tomatoes, mushrooms, and aged cheeses, which our bodies metabolize in the exact same way.\n4. **Origin of the Myth**: The term \"Chinese restaurant syndrome\" originated from an anecdotal letter published in the *New England Journal of Medicine* in 1968 rather than a scientific study. Over decades, this term has been recognized as having xenophobic connotations, and major dictionaries (like Merriam-Webster) and medical bodies have updated their definitions to reflect that the \"syndrome\" is medically unsubstantiated. While a very small fraction of people may experience mild, transient reactions to massive doses of MSG consumed on an empty stomach, the general claim that MSG causes these symptoms is false.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -75,6 +75,12 @@
       "confidence": 95,
       "checked_at": "2026-06-09T23:44:58Z",
       "run_id": "run-2026-06-09T234226Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 95,
+      "checked_at": "2026-06-17T07:54:12Z",
+      "run_id": "run-2026-06-17T075113Z"
     }
   ],
   "agent_flags": {
