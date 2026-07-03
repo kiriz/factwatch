@@ -3,60 +3,60 @@
   "claim_id": "claim-004",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-06-26T07:24:28Z",
+  "last_checked_at": "2026-07-03T09:00:03Z",
   "last_changed_at": "2026-06-09T23:46:29Z",
-  "run_id": "run-2026-06-26T071848Z",
+  "run_id": "run-2026-07-03T085546Z",
   "sources": [
     {
-      "url": "https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/",
-      "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence ...",
-      "domain": "law.stanford.edu",
+      "url": "https://philippeboulanger.com/the-bar-exam-then-the-wall-for-ai/",
+      "title": "The Bar Exam, Then the Wall for AI - Philippe Boulanger",
+      "domain": "philippeboulanger.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Apr 19, 2023 · We found that while GPT-3.5 failed the bar, scoring roughly in"
+      "excerpt": "AI is being sold the way top students used to be sold. It passes exams."
     },
     {
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/",
-      "title": "GPT-4 passes the bar exam - PMC - NIH",
-      "domain": "pmc.ncbi.nlm.nih.gov",
+      "url": "https://forum.effectivealtruism.org/posts/gQMM9vFbRjvBzgnBS/ai-and-the-feeling-of-living-in-two-worlds",
+      "title": "AI and the feeling of living in two worlds — EA Forum",
+      "domain": "forum.effectivealtruism.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "GPT-4 scores an average of 4.2/6.0. GPT-4 scores approximately 297 points, significantly in excess of"
+      "excerpt": "I can imagine this sounds intuitively far-fetched to some. But remember, 5 years ago AI"
     },
     {
-      "url": "https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/",
-      "title": "Bar exam score shows AI can keep up with 'human lawyers,' researchers ...",
-      "domain": "reuters.com",
+      "url": "https://www.techbuzz.ai/articles/anthropic-won-t-say-claude-isn-t-conscious",
+      "title": "Anthropic Won't Say Claude Isn't Conscious | The Tech Buzz",
+      "domain": "techbuzz.ai",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Mar 15, 2023 · The newer GPT-4 got nearly 76% of the bar exam's multiple-choice"
+      "excerpt": "AI systems now pass the bar exam, write production code, and engage in conversations that"
     },
     {
-      "url": "https://www.facebook.com/groups/californiabarexam/posts/10162986827467730/",
-      "title": "Did AI help with bar exam preparation? - Facebook",
-      "domain": "facebook.com",
+      "url": "https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam",
+      "title": "How to Use Ai to Study for The Bar Exam | TikTok",
+      "domain": "tiktok.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 4, 2026 · if you score an average 62.5 (raw)on the Bar, based on"
+      "excerpt": "“Are you ready to pass the 2026 Bar Exams using 227 real cases penned by"
     },
     {
-      "url": "https://www.facebook.com/colbertlateshow/posts/chatgpt-4-has-a-90-chance-of-passing-the-bar-exam-would-you-let-ai-represent-you/3166740840137312/",
-      "title": "ChatGPT 4 has a 90% chance of passing the bar exam... would you ...",
-      "domain": "facebook.com",
+      "url": "https://blog.terabox.com/insights/agi-beyond-scaling-laws-arc-benchmark",
+      "title": "The Path To AGI: Beyond Scaling Laws And LLMs",
+      "domain": "blog.terabox.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Mar 15, 2023 · When OpenAI launched its fourth version of ChatGPT last March, the"
+      "excerpt": "Q1: Is ARC-AGI meant to be the final test for AGI? A: No, it is"
     },
     {
-      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4389233",
-      "title": "GPT-4 Passes the Bar Exam",
-      "domain": "papers.ssrn.com",
+      "url": "https://www.linkedin.com/posts/bommarito_can-gemini-3-pass-the-bar-exam-at-this-activity-7396575232737767424-0rLz",
+      "title": "Can Gemini 3 pass the Bar Exam? At this point, who cares.",
+      "domain": "linkedin.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Mar 15, 2023 · GPT-4 significantly outperforms both human test-takers and. GPT-4 scores an average"
+      "excerpt": "More interestingly, what does Gemini 3 think about its ability to pass the Bar Exam?"
     }
   ],
-  "reasoning": "In a landmark 2023 study (\"GPT-4 Passes the Bar Exam\" by Bommarito & Katz), researchers demonstrated that OpenAI's GPT-4 passed the Uniform Bar Exam (UBE) with an estimated score of 297. This score is significantly higher than the minimum passing threshold in all UBE jurisdictions (which ranges from 260 to 270). While some subsequent academic critiques argued that the \"90th percentile\" claim originally made by OpenAI was slightly overstated—suggesting GPT-4 actually scored closer to the 68th percentile when compared to the full pool of real-world test-takers who pass the exam—either metric is comfortably above the 50th percentile. Thus, it is well-established that AI language models can now pass the US bar exam with above-average scores.",
+  "reasoning": "In March 2023, researchers Daniel Martin Katz and Michael J. Bommarito II published a study demonstrating that OpenAI's GPT-4 successfully passed the Uniform Bar Exam (UBE) with a score of 297. This score is well above the passing threshold of 260 to 270 required by US jurisdictions. While the authors initially reported that GPT-4 scored in the 90th percentile, a subsequent re-evaluation by researcher Eric Martinez argued that this figure was inflated because it was compared against lower-scoring February test-takers (who are disproportionately repeat takers). Martinez's revised estimate placed GPT-4's performance at approximately the 68th percentile across all test-takers (and the 48th percentile among July first-time test-takers). Because a score in the 68th percentile overall is above average, and newer frontier models (such as GPT-4o and Claude 3.5 Sonnet) have shown even greater capabilities, the claim is accurate.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -87,6 +87,12 @@
       "confidence": 95,
       "checked_at": "2026-06-17T07:55:47Z",
       "run_id": "run-2026-06-17T075113Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-06-26T07:24:28Z",
+      "run_id": "run-2026-06-26T071848Z"
     }
   ],
   "agent_flags": {

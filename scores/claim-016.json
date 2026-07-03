@@ -3,60 +3,60 @@
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
   "confidence": 95,
-  "last_checked_at": "2026-06-26T07:24:06Z",
+  "last_checked_at": "2026-07-03T08:59:36Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-06-26T071848Z",
+  "run_id": "run-2026-07-03T085546Z",
   "sources": [
-    {
-      "url": "https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/",
-      "title": "Goldman Sachs Predicts 300 Million Jobs Will Be Lost Or Degraded By ...",
-      "domain": "forbes.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Mar 31, 2023 · Goldman Sachs maintains that if generative AI lives up to its"
-    },
-    {
-      "url": "https://www.reddit.com/r/Entrepreneur/comments/1j9svnl/ai_will_replace_300_million_jobs_by_2030_heres/",
-      "title": "AI Will Replace 300 Million Jobs by 2030: Here's Why I Think Goldman ...",
-      "domain": "reddit.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Mar 12, 2025 · $19.9 trillion will be pumped into the economy by 2030 due"
-    },
     {
       "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
       "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
       "domain": "nexford.edu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jun 7, 2026 · The World Economic Forum has estimated that artificial intelligence will replace"
+      "excerpt": "Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by"
     },
     {
-      "url": "https://www.cnbc.com/2023/03/28/ai-automation-could-impact-300-million-jobs-heres-which-ones.html",
-      "title": "A.I. automation could impact 300 million jobs – here's which ones",
-      "domain": "cnbc.com",
+      "url": "https://www.bbc.com/worklife/article/20230418-ai-anxiety-artificial-intelligence-replace-jobs",
+      "title": "The anxiety of being replaced by AI",
+      "domain": "bbc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Mar 28, 2023 · The bank's analysis of jobs in the US and Europe shows"
+      "excerpt": "AI anxiety: The workers who fear losing their jobs to artificial intelligence.In March, Goldman Sachs"
     },
     {
-      "url": "https://www.facebook.com/cnbcinternational/posts/there-is-growing-evidence-that-the-widespread-adoption-of-generative-ai-is-impac/1151620936825751/",
-      "title": "Generative AI adoption impacts US job prospects - Facebook",
-      "domain": "facebook.com",
+      "url": "https://www.linkedin.com/posts/gemmatouchstone_is-ai-is-coming-for-your-job-or-just-your-activity-7370586502902460416-5Lm-",
+      "title": "Will AI replace your boss or your job? Find out in this... | LinkedIn",
+      "domain": "linkedin.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Sep 5, 2025 · This anxiety is compounded by a worldwide report predicting that up"
+      "excerpt": "AI will replace 300 million jobs. And two thirds of American jobs can be automated."
     },
     {
-      "url": "https://www.nu.edu/blog/ai-job-statistics/",
-      "title": "59 AI Job Statistics: Future of U.S. Jobs | National University",
-      "domain": "nu.edu",
+      "url": "https://www.youtube.com/watch?v=JrcbH0ge2WE",
+      "title": "Generative A.I - We Aren’t Ready. - YouTube",
+      "domain": "youtube.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 30, 2025 · 300 million jobs could be lost to AI globally, representing 9.1%"
+      "excerpt": "New generative A.I breakthroughs are happening almost every week, it seems. The big question is;"
+    },
+    {
+      "url": "https://workplaceinsight.net/generative-ai-two-thirds/",
+      "title": "Generative AI will affect two thirds of jobs, but... - Workplace Insight",
+      "domain": "workplaceinsight.net",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Indeed’s AI at Work Report analysed more than 55 million job postings on its website"
+    },
+    {
+      "url": "https://www.pymnts.com/artificial-intelligence-2/2025/will-ai-eventually-replace-human-workers-or-augment-them/",
+      "title": "PYMNTS | Will AI Eventually Replace Human Workers or Augment...",
+      "domain": "pymnts.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Will artificial intelligence (AI) make human workers obsolete — or make them more valuable than"
     }
   ],
-  "reasoning": "The claim that generative AI \"will replace 300 million jobs\" is misleading because it misrepresents the findings of the widely cited Goldman Sachs research report (March 2023) from which this figure originates. The Goldman Sachs report estimated that generative AI could expose the equivalent of 300 million full-time jobs globally to \"automation,\" meaning that some portion of their workload could be automated. The authors specifically noted that most jobs and industries are only partially exposed to automation and are far more likely to be complemented by AI rather than fully replaced. Furthermore, historical trends suggest that automation-driven job displacement is typically offset by the creation of new employment opportunities and increased productivity.",
+  "reasoning": "The claim that \"Generative AI will replace 300 million jobs worldwide\" is a misleading oversimplification of a widely cited March 2023 report by Goldman Sachs. \n\nThe actual report estimated that generative AI could \"expose\" the equivalent of 300 million full-time jobs globally to automation, not that it would outright replace them or eliminate those workers. \"Exposure\" to automation means that a portion of the tasks associated with those jobs could be automated. The report specifically notes that most jobs and industries are only partially exposed to automation and are therefore more likely to be complemented rather than substituted by AI. Furthermore, historical trends suggest that technological displacement is offset by the creation of new employment opportunities and increased productivity. Representing this figure as definitive, total job replacement is incorrect and exaggerates the report's actual economic projections.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -81,6 +81,12 @@
       "confidence": 90,
       "checked_at": "2026-06-17T07:55:24Z",
       "run_id": "run-2026-06-17T075113Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 95,
+      "checked_at": "2026-06-26T07:24:06Z",
+      "run_id": "run-2026-06-26T071848Z"
     }
   ],
   "agent_flags": {

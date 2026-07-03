@@ -3,9 +3,9 @@
   "claim_id": "claim-001",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-06-26T07:20:22Z",
+  "last_checked_at": "2026-07-03T08:56:10Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-06-26T071848Z",
+  "run_id": "run-2026-07-03T085546Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 12, 2026 - For January 2016, the satellite-based data showed the lowest overall Arctic"
+      "excerpt": "4 days ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
     },
     {
       "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
@@ -56,7 +56,7 @@
       "excerpt": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was"
     }
   ],
-  "reasoning": "Data from leading scientific institutions, including NOAA, the National Snow and Ice Data Center (NSIDC), and the European Environment Agency, consistently show that Arctic sea ice has declined significantly since continuous satellite observations began in 1979. This decline is evident in both the summer minimum and winter maximum extents, with a statistically significant long-term downward trend driven by rising global temperatures.",
+  "reasoning": "According to comprehensive data from reputable climate and science organizations such as NOAA, the National Snow and Ice Data Center (NSIDC), and the European Environment Agency (EEA), Arctic sea ice has declined significantly since continuous satellite observations began in 1979. The downward trend is statistically significant and observable across all seasons, most notably during the annual summer minimum in September, where the average ice extent has successively declined with each decade.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -87,6 +87,12 @@
       "confidence": 100,
       "checked_at": "2026-06-17T07:51:39Z",
       "run_id": "run-2026-06-17T075113Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-06-26T07:20:22Z",
+      "run_id": "run-2026-06-26T071848Z"
     }
   ],
   "agent_flags": {

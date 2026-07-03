@@ -3,60 +3,60 @@
   "claim_id": "claim-012",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-06-26T07:25:59Z",
+  "last_checked_at": "2026-07-03T09:00:54Z",
   "last_changed_at": "2026-06-09T23:47:23Z",
-  "run_id": "run-2026-06-26T071848Z",
+  "run_id": "run-2026-07-03T085546Z",
   "sources": [
     {
-      "url": "https://www.britannica.com/story/can-lightning-strike-the-same-place-twice",
-      "title": "Can Lightning Strike the Same Place Twice? - Britannica",
-      "domain": "britannica.com",
+      "url": "https://www.aol.com/news/why-lightning-never-strikes-same-174500436.html",
+      "title": "Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL",
+      "domain": "aol.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Lightning never strikes the same place twice” is a common phrase you've probably heard before,"
+      "excerpt": "Lightning is very good at striking the same place twice – you could even say"
     },
     {
-      "url": "https://www.merriam-webster.com/dictionary/lightning+never+strikes+(the+same+place)+twice",
-      "title": "lightning never strikes (the same place) twice - Merriam-Webster",
-      "domain": "merriam-webster.com",
+      "url": "https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html",
+      "title": "'Lightning Never Strikes the Same Place Twice'... Or Does It?",
+      "domain": "learningenglish.voanews.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The meaning of LIGHTNING NEVER STRIKES (THE SAME PLACE) TWICE is —used to say that"
+      "excerpt": "Anything that comes to represent something that people criticize can be called a lightning rod."
     },
     {
-      "url": "https://www.westeamahead.org/blog/2025/2/5/mythbuster-lightning-never-strikes-the-same-place-twice",
-      "title": "MythBuster: Lightning Never Strikes the Same Place Twice",
-      "domain": "westeamahead.org",
+      "url": "https://writingexplained.org/idiom-dictionary/lightning-never-strikes-the-same-place-twice",
+      "title": "What Does Lightning Never Strikes The Same Place Twice Mean?",
+      "domain": "writingexplained.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 5, 2025 · Discover the truth behind the myth that lightning never strikes the"
+      "excerpt": "lightning never strikes twice in the same place This idiom likely originated in the book"
     },
     {
-      "url": "https://www.facebook.com/CBSPittsburgh/posts/hey-ray-youve-heard-the-saying-lightning-never-strikes-twice-but-is-it-true-ray-/1377074114467443/",
-      "title": "HEY RAY! You've heard the saying, \"Lightning never strikes twice,\" but ...",
-      "domain": "facebook.com",
+      "url": "https://www.weather.gov/safety/lightning-myths",
+      "title": "Lightning Myths",
+      "domain": "weather.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Apr 11, 2026 · MYTH: Lightning never strikes the same place twice. TRUTH: Tall structures"
+      "excerpt": "Myth: Lightning never strikes the same place twice. Fact: Lightning often strikes the same place"
     },
     {
-      "url": "https://www.facebook.com/SandraLee/posts/lightning-strikes-more-than-once-sometimes/1584100036418093/",
-      "title": "Lightning strikes more than once sometimes! - Facebook",
-      "domain": "facebook.com",
+      "url": "https://web.archive.org/web/20190207020243/https://idioms.thefreedictionary.com/Lightning+never+strikes+twice",
+      "title": "Lightning never strikes twice - Idioms by The Free Dictionary",
+      "domain": "web.archive.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jun 12, 2026 · ⚡️Have you heard that lightning never strikes the same place twice?"
+      "excerpt": "Lightning never strikes (the same place) twice. Prov. The same highly unlikely thing never happens"
     },
     {
-      "url": "https://wu-next-core-us-east-1-aws.wunderground.com/article/science/weather-explainers/news/2025-03-17-lightning-never-strikes-twice-fact-fiction",
-      "title": "Why 'Lightning Never Strikes The Same Place Twice' Is An Imperfect ...",
-      "domain": "wu-next-core-us-east-1-aws.wunderground.com",
+      "url": "https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html",
+      "title": "VOA Special English - 'Lightning Never Strikes the Same Place...",
+      "domain": "21voa.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Mar 17, 2025 · Lightning never strikes the same place twice” is a common idiom"
+      "excerpt": "When speaking about lightning, we have another common expression: Lightning never strikes the same place"
     }
   ],
-  "reasoning": "The popular adage \"Lightning never strikes the same place twice\" is scientifically false. According to the National Oceanic and Atmospheric Administration (NOAA) and the National Weather Service (NWS), lightning frequently strikes the same location multiple times, particularly tall, pointed, and isolated structures that offer a path of least resistance for electrical discharges. A prime example is the Empire State Building in New York City, which is struck by lightning an average of 25 times every year.",
+  "reasoning": "The claim is a well-known scientific myth. In reality, lightning frequently strikes the same location multiple times, particularly if it is a tall, pointed, or isolated object. According to the National Weather Service (NWS), the Empire State Building in New York City is struck by lightning an average of 23 to 25 times every year. From a physics perspective, tall conductors polarize under a storm cloud, generating \"upward leaders\" of positive charge that easily connect with the descending \"stepped leaders\" of negative charge from the cloud, making them highly receptive to repeated strikes.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -81,6 +81,12 @@
       "confidence": 100,
       "checked_at": "2026-06-17T07:56:44Z",
       "run_id": "run-2026-06-17T075113Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-06-26T07:25:59Z",
+      "run_id": "run-2026-06-26T071848Z"
     }
   ],
   "agent_flags": {
