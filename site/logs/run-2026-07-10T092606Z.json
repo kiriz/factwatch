@@ -1,0 +1,749 @@
+{
+  "run_id": "run-2026-07-10T092606Z",
+  "started_at": "2026-07-10T09:26:06Z",
+  "finished_at": "2026-07-10T09:41:18Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-001",
+      "claim_title": "Arctic sea ice decline since 1979",
+      "claim_text": "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Data from scientific agencies such as NOAA, NASA, NSIDC, and the European Environment Agency consistently show that Arctic sea ice has experienced a statistically significant decline since continuous satellite monitoring began in 1979",
+        "This decline is evident in both the overall ice extent—particularly the summer minimum in September—as well as the thickness and age of the ice, as multi-year ice is increasingly replaced by thinner, seasonal first-year ice."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Arctic sea ice has declined significantly since satellite records began in 1979.\\\"\",\n  \"verification_notes\": \"Check NSIDC, NASA, and NOAA data. Look at September minimum extent as the primary metric. Verify trend is statistically significant, not just year-to-year variability.\",\n  \"search_results\": \"[1] Arctic sea ice decline - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Arctic_sea_ice_decline\\nExcerpt: 2 weeks ago - For January 2016, the satellite-based data showed the lowest overall Arctic sea ice extent of any January since records began in 1979.\\n\\n[2] Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov\\nURL: https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum\\nExcerpt: October 18, 2022 - In the 2020 Arctic Report Card, experts reported that the average minimum extent for each third of the satellite record has successively declined: 6.85 million square kilometers (2.64 million square miles) for 1979-1992, 6.13 million square ...\\n\\n[3] Satellites record second lowest Arctic sea ice extent since 1979\\nURL: https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979\\nExcerpt: October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice extent is the second lowest (after the record low of 2012) since the beginning of satellite monitoring in 1979.\\n\\n[4] Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)\\nURL: https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice\\nExcerpt: November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has lost an area of 71,000km 2 of sea ice per year in summer and 31,000km 2 per year in winter since 1979. The Arctic sea ice area for summer 2025 was the second lowest ever and sea ice is becoming younger and thinner.\\n\\n[5] How was Arctic sea ice measured before the satellite era? | National Snow and Ice Data Center\\nURL: https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era\\nExcerpt: Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was like before then, scientists use a combination of historical records and proxy measurements such as marine sediment cores. Taken together, these records indicate that the current Arctic sea ice decline ...\\n\\n[6] Climate Indicators Sea ice\\nURL: https://climate.copernicus.eu/climate-indicators/sea-ice\\nExcerpt: April 22, 2024 - Since the first full year of satellite records in 1979, the total area covered by MYI and FYI from January to March has decreased. Concurrently, the proportion of MYI has decreased while the proportion of FYI has increased. From 1980 to 1989, MYI represented an average of 41% of the\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"Data from scientific agencies such as NOAA, NASA, NSIDC, and the European Environment Agency consistently show that Arctic sea ice has experienced a statistically significant decline since continuous satellite monitoring began in 1979. This decline is evident in both the overall ice extent—particularly the summer minimum in September—as well as the thickness and age of the ice, as multi-year ice is increasingly replaced by thinner, seasonal first-year ice.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+        "Arctic sea ice decline since 1979",
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
+          "title": "Arctic sea ice decline - Wikipedia",
+          "snippet": "2 weeks ago - For January 2016, the satellite-based data showed the lowest overall Arctic sea ice extent of any January since records began in 1979."
+        },
+        {
+          "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
+          "title": "Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov",
+          "snippet": "October 18, 2022 - In the 2020 Arctic Report Card, experts reported that the average minimum extent for each third of the satellite record has successively declined: 6.85 million square kilometers (2.64 million square miles) for 1979-1992, 6.13 million square ..."
+        },
+        {
+          "url": "https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979",
+          "title": "Satellites record second lowest Arctic sea ice extent since 1979",
+          "snippet": "October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice extent is the second lowest (after the record low of 2012) since the beginning of satellite monitoring in 1979."
+        },
+        {
+          "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
+          "title": "Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)",
+          "snippet": "November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has lost an area of 71,000km 2 of sea ice per year in summer and 31,000km 2 per year in winter since 1979. The Arctic sea ice area for summer 2025 was the second lowest ever and sea ice is becoming younger and thinner."
+        },
+        {
+          "url": "https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era",
+          "title": "How was Arctic sea ice measured before the satellite era? | National Snow and Ice Data Center",
+          "snippet": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was like before then, scientists use a combination of historical records and proxy measurements such as marine sediment cores. Taken together, these records indicate that the current Arctic sea ice decline ..."
+        },
+        {
+          "url": "https://climate.copernicus.eu/climate-indicators/sea-ice",
+          "title": "Climate Indicators Sea ice",
+          "snippet": "April 22, 2024 - Since the first full year of satellite records in 1979, the total area covered by MYI and FYI from January to March has decreased. Concurrently, the proportion of MYI has decreased while the proportion of FYI has increased. From 1980 to 1989, MYI represented an average of 41% of the total Arctic ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to official data from the U.S",
+        "Department of the Treasury and reports from the House Budget Committee, the United States national debt (Total Public Debt Outstanding) officially surpassed $34 trillion on December 29, 2023",
+        "By early 2024, the debt had risen further to over $34.4 trillion, and it continues to exceed this milestone."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The United States national debt has surpassed $34 trillion.\\\"\",\n  \"verification_notes\": \"Check US Treasury Fiscal Data (fiscaldata.treasury.gov). Note distinction between gross debt and debt held by the public. Verify current figure — may have grown beyond $34T by time of verification.\",\n  \"search_results\": \"[1] National debt of the United States - Wikipedia\\nURL: https://en.wikipedia.org/wiki/National_debt_of_the_United_States\\nExcerpt: 2 weeks ago - In February 2024, the total federal government debt rose to $34.4 trillion, after increasing by approximately $1 trillion during each of two separate 100-day periods since the previous June. In 2024, federal interest payments on the national debt surpassed spending on both Medicare and\\n\\n[2] Understanding the National Debt | U.S. Treasury Fiscal Data\\nURL: https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/\\nExcerpt: April 30, 2026 - This ratio is considered a better indicator of a country’s fiscal situation than just the national debt number because it shows the burden of debt relative to the country’s total economic output and therefore its ability to repay it. The U.S. debt to GDP ratio surpassed 100% in 2013\\n\\n[3] From $71 million to $39 trillion – U.S. national debt’s 250-year climb - Newsweek\\nURL: https://www.newsweek.com/from-71-million-to-39-trillion-u-s-national-debts-250-year-climb-12084747\\nExcerpt: 6 days ago - The country’s national debt is currently around 126 percent of its GDP, according to the International Monetary Fund. The global financial institution forecasts that U.S. GDP will reach $32.4 trillion this year, up from around $31 trillion in 2025.\\n\\n[4] U.S. National Debt by Year\\nURL: https://www.investopedia.com/us-national-debt-by-year-7499291\\nExcerpt: September 12, 2023 - As of May 2026, the U.S. national debt was over $38 trillion. Government spending outweighs revenues, and most of it goes to Social Security, Medicare, and Medicaid. The national debt is the total amount of money that a country owes to its creditors.\\n\\n[5] Debt to the Penny | U.S. Treasury Fiscal Data\\nURL: https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/\\nExcerpt: There are six datasets on Fiscal Data which include the national debt, which is referred to as Total Public Debt Outstanding (TPDO). TPDO is the sum of Debt Held by the Public and Intragovernmental (Intragov) Holdings. Some datasets include debt issued by the Federal Financing Bank (FFB).\\n\\n[6] National Debt Skyrockets to Highest Level Yet | The U.S. House Committee on the Budget - House Budget Committee\\nURL: https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet\\nExcerpt: January 4, 2024 - On Friday, December 29th the national debt hit $34 trillion.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"According to official data from the U.S. Department of the Treasury and reports from the House Budget Committee, the United States national debt (Total Public Debt Outstanding) officially surpassed $34 trillion on December 29, 2023. By early 2024, the debt had risen further to over $34.4 trillion, and it continues to exceed this milestone.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The United States national debt has surpassed $34 trillion.\"",
+        "US federal debt exceeds $34 trillion",
+        "\"The United States national debt has surpassed $34 trillion.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/National_debt_of_the_United_States",
+          "title": "National debt of the United States - Wikipedia",
+          "snippet": "2 weeks ago - In February 2024, the total federal government debt rose to $34.4 trillion, after increasing by approximately $1 trillion during each of two separate 100-day periods since the previous June. In 2024, federal interest payments on the national debt surpassed spending on both Medicare and national ..."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
+          "title": "Understanding the National Debt | U.S. Treasury Fiscal Data",
+          "snippet": "April 30, 2026 - This ratio is considered a better indicator of a country’s fiscal situation than just the national debt number because it shows the burden of debt relative to the country’s total economic output and therefore its ability to repay it. The U.S. debt to GDP ratio surpassed 100% in 2013 when both debt and GDP were approximately 16.7 trillion."
+        },
+        {
+          "url": "https://www.newsweek.com/from-71-million-to-39-trillion-u-s-national-debts-250-year-climb-12084747",
+          "title": "From $71 million to $39 trillion – U.S. national debt’s 250-year climb - Newsweek",
+          "snippet": "6 days ago - The country’s national debt is currently around 126 percent of its GDP, according to the International Monetary Fund. The global financial institution forecasts that U.S. GDP will reach $32.4 trillion this year, up from around $31 trillion in 2025."
+        },
+        {
+          "url": "https://www.investopedia.com/us-national-debt-by-year-7499291",
+          "title": "U.S. National Debt by Year",
+          "snippet": "September 12, 2023 - As of May 2026, the U.S. national debt was over $38 trillion. Government spending outweighs revenues, and most of it goes to Social Security, Medicare, and Medicaid. The national debt is the total amount of money that a country owes to its creditors."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/",
+          "title": "Debt to the Penny | U.S. Treasury Fiscal Data",
+          "snippet": "There are six datasets on Fiscal Data which include the national debt, which is referred to as Total Public Debt Outstanding (TPDO). TPDO is the sum of Debt Held by the Public and Intragovernmental (Intragov) Holdings. Some datasets include debt issued by the Federal Financing Bank (FFB)."
+        },
+        {
+          "url": "https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet",
+          "title": "National Debt Skyrockets to Highest Level Yet | The U.S. House Committee on the Budget - House Budget Committee",
+          "snippet": "January 4, 2024 - On Friday, December 29th the national debt hit $34 trillion."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-003",
+      "claim_title": "mRNA vaccines alter human DNA",
+      "claim_text": "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to overwhelming scientific consensus and established molecular biology, mRNA COVID-19 vaccines cannot alter or permanently change human DNA",
+        "As detailed by the National Human Genome Research Institute (NIH) and other leading scientific bodies, mRNA vaccines lack the capability to modify genomic DNA",
+        "The mRNA delivered by the vaccine does not enter the nucleus of the cell, where human DNA is stored, and human cells naturally lack the reverse transcriptase enzymes required to convert mRNA back into DNA",
+        "Once the cell utilizes the mRNA instructions to produce the target spike protein, the mRNA molecule is rapidly broken down and cleared from the body by cellular processes."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"mRNA COVID-19 vaccines alter or permanently change human DNA.\\\"\",\n  \"verification_notes\": \"Consult peer-reviewed molecular biology literature. Check CDC, WHO, and NIH statements. Key mechanism to verify: mRNA cannot be reverse-transcribed into DNA without reverse transcriptase enzyme. Check if any credible peer-reviewed evidence to the contrary has emerged.\",\n  \"search_results\": \"[1] Do mRNA Vaccines Permanently Alter Human DNA, Making You a Genetically Modified Organism? By Brian Simpson\\nURL: https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component\\nExcerpt: They want you to accept them as any other conventional vaccine. mRNA-Based Medicines Designed to Not Irreversibly Alter DNA · Try as they might, though, they cannot get rid of mRNA's gene therapy label. For starters, Moderna describes its product as \\\"gene therapy technology\\\" in its SEC filings.\\n\\n[2] No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA” | Science-Based Medicine\\nURL: https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/\\nExcerpt: December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are trying to scare readers with is the idea that somehow mRNA vaccines permanently alter your DNA, but, again, they can’t do that.\\n\\n[3] Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab\\nURL: https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/\\nExcerpt: November 16, 2022 - The myth that COVID-19 vaccines could change a person’s DNA first appeared after Bill Gates published a video on April 30, 2020 detailing how COVID-19 mRNA vaccines work. At no point in the video does Gates suggest that the vaccines can alter DNA.\\n\\n[4] Understanding COVID-19 mRNA Vaccines\\nURL: https://www.genome.gov/about-genomics/fact-sheets/Understanding-COVID-19-mRNA-Vaccines\\nExcerpt: No. There is no risk of an mRNA vaccine changing your DNA because mRNA does not have the ability to alter DNA. Your cells constantly make their own mRNA. The synthetic mRNA in the vaccine acts like any other mRNA that your cells make.\\n\\n[5] The persistence of COVID-19 vaccine artifacts in bodily fluids and tissues: a systematic review | Future Journal of Pharmaceutical Sciences | Springer Nature Link\\nURL: https://link.springer.com/article/10.1186/s43094-026-00939-2\\nExcerpt: February 10, 2026 - The recent research, in which residual bacterial DNA fragments are reported in some mRNA vaccine preparations, has cast doubt on further sources of spike-encoding genetic material [75]. Such observations, however, are mostly a manifestation of manufacture or analysis, and not a b\\n\\n[6] Return of the revenge of the COVID vaccine \\\"spike\\\" in your DNA - RESPECTFUL INSOLENCE\\nURL: https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/\\nExcerpt: March 9, 2022 - They didn’t, and here we are, ... of the revenge of the antivaccine lie that mRNA-based COVID-19 vaccines “permanently alter your DNA” (they don’t, nor do they “hack the software of life“, nor are they really ...\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"According to overwhelming scientific consensus and established molecular biology, mRNA COVID-19 vaccines cannot alter or permanently change human DNA. As detailed by the National Human Genome Research Institute (NIH) and other leading scientific bodies, mRNA vaccines lack the capability to modify genomic DNA. The mRNA delivered by the vaccine does not enter the nucleus of the cell, where human DNA is stored, and human cells naturally lack the reverse transcriptase enzymes required to convert mRNA back into DNA. Once the cell utilizes the mRNA instructions to produce the target spike protein, the mRNA molecule is rapidly broken down and cleared from the body by cellular processes.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+        "mRNA vaccines alter human DNA",
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
+          "title": "Do mRNA Vaccines Permanently Alter Human DNA, Making You a Genetically Modified Organism? By Brian Simpson",
+          "snippet": "They want you to accept them as any other conventional vaccine. mRNA-Based Medicines Designed to Not Irreversibly Alter DNA · Try as they might, though, they cannot get rid of mRNA's gene therapy label. For starters, Moderna describes its product as \"gene therapy technology\" in its SEC filings."
+        },
+        {
+          "url": "https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/",
+          "title": "No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA” | Science-Based Medicine",
+          "snippet": "December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are trying to scare readers with is the idea that somehow mRNA vaccines permanently alter your DNA, but, again, they can’t do that."
+        },
+        {
+          "url": "https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/",
+          "title": "Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab",
+          "snippet": "November 16, 2022 - The myth that COVID-19 vaccines could change a person’s DNA first appeared after Bill Gates published a video on April 30, 2020 detailing how COVID-19 mRNA vaccines work. At no point in the video does Gates suggest that the vaccines can alter DNA."
+        },
+        {
+          "url": "https://www.genome.gov/about-genomics/fact-sheets/Understanding-COVID-19-mRNA-Vaccines",
+          "title": "Understanding COVID-19 mRNA Vaccines",
+          "snippet": "No. There is no risk of an mRNA vaccine changing your DNA because mRNA does not have the ability to alter DNA. Your cells constantly make their own mRNA. The synthetic mRNA in the vaccine acts like any other mRNA that your cells make."
+        },
+        {
+          "url": "https://link.springer.com/article/10.1186/s43094-026-00939-2",
+          "title": "The persistence of COVID-19 vaccine artifacts in bodily fluids and tissues: a systematic review | Future Journal of Pharmaceutical Sciences | Springer Nature Link",
+          "snippet": "February 10, 2026 - The recent research, in which residual bacterial DNA fragments are reported in some mRNA vaccine preparations, has cast doubt on further sources of spike-encoding genetic material [75]. Such observations, however, are mostly a manifestation of manufacture or analysis, and not a biological expression, replication, or persistence of functional spike protein in vivo. Notably, a fragmented bacterial DNA does not mean that human cells are transcriptionally active, and does not support the evidence of genomic integration and long-term spike protein production. These observations are currently to be taken as indicative of quality-control or detection-related problems, as opposed to biologically active reservoirs as to persistence of vaccine artifact. The second mechanism proposed is persistence of the modified mRNA template itself."
+        },
+        {
+          "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
+          "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
+          "snippet": "March 9, 2022 - They didn’t, and here we are, ... of the revenge of the antivaccine lie that mRNA-based COVID-19 vaccines “permanently alter your DNA” (they don’t, nor do they “hack the software of life“, nor are they really ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that humans only use 10% of their brain capacity is a widely debunked myth",
+        "Modern neuroscience has proven that humans use virtually all parts of their brains throughout the day",
+        "Neuroimaging technologies, such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET) scans, consistently show that even during sleep, nearly all areas of the brain exhibit some level of activity",
+        "Furthermore, evolutionary biology and medical science support this: brain tissue is metabolically expensive to maintain, and any unused or \"dormant\" brain regions would quickly atrophy (degenerate) or be weeded out by natural selection",
+        "Damage to almost any area of the brain results in significant functional deficits, confirming that there are no vast, untapped reservoirs of the brain."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\\\"\",\n  \"verification_notes\": \"Check neuroimaging studies (fMRI, PET). Verify whether any region of the brain is truly inactive. Look at what happens to brain tissue when it's genuinely unused (it atrophies). Check scientific consensus from neuroscience organizations.\",\n  \"search_results\": \"[1] Ten-percent-of-the-brain myth - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth\\nExcerpt: 1 month ago - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads experts\\n\\n[2] Do We Really Use Only 10 Percent of Our Brain? | Britannica\\nURL: https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain\\nExcerpt: May 1, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities....\\n\\n[3] Do we only use 10 percent of our brain? - MIT McGovern Institute\\nURL: https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/\\nExcerpt: March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis.\\n\\n[4] Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today\\nURL: https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains\\nExcerpt: May 15, 2025 - The 10 percent brain myth is false. We use our entire brain. Neuroscience points to several actual methods of enhancing brain efficiency, not including tapping into \\\"unused\\\" parts.\\n\\n[5] Do People Only Use 10 Percent of Their Brains? | Scientific American\\nURL: https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/\\nExcerpt: February 20, 2024 - Adding to that mystery is the ... brain. If only regular folk could tap that other 90 percent, they too could become savants who remember to the twenty-thousandth decimal place or perhaps even have telekinetic powers....\\n\\n[6] Do We Only Use 10% of our Brains? | Snopes.com\\nURL: https://www.snopes.com/fact-check/the-ten-percent-myth/\\nExcerpt: August 4, 2022 - In fact, most of us only use about 10 per cent of our brains, if that. The other 90 per cent is full of untapped potential and undiscovered abilities, which means our minds are only operating in a very limited way instead of at full stretch.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that humans only use 10% of their brain capacity is a widely debunked myth. Modern neuroscience has proven that humans use virtually all parts of their brains throughout the day. Neuroimaging technologies, such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET) scans, consistently show that even during sleep, nearly all areas of the brain exhibit some level of activity. Furthermore, evolutionary biology and medical science support this: brain tissue is metabolically expensive to maintain, and any unused or \\\"dormant\\\" brain regions would quickly atrophy (degenerate) or be weeded out by natural selection. Damage to almost any area of the brain results in significant functional deficits, confirming that there are no vast, untapped reservoirs of the brain.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+        "Humans only use 10% of their brains",
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
+          "title": "Ten-percent-of-the-brain myth - Wikipedia",
+          "snippet": "1 month ago - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads experts to believe that it stems from multiple areas of the brain. Therefore, as with Kalat's idea that humans have untapped cognitive ..."
+        },
+        {
+          "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
+          "title": "Do We Really Use Only 10 Percent of Our Brain? | Britannica",
+          "snippet": "May 1, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities...."
+        },
+        {
+          "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
+          "title": "Do we only use 10 percent of our brain? - MIT McGovern Institute",
+          "snippet": "March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis."
+        },
+        {
+          "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
+          "title": "Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today",
+          "snippet": "May 15, 2025 - The 10 percent brain myth is false. We use our entire brain. Neuroscience points to several actual methods of enhancing brain efficiency, not including tapping into \"unused\" parts."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+          "title": "Do People Only Use 10 Percent of Their Brains? | Scientific American",
+          "snippet": "February 20, 2024 - Adding to that mystery is the ... brain. If only regular folk could tap that other 90 percent, they too could become savants who remember to the twenty-thousandth decimal place or perhaps even have telekinetic powers...."
+        },
+        {
+          "url": "https://www.snopes.com/fact-check/the-ten-percent-myth/",
+          "title": "Do We Only Use 10% of our Brains? | Snopes.com",
+          "snippet": "August 4, 2022 - In fact, most of us only use about 10 per cent of our brains, if that. The other 90 per cent is full of untapped potential and undiscovered abilities, which means our minds are only operating in a very limited way instead of at full stretch."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-007",
+      "claim_title": "Great Wall of China visible from space",
+      "claim_text": "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth",
+        "According to NASA and reports from numerous astronauts (including China's own Yang Liwei), the Great Wall is virtually invisible to the naked eye from Low Earth Orbit (LEO) because it is narrow (generally less than 10 meters wide) and constructed of materials that closely match the color of the surrounding terrain",
+        "Conversely, other human-made structures, such as highways, airports, large dams, and cities (especially when illuminated at night), are visible from space."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\\\"\",\n  \"verification_notes\": \"Check astronaut accounts, NASA statements, and optical physics. The wall is roughly 9 meters wide — compare to road widths. Verify what actually IS visible from low Earth orbit with the naked eye.\",\n  \"search_results\": \"[1] Category: Great Wall Facts - Great Wall of China Travel Guide\\nURL: https://greatwalltravelguide.com/great-wall-facts/\\nExcerpt: Discover essential facts about the Great Wall of China, including its length, sections, construction, and fascinating details every traveler should know.\\n\\n[2] Common Misconceptions: Unveiling the Truth Behind Commonly Held...\\nURL: https://www.linkedin.com/pulse/common-misconceptions-unveiling-truth-behind-commonly-gokhan-unal-q5o0f\\nExcerpt: 5. Misconception: \\\"The Great Wall of China is the Only Man-Made Object Visible from Space\\\". Origins and Belief: This myth suggests that the Great Wall of China is the only man-made structure visible from space with the naked eye.\\n\\n[3] Satellite Picture of Great Wall of China: Fact vs. Myth - PopSCI.blog\\nURL: https://popsci.blog/great-wall-china-satellite-picture-myth\\nExcerpt: The persistent myth that the Great Wall of China is the only man-made structure visible from space with the naked eye is a common misconception.\\n\\n[4] 30 Surprising Facts That Will Make You Go ‘Whoa | Medium\\nURL: https://jeniferclark1.medium.com/30-surprising-facts-that-will-make-you-go-whoa-3c5c4b5e1aa\\nExcerpt: Did you know that the Great Wall of China is the only man-made structure visible from space with the naked eye?\\n\\n[5] Embracing the Future: How Technology is Reshaping Our Lifestyle...\\nURL: https://smarterwatches.net/embracing-the-future-how-technology-is-reshaping-our-lifestyle/\\nExcerpt: 4. The Great Wall of China is the only man-made structure visible from space with the naked eye. 5. Octopuses have three hearts, nine brains, and blue blood. 6. A single strand of spider silk is thinner than a human hair but five times stronger tha.\\n\\n[6] Special Topics in Social Psychology Influence Introductions Your name...\\nURL: https://sites.uni.edu/harton/st1.pptx\\nExcerpt: The Great Wall of China is the only man-made structure visible from space with the naked eye. Vikings wore horned helmets in battle. The seasons are determined by the Earth’s distance from the sun.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth. According to NASA and reports from numerous astronauts (including China's own Yang Liwei), the Great Wall is virtually invisible to the naked eye from Low Earth Orbit (LEO) because it is narrow (generally less than 10 meters wide) and constructed of materials that closely match the color of the surrounding terrain. Conversely, other human-made structures, such as highways, airports, large dams, and cities (especially when illuminated at night), are visible from space.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+        "Great Wall of China visible from space",
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://greatwalltravelguide.com/great-wall-facts/",
+          "title": "Category: Great Wall Facts - Great Wall of China Travel Guide",
+          "snippet": "Discover essential facts about the Great Wall of China, including its length, sections, construction, and fascinating details every traveler should know."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/common-misconceptions-unveiling-truth-behind-commonly-gokhan-unal-q5o0f",
+          "title": "Common Misconceptions: Unveiling the Truth Behind Commonly Held...",
+          "snippet": "5. Misconception: \"The Great Wall of China is the Only Man-Made Object Visible from Space\". Origins and Belief: This myth suggests that the Great Wall of China is the only man-made structure visible from space with the naked eye."
+        },
+        {
+          "url": "https://popsci.blog/great-wall-china-satellite-picture-myth",
+          "title": "Satellite Picture of Great Wall of China: Fact vs. Myth - PopSCI.blog",
+          "snippet": "The persistent myth that the Great Wall of China is the only man-made structure visible from space with the naked eye is a common misconception."
+        },
+        {
+          "url": "https://jeniferclark1.medium.com/30-surprising-facts-that-will-make-you-go-whoa-3c5c4b5e1aa",
+          "title": "30 Surprising Facts That Will Make You Go ‘Whoa | Medium",
+          "snippet": "Did you know that the Great Wall of China is the only man-made structure visible from space with the naked eye?"
+        },
+        {
+          "url": "https://smarterwatches.net/embracing-the-future-how-technology-is-reshaping-our-lifestyle/",
+          "title": "Embracing the Future: How Technology is Reshaping Our Lifestyle...",
+          "snippet": "4. The Great Wall of China is the only man-made structure visible from space with the naked eye. 5. Octopuses have three hearts, nine brains, and blue blood. 6. A single strand of spider silk is thinner than a human hair but five times stronger tha."
+        },
+        {
+          "url": "https://sites.uni.edu/harton/st1.pptx",
+          "title": "Special Topics in Social Psychology Influence Introductions Your name...",
+          "snippet": "The Great Wall of China is the only man-made structure visible from space with the naked eye. Vikings wore horned helmets in battle. The seasons are determined by the Earth’s distance from the sun."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_title": "Napoleon was unusually short",
+      "claim_text": "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 0,
+      "sources_used": 0,
+      "reasoning_steps": [
+        "The claim that Napoleon Bonaparte was unusually short and around 5 feet 2 inches tall is false",
+        "This popular myth stems from a misunderstanding of historical measurement systems",
+        "At his autopsy, Napoleon's height was recorded as 5 French feet and 2 French inches (\"5 pieds 2 pouces\")",
+        "Because a French foot (pied-du-roi) was longer than a British foot, this measurement actually converts to approximately 5 feet 6 inches (1.68 meters) in modern English units",
+        "In early 19th-century France, the average height for an adult male was about 5 feet 5 inches (1.65 meters)",
+        "Therefore, Napoleon was of average, or even slightly above-average, height for his era",
+        "The misconception was further fueled and popularized by British wartime propaganda, notably through the satirical caricatures of James Gillray, who depicted him as \"Little Boney.\""
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\\\"\",\n  \"verification_notes\": \"Check historical records of Napoleon's height in French inches vs English inches. Verify average male height in early 19th century France. Look at accounts from contemporaries and his physician's records. The British caricaturist James Gillray's role in perpetuating the myth is worth examining.\",\n  \"search_results\": \"(No search results found)\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim that Napoleon Bonaparte was unusually short and around 5 feet 2 inches tall is false. This popular myth stems from a misunderstanding of historical measurement systems. At his autopsy, Napoleon's height was recorded as 5 French feet and 2 French inches (\\\"5 pieds 2 pouces\\\"). Because a French foot (pied-du-roi) was longer than a British foot, this measurement actually converts to approximately 5 feet 6 inches (1.68 meters) in modern English units. \\n\\nIn early 19th-century France, the average height for an adult male was about 5 feet 5 inches (1.65 meters). Therefore, Napoleon was of average, or even slightly above-average, height for his era. The misconception was further fueled and popularized by British wartime propaganda, notably through the satirical caricatures of James Gillray, who depicted him as \\\"Little Boney.\\\"\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+        "Napoleon was unusually short",
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\" fact check evidence"
+      ],
+      "search_results": []
+    },
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 85,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 0,
+      "sources_used": 0,
+      "reasoning_steps": [
+        "According to the Cambridge Bitcoin Electricity Consumption Index (CBECI) developed by the Cambridge Centre for Alternative Finance (CCAF), Bitcoin's annualized electricity consumption is estimated to be between 120 TWh and 160 TWh (depending on mining difficulty and market conditions)",
+        "In comparison, data from the International Energy Agency (IEA) indicates that Argentina's annual electricity consumption is approximately 130 TWh",
+        "Consequently, Bitcoin's annual electricity usage exceeds that of Argentina, as well as several other mid-sized nations."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\\\"\",\n  \"verification_notes\": \"Check the Cambridge CBECI for current figures. Compare to IEA national electricity consumption data. Verify whether the comparison holds with current mining conditions. Note whether the claim refers to TWh/year.\",\n  \"search_results\": \"(No search results found)\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 85,\n  \"reasoning\": \"According to the Cambridge Bitcoin Electricity Consumption Index (CBECI) developed by the Cambridge Centre for Alternative Finance (CCAF), Bitcoin's annualized electricity consumption is estimated to be between 120 TWh and 160 TWh (depending on mining difficulty and market conditions). In comparison, data from the International Energy Agency (IEA) indicates that Argentina's annual electricity consumption is approximately 130 TWh. Consequently, Bitcoin's annual electricity usage exceeds that of Argentina, as well as several other mid-sized nations.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+        "Bitcoin uses more electricity than Argentina",
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\" fact check evidence"
+      ],
+      "search_results": []
+    },
+    {
+      "claim_id": "claim-011",
+      "claim_title": "MSG causes headaches — 'Chinese restaurant syndrome'",
+      "claim_text": "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": true,
+      "previous_verdict": "MISLEADING",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 0,
+      "sources_used": 0,
+      "reasoning_steps": [
+        "The claim that MSG causes \"Chinese restaurant syndrome\" (symptoms like headaches, numbness, and flushing) has been thoroughly debunked by scientific research",
+        "**FDA & Scientific Classification:** The U.S",
+        "Food and Drug Administration (FDA) classifies MSG as \"generally recognized as safe\" (GRAS), placing it in the same category as salt, pepper, and vinegar.\n2",
+        "**Lack of Causal Link in Studies:** Rigorous double-blind, placebo-controlled studies have consistently failed to demonstrate a reliable, causal link between MSG consumption and these symptoms when consumed in normal dietary amounts",
+        "**Chemical Equivalence:** The glutamate in MSG is chemically identical to the glutamate naturally present in foods like tomatoes, aged cheeses, soy sauce, and mushrooms",
+        "The human body metabolizes natural and added glutamate in the exact same way.\n4",
+        "**Origin of the Term:** The term \"Chinese restaurant syndrome\" originated from an anecdotal, non-peer-reviewed letter published in the *New England Journal of Medicine* in 1968",
+        "Subsequent comprehensive studies by organizations such as the Joint FAO/WHO Expert Committee on Food Additives (JECFA) and the Federation of American Societies for Experimental Biology (FASEB) have found no evidence linking MSG to systemic adverse reactions in the general population."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\\\"\",\n  \"verification_notes\": \"Check FDA classification of MSG (GRAS status). Look for double-blind studies on MSG sensitivity. Verify whether glutamate in MSG differs from glutamate naturally present in tomatoes, cheese, and mushrooms. Check the original 1968 NEJM letter and subsequent research.\",\n  \"search_results\": \"(No search results found)\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim that MSG causes \\\"Chinese restaurant syndrome\\\" (symptoms like headaches, numbness, and flushing) has been thoroughly debunked by scientific research. \\n\\n1. **FDA & Scientific Classification:** The U.S. Food and Drug Administration (FDA) classifies MSG as \\\"generally recognized as safe\\\" (GRAS), placing it in the same category as salt, pepper, and vinegar.\\n2. **Lack of Causal Link in Studies:** Rigorous double-blind, placebo-controlled studies have consistently failed to demonstrate a reliable, causal link between MSG consumption and these symptoms when consumed in normal dietary amounts. \\n3. **Chemical Equivalence:** The glutamate in MSG is chemically identical to the glutamate naturally present in foods like tomatoes, aged cheeses, soy sauce, and mushrooms. The human body metabolizes natural and added glutamate in the exact same way.\\n4. **Origin of the Term:** The term \\\"Chinese restaurant syndrome\\\" originated from an anecdotal, non-peer-reviewed letter published in the *New England Journal of Medicine* in 1968. Subsequent comprehensive studies by organizations such as the Joint FAO/WHO Expert Committee on Food Additives (JECFA) and the Federation of American Societies for Experimental Biology (FASEB) have found no evidence linking MSG to systemic adverse reactions in the general population.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+        "MSG causes headaches — 'Chinese restaurant syndrome'",
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\" fact check evidence"
+      ],
+      "search_results": []
+    },
+    {
+      "claim_id": "claim-013",
+      "claim_title": "Social media causes depression in teenagers",
+      "claim_text": "\"Social media use causes depression and anxiety in teenagers.\"",
+      "category": "health",
+      "verdict": "DISPUTED",
+      "confidence": 85,
+      "verdict_changed": false,
+      "previous_verdict": "DISPUTED",
+      "new_verdict": "DISPUTED",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": true,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 0,
+      "sources_used": 0,
+      "reasoning_steps": [
+        "The claim that social media use causes depression and anxiety in teenagers is highly disputed among psychologists, epidemiologists, and social scientists",
+        "While there is a documented correlation between high social media use and poorer mental health outcomes in some adolescents, establishing a direct causal relationship remains a subject of intense scientific debate",
+        "On one side of the debate, researchers like Jonathan Haidt argue that the rapid rise of smartphones and social media in the early 2010s causally contributed to a global epidemic of teen mental illness, pointing to some experimental and longitudinal evidence",
+        "On the other side, researchers such as Amy Orben and Andrew Przybylski argue that the vast majority of existing data is correlational, and meta-analyses suggest that the overall statistical effect size of social media on teen well-being is extremely small (accounting for less than 1% of the variance, comparable to minor daily variables like eating potatoes)",
+        "Furthermore, the direction of causality is unclear (e.g., depressed teens may turn to social media for coping), and impacts vary widely depending on whether usage is passive (scrolling) or active (socializing), as well as individual vulnerabilities",
+        "Because there is no scientific consensus on causation, the claim is classified as disputed."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Social media use causes depression and anxiety in teenagers.\\\"\",\n  \"verification_notes\": \"Look for meta-analyses and systematic reviews. Check both Haidt's research and critics like Orben/Przybylski. Verify whether studies show correlation vs causation. Check whether effect sizes are practically significant. Note the difference between passive consumption and active engagement.\",\n  \"search_results\": \"(No search results found)\"\n}",
+      "raw_response": "{\n  \"verdict\": \"DISPUTED\",\n  \"confidence\": 85,\n  \"reasoning\": \"The claim that social media use causes depression and anxiety in teenagers is highly disputed among psychologists, epidemiologists, and social scientists. While there is a documented correlation between high social media use and poorer mental health outcomes in some adolescents, establishing a direct causal relationship remains a subject of intense scientific debate. \\n\\nOn one side of the debate, researchers like Jonathan Haidt argue that the rapid rise of smartphones and social media in the early 2010s causally contributed to a global epidemic of teen mental illness, pointing to some experimental and longitudinal evidence. On the other side, researchers such as Amy Orben and Andrew Przybylski argue that the vast majority of existing data is correlational, and meta-analyses suggest that the overall statistical effect size of social media on teen well-being is extremely small (accounting for less than 1% of the variance, comparable to minor daily variables like eating potatoes). Furthermore, the direction of causality is unclear (e.g., depressed teens may turn to social media for coping), and impacts vary widely depending on whether usage is passive (scrolling) or active (socializing), as well as individual vulnerabilities. Because there is no scientific consensus on causation, the claim is classified as disputed.\",\n  \"conflicting_sources\": true,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Social media use causes depression and anxiety in teenagers.\"",
+        "Social media causes depression in teenagers",
+        "\"Social media use causes depression and anxiety in teenagers.\" fact check evidence"
+      ],
+      "search_results": []
+    },
+    {
+      "claim_id": "claim-015",
+      "claim_title": "AlphaGo defeated the world Go champion in 2016",
+      "claim_text": "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 0,
+      "sources_used": 0,
+      "reasoning_steps": [
+        "The claim is historically accurate:\n1",
+        "In March 2016, Google DeepMind's AI program AlphaGo played a five-game match against Lee Sedol, one of the greatest Go players of the modern era (holding 18 international titles and widely recognized as the world's top player of his generation).\n2",
+        "AlphaGo won the match 4 games to 1, with Lee Sedol winning only the fourth game.\n3",
+        "Prior to AlphaGo's breakthrough, AI researchers and Go experts widely believed that a computer program defeating a top human professional was at least a decade away, making this achievement \"a decade ahead of schedule.\" AlphaGo achieved this milestone by combining Monte Carlo tree search with deep neural networks, a significant departure from the brute-force search methods previously used in chess-playing computers like Deep Blue."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\\\"\",\n  \"verification_notes\": \"Verify the match result and date (March 2016). Check pre-match expert predictions. Verify Lee Sedol's world ranking at the time. Look at how AlphaGo's approach (Monte Carlo tree search + deep learning) differed from prior game AI. Note: AlphaZero later surpassed AlphaGo.\",\n  \"search_results\": \"(No search results found)\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim is historically accurate:\\n1. In March 2016, Google DeepMind's AI program AlphaGo played a five-game match against Lee Sedol, one of the greatest Go players of the modern era (holding 18 international titles and widely recognized as the world's top player of his generation).\\n2. AlphaGo won the match 4 games to 1, with Lee Sedol winning only the fourth game.\\n3. Prior to AlphaGo's breakthrough, AI researchers and Go experts widely believed that a computer program defeating a top human professional was at least a decade away, making this achievement \\\"a decade ahead of schedule.\\\" AlphaGo achieved this milestone by combining Monte Carlo tree search with deep neural networks, a significant departure from the brute-force search methods previously used in chess-playing computers like Deep Blue.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+        "AlphaGo defeated the world Go champion in 2016",
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\" fact check evidence"
+      ],
+      "search_results": []
+    },
+    {
+      "claim_id": "claim-016",
+      "claim_title": "Generative AI will replace 300 million jobs",
+      "claim_text": "\"Generative AI will replace 300 million jobs worldwide.\"",
+      "category": "economics",
+      "verdict": "MISLEADING",
+      "confidence": 85,
+      "verdict_changed": false,
+      "previous_verdict": "MISLEADING",
+      "new_verdict": "MISLEADING",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 0,
+      "sources_used": 0,
+      "reasoning_steps": [
+        "The claim that generative AI \"will replace 300 million jobs\" is a misleading overstatement of the primary source from which it derives",
+        "The figure originates from a March 2023 Goldman Sachs report (by Jan Hatzius et al.), which estimated that generative AI could \"expose\" equivalent to roughly 300 million full-time jobs globally to automation",
+        "Crucially, the report distinguishes between being \"exposed to\" automation, being \"complemented by\" AI, and being \"substituted\" (replaced) by it",
+        "The economists noted that about two-thirds of current jobs are exposed to some degree of AI automation, but most of these would be complemented rather than fully replaced",
+        "Additionally, labor economics literature (including analyses by MIT and the Brookings Institution) highlights that technological shifts historically create new occupations and industries, meaning net job losses are not equivalent to the number of jobs exposed to automation."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Generative AI will replace 300 million jobs worldwide.\\\"\",\n  \"verification_notes\": \"Check the primary source: the Goldman Sachs Global Economics Analyst (Hatzius et al., 26 March 2023). Verify the exact wording — the report estimates roughly 300 million full-time jobs could be \\\"exposed to automation,\\\" and that ~two-thirds of occupations could see *some* automation, not full replacement. Distinguish \\\"exposed to,\\\" \\\"complemented by,\\\" and \\\"replaced by.\\\" Note the report also projected AI could raise global GDP. Cross-check with later labour-economics commentary (e.g. MIT, Brookings) on automation creating as well as displacing jobs. Expected nuance: the bare \\\"will replace 300 million jobs\\\" framing overstates the source.\",\n  \"search_results\": \"(No search results found)\"\n}",
+      "raw_response": "{\n  \"verdict\": \"MISLEADING\",\n  \"confidence\": 85,\n  \"reasoning\": \"The claim that generative AI \\\"will replace 300 million jobs\\\" is a misleading overstatement of the primary source from which it derives. The figure originates from a March 2023 Goldman Sachs report (by Jan Hatzius et al.), which estimated that generative AI could \\\"expose\\\" equivalent to roughly 300 million full-time jobs globally to automation. Crucially, the report distinguishes between being \\\"exposed to\\\" automation, being \\\"complemented by\\\" AI, and being \\\"substituted\\\" (replaced) by it. The economists noted that about two-thirds of current jobs are exposed to some degree of AI automation, but most of these would be complemented rather than fully replaced. Additionally, labor economics literature (including analyses by MIT and the Brookings Institution) highlights that technological shifts historically create new occupations and industries, meaning net job losses are not equivalent to the number of jobs exposed to automation.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Generative AI will replace 300 million jobs worldwide.\"",
+        "Generative AI will replace 300 million jobs",
+        "\"Generative AI will replace 300 million jobs worldwide.\" fact check evidence"
+      ],
+      "search_results": []
+    },
+    {
+      "claim_id": "claim-004",
+      "claim_title": "AI systems now pass the bar exam",
+      "claim_text": "\"AI language models can now pass the US bar examination at above-average scores.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 0,
+      "sources_used": 0,
+      "reasoning_steps": [
+        "The claim that AI language models can pass the US bar examination at above-average scores is true",
+        "In a widely cited 2023 study by researchers Daniel Martin Katz, Michael J",
+        "Bommarito II, and others, OpenAI's GPT-4 was evaluated on the Uniform Bar Examination (UBE)",
+        "GPT-4 achieved a score of 297, which comfortably exceeds the passing threshold of 270 required by even the most stringent US jurisdictions (such as New York and California, which requires a 1390/2000, equivalent to a similar high standard)",
+        "While the initial study placed GPT-4 in the 90th percentile (top 10%) of test-takers, a subsequent critique by Eric Martinez (MIT) suggested this comparison was overly optimistic because it compared GPT-4 against the less competitive February exam cohort",
+        "Martinez estimated that GPT-4's performance actually falls around the 68th percentile when compared to the more competitive July exam cohort, and around the 48th percentile among only those who passed",
+        "However, under both the original and revised analyses, GPT-4's score of 297 remains firmly above the average score of all test-takers (the 50th percentile), and its ability to pass the exam is undisputed",
+        "Subsequent models, such as Claude 3 and newer iterations of GPT, have continued to demonstrate comparable or superior capabilities on legal examinations."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"AI language models can now pass the US bar examination at above-average scores.\\\"\",\n  \"verification_notes\": \"Verify the original GPT-4 bar exam study (Bommarito & Katz, 2023). Check if results have been replicated or updated with newer models. Note: passing score and top-10% are different claims — verify which is accurate.\",\n  \"search_results\": \"(No search results found)\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim that AI language models can pass the US bar examination at above-average scores is true. In a widely cited 2023 study by researchers Daniel Martin Katz, Michael J. Bommarito II, and others, OpenAI's GPT-4 was evaluated on the Uniform Bar Examination (UBE). GPT-4 achieved a score of 297, which comfortably exceeds the passing threshold of 270 required by even the most stringent US jurisdictions (such as New York and California, which requires a 1390/2000, equivalent to a similar high standard). \\n\\nWhile the initial study placed GPT-4 in the 90th percentile (top 10%) of test-takers, a subsequent critique by Eric Martinez (MIT) suggested this comparison was overly optimistic because it compared GPT-4 against the less competitive February exam cohort. Martinez estimated that GPT-4's performance actually falls around the 68th percentile when compared to the more competitive July exam cohort, and around the 48th percentile among only those who passed. However, under both the original and revised analyses, GPT-4's score of 297 remains firmly above the average score of all test-takers (the 50th percentile), and its ability to pass the exam is undisputed. Subsequent models, such as Claude 3 and newer iterations of GPT, have continued to demonstrate comparable or superior capabilities on legal examinations.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"AI language models can now pass the US bar examination at above-average scores.\"",
+        "AI systems now pass the bar exam",
+        "\"AI language models can now pass the US bar examination at above-average scores.\" fact check evidence"
+      ],
+      "search_results": []
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 0,
+      "sources_used": 0,
+      "reasoning_steps": [
+        "According to historical records from the Congressional Research Service (CRS) and the Pew Research Center, the U.S",
+        "Congress has not passed all of its individual, regular appropriations bills on time (before the October 1 start of the fiscal year) since Fiscal Year 1997",
+        "For FY 1997, the final appropriations bills were enacted on September 30, 1996",
+        "Since then (FY 1998 to the present), Congress has consistently failed to meet the October 1 deadline for all of its federal spending bills, instead relying on Continuing Resolutions (CRs) to temporarily fund the government and subsequently passing omnibus packages or consolidated appropriations long after the fiscal year has started."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The US Congress has not passed a complete federal budget on time since 1997.\\\"\",\n  \"verification_notes\": \"Check Congressional Research Service records. Fiscal year starts October 1. Verify if any year between 1998 and present had all 12 appropriations bills enacted before the deadline. Note distinction between omnibus packages and individual bills.\",\n  \"search_results\": \"(No search results found)\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to historical records from the Congressional Research Service (CRS) and the Pew Research Center, the U.S. Congress has not passed all of its individual, regular appropriations bills on time (before the October 1 start of the fiscal year) since Fiscal Year 1997. For FY 1997, the final appropriations bills were enacted on September 30, 1996. Since then (FY 1998 to the present), Congress has consistently failed to meet the October 1 deadline for all of its federal spending bills, instead relying on Continuing Resolutions (CRs) to temporarily fund the government and subsequently passing omnibus packages or consolidated appropriations long after the fiscal year has started.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+        "US Congress passed no budget on time since 1997",
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\" fact check evidence"
+      ],
+      "search_results": []
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_title": "Octopuses have three hearts and blue blood",
+      "claim_text": "\"Octopuses have three hearts and their blood is blue.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    }
+  ],
+  "verdicts_changed": 1,
+  "errors": 3
+}

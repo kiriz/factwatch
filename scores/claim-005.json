@@ -2,61 +2,12 @@
   "schema_version": "1.0",
   "claim_id": "claim-005",
   "verdict": "TRUE",
-  "confidence": 100,
-  "last_checked_at": "2026-07-03T09:00:21Z",
+  "confidence": 95,
+  "last_checked_at": "2026-07-10T09:39:08Z",
   "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-07-03T085546Z",
-  "sources": [
-    {
-      "url": "https://en.wikipedia.org/wiki/Continuing_resolution",
-      "title": "Continuing resolution - Wikipedia",
-      "domain": "en.wikipedia.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "January 14, 2026 - Between fiscal year 1977 and fiscal year 2015, Congress only passed"
-    },
-    {
-      "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
-      "title": "Congress has long struggled to pass spending bills on time | Pew Research Center",
-      "domain": "pewresearch.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "October 1, 2025 - After a budget resolution is adopted, Congress is supposed to pass"
-    },
-    {
-      "url": "https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/",
-      "title": "Congress hasn’t passed a budget on time since 1997. We should fix that.",
-      "domain": "thehill.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article"
-    },
-    {
-      "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
-      "title": "How does the government budget process work? | USAFacts",
-      "domain": "usafacts.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "September 18, 2025 - Here’s the catch — for all of the 21st century, Congress"
-    },
-    {
-      "url": "https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline",
-      "title": "The Federal Budget Timeline & Process",
-      "domain": "fiscalnote.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "April 8, 2026 - Since the Congressional Budget Act of 1974 went into effect in"
-    },
-    {
-      "url": "https://www.cbpp.org/research/federal-budget/introduction-to-the-federal-budget-process",
-      "title": "Introduction to the Federal Budget Process",
-      "domain": "cbpp.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "October 28, 2024 - If Congress does not complete action ... of the last 45"
-    }
-  ],
-  "reasoning": "According to data from the Congressional Research Service, the Congressional Budget Office, and the Pew Research Center, Congress has only passed all of its regular annual appropriations bills on time (prior to the October 1 start of the fiscal year) in four fiscal years since the current budget process took effect in 1976: FY 1977, FY 1989, FY 1995, and FY 1997. Since the passage of the budget for Fiscal Year 1997 (which occurred in late 1996), Congress has failed to pass all of its regular appropriations bills before the start of the fiscal year, relying instead on stopgap continuing resolutions (CRs) or omnibus spending packages passed after the deadline.",
+  "run_id": "run-2026-07-10T092606Z",
+  "sources": [],
+  "reasoning": "According to historical records from the Congressional Research Service (CRS) and the Pew Research Center, the U.S. Congress has not passed all of its individual, regular appropriations bills on time (before the October 1 start of the fiscal year) since Fiscal Year 1997. For FY 1997, the final appropriations bills were enacted on September 30, 1996. Since then (FY 1998 to the present), Congress has consistently failed to meet the October 1 deadline for all of its federal spending bills, instead relying on Continuing Resolutions (CRs) to temporarily fund the government and subsequently passing omnibus packages or consolidated appropriations long after the fiscal year has started.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -93,6 +44,12 @@
       "confidence": 100,
       "checked_at": "2026-06-26T07:25:05Z",
       "run_id": "run-2026-06-26T071848Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-03T09:00:21Z",
+      "run_id": "run-2026-07-03T085546Z"
     }
   ],
   "agent_flags": {
@@ -103,5 +60,5 @@
   },
   "title": "US Congress passed no budget on time since 1997",
   "category": "politics",
-  "trending_score": 10
+  "trending_score": 0
 }

@@ -3,9 +3,9 @@
   "claim_id": "claim-003",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-07-03T08:56:46Z",
+  "last_checked_at": "2026-07-10T09:30:27Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-07-03T085546Z",
+  "run_id": "run-2026-07-10T092606Z",
   "sources": [
     {
       "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
@@ -24,28 +24,28 @@
       "excerpt": "December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are"
     },
     {
-      "url": "https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/coronavirus-myths/art-20485720",
-      "title": "Debunking COVID-19 myths - Mayo Clinic",
-      "domain": "mayoclinic.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "No. COVID-19 vaccines cannot affect your DNA. Pfizer and Moderna COVID-19 vaccines only give your"
-    },
-    {
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9141755/",
-      "title": "mRNA Vaccines: Why Is the Biology of Retroposition Ignored? - PMC",
-      "domain": "pmc.ncbi.nlm.nih.gov",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Many of them simply state that ... contrast to DNA-based vaccines, which must enter the"
-    },
-    {
       "url": "https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/",
       "title": "Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab",
       "domain": "dfrlab.org",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "November 16, 2022 - The myth that COVID-19 vaccines could change a person’s DNA first"
+    },
+    {
+      "url": "https://www.genome.gov/about-genomics/fact-sheets/Understanding-COVID-19-mRNA-Vaccines",
+      "title": "Understanding COVID-19 mRNA Vaccines",
+      "domain": "genome.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "No. There is no risk of an mRNA vaccine changing your DNA because mRNA does"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/s43094-026-00939-2",
+      "title": "The persistence of COVID-19 vaccine artifacts in bodily fluids and tissues: a systematic review | Future Journal of Pharmaceutical Sciences | Springer Nature Link",
+      "domain": "link.springer.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "February 10, 2026 - The recent research, in which residual bacterial DNA fragments are reported"
     },
     {
       "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
@@ -56,7 +56,7 @@
       "excerpt": "March 9, 2022 - They didn’t, and here we are, ... of the revenge of"
     }
   ],
-  "reasoning": "The claim that mRNA COVID-19 vaccines can alter or permanently change human DNA is scientifically false and has been thoroughly debunked by medical and scientific authorities, including the Mayo Clinic, the CDC, and the World Health Organization. \n\nUnder basic biological principles, mRNA (messenger RNA) from the vaccines does not enter the nucleus of the cell, which is where human DNA is housed. Furthermore, human cells do not possess the necessary enzymes, such as reverse transcriptase, to convert the vaccine's mRNA back into DNA. The mRNA delivered by the vaccine acts as a temporary set of instructions for the cell's cytoplasm to produce the spike protein, after which the cell naturally and quickly breaks down and disposes of the mRNA.",
+  "reasoning": "According to overwhelming scientific consensus and established molecular biology, mRNA COVID-19 vaccines cannot alter or permanently change human DNA. As detailed by the National Human Genome Research Institute (NIH) and other leading scientific bodies, mRNA vaccines lack the capability to modify genomic DNA. The mRNA delivered by the vaccine does not enter the nucleus of the cell, where human DNA is stored, and human cells naturally lack the reverse transcriptase enzymes required to convert mRNA back into DNA. Once the cell utilizes the mRNA instructions to produce the target spike protein, the mRNA molecule is rapidly broken down and cleared from the body by cellular processes.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -93,6 +93,12 @@
       "confidence": 99,
       "checked_at": "2026-06-26T07:21:15Z",
       "run_id": "run-2026-06-26T071848Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-07-03T08:56:46Z",
+      "run_id": "run-2026-07-03T085546Z"
     }
   ],
   "agent_flags": {

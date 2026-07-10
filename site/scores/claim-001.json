@@ -3,9 +3,9 @@
   "claim_id": "claim-001",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-07-03T08:56:10Z",
+  "last_checked_at": "2026-07-10T09:28:59Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-07-03T085546Z",
+  "run_id": "run-2026-07-10T092606Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "4 days ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
+      "excerpt": "2 weeks ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
     },
     {
       "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
@@ -24,14 +24,6 @@
       "excerpt": "October 18, 2022 - In the 2020 Arctic Report Card, experts reported that the average"
     },
     {
-      "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
-      "title": "Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)",
-      "domain": "eea.europa.eu",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has"
-    },
-    {
       "url": "https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979",
       "title": "Satellites record second lowest Arctic sea ice extent since 1979",
       "domain": "unep.org",
@@ -40,12 +32,12 @@
       "excerpt": "October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice"
     },
     {
-      "url": "https://eos.org/research-and-developments/arctic-winter-sea-ice-hits-a-record-low-again",
-      "title": "Arctic Winter Sea Ice Hits a Record Low, Again - Eos.org",
-      "domain": "eos.org",
+      "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
+      "title": "Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)",
+      "domain": "eea.europa.eu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 27, 2026 - “One or two record low years don’t necessarily mean much by"
+      "excerpt": "November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has"
     },
     {
       "url": "https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era",
@@ -54,9 +46,17 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was"
+    },
+    {
+      "url": "https://climate.copernicus.eu/climate-indicators/sea-ice",
+      "title": "Climate Indicators Sea ice",
+      "domain": "climate.copernicus.eu",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "April 22, 2024 - Since the first full year of satellite records in 1979, the"
     }
   ],
-  "reasoning": "According to comprehensive data from reputable climate and science organizations such as NOAA, the National Snow and Ice Data Center (NSIDC), and the European Environment Agency (EEA), Arctic sea ice has declined significantly since continuous satellite observations began in 1979. The downward trend is statistically significant and observable across all seasons, most notably during the annual summer minimum in September, where the average ice extent has successively declined with each decade.",
+  "reasoning": "Data from scientific agencies such as NOAA, NASA, NSIDC, and the European Environment Agency consistently show that Arctic sea ice has experienced a statistically significant decline since continuous satellite monitoring began in 1979. This decline is evident in both the overall ice extent—particularly the summer minimum in September—as well as the thickness and age of the ice, as multi-year ice is increasingly replaced by thinner, seasonal first-year ice.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -93,6 +93,12 @@
       "confidence": 100,
       "checked_at": "2026-06-26T07:20:22Z",
       "run_id": "run-2026-06-26T071848Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-03T08:56:10Z",
+      "run_id": "run-2026-07-03T085546Z"
     }
   ],
   "agent_flags": {

@@ -3,60 +3,60 @@
   "claim_id": "claim-006",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-07-03T08:57:06Z",
+  "last_checked_at": "2026-07-10T09:32:01Z",
   "last_changed_at": "2026-06-09T23:43:44Z",
-  "run_id": "run-2026-07-03T085546Z",
+  "run_id": "run-2026-07-10T092606Z",
   "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
+      "title": "Ten-percent-of-the-brain myth - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "1 month ago - Although several parts of the brain ... remains unclear. Perhaps the"
+    },
+    {
+      "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
+      "title": "Do We Really Use Only 10 Percent of Our Brain? | Britannica",
+      "domain": "britannica.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "May 1, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows"
+    },
+    {
+      "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
+      "title": "Do we only use 10 percent of our brain? - MIT McGovern Institute",
+      "domain": "mcgovern.mit.edu",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans"
+    },
+    {
+      "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
+      "title": "Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today",
+      "domain": "psychologytoday.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "May 15, 2025 - The 10 percent brain myth is false. We use our entire"
+    },
+    {
+      "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+      "title": "Do People Only Use 10 Percent of Their Brains? | Scientific American",
+      "domain": "scientificamerican.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "February 20, 2024 - Adding to that mystery is the ... brain. If only regular"
+    },
     {
       "url": "https://www.snopes.com/fact-check/the-ten-percent-myth/",
       "title": "Do We Only Use 10% of our Brains? | Snopes.com",
       "domain": "snopes.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Humans only use 10% of their brains.Well, not taken your brain away, exactly, but decided"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/AdOoQaKUfAw",
-      "title": "Humans Only Use 10% of Their Brain? Myth Busted - YouTube",
-      "domain": "youtube.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "We’ve all heard it — \"you only use 10% of your brain.\" But neuroscience disagrees."
-    },
-    {
-      "url": "https://brainly.com/question/59412926",
-      "title": "[FREE] True or False: Humans only use about 10% of their brains.",
-      "domain": "brainly.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Humans do not only use 10% of their brains; this statement is false. Scientific evidence"
-    },
-    {
-      "url": "https://www.mrowl.com/user/gracie/urbanlegends/10percentofbra",
-      "title": "Ever heard the one that we only use 10% of our brains? | MrOwl",
-      "domain": "mrowl.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "You Use All of Your Brain: Debunking the 10% Brain Myth - Big Think. The"
-    },
-    {
-      "url": "https://www.chegg.com/homework-help/questions-and-answers/people-really-use-10-brains-use-entire-brain-although-individual-tasks-might-rely-primaril-q191836172",
-      "title": "Solved Do people really use only 10% of their brains? | Chegg.com",
-      "domain": "chegg.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": ", we use our entire brain. ( although individual tasks might rely primarily on specialized"
-    },
-    {
-      "url": "https://www.electriccitymagazine.ca/overturning-the-humans-only-use-10-of-their-brains-theory-jacquerite-seririn-mattichon-sudsap/",
-      "title": "Overturning the “humans only use 10% of their brains” theory",
-      "domain": "electriccitymagazine.ca",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "And to claim that the statement “humans use only 10% of their brains” is not"
+      "excerpt": "August 4, 2022 - In fact, most of us only use about 10 per cent"
     }
   ],
-  "reasoning": "The claim that humans only use 10% of their brain capacity is a well-known, thoroughly debunked myth. Modern neuroimaging technologies, such as functional Magnetic Resonance Imaging (fMRI) and Positron Emission Tomography (PET) scans, clearly show that virtually all parts of the brain have a determined function and are active throughout the day, even during sleep. From an evolutionary perspective, the brain represents a massive energy drain; if 90% of it were dormant and unused, natural selection would have eliminated this highly inefficient design. Additionally, any areas of the brain that genuinely go unused due to damage or lack of activity undergo rapid degeneration (atrophy).",
+  "reasoning": "The claim that humans only use 10% of their brain capacity is a widely debunked myth. Modern neuroscience has proven that humans use virtually all parts of their brains throughout the day. Neuroimaging technologies, such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET) scans, consistently show that even during sleep, nearly all areas of the brain exhibit some level of activity. Furthermore, evolutionary biology and medical science support this: brain tissue is metabolically expensive to maintain, and any unused or \"dormant\" brain regions would quickly atrophy (degenerate) or be weeded out by natural selection. Damage to almost any area of the brain results in significant functional deficits, confirming that there are no vast, untapped reservoirs of the brain.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -87,6 +87,12 @@
       "confidence": 100,
       "checked_at": "2026-06-26T07:21:33Z",
       "run_id": "run-2026-06-26T071848Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-07-03T08:57:06Z",
+      "run_id": "run-2026-07-03T085546Z"
     }
   ],
   "agent_flags": {
@@ -97,5 +103,5 @@
   },
   "title": "Humans only use 10% of their brains",
   "category": "health",
-  "trending_score": 10
+  "trending_score": 0
 }

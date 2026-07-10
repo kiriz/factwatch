@@ -3,60 +3,11 @@
   "claim_id": "claim-009",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-07-03T08:57:42Z",
+  "last_checked_at": "2026-07-10T09:34:00Z",
   "last_changed_at": "2026-06-09T23:44:21Z",
-  "run_id": "run-2026-07-03T085546Z",
-  "sources": [
-    {
-      "url": "https://en.wikipedia.org/wiki/Napoleon_complex",
-      "title": "Napoleon complex - Wikipedia",
-      "domain": "en.wikipedia.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "May 19, 2026 - Both commonly and in psychology, the Napoleon complex is regarded as"
-    },
-    {
-      "url": "https://www.history.com/articles/napoleon-complex-short",
-      "title": "Was Napoleon Short? Origins of the 'Napoleon Complex' | HISTORY",
-      "domain": "history.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Three French sources—his valet Constant, General Gourgaud, and his personal physician Francesco Antommarchi—said that Napoleon's"
-    },
-    {
-      "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
-      "title": "Was Napoleon Bonaparte Really Short?",
-      "domain": "thoughtco.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "May 13, 2025 - It turns out that Napoleon Bonaparte wasn't particularly short at all."
-    },
-    {
-      "url": "https://www.britannica.com/story/was-napoleon-short",
-      "title": "Was Napoleon Short? | Britannica",
-      "domain": "britannica.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "June 13, 2025 - Several sources note that his elite guards were taller than most"
-    },
-    {
-      "url": "https://www.factinate.com/people/everyone-seems-think-napoleon-was-short-yet-he-was-actually-taller-average-frenchman-his-time",
-      "title": "Everyone Seems To Think Napoleon Was Short, Yet He Was Actually Taller Than The Average Frenchman Of His Time",
-      "domain": "factinate.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "November 25, 2025 - In fact, he stood taller than the average Frenchman of his"
-    },
-    {
-      "url": "http://www.todayifoundout.com/index.php/2010/03/napolean-bonaparte-having-been-short-is-a-myth/",
-      "title": "Napoleon Bonaparte Having Been Short is a Myth",
-      "domain": "todayifoundout.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "June 25, 2014 - The myth that he was short stems primarily from the fact"
-    }
-  ],
-  "reasoning": "The claim that Napoleon Bonaparte was unusually short and around 5 feet 2 inches tall is false. While contemporary French records (including his autopsy) measured Napoleon at \"5 pieds 2 pouces\" (5 feet 2 inches in French pre-metric units), the French inch (*pouce*) was longer than the English inch. When converted to modern English/international measurements, his height was approximately 5 feet 6 inches (about 1.67 meters). During the early 19th century, the average height of a French man was roughly 5 feet 5 inches, meaning Napoleon was actually of average or slightly above-average height for his era. The myth of his extreme shortness was perpetuated by a combination of the measurement conversion confusion, British wartime propaganda (notably caricature art by James Gillray), and the fact that he was often surrounded by his elite Imperial Guard who were exceptionally tall.",
+  "run_id": "run-2026-07-10T092606Z",
+  "sources": [],
+  "reasoning": "The claim that Napoleon Bonaparte was unusually short and around 5 feet 2 inches tall is false. This popular myth stems from a misunderstanding of historical measurement systems. At his autopsy, Napoleon's height was recorded as 5 French feet and 2 French inches (\"5 pieds 2 pouces\"). Because a French foot (pied-du-roi) was longer than a British foot, this measurement actually converts to approximately 5 feet 6 inches (1.68 meters) in modern English units. \n\nIn early 19th-century France, the average height for an adult male was about 5 feet 5 inches (1.65 meters). Therefore, Napoleon was of average, or even slightly above-average, height for his era. The misconception was further fueled and popularized by British wartime propaganda, notably through the satirical caricatures of James Gillray, who depicted him as \"Little Boney.\"",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -87,6 +38,12 @@
       "confidence": 100,
       "checked_at": "2026-06-26T07:22:10Z",
       "run_id": "run-2026-06-26T071848Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-07-03T08:57:42Z",
+      "run_id": "run-2026-07-03T085546Z"
     }
   ],
   "agent_flags": {
@@ -97,5 +54,5 @@
   },
   "title": "Napoleon was unusually short",
   "category": "history",
-  "trending_score": 10
+  "trending_score": 0
 }
