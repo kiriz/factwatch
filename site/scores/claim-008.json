@@ -3,60 +3,60 @@
   "claim_id": "claim-008",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-07-03T09:00:39Z",
+  "last_checked_at": "2026-07-11T07:47:57Z",
   "last_changed_at": "2026-06-09T23:47:06Z",
-  "run_id": "run-2026-07-03T085546Z",
+  "run_id": "run-2026-07-11T074726Z",
   "sources": [
     {
-      "url": "https://www.tiktok.com/discover/octopuses-bloo",
-      "title": "25.8M posts. Discover videos related to Octopuses Bloo on TikTok.",
-      "domain": "tiktok.com",
+      "url": "https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
+      "title": "Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood",
+      "domain": "smithsonianmag.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Octopuses Have Three Hearts and Blue Blood Octopuses have THREE hearts and their blood is"
+      "excerpt": "May 1, 2024 - To survive in the deep ocean, ... human blood. Whereas our"
     },
     {
-      "url": "https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh",
-      "title": "Ten things I learned in 2025: 1. Octopuses have three hearts, and...",
-      "domain": "linkedin.com",
+      "url": "https://www.nhm.ac.uk/discover/octopuses-keep-surprising-us-here-are-eight-examples-how.html",
+      "title": "Octopuses keep surprising us - here are eight examples how | Natural History Museum",
+      "domain": "nhm.ac.uk",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is"
+      "excerpt": "April 24, 2026 - If the blood (called haemolymph in invertebrates) becomes deoxygenated – when"
     },
     {
-      "url": "https://www.divessi.com/en/blog/octopuses-20-amazing-facts-8560.html",
-      "title": "Octopuses: 20 Amazing Facts",
-      "domain": "divessi.com",
+      "url": "https://www.newscientist.com/question/many-hearts-octopus/",
+      "title": "How many hearts does an octopus have? | New Scientist",
+      "domain": "newscientist.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "5. Octopuses have three hearts and their blood is blue due to being copper-based. 6."
+      "excerpt": "Octopuses have three hearts, which is partly a consequence of having blue blood. Their two"
     },
     {
-      "url": "https://mathcorps.org/tag/executive/",
-      "title": "executive Archives – Math Corps",
-      "domain": "mathcorps.org",
+      "url": "https://thesavemovement.org/did-you-know-octopus-have-three-hearts-and-blue-blood-these-magnificent-marine-mollusks-are-being-exploited-and-need-our-help/",
+      "title": "Did You Know Octopus Have Three Hearts And Blue Blood? These Magnificent Marine Mollusks Are Being Exploited And Need Our Help - Animal Save Movement",
+      "domain": "thesavemovement.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Did you know? Octopuses have three hearts, and their blood is blue!"
+      "excerpt": "May 24, 2025 - With three functioning hearts, ... to the rest of their body."
     },
     {
-      "url": "https://www.torn.com/forums.php?p=threads&f=13&t=16441242&b=0&a=0rh=96&&start=100",
-      "title": "Forums | TORN",
-      "domain": "torn.com",
+      "url": "https://www.reddit.com/r/Damnthatsinteresting/comments/1cn5gdl/an_octopus_has_three_hearts_and_the_colour_of/",
+      "title": "r/Damnthatsinteresting on Reddit: An Octopus has three hearts and the colour of their blood is blue.They have eight arms and each arm contains its own 'mini brain'",
+      "domain": "reddit.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Octopuses have three hearts, and their blood is blue because it contains hemocyanin instead of"
+      "excerpt": "May 8, 2024 - Octopuses have three hearts, blue blood, and nine brains, with each"
     },
     {
-      "url": "https://www.thescroller.net/84414/science-facts-that-sound-fake-but/",
-      "title": "20 Science Facts That Sound Fake but Are Actually Real",
-      "domain": "thescroller.net",
+      "url": "https://www.sciencefocus.com/nature/why-does-an-octopus-have-more-than-one-heart",
+      "title": "How many hearts does an octopus have? - BBC Science Focus Magazine",
+      "domain": "sciencefocus.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Octopuses have three hearts, and their blood is blue. A vibrant octopus with reddish-brown skin"
+      "excerpt": "July 12, 2023 - Unlike vertebrates that have iron-rich haemoglobin packed into red blood cells,"
     }
   ],
-  "reasoning": "Octopuses indeed possess three hearts and blue blood. Two of these hearts (the branchial hearts) pump blood to the gills to absorb oxygen, while the third heart (the systemic heart) circulates the oxygenated blood to the rest of the body. Their blood is blue because it contains a copper-based protein called hemocyanin to transport oxygen, which turns blue when bound to oxygen and becomes colorless when deoxygenated (unlike the iron-based hemoglobin that makes human blood red). This is a well-established and universally accepted fact in marine biology.",
+  "reasoning": "The claim is scientifically accurate. Reliable scientific and educational sources, including the Smithsonian Institution, the Natural History Museum, and New Scientist, confirm that octopuses possess three hearts and blue blood. Two of their hearts (the branchial hearts) pump blood through the gills to collect oxygen, while the third, central heart (the systemic heart) circulates this oxygenated blood to the rest of the body. Their blood is blue due to the presence of a copper-rich protein called hemocyanin (instead of the iron-based hemoglobin found in humans), which turns blue when oxygenated and becomes clear or colorless when deoxygenated.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -87,6 +87,12 @@
       "confidence": 100,
       "checked_at": "2026-06-26T07:25:26Z",
       "run_id": "run-2026-06-26T071848Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-03T09:00:39Z",
+      "run_id": "run-2026-07-03T085546Z"
     }
   ],
   "agent_flags": {

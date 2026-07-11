@@ -3,9 +3,9 @@
   "claim_id": "claim-012",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-07-03T09:00:54Z",
+  "last_checked_at": "2026-07-11T07:48:18Z",
   "last_changed_at": "2026-06-09T23:47:23Z",
-  "run_id": "run-2026-07-03T085546Z",
+  "run_id": "run-2026-07-11T074726Z",
   "sources": [
     {
       "url": "https://www.aol.com/news/why-lightning-never-strikes-same-174500436.html",
@@ -24,6 +24,14 @@
       "excerpt": "Anything that comes to represent something that people criticize can be called a lightning rod."
     },
     {
+      "url": "https://idioms.thefreedictionary.com/lightning+never+strikes+(the+same+place)+twice",
+      "title": "Lightning never strikes (the same place) twice - Idioms by The Free...",
+      "domain": "idioms.thefreedictionary.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The same highly unlikely thing never happens to the same person twice. Jill: I'm scared"
+    },
+    {
       "url": "https://writingexplained.org/idiom-dictionary/lightning-never-strikes-the-same-place-twice",
       "title": "What Does Lightning Never Strikes The Same Place Twice Mean?",
       "domain": "writingexplained.org",
@@ -32,31 +40,23 @@
       "excerpt": "lightning never strikes twice in the same place This idiom likely originated in the book"
     },
     {
+      "url": "https://www.britannica.com/story/can-lightning-strike-the-same-place-twice",
+      "title": "Can Lightning Strike the Same Place Twice? | Britannica",
+      "domain": "britannica.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "“Lightning never strikes the same place twice” is a common phrase you’ve probably heard before,"
+    },
+    {
       "url": "https://www.weather.gov/safety/lightning-myths",
       "title": "Lightning Myths",
       "domain": "weather.gov",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Myth: Lightning never strikes the same place twice. Fact: Lightning often strikes the same place"
-    },
-    {
-      "url": "https://web.archive.org/web/20190207020243/https://idioms.thefreedictionary.com/Lightning+never+strikes+twice",
-      "title": "Lightning never strikes twice - Idioms by The Free Dictionary",
-      "domain": "web.archive.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Lightning never strikes (the same place) twice. Prov. The same highly unlikely thing never happens"
-    },
-    {
-      "url": "https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html",
-      "title": "VOA Special English - 'Lightning Never Strikes the Same Place...",
-      "domain": "21voa.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "When speaking about lightning, we have another common expression: Lightning never strikes the same place"
     }
   ],
-  "reasoning": "The claim is a well-known scientific myth. In reality, lightning frequently strikes the same location multiple times, particularly if it is a tall, pointed, or isolated object. According to the National Weather Service (NWS), the Empire State Building in New York City is struck by lightning an average of 23 to 25 times every year. From a physics perspective, tall conductors polarize under a storm cloud, generating \"upward leaders\" of positive charge that easily connect with the descending \"stepped leaders\" of negative charge from the cloud, making them highly receptive to repeated strikes.",
+  "reasoning": "The claim that \"lightning never strikes the same place twice\" is a popular myth and is scientifically false. According to the National Weather Service (NWS), lightning frequently strikes the same location repeatedly, particularly tall, pointed, and isolated objects. For example, the Empire State Building in New York City is struck by lightning an average of 23 to 25 times every year. The physics of lightning dictate that the electrical discharge seeks the path of least resistance to the ground; tall, conductive structures significantly shorten the gap between the storm cloud and the earth, making them highly prone to repeated strikes.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -87,6 +87,12 @@
       "confidence": 100,
       "checked_at": "2026-06-26T07:25:59Z",
       "run_id": "run-2026-06-26T071848Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-07-03T09:00:54Z",
+      "run_id": "run-2026-07-03T085546Z"
     }
   ],
   "agent_flags": {
