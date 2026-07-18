@@ -2,12 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
-  "confidence": 85,
-  "last_checked_at": "2026-07-10T09:38:01Z",
+  "confidence": 95,
+  "last_checked_at": "2026-07-18T07:45:03Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-07-10T092606Z",
-  "sources": [],
-  "reasoning": "The claim that generative AI \"will replace 300 million jobs\" is a misleading overstatement of the primary source from which it derives. The figure originates from a March 2023 Goldman Sachs report (by Jan Hatzius et al.), which estimated that generative AI could \"expose\" equivalent to roughly 300 million full-time jobs globally to automation. Crucially, the report distinguishes between being \"exposed to\" automation, being \"complemented by\" AI, and being \"substituted\" (replaced) by it. The economists noted that about two-thirds of current jobs are exposed to some degree of AI automation, but most of these would be complemented rather than fully replaced. Additionally, labor economics literature (including analyses by MIT and the Brookings Institution) highlights that technological shifts historically create new occupations and industries, meaning net job losses are not equivalent to the number of jobs exposed to automation.",
+  "run_id": "run-2026-07-18T074120Z",
+  "sources": [
+    {
+      "url": "https://www.hospitalitynet.org/viewpoint/125000189/126002019.html",
+      "title": "What would be the impact of generative AI like ChatGPT on hospitality?",
+      "domain": "hospitalitynet.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Goldman Sachs forecasts that generative A.I. could impact 300 million jobs worldwide and that it"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3MwMII8n1qM",
+      "title": "What Will Happen to Marketing in the Age of AI? | Jessica... - YouTube",
+      "domain": "youtube.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Generative AI is poised to transform the workplace, but we still need human brains for"
+    },
+    {
+      "url": "https://www.ai-jarvis.eu/ai-taking-jobs-and-unemployment-rising-how-prepare-while-theres-still-time",
+      "title": "AI Is Taking Jobs and Unemployment Is Rising. How to Prepare While...",
+      "domain": "ai-jarvis.eu",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "BCG and the Aspen Institute analyzed labor market impacts: generative AI will affect more than"
+    },
+    {
+      "url": "https://studyx.ai/homework/105875381-n-introduction-to-generative-ai-concepts-question-14-of-15-question-which-are-two",
+      "title": "n Introduction to Generative AI Concepts | StudyX",
+      "domain": "studyx.ai",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Generative AI will replace artists and creative roles quickly. All jobs will be replaced with"
+    },
+    {
+      "url": "https://www.hcadvisors.net/post/ai-vs-women",
+      "title": "Ai vs women",
+      "domain": "hcadvisors.net",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "\"The latest generative AI products — think ChatGPT, Bing Chat and Bard — could replace"
+    },
+    {
+      "url": "https://thebettercontentclub.com/ai-in-marketing",
+      "title": "AI in Marketing: Why It Won't Steal Your Job | TBCC",
+      "domain": "thebettercontentclub.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "“AI Will Replace 300 Million Jobs by 2030.” “Marketing Teams Cut by 30% Due to"
+    }
+  ],
+  "reasoning": "The claim mischaracterizes the findings of a widely cited March 2023 report by Goldman Sachs. The study did not state that generative AI \"will replace\" 300 million jobs. Instead, it estimated that generative AI could \"expose\" the equivalent of 300 million full-time jobs globally to automation. The report explicitly distinguished between exposure and replacement, noting that while about two-thirds of current jobs are exposed to some degree of AI automation, most of these jobs would be complemented rather than substituted by AI. Furthermore, automation historically creates new jobs and industries, meaning exposure to automation does not equate to net job loss.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -44,6 +93,12 @@
       "confidence": 95,
       "checked_at": "2026-07-03T08:59:36Z",
       "run_id": "run-2026-07-03T085546Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 85,
+      "checked_at": "2026-07-10T09:38:01Z",
+      "run_id": "run-2026-07-10T092606Z"
     }
   ],
   "agent_flags": {
@@ -54,5 +109,5 @@
   },
   "title": "Generative AI will replace 300 million jobs",
   "category": "economics",
-  "trending_score": 0
+  "trending_score": 10
 }

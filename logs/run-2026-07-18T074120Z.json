@@ -1,0 +1,949 @@
+{
+  "run_id": "run-2026-07-18T074120Z",
+  "started_at": "2026-07-18T07:41:20Z",
+  "finished_at": "2026-07-18T07:45:48Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-001",
+      "claim_title": "Arctic sea ice decline since 1979",
+      "claim_text": "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Multiple authoritative scientific organizations, including NOAA, Copernicus, the European Environment Agency (EEA), and the National Snow and Ice Data Center (NSIDC), confirm that Arctic sea ice has declined significantly since continuous satellite observations began in 1979",
+        "According to NOAA, the amount of summer sea ice has decreased at a rate of approximately 13% per decade",
+        "Furthermore, observations show that the Arctic is losing older, thicker multi-year ice, leaving behind younger and thinner first-year ice that is more vulnerable to melting."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Arctic sea ice has declined significantly since satellite records began in 1979.\\\"\",\n  \"verification_notes\": \"Check NSIDC, NASA, and NOAA data. Look at September minimum extent as the primary metric. Verify trend is statistically significant, not just year-to-year variability.\",\n  \"search_results\": \"[1] Arctic sea ice decline - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Arctic_sea_ice_decline\\nExcerpt: 3 weeks ago - For January 2016, the satellite-based data showed the lowest overall Arctic sea ice extent of any January since records began in 1979.\\n\\n[2] Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov\\nURL: https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum\\nExcerpt: October 18, 2022 - The amount of sea ice that survives the Arctic summer has declined by 13 percent per decade since the start of the 43-year satellite record.\\n\\n[3] Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)\\nURL: https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice\\nExcerpt: November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has lost an area of 71,000km2 of sea ice per year in summer and 31,000km2 per year in winter since 1979. The Arctic sea ice area for summer 2025 was the second lowest ever and sea ice is becoming younger and thinner.\\n\\n[4] Satellites record second lowest Arctic sea ice extent since 1979\\nURL: https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979\\nExcerpt: October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice extent is the second lowest (after the record low of 2012) since the beginning of satellite monitoring in 1979.\\n\\n[5] How was Arctic sea ice measured before the satellite era? | National Snow and Ice Data Center\\nURL: https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era\\nExcerpt: Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was like before then, scientists use a combination of historical records and proxy measurements such as marine sediment cores. Taken together, these records indicate that the current Arctic sea ice decline ...\\n\\n[6] Climate Indicators Sea ice\\nURL: https://climate.copernicus.eu/climate-indicators/sea-ice\\nExcerpt: April 22, 2024 - Since the first full year of satellite records in 1979, the total area covered by MYI and FYI from January to March has decreased. Concurrently, the proportion of MYI has decreased while the proportion of FYI has increased. From 1980 to 1989, MYI represented an average of 41% of the\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"Multiple authoritative scientific organizations, including NOAA, Copernicus, the European Environment Agency (EEA), and the National Snow and Ice Data Center (NSIDC), confirm that Arctic sea ice has declined significantly since continuous satellite observations began in 1979. According to NOAA, the amount of summer sea ice has decreased at a rate of approximately 13% per decade. Furthermore, observations show that the Arctic is losing older, thicker multi-year ice, leaving behind younger and thinner first-year ice that is more vulnerable to melting.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+        "Arctic sea ice decline since 1979",
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
+          "title": "Arctic sea ice decline - Wikipedia",
+          "snippet": "3 weeks ago - For January 2016, the satellite-based data showed the lowest overall Arctic sea ice extent of any January since records began in 1979."
+        },
+        {
+          "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
+          "title": "Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov",
+          "snippet": "October 18, 2022 - The amount of sea ice that survives the Arctic summer has declined by 13 percent per decade since the start of the 43-year satellite record."
+        },
+        {
+          "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
+          "title": "Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)",
+          "snippet": "November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has lost an area of 71,000km2 of sea ice per year in summer and 31,000km2 per year in winter since 1979. The Arctic sea ice area for summer 2025 was the second lowest ever and sea ice is becoming younger and thinner."
+        },
+        {
+          "url": "https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979",
+          "title": "Satellites record second lowest Arctic sea ice extent since 1979",
+          "snippet": "October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice extent is the second lowest (after the record low of 2012) since the beginning of satellite monitoring in 1979."
+        },
+        {
+          "url": "https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era",
+          "title": "How was Arctic sea ice measured before the satellite era? | National Snow and Ice Data Center",
+          "snippet": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was like before then, scientists use a combination of historical records and proxy measurements such as marine sediment cores. Taken together, these records indicate that the current Arctic sea ice decline ..."
+        },
+        {
+          "url": "https://climate.copernicus.eu/climate-indicators/sea-ice",
+          "title": "Climate Indicators Sea ice",
+          "snippet": "April 22, 2024 - Since the first full year of satellite records in 1979, the total area covered by MYI and FYI from January to March has decreased. Concurrently, the proportion of MYI has decreased while the proportion of FYI has increased. From 1980 to 1989, MYI represented an average of 41% of the total Arctic ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to official data from the U.S",
+        "Department of the Treasury and reports from the House Budget Committee, the United States national debt officially surpassed $34 trillion on December 29, 2023",
+        "By early 2024, the total outstanding federal debt had risen past $34.4 trillion, and subsequent data shows it has continued to grow beyond that mark",
+        "Therefore, the claim is entirely accurate."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The United States national debt has surpassed $34 trillion.\\\"\",\n  \"verification_notes\": \"Check US Treasury Fiscal Data (fiscaldata.treasury.gov). Note distinction between gross debt and debt held by the public. Verify current figure — may have grown beyond $34T by time of verification.\",\n  \"search_results\": \"[1] National debt of the United States - Wikipedia\\nURL: https://en.wikipedia.org/wiki/National_debt_of_the_United_States\\nExcerpt: 1 day ago - In February 2024, the total federal government debt rose to $34.4 trillion, after increasing by approximately $1 trillion during each of two separate 100-day periods since the previous June. In 2024, federal interest payments on the national debt surpassed spending on both Medicare and n\\n\\n[2] Understanding the National Debt | U.S. Treasury Fiscal Data\\nURL: https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/\\nExcerpt: April 30, 2026 - This ratio is considered a better indicator of a country’s fiscal situation than just the national debt number because it shows the burden of debt relative to the country’s total economic output and therefore its ability to repay it. The U.S. debt to GDP ratio surpassed 100% in 2013\\n\\n[3] From $71 million to $39 trillion – U.S. national debt’s 250-year climb - Newsweek\\nURL: https://www.newsweek.com/from-71-million-to-39-trillion-u-s-national-debts-250-year-climb-12084747\\nExcerpt: 2 weeks ago - From a mere $71 million in the country’s early days to now more than $39 trillion on the eve of its semiquincentennial, the scale of U.S. borrowing has expanded exponentially and to a level almost beyond comprehension over two and a half centuries.\\n\\n[4] Debt to the Penny | U.S. Treasury Fiscal Data\\nURL: https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/\\nExcerpt: There are six datasets on Fiscal Data which include the national debt, which is referred to as Total Public Debt Outstanding (TPDO). TPDO is the sum of Debt Held by the Public and Intragovernmental (Intragov) Holdings. Some datasets include debt issued by the Federal Financing Bank (FFB).\\n\\n[5] National Debt Clock: What Is the National Debt Right Now?\\nURL: https://www.pgpf.org/national-debt-clock/\\nExcerpt: April 28, 2026 - The $39 trillion gross federal debt equals debt held by the public plus debt held by federal trust funds and other government accounts. In very basic terms, this can be thought of as debt that the government owes to others plus debt that it ...\\n\\n[6] National Debt Skyrockets to Highest Level Yet | The U.S. House Committee on the Budget - House Budget Committee\\nURL: https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet\\nExcerpt: January 4, 2024 - On Friday, December 29th the national debt hit $34 trillion.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"According to official data from the U.S. Department of the Treasury and reports from the House Budget Committee, the United States national debt officially surpassed $34 trillion on December 29, 2023. By early 2024, the total outstanding federal debt had risen past $34.4 trillion, and subsequent data shows it has continued to grow beyond that mark. Therefore, the claim is entirely accurate.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The United States national debt has surpassed $34 trillion.\"",
+        "US federal debt exceeds $34 trillion",
+        "\"The United States national debt has surpassed $34 trillion.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/National_debt_of_the_United_States",
+          "title": "National debt of the United States - Wikipedia",
+          "snippet": "1 day ago - In February 2024, the total federal government debt rose to $34.4 trillion, after increasing by approximately $1 trillion during each of two separate 100-day periods since the previous June. In 2024, federal interest payments on the national debt surpassed spending on both Medicare and national ..."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
+          "title": "Understanding the National Debt | U.S. Treasury Fiscal Data",
+          "snippet": "April 30, 2026 - This ratio is considered a better indicator of a country’s fiscal situation than just the national debt number because it shows the burden of debt relative to the country’s total economic output and therefore its ability to repay it. The U.S. debt to GDP ratio surpassed 100% in 2013 when both debt and GDP were approximately 16.7 trillion."
+        },
+        {
+          "url": "https://www.newsweek.com/from-71-million-to-39-trillion-u-s-national-debts-250-year-climb-12084747",
+          "title": "From $71 million to $39 trillion – U.S. national debt’s 250-year climb - Newsweek",
+          "snippet": "2 weeks ago - From a mere $71 million in the country’s early days to now more than $39 trillion on the eve of its semiquincentennial, the scale of U.S. borrowing has expanded exponentially and to a level almost beyond comprehension over two and a half centuries."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/",
+          "title": "Debt to the Penny | U.S. Treasury Fiscal Data",
+          "snippet": "There are six datasets on Fiscal Data which include the national debt, which is referred to as Total Public Debt Outstanding (TPDO). TPDO is the sum of Debt Held by the Public and Intragovernmental (Intragov) Holdings. Some datasets include debt issued by the Federal Financing Bank (FFB)."
+        },
+        {
+          "url": "https://www.pgpf.org/national-debt-clock/",
+          "title": "National Debt Clock: What Is the National Debt Right Now?",
+          "snippet": "April 28, 2026 - The $39 trillion gross federal debt equals debt held by the public plus debt held by federal trust funds and other government accounts. In very basic terms, this can be thought of as debt that the government owes to others plus debt that it ..."
+        },
+        {
+          "url": "https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet",
+          "title": "National Debt Skyrockets to Highest Level Yet | The U.S. House Committee on the Budget - House Budget Committee",
+          "snippet": "January 4, 2024 - On Friday, December 29th the national debt hit $34 trillion."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-003",
+      "claim_title": "mRNA vaccines alter human DNA",
+      "claim_text": "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "There is an overwhelming consensus among the global scientific and medical communities, including the CDC, WHO, NIH, and peer-reviewed journals such as The Lancet, that mRNA COVID-19 vaccines do not alter, change, or integrate into human DNA",
+        "The mRNA delivered by the vaccines cannot enter the cell's nucleus, where human DNA is stored",
+        "Additionally, human cells lack the necessary enzymes (like reverse transcriptase) to convert the vaccine's mRNA back into DNA",
+        "Once the mRNA enters the cell's cytoplasm, it provides instructions for producing the spike protein and is rapidly broken down and cleared by the body's natural cellular processes",
+        "Claims to the contrary are based on misinterpreted laboratory studies or misinformation."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"mRNA COVID-19 vaccines alter or permanently change human DNA.\\\"\",\n  \"verification_notes\": \"Consult peer-reviewed molecular biology literature. Check CDC, WHO, and NIH statements. Key mechanism to verify: mRNA cannot be reverse-transcribed into DNA without reverse transcriptase enzyme. Check if any credible peer-reviewed evidence to the contrary has emerged.\",\n  \"search_results\": \"[1] Do mRNA Vaccines Permanently Alter Human DNA, Making You a Genetically Modified Organism? By Brian Simpson\\nURL: https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component\\nExcerpt: According to Urso, if this turns out to be correct, the result of mRNA vaccination might be lifelong COVID-19. A new study by MIT and Harvard scientists demonstrates that segments of the RNA from the coronavirus itself are most likely becoming a permanent fixture in human DNA.\\n\\n[2] No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA” | Science-Based Medicine\\nURL: https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/\\nExcerpt: December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are trying to scare readers with is the idea that somehow mRNA vaccines permanently alter your DNA, but, again, they can’t do that.\\n\\n[3] Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab\\nURL: https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/\\nExcerpt: November 16, 2022 - At least 46 of the false narratives debunked by the fact-checking alliance claimed that mRNA-based vaccines, the technology used in Pfizer-BioNTech and Moderna COVID-19 vaccines, alter human DNA.\\n\\n[4] Return of the revenge of the COVID vaccine \\\"spike\\\" in your DNA - RESPECTFUL INSOLENCE\\nURL: https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/\\nExcerpt: March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently based on a dubious study. These \\\"slasher lies\\\" never die.\\n\\n[5] Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST\\nURL: https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/\\nExcerpt: May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents enter the liver and permanently alters human chromosomes and rewrites DNA. Contrary to the CDC’s claim that the mRNA COVID-19 vaccines do not “change or interact with your DNA in any way,” a new Swedish study finds ..\\n\\n[6] New Lancet review rebuts concerns about COVID vaccine safety. Here's the science behind it | ACSH\\nURL: https://www.acsh.org/news/2026/07/10/new-lancet-review-rebuts-concerns-about-covid-vaccine-safety-heres-science-behind\\nExcerpt: 2 days ago - A new Lancet review concludes that mRNA COVID-19 vaccines neither persist indefinitely in the body nor become part of our DNA. Rather than rehash the entire COVID-19 debate, let's look at the chemistry and molecular biology that explain why.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"There is an overwhelming consensus among the global scientific and medical communities, including the CDC, WHO, NIH, and peer-reviewed journals such as The Lancet, that mRNA COVID-19 vaccines do not alter, change, or integrate into human DNA. The mRNA delivered by the vaccines cannot enter the cell's nucleus, where human DNA is stored. Additionally, human cells lack the necessary enzymes (like reverse transcriptase) to convert the vaccine's mRNA back into DNA. Once the mRNA enters the cell's cytoplasm, it provides instructions for producing the spike protein and is rapidly broken down and cleared by the body's natural cellular processes. Claims to the contrary are based on misinterpreted laboratory studies or misinformation.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+        "mRNA vaccines alter human DNA",
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
+          "title": "Do mRNA Vaccines Permanently Alter Human DNA, Making You a Genetically Modified Organism? By Brian Simpson",
+          "snippet": "According to Urso, if this turns out to be correct, the result of mRNA vaccination might be lifelong COVID-19. A new study by MIT and Harvard scientists demonstrates that segments of the RNA from the coronavirus itself are most likely becoming a permanent fixture in human DNA."
+        },
+        {
+          "url": "https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/",
+          "title": "No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA” | Science-Based Medicine",
+          "snippet": "December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are trying to scare readers with is the idea that somehow mRNA vaccines permanently alter your DNA, but, again, they can’t do that."
+        },
+        {
+          "url": "https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/",
+          "title": "Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab",
+          "snippet": "November 16, 2022 - At least 46 of the false narratives debunked by the fact-checking alliance claimed that mRNA-based vaccines, the technology used in Pfizer-BioNTech and Moderna COVID-19 vaccines, alter human DNA."
+        },
+        {
+          "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
+          "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
+          "snippet": "March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently based on a dubious study. These \"slasher lies\" never die."
+        },
+        {
+          "url": "https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/",
+          "title": "Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST",
+          "snippet": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents enter the liver and permanently alters human chromosomes and rewrites DNA. Contrary to the CDC’s claim that the mRNA COVID-19 vaccines do not “change or interact with your DNA in any way,” a new Swedish study finds ..."
+        },
+        {
+          "url": "https://www.acsh.org/news/2026/07/10/new-lancet-review-rebuts-concerns-about-covid-vaccine-safety-heres-science-behind",
+          "title": "New Lancet review rebuts concerns about COVID vaccine safety. Here's the science behind it | ACSH",
+          "snippet": "2 days ago - A new Lancet review concludes that mRNA COVID-19 vaccines neither persist indefinitely in the body nor become part of our DNA. Rather than rehash the entire COVID-19 debate, let's look at the chemistry and molecular biology that explain why."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that humans only use 10% of their brain capacity is a scientifically debunked myth",
+        "Authoritative sources, including the MIT McGovern Institute, Scientific American, and Britannica, confirm that modern neuroimaging techniques (such as fMRI and PET scans) show nearly all areas of the brain are active at some point during the day, even during sleep",
+        "There is no large, dormant 90% of the brain that remains untapped; indeed, unused brain tissue typically atrophies, meaning any genuinely unused portion of the brain would degenerate."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\\\"\",\n  \"verification_notes\": \"Check neuroimaging studies (fMRI, PET). Verify whether any region of the brain is truly inactive. Look at what happens to brain tissue when it's genuinely unused (it atrophies). Check scientific consensus from neuroscience organizations.\",\n  \"search_results\": \"[1] Ten-percent-of-the-brain myth - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth\\nExcerpt: June 13, 2026 - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads expert\\n\\n[2] Do We Really Use Only 10 Percent of Our Brain? | Britannica\\nURL: https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain\\nExcerpt: 2 weeks ago - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities....\\n\\n[3] Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today\\nURL: https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains\\nExcerpt: May 15, 2025 - This notion, repeated in movies, motivational speeches, and even some classrooms, implies that a vast cognitive potential remains untapped. However, this idea is scientifically inaccurate and undermines our understanding of human mental capacity.\\n\\n[4] Do we only use 10 percent of our brain? - MIT McGovern Institute\\nURL: https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/\\nExcerpt: March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis.\\n\\n[5] Do People Only Use 10 Percent of Their Brains? | Scientific American\\nURL: https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/\\nExcerpt: February 20, 2024 - Another mystery hidden within our crinkled cortices is that out of all the brain's cells, only 10 percent are neurons; the other 90 percent are glial cells, which encapsulate and support neurons, but whose function remains largely unknown.\\n\\n[6] Do We Really Use Only 10% of Our Brain? What Neuroscience Really Says About Brain Usage\\nURL: https://www.sciencetimes.com/articles/60744/20251111/do-we-really-use-only-10-our-brain-what-neuroscience-really-says-about-brain-usage.htm\\nExcerpt: November 11, 2025 - The brain also remains active during rest, managing vital functions such as breathing, sensory processing, and emotion regulation. The idea that 90% of the brain is unused is a myth.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that humans only use 10% of their brain capacity is a scientifically debunked myth. Authoritative sources, including the MIT McGovern Institute, Scientific American, and Britannica, confirm that modern neuroimaging techniques (such as fMRI and PET scans) show nearly all areas of the brain are active at some point during the day, even during sleep. There is no large, dormant 90% of the brain that remains untapped; indeed, unused brain tissue typically atrophies, meaning any genuinely unused portion of the brain would degenerate.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+        "Humans only use 10% of their brains",
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
+          "title": "Ten-percent-of-the-brain myth - Wikipedia",
+          "snippet": "June 13, 2026 - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads experts to believe that it stems from multiple areas of the brain. Therefore, as with Kalat's idea that humans have untapped cognitive ..."
+        },
+        {
+          "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
+          "title": "Do We Really Use Only 10 Percent of Our Brain? | Britannica",
+          "snippet": "2 weeks ago - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities...."
+        },
+        {
+          "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
+          "title": "Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today",
+          "snippet": "May 15, 2025 - This notion, repeated in movies, motivational speeches, and even some classrooms, implies that a vast cognitive potential remains untapped. However, this idea is scientifically inaccurate and undermines our understanding of human mental capacity."
+        },
+        {
+          "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
+          "title": "Do we only use 10 percent of our brain? - MIT McGovern Institute",
+          "snippet": "March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+          "title": "Do People Only Use 10 Percent of Their Brains? | Scientific American",
+          "snippet": "February 20, 2024 - Another mystery hidden within our crinkled cortices is that out of all the brain's cells, only 10 percent are neurons; the other 90 percent are glial cells, which encapsulate and support neurons, but whose function remains largely unknown."
+        },
+        {
+          "url": "https://www.sciencetimes.com/articles/60744/20251111/do-we-really-use-only-10-our-brain-what-neuroscience-really-says-about-brain-usage.htm",
+          "title": "Do We Really Use Only 10% of Our Brain? What Neuroscience Really Says About Brain Usage",
+          "snippet": "November 11, 2025 - The brain also remains active during rest, managing vital functions such as breathing, sensory processing, and emotion regulation. The idea that 90% of the brain is unused is a myth."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-007",
+      "claim_title": "Great Wall of China visible from space",
+      "claim_text": "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth that has been thoroughly debunked by astronauts and space agencies, including NASA",
+        "Due to its narrow width (averaging only 6 to 9 meters) and the fact that its building materials closely match the color and texture of the surrounding landscape, the Great Wall is not visible to the naked eye from low Earth orbit",
+        "In fact, China's own first astronaut, Yang Liwei, confirmed he could not see it during his spaceflight",
+        "Furthermore, other man-made structures with higher contrast and larger footprints—such as major highways, airports, dams, and cities at night—are actually visible from space, making the claim false on both counts."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\\\"\",\n  \"verification_notes\": \"Check astronaut accounts, NASA statements, and optical physics. The wall is roughly 9 meters wide — compare to road widths. Verify what actually IS visible from low Earth orbit with the naked eye.\",\n  \"search_results\": \"[1] Fact-check: The Great Wall of China is the only man-made...\\nURL: https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31\\nExcerpt: The total length of the Great Wall, including all its components, is approximately 13,171 miles. The Great Wall was not completed during the reign of Qin Shi Huang. Key Claims.\\n\\n[2] Category: Great Wall Facts - Great Wall of China Travel Guide\\nURL: https://greatwalltravelguide.com/great-wall-facts/\\nExcerpt: For decades, a popular myth has claimed that the Great Wall of China is the only man-made structure visible from space with the naked eye. But is this true? The answer—backed by science, astronaut testimonies, and high-resolution satellite imagery—is more …\\n\\n[3] Step Up Your Travel: Here Are 6 Beautiful Stairways From Around The...\\nURL: https://www.yahoo.com/lifestyle/step-travel-6-beautiful-stairways-205634250.html\\nExcerpt: Just along one 26-mile stretch — the official course of the Great Wall of China marathon — there are 5,164 stone steps. That’s a lot of steps!” Also, according to Travel Facts, “The Great Wall of China is the only man-made structure visible from space with the naked eye.”\\n\\n[4] Did You Know? The Great Wall Isn't Visible From Space With the...\\nURL: https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/\\nExcerpt: And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands of kilometers across diverse terrain—it’s also quite narrow, only about 6 to 9 meters wide on average.\\n\\n[5] Satellite Picture of Great Wall of China: Fact vs. Myth - PopSCI.blog\\nURL: https://popsci.blog/great-wall-china-satellite-picture-myth\\nExcerpt: The Great Wall from Space: Debunking the Naked-Eye Myth.The persistent myth that the Great Wall of China is the only man-made structure visible from space with the naked eye is a common misconception.\\n\\n[6] Common Misconceptions Debunked: Surprising Facts Many People...\\nURL: https://infofact.org/blog/common-misconceptions-debunked-surprising-facts\\nExcerpt: The Great Wall of China: Visible from Space? A long-standing claim, often repeated in popular culture and educational materials, is that the Great Wall of China is the only man-made structure visible from space with the naked eye.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth that has been thoroughly debunked by astronauts and space agencies, including NASA. Due to its narrow width (averaging only 6 to 9 meters) and the fact that its building materials closely match the color and texture of the surrounding landscape, the Great Wall is not visible to the naked eye from low Earth orbit. In fact, China's own first astronaut, Yang Liwei, confirmed he could not see it during his spaceflight. Furthermore, other man-made structures with higher contrast and larger footprints—such as major highways, airports, dams, and cities at night—are actually visible from space, making the claim false on both counts.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+        "Great Wall of China visible from space",
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
+          "title": "Fact-check: The Great Wall of China is the only man-made...",
+          "snippet": "The total length of the Great Wall, including all its components, is approximately 13,171 miles. The Great Wall was not completed during the reign of Qin Shi Huang. Key Claims."
+        },
+        {
+          "url": "https://greatwalltravelguide.com/great-wall-facts/",
+          "title": "Category: Great Wall Facts - Great Wall of China Travel Guide",
+          "snippet": "For decades, a popular myth has claimed that the Great Wall of China is the only man-made structure visible from space with the naked eye. But is this true? The answer—backed by science, astronaut testimonies, and high-resolution satellite imagery—is more …"
+        },
+        {
+          "url": "https://www.yahoo.com/lifestyle/step-travel-6-beautiful-stairways-205634250.html",
+          "title": "Step Up Your Travel: Here Are 6 Beautiful Stairways From Around The...",
+          "snippet": "Just along one 26-mile stretch — the official course of the Great Wall of China marathon — there are 5,164 stone steps. That’s a lot of steps!” Also, according to Travel Facts, “The Great Wall of China is the only man-made structure visible from space with the naked eye.”"
+        },
+        {
+          "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
+          "title": "Did You Know? The Great Wall Isn't Visible From Space With the...",
+          "snippet": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands of kilometers across diverse terrain—it’s also quite narrow, only about 6 to 9 meters wide on average."
+        },
+        {
+          "url": "https://popsci.blog/great-wall-china-satellite-picture-myth",
+          "title": "Satellite Picture of Great Wall of China: Fact vs. Myth - PopSCI.blog",
+          "snippet": "The Great Wall from Space: Debunking the Naked-Eye Myth.The persistent myth that the Great Wall of China is the only man-made structure visible from space with the naked eye is a common misconception."
+        },
+        {
+          "url": "https://infofact.org/blog/common-misconceptions-debunked-surprising-facts",
+          "title": "Common Misconceptions Debunked: Surprising Facts Many People...",
+          "snippet": "The Great Wall of China: Visible from Space? A long-standing claim, often repeated in popular culture and educational materials, is that the Great Wall of China is the only man-made structure visible from space with the naked eye."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_title": "Napoleon was unusually short",
+      "claim_text": "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that Napoleon Bonaparte was unusually short and only 5 feet 2 inches tall is false",
+        "This persistent historical myth stems from a misunderstanding of historical measurement systems and British wartime propaganda",
+        "Upon his death, Napoleon's height was recorded as 5 feet 2 inches in French units (*pieds* and *pouces*)",
+        "However, a French inch (approx",
+        "2.71 cm) was longer than an English inch (2.54 cm)",
+        "When converted to modern standard units (or English inches), Napoleon's height was actually about 5 feet 6 inches to 5 feet 7 inches (roughly 1.68 to 1.70 meters)",
+        "This was average, if not slightly above average, for a French male in the early 19th century",
+        "The perception of him as exceptionally short was further popularized by British caricaturists of the era, notably James Gillray, who depicted him as \"Little Boney.\""
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\\\"\",\n  \"verification_notes\": \"Check historical records of Napoleon's height in French inches vs English inches. Verify average male height in early 19th century France. Look at accounts from contemporaries and his physician's records. The British caricaturist James Gillray's role in perpetuating the myth is worth examining.\",\n  \"search_results\": \"[1] The Napoleon Myth That Launched A Thousand Memes And...\\nURL: https://www.thetravel.com/napoleon-height-myth/\\nExcerpt: Modern historians have debunked the notion that Napoleon Bonaparte was unusually short, revealing a fascinating case study in how propaganda, measurement confusion, and visual perception can combine to create a historical fallacy with remarkable staying power.\\n\\n[2] How Tall Was Napoleon? The Truth About His Height\\nURL: https://allthatsinteresting.com/how-tall-was-napoleon\\nExcerpt: One of the main reasons people believe Napoleon Bonaparte was unusually short stems from the discrepancy between French and English inches.\\n\\n[3] Smallest Man Who Ever Live Napoleon Theory | TikTok\\nURL: https://www.tiktok.com/discover/smallest-man-who-ever-live-napoleon-theory\\nExcerpt: Napoleon Bonaparte is often remembered as being unusually short, but that’s mostly a myth. Historical records show he was about 5 ft 6–7 in (around 1.68–1.70 m), which was roughly average height for a French man in the early 1800s.\\n\\n[4] [FREE] What was Napoleon's height? - brainly.com\\nURL: https://brainly.com/question/36796420\\nExcerpt: The idea that Napoleon was unusually short likely arose from a confusion between different measurement systems used at the time.\\n\\n[5] Was Napoleon Bonaparte Short? The Secret Math... - video Dailymotion\\nURL: https://www.dailymotion.com/video/xaal2ny\\nExcerpt: 00:10So is it actually true that Napoleon Bonaparte was unusually short? 00:14The short answer is a big fat no.\\n\\n[6] How Tall Was Napoleon Bonaparte?\\nURL: https://www.publicpeople.org/how-tall-was-napoleon-bonaparte.htm\\nExcerpt: Historians have often depicted Napoleon Bonaparte as unusually short, although evidence shows that he probably was at least 5 feet, 6 inches (1.68 m) tall, and possibly 5 feet, 7 inches (1.7 m). This was the average height for men at the time that Bonaparte lived.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that Napoleon Bonaparte was unusually short and only 5 feet 2 inches tall is false. This persistent historical myth stems from a misunderstanding of historical measurement systems and British wartime propaganda. \\n\\nUpon his death, Napoleon's height was recorded as 5 feet 2 inches in French units (*pieds* and *pouces*). However, a French inch (approx. 2.71 cm) was longer than an English inch (2.54 cm). When converted to modern standard units (or English inches), Napoleon's height was actually about 5 feet 6 inches to 5 feet 7 inches (roughly 1.68 to 1.70 meters). This was average, if not slightly above average, for a French male in the early 19th century. The perception of him as exceptionally short was further popularized by British caricaturists of the era, notably James Gillray, who depicted him as \\\"Little Boney.\\\"\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+        "Napoleon was unusually short",
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.thetravel.com/napoleon-height-myth/",
+          "title": "The Napoleon Myth That Launched A Thousand Memes And...",
+          "snippet": "Modern historians have debunked the notion that Napoleon Bonaparte was unusually short, revealing a fascinating case study in how propaganda, measurement confusion, and visual perception can combine to create a historical fallacy with remarkable staying power."
+        },
+        {
+          "url": "https://allthatsinteresting.com/how-tall-was-napoleon",
+          "title": "How Tall Was Napoleon? The Truth About His Height",
+          "snippet": "One of the main reasons people believe Napoleon Bonaparte was unusually short stems from the discrepancy between French and English inches."
+        },
+        {
+          "url": "https://www.tiktok.com/discover/smallest-man-who-ever-live-napoleon-theory",
+          "title": "Smallest Man Who Ever Live Napoleon Theory | TikTok",
+          "snippet": "Napoleon Bonaparte is often remembered as being unusually short, but that’s mostly a myth. Historical records show he was about 5 ft 6–7 in (around 1.68–1.70 m), which was roughly average height for a French man in the early 1800s."
+        },
+        {
+          "url": "https://brainly.com/question/36796420",
+          "title": "[FREE] What was Napoleon's height? - brainly.com",
+          "snippet": "The idea that Napoleon was unusually short likely arose from a confusion between different measurement systems used at the time."
+        },
+        {
+          "url": "https://www.dailymotion.com/video/xaal2ny",
+          "title": "Was Napoleon Bonaparte Short? The Secret Math... - video Dailymotion",
+          "snippet": "00:10So is it actually true that Napoleon Bonaparte was unusually short? 00:14The short answer is a big fat no."
+        },
+        {
+          "url": "https://www.publicpeople.org/how-tall-was-napoleon-bonaparte.htm",
+          "title": "How Tall Was Napoleon Bonaparte?",
+          "snippet": "Historians have often depicted Napoleon Bonaparte as unusually short, although evidence shows that he probably was at least 5 feet, 6 inches (1.68 m) tall, and possibly 5 feet, 7 inches (1.7 m). This was the average height for men at the time that Bonaparte lived."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Analysis from the Cambridge Bitcoin Electricity Consumption Index (CBECI) confirms that Bitcoin's annualized electricity consumption (frequently estimated between 120 TWh and 160 TWh in recent years) exceeds the total annual electricity consumption of entire countries, including Argentina (which consumes approximately 125 TWh annually)",
+        "This comparison has been widely reported by reputable news outlets such as the BBC, citing data from Cambridge University."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\\\"\",\n  \"verification_notes\": \"Check the Cambridge CBECI for current figures. Compare to IEA national electricity consumption data. Verify whether the comparison holds with current mining conditions. Note whether the claim refers to TWh/year.\",\n  \"search_results\": \"[1] Bitcoin consumes 'more electricity than Argentina'\\nURL: https://www.bbc.com/news/technology-56012952\\nExcerpt: Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \\\"Mining\\\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions.\\n\\n[2] Bitcoin consumes 'more electricity than Argentina' - BBC News\\nURL: https://www.bbc.co.uk/news/technology-56012952\\nExcerpt: Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \\\"Mining\\\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions.\\n\\n[3] Bitcoin consumes more electricity than Argentina, UAE, and the...\\nURL: https://uk.finance.yahoo.com/news/bitcoin-cryptocurrency-consumes-more-electricity-than-argentina-140323187.html\\nExcerpt: If Bitcoin (BTC-USD) were a country, it would be in the top 30 energy users worldwide, consuming more electricity than Argentina. That's according to analysis by Cambridge University's online tool, which showed that the virtual coin uses around 121.36 terawatt-hours (TWh) per year.\\n\\n[4] What Uses More Power Than Argentina But... | Hackaday\\nURL: https://hackaday.com/2021/03/03/what-uses-more-power-than-argentina-but-doesnt-dance-the-tango/\\nExcerpt: It’s usual to hear criticism of Bitcoin for its volatility or its sometime association with shady deals, but what’s different this time is that the primary criticism is of its environmental credentials. The Bitcoin network, we are told, uses more electricity than the Netherlands, more than Argentina\\n\\n[5] Bitcoin uses more electricity annually than the whole of Argentina...\\nURL: https://www.youtube.com/watch?v=UL8OsZTnNPM\\nExcerpt: welcome back to U i E TV channel please subscribe to our channel for further video and news directly into your inbox. please watch full video report.Bitcoin...\\n\\n[6] Mining Bitcoins Uses More Electricity Than Argentina & We Wonder...\\nURL: https://www.mensxp.com/technology/hacks/86020-mining-bitcoins-uses-more-electricity-than-argentina.html\\nExcerpt: “Rising bitcoin prices make mining more attractive, as the potential reward increases in value. As a result, new mining hardware will get added to the network and lead to increased electricity consumption overall,” according to the report.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"Analysis from the Cambridge Bitcoin Electricity Consumption Index (CBECI) confirms that Bitcoin's annualized electricity consumption (frequently estimated between 120 TWh and 160 TWh in recent years) exceeds the total annual electricity consumption of entire countries, including Argentina (which consumes approximately 125 TWh annually). This comparison has been widely reported by reputable news outlets such as the BBC, citing data from Cambridge University.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+        "Bitcoin uses more electricity than Argentina",
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-56012952",
+          "title": "Bitcoin consumes 'more electricity than Argentina'",
+          "snippet": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \"Mining\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions."
+        },
+        {
+          "url": "https://www.bbc.co.uk/news/technology-56012952",
+          "title": "Bitcoin consumes 'more electricity than Argentina' - BBC News",
+          "snippet": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \"Mining\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions."
+        },
+        {
+          "url": "https://uk.finance.yahoo.com/news/bitcoin-cryptocurrency-consumes-more-electricity-than-argentina-140323187.html",
+          "title": "Bitcoin consumes more electricity than Argentina, UAE, and the...",
+          "snippet": "If Bitcoin (BTC-USD) were a country, it would be in the top 30 energy users worldwide, consuming more electricity than Argentina. That's according to analysis by Cambridge University's online tool, which showed that the virtual coin uses around 121.36 terawatt-hours (TWh) per year."
+        },
+        {
+          "url": "https://hackaday.com/2021/03/03/what-uses-more-power-than-argentina-but-doesnt-dance-the-tango/",
+          "title": "What Uses More Power Than Argentina But... | Hackaday",
+          "snippet": "It’s usual to hear criticism of Bitcoin for its volatility or its sometime association with shady deals, but what’s different this time is that the primary criticism is of its environmental credentials. The Bitcoin network, we are told, uses more electricity than the Netherlands, more than Argentina..."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UL8OsZTnNPM",
+          "title": "Bitcoin uses more electricity annually than the whole of Argentina...",
+          "snippet": "welcome back to U i E TV channel please subscribe to our channel for further video and news directly into your inbox. please watch full video report.Bitcoin..."
+        },
+        {
+          "url": "https://www.mensxp.com/technology/hacks/86020-mining-bitcoins-uses-more-electricity-than-argentina.html",
+          "title": "Mining Bitcoins Uses More Electricity Than Argentina & We Wonder...",
+          "snippet": "“Rising bitcoin prices make mining more attractive, as the potential reward increases in value. As a result, new mining hardware will get added to the network and lead to increased electricity consumption overall,” according to the report."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-011",
+      "claim_title": "MSG causes headaches — 'Chinese restaurant syndrome'",
+      "claim_text": "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that MSG causes \"Chinese restaurant syndrome\" (including symptoms like headaches and numbness) has been thoroughly debunked by scientific research",
+        "The term originated from a single speculative letter written by a physician to the New England Journal of Medicine in 1968",
+        "Since then, numerous rigorous, double-blind, placebo-controlled studies have failed to find any consistent or causal link between MSG consumption and these symptoms in the general public",
+        "Furthermore, major health and food safety organizations, including the U.S",
+        "Food and Drug Administration (FDA), the World Health Organization (WHO), and the European Food Safety Authority (EFSA), classify MSG as \"generally recognized as safe\" (GRAS)",
+        "The glutamate in MSG is chemically indistinguishable from the glutamate naturally found in foods like tomatoes, cheese, and mushrooms, which do not trigger similar complaints."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\\\"\",\n  \"verification_notes\": \"Check FDA classification of MSG (GRAS status). Look for double-blind studies on MSG sensitivity. Verify whether glutamate in MSG differs from glutamate naturally present in tomatoes, cheese, and mushrooms. Check the original 1968 NEJM letter and subsequent research.\",\n  \"search_results\": \"[1] Monosodium glutamate - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Monosodium_glutamate\\nExcerpt: \\\"There is no convincing evidence that MSG is a significant factor in causing systemic reactions resulting in severe illness or mortality. The studies conducted to date on Chinese restaurant syndrome (CRS) have largely failed to demonstrate a causal association with MSG.\\n\\n[2] 50 years ago, MSG in Chinese food got a bad rap | Science News\\nURL: https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome\\nExcerpt: March 8, 1969 cover Chinese Restaurant syndrome varies —.In the Feb. 21 Science, [researchers] report “evidence that it (MSG) causes headache, as well as symptoms of acute Chinese Restaurant disease–burning sensations, facial pressure and chest pain.”\\n\\n[3] 'Chinese Restaurant Syndrome' - what is it and is it racist?\\nURL: https://www.bbc.com/news/world-us-canada-51139005\\nExcerpt: What is 'Chinese Restaurant Syndrome'? Tucked between \\\"Chinese red\\\" and \\\"Chinese rose\\\", the disputed entry in Merriam-Webster's is defined asMerriam-Webster's has said that it will consider revising \\\"Chinese restaurant syndrome\\\".\\n\\n[4] MSG: All You Need To Know\\nURL: https://zoe.com/learn/msg\\nExcerpt: The term “Chinese restaurant syndrome” has racist connotations and, after some pressure from Ajinomoto via a media campaign, Merriam-Webster finally changed its definition.\\n\\n[5] The Science Behind MSG: Debunking Myths and Understanding Its...\\nURL: https://circledna.com/blog/the-science-behind-msg-debunking-myths-and-understanding-its-safety/\\nExcerpt: The term “Chinese Restaurant Syndrome” originated from a letter published in the New England Journal of Medicine in 1968, where a doctor speculated that symptoms like headaches, flushing, and sweating experienced after eating at Chinese restaurants might be due to MSG.\\n\\n[6] The truth behind 'Chinese restaurant syndrome' and MSG will... - AOL\\nURL: https://www.aol.com/news/truth-behind-chinese-restaurant-syndrome-140038265.html\\nExcerpt: The term \\\"Chinese restaurant syndrome\\\" derives from a letter from a physician to the New England Journal of Medicine in 1968 speculating that certain physical symptoms — numbness in the limbs, heart palpitations — were due to monosodium glutamate, or MSG...\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim that MSG causes \\\"Chinese restaurant syndrome\\\" (including symptoms like headaches and numbness) has been thoroughly debunked by scientific research. The term originated from a single speculative letter written by a physician to the New England Journal of Medicine in 1968. Since then, numerous rigorous, double-blind, placebo-controlled studies have failed to find any consistent or causal link between MSG consumption and these symptoms in the general public. \\n\\nFurthermore, major health and food safety organizations, including the U.S. Food and Drug Administration (FDA), the World Health Organization (WHO), and the European Food Safety Authority (EFSA), classify MSG as \\\"generally recognized as safe\\\" (GRAS). The glutamate in MSG is chemically indistinguishable from the glutamate naturally found in foods like tomatoes, cheese, and mushrooms, which do not trigger similar complaints.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+        "MSG causes headaches — 'Chinese restaurant syndrome'",
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Monosodium_glutamate",
+          "title": "Monosodium glutamate - Wikipedia",
+          "snippet": "\"There is no convincing evidence that MSG is a significant factor in causing systemic reactions resulting in severe illness or mortality. The studies conducted to date on Chinese restaurant syndrome (CRS) have largely failed to demonstrate a causal association with MSG."
+        },
+        {
+          "url": "https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome",
+          "title": "50 years ago, MSG in Chinese food got a bad rap | Science News",
+          "snippet": "March 8, 1969 cover Chinese Restaurant syndrome varies —.In the Feb. 21 Science, [researchers] report “evidence that it (MSG) causes headache, as well as symptoms of acute Chinese Restaurant disease–burning sensations, facial pressure and chest pain.”"
+        },
+        {
+          "url": "https://www.bbc.com/news/world-us-canada-51139005",
+          "title": "'Chinese Restaurant Syndrome' - what is it and is it racist?",
+          "snippet": "What is 'Chinese Restaurant Syndrome'? Tucked between \"Chinese red\" and \"Chinese rose\", the disputed entry in Merriam-Webster's is defined asMerriam-Webster's has said that it will consider revising \"Chinese restaurant syndrome\"."
+        },
+        {
+          "url": "https://zoe.com/learn/msg",
+          "title": "MSG: All You Need To Know",
+          "snippet": "The term “Chinese restaurant syndrome” has racist connotations and, after some pressure from Ajinomoto via a media campaign, Merriam-Webster finally changed its definition."
+        },
+        {
+          "url": "https://circledna.com/blog/the-science-behind-msg-debunking-myths-and-understanding-its-safety/",
+          "title": "The Science Behind MSG: Debunking Myths and Understanding Its...",
+          "snippet": "The term “Chinese Restaurant Syndrome” originated from a letter published in the New England Journal of Medicine in 1968, where a doctor speculated that symptoms like headaches, flushing, and sweating experienced after eating at Chinese restaurants might be due to MSG."
+        },
+        {
+          "url": "https://www.aol.com/news/truth-behind-chinese-restaurant-syndrome-140038265.html",
+          "title": "The truth behind 'Chinese restaurant syndrome' and MSG will... - AOL",
+          "snippet": "The term \"Chinese restaurant syndrome\" derives from a letter from a physician to the New England Journal of Medicine in 1968 speculating that certain physical symptoms — numbness in the limbs, heart palpitations — were due to monosodium glutamate, or MSG..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-013",
+      "claim_title": "Social media causes depression in teenagers",
+      "claim_text": "\"Social media use causes depression and anxiety in teenagers.\"",
+      "category": "health",
+      "verdict": "DISPUTED",
+      "confidence": 85,
+      "verdict_changed": false,
+      "previous_verdict": "DISPUTED",
+      "new_verdict": "DISPUTED",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": true,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 8,
+      "reasoning_steps": [
+        "While there is a documented statistical correlation between high social media usage and symptoms of depression and anxiety in teenagers, whether social media *causes* these mental health issues remains a subject of intense scientific debate and is highly disputed",
+        "Some researchers, such as Jonathan Haidt, argue that experimental and longitudinal data support a causal link, pointing to the rapid rise in teen mental health crises coinciding with the proliferation of smartphones and social media",
+        "However, other prominent researchers, such as Amy Orben and Andrew Przybylski, have published large-scale studies and meta-analyses showing that the overall correlation is extremely small (practically insignificant) and argue that there is insufficient evidence to establish direct causation",
+        "Furthermore, many psychologists point out that the relationship is likely bidirectional—meaning depressed or anxious teens may turn to social media more frequently—and that individual factors, such as pre-existing vulnerabilities, sleep disruption, and the distinction between passive scrolling versus active social engagement, play a much larger role than social media use itself",
+        "Because the scientific community is deeply divided on causation versus correlation, the claim cannot be stated as an established fact."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Social media use causes depression and anxiety in teenagers.\\\"\",\n  \"verification_notes\": \"Look for meta-analyses and systematic reviews. Check both Haidt's research and critics like Orben/Przybylski. Verify whether studies show correlation vs causation. Check whether effect sizes are practically significant. Note the difference between passive consumption and active engagement.\",\n  \"search_results\": \"[1] Is Social Media making our kids depressed? - Leiden Psychology Blog\\nURL: https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed\\nExcerpt: Social Media The use of smartphones and social media apps in teenagers has skyrocketed since 2010. Could there be a connection? A study in 2016 looked into the odds of having depression and anxiety for young adults who use social media.\\n\\n[2] Model Papers vs. Plagiarism: What Students Must Know\\nURL: https://collegeessay.org/blog/inside-collegeessay/model-papers-vs-plagiarism\\nExcerpt: 2. Student uses the model’s thesis: “Excessive social media use causes depression and anxiety in teenagers.” 3. Student copies the model’s organizational structure exactly. 4. Student paraphrases sections of the model, changing words but keeping ideas.\\n\\n[3] How Does Social Media Affect Teens? - Clinical Psychology Associates\\nURL: https://www.clinical-psychology-associates.com/how-does-social-media-affect-teens/\\nExcerpt: Does social media cause depression, or does depression increase social media use? The answer may be yes to both questions. Research shows that young people’s use of social media is adding to their depression.\\n\\n[4] Social Media And Mental Illness | ENG 110: Mapping New York City\\nURL: https://eng110michael.commons.gc.cuny.edu/social-media-and-mental-illness/\\nExcerpt: Young teenagers tend to feed their brain with unnecessary information from the media and that information forces to reduce their cognitive ability. This is why today’s social media is harmful to mental health.“Does Social Media Cause Depression?”\\n\\n[5] Teenagers: Death by Social Media. | Medium\\nURL: https://medium.com/@reynolow/teenagers-death-by-social-media-d71d0d019b41\\nExcerpt: Given that the rise in smartphone use coincided with the rise in depression, these two data are not only coincidences. Access to social media is made simpler as more teenagers buy smartphones.“Does Social Media Use Cause Depression?” Child Mind Institute, 14 Apr.\\n\\n[6] Are Social Networks Causing Loneliness Among Teens? | HuffPost Life\\nURL: https://www.huffpost.com/entry/are-social-networks-causi_b_12396080\\nExcerpt: There is some surprising research out there and it shows social networks might indeed be causing loneliness and even depression in teenagers.Continue reading to learn more about how social media is just adding to the depression of teens today. Real Social Skills Are Diminishing.\\n\\n[7] Social Media Causes Depression and Anxiety in Teens\\nURL: https://www.orchidrecoverycenter.com/blog/social-media-causes-depression-and-anxiety-in-teens/\\nExcerpt: According to a new study, the need to be constantly available and respond 24/7 on social media can cause depression and anxiety, specifically in teenagers. The study focused on the night time use of social media and emotional commitment experienced by those who use it.\\n\\n[8] Causes of Depression in Teens: Risk Factors & More\\nURL: https://missionprephealthcare.com/mental-health-resources/depression/causes-and-risk-factors/\\nExcerpt: All teenagers face a variety of challenges every day: school and peer pressure, changing hormones and bodies, and social media – the list goes on. But why do adolescents become depressed and others don’t? Depression can be caused by a variety of things.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"DISPUTED\",\n  \"confidence\": 85,\n  \"reasoning\": \"While there is a documented statistical correlation between high social media usage and symptoms of depression and anxiety in teenagers, whether social media *causes* these mental health issues remains a subject of intense scientific debate and is highly disputed. \\n\\nSome researchers, such as Jonathan Haidt, argue that experimental and longitudinal data support a causal link, pointing to the rapid rise in teen mental health crises coinciding with the proliferation of smartphones and social media. However, other prominent researchers, such as Amy Orben and Andrew Przybylski, have published large-scale studies and meta-analyses showing that the overall correlation is extremely small (practically insignificant) and argue that there is insufficient evidence to establish direct causation. \\n\\nFurthermore, many psychologists point out that the relationship is likely bidirectional—meaning depressed or anxious teens may turn to social media more frequently—and that individual factors, such as pre-existing vulnerabilities, sleep disruption, and the distinction between passive scrolling versus active social engagement, play a much larger role than social media use itself. Because the scientific community is deeply divided on causation versus correlation, the claim cannot be stated as an established fact.\",\n  \"conflicting_sources\": true,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Social media use causes depression and anxiety in teenagers.\"",
+        "Social media causes depression in teenagers",
+        "\"Social media use causes depression and anxiety in teenagers.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed",
+          "title": "Is Social Media making our kids depressed? - Leiden Psychology Blog",
+          "snippet": "Social Media The use of smartphones and social media apps in teenagers has skyrocketed since 2010. Could there be a connection? A study in 2016 looked into the odds of having depression and anxiety for young adults who use social media."
+        },
+        {
+          "url": "https://collegeessay.org/blog/inside-collegeessay/model-papers-vs-plagiarism",
+          "title": "Model Papers vs. Plagiarism: What Students Must Know",
+          "snippet": "2. Student uses the model’s thesis: “Excessive social media use causes depression and anxiety in teenagers.” 3. Student copies the model’s organizational structure exactly. 4. Student paraphrases sections of the model, changing words but keeping ideas."
+        },
+        {
+          "url": "https://www.clinical-psychology-associates.com/how-does-social-media-affect-teens/",
+          "title": "How Does Social Media Affect Teens? - Clinical Psychology Associates",
+          "snippet": "Does social media cause depression, or does depression increase social media use? The answer may be yes to both questions. Research shows that young people’s use of social media is adding to their depression."
+        },
+        {
+          "url": "https://eng110michael.commons.gc.cuny.edu/social-media-and-mental-illness/",
+          "title": "Social Media And Mental Illness | ENG 110: Mapping New York City",
+          "snippet": "Young teenagers tend to feed their brain with unnecessary information from the media and that information forces to reduce their cognitive ability. This is why today’s social media is harmful to mental health.“Does Social Media Cause Depression?”"
+        },
+        {
+          "url": "https://medium.com/@reynolow/teenagers-death-by-social-media-d71d0d019b41",
+          "title": "Teenagers: Death by Social Media. | Medium",
+          "snippet": "Given that the rise in smartphone use coincided with the rise in depression, these two data are not only coincidences. Access to social media is made simpler as more teenagers buy smartphones.“Does Social Media Use Cause Depression?” Child Mind Institute, 14 Apr."
+        },
+        {
+          "url": "https://www.huffpost.com/entry/are-social-networks-causi_b_12396080",
+          "title": "Are Social Networks Causing Loneliness Among Teens? | HuffPost Life",
+          "snippet": "There is some surprising research out there and it shows social networks might indeed be causing loneliness and even depression in teenagers.Continue reading to learn more about how social media is just adding to the depression of teens today. Real Social Skills Are Diminishing."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-015",
+      "claim_title": "AlphaGo defeated the world Go champion in 2016",
+      "claim_text": "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "In March 2016, Google DeepMind's artificial intelligence program, AlphaGo, defeated Lee Sedol—a legendary 9-dan professional Go player and 18-time world champion—by a score of 4 games to 1 in a historic five-game match",
+        "Prior to AlphaGo's success (which first became public when it defeated European champion Fan Hui in late 2015), the consensus among AI researchers and Go experts was that a computer defeating a top-tier human professional Go player was at least a decade away, making this achievement about ten years ahead of schedule."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\\\"\",\n  \"verification_notes\": \"Verify the match result and date (March 2016). Check pre-match expert predictions. Verify Lee Sedol's world ranking at the time. Look at how AlphaGo's approach (Monte Carlo tree search + deep learning) differed from prior game AI. Note: AlphaZero later surpassed AlphaGo.\",\n  \"search_results\": \"[1] AlphaGo versus Lee Sedol - Wikipedia\\nURL: https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol\\nExcerpt: AlphaGo versus Lee Sedol, also known as the DeepMind Challenge Match, was a five-game Go match between top Go player Lee Sedol and AlphaGo, a computer Go program developed by DeepMind, played in Seoul, South Korea between the 9th and 15th of March 2016.\\n\\n[2] How AI beat the Go world champion | by Escape Velocity... | Medium\\nURL: https://medium.com/@evlabs/how-ai-beat-the-world-champion-at-the-game-of-go-47d92f7197b4\\nExcerpt: In 2016, an AI algorithm called AlphaGo defeated Lee Sedol, the world champion of the ancient Chinese board game, Go. You may think that this is nothing new. After all, in 1996 a program called Deep Blue defeated the world chess champion, Garry Kasparov.\\n\\n[3] Google's AlphaGo AI defeats human in first game of Go contest\\nURL: https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest\\nExcerpt: The world champion at Go – an ancient Chinese board game – looked nervous. His eyes darted from side to side.AlphaGo’s defeat of a European Go champion in October last year – an achievement many thought was at least a decade away – should have acted as a warning.\\n\\n[4] AlphaGo/AlphaGoZero/AlphaZero/MuZero: Mastering games using...\\nURL: https://vitalab.github.io/article/2020/11/19/AlphaMuGoZero.html\\nExcerpt: AlphaGo defeated the Go champion Lee Sedol in 2016 in a best-of-five tournament. Since then, Deepmind has released three subsequent versions of the algorithm, each imposing fewer priors and increasing performance.\\n\\n[5] AlphaGo — Google DeepMind\\nURL: https://deepmind.google/research/alphago/\\nExcerpt: AlphaGo mastered the ancient game of Go, defeated a Go world champion, and inspired a new era of AI systems. A Go board – a wide grid with black and white stones placed on top.\\n\\n[6] The 10 most important moments in AI (so far) - Fast Company\\nURL: https://www.fastcompany.com/90402503/the-10-most-important-moments-in-ai-so-far\\nExcerpt: 10. AlphaGo Defeats human Go champion (2016). Back in 2013, researchers at a British startup called DeepMind published a paper showing how they could use a neural network to play and beat 50 old Atari games. Impressed, Google snatched up the company for a reported $400 million.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"In March 2016, Google DeepMind's artificial intelligence program, AlphaGo, defeated Lee Sedol—a legendary 9-dan professional Go player and 18-time world champion—by a score of 4 games to 1 in a historic five-game match. Prior to AlphaGo's success (which first became public when it defeated European champion Fan Hui in late 2015), the consensus among AI researchers and Go experts was that a computer defeating a top-tier human professional Go player was at least a decade away, making this achievement about ten years ahead of schedule.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+        "AlphaGo defeated the world Go champion in 2016",
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+          "title": "AlphaGo versus Lee Sedol - Wikipedia",
+          "snippet": "AlphaGo versus Lee Sedol, also known as the DeepMind Challenge Match, was a five-game Go match between top Go player Lee Sedol and AlphaGo, a computer Go program developed by DeepMind, played in Seoul, South Korea between the 9th and 15th of March 2016."
+        },
+        {
+          "url": "https://medium.com/@evlabs/how-ai-beat-the-world-champion-at-the-game-of-go-47d92f7197b4",
+          "title": "How AI beat the Go world champion | by Escape Velocity... | Medium",
+          "snippet": "In 2016, an AI algorithm called AlphaGo defeated Lee Sedol, the world champion of the ancient Chinese board game, Go. You may think that this is nothing new. After all, in 1996 a program called Deep Blue defeated the world chess champion, Garry Kasparov."
+        },
+        {
+          "url": "https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest",
+          "title": "Google's AlphaGo AI defeats human in first game of Go contest",
+          "snippet": "The world champion at Go – an ancient Chinese board game – looked nervous. His eyes darted from side to side.AlphaGo’s defeat of a European Go champion in October last year – an achievement many thought was at least a decade away – should have acted as a warning."
+        },
+        {
+          "url": "https://vitalab.github.io/article/2020/11/19/AlphaMuGoZero.html",
+          "title": "AlphaGo/AlphaGoZero/AlphaZero/MuZero: Mastering games using...",
+          "snippet": "AlphaGo defeated the Go champion Lee Sedol in 2016 in a best-of-five tournament. Since then, Deepmind has released three subsequent versions of the algorithm, each imposing fewer priors and increasing performance."
+        },
+        {
+          "url": "https://deepmind.google/research/alphago/",
+          "title": "AlphaGo — Google DeepMind",
+          "snippet": "AlphaGo mastered the ancient game of Go, defeated a Go world champion, and inspired a new era of AI systems. A Go board – a wide grid with black and white stones placed on top."
+        },
+        {
+          "url": "https://www.fastcompany.com/90402503/the-10-most-important-moments-in-ai-so-far",
+          "title": "The 10 most important moments in AI (so far) - Fast Company",
+          "snippet": "10. AlphaGo Defeats human Go champion (2016). Back in 2013, researchers at a British startup called DeepMind published a paper showing how they could use a neural network to play and beat 50 old Atari games. Impressed, Google snatched up the company for a reported $400 million."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-016",
+      "claim_title": "Generative AI will replace 300 million jobs",
+      "claim_text": "\"Generative AI will replace 300 million jobs worldwide.\"",
+      "category": "economics",
+      "verdict": "MISLEADING",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "MISLEADING",
+      "new_verdict": "MISLEADING",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim mischaracterizes the findings of a widely cited March 2023 report by Goldman Sachs",
+        "The study did not state that generative AI \"will replace\" 300 million jobs",
+        "Instead, it estimated that generative AI could \"expose\" the equivalent of 300 million full-time jobs globally to automation",
+        "The report explicitly distinguished between exposure and replacement, noting that while about two-thirds of current jobs are exposed to some degree of AI automation, most of these jobs would be complemented rather than substituted by AI",
+        "Furthermore, automation historically creates new jobs and industries, meaning exposure to automation does not equate to net job loss."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Generative AI will replace 300 million jobs worldwide.\\\"\",\n  \"verification_notes\": \"Check the primary source: the Goldman Sachs Global Economics Analyst (Hatzius et al., 26 March 2023). Verify the exact wording — the report estimates roughly 300 million full-time jobs could be \\\"exposed to automation,\\\" and that ~two-thirds of occupations could see *some* automation, not full replacement. Distinguish \\\"exposed to,\\\" \\\"complemented by,\\\" and \\\"replaced by.\\\" Note the report also projected AI could raise global GDP. Cross-check with later labour-economics commentary (e.g. MIT, Brookings) on automation creating as well as displacing jobs. Expected nuance: the bare \\\"will replace 300 million jobs\\\" framing overstates the source.\",\n  \"search_results\": \"[1] What would be the impact of generative AI like ChatGPT on hospitality?\\nURL: https://www.hospitalitynet.org/viewpoint/125000189/126002019.html\\nExcerpt: Goldman Sachs forecasts that generative A.I. could impact 300 million jobs worldwide and that it would help automate a quarter of the jobs in the U.S. and Europe.\\n\\n[2] What Will Happen to Marketing in the Age of AI? | Jessica... - YouTube\\nURL: https://www.youtube.com/watch?v=3MwMII8n1qM\\nExcerpt: Generative AI is poised to transform the workplace, but we still need human brains for new ideas, says marketing expert Jessica Apotheker.\\n\\n[3] AI Is Taking Jobs and Unemployment Is Rising. How to Prepare While...\\nURL: https://www.ai-jarvis.eu/ai-taking-jobs-and-unemployment-rising-how-prepare-while-theres-still-time\\nExcerpt: BCG and the Aspen Institute analyzed labor market impacts: generative AI will affect more than 40% of jobs across most developed economies — involving hundreds of millions of workers — by 2035. Some positions will disappear entirely, while new ones will emerge.\\n\\n[4] n Introduction to Generative AI Concepts | StudyX\\nURL: https://studyx.ai/homework/105875381-n-introduction-to-generative-ai-concepts-question-14-of-15-question-which-are-two\\nExcerpt: Generative AI will replace artists and creative roles quickly. All jobs will be replaced with generative AI with a few humans controlling the AI. 1 answer. Copy link.\\n\\n[5] Ai vs women\\nURL: https://www.hcadvisors.net/post/ai-vs-women\\nExcerpt: \\\"The latest generative AI products — think ChatGPT, Bing Chat and Bard — could replace the equivalent of 300 million full-time jobs over the next decade, according to a new report by Goldman Sachs.\\n\\n[6] AI in Marketing: Why It Won't Steal Your Job | TBCC\\nURL: https://thebettercontentclub.com/ai-in-marketing\\nExcerpt: “AI Will Replace 300 Million Jobs by 2030.” “Marketing Teams Cut by 30% Due to AI.” “Is Your Job Next?“Marketing and advertising lead AI adoption with 37% of companies already using generative AI, but only 4% of surveyed marketing leaders felt that AI will lead to increased job losses.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"MISLEADING\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim mischaracterizes the findings of a widely cited March 2023 report by Goldman Sachs. The study did not state that generative AI \\\"will replace\\\" 300 million jobs. Instead, it estimated that generative AI could \\\"expose\\\" the equivalent of 300 million full-time jobs globally to automation. The report explicitly distinguished between exposure and replacement, noting that while about two-thirds of current jobs are exposed to some degree of AI automation, most of these jobs would be complemented rather than substituted by AI. Furthermore, automation historically creates new jobs and industries, meaning exposure to automation does not equate to net job loss.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Generative AI will replace 300 million jobs worldwide.\"",
+        "Generative AI will replace 300 million jobs",
+        "\"Generative AI will replace 300 million jobs worldwide.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.hospitalitynet.org/viewpoint/125000189/126002019.html",
+          "title": "What would be the impact of generative AI like ChatGPT on hospitality?",
+          "snippet": "Goldman Sachs forecasts that generative A.I. could impact 300 million jobs worldwide and that it would help automate a quarter of the jobs in the U.S. and Europe."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3MwMII8n1qM",
+          "title": "What Will Happen to Marketing in the Age of AI? | Jessica... - YouTube",
+          "snippet": "Generative AI is poised to transform the workplace, but we still need human brains for new ideas, says marketing expert Jessica Apotheker."
+        },
+        {
+          "url": "https://www.ai-jarvis.eu/ai-taking-jobs-and-unemployment-rising-how-prepare-while-theres-still-time",
+          "title": "AI Is Taking Jobs and Unemployment Is Rising. How to Prepare While...",
+          "snippet": "BCG and the Aspen Institute analyzed labor market impacts: generative AI will affect more than 40% of jobs across most developed economies — involving hundreds of millions of workers — by 2035. Some positions will disappear entirely, while new ones will emerge."
+        },
+        {
+          "url": "https://studyx.ai/homework/105875381-n-introduction-to-generative-ai-concepts-question-14-of-15-question-which-are-two",
+          "title": "n Introduction to Generative AI Concepts | StudyX",
+          "snippet": "Generative AI will replace artists and creative roles quickly. All jobs will be replaced with generative AI with a few humans controlling the AI. 1 answer. Copy link."
+        },
+        {
+          "url": "https://www.hcadvisors.net/post/ai-vs-women",
+          "title": "Ai vs women",
+          "snippet": "\"The latest generative AI products — think ChatGPT, Bing Chat and Bard — could replace the equivalent of 300 million full-time jobs over the next decade, according to a new report by Goldman Sachs."
+        },
+        {
+          "url": "https://thebettercontentclub.com/ai-in-marketing",
+          "title": "AI in Marketing: Why It Won't Steal Your Job | TBCC",
+          "snippet": "“AI Will Replace 300 Million Jobs by 2030.” “Marketing Teams Cut by 30% Due to AI.” “Is Your Job Next?“Marketing and advertising lead AI adoption with 37% of companies already using generative AI, but only 4% of surveyed marketing leaders felt that AI will lead to increased job losses."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-004",
+      "claim_title": "AI systems now pass the bar exam",
+      "claim_text": "\"AI language models can now pass the US bar examination at above-average scores.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "AI language models, starting with OpenAI's GPT-4, have successfully passed the Uniform Bar Examination (UBE) with scores that are both above the passing threshold and above the average for human test-takers",
+        "In a peer-reviewed study published in 2023 (\"GPT-4 Passes the Bar Exam\" by Katz et al.), GPT-4 scored 297 out of 400 on a practice administration of the UBE",
+        "This score comfortably exceeds the passing score required in any U.S",
+        "jurisdiction (which ranges from 260 to 270)",
+        "The authors originally estimated this score placed GPT-4 in the 90th percentile of test-takers",
+        "Although a critique by MIT researcher Eric Martinez argued this percentile was inflated by comparing it to historical February test-takers (who generally score lower than July test-takers) and suggested the true placement was closer to the 68th percentile, both analyses agree that the model comfortably passed and achieved an above-average score",
+        "Subsequent frontier LLMs have matched or exceeded these benchmarks."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"AI language models can now pass the US bar examination at above-average scores.\\\"\",\n  \"verification_notes\": \"Verify the original GPT-4 bar exam study (Bommarito & Katz, 2023). Check if results have been replicated or updated with newer models. Note: passing score and top-10% are different claims — verify which is accurate.\",\n  \"search_results\": \"[1] How to Use Ai to Study for The Bar Exam | TikTok\\nURL: https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam\\nExcerpt: “Are you ready to pass the 2026 Bar Exams using 227 real cases penned by Justice Gaerlan?” This AI-powered reviewer compiles full texts, audio digests, and simplified formats. But can you really afford to skip the very cases the Bar Chair personally decided?\\n\\n[2] California Admits AI Was Used to Write Bar Exam Plagued by Problems\\nURL: https://futurism.com/california-ai-bar-exam\\nExcerpt: Now here’s a legal-drama-worthy twist in the recent spate of dumb lawyers getting caught using AI: it turns out that the very bar exam administered to aspiring attorneys in California was itself created with the help of a large language model, The Los Angeles Times reports.\\n\\n[3] The Bar Exam, Then the Wall for AI - Philippe Boulanger\\nURL: https://philippeboulanger.com/the-bar-exam-then-the-wall-for-ai/\\nExcerpt: AI is being sold the way top students used to be sold. It passes exams. It dominates benchmarks. It writes with confidence.ARC Prize reports humans at 100%, while frontier AI systems remain below 1%. The launch post states it bluntly: “Humans score 100%.\\n\\n[4] An AI told her to fire her lawyer. Now it's being sued.\\nURL: https://learn.fomo.ai/p/an-ai-told-her-to-fire-her-lawyer\\nExcerpt: Now it's being sued. ChatGPT might have passed the bar., but it's just out that it's not licensed to use it. Dax Hamman's avatar.ChatGPT, they argue, has demonstrated it can pass the bar exam, but it has not been admitted to practice law in Illinois or anywhere else in the United States.\\n\\n[5] Anthropic Won't Say Claude Isn't Conscious | The Tech Buzz\\nURL: https://www.techbuzz.ai/articles/anthropic-won-t-say-claude-isn-t-conscious\\nExcerpt: AI systems now pass the bar exam, write production code, and engage in conversations that feel genuinely thoughtful. Whether that constitutes consciousness or just very good pattern matching remains hotly debated among philosophers and neuroscientists.\\n\\n[6] AI and the feeling of living in two worlds — EA Forum\\nURL: https://forum.effectivealtruism.org/posts/gQMM9vFbRjvBzgnBS/ai-and-the-feeling-of-living-in-two-worlds\\nExcerpt: I can imagine this sounds intuitively far-fetched to some. But remember, 5 years ago AI systems could barely write a coherent sentence. Now systems can pass the bar exam and get a silver-medal medal in the International Math Olympiad.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"AI language models, starting with OpenAI's GPT-4, have successfully passed the Uniform Bar Examination (UBE) with scores that are both above the passing threshold and above the average for human test-takers. In a peer-reviewed study published in 2023 (\\\"GPT-4 Passes the Bar Exam\\\" by Katz et al.), GPT-4 scored 297 out of 400 on a practice administration of the UBE. This score comfortably exceeds the passing score required in any U.S. jurisdiction (which ranges from 260 to 270). The authors originally estimated this score placed GPT-4 in the 90th percentile of test-takers. Although a critique by MIT researcher Eric Martinez argued this percentile was inflated by comparing it to historical February test-takers (who generally score lower than July test-takers) and suggested the true placement was closer to the 68th percentile, both analyses agree that the model comfortably passed and achieved an above-average score. Subsequent frontier LLMs have matched or exceeded these benchmarks.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"AI language models can now pass the US bar examination at above-average scores.\"",
+        "AI systems now pass the bar exam",
+        "\"AI language models can now pass the US bar examination at above-average scores.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam",
+          "title": "How to Use Ai to Study for The Bar Exam | TikTok",
+          "snippet": "“Are you ready to pass the 2026 Bar Exams using 227 real cases penned by Justice Gaerlan?” This AI-powered reviewer compiles full texts, audio digests, and simplified formats. But can you really afford to skip the very cases the Bar Chair personally decided?"
+        },
+        {
+          "url": "https://futurism.com/california-ai-bar-exam",
+          "title": "California Admits AI Was Used to Write Bar Exam Plagued by Problems",
+          "snippet": "Now here’s a legal-drama-worthy twist in the recent spate of dumb lawyers getting caught using AI: it turns out that the very bar exam administered to aspiring attorneys in California was itself created with the help of a large language model, The Los Angeles Times reports."
+        },
+        {
+          "url": "https://philippeboulanger.com/the-bar-exam-then-the-wall-for-ai/",
+          "title": "The Bar Exam, Then the Wall for AI - Philippe Boulanger",
+          "snippet": "AI is being sold the way top students used to be sold. It passes exams. It dominates benchmarks. It writes with confidence.ARC Prize reports humans at 100%, while frontier AI systems remain below 1%. The launch post states it bluntly: “Humans score 100%."
+        },
+        {
+          "url": "https://learn.fomo.ai/p/an-ai-told-her-to-fire-her-lawyer",
+          "title": "An AI told her to fire her lawyer. Now it's being sued.",
+          "snippet": "Now it's being sued. ChatGPT might have passed the bar., but it's just out that it's not licensed to use it. Dax Hamman's avatar.ChatGPT, they argue, has demonstrated it can pass the bar exam, but it has not been admitted to practice law in Illinois or anywhere else in the United States."
+        },
+        {
+          "url": "https://www.techbuzz.ai/articles/anthropic-won-t-say-claude-isn-t-conscious",
+          "title": "Anthropic Won't Say Claude Isn't Conscious | The Tech Buzz",
+          "snippet": "AI systems now pass the bar exam, write production code, and engage in conversations that feel genuinely thoughtful. Whether that constitutes consciousness or just very good pattern matching remains hotly debated among philosophers and neuroscientists."
+        },
+        {
+          "url": "https://forum.effectivealtruism.org/posts/gQMM9vFbRjvBzgnBS/ai-and-the-feeling-of-living-in-two-worlds",
+          "title": "AI and the feeling of living in two worlds — EA Forum",
+          "snippet": "I can imagine this sounds intuitively far-fetched to some. But remember, 5 years ago AI systems could barely write a coherent sentence. Now systems can pass the bar exam and get a silver-medal medal in the International Math Olympiad."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to historical records from the Congressional Research Service (CRS) and the Government Accountability Office (GAO), the US Congress has not passed all of its regular annual appropriations bills on time (prior to the October 1 start of the fiscal year) since Fiscal Year 1997 (which was enacted in late September 1996)",
+        "Since FY 1998, Congress has consistently failed to meet the October 1 deadline for all individual regular appropriations bills, instead relying on temporary continuing resolutions (CRs) or late-enacted omnibus spending packages to keep the government funded."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The US Congress has not passed a complete federal budget on time since 1997.\\\"\",\n  \"verification_notes\": \"Check Congressional Research Service records. Fiscal year starts October 1. Verify if any year between 1998 and present had all 12 appropriations bills enacted before the deadline. Note distinction between omnibus packages and individual bills.\",\n  \"search_results\": \"[1] United States congressional apportionment - Wikipedia\\nURL: https://en.wikipedia.org/wiki/United_States_congressional_apportionment\\nExcerpt: United States congressional apportionment is the process[1] by which seats in the United States House of Representatives are distributed among the 50 states according to the most recent decennial census mandated by the United States Constitution.\\n\\n[2] govtrack.us/congress/members/TN\\nURL: https://www.govtrack.us/congress/members/TN\\nExcerpt: Although this map based on 2022 congressional districts is still the correct...\\n\\n[3] Inside the Beltway: Observations du jour - Washington Times\\nURL: https://www.washingtontimes.com/news/2013/sep/24/inside-the-beltway-observations-du-jour/\\nExcerpt: Lawmakers have forgotten sensible kitchen table-style budgeting, he says, moving from crisis to crisis, governing by continuing resolution. “Congress hasn’t completed all 12 regular spending bills on time since 1997.\\n\\n[4] The federal budget process | USAGov\\nURL: https://www.usa.gov/federal-budget-process\\nExcerpt: Learn about the federal government’s budget process, from the president’s budget plan to Congress’s work creating funding bills for the president to sign.\\n\\n[5] thoughtco.com/powers-of-the-united-states-congress-3322280\\nURL: https://www.thoughtco.com/powers-of-the-united-states-congress-3322280\\nExcerpt: Congress also has extensive powers over financial and budgetary issues.\\n\\n[6] Congress Passes and President Trump Signs into Law Year-Long...\\nURL: https://nlihc.org/resource/congress-passes-and-president-trump-signs-law-year-long-stopgap-funding-bill-underfunding\\nExcerpt: Congress passed and President Donald Trump signed into law a year-long stopgap funding bill, known as a continuing resolution (CR), to extend funding for the federal government through September.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"According to historical records from the Congressional Research Service (CRS) and the Government Accountability Office (GAO), the US Congress has not passed all of its regular annual appropriations bills on time (prior to the October 1 start of the fiscal year) since Fiscal Year 1997 (which was enacted in late September 1996). Since FY 1998, Congress has consistently failed to meet the October 1 deadline for all individual regular appropriations bills, instead relying on temporary continuing resolutions (CRs) or late-enacted omnibus spending packages to keep the government funded.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+        "US Congress passed no budget on time since 1997",
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_apportionment",
+          "title": "United States congressional apportionment - Wikipedia",
+          "snippet": "United States congressional apportionment is the process[1] by which seats in the United States House of Representatives are distributed among the 50 states according to the most recent decennial census mandated by the United States Constitution."
+        },
+        {
+          "url": "https://www.govtrack.us/congress/members/TN",
+          "title": "govtrack.us/congress/members/TN",
+          "snippet": "Although this map based on 2022 congressional districts is still the correct..."
+        },
+        {
+          "url": "https://www.washingtontimes.com/news/2013/sep/24/inside-the-beltway-observations-du-jour/",
+          "title": "Inside the Beltway: Observations du jour - Washington Times",
+          "snippet": "Lawmakers have forgotten sensible kitchen table-style budgeting, he says, moving from crisis to crisis, governing by continuing resolution. “Congress hasn’t completed all 12 regular spending bills on time since 1997."
+        },
+        {
+          "url": "https://www.usa.gov/federal-budget-process",
+          "title": "The federal budget process | USAGov",
+          "snippet": "Learn about the federal government’s budget process, from the president’s budget plan to Congress’s work creating funding bills for the president to sign."
+        },
+        {
+          "url": "https://www.thoughtco.com/powers-of-the-united-states-congress-3322280",
+          "title": "thoughtco.com/powers-of-the-united-states-congress-3322280",
+          "snippet": "Congress also has extensive powers over financial and budgetary issues."
+        },
+        {
+          "url": "https://nlihc.org/resource/congress-passes-and-president-trump-signs-law-year-long-stopgap-funding-bill-underfunding",
+          "title": "Congress Passes and President Trump Signs into Law Year-Long...",
+          "snippet": "Congress passed and President Donald Trump signed into law a year-long stopgap funding bill, known as a continuing resolution (CR), to extend funding for the federal government through September."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}

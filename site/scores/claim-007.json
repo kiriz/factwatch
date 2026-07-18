@@ -3,25 +3,41 @@
   "claim_id": "claim-007",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-07-10T09:33:09Z",
+  "last_checked_at": "2026-07-18T07:42:50Z",
   "last_changed_at": "2026-06-04T01:03:50Z",
-  "run_id": "run-2026-07-10T092606Z",
+  "run_id": "run-2026-07-18T074120Z",
   "sources": [
+    {
+      "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
+      "title": "Fact-check: The Great Wall of China is the only man-made...",
+      "domain": "consensise.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The total length of the Great Wall, including all its components, is approximately 13,171 miles."
+    },
     {
       "url": "https://greatwalltravelguide.com/great-wall-facts/",
       "title": "Category: Great Wall Facts - Great Wall of China Travel Guide",
       "domain": "greatwalltravelguide.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Discover essential facts about the Great Wall of China, including its length, sections, construction, and"
+      "excerpt": "For decades, a popular myth has claimed that the Great Wall of China is the"
     },
     {
-      "url": "https://www.linkedin.com/pulse/common-misconceptions-unveiling-truth-behind-commonly-gokhan-unal-q5o0f",
-      "title": "Common Misconceptions: Unveiling the Truth Behind Commonly Held...",
-      "domain": "linkedin.com",
+      "url": "https://www.yahoo.com/lifestyle/step-travel-6-beautiful-stairways-205634250.html",
+      "title": "Step Up Your Travel: Here Are 6 Beautiful Stairways From Around The...",
+      "domain": "yahoo.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "5. Misconception: \"The Great Wall of China is the Only Man-Made Object Visible from Space\"."
+      "excerpt": "Just along one 26-mile stretch — the official course of the Great Wall of China"
+    },
+    {
+      "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
+      "title": "Did You Know? The Great Wall Isn't Visible From Space With the...",
+      "domain": "aibrainbites.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands"
     },
     {
       "url": "https://popsci.blog/great-wall-china-satellite-picture-myth",
@@ -29,34 +45,18 @@
       "domain": "popsci.blog",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The persistent myth that the Great Wall of China is the only man-made structure visible"
+      "excerpt": "The Great Wall from Space: Debunking the Naked-Eye Myth.The persistent myth that the Great Wall"
     },
     {
-      "url": "https://jeniferclark1.medium.com/30-surprising-facts-that-will-make-you-go-whoa-3c5c4b5e1aa",
-      "title": "30 Surprising Facts That Will Make You Go ‘Whoa | Medium",
-      "domain": "jeniferclark1.medium.com",
+      "url": "https://infofact.org/blog/common-misconceptions-debunked-surprising-facts",
+      "title": "Common Misconceptions Debunked: Surprising Facts Many People...",
+      "domain": "infofact.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Did you know that the Great Wall of China is the only man-made structure visible"
-    },
-    {
-      "url": "https://smarterwatches.net/embracing-the-future-how-technology-is-reshaping-our-lifestyle/",
-      "title": "Embracing the Future: How Technology is Reshaping Our Lifestyle...",
-      "domain": "smarterwatches.net",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "4. The Great Wall of China is the only man-made structure visible from space with"
-    },
-    {
-      "url": "https://sites.uni.edu/harton/st1.pptx",
-      "title": "Special Topics in Social Psychology Influence Introductions Your name...",
-      "domain": "sites.uni.edu",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The Great Wall of China is the only man-made structure visible from space with the"
+      "excerpt": "The Great Wall of China: Visible from Space? A long-standing claim, often repeated in popular"
     }
   ],
-  "reasoning": "The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth. According to NASA and reports from numerous astronauts (including China's own Yang Liwei), the Great Wall is virtually invisible to the naked eye from Low Earth Orbit (LEO) because it is narrow (generally less than 10 meters wide) and constructed of materials that closely match the color of the surrounding terrain. Conversely, other human-made structures, such as highways, airports, large dams, and cities (especially when illuminated at night), are visible from space.",
+  "reasoning": "The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth that has been thoroughly debunked by astronauts and space agencies, including NASA. Due to its narrow width (averaging only 6 to 9 meters) and the fact that its building materials closely match the color and texture of the surrounding landscape, the Great Wall is not visible to the naked eye from low Earth orbit. In fact, China's own first astronaut, Yang Liwei, confirmed he could not see it during his spaceflight. Furthermore, other man-made structures with higher contrast and larger footprints—such as major highways, airports, dams, and cities at night—are actually visible from space, making the claim false on both counts.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -93,6 +93,12 @@
       "confidence": 100,
       "checked_at": "2026-07-03T08:57:23Z",
       "run_id": "run-2026-07-03T085546Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-07-10T09:33:09Z",
+      "run_id": "run-2026-07-10T092606Z"
     }
   ],
   "agent_flags": {
@@ -103,5 +109,5 @@
   },
   "title": "Great Wall of China visible from space",
   "category": "history",
-  "trending_score": 0
+  "trending_score": 10
 }

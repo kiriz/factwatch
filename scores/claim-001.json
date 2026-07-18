@@ -3,9 +3,9 @@
   "claim_id": "claim-001",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-07-10T09:28:59Z",
+  "last_checked_at": "2026-07-18T07:41:42Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-07-10T092606Z",
+  "run_id": "run-2026-07-18T074120Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "2 weeks ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
+      "excerpt": "3 weeks ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
     },
     {
       "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
@@ -21,15 +21,7 @@
       "domain": "climate.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "October 18, 2022 - In the 2020 Arctic Report Card, experts reported that the average"
-    },
-    {
-      "url": "https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979",
-      "title": "Satellites record second lowest Arctic sea ice extent since 1979",
-      "domain": "unep.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice"
+      "excerpt": "October 18, 2022 - The amount of sea ice that survives the Arctic summer has"
     },
     {
       "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
@@ -38,6 +30,14 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has"
+    },
+    {
+      "url": "https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979",
+      "title": "Satellites record second lowest Arctic sea ice extent since 1979",
+      "domain": "unep.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice"
     },
     {
       "url": "https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era",
@@ -56,7 +56,7 @@
       "excerpt": "April 22, 2024 - Since the first full year of satellite records in 1979, the"
     }
   ],
-  "reasoning": "Data from scientific agencies such as NOAA, NASA, NSIDC, and the European Environment Agency consistently show that Arctic sea ice has experienced a statistically significant decline since continuous satellite monitoring began in 1979. This decline is evident in both the overall ice extent—particularly the summer minimum in September—as well as the thickness and age of the ice, as multi-year ice is increasingly replaced by thinner, seasonal first-year ice.",
+  "reasoning": "Multiple authoritative scientific organizations, including NOAA, Copernicus, the European Environment Agency (EEA), and the National Snow and Ice Data Center (NSIDC), confirm that Arctic sea ice has declined significantly since continuous satellite observations began in 1979. According to NOAA, the amount of summer sea ice has decreased at a rate of approximately 13% per decade. Furthermore, observations show that the Arctic is losing older, thicker multi-year ice, leaving behind younger and thinner first-year ice that is more vulnerable to melting.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -99,6 +99,12 @@
       "confidence": 100,
       "checked_at": "2026-07-03T08:56:10Z",
       "run_id": "run-2026-07-03T085546Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-10T09:28:59Z",
+      "run_id": "run-2026-07-10T092606Z"
     }
   ],
   "agent_flags": {

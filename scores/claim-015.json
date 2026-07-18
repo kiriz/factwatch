@@ -2,12 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-015",
   "verdict": "TRUE",
-  "confidence": 95,
-  "last_checked_at": "2026-07-10T09:37:18Z",
+  "confidence": 100,
+  "last_checked_at": "2026-07-18T07:44:44Z",
   "last_changed_at": "2026-06-09T23:45:43Z",
-  "run_id": "run-2026-07-10T092606Z",
-  "sources": [],
-  "reasoning": "The claim is historically accurate:\n1. In March 2016, Google DeepMind's AI program AlphaGo played a five-game match against Lee Sedol, one of the greatest Go players of the modern era (holding 18 international titles and widely recognized as the world's top player of his generation).\n2. AlphaGo won the match 4 games to 1, with Lee Sedol winning only the fourth game.\n3. Prior to AlphaGo's breakthrough, AI researchers and Go experts widely believed that a computer program defeating a top human professional was at least a decade away, making this achievement \"a decade ahead of schedule.\" AlphaGo achieved this milestone by combining Monte Carlo tree search with deep neural networks, a significant departure from the brute-force search methods previously used in chess-playing computers like Deep Blue.",
+  "run_id": "run-2026-07-18T074120Z",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+      "title": "AlphaGo versus Lee Sedol - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "AlphaGo versus Lee Sedol, also known as the DeepMind Challenge Match, was a five-game Go"
+    },
+    {
+      "url": "https://medium.com/@evlabs/how-ai-beat-the-world-champion-at-the-game-of-go-47d92f7197b4",
+      "title": "How AI beat the Go world champion | by Escape Velocity... | Medium",
+      "domain": "medium.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "In 2016, an AI algorithm called AlphaGo defeated Lee Sedol, the world champion of the"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest",
+      "title": "Google's AlphaGo AI defeats human in first game of Go contest",
+      "domain": "theguardian.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The world champion at Go – an ancient Chinese board game – looked nervous. His"
+    },
+    {
+      "url": "https://vitalab.github.io/article/2020/11/19/AlphaMuGoZero.html",
+      "title": "AlphaGo/AlphaGoZero/AlphaZero/MuZero: Mastering games using...",
+      "domain": "vitalab.github.io",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "AlphaGo defeated the Go champion Lee Sedol in 2016 in a best-of-five tournament. Since then,"
+    },
+    {
+      "url": "https://deepmind.google/research/alphago/",
+      "title": "AlphaGo — Google DeepMind",
+      "domain": "deepmind.google",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "AlphaGo mastered the ancient game of Go, defeated a Go world champion, and inspired a"
+    },
+    {
+      "url": "https://www.fastcompany.com/90402503/the-10-most-important-moments-in-ai-so-far",
+      "title": "The 10 most important moments in AI (so far) - Fast Company",
+      "domain": "fastcompany.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "10. AlphaGo Defeats human Go champion (2016). Back in 2013, researchers at a British startup"
+    }
+  ],
+  "reasoning": "In March 2016, Google DeepMind's artificial intelligence program, AlphaGo, defeated Lee Sedol—a legendary 9-dan professional Go player and 18-time world champion—by a score of 4 games to 1 in a historic five-game match. Prior to AlphaGo's success (which first became public when it defeated European champion Fan Hui in late 2015), the consensus among AI researchers and Go experts was that a computer defeating a top-tier human professional Go player was at least a decade away, making this achievement about ten years ahead of schedule.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -44,6 +93,12 @@
       "confidence": 100,
       "checked_at": "2026-07-03T08:59:15Z",
       "run_id": "run-2026-07-03T085546Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-07-10T09:37:18Z",
+      "run_id": "run-2026-07-10T092606Z"
     }
   ],
   "agent_flags": {
@@ -54,5 +109,5 @@
   },
   "title": "AlphaGo defeated the world Go champion in 2016",
   "category": "technology",
-  "trending_score": 0
+  "trending_score": 10
 }

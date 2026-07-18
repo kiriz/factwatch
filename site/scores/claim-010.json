@@ -2,12 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-010",
   "verdict": "TRUE",
-  "confidence": 85,
-  "last_checked_at": "2026-07-10T09:34:37Z",
+  "confidence": 95,
+  "last_checked_at": "2026-07-18T07:43:33Z",
   "last_changed_at": "2026-06-09T23:44:37Z",
-  "run_id": "run-2026-07-10T092606Z",
-  "sources": [],
-  "reasoning": "According to the Cambridge Bitcoin Electricity Consumption Index (CBECI) developed by the Cambridge Centre for Alternative Finance (CCAF), Bitcoin's annualized electricity consumption is estimated to be between 120 TWh and 160 TWh (depending on mining difficulty and market conditions). In comparison, data from the International Energy Agency (IEA) indicates that Argentina's annual electricity consumption is approximately 130 TWh. Consequently, Bitcoin's annual electricity usage exceeds that of Argentina, as well as several other mid-sized nations.",
+  "run_id": "run-2026-07-18T074120Z",
+  "sources": [
+    {
+      "url": "https://www.bbc.com/news/technology-56012952",
+      "title": "Bitcoin consumes 'more electricity than Argentina'",
+      "domain": "bbc.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests."
+    },
+    {
+      "url": "https://www.bbc.co.uk/news/technology-56012952",
+      "title": "Bitcoin consumes 'more electricity than Argentina' - BBC News",
+      "domain": "bbc.co.uk",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests."
+    },
+    {
+      "url": "https://uk.finance.yahoo.com/news/bitcoin-cryptocurrency-consumes-more-electricity-than-argentina-140323187.html",
+      "title": "Bitcoin consumes more electricity than Argentina, UAE, and the...",
+      "domain": "uk.finance.yahoo.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "If Bitcoin (BTC-USD) were a country, it would be in the top 30 energy users"
+    },
+    {
+      "url": "https://hackaday.com/2021/03/03/what-uses-more-power-than-argentina-but-doesnt-dance-the-tango/",
+      "title": "What Uses More Power Than Argentina But... | Hackaday",
+      "domain": "hackaday.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "It’s usual to hear criticism of Bitcoin for its volatility or its sometime association with"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UL8OsZTnNPM",
+      "title": "Bitcoin uses more electricity annually than the whole of Argentina...",
+      "domain": "youtube.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "welcome back to U i E TV channel please subscribe to our channel for further"
+    },
+    {
+      "url": "https://www.mensxp.com/technology/hacks/86020-mining-bitcoins-uses-more-electricity-than-argentina.html",
+      "title": "Mining Bitcoins Uses More Electricity Than Argentina & We Wonder...",
+      "domain": "mensxp.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "“Rising bitcoin prices make mining more attractive, as the potential reward increases in value. As"
+    }
+  ],
+  "reasoning": "Analysis from the Cambridge Bitcoin Electricity Consumption Index (CBECI) confirms that Bitcoin's annualized electricity consumption (frequently estimated between 120 TWh and 160 TWh in recent years) exceeds the total annual electricity consumption of entire countries, including Argentina (which consumes approximately 125 TWh annually). This comparison has been widely reported by reputable news outlets such as the BBC, citing data from Cambridge University.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -44,6 +93,12 @@
       "confidence": 95,
       "checked_at": "2026-07-03T08:58:03Z",
       "run_id": "run-2026-07-03T085546Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 85,
+      "checked_at": "2026-07-10T09:34:37Z",
+      "run_id": "run-2026-07-10T092606Z"
     }
   ],
   "agent_flags": {
