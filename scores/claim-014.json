@@ -3,9 +3,9 @@
   "claim_id": "claim-014",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-07-11T07:48:37Z",
+  "last_checked_at": "2026-07-19T08:09:15Z",
   "last_changed_at": "2026-06-09T23:47:39Z",
-  "run_id": "run-2026-07-11T074726Z",
+  "run_id": "run-2026-07-19T080816Z",
   "sources": [
     {
       "url": "https://www.iflscience.com/the-moon-is-moving-away-from-earth-at-a-rate-of-about-38-centimeters-per-year-will-it-ever-drift-apart-80834",
@@ -16,12 +16,28 @@
       "excerpt": "September 16, 2025 - By aiming lasers at the reflector ... (1.2 inches). Taking repeated"
     },
     {
+      "url": "https://www.businesstoday.in/latest/trends/photo/the-moon-is-drifting-away-from-earth-and-the-reason-starts-in-our-oceans-542586-2026-07-13",
+      "title": "The Moon is drifting away from Earth — and the reason starts in our oceans",
+      "domain": "businesstoday.in",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "6 days ago - The Moon may look fixed in the night sky, but it"
+    },
+    {
+      "url": "https://spacedaily.com/j-v-the-moon-is-drifting-away-from-earth-by-about-38-centimetres-a-year-measured-to-the-millimetre-by-bouncing-laser-light-off-mirrors-the-apollo-astronauts-left-sitting-in-the-lunar-dust-more-than-ha/",
+      "title": "The moon is drifting away from Earth by about 3.8 centimetres a year — measured to the millimetre by bouncing laser light off mirrors the Apollo astronauts left sitting in the lunar dust more than half a century ago",
+      "domain": "spacedaily.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "4 days ago - The corner-cube reflectors Buzz ... laser pulses fired from Earth —"
+    },
+    {
       "url": "https://www.mid-day.com/news/world-news/article/why-the-moon-is-drifting-away-from-earth-23637981",
       "title": "Why the Moon is drifting away from Earth",
       "domain": "mid-day.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "1 week ago - Over the past 250 years, the Moon has moved about 31"
+      "excerpt": "2 weeks ago - Over the past 250 years, the Moon has moved about 31"
     },
     {
       "url": "https://www.quora.com/The-moon-is-moving-3-8-cm-away-from-Earth-every-year-Isnt-this-concerning",
@@ -38,25 +54,9 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "March 1, 2013 - Answer(s): Laser ranging measurements of the change in the distance from"
-    },
-    {
-      "url": "https://www.reddit.com/r/todayilearned/comments/1661hc8/til_that_the_moon_moves_about_38_cm_farther_away/",
-      "title": "r/todayilearned on Reddit: TIL that the moon moves about 3.8 cm farther away from Earth every year, which means that one day there will be no more total solar eclipses.",
-      "domain": "reddit.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "August 31, 2023 - With the moon moving away from ... away from Earth at"
-    },
-    {
-      "url": "https://dailygalaxy.com/2026/02/moon-moving-away-changing-earth-rotation/",
-      "title": "NASA Confirms the Moon Is Moving Away 3.8 Centimeters a Year, And It’s Gradually Changing Earth’s Rotation",
-      "domain": "dailygalaxy.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "February 28, 2026 - “One of the biggest revelations is that the Earth and Moon"
     }
   ],
-  "reasoning": "Data from the Lunar Laser Ranging experiment (which measures the round-trip travel time of laser light bounced off retroreflectors left on the Moon by Apollo astronauts) confirms that the Moon is currently receding from Earth at a rate of approximately 3.78 to 3.8 centimeters (about 1.5 inches) per year. This gradual retreat is caused by tidal friction: the gravitational pull of the Moon creates tidal bulges on Earth, and because Earth rotates faster than the Moon orbits, these bulges \"pull\" the Moon forward in its orbit, transferring angular momentum and pushing it into a higher, wider orbit.",
+  "reasoning": "Scientific measurements obtained from the Lunar Laser Ranging Experiment—which bounces lasers off retroreflectors left on the Moon by the Apollo missions—confirm that the Moon is receding from Earth at a rate of approximately 3.78 to 3.8 centimeters (about 1.5 inches) per year. This gradual drift is caused by tidal friction, which transfers angular momentum from the Earth's rotation to the Moon's orbit, causing the Moon to climb into a slightly higher, wider orbit over time.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -93,6 +93,12 @@
       "confidence": 100,
       "checked_at": "2026-07-03T09:01:11Z",
       "run_id": "run-2026-07-03T085546Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-11T07:48:37Z",
+      "run_id": "run-2026-07-11T074726Z"
     }
   ],
   "agent_flags": {

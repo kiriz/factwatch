@@ -3,60 +3,60 @@
   "claim_id": "claim-008",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-07-11T07:47:57Z",
+  "last_checked_at": "2026-07-19T08:08:37Z",
   "last_changed_at": "2026-06-09T23:47:06Z",
-  "run_id": "run-2026-07-11T074726Z",
+  "run_id": "run-2026-07-19T080816Z",
   "sources": [
     {
-      "url": "https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
-      "title": "Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood",
-      "domain": "smithsonianmag.com",
+      "url": "https://wowtoknow.com/octopuses-have-three-hearts-and-blue-blood/",
+      "title": "Octopuses Have Three Hearts and Blue Blood – Here’s Why ...",
+      "domain": "wowtoknow.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 1, 2024 - To survive in the deep ocean, ... human blood. Whereas our"
+      "excerpt": "Mar 29, 2025 · Octopuses have not one but three hearts – and their blood"
     },
     {
-      "url": "https://www.nhm.ac.uk/discover/octopuses-keep-surprising-us-here-are-eight-examples-how.html",
-      "title": "Octopuses keep surprising us - here are eight examples how | Natural History Museum",
-      "domain": "nhm.ac.uk",
+      "url": "https://www.youtube.com/watch?v=C0Wq3pQdXKg",
+      "title": "Octopuses have three hearts and their blood is blueOctopuses Have Three Hearts and Nine Brains—Here’s WhyOctopus Hearts: How Many Hearts Does An Octopus Have?Did You Know? Octopuses Have Three Hearts & Blue Blood!Did You Know Octopus Have Three Hearts And Blue Blood? These ...The Marvel of the Deep: Why Octopuses Have Three Hearts and ...",
+      "domain": "youtube.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "April 24, 2026 - If the blood (called haemolymph in invertebrates) becomes deoxygenated – when"
+      "excerpt": "Octopuses have three hearts and their blood is blue #shorts Cozy Natural Sound 64 subscribers"
     },
     {
-      "url": "https://www.newscientist.com/question/many-hearts-octopus/",
-      "title": "How many hearts does an octopus have? | New Scientist",
-      "domain": "newscientist.com",
+      "url": "https://discoverwildscience.com/octopuses-have-three-hearts-and-nine-brains-heres-why-4-297069/",
+      "title": "Octopuses Have Three Hearts and Nine Brains—Here’s Why",
+      "domain": "discoverwildscience.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Octopuses have three hearts, which is partly a consequence of having blue blood. Their two"
+      "excerpt": "Apr 27, 2026 · Discover why octopuses have three hearts and nine brains, and how"
+    },
+    {
+      "url": "https://www.scienceabc.com/nature/animals/why-do-octopuses-have-three-hearts",
+      "title": "Octopus Hearts: How Many Hearts Does An Octopus Have?",
+      "domain": "scienceabc.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Feb 29, 2020 · Octopuses have three hearts: two branchial hearts pump blood through the"
+    },
+    {
+      "url": "https://www.biologynotes.site/did-you-know-octopuses-have-three-hearts-blue-blood/",
+      "title": "Did You Know? Octopuses Have Three Hearts & Blue Blood!",
+      "domain": "biologynotes.site",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Feb 11, 2025 · Why Do Octopuses Have Three Hearts? ️ ️ ️ Most animals,"
     },
     {
       "url": "https://thesavemovement.org/did-you-know-octopus-have-three-hearts-and-blue-blood-these-magnificent-marine-mollusks-are-being-exploited-and-need-our-help/",
-      "title": "Did You Know Octopus Have Three Hearts And Blue Blood? These Magnificent Marine Mollusks Are Being Exploited And Need Our Help - Animal Save Movement",
+      "title": "Did You Know Octopus Have Three Hearts And Blue Blood? These ...",
       "domain": "thesavemovement.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 24, 2025 - With three functioning hearts, ... to the rest of their body."
-    },
-    {
-      "url": "https://www.reddit.com/r/Damnthatsinteresting/comments/1cn5gdl/an_octopus_has_three_hearts_and_the_colour_of/",
-      "title": "r/Damnthatsinteresting on Reddit: An Octopus has three hearts and the colour of their blood is blue.They have eight arms and each arm contains its own 'mini brain'",
-      "domain": "reddit.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "May 8, 2024 - Octopuses have three hearts, blue blood, and nine brains, with each"
-    },
-    {
-      "url": "https://www.sciencefocus.com/nature/why-does-an-octopus-have-more-than-one-heart",
-      "title": "How many hearts does an octopus have? - BBC Science Focus Magazine",
-      "domain": "sciencefocus.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "July 12, 2023 - Unlike vertebrates that have iron-rich haemoglobin packed into red blood cells,"
+      "excerpt": "May 24, 2025 · Octopuses are sentient beings that want to live in freedom and"
     }
   ],
-  "reasoning": "The claim is scientifically accurate. Reliable scientific and educational sources, including the Smithsonian Institution, the Natural History Museum, and New Scientist, confirm that octopuses possess three hearts and blue blood. Two of their hearts (the branchial hearts) pump blood through the gills to collect oxygen, while the third, central heart (the systemic heart) circulates this oxygenated blood to the rest of the body. Their blood is blue due to the presence of a copper-rich protein called hemocyanin (instead of the iron-based hemoglobin found in humans), which turns blue when oxygenated and becomes clear or colorless when deoxygenated.",
+  "reasoning": "Scientific evidence confirms that octopuses have three hearts and blue blood. They possess two branchial hearts, which pump deoxygenated blood to the gills to absorb oxygen, and one systemic heart, which circulates the oxygenated blood to the rest of the body. Their blood is blue because it relies on a copper-based protein called hemocyanin to transport oxygen (unlike the iron-based hemoglobin in human blood). When hemocyanin binds with oxygen, it turns blue; when it is deoxygenated, the blood becomes colorless.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -93,6 +93,12 @@
       "confidence": 100,
       "checked_at": "2026-07-03T09:00:39Z",
       "run_id": "run-2026-07-03T085546Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-11T07:47:57Z",
+      "run_id": "run-2026-07-11T074726Z"
     }
   ],
   "agent_flags": {

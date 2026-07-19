@@ -1,0 +1,223 @@
+{
+  "run_id": "run-2026-07-19T080816Z",
+  "started_at": "2026-07-19T08:08:16Z",
+  "finished_at": "2026-07-19T08:09:16Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-008",
+      "claim_title": "Octopuses have three hearts and blue blood",
+      "claim_text": "\"Octopuses have three hearts and their blood is blue.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Scientific evidence confirms that octopuses have three hearts and blue blood",
+        "They possess two branchial hearts, which pump deoxygenated blood to the gills to absorb oxygen, and one systemic heart, which circulates the oxygenated blood to the rest of the body",
+        "Their blood is blue because it relies on a copper-based protein called hemocyanin to transport oxygen (unlike the iron-based hemoglobin in human blood)",
+        "When hemocyanin binds with oxygen, it turns blue; when it is deoxygenated, the blood becomes colorless."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Octopuses have three hearts and their blood is blue.\\\"\",\n  \"verification_notes\": \"Check marine biology sources. Verify the function of each heart (two branchial hearts, one systemic). Confirm the copper-based hemocyanin mechanism that makes blood blue. Check whether the blood turns colorless when deoxygenated.\",\n  \"search_results\": \"[1] Octopuses Have Three Hearts and Blue Blood – Here’s Why ...\\nURL: https://wowtoknow.com/octopuses-have-three-hearts-and-blue-blood/\\nExcerpt: Mar 29, 2025 · Octopuses have not one but three hearts – and their blood is blue. Discover how this works, why it evolved, and what it says about these alien-like creatures.\\n\\n[2] Octopuses have three hearts and their blood is blueOctopuses Have Three Hearts and Nine Brains—Here’s WhyOctopus Hearts: How Many Hearts Does An Octopus Have?Did You Know? Octopuses Have Three Hearts & Blue Blood!Did You Know Octopus Have Three Hearts And Blue Blood? These ...The Marvel of the Deep: Why Octopuses Have Three Hearts and ...\\nURL: https://www.youtube.com/watch?v=C0Wq3pQdXKg\\nExcerpt: Octopuses have three hearts and their blood is blue #shorts Cozy Natural Sound 64 subscribers No views 4 minutes ago Apr 27, 2026 · Discover why octopuses have three hearts and nine brains, and how these bizarre adaptations make them some of the ocean’s smartest creatures. Feb 29, 2020 · Octopuses h\\n\\n[3] Octopuses Have Three Hearts and Nine Brains—Here’s Why\\nURL: https://discoverwildscience.com/octopuses-have-three-hearts-and-nine-brains-heres-why-4-297069/\\nExcerpt: Apr 27, 2026 · Discover why octopuses have three hearts and nine brains, and how these bizarre adaptations make them some of the ocean’s smartest creatures.\\n\\n[4] Octopus Hearts: How Many Hearts Does An Octopus Have?\\nURL: https://www.scienceabc.com/nature/animals/why-do-octopuses-have-three-hearts\\nExcerpt: Feb 29, 2020 · Octopuses have three hearts: two branchial hearts pump blood through the gills, while one systemic heart circulates it to the body. Their blue, copper-based hemocyanin blood requires this extra pumping power.\\n\\n[5] Did You Know? Octopuses Have Three Hearts & Blue Blood!\\nURL: https://www.biologynotes.site/did-you-know-octopuses-have-three-hearts-blue-blood/\\nExcerpt: Feb 11, 2025 · Why Do Octopuses Have Three Hearts? ️ ️ ️ Most animals, including humans, get by just fine with one heart. So why does an octopus need three? The answer lies in how their body functions underwater. 🔹 Two branchial hearts – These pump blood to the gills, where oxygen is absorbed from t\\n\\n[6] Did You Know Octopus Have Three Hearts And Blue Blood? These ...\\nURL: https://thesavemovement.org/did-you-know-octopus-have-three-hearts-and-blue-blood-these-magnificent-marine-mollusks-are-being-exploited-and-need-our-help/\\nExcerpt: May 24, 2025 · Octopuses are sentient beings that want to live in freedom and deserve so much better than a life in captivity, whether it’s on display in a tank or stuck on a factory farm. Keep reading to learn how incredible these creatures are and why they need our help.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"Scientific evidence confirms that octopuses have three hearts and blue blood. They possess two branchial hearts, which pump deoxygenated blood to the gills to absorb oxygen, and one systemic heart, which circulates the oxygenated blood to the rest of the body. Their blood is blue because it relies on a copper-based protein called hemocyanin to transport oxygen (unlike the iron-based hemoglobin in human blood). When hemocyanin binds with oxygen, it turns blue; when it is deoxygenated, the blood becomes colorless.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Octopuses have three hearts and their blood is blue.\"",
+        "Octopuses have three hearts and blue blood",
+        "\"Octopuses have three hearts and their blood is blue.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://wowtoknow.com/octopuses-have-three-hearts-and-blue-blood/",
+          "title": "Octopuses Have Three Hearts and Blue Blood – Here’s Why ...",
+          "snippet": "Mar 29, 2025 · Octopuses have not one but three hearts – and their blood is blue. Discover how this works, why it evolved, and what it says about these alien-like creatures."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=C0Wq3pQdXKg",
+          "title": "Octopuses have three hearts and their blood is blueOctopuses Have Three Hearts and Nine Brains—Here’s WhyOctopus Hearts: How Many Hearts Does An Octopus Have?Did You Know? Octopuses Have Three Hearts & Blue Blood!Did You Know Octopus Have Three Hearts And Blue Blood? These ...The Marvel of the Deep: Why Octopuses Have Three Hearts and ...",
+          "snippet": "Octopuses have three hearts and their blood is blue #shorts Cozy Natural Sound 64 subscribers No views 4 minutes ago Apr 27, 2026 · Discover why octopuses have three hearts and nine brains, and how these bizarre adaptations make them some of the ocean’s smartest creatures. Feb 29, 2020 · Octopuses have three hearts: two branchial hearts pump blood through the gills, while one systemic heart circulates it to the body. Their blue, copper-based hemocyanin blood requires this extra pumping power. Feb 11, 2025 · Why Do Octopuses Have Three Hearts? ️ ️ ️ Most animals, including humans, get by just fine with one heart. So why does an octopus need three? The answer lies in how their body functions underwater. 🔹 Two branchial hearts – These pump blood to the gills, where oxygen is absorbed from the water. 🔹 One systemic heart – This pumps oxygen-rich blood to the rest of the body ... May 24, 2025 · Octopuses are sentient beings that want to live in freedom and deserve so much better than a life in captivity, whether it’s on display in a tank or stuck on a factory farm. Keep reading to learn how incredible these creatures are and why they need our help. Mar 12, 2025 · The octopus is a paradox. It’s highly intelligent yet short-lived, with some species living only a year or two. It’s a master of disguise but has no backbone—literally and figuratively. It has three hearts, but one stops working when it moves. And while its blue blood is an evolutionary marvel, it also limits endurance. Perhaps the most perplexing aspect is its intelligence. Octopuses ..."
+        },
+        {
+          "url": "https://discoverwildscience.com/octopuses-have-three-hearts-and-nine-brains-heres-why-4-297069/",
+          "title": "Octopuses Have Three Hearts and Nine Brains—Here’s Why",
+          "snippet": "Apr 27, 2026 · Discover why octopuses have three hearts and nine brains, and how these bizarre adaptations make them some of the ocean’s smartest creatures."
+        },
+        {
+          "url": "https://www.scienceabc.com/nature/animals/why-do-octopuses-have-three-hearts",
+          "title": "Octopus Hearts: How Many Hearts Does An Octopus Have?",
+          "snippet": "Feb 29, 2020 · Octopuses have three hearts: two branchial hearts pump blood through the gills, while one systemic heart circulates it to the body. Their blue, copper-based hemocyanin blood requires this extra pumping power."
+        },
+        {
+          "url": "https://www.biologynotes.site/did-you-know-octopuses-have-three-hearts-blue-blood/",
+          "title": "Did You Know? Octopuses Have Three Hearts & Blue Blood!",
+          "snippet": "Feb 11, 2025 · Why Do Octopuses Have Three Hearts? ️ ️ ️ Most animals, including humans, get by just fine with one heart. So why does an octopus need three? The answer lies in how their body functions underwater. 🔹 Two branchial hearts – These pump blood to the gills, where oxygen is absorbed from the water. 🔹 One systemic heart – This pumps oxygen-rich blood to the rest of the body ..."
+        },
+        {
+          "url": "https://thesavemovement.org/did-you-know-octopus-have-three-hearts-and-blue-blood-these-magnificent-marine-mollusks-are-being-exploited-and-need-our-help/",
+          "title": "Did You Know Octopus Have Three Hearts And Blue Blood? These ...",
+          "snippet": "May 24, 2025 · Octopuses are sentient beings that want to live in freedom and deserve so much better than a life in captivity, whether it’s on display in a tank or stuck on a factory farm. Keep reading to learn how incredible these creatures are and why they need our help."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim \"Lightning never strikes the same place twice\" is a well-known myth that is scientifically false",
+        "According to the National Weather Service (NWS), lightning frequently strikes the same location repeatedly, particularly if it is a tall, pointed, or isolated object",
+        "This occurs because lightning seeks the path of least electrical resistance to the ground",
+        "A prominent example is the Empire State Building in New York City, which is struck by lightning an average of 23 to 25 times every year."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Lightning never strikes the same place twice.\\\"\",\n  \"verification_notes\": \"Check National Weather Service and NOAA data on lightning strike patterns. Verify how many times the Empire State Building is struck per year. Explain the physics of why tall conductors are repeatedly targeted.\",\n  \"search_results\": \"[1] 'Lightning Never Strikes the Same Place Twice'... Or Does It?\\nURL: https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html\\nExcerpt: Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice.\\n\\n[2] Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL\\nURL: https://www.aol.com/news/why-lightning-never-strikes-same-174500436.html\\nExcerpt: Lightning is very good at striking the same place twice – you could even say that it's a special skill of lightning to hit the same place two (or even more!) times. The Empire State Building, for example, is hit on average 25 times per year, according to the National Weather Service.\\n\\n[3] Lightning never strikes (the same place) twice - Idioms by The Free...\\nURL: https://idioms.thefreedictionary.com/lightning+never+strikes+(the+same+place)+twice\\nExcerpt: The same highly unlikely thing never happens to the same person twice. Jill: I'm scared to drive ever since that truck hit my car. Alan: Don't worry.It's strange, but I feel safer since my apartment was robbed; I figure lightning never strikes the same place twice.\\n\\n[4] What Does Lightning Never Strikes The Same Place Twice Mean?\\nURL: https://writingexplained.org/idiom-dictionary/lightning-never-strikes-the-same-place-twice\\nExcerpt: lightning never strikes twice in the same place This idiom likely originated in the book Thrilling Adventures of the Prisoner of the Border, published in the year 1860 by P. Hamilton Myer.\\n\\n[5] Lightning Myths\\nURL: https://www.weather.gov/safety/lightning-myths\\nExcerpt: Myth: Lightning never strikes the same place twice. Fact: Lightning often strikes the same place repeatedly, especially if it's a tall, pointy, isolated object. The Empire State Building is hit an average of 23 times a year.\\n\\n[6] VOA Special English - 'Lightning Never Strikes the Same Place...\\nURL: https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html\\nExcerpt: You know, lightning never strikes twice!\\\" That probably will not make your head feel any better. And you can tell your friend that scientists. say that lightning can and will strike the same place twice. Whether for something good or bad, the underlying truth remains the same\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim \\\"Lightning never strikes the same place twice\\\" is a well-known myth that is scientifically false. According to the National Weather Service (NWS), lightning frequently strikes the same location repeatedly, particularly if it is a tall, pointed, or isolated object. This occurs because lightning seeks the path of least electrical resistance to the ground. A prominent example is the Empire State Building in New York City, which is struck by lightning an average of 23 to 25 times every year.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Lightning never strikes the same place twice.\"",
+        "Lightning never strikes the same place twice",
+        "\"Lightning never strikes the same place twice.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html",
+          "title": "'Lightning Never Strikes the Same Place Twice'... Or Does It?",
+          "snippet": "Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice."
+        },
+        {
+          "url": "https://www.aol.com/news/why-lightning-never-strikes-same-174500436.html",
+          "title": "Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL",
+          "snippet": "Lightning is very good at striking the same place twice – you could even say that it's a special skill of lightning to hit the same place two (or even more!) times. The Empire State Building, for example, is hit on average 25 times per year, according to the National Weather Service."
+        },
+        {
+          "url": "https://idioms.thefreedictionary.com/lightning+never+strikes+(the+same+place)+twice",
+          "title": "Lightning never strikes (the same place) twice - Idioms by The Free...",
+          "snippet": "The same highly unlikely thing never happens to the same person twice. Jill: I'm scared to drive ever since that truck hit my car. Alan: Don't worry.It's strange, but I feel safer since my apartment was robbed; I figure lightning never strikes the same place twice."
+        },
+        {
+          "url": "https://writingexplained.org/idiom-dictionary/lightning-never-strikes-the-same-place-twice",
+          "title": "What Does Lightning Never Strikes The Same Place Twice Mean?",
+          "snippet": "lightning never strikes twice in the same place This idiom likely originated in the book Thrilling Adventures of the Prisoner of the Border, published in the year 1860 by P. Hamilton Myer."
+        },
+        {
+          "url": "https://www.weather.gov/safety/lightning-myths",
+          "title": "Lightning Myths",
+          "snippet": "Myth: Lightning never strikes the same place twice. Fact: Lightning often strikes the same place repeatedly, especially if it's a tall, pointy, isolated object. The Empire State Building is hit an average of 23 times a year."
+        },
+        {
+          "url": "https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html",
+          "title": "VOA Special English - 'Lightning Never Strikes the Same Place...",
+          "snippet": "You know, lightning never strikes twice!\" That probably will not make your head feel any better. And you can tell your friend that scientists. say that lightning can and will strike the same place twice. Whether for something good or bad, the underlying truth remains the same"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Scientific measurements obtained from the Lunar Laser Ranging Experiment—which bounces lasers off retroreflectors left on the Moon by the Apollo missions—confirm that the Moon is receding from Earth at a rate of approximately 3.78 to 3.8 centimeters (about 1.5 inches) per year",
+        "This gradual drift is caused by tidal friction, which transfers angular momentum from the Earth's rotation to the Moon's orbit, causing the Moon to climb into a slightly higher, wider orbit over time."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\\\"\",\n  \"verification_notes\": \"Check NASA and Lunar Laser Ranging experiment data. Verify the mechanism (tidal friction transferring angular momentum). Confirm the rate is ~3.8 cm/year. Calculate implications: how long until the Moon is too far for total solar eclipses?\",\n  \"search_results\": \"[1] The Moon Is Moving Away From Earth At A Rate Of About 3.8 Centimeters Per Year. Will It Ever Drift Apart? | IFLScience\\nURL: https://www.iflscience.com/the-moon-is-moving-away-from-earth-at-a-rate-of-about-38-centimeters-per-year-will-it-ever-drift-apart-80834\\nExcerpt: September 16, 2025 - By aiming lasers at the reflector ... (1.2 inches). Taking repeated measurements showed us that the Moon is currently moving away from us at a rate of about 3.8 centimeters (1.5 inches) per year....\\n\\n[2] The Moon is drifting away from Earth — and the reason starts in our oceans\\nURL: https://www.businesstoday.in/latest/trends/photo/the-moon-is-drifting-away-from-earth-and-the-reason-starts-in-our-oceans-542586-2026-07-13\\nExcerpt: 6 days ago - The Moon may look fixed in the night sky, but it is slowly moving away from Earth. NASA says measurements show the Moon is receding at about 3.8 centimetres per year.\\n\\n[3] The moon is drifting away from Earth by about 3.8 centimetres a year — measured to the millimetre by bouncing laser light off mirrors the Apollo astronauts left sitting in the lunar dust more than half a century ago\\nURL: https://spacedaily.com/j-v-the-moon-is-drifting-away-from-earth-by-about-38-centimetres-a-year-measured-to-the-millimetre-by-bouncing-laser-light-off-mirrors-the-apollo-astronauts-left-sitting-in-the-lunar-dust-more-than-ha/\\nExcerpt: 4 days ago - The corner-cube reflectors Buzz ... laser pulses fired from Earth — and 57 years of measurements show our nearest neighbour is receding at exactly 3.8 centimetres a year, the rate a human fingernail grows....\\n\\n[4] Why the Moon is drifting away from Earth\\nURL: https://www.mid-day.com/news/world-news/article/why-the-moon-is-drifting-away-from-earth-23637981\\nExcerpt: 2 weeks ago - Over the past 250 years, the Moon has moved about 31 feet away from the Earth than it is now. It is currently drifting away from Earth at a rate of about 3.8 cm per year, which is coincidentally roughly the same speed at which human fingernails grow.\\n\\n[5] The moon is moving 3.8 cm away from Earth every year. Isn't this concerning? - Quora\\nURL: https://www.quora.com/The-moon-is-moving-3-8-cm-away-from-Earth-every-year-Isnt-this-concerning\\nExcerpt: Answer (1 of 47): No, it is actually wonderful. It can be used to confirm the age of the Earth, and the Mass Ratio gain of the Earth compared to the mass ratio gain of the Moon. The Mass Ratio is 81.30059122 to 1.0 if my back of the Napking calculations mean anything. The Earth thus has 81.3005...\\n\\n[6] What Happens as the Moon Moves Away from the Earth? – National Radio Astronomy Observatory\\nURL: https://public.nrao.edu/ask/what-happens-as-the-moon-moves-away-from-the-earth/\\nExcerpt: March 1, 2013 - Answer(s): Laser ranging measurements of the change in the distance from the Earth to the Moon tell us that the Moon is moving away from the Earth at a rate of about 3.78 cm per year.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"Scientific measurements obtained from the Lunar Laser Ranging Experiment—which bounces lasers off retroreflectors left on the Moon by the Apollo missions—confirm that the Moon is receding from Earth at a rate of approximately 3.78 to 3.8 centimeters (about 1.5 inches) per year. This gradual drift is caused by tidal friction, which transfers angular momentum from the Earth's rotation to the Moon's orbit, causing the Moon to climb into a slightly higher, wider orbit over time.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+        "The Moon is drifting away from Earth",
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.iflscience.com/the-moon-is-moving-away-from-earth-at-a-rate-of-about-38-centimeters-per-year-will-it-ever-drift-apart-80834",
+          "title": "The Moon Is Moving Away From Earth At A Rate Of About 3.8 Centimeters Per Year. Will It Ever Drift Apart? | IFLScience",
+          "snippet": "September 16, 2025 - By aiming lasers at the reflector ... (1.2 inches). Taking repeated measurements showed us that the Moon is currently moving away from us at a rate of about 3.8 centimeters (1.5 inches) per year...."
+        },
+        {
+          "url": "https://www.businesstoday.in/latest/trends/photo/the-moon-is-drifting-away-from-earth-and-the-reason-starts-in-our-oceans-542586-2026-07-13",
+          "title": "The Moon is drifting away from Earth — and the reason starts in our oceans",
+          "snippet": "6 days ago - The Moon may look fixed in the night sky, but it is slowly moving away from Earth. NASA says measurements show the Moon is receding at about 3.8 centimetres per year."
+        },
+        {
+          "url": "https://spacedaily.com/j-v-the-moon-is-drifting-away-from-earth-by-about-38-centimetres-a-year-measured-to-the-millimetre-by-bouncing-laser-light-off-mirrors-the-apollo-astronauts-left-sitting-in-the-lunar-dust-more-than-ha/",
+          "title": "The moon is drifting away from Earth by about 3.8 centimetres a year — measured to the millimetre by bouncing laser light off mirrors the Apollo astronauts left sitting in the lunar dust more than half a century ago",
+          "snippet": "4 days ago - The corner-cube reflectors Buzz ... laser pulses fired from Earth — and 57 years of measurements show our nearest neighbour is receding at exactly 3.8 centimetres a year, the rate a human fingernail grows...."
+        },
+        {
+          "url": "https://www.mid-day.com/news/world-news/article/why-the-moon-is-drifting-away-from-earth-23637981",
+          "title": "Why the Moon is drifting away from Earth",
+          "snippet": "2 weeks ago - Over the past 250 years, the Moon has moved about 31 feet away from the Earth than it is now. It is currently drifting away from Earth at a rate of about 3.8 cm per year, which is coincidentally roughly the same speed at which human fingernails grow."
+        },
+        {
+          "url": "https://www.quora.com/The-moon-is-moving-3-8-cm-away-from-Earth-every-year-Isnt-this-concerning",
+          "title": "The moon is moving 3.8 cm away from Earth every year. Isn't this concerning? - Quora",
+          "snippet": "Answer (1 of 47): No, it is actually wonderful. It can be used to confirm the age of the Earth, and the Mass Ratio gain of the Earth compared to the mass ratio gain of the Moon. The Mass Ratio is 81.30059122 to 1.0 if my back of the Napking calculations mean anything. The Earth thus has 81.3005..."
+        },
+        {
+          "url": "https://public.nrao.edu/ask/what-happens-as-the-moon-moves-away-from-the-earth/",
+          "title": "What Happens as the Moon Moves Away from the Earth? – National Radio Astronomy Observatory",
+          "snippet": "March 1, 2013 - Answer(s): Laser ranging measurements of the change in the distance from the Earth to the Moon tell us that the Moon is moving away from the Earth at a rate of about 3.78 cm per year."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}
