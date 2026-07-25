@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-007",
   "verdict": "FALSE",
-  "confidence": 100,
-  "last_checked_at": "2026-07-18T07:42:50Z",
+  "confidence": 95,
+  "last_checked_at": "2026-07-25T08:01:06Z",
   "last_changed_at": "2026-06-04T01:03:50Z",
-  "run_id": "run-2026-07-18T074120Z",
+  "run_id": "run-2026-07-25T075930Z",
   "sources": [
     {
       "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
@@ -56,7 +56,7 @@
       "excerpt": "The Great Wall of China: Visible from Space? A long-standing claim, often repeated in popular"
     }
   ],
-  "reasoning": "The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth that has been thoroughly debunked by astronauts and space agencies, including NASA. Due to its narrow width (averaging only 6 to 9 meters) and the fact that its building materials closely match the color and texture of the surrounding landscape, the Great Wall is not visible to the naked eye from low Earth orbit. In fact, China's own first astronaut, Yang Liwei, confirmed he could not see it during his spaceflight. Furthermore, other man-made structures with higher contrast and larger footprints—such as major highways, airports, dams, and cities at night—are actually visible from space, making the claim false on both counts.",
+  "reasoning": "The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth. NASA, astronaut testimonies (including China's first astronaut, Yang Liwei), and optical physics confirm that the Great Wall is not visible from low Earth orbit with the unaided eye. At only about 5 to 9 meters wide and constructed from local stone and earth, the wall blends in with the surrounding terrain and lacks sufficient visual contrast. In contrast, larger or higher-contrast man-made structures—such as major highways, large airport runways, large dams, greenhouse complexes, and city lights at night—can be seen from orbit under favorable conditions.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -99,6 +99,12 @@
       "confidence": 100,
       "checked_at": "2026-07-10T09:33:09Z",
       "run_id": "run-2026-07-10T092606Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-07-18T07:42:50Z",
+      "run_id": "run-2026-07-18T074120Z"
     }
   ],
   "agent_flags": {

@@ -2,19 +2,11 @@
   "schema_version": "1.0",
   "claim_id": "claim-005",
   "verdict": "TRUE",
-  "confidence": 100,
-  "last_checked_at": "2026-07-18T07:45:47Z",
+  "confidence": 95,
+  "last_checked_at": "2026-07-25T08:03:50Z",
   "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-07-18T074120Z",
+  "run_id": "run-2026-07-25T075930Z",
   "sources": [
-    {
-      "url": "https://en.wikipedia.org/wiki/United_States_congressional_apportionment",
-      "title": "United States congressional apportionment - Wikipedia",
-      "domain": "en.wikipedia.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "United States congressional apportionment is the process[1] by which seats in the United States House"
-    },
     {
       "url": "https://www.govtrack.us/congress/members/TN",
       "title": "govtrack.us/congress/members/TN",
@@ -24,12 +16,28 @@
       "excerpt": "Although this map based on 2022 congressional districts is still the correct..."
     },
     {
-      "url": "https://www.washingtontimes.com/news/2013/sep/24/inside-the-beltway-observations-du-jour/",
-      "title": "Inside the Beltway: Observations du jour - Washington Times",
-      "domain": "washingtontimes.com",
+      "url": "https://bioguide.congress.gov/search/bio/P000583",
+      "title": "bioguide.congress.gov/search/bio/P000583",
+      "domain": "bioguide.congress.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Lawmakers have forgotten sensible kitchen table-style budgeting, he says, moving from crisis to crisis, governing"
+      "excerpt": "Biographical Directory of the United States Congress: Ron Paul."
+    },
+    {
+      "url": "https://www.britannica.com/topic/Congress-of-the-United-States",
+      "title": "Congress of the United States | Members, Seats, Term... | Britannica",
+      "domain": "britannica.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Of common interest to both houses of Congress are also such matters as government printing,"
+    },
+    {
+      "url": "https://www.realclearpolitics.com/video/2013/09/27/obama_to_congress_do_not_shut_down_the_government.html",
+      "title": "Obama To Congress: \"Do Not Shut Down The...\" | RealClearPolitics",
+      "domain": "realclearpolitics.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Here at home, the United States Congress has two pressing responsibilities: pass a budget on"
     },
     {
       "url": "https://www.usa.gov/federal-budget-process",
@@ -40,23 +48,15 @@
       "excerpt": "Learn about the federal government’s budget process, from the president’s budget plan to Congress’s work"
     },
     {
-      "url": "https://www.thoughtco.com/powers-of-the-united-states-congress-3322280",
-      "title": "thoughtco.com/powers-of-the-united-states-congress-3322280",
-      "domain": "thoughtco.com",
+      "url": "https://edition.cnn.com/politics/congress",
+      "title": "edition.cnn.com/politics/congress",
+      "domain": "edition.cnn.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Congress also has extensive powers over financial and budgetary issues."
-    },
-    {
-      "url": "https://nlihc.org/resource/congress-passes-and-president-trump-signs-law-year-long-stopgap-funding-bill-underfunding",
-      "title": "Congress Passes and President Trump Signs into Law Year-Long...",
-      "domain": "nlihc.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Congress passed and President Donald Trump signed into law a year-long stopgap funding bill, known"
+      "excerpt": "Us Congress - New York Primary 2020: Election Date, Delegates, Map…"
     }
   ],
-  "reasoning": "According to historical records from the Congressional Research Service (CRS) and the Government Accountability Office (GAO), the US Congress has not passed all of its regular annual appropriations bills on time (prior to the October 1 start of the fiscal year) since Fiscal Year 1997 (which was enacted in late September 1996). Since FY 1998, Congress has consistently failed to meet the October 1 deadline for all individual regular appropriations bills, instead relying on temporary continuing resolutions (CRs) or late-enacted omnibus spending packages to keep the government funded.",
+  "reasoning": "According to Congressional Research Service (CRS) records and historical budget data, Congress has enacted all of its regular annual appropriations bills before the start of the fiscal year (October 1) only four times since the modern budget process was established under the Congressional Budget Act of 1974: for Fiscal Years 1977, 1989, 1995, and 1997. Since FY 1997 (enacted in late 1996), Congress has not passed a complete, regular budget with all full-year appropriations bills enacted on time, relying instead on continuing resolutions (CRs) and late omnibus funding packages.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -105,6 +105,12 @@
       "confidence": 95,
       "checked_at": "2026-07-10T09:39:08Z",
       "run_id": "run-2026-07-10T092606Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-18T07:45:47Z",
+      "run_id": "run-2026-07-18T074120Z"
     }
   ],
   "agent_flags": {

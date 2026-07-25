@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
-  "confidence": 95,
-  "last_checked_at": "2026-07-18T07:45:03Z",
+  "confidence": 90,
+  "last_checked_at": "2026-07-25T08:03:07Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-07-18T074120Z",
+  "run_id": "run-2026-07-25T075930Z",
   "sources": [
     {
-      "url": "https://www.hospitalitynet.org/viewpoint/125000189/126002019.html",
-      "title": "What would be the impact of generative AI like ChatGPT on hospitality?",
-      "domain": "hospitalitynet.org",
+      "url": "https://aibusiness.com/nlp/goldman-sachs-generative-ai-could-replace-300-million-jobs",
+      "title": "Goldman Sachs: Generative AI Could Replace 300 Million Jobs",
+      "domain": "aibusiness.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Goldman Sachs forecasts that generative A.I. could impact 300 million jobs worldwide and that it"
+      "excerpt": "Mar 29, 2023 · Goldman Sachs economists believe generative AI could replace up to one-fourth"
     },
     {
-      "url": "https://www.youtube.com/watch?v=3MwMII8n1qM",
-      "title": "What Will Happen to Marketing in the Age of AI? | Jessica... - YouTube",
-      "domain": "youtube.com",
+      "url": "https://www.bbc.com/news/technology-65102150",
+      "title": "AI could replace equivalent of 300 million jobs - report - BBC",
+      "domain": "bbc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Generative AI is poised to transform the workplace, but we still need human brains for"
+      "excerpt": "Mar 28, 2023 · Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
     },
     {
-      "url": "https://www.ai-jarvis.eu/ai-taking-jobs-and-unemployment-rising-how-prepare-while-theres-still-time",
-      "title": "AI Is Taking Jobs and Unemployment Is Rising. How to Prepare While...",
-      "domain": "ai-jarvis.eu",
+      "url": "https://oerlive.com/artificial-intelligence/ai-could-replace-300-million-jobs-goldman-sachs/",
+      "title": "AI Could Replace 300 Million Jobs: Goldman Sachs - OERLive",
+      "domain": "oerlive.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "BCG and the Aspen Institute analyzed labor market impacts: generative AI will affect more than"
+      "excerpt": "Mar 30, 2023 · The Goldman Sachs report states that generative AI platforms are likely"
     },
     {
-      "url": "https://studyx.ai/homework/105875381-n-introduction-to-generative-ai-concepts-question-14-of-15-question-which-are-two",
-      "title": "n Introduction to Generative AI Concepts | StudyX",
-      "domain": "studyx.ai",
+      "url": "https://economictimes.indiatimes.com/news/international/us/goldman-sachs-lists-top-jobs-that-ai-can-replace-but-plumbers-and-electricians-may-get-rich/articleshow/125095720.cms",
+      "title": "Jobs AI will replace: 300 million at risk: Goldman Sachs ...",
+      "domain": "economictimes.indiatimes.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Generative AI will replace artists and creative roles quickly. All jobs will be replaced with"
+      "excerpt": "Nov 5, 2025 · Jobs AI will replace: Goldman Sachs reveals that 300 million jobs"
     },
     {
-      "url": "https://www.hcadvisors.net/post/ai-vs-women",
-      "title": "Ai vs women",
-      "domain": "hcadvisors.net",
+      "url": "https://www.personneltoday.com/hr/generative-ai-predictions/",
+      "title": "Generative AI will 'replace 300 million jobs', says Goldman SachsA.I. automation could impact 300 million jobs – here ... - CNBCGenerative AI set to affect 300mn jobs across major economies",
+      "domain": "personneltoday.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "\"The latest generative AI products — think ChatGPT, Bing Chat and Bard — could replace"
+      "excerpt": "Mar 29, 2023 · Generative AI could replace the equivalent of 300 million full-time jobs,"
     },
     {
-      "url": "https://thebettercontentclub.com/ai-in-marketing",
-      "title": "AI in Marketing: Why It Won't Steal Your Job | TBCC",
-      "domain": "thebettercontentclub.com",
+      "url": "https://www.cnbc.com/2023/03/28/ai-automation-could-impact-300-million-jobs-heres-which-ones.html",
+      "title": "A.I. automation could impact 300 million jobs – here ... - CNBC",
+      "domain": "cnbc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "“AI Will Replace 300 Million Jobs by 2030.” “Marketing Teams Cut by 30% Due to"
+      "excerpt": "Mar 28, 2023 · Goldman Sachs says generative A.I. could impact 300 million jobs —"
     }
   ],
-  "reasoning": "The claim mischaracterizes the findings of a widely cited March 2023 report by Goldman Sachs. The study did not state that generative AI \"will replace\" 300 million jobs. Instead, it estimated that generative AI could \"expose\" the equivalent of 300 million full-time jobs globally to automation. The report explicitly distinguished between exposure and replacement, noting that while about two-thirds of current jobs are exposed to some degree of AI automation, most of these jobs would be complemented rather than substituted by AI. Furthermore, automation historically creates new jobs and industries, meaning exposure to automation does not equate to net job loss.",
+  "reasoning": "The claim presents as definitive fact (\"will replace\") a projection originating from a March 2023 Goldman Sachs report. The report estimated that generative AI \"could\" expose the equivalent of 300 million full-time jobs to automation. Crucially, the source study measured \"exposure to automation\"—meaning AI would complement or partially automate tasks within many roles—rather than predicting the total loss or complete replacement of 300 million jobs. Framing a conditional estimate of task exposure as a guaranteed, complete displacement of 300 million workers mischaracterizes the findings of the report.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -99,6 +99,12 @@
       "confidence": 85,
       "checked_at": "2026-07-10T09:38:01Z",
       "run_id": "run-2026-07-10T092606Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 95,
+      "checked_at": "2026-07-18T07:45:03Z",
+      "run_id": "run-2026-07-18T074120Z"
     }
   ],
   "agent_flags": {

@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-003",
   "verdict": "FALSE",
-  "confidence": 100,
-  "last_checked_at": "2026-07-18T07:42:15Z",
+  "confidence": 98,
+  "last_checked_at": "2026-07-25T08:00:30Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-07-18T074120Z",
+  "run_id": "run-2026-07-25T075930Z",
   "sources": [
     {
       "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
@@ -32,12 +32,12 @@
       "excerpt": "November 16, 2022 - At least 46 of the false narratives debunked by the fact-checking"
     },
     {
-      "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
-      "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
-      "domain": "respectfulinsolence.com",
+      "url": "https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/coronavirus-myths/art-20485720",
+      "title": "Debunking COVID-19 myths - Mayo Clinic",
+      "domain": "mayoclinic.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently"
+      "excerpt": "No. COVID-19 vaccines cannot affect your DNA. Pfizer and Moderna COVID-19 vaccines only give your"
     },
     {
       "url": "https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/",
@@ -48,15 +48,15 @@
       "excerpt": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents"
     },
     {
-      "url": "https://www.acsh.org/news/2026/07/10/new-lancet-review-rebuts-concerns-about-covid-vaccine-safety-heres-science-behind",
-      "title": "New Lancet review rebuts concerns about COVID vaccine safety. Here's the science behind it | ACSH",
-      "domain": "acsh.org",
+      "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
+      "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
+      "domain": "respectfulinsolence.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "2 days ago - A new Lancet review concludes that mRNA COVID-19 vaccines neither persist"
+      "excerpt": "March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently"
     }
   ],
-  "reasoning": "There is an overwhelming consensus among the global scientific and medical communities, including the CDC, WHO, NIH, and peer-reviewed journals such as The Lancet, that mRNA COVID-19 vaccines do not alter, change, or integrate into human DNA. The mRNA delivered by the vaccines cannot enter the cell's nucleus, where human DNA is stored. Additionally, human cells lack the necessary enzymes (like reverse transcriptase) to convert the vaccine's mRNA back into DNA. Once the mRNA enters the cell's cytoplasm, it provides instructions for producing the spike protein and is rapidly broken down and cleared by the body's natural cellular processes. Claims to the contrary are based on misinterpreted laboratory studies or misinformation.",
+  "reasoning": "mRNA COVID-19 vaccines (such as those developed by Pfizer-BioNTech and Moderna) do not enter the cell nucleus where human DNA is housed, nor do they contain the necessary enzymes (such as reverse transcriptase) to convert RNA into DNA or integrate into the human genome. According to major scientific institutions, health authorities (including the CDC, WHO, and Mayo Clinic), and peer-reviewed molecular biology research, mRNA vaccines deliver temporary instructions to the cell's cytoplasm to produce the coronavirus spike protein. Once the protein is produced, the cell rapidly degrades the mRNA. Claims that these vaccines permanently alter human DNA are scientifically unfounded and have been repeatedly debunked.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -105,6 +105,12 @@
       "confidence": 100,
       "checked_at": "2026-07-10T09:30:27Z",
       "run_id": "run-2026-07-10T092606Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-07-18T07:42:15Z",
+      "run_id": "run-2026-07-18T074120Z"
     }
   ],
   "agent_flags": {

@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-002",
   "verdict": "TRUE",
-  "confidence": 100,
-  "last_checked_at": "2026-07-18T07:41:56Z",
+  "confidence": 95,
+  "last_checked_at": "2026-07-25T08:00:10Z",
   "last_changed_at": "2026-06-09T23:43:06Z",
-  "run_id": "run-2026-07-18T074120Z",
+  "run_id": "run-2026-07-25T075930Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/National_debt_of_the_United_States",
@@ -13,7 +13,15 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "1 day ago - In February 2024, the total federal government debt rose to $34.4"
+      "excerpt": "1 week ago - In February 2024, the total federal government debt rose to $34.4"
+    },
+    {
+      "url": "https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/",
+      "title": "National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...",
+      "domain": "tampafp.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The United States national debt has surpassed $34.9 trillion for the first time, marking a"
     },
     {
       "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
@@ -24,14 +32,6 @@
       "excerpt": "April 30, 2026 - This ratio is considered a better indicator of a country’s fiscal"
     },
     {
-      "url": "https://www.newsweek.com/from-71-million-to-39-trillion-u-s-national-debts-250-year-climb-12084747",
-      "title": "From $71 million to $39 trillion – U.S. national debt’s 250-year climb - Newsweek",
-      "domain": "newsweek.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "2 weeks ago - From a mere $71 million in the country’s early days to"
-    },
-    {
       "url": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/",
       "title": "Debt to the Penny | U.S. Treasury Fiscal Data",
       "domain": "fiscaldata.treasury.gov",
@@ -40,12 +40,12 @@
       "excerpt": "There are six datasets on Fiscal Data which include the national debt, which is referred"
     },
     {
-      "url": "https://www.pgpf.org/national-debt-clock/",
-      "title": "National Debt Clock: What Is the National Debt Right Now?",
-      "domain": "pgpf.org",
+      "url": "https://www.newsweek.com/from-71-million-to-39-trillion-u-s-national-debts-250-year-climb-12084747",
+      "title": "From $71 million to $39 trillion – U.S. national debt’s 250-year climb - Newsweek",
+      "domain": "newsweek.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "April 28, 2026 - The $39 trillion gross federal debt equals debt held by the"
+      "excerpt": "3 weeks ago - From a mere $71 million in the country’s early days to"
     },
     {
       "url": "https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet",
@@ -56,7 +56,7 @@
       "excerpt": "January 4, 2024 - On Friday, December 29th the national debt hit $34 trillion."
     }
   ],
-  "reasoning": "According to official data from the U.S. Department of the Treasury and reports from the House Budget Committee, the United States national debt officially surpassed $34 trillion on December 29, 2023. By early 2024, the total outstanding federal debt had risen past $34.4 trillion, and subsequent data shows it has continued to grow beyond that mark. Therefore, the claim is entirely accurate.",
+  "reasoning": "According to official U.S. Treasury data and reports from the U.S. House Committee on the Budget, the U.S. national debt (Total Public Debt Outstanding) officially surpassed $34 trillion in late December 2023. Subsequent reporting and Treasury datasets confirm that total debt has continued to rise beyond $34 trillion since that time.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -105,6 +105,12 @@
       "confidence": 100,
       "checked_at": "2026-07-10T09:29:48Z",
       "run_id": "run-2026-07-10T092606Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-18T07:41:56Z",
+      "run_id": "run-2026-07-18T074120Z"
     }
   ],
   "agent_flags": {

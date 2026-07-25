@@ -2,18 +2,26 @@
   "schema_version": "1.0",
   "claim_id": "claim-009",
   "verdict": "FALSE",
-  "confidence": 100,
-  "last_checked_at": "2026-07-18T07:43:12Z",
+  "confidence": 95,
+  "last_checked_at": "2026-07-25T08:01:23Z",
   "last_changed_at": "2026-06-09T23:44:21Z",
-  "run_id": "run-2026-07-18T074120Z",
+  "run_id": "run-2026-07-25T075930Z",
   "sources": [
     {
-      "url": "https://www.thetravel.com/napoleon-height-myth/",
-      "title": "The Napoleon Myth That Launched A Thousand Memes And...",
-      "domain": "thetravel.com",
+      "url": "https://en.wikipedia.org/wiki/Napoleon_complex",
+      "title": "Napoleon complex - Wikipedia",
+      "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Modern historians have debunked the notion that Napoleon Bonaparte was unusually short, revealing a fascinating"
+      "excerpt": "The Napoleon complex, also known as Napoleon syndrome and short-man syndrome is a term to"
+    },
+    {
+      "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
+      "title": "Napoleon's Height Revealed",
+      "domain": "thoughtco.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The misconception about Napoleon's height arose from differences in French and English measurement systems. Napoleon's"
     },
     {
       "url": "https://allthatsinteresting.com/how-tall-was-napoleon",
@@ -40,23 +48,15 @@
       "excerpt": "The idea that Napoleon was unusually short likely arose from a confusion between different measurement"
     },
     {
-      "url": "https://www.dailymotion.com/video/xaal2ny",
-      "title": "Was Napoleon Bonaparte Short? The Secret Math... - video Dailymotion",
-      "domain": "dailymotion.com",
+      "url": "https://smartassfacts.com/facts/myths/napoleon-was-very-short/",
+      "title": "Was Napoleon Bonaparte Really Short? The Height... | SmartAss Facts",
+      "domain": "smartassfacts.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "00:10So is it actually true that Napoleon Bonaparte was unusually short? 00:14The short answer is"
-    },
-    {
-      "url": "https://www.publicpeople.org/how-tall-was-napoleon-bonaparte.htm",
-      "title": "How Tall Was Napoleon Bonaparte?",
-      "domain": "publicpeople.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Historians have often depicted Napoleon Bonaparte as unusually short, although evidence shows that he probably"
+      "excerpt": "\"Napoleon Bonaparte Was Unusually Short\" is a myth.The Napoleon-is-short narrative was actively useful to British"
     }
   ],
-  "reasoning": "The claim that Napoleon Bonaparte was unusually short and only 5 feet 2 inches tall is false. This persistent historical myth stems from a misunderstanding of historical measurement systems and British wartime propaganda. \n\nUpon his death, Napoleon's height was recorded as 5 feet 2 inches in French units (*pieds* and *pouces*). However, a French inch (approx. 2.71 cm) was longer than an English inch (2.54 cm). When converted to modern standard units (or English inches), Napoleon's height was actually about 5 feet 6 inches to 5 feet 7 inches (roughly 1.68 to 1.70 meters). This was average, if not slightly above average, for a French male in the early 19th century. The perception of him as exceptionally short was further popularized by British caricaturists of the era, notably James Gillray, who depicted him as \"Little Boney.\"",
+  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a historical myth caused by a confusion between French and English measurement systems, alongside British war propaganda. At his death, Napoleon measured 5 feet 2 inches in contemporary French units (*pouces*), which translates to approximately 5 feet 6.5 inches (1.68–1.70 meters) in modern/English standard units. This was average or slightly above average height for a French man during the early 19th century.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -99,6 +99,12 @@
       "confidence": 95,
       "checked_at": "2026-07-10T09:34:00Z",
       "run_id": "run-2026-07-10T092606Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-07-18T07:43:12Z",
+      "run_id": "run-2026-07-18T074120Z"
     }
   ],
   "agent_flags": {

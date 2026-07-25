@@ -3,9 +3,9 @@
   "claim_id": "claim-015",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-07-18T07:44:44Z",
+  "last_checked_at": "2026-07-25T08:02:48Z",
   "last_changed_at": "2026-06-09T23:45:43Z",
-  "run_id": "run-2026-07-18T074120Z",
+  "run_id": "run-2026-07-25T075930Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
@@ -40,23 +40,23 @@
       "excerpt": "AlphaGo defeated the Go champion Lee Sedol in 2016 in a best-of-five tournament. Since then,"
     },
     {
-      "url": "https://deepmind.google/research/alphago/",
-      "title": "AlphaGo — Google DeepMind",
-      "domain": "deepmind.google",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "AlphaGo mastered the ancient game of Go, defeated a Go world champion, and inspired a"
-    },
-    {
       "url": "https://www.fastcompany.com/90402503/the-10-most-important-moments-in-ai-so-far",
       "title": "The 10 most important moments in AI (so far) - Fast Company",
       "domain": "fastcompany.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "10. AlphaGo Defeats human Go champion (2016). Back in 2013, researchers at a British startup"
+    },
+    {
+      "url": "https://www.industrialgrange.com/article-2016-most-watched-six-artificial-9342.html",
+      "title": "2016 most watched six artificial intelligence technology achievements",
+      "domain": "industrialgrange.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "AlphaGo defeated the world Go champion Li Shishi 4-1 in March this year.4, Microsoft's artificial"
     }
   ],
-  "reasoning": "In March 2016, Google DeepMind's artificial intelligence program, AlphaGo, defeated Lee Sedol—a legendary 9-dan professional Go player and 18-time world champion—by a score of 4 games to 1 in a historic five-game match. Prior to AlphaGo's success (which first became public when it defeated European champion Fan Hui in late 2015), the consensus among AI researchers and Go experts was that a computer defeating a top-tier human professional Go player was at least a decade away, making this achievement about ten years ahead of schedule.",
+  "reasoning": "The claim is fully supported by historical records and news reports. In March 2016, Google DeepMind's AI program AlphaGo played a five-game Go match against 9-dan professional Lee Sedol, widely considered one of the top Go players in the world. AlphaGo won the series 4 games to 1. Prior to AlphaGo's breakthrough, AI experts and Go professionals broadly believed that an AI capable of defeating a world-class Go player was at least a decade away due to the vast complexity of the game.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -99,6 +99,12 @@
       "confidence": 95,
       "checked_at": "2026-07-10T09:37:18Z",
       "run_id": "run-2026-07-10T092606Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-18T07:44:44Z",
+      "run_id": "run-2026-07-18T074120Z"
     }
   ],
   "agent_flags": {
