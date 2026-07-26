@@ -3,60 +3,60 @@
   "claim_id": "claim-014",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-07-19T08:09:15Z",
+  "last_checked_at": "2026-07-26T08:19:25Z",
   "last_changed_at": "2026-06-09T23:47:39Z",
-  "run_id": "run-2026-07-19T080816Z",
+  "run_id": "run-2026-07-26T081823Z",
   "sources": [
     {
-      "url": "https://www.iflscience.com/the-moon-is-moving-away-from-earth-at-a-rate-of-about-38-centimeters-per-year-will-it-ever-drift-apart-80834",
-      "title": "The Moon Is Moving Away From Earth At A Rate Of About 3.8 Centimeters Per Year. Will It Ever Drift Apart? | IFLScience",
-      "domain": "iflscience.com",
+      "url": "https://studyfinds.com/moon-not-geologically-dead/",
+      "title": "Moon not 'geologically dead world' after all. Why that might be a prob...",
+      "domain": "studyfinds.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "September 16, 2025 - By aiming lasers at the reflector ... (1.2 inches). Taking repeated"
+      "excerpt": "Additionally, the Moon is slowly moving away from Earth at a rate of about 3.8"
     },
     {
-      "url": "https://www.businesstoday.in/latest/trends/photo/the-moon-is-drifting-away-from-earth-and-the-reason-starts-in-our-oceans-542586-2026-07-13",
-      "title": "The Moon is drifting away from Earth — and the reason starts in our oceans",
-      "domain": "businesstoday.in",
+      "url": "https://www.tiktok.com/discover/is-the-moon-leaving-earth",
+      "title": "Is The Moon Leaving Earth | TikTok",
+      "domain": "tiktok.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "6 days ago - The Moon may look fixed in the night sky, but it"
+      "excerpt": "The earth is leaving moon #shorts #The Moon is slowly moving away from Earth at"
     },
     {
-      "url": "https://spacedaily.com/j-v-the-moon-is-drifting-away-from-earth-by-about-38-centimetres-a-year-measured-to-the-millimetre-by-bouncing-laser-light-off-mirrors-the-apollo-astronauts-left-sitting-in-the-lunar-dust-more-than-ha/",
-      "title": "The moon is drifting away from Earth by about 3.8 centimetres a year — measured to the millimetre by bouncing laser light off mirrors the Apollo astronauts left sitting in the lunar dust more than half a century ago",
-      "domain": "spacedaily.com",
+      "url": "https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069",
+      "title": "Blue and Purple Illustrated Night Sky Group Project...",
+      "domain": "slideshare.net",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "4 days ago - The corner-cube reflectors Buzz ... laser pulses fired from Earth —"
+      "excerpt": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about"
     },
     {
-      "url": "https://www.mid-day.com/news/world-news/article/why-the-moon-is-drifting-away-from-earth-23637981",
-      "title": "Why the Moon is drifting away from Earth",
-      "domain": "mid-day.com",
+      "url": "https://brainly.com/question/36789563",
+      "title": "[FREE] Is the moon long-lasting? - brainly.com",
+      "domain": "brainly.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "2 weeks ago - Over the past 250 years, the Moon has moved about 31"
+      "excerpt": "Orbital Changes: The Moon is slowly moving away from Earth at a rate of about"
     },
     {
-      "url": "https://www.quora.com/The-moon-is-moving-3-8-cm-away-from-Earth-every-year-Isnt-this-concerning",
-      "title": "The moon is moving 3.8 cm away from Earth every year. Isn't this concerning? - Quora",
-      "domain": "quora.com",
+      "url": "https://nabado.co.ke/2024/12/22/understanding-earths-rotation-speed-effects-and-implications/",
+      "title": "Understanding Earth's Rotation: Speed and Implications",
+      "domain": "nabado.co.ke",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Answer (1 of 47): No, it is actually wonderful. It can be used to confirm"
+      "excerpt": "Over time, the Moon has slowly pulled on Earth’s oceans, creating friction that has gradually"
     },
     {
-      "url": "https://public.nrao.edu/ask/what-happens-as-the-moon-moves-away-from-the-earth/",
-      "title": "What Happens as the Moon Moves Away from the Earth? – National Radio Astronomy Observatory",
-      "domain": "public.nrao.edu",
+      "url": "https://toxigon.com/tno-orbits-suns-gravity-after-eons",
+      "title": "The Fascinating Dance of Orbits, Suns, & Gravity Over E - Toxigon",
+      "domain": "toxigon.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 1, 2013 - Answer(s): Laser ranging measurements of the change in the distance from"
+      "excerpt": "The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters"
     }
   ],
-  "reasoning": "Scientific measurements obtained from the Lunar Laser Ranging Experiment—which bounces lasers off retroreflectors left on the Moon by the Apollo missions—confirm that the Moon is receding from Earth at a rate of approximately 3.78 to 3.8 centimeters (about 1.5 inches) per year. This gradual drift is caused by tidal friction, which transfers angular momentum from the Earth's rotation to the Moon's orbit, causing the Moon to climb into a slightly higher, wider orbit over time.",
+  "reasoning": "The claim is scientifically accurate. Data from the Lunar Laser Ranging experiment—which uses retroreflectors left on the lunar surface during Apollo missions—has precisely measured the rate at which the Moon is receding from Earth. The Moon moves away from Earth at approximately 3.8 centimeters (about 1.5 inches) per year. This phenomenon is driven by tidal interactions: gravitational forces create tidal bulges in Earth's oceans, and the gravitational pull of these bulges transfers rotational energy and angular momentum from Earth to the Moon, boosting it into a higher orbit.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -99,6 +99,12 @@
       "confidence": 100,
       "checked_at": "2026-07-11T07:48:37Z",
       "run_id": "run-2026-07-11T074726Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-19T08:09:15Z",
+      "run_id": "run-2026-07-19T080816Z"
     }
   ],
   "agent_flags": {

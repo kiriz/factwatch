@@ -3,60 +3,60 @@
   "claim_id": "claim-008",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-07-19T08:08:37Z",
+  "last_checked_at": "2026-07-26T08:18:47Z",
   "last_changed_at": "2026-06-09T23:47:06Z",
-  "run_id": "run-2026-07-19T080816Z",
+  "run_id": "run-2026-07-26T081823Z",
   "sources": [
     {
-      "url": "https://wowtoknow.com/octopuses-have-three-hearts-and-blue-blood/",
-      "title": "Octopuses Have Three Hearts and Blue Blood – Here’s Why ...",
-      "domain": "wowtoknow.com",
+      "url": "https://www.tiktok.com/discover/octopus-blood-real-life",
+      "title": "Octopus Blood Real Life | TikTok",
+      "domain": "tiktok.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Mar 29, 2025 · Octopuses have not one but three hearts – and their blood"
+      "excerpt": "Octopuses have three hearts and blue blood, and one of those hearts actually stops when"
     },
     {
-      "url": "https://www.youtube.com/watch?v=C0Wq3pQdXKg",
-      "title": "Octopuses have three hearts and their blood is blueOctopuses Have Three Hearts and Nine Brains—Here’s WhyOctopus Hearts: How Many Hearts Does An Octopus Have?Did You Know? Octopuses Have Three Hearts & Blue Blood!Did You Know Octopus Have Three Hearts And Blue Blood? These ...The Marvel of the Deep: Why Octopuses Have Three Hearts and ...",
-      "domain": "youtube.com",
+      "url": "https://timesofindia.indiatimes.com/etimes/trending/10-weird-and-funny-animal-facts-that-sound-fake-but-are-completely-real/articleshow/125381246.cms",
+      "title": "10 weird and funny animal facts that sound fake... - The Times of India",
+      "domain": "timesofindia.indiatimes.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Octopuses have three hearts and their blood is blue #shorts Cozy Natural Sound 64 subscribers"
+      "excerpt": "Octopuses have three hearts and their blood is blue.Two pump blood through their gills, while"
     },
     {
-      "url": "https://discoverwildscience.com/octopuses-have-three-hearts-and-nine-brains-heres-why-4-297069/",
-      "title": "Octopuses Have Three Hearts and Nine Brains—Here’s Why",
-      "domain": "discoverwildscience.com",
+      "url": "https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh",
+      "title": "Ten things I learned in 2025: 1. Octopuses have three hearts, and...",
+      "domain": "linkedin.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Apr 27, 2026 · Discover why octopuses have three hearts and nine brains, and how"
+      "excerpt": "Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is"
     },
     {
-      "url": "https://www.scienceabc.com/nature/animals/why-do-octopuses-have-three-hearts",
-      "title": "Octopus Hearts: How Many Hearts Does An Octopus Have?",
-      "domain": "scienceabc.com",
+      "url": "https://www.divessi.com/en/blog/octopuses-20-amazing-facts-8560.html",
+      "title": "Octopuses: 20 Amazing Facts",
+      "domain": "divessi.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 29, 2020 · Octopuses have three hearts: two branchial hearts pump blood through the"
+      "excerpt": "5. Octopuses have three hearts and their blood is blue due to being copper-based. 6."
     },
     {
-      "url": "https://www.biologynotes.site/did-you-know-octopuses-have-three-hearts-blue-blood/",
-      "title": "Did You Know? Octopuses Have Three Hearts & Blue Blood!",
-      "domain": "biologynotes.site",
+      "url": "https://www.torn.com/forums.php?p=threads&f=13&t=16441242&b=0&a=0rh=96&&start=100",
+      "title": "Forums | TORN",
+      "domain": "torn.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 11, 2025 · Why Do Octopuses Have Three Hearts? ️ ️ ️ Most animals,"
+      "excerpt": "Octopuses have three hearts, and their blood is blue because it contains hemocyanin instead of"
     },
     {
-      "url": "https://thesavemovement.org/did-you-know-octopus-have-three-hearts-and-blue-blood-these-magnificent-marine-mollusks-are-being-exploited-and-need-our-help/",
-      "title": "Did You Know Octopus Have Three Hearts And Blue Blood? These ...",
-      "domain": "thesavemovement.org",
+      "url": "https://mathcorps.org/tag/executive/",
+      "title": "executive Archives – Math Corps",
+      "domain": "mathcorps.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 24, 2025 · Octopuses are sentient beings that want to live in freedom and"
+      "excerpt": "Did you know? Octopuses have three hearts, and their blood is blue!"
     }
   ],
-  "reasoning": "Scientific evidence confirms that octopuses have three hearts and blue blood. They possess two branchial hearts, which pump deoxygenated blood to the gills to absorb oxygen, and one systemic heart, which circulates the oxygenated blood to the rest of the body. Their blood is blue because it relies on a copper-based protein called hemocyanin to transport oxygen (unlike the iron-based hemoglobin in human blood). When hemocyanin binds with oxygen, it turns blue; when it is deoxygenated, the blood becomes colorless.",
+  "reasoning": "The claim is factually accurate. Octopuses have three hearts: two branchial hearts that pump blood through the gills to receive oxygen, and one systemic heart that pumps the oxygenated blood throughout the rest of the body. Their blood is blue because it uses a copper-rich protein called hemocyanin to transport oxygen, unlike the iron-based hemoglobin found in human and mammalian red blood cells.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -99,6 +99,12 @@
       "confidence": 100,
       "checked_at": "2026-07-11T07:47:57Z",
       "run_id": "run-2026-07-11T074726Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-19T08:08:37Z",
+      "run_id": "run-2026-07-19T080816Z"
     }
   ],
   "agent_flags": {
