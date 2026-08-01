@@ -3,9 +3,9 @@
   "claim_id": "claim-001",
   "verdict": "TRUE",
   "confidence": 98,
-  "last_checked_at": "2026-07-25T07:59:53Z",
+  "last_checked_at": "2026-08-01T08:12:36Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-07-25T075930Z",
+  "run_id": "run-2026-08-01T081212Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "1 month ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
+      "excerpt": "2 days ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
     },
     {
       "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
@@ -48,15 +48,15 @@
       "excerpt": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was"
     },
     {
-      "url": "https://www.theguardian.com/environment/2026/jul/20/slowdown-arctic-sea-ice-melt-largest-winter-decline-record",
-      "title": "Slowdown in Arctic ice melt ends after largest winter decline on record | Environment | The Guardian",
-      "domain": "theguardian.com",
+      "url": "https://climate.copernicus.eu/climate-indicators/sea-ice",
+      "title": "Climate Indicators Sea ice",
+      "domain": "climate.copernicus.eu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "4 days ago - Sea ice area in September, when it reaches its annual minimum,"
+      "excerpt": "April 22, 2024 - Since the first full year of satellite records in 1979, the"
     }
   ],
-  "reasoning": "Satellite records of Arctic sea ice extent began in 1979. According to authoritative scientific organizations including NOAA, the National Snow and Ice Data Center (NSIDC), and the European Environment Agency (EEA), Arctic sea ice has shown a steep, statistically significant decline since satellite observations began. Specifically, summer minimum sea ice extent has decreased by about 13% per decade, with total September sea ice coverage having roughly halved between 1979 and recent years.",
+  "reasoning": "Observational data from authoritative climate monitoring organizations—including NOAA, the European Environment Agency (EEA), Copernicus Climate Change Service, and the National Snow and Ice Data Center (NSIDC)—confirm a continuous and statistically significant decline in Arctic sea ice since comprehensive satellite monitoring began in 1979. According to NOAA, summer sea ice extent has decreased by approximately 13% per decade over the 43+ year satellite record. In addition to losing total surface area in both summer and winter, the Arctic has experienced a decline in thicker, multi-year ice, leaving sea ice younger and thinner overall.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -111,6 +111,12 @@
       "confidence": 100,
       "checked_at": "2026-07-18T07:41:42Z",
       "run_id": "run-2026-07-18T074120Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-07-25T07:59:53Z",
+      "run_id": "run-2026-07-25T075930Z"
     }
   ],
   "agent_flags": {

@@ -3,9 +3,9 @@
   "claim_id": "claim-007",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-07-25T08:01:06Z",
+  "last_checked_at": "2026-08-01T08:13:57Z",
   "last_changed_at": "2026-06-04T01:03:50Z",
-  "run_id": "run-2026-07-25T075930Z",
+  "run_id": "run-2026-08-01T081212Z",
   "sources": [
     {
       "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
@@ -16,28 +16,12 @@
       "excerpt": "The total length of the Great Wall, including all its components, is approximately 13,171 miles."
     },
     {
-      "url": "https://greatwalltravelguide.com/great-wall-facts/",
-      "title": "Category: Great Wall Facts - Great Wall of China Travel Guide",
-      "domain": "greatwalltravelguide.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "For decades, a popular myth has claimed that the Great Wall of China is the"
-    },
-    {
       "url": "https://www.yahoo.com/lifestyle/step-travel-6-beautiful-stairways-205634250.html",
       "title": "Step Up Your Travel: Here Are 6 Beautiful Stairways From Around The...",
       "domain": "yahoo.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Just along one 26-mile stretch — the official course of the Great Wall of China"
-    },
-    {
-      "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
-      "title": "Did You Know? The Great Wall Isn't Visible From Space With the...",
-      "domain": "aibrainbites.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands"
     },
     {
       "url": "https://popsci.blog/great-wall-china-satellite-picture-myth",
@@ -48,15 +32,31 @@
       "excerpt": "The Great Wall from Space: Debunking the Naked-Eye Myth.The persistent myth that the Great Wall"
     },
     {
+      "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
+      "title": "Did You Know? The Great Wall Isn't Visible From Space With the...",
+      "domain": "aibrainbites.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands"
+    },
+    {
       "url": "https://infofact.org/blog/common-misconceptions-debunked-surprising-facts",
       "title": "Common Misconceptions Debunked: Surprising Facts Many People...",
       "domain": "infofact.org",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "The Great Wall of China: Visible from Space? A long-standing claim, often repeated in popular"
+    },
+    {
+      "url": "https://smarterwatches.net/embracing-the-future-how-technology-is-reshaping-our-lifestyle/",
+      "title": "Embracing the Future: How Technology is Reshaping Our Lifestyle...",
+      "domain": "smarterwatches.net",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "4. The Great Wall of China is the only man-made structure visible from space with"
     }
   ],
-  "reasoning": "The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth. NASA, astronaut testimonies (including China's first astronaut, Yang Liwei), and optical physics confirm that the Great Wall is not visible from low Earth orbit with the unaided eye. At only about 5 to 9 meters wide and constructed from local stone and earth, the wall blends in with the surrounding terrain and lacks sufficient visual contrast. In contrast, larger or higher-contrast man-made structures—such as major highways, large airport runways, large dams, greenhouse complexes, and city lights at night—can be seen from orbit under favorable conditions.",
+  "reasoning": "The claim that the Great Wall of China is visible from space with the naked eye is a widely debunked myth. Due to its narrow width (average 6 to 9 meters) and construction materials that blend into the surrounding natural terrain, the wall cannot be distinguished from Low Earth Orbit with the unaided eye. NASA astronauts and China's first astronaut, Yang Liwei, have confirmed that the Great Wall is not visible to the naked eye from orbit. Additionally, other large-scale man-made structures—such as major highways, large airports, dams, and cities lit up at night—are much more visible from space than the Great Wall.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -105,6 +105,12 @@
       "confidence": 100,
       "checked_at": "2026-07-18T07:42:50Z",
       "run_id": "run-2026-07-18T074120Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-07-25T08:01:06Z",
+      "run_id": "run-2026-07-25T075930Z"
     }
   ],
   "agent_flags": {
