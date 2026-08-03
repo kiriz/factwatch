@@ -3,60 +3,60 @@
   "claim_id": "claim-014",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-07-26T08:19:25Z",
+  "last_checked_at": "2026-08-03T09:35:03Z",
   "last_changed_at": "2026-06-09T23:47:39Z",
-  "run_id": "run-2026-07-26T081823Z",
+  "run_id": "run-2026-08-03T093350Z",
   "sources": [
     {
-      "url": "https://studyfinds.com/moon-not-geologically-dead/",
-      "title": "Moon not 'geologically dead world' after all. Why that might be a prob...",
-      "domain": "studyfinds.com",
+      "url": "https://www.iflscience.com/the-moon-is-moving-away-from-earth-at-a-rate-of-about-38-centimeters-per-year-will-it-ever-drift-apart-80834",
+      "title": "The Moon Is Moving Away From Earth At A Rate Of About 3.8 Centimeters Per Year. Will It Ever Drift Apart? | IFLScience",
+      "domain": "iflscience.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Additionally, the Moon is slowly moving away from Earth at a rate of about 3.8"
+      "excerpt": "September 16, 2025 - By aiming lasers at the reflector ... (1.2 inches). Taking repeated"
     },
     {
-      "url": "https://www.tiktok.com/discover/is-the-moon-leaving-earth",
-      "title": "Is The Moon Leaving Earth | TikTok",
-      "domain": "tiktok.com",
+      "url": "https://scienceblog.com/k-the-moon-is-drifting-away-from-earth-at-3-8-centimetres-a-year-so-what-happens-to-us-as-it-goes/",
+      "title": "The moon is drifting away from Earth at 3.8 centimetres a year, so what happens to us as it goes? - ScienceBlog.com",
+      "domain": "scienceblog.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The earth is leaving moon #shorts #The Moon is slowly moving away from Earth at"
+      "excerpt": "2 weeks ago - The specific number, on the current best interpretation of five decades"
     },
     {
-      "url": "https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069",
-      "title": "Blue and Purple Illustrated Night Sky Group Project...",
-      "domain": "slideshare.net",
+      "url": "https://timesofindia.indiatimes.com/science/moon-is-drifting-away-from-earth-at-3-8-centimetres-a-year-what-will-happen-to-the-planet-as-it-goes-further/articleshow/132573201.cms",
+      "title": "Moon is drifting away from Earth at 3.8 centimetres a year. What will happen to the planet as it goes further? | - The Times of India",
+      "domain": "timesofindia.indiatimes.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about"
+      "excerpt": "2 weeks ago - In what is coming to be defined ... planetary science, the"
     },
     {
-      "url": "https://brainly.com/question/36789563",
-      "title": "[FREE] Is the moon long-lasting? - brainly.com",
-      "domain": "brainly.com",
+      "url": "https://www.quora.com/The-moon-is-moving-3-8-cm-away-from-Earth-every-year-Isnt-this-concerning",
+      "title": "The moon is moving 3.8 cm away from Earth every year. Isn't this concerning? - Quora",
+      "domain": "quora.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Orbital Changes: The Moon is slowly moving away from Earth at a rate of about"
+      "excerpt": "Answer (1 of 47): No, it is actually wonderful. It can be used to confirm"
     },
     {
-      "url": "https://nabado.co.ke/2024/12/22/understanding-earths-rotation-speed-effects-and-implications/",
-      "title": "Understanding Earth's Rotation: Speed and Implications",
-      "domain": "nabado.co.ke",
+      "url": "https://www.mid-day.com/news/world-news/article/why-the-moon-is-drifting-away-from-earth-23637981",
+      "title": "Why the Moon is drifting away from Earth",
+      "domain": "mid-day.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Over time, the Moon has slowly pulled on Earth’s oceans, creating friction that has gradually"
+      "excerpt": "July 3, 2026 - Over the past 250 years, the Moon has moved about 31"
     },
     {
-      "url": "https://toxigon.com/tno-orbits-suns-gravity-after-eons",
-      "title": "The Fascinating Dance of Orbits, Suns, & Gravity Over E - Toxigon",
-      "domain": "toxigon.com",
+      "url": "https://www.reddit.com/r/todayilearned/comments/1661hc8/til_that_the_moon_moves_about_38_cm_farther_away/",
+      "title": "r/todayilearned on Reddit: TIL that the moon moves about 3.8 cm farther away from Earth every year, which means that one day there will be no more total solar eclipses.",
+      "domain": "reddit.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters"
+      "excerpt": "August 31, 2023 - The Moon is an average of 238,855 miles (384,400 kilometers) away."
     }
   ],
-  "reasoning": "The claim is scientifically accurate. Data from the Lunar Laser Ranging experiment—which uses retroreflectors left on the lunar surface during Apollo missions—has precisely measured the rate at which the Moon is receding from Earth. The Moon moves away from Earth at approximately 3.8 centimeters (about 1.5 inches) per year. This phenomenon is driven by tidal interactions: gravitational forces create tidal bulges in Earth's oceans, and the gravitational pull of these bulges transfers rotational energy and angular momentum from Earth to the Moon, boosting it into a higher orbit.",
+  "reasoning": "Data from the Lunar Laser Ranging experiment, which measures the distance between Earth and the Moon by bouncing laser beams off reflectors left by Apollo astronauts, confirms that the Moon is moving away from Earth at a rate of approximately 3.8 centimeters (3.83 cm) per year. This recession is driven by tidal interactions between the Earth and the Moon, where gravitational forces transfer rotational energy from Earth to the Moon's orbit.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -105,6 +105,12 @@
       "confidence": 100,
       "checked_at": "2026-07-19T08:09:15Z",
       "run_id": "run-2026-07-19T080816Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-07-26T08:19:25Z",
+      "run_id": "run-2026-07-26T081823Z"
     }
   ],
   "agent_flags": {
