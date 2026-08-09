@@ -3,9 +3,9 @@
   "claim_id": "claim-002",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-08-01T08:12:59Z",
+  "last_checked_at": "2026-08-09T06:47:33Z",
   "last_changed_at": "2026-06-09T23:43:06Z",
-  "run_id": "run-2026-08-01T081212Z",
+  "run_id": "run-2026-08-09T064647Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/National_debt_of_the_United_States",
@@ -13,7 +13,15 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "14 hours ago - In February 2024, the total federal government debt rose to $34.4"
+      "excerpt": "3 days ago - In February 2024, the total federal government debt rose to $34.4"
+    },
+    {
+      "url": "https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/",
+      "title": "National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...",
+      "domain": "tampafp.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The United States national debt has surpassed $34.9 trillion for the first time, marking a"
     },
     {
       "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
@@ -24,12 +32,12 @@
       "excerpt": "This ratio is considered a better indicator of a country’s fiscal situation than just the"
     },
     {
-      "url": "https://www.foxnews.com/opinion/john-adams-made-terrifying-prediction-america-close-proving-him-correct",
-      "title": "America's $40 trillion national debt poses a growing fiscal crisis | Fox News",
-      "domain": "foxnews.com",
+      "url": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/",
+      "title": "Debt to the Penny | U.S. Treasury Fiscal Data",
+      "domain": "fiscaldata.treasury.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "While inflation and high interest rates continue to strain many families, the United States remains"
+      "excerpt": "There are six datasets on Fiscal Data which include the national debt, which is referred"
     },
     {
       "url": "https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet",
@@ -46,17 +54,9 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "January 3, 2024 - WASHINGTON (AP) — The federal government's gross national debt has surpassed"
-    },
-    {
-      "url": "https://www.cnbc.com/2024/03/01/the-us-national-debt-is-rising-by-1-trillion-about-every-100-days.html",
-      "title": "The U.S. national debt is rising by $1 trillion about every 100 days",
-      "domain": "cnbc.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "March 4, 2024 - The debt load of the U.S. is growing at a quicker"
     }
   ],
-  "reasoning": "Official U.S. government reports and news organizations confirm that the U.S. gross national debt surpassed $34 trillion in late December 2023 / early January 2024. According to reporting from the U.S. House Committee on the Budget, PBS News, and CNBC, the national debt reached $34 trillion on December 29, 2023, and permanently crossed this threshold on January 4, 2024, growing further to $34.4 trillion by February 2024.",
+  "reasoning": "Official data from the U.S. Department of the Treasury, reported by both government entities (U.S. House Committee on the Budget) and major news outlets (Associated Press / PBS News), confirms that the U.S. gross national debt officially surpassed $34 trillion in late December 2023 / early January 2024. Subsequent Treasury reporting shows the national debt has continued to grow beyond that threshold.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -117,6 +117,12 @@
       "confidence": 95,
       "checked_at": "2026-07-25T08:00:10Z",
       "run_id": "run-2026-07-25T075930Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-08-01T08:12:59Z",
+      "run_id": "run-2026-08-01T081212Z"
     }
   ],
   "agent_flags": {

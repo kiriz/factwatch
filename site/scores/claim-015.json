@@ -3,17 +3,17 @@
   "claim_id": "claim-015",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-08-01T08:15:48Z",
+  "last_checked_at": "2026-08-09T06:50:24Z",
   "last_changed_at": "2026-06-09T23:45:43Z",
-  "run_id": "run-2026-08-01T081212Z",
+  "run_id": "run-2026-08-09T064647Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
-      "title": "AlphaGo versus Lee Sedol - Wikipedia",
-      "domain": "en.wikipedia.org",
+      "url": "https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest",
+      "title": "Google's AlphaGo AI defeats human in first game of Go contest",
+      "domain": "theguardian.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AlphaGo versus Lee Sedol, also known as the DeepMind Challenge Match, was a five-game Go"
+      "excerpt": "The world champion at Go – an ancient Chinese board game – looked nervous. His"
     },
     {
       "url": "https://vitalab.github.io/article/2020/11/19/AlphaMuGoZero.html",
@@ -24,39 +24,39 @@
       "excerpt": "AlphaGo defeated the Go champion Lee Sedol in 2016 in a best-of-five tournament. Since then,"
     },
     {
-      "url": "https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest",
-      "title": "Google's AlphaGo AI defeats human in first game of Go contest",
-      "domain": "theguardian.com",
+      "url": "https://www.eurekalert.org/news-releases/730838",
+      "title": "ACM Prize in Computing awarded to AlphaGo developer | EurekAlert!",
+      "domain": "eurekalert.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The world champion at Go – an ancient Chinese board game – looked nervous. His"
+      "excerpt": "AlphaGo's defeat of world Go champion Lee Sedol in March 2016 was hailed as a"
+    },
+    {
+      "url": "https://seanbone.ch/case-study-alphago/",
+      "title": "Case study: AlphaGo | The Eclectic Coder",
+      "domain": "seanbone.ch",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "This is a summary of my findings about this sophisticated AI software. Google DeepMind made"
+    },
+    {
+      "url": "https://oge.mit.edu/confronting-alphago/",
+      "title": "Confronting AlphaGo | Office of Graduate Education",
+      "domain": "oge.mit.edu",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "In March 2016, world champion Go player Lee Sedol was defeated by the computer program"
     },
     {
       "url": "https://medium.com/@evlabs/how-ai-beat-the-world-champion-at-the-game-of-go-47d92f7197b4",
-      "title": "How AI beat the Go world champion | by Escape Velocity... | Medium",
+      "title": "Medium",
       "domain": "medium.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "In 2016, an AI algorithm called AlphaGo defeated Lee Sedol, the world champion of the"
-    },
-    {
-      "url": "https://deepmind.google/research/alphago/",
-      "title": "AlphaGo — Google DeepMind",
-      "domain": "deepmind.google",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "AlphaGo mastered the ancient game of Go, defeated a Go world champion, and inspired a"
-    },
-    {
-      "url": "https://www.linkedin.com/pulse/game-self-learning-autonomous-ai-peterson-technology-partners-8bm4f",
-      "title": "Game On: Self-Learning and the Autonomous AI",
-      "domain": "linkedin.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "In 2015 it defeated the European Go champion, and in 2016 defeated world master Lee"
     }
   ],
-  "reasoning": "In March 2016, Google DeepMind's AlphaGo defeated 9-dan professional Go player Lee Sedol 4 games to 1 in a five-game match in Seoul, South Korea. Prior to AlphaGo's breakthrough achievements starting with Fan Hui in late 2015 and Lee Sedol in 2016, computer science and AI experts widely believed that a computer defeating a top human Go champion was at least a decade away due to the immense game-tree complexity of Go compared to chess.",
+  "reasoning": "In March 2016, Google DeepMind's AlphaGo played a five-game match against Lee Sedol, one of the world's top 9-dan professional Go players, winning 4 games to 1. Prior to AlphaGo's victories against European champion Fan Hui in late 2015 and Lee Sedol in 2016, AI experts widely predicted that an AI defeating a top professional Go player was at least a decade away due to the vast search space and complexity of the game.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -111,6 +111,12 @@
       "confidence": 100,
       "checked_at": "2026-07-25T08:02:48Z",
       "run_id": "run-2026-07-25T075930Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-08-01T08:15:48Z",
+      "run_id": "run-2026-08-01T081212Z"
     }
   ],
   "agent_flags": {

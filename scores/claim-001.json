@@ -3,9 +3,9 @@
   "claim_id": "claim-001",
   "verdict": "TRUE",
   "confidence": 98,
-  "last_checked_at": "2026-08-01T08:12:36Z",
+  "last_checked_at": "2026-08-09T06:47:13Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-08-01T081212Z",
+  "run_id": "run-2026-08-09T064647Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "2 days ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
+      "excerpt": "1 week ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
     },
     {
       "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
@@ -56,7 +56,7 @@
       "excerpt": "April 22, 2024 - Since the first full year of satellite records in 1979, the"
     }
   ],
-  "reasoning": "Observational data from authoritative climate monitoring organizations—including NOAA, the European Environment Agency (EEA), Copernicus Climate Change Service, and the National Snow and Ice Data Center (NSIDC)—confirm a continuous and statistically significant decline in Arctic sea ice since comprehensive satellite monitoring began in 1979. According to NOAA, summer sea ice extent has decreased by approximately 13% per decade over the 43+ year satellite record. In addition to losing total surface area in both summer and winter, the Arctic has experienced a decline in thicker, multi-year ice, leaving sea ice younger and thinner overall.",
+  "reasoning": "Satellite records continuously monitoring the Arctic since 1979 demonstrate a clear and statistically significant long-term decline in sea ice extent, volume, and age across all seasons. Official data from scientific organizations including NOAA, the National Snow and Ice Data Center (NSIDC), the European Environment Agency (EEA), and Copernicus show that summer sea ice extent has declined at a rate of approximately 13% per decade since 1979.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -117,6 +117,12 @@
       "confidence": 98,
       "checked_at": "2026-07-25T07:59:53Z",
       "run_id": "run-2026-07-25T075930Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-08-01T08:12:36Z",
+      "run_id": "run-2026-08-01T081212Z"
     }
   ],
   "agent_flags": {

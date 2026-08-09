@@ -2,19 +2,11 @@
   "schema_version": "1.0",
   "claim_id": "claim-004",
   "verdict": "TRUE",
-  "confidence": 95,
-  "last_checked_at": "2026-08-01T08:16:29Z",
+  "confidence": 90,
+  "last_checked_at": "2026-08-09T06:51:11Z",
   "last_changed_at": "2026-06-09T23:46:29Z",
-  "run_id": "run-2026-08-01T081212Z",
+  "run_id": "run-2026-08-09T064647Z",
   "sources": [
-    {
-      "url": "https://www.cnet.com/tech/chatgpt-can-pass-the-bar-exam-does-that-actually-matter/",
-      "title": "ChatGPT Can Pass the Bar Exam. Does That Actually Matter? - CNET",
-      "domain": "cnet.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "ChatGPT would have passed these communications classes with ease. In mid-March, artificial intelligence company OpenAI"
-    },
     {
       "url": "https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam",
       "title": "How to Use Ai to Study for The Bar Exam | TikTok",
@@ -22,14 +14,6 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "“Are you ready to pass the 2026 Bar Exams using 227 real cases penned by"
-    },
-    {
-      "url": "https://llm-guide.com/articles/how-ai-can-help-you-study-for-the-bar-exam",
-      "title": "How AI Can Help You Study for the Bar Exam | LLM GUIDE",
-      "domain": "llm-guide.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "AI is now part of Barbri and Themis Bar Review, helping provide feedback and coaching"
     },
     {
       "url": "https://philippeboulanger.com/the-bar-exam-then-the-wall-for-ai/",
@@ -40,6 +24,14 @@
       "excerpt": "AI is being sold the way top students used to be sold. It passes exams."
     },
     {
+      "url": "https://learn.fomo.ai/p/an-ai-told-her-to-fire-her-lawyer",
+      "title": "An AI told her to fire her lawyer. Now it's being sued.",
+      "domain": "learn.fomo.ai",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Now it's being sued. ChatGPT might have passed the bar., but it's just out that"
+    },
+    {
       "url": "https://www.linkedin.com/posts/bommarito_can-gemini-3-pass-the-bar-exam-at-this-activity-7396575232737767424-0rLz",
       "title": "Can Gemini 3 pass the Bar Exam? At this point, who cares.",
       "domain": "linkedin.com",
@@ -48,15 +40,23 @@
       "excerpt": "More interestingly, what does Gemini 3 think about its ability to pass the Bar Exam?"
     },
     {
-      "url": "https://www.latimes.com/california/story/2025-04-23/state-bar-of-california-used-ai-for-exam-questions",
-      "title": "State Bar of California admits it used AI to develop exam questions...",
-      "domain": "latimes.com",
+      "url": "https://www.youtube.com/watch?v=CILsMhxXD0c",
+      "title": "Last Minute Bar Exam Tips to Help You Pass! - YouTube",
+      "domain": "youtube.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "After bar exam fiasco, California Supreme Court directs State Bar to plan on in-person July"
+      "excerpt": "How to Pass the Bar Exam - Tips for Avoiding Common MistakesJD Advising2.8K views •"
+    },
+    {
+      "url": "https://marinobarreview.com/author/mmarino/page/3/",
+      "title": "mmarino, Author at Marino Bar Review - Page 3 of 15Marino Bar Review",
+      "domain": "marinobarreview.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "AI Chatbot Can Now Pass Lawyer Ethics Exam. January 24, 2024. Artificial Intelligence is now"
     }
   ],
-  "reasoning": "Academic research and benchmark evaluations demonstrate that state-of-the-art AI language models, beginning with OpenAI's GPT-4, can successfully pass the Uniform Bar Examination (UBE). In evaluations conducted by Katz et al. (2023) and reported in OpenAI's technical documentation, GPT-4 achieved a score in the 90th percentile (top 10%), well above both the required passing threshold and the average human test-taker score.",
+  "reasoning": "Research by Katz, Bommarito, et al. (2023) demonstrated that OpenAI's GPT-4 passed the Uniform Bar Examination (UBE) with a score of 297, placing it in approximately the 90th percentile of human test-takers. This significantly exceeds both the minimum passing threshold in all U.S. jurisdictions (which ranges from 260 to 270) and the average human test-taker score. Subsequent frontier language models (such as Claude 3 and GPT-4o) have replicated or exceeded these results.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -117,13 +117,19 @@
       "confidence": 95,
       "checked_at": "2026-07-25T08:03:26Z",
       "run_id": "run-2026-07-25T075930Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-08-01T08:16:29Z",
+      "run_id": "run-2026-08-01T081212Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
     "requires_human_review": false,
-    "low_source_quality": false
+    "low_source_quality": true
   },
   "title": "AI systems now pass the bar exam",
   "category": "technology",

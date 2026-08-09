@@ -2,50 +2,34 @@
   "schema_version": "1.0",
   "claim_id": "claim-005",
   "verdict": "TRUE",
-  "confidence": 95,
-  "last_checked_at": "2026-08-01T08:16:52Z",
+  "confidence": 90,
+  "last_checked_at": "2026-08-09T06:51:37Z",
   "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-08-01T081212Z",
+  "run_id": "run-2026-08-09T064647Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/United_States",
-      "title": "United States - Wikipedia",
-      "domain": "en.wikipedia.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The United States of America (USA), also known as the United States (U.S.) or America,"
-    },
-    {
-      "url": "https://www.britannica.com/topic/Congress-of-the-United-States",
-      "title": "Congress of the United States | Members, Seats, Term... | Britannica",
-      "domain": "britannica.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Of common interest to both houses of Congress are also such matters as government printing,"
-    },
-    {
-      "url": "https://www.govtrack.us/congress/members/TN",
-      "title": "govtrack.us/congress/members/TN",
+      "url": "https://www.govtrack.us/congress/members/CA/42",
+      "title": "govtrack.us/congress/members/CA/42",
       "domain": "govtrack.us",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Although this map based on 2022 congressional districts is still the correct..."
+      "excerpt": "Californias 42 nd Congressional District - GovTrack.us."
     },
     {
-      "url": "https://www.congress.gov/search?q={\"source\":\"legislation\"}",
-      "title": "congress.gov/search?q={\"source\":\"legislation\"}",
-      "domain": "congress.gov",
+      "url": "https://www.usa.gov/federal-budget-process",
+      "title": "The federal budget process | USAGov",
+      "domain": "usa.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Learn about the current status of appropriations legislation on Congress.gov."
+      "excerpt": "Learn about the federal government’s budget process, from the president’s budget plan to Congress’s work"
     },
     {
-      "url": "https://edition.cnn.com/politics/congress",
-      "title": "edition.cnn.com/politics/congress",
-      "domain": "edition.cnn.com",
+      "url": "https://nlihc.org/resource/congress-passes-and-president-trump-signs-law-year-long-stopgap-funding-bill-underfunding",
+      "title": "Congress Passes and President Trump Signs into Law Year-Long...",
+      "domain": "nlihc.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Us Congress - New York Primary 2020: Election Date, Delegates, Map…"
+      "excerpt": "Congress passed and President Donald Trump signed into law a year-long stopgap funding bill, known"
     },
     {
       "url": "https://trendingpoliticsnews.com/breaking-u-s-congressman-passes-away-mace/",
@@ -54,9 +38,25 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "(D-NJ) announced his passing at the age of 87. The congressman, known for his deep-rooted.Serving"
+    },
+    {
+      "url": "https://www.dnj.com/story/news/local/2026/08/05/tennessee-changing-clocks-congress-passes-daylight-saving-time-permanent/91124361007/",
+      "title": "Tennessee will stop changing clocks if Congress passes daylight bill",
+      "domain": "dnj.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "When does the time change? When we fall back in 2026. Daylight saving time for"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KTiKzNcI1VU",
+      "title": "President Biden to address nation after Congress passed budget...",
+      "domain": "youtube.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "О сервисе Прессе Авторские права Связаться с нами Авторам Рекламодателям..."
     }
   ],
-  "reasoning": "According to records from the Congressional Research Service (CRS) and the Pew Research Center, the U.S. Congress has enacted all of its regular annual appropriations bills on time prior to the start of the fiscal year (October 1) only four times since the modern budgeting process was established by the Congressional Budget Act of 1974: for Fiscal Years 1977, 1989, 1995, and 1997. Since FY 1997 (which was passed in September 1996), Congress has consistently failed to pass a complete set of regular spending bills on time, relying instead on stopgap continuing resolutions (CRs) or late omnibus spending packages.",
+  "reasoning": "According to Congressional Research Service (CRS) records and historical budget data, the last time Congress enacted all regular annual appropriations bills before the start of the fiscal year (October 1) was for Fiscal Year 1997 (enacted in September 1996). Since FY 1998, Congress has failed to pass all regular individual spending bills prior to the October 1 deadline, relying instead on stopgap funding measures (continuing resolutions) and late omnibus spending packages. Therefore, the statement that Congress has not passed a complete federal budget on time since 1997 is accurate.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -117,6 +117,12 @@
       "confidence": 95,
       "checked_at": "2026-07-25T08:03:50Z",
       "run_id": "run-2026-07-25T075930Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-08-01T08:16:52Z",
+      "run_id": "run-2026-08-01T081212Z"
     }
   ],
   "agent_flags": {

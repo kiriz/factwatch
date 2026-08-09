@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-006",
   "verdict": "FALSE",
-  "confidence": 98,
-  "last_checked_at": "2026-08-01T08:13:39Z",
+  "confidence": 100,
+  "last_checked_at": "2026-08-09T06:48:12Z",
   "last_changed_at": "2026-06-09T23:43:44Z",
-  "run_id": "run-2026-08-01T081212Z",
+  "run_id": "run-2026-08-09T064647Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
-      "title": "Ten-percent-of-the-brain myth - Wikipedia",
-      "domain": "en.wikipedia.org",
+      "url": "https://helenbrenner.com/getting-past-survivor-blog-and-podcast/do-we-really-only-use-10-of-our-brain",
+      "title": "Do We Really Use Only 10% of Our Brain? — Helen Brenner",
+      "domain": "helenbrenner.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "2 weeks ago - Although several parts of the brain ... remains unclear. Perhaps the"
+      "excerpt": "You’ve probably heard it: “Humans only use 10% of their brains.” Self-help books use it"
     },
     {
-      "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
-      "title": "Do We Really Use Only 10 Percent of Our Brain? | Britannica",
-      "domain": "britannica.com",
+      "url": "https://brainly.com/question/59412926",
+      "title": "[FREE] True or False: Humans only use about 10% of their brains.",
+      "domain": "brainly.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "3 weeks ago - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows"
+      "excerpt": "Humans do not only use 10% of their brains; this statement is false. Scientific evidence"
     },
     {
-      "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
-      "title": "Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today",
-      "domain": "psychologytoday.com",
+      "url": "https://www.physicsforums.com/threads/the-10-of-our-brains-thing.560330/",
+      "title": "The 10% of our brains thing",
+      "domain": "physicsforums.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 15, 2025 - This notion, repeated in movies, motivational speeches, and even some classrooms,"
+      "excerpt": "Brain imaging studies have shown that humans use all parts of their brain, and no"
     },
     {
-      "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
-      "title": "Do we only use 10 percent of our brain? - MIT McGovern Institute",
-      "domain": "mcgovern.mit.edu",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/people-really-use-10-brains-use-entire-brain-although-individual-tasks-might-rely-primaril-q191836172",
+      "title": "Solved Do people really use only 10% of their brains? | Chegg.com",
+      "domain": "chegg.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans"
+      "excerpt": ", we use our entire brain. ( although individual tasks might rely primarily on specialized"
     },
     {
-      "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
-      "title": "Do People Only Use 10 Percent of Their Brains? | Scientific American",
-      "domain": "scientificamerican.com",
+      "url": "https://studyx.ai/homework/104577714-no-the-idea-that-humans-only-use-10-of-their-brains-is-a-myth-neuroscientists-have-shown",
+      "title": "No the idea that humans only use 10 of their",
+      "domain": "studyx.ai",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "February 20, 2024 - Another mystery hidden within our crinkled cortices is that out of"
+      "excerpt": "Step 1: Understanding the Myth The myth suggests that humans only use 10% of their"
     },
     {
-      "url": "https://www.sciencetimes.com/articles/60744/20251111/do-we-really-use-only-10-our-brain-what-neuroscience-really-says-about-brain-usage.htm",
-      "title": "Do We Really Use Only 10% of Our Brain? What Neuroscience Really Says About Brain Usage",
-      "domain": "sciencetimes.com",
+      "url": "https://www.youtube.com/watch?v=2AEwj5JZhLw",
+      "title": "Humans Only Use 10% of Their Brains - YouTube",
+      "domain": "youtube.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "November 11, 2025 - The brain also remains active during rest, managing vital functions such"
+      "excerpt": "О сервисе Прессе Авторские права Связаться с нами Авторам Рекламодателям..."
     }
   ],
-  "reasoning": "The claim that humans only use 10% of their brain capacity is a widespread myth with no basis in neuroscience. Neuroimaging technologies such as fMRI and PET scans demonstrate that virtually all areas of the brain are active and serve dedicated functions, even during sleep or simple tasks. Furthermore, neurological research shows that unused brain tissue rapidly degenerates (atrophies), meaning that if 90% of the brain were truly dormant, massive brain damage would have little impact, which is demonstrably false. Reputable scientific and medical institutions, including MIT's McGovern Institute and Scientific American, unequivocally classify this notion as a scientific misconception.",
+  "reasoning": "The claim that humans only use 10% of their brain capacity is a widely debunked neuroscientific myth. Brain imaging technology such as fMRI and PET scans has established that humans use virtually every part of the brain, with almost all regions showing activity throughout the day. Furthermore, damage to even small areas of the brain typically causes significant deficits, which would not occur if 90% of the brain were dormant.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -111,6 +111,12 @@
       "confidence": 100,
       "checked_at": "2026-07-25T08:00:49Z",
       "run_id": "run-2026-07-25T075930Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 98,
+      "checked_at": "2026-08-01T08:13:39Z",
+      "run_id": "run-2026-08-01T081212Z"
     }
   ],
   "agent_flags": {

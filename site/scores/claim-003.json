@@ -3,9 +3,9 @@
   "claim_id": "claim-003",
   "verdict": "FALSE",
   "confidence": 98,
-  "last_checked_at": "2026-08-01T08:13:17Z",
+  "last_checked_at": "2026-08-09T06:47:53Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-08-01T081212Z",
+  "run_id": "run-2026-08-09T064647Z",
   "sources": [
     {
       "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
@@ -24,12 +24,12 @@
       "excerpt": "December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are"
     },
     {
-      "url": "https://www.genome.gov/about-genomics/fact-sheets/Understanding-COVID-19-mRNA-Vaccines",
-      "title": "Understanding COVID-19 mRNA Vaccines",
-      "domain": "genome.gov",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10883065/",
+      "title": "The mRNA-LNP vaccines – the good, the bad and the ugly? - PMC",
+      "domain": "pmc.ncbi.nlm.nih.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "mRNA vaccines are safe and cannot alter your DNA, and you cannot get COVID-19 from"
+      "excerpt": "While, to our knowledge, similar ... protein/mRNA to the nucleus could be expected. Because the"
     },
     {
       "url": "https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/",
@@ -40,23 +40,23 @@
       "excerpt": "November 16, 2022 - At least 46 of the false narratives debunked by the fact-checking"
     },
     {
-      "url": "https://libguides.mskcc.org/CovidImpacts/Genetic",
-      "title": "Genetic Changes - COVID Impacts - MSK Library Guides at Memorial Sloan Kettering Cancer Center",
-      "domain": "libguides.mskcc.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Detailed information and resources on the long-term health consequences of COVID-19 infection and the broad"
-    },
-    {
       "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
       "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
       "domain": "respectfulinsolence.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently"
+    },
+    {
+      "url": "https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/",
+      "title": "Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST",
+      "domain": "route66post.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents"
     }
   ],
-  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false and thoroughly debunked by public health agencies and molecular biologists globally. \n\nmRNA (messenger RNA) vaccines deliver genetic instructions to the cytoplasm of cells to temporarily manufacture a harmless viral spike protein, triggering an immune response. As documented by the National Human Genome Research Institute (NIH) and other leading health organizations, mRNA from vaccines cannot alter DNA for two fundamental biological reasons:\n1. **Location:** mRNA remains in the cell's cytoplasm and does not enter the cell nucleus, where human genomic DNA is located.\n2. **Mechanism:** The human body lacks the machinery to convert mRNA back into DNA. mRNA degrades naturally within the cell shortly after providing instructions to build the protein.\n\nMajor scientific institutions including the CDC, WHO, and NIH uniformly confirm that mRNA vaccines do not interact with, alter, or integrate into human DNA.",
+  "reasoning": "Major global health authorities and scientific consensus—including the CDC, WHO, and NIH—confirm that mRNA COVID-19 vaccines do not alter, edit, or interact with human DNA in any way. The mRNA from the vaccine enters the cytoplasm of cells to instruct the cell to produce a harmless spike protein that triggers an immune response. It never enters the cell nucleus, where human genomic DNA is located, and is rapidly broken down by normal cellular processes within days. Furthermore, human cells do not possess the necessary reverse transcriptase enzymes required to turn mRNA into DNA. Claims to the contrary stem from fringe websites and misinterpretations of artificial in vitro cell culture studies that do not apply to live human organisms or real-world vaccination.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -117,6 +117,12 @@
       "confidence": 98,
       "checked_at": "2026-07-25T08:00:30Z",
       "run_id": "run-2026-07-25T075930Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 98,
+      "checked_at": "2026-08-01T08:13:17Z",
+      "run_id": "run-2026-08-01T081212Z"
     }
   ],
   "agent_flags": {

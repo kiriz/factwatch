@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-011",
   "verdict": "FALSE",
-  "confidence": 90,
-  "last_checked_at": "2026-08-01T08:15:07Z",
+  "confidence": 95,
+  "last_checked_at": "2026-08-09T06:49:37Z",
   "last_changed_at": "2026-07-10T09:35:32Z",
-  "run_id": "run-2026-08-01T081212Z",
+  "run_id": "run-2026-08-09T064647Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Monosodium_glutamate",
@@ -24,20 +24,20 @@
       "excerpt": "Review of alleged health hazards and preclinical studies; does not specifically address headaches or Chinese"
     },
     {
-      "url": "https://zoe.com/learn/msg",
-      "title": "MSG: All You Need To Know",
-      "domain": "zoe.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The term “Chinese restaurant syndrome” has racist connotations and, after some pressure from Ajinomoto via"
-    },
-    {
       "url": "https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome",
       "title": "50 years ago, MSG in Chinese food got a bad rap | Science News",
       "domain": "sciencenews.org",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "March 8, 1969 cover Chinese Restaurant syndrome varies —.In the Feb. 21 Science, [researchers] report"
+    },
+    {
+      "url": "https://zoe.com/learn/msg",
+      "title": "MSG: All You Need To Know",
+      "domain": "zoe.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The term “Chinese restaurant syndrome” has racist connotations and, after some pressure from Ajinomoto via"
     },
     {
       "url": "https://www.bbc.com/news/world-us-canada-51139005",
@@ -56,7 +56,7 @@
       "excerpt": "The term “Chinese Restaurant Syndrome” originated from a letter published in the New England Journal"
     }
   ],
-  "reasoning": "The claim that monosodium glutamate (MSG) causes headaches, numbness, and other symptoms known as \"Chinese restaurant syndrome\" has been thoroughly disproven by scientific research. The term originated from an anecdotal letter published in the *New England Journal of Medicine* in 1968 rather than controlled clinical research. \n\nExtensive double-blind, placebo-controlled studies conducted in the decades since have consistently failed to demonstrate a causal link between MSG consumed in normal food quantities and symptoms like headaches, numbness, or flushing. Food safety and health authorities globally—including the U.S. Food and Drug Administration (FDA), the World Health Organization (WHO), and the European Food Safety Authority (EFSA)—classify MSG as \"Generally Recognized As Safe\" (GRAS). Furthermore, the glutamate in MSG is chemically identical to naturally occurring glutamate found in foods such as tomatoes, cheese, and mushrooms, which do not produce these reported symptoms.",
+  "reasoning": "Scientific consensus and rigorous double-blind, placebo-controlled studies have repeatedly failed to demonstrate a causal link between monosodium glutamate (MSG) consumed in normal dietary amounts and the group of symptoms historically labeled as \"Chinese restaurant syndrome\" (such as headaches, numbness, flushing, or sweating). The concept originated from a speculative letter published in the New England Journal of Medicine in 1968 rather than clinical research. Major health and regulatory organizations, including the U.S. Food and Drug Administration (FDA) and the World Health Organization (WHO), classify MSG as \"Generally Recognized As Safe\" (GRAS) and acknowledge that studies do not support MSG as the cause of these symptoms under typical conditions.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -111,6 +111,12 @@
       "confidence": 95,
       "checked_at": "2026-07-25T08:02:07Z",
       "run_id": "run-2026-07-25T075930Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 90,
+      "checked_at": "2026-08-01T08:15:07Z",
+      "run_id": "run-2026-08-01T081212Z"
     }
   ],
   "agent_flags": {
