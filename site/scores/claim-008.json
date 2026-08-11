@@ -3,9 +3,9 @@
   "claim_id": "claim-008",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-08-03T09:34:30Z",
+  "last_checked_at": "2026-08-11T06:58:09Z",
   "last_changed_at": "2026-06-09T23:47:06Z",
-  "run_id": "run-2026-08-03T093350Z",
+  "run_id": "run-2026-08-11T065747Z",
   "sources": [
     {
       "url": "https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
@@ -24,12 +24,12 @@
       "excerpt": "Octopuses have blue blood, three hearts and a doughnut-shaped brain. But these aren’t even the"
     },
     {
-      "url": "https://study.com/academy/lesson/the-octopus-circulatory-system.html",
-      "title": "Octopus | Circulatory System, Hearts & Brains - Lesson | Study.com",
-      "domain": "study.com",
+      "url": "https://www.reddit.com/r/Damnthatsinteresting/comments/1cn5gdl/an_octopus_has_three_hearts_and_the_colour_of/",
+      "title": "r/Damnthatsinteresting on Reddit: An Octopus has three hearts and the colour of their blood is blue.They have eight arms and each arm contains its own 'mini brain'",
+      "domain": "reddit.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "January 26, 2017 - Two of the hearts are used to deliver blood to gills"
+      "excerpt": "May 8, 2024 - Octopuses have three hearts, blue blood, and nine brains, with each"
     },
     {
       "url": "https://thesavemovement.org/did-you-know-octopus-have-three-hearts-and-blue-blood-these-magnificent-marine-mollusks-are-being-exploited-and-need-our-help/",
@@ -40,23 +40,23 @@
       "excerpt": "May 24, 2025 - With three functioning hearts, ... to the rest of their body."
     },
     {
+      "url": "https://study.com/academy/lesson/the-octopus-circulatory-system.html",
+      "title": "Octopus | Circulatory System, Hearts & Brains - Lesson | Study.com",
+      "domain": "study.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "January 26, 2017 - Two of the hearts are used to deliver blood to gills"
+    },
+    {
       "url": "https://www.sciencefocus.com/nature/why-does-an-octopus-have-more-than-one-heart",
       "title": "How many hearts does an octopus have? - BBC Science Focus Magazine",
       "domain": "sciencefocus.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "July 12, 2023 - Unlike vertebrates that have iron-rich haemoglobin packed into red blood cells,"
-    },
-    {
-      "url": "https://octonation.com/how-many-hearts-does-an-octopus-have/",
-      "title": "How Many Hearts Does an Octopus Have? (The Third One Does Something Wild)",
-      "domain": "octonation.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "May 4, 2026 - Their blood is blue (copper-based, not iron-based like ours), which is"
     }
   ],
-  "reasoning": "The claim is fully supported by established biological facts and marine science sources. Octopuses possess three hearts: two branchial hearts that pump blood through the gills, and one systemic heart that circulates blood to the rest of the body. Furthermore, octopus blood is blue because it relies on hemocyanin, a copper-rich protein that transports oxygen, unlike the iron-rich hemoglobin found in human red blood cells.",
+  "reasoning": "Multiple reputable science and natural history sources, including Smithsonian Magazine and the Natural History Museum, confirm that octopuses have three hearts and blue blood. Two branchial hearts pump blood through the gills, while a main systemic heart circulates blood to the rest of the body. Their blood appears blue because it utilizes copper-rich hemocyanin to bind oxygen, unlike human blood which relies on iron-rich hemoglobin.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -111,6 +111,12 @@
       "confidence": 100,
       "checked_at": "2026-07-26T08:18:47Z",
       "run_id": "run-2026-07-26T081823Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-08-03T09:34:30Z",
+      "run_id": "run-2026-08-03T093350Z"
     }
   ],
   "agent_flags": {
