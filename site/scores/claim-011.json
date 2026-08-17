@@ -3,17 +3,17 @@
   "claim_id": "claim-011",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-08-09T06:49:37Z",
+  "last_checked_at": "2026-08-17T06:14:09Z",
   "last_changed_at": "2026-07-10T09:35:32Z",
-  "run_id": "run-2026-08-09T064647Z",
+  "run_id": "run-2026-08-17T061041Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Monosodium_glutamate",
-      "title": "Monosodium glutamate - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Glutamate_flavoring",
+      "title": "Glutamate flavoring - Wikipedia",
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "\"There is no convincing evidence that MSG is a significant factor in causing systemic reactions"
+      "excerpt": "That MSG causes health problems may have thrived on racially charged biases from the outset."
     },
     {
       "url": "https://www.verdik.co/claims/msg-causes-chinese-restaurant-syndrome-headaches-most-adults-typical-food-doses",
@@ -24,20 +24,20 @@
       "excerpt": "Review of alleged health hazards and preclinical studies; does not specifically address headaches or Chinese"
     },
     {
-      "url": "https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome",
-      "title": "50 years ago, MSG in Chinese food got a bad rap | Science News",
-      "domain": "sciencenews.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "March 8, 1969 cover Chinese Restaurant syndrome varies —.In the Feb. 21 Science, [researchers] report"
-    },
-    {
       "url": "https://zoe.com/learn/msg",
       "title": "MSG: All You Need To Know",
       "domain": "zoe.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "The term “Chinese restaurant syndrome” has racist connotations and, after some pressure from Ajinomoto via"
+    },
+    {
+      "url": "https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome",
+      "title": "50 years ago, MSG in Chinese food got a bad rap | Science News",
+      "domain": "sciencenews.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 8, 1969 cover Chinese Restaurant syndrome varies —.In the Feb. 21 Science, [researchers] report"
     },
     {
       "url": "https://www.bbc.com/news/world-us-canada-51139005",
@@ -48,15 +48,15 @@
       "excerpt": "What is 'Chinese Restaurant Syndrome'? Tucked between \"Chinese red\" and \"Chinese rose\", the disputed entry"
     },
     {
-      "url": "https://circledna.com/blog/the-science-behind-msg-debunking-myths-and-understanding-its-safety/",
-      "title": "The Science Behind MSG: Debunking Myths and Understanding Its...",
-      "domain": "circledna.com",
+      "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
+      "title": "The Rotten Science Behind the MSG Scare | Science History Institute",
+      "domain": "sciencehistory.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The term “Chinese Restaurant Syndrome” originated from a letter published in the New England Journal"
+      "excerpt": "As a result, the panic over Chinese Restaurant Syndrome kept building and building. Ralph Nader"
     }
   ],
-  "reasoning": "Scientific consensus and rigorous double-blind, placebo-controlled studies have repeatedly failed to demonstrate a causal link between monosodium glutamate (MSG) consumed in normal dietary amounts and the group of symptoms historically labeled as \"Chinese restaurant syndrome\" (such as headaches, numbness, flushing, or sweating). The concept originated from a speculative letter published in the New England Journal of Medicine in 1968 rather than clinical research. Major health and regulatory organizations, including the U.S. Food and Drug Administration (FDA) and the World Health Organization (WHO), classify MSG as \"Generally Recognized As Safe\" (GRAS) and acknowledge that studies do not support MSG as the cause of these symptoms under typical conditions.",
+  "reasoning": "Extensive scientific research and double-blind, placebo-controlled studies have failed to establish a causal relationship between monosodium glutamate (MSG) consumed in normal dietary amounts and symptoms such as headaches, numbness, or flushing (historically labeled \"Chinese restaurant syndrome\"). Major food safety and public health authorities—including the U.S. Food and Drug Administration (FDA), the World Health Organization (WHO), and the European Food Safety Authority (EFSA)—classify MSG as \"Generally Recognized as Safe\" (GRAS). The glutamate in MSG is chemically indistinguishable from glutamate naturally found in foods like tomatoes, aged cheeses, and mushrooms. The myth originated largely from an anecdotal 1968 letter to the New England Journal of Medicine and subsequent poorly controlled early studies influenced by xenophobic biases.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -117,6 +117,12 @@
       "confidence": 90,
       "checked_at": "2026-08-01T08:15:07Z",
       "run_id": "run-2026-08-01T081212Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-08-09T06:49:37Z",
+      "run_id": "run-2026-08-09T064647Z"
     }
   ],
   "agent_flags": {

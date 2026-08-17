@@ -3,9 +3,9 @@
   "claim_id": "claim-001",
   "verdict": "TRUE",
   "confidence": 98,
-  "last_checked_at": "2026-08-09T06:47:13Z",
+  "last_checked_at": "2026-08-17T06:11:06Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-08-09T064647Z",
+  "run_id": "run-2026-08-17T061041Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "1 week ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
+      "excerpt": "6 days ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
     },
     {
       "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
@@ -40,23 +40,23 @@
       "excerpt": "October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice"
     },
     {
+      "url": "https://www.climate.us/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
+      "title": "Climate change: Arctic sea ice summer minimum | Climate.us",
+      "domain": "climate.us",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "June 9, 2026 - The amount of sea ice that survives the Arctic summer has"
+    },
+    {
       "url": "https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era",
       "title": "How was Arctic sea ice measured before the satellite era? | National Snow and Ice Data Center",
       "domain": "nsidc.org",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was"
-    },
-    {
-      "url": "https://climate.copernicus.eu/climate-indicators/sea-ice",
-      "title": "Climate Indicators Sea ice",
-      "domain": "climate.copernicus.eu",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "April 22, 2024 - Since the first full year of satellite records in 1979, the"
     }
   ],
-  "reasoning": "Satellite records continuously monitoring the Arctic since 1979 demonstrate a clear and statistically significant long-term decline in sea ice extent, volume, and age across all seasons. Official data from scientific organizations including NOAA, the National Snow and Ice Data Center (NSIDC), the European Environment Agency (EEA), and Copernicus show that summer sea ice extent has declined at a rate of approximately 13% per decade since 1979.",
+  "reasoning": "Continuous satellite observation of Arctic sea ice began in 1979. According to authoritative scientific bodies including NOAA, the National Snow and Ice Data Center (NSIDC), and the European Environment Agency (EEA), Arctic sea ice extent has shown a substantial and continuous downward trend across all seasons, with summer minimum extent declining at a rate of approximately 12 to 13 percent per decade since 1979.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -123,6 +123,12 @@
       "confidence": 98,
       "checked_at": "2026-08-01T08:12:36Z",
       "run_id": "run-2026-08-01T081212Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-08-09T06:47:13Z",
+      "run_id": "run-2026-08-09T064647Z"
     }
   ],
   "agent_flags": {

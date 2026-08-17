@@ -1,0 +1,707 @@
+{
+  "run_id": "run-2026-08-17T061041Z",
+  "started_at": "2026-08-17T06:10:41Z",
+  "finished_at": "2026-08-17T06:17:27Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-001",
+      "claim_title": "Arctic sea ice decline since 1979",
+      "claim_text": "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Continuous satellite observation of Arctic sea ice began in 1979",
+        "According to authoritative scientific bodies including NOAA, the National Snow and Ice Data Center (NSIDC), and the European Environment Agency (EEA), Arctic sea ice extent has shown a substantial and continuous downward trend across all seasons, with summer minimum extent declining at a rate of approximately 12 to 13 percent per decade since 1979."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Arctic sea ice has declined significantly since satellite records began in 1979.\\\"\",\n  \"verification_notes\": \"Check NSIDC, NASA, and NOAA data. Look at September minimum extent as the primary metric. Verify trend is statistically significant, not just year-to-year variability.\",\n  \"search_results\": \"[1] Arctic sea ice decline - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Arctic_sea_ice_decline\\nExcerpt: 6 days ago - For January 2016, the satellite-based data showed the lowest overall Arctic sea ice extent of any January since records began in 1979.\\n\\n[2] Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov\\nURL: https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum\\nExcerpt: October 18, 2022 - The amount of sea ice that survives the Arctic summer has declined by 13 percent per decade since the start of the 43-year satellite record.\\n\\n[3] Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)\\nURL: https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice\\nExcerpt: November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has lost an area of 71,000km2 of sea ice per year in summer and 31,000km2 per year in winter since 1979. The Arctic sea ice area for summer 2025 was the second lowest ever and sea ice is becoming younger and thinner.\\n\\n[4] Satellites record second lowest Arctic sea ice extent since 1979\\nURL: https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979\\nExcerpt: October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice extent is the second lowest (after the record low of 2012) since the beginning of satellite monitoring in 1979.\\n\\n[5] Climate change: Arctic sea ice summer minimum | Climate.us\\nURL: https://www.climate.us/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum\\nExcerpt: June 9, 2026 - The amount of sea ice that survives the Arctic summer has declined by 12 percent per decade since the start of the satellite record in 1979.\\n\\n[6] How was Arctic sea ice measured before the satellite era? | National Snow and Ice Data Center\\nURL: https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era\\nExcerpt: Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was like before then, scientists use a combination of historical records and proxy measurements such as marine sediment cores. Taken together, these records indicate that the current Arctic sea ice decline ...\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 98,\n  \"reasoning\": \"Continuous satellite observation of Arctic sea ice began in 1979. According to authoritative scientific bodies including NOAA, the National Snow and Ice Data Center (NSIDC), and the European Environment Agency (EEA), Arctic sea ice extent has shown a substantial and continuous downward trend across all seasons, with summer minimum extent declining at a rate of approximately 12 to 13 percent per decade since 1979.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+        "Arctic sea ice decline since 1979",
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
+          "title": "Arctic sea ice decline - Wikipedia",
+          "snippet": "6 days ago - For January 2016, the satellite-based data showed the lowest overall Arctic sea ice extent of any January since records began in 1979."
+        },
+        {
+          "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
+          "title": "Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov",
+          "snippet": "October 18, 2022 - The amount of sea ice that survives the Arctic summer has declined by 13 percent per decade since the start of the 43-year satellite record."
+        },
+        {
+          "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
+          "title": "Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)",
+          "snippet": "November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has lost an area of 71,000km2 of sea ice per year in summer and 31,000km2 per year in winter since 1979. The Arctic sea ice area for summer 2025 was the second lowest ever and sea ice is becoming younger and thinner."
+        },
+        {
+          "url": "https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979",
+          "title": "Satellites record second lowest Arctic sea ice extent since 1979",
+          "snippet": "October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice extent is the second lowest (after the record low of 2012) since the beginning of satellite monitoring in 1979."
+        },
+        {
+          "url": "https://www.climate.us/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
+          "title": "Climate change: Arctic sea ice summer minimum | Climate.us",
+          "snippet": "June 9, 2026 - The amount of sea ice that survives the Arctic summer has declined by 12 percent per decade since the start of the satellite record in 1979."
+        },
+        {
+          "url": "https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era",
+          "title": "How was Arctic sea ice measured before the satellite era? | National Snow and Ice Data Center",
+          "snippet": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was like before then, scientists use a combination of historical records and proxy measurements such as marine sediment cores. Taken together, these records indicate that the current Arctic sea ice decline ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to official records from the U.S",
+        "Department of the Treasury and reports from the U.S",
+        "House Committee on the Budget, the total gross national debt of the United States surpassed the $34 trillion mark in late December 2023 (formally reported in early January 2024) and has continued to rise further since then."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The United States national debt has surpassed $34 trillion.\\\"\",\n  \"verification_notes\": \"Check US Treasury Fiscal Data (fiscaldata.treasury.gov). Note distinction between gross debt and debt held by the public. Verify current figure — may have grown beyond $34T by time of verification.\",\n  \"search_results\": \"[1] National debt of the United States - Wikipedia\\nURL: https://en.wikipedia.org/wiki/National_debt_of_the_United_States\\nExcerpt: 2 days ago - In February 2024, the total federal government debt rose to $34.4 trillion, after increasing by approximately $1 trillion during each of two separate 100-day periods since the previous June. In 2024, federal interest payments on the national debt surpassed spending on both Medicare and\\n\\n[2] National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...\\nURL: https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/\\nExcerpt: The United States national debt has surpassed $34.9 trillion for the first time, marking a somber milestone in the nation’s fiscal history. This figure, released by the Treasury Department, reflects a substantial increase from the $30 trillion threshold crossed just last year.\\n\\n[3] Understanding the National Debt | U.S. Treasury Fiscal Data\\nURL: https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/\\nExcerpt: This ratio is considered a better indicator of a country’s fiscal situation than just the national debt number because it shows the burden of debt relative to the country’s total economic output and therefore its ability to repay it. The U.S. debt to GDP ratio surpassed 100% in 2013 when both debt a\\n\\n[4] Debt to the Penny | U.S. Treasury Fiscal Data\\nURL: https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/\\nExcerpt: There are six datasets on Fiscal Data which include the national debt, which is referred to as Total Public Debt Outstanding (TPDO). TPDO is the sum of Debt Held by the Public and Intragovernmental (Intragov) Holdings. Some datasets include debt issued by the Federal Financing Bank (FFB).\\n\\n[5] America's $40 trillion national debt poses a growing fiscal crisis | Fox News\\nURL: https://www.foxnews.com/opinion/john-adams-made-terrifying-prediction-america-close-proving-him-correct\\nExcerpt: While inflation and high interest rates continue to strain many families, the United States remains the dominant force in the global economy. America still appears remarkably strong. ... The greatest threat to our future is hidden in plain sight. It is discussed by economists, fiscal experts, schola\\n\\n[6] National Debt Skyrockets to Highest Level Yet | The U.S. House Committee on the Budget - House Budget Committee\\nURL: https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet\\nExcerpt: January 4, 2024 - On Friday, December 29th the national debt hit $34 trillion.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"According to official records from the U.S. Department of the Treasury and reports from the U.S. House Committee on the Budget, the total gross national debt of the United States surpassed the $34 trillion mark in late December 2023 (formally reported in early January 2024) and has continued to rise further since then.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The United States national debt has surpassed $34 trillion.\"",
+        "US federal debt exceeds $34 trillion",
+        "\"The United States national debt has surpassed $34 trillion.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/National_debt_of_the_United_States",
+          "title": "National debt of the United States - Wikipedia",
+          "snippet": "2 days ago - In February 2024, the total federal government debt rose to $34.4 trillion, after increasing by approximately $1 trillion during each of two separate 100-day periods since the previous June. In 2024, federal interest payments on the national debt surpassed spending on both Medicare and national ..."
+        },
+        {
+          "url": "https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/",
+          "title": "National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...",
+          "snippet": "The United States national debt has surpassed $34.9 trillion for the first time, marking a somber milestone in the nation’s fiscal history. This figure, released by the Treasury Department, reflects a substantial increase from the $30 trillion threshold crossed just last year."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
+          "title": "Understanding the National Debt | U.S. Treasury Fiscal Data",
+          "snippet": "This ratio is considered a better indicator of a country’s fiscal situation than just the national debt number because it shows the burden of debt relative to the country’s total economic output and therefore its ability to repay it. The U.S. debt to GDP ratio surpassed 100% in 2013 when both debt and GDP were approximately 16.7 trillion."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/",
+          "title": "Debt to the Penny | U.S. Treasury Fiscal Data",
+          "snippet": "There are six datasets on Fiscal Data which include the national debt, which is referred to as Total Public Debt Outstanding (TPDO). TPDO is the sum of Debt Held by the Public and Intragovernmental (Intragov) Holdings. Some datasets include debt issued by the Federal Financing Bank (FFB)."
+        },
+        {
+          "url": "https://www.foxnews.com/opinion/john-adams-made-terrifying-prediction-america-close-proving-him-correct",
+          "title": "America's $40 trillion national debt poses a growing fiscal crisis | Fox News",
+          "snippet": "While inflation and high interest rates continue to strain many families, the United States remains the dominant force in the global economy. America still appears remarkably strong. ... The greatest threat to our future is hidden in plain sight. It is discussed by economists, fiscal experts, scholars and government officials, yet it barely registers with most voters. The danger is our ever-expanding national debt, which grows larger every year while Washington takes no meaningful action. The warning signs have been visible for years. Long before the debt reached today's staggering levels, former Chairman of the Joint Chiefs of Staff, Admiral Mike Mullen warned in 2010 that, \"The most significant threat to our national security is our debt.\" Every year the federal government's own financial reports acknowledge that America's fiscal path is \"unsustainable.\" The experts recognize the danger. The numbers confirm it. Yet elected officials continue spending trillions of dollars annually we Published 2 weeks ago"
+        },
+        {
+          "url": "https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet",
+          "title": "National Debt Skyrockets to Highest Level Yet | The U.S. House Committee on the Budget - House Budget Committee",
+          "snippet": "January 4, 2024 - On Friday, December 29th the national debt hit $34 trillion."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-003",
+      "claim_title": "mRNA vaccines alter human DNA",
+      "claim_text": "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false and has been thoroughly debunked by medical and scientific institutions worldwide, including the CDC, WHO, and NIH",
+        "mRNA from vaccines delivers temporary genetic instructions to the cell's cytoplasm to produce harmless viral spike proteins, triggering an immune response",
+        "Vaccine mRNA never enters the cell nucleus where human DNA is located, rapidly degrades after translation, and lacks the biological mechanisms (such as reverse transcriptase and integrase) required to reverse-transcribe into DNA or integrate into the human genome."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"mRNA COVID-19 vaccines alter or permanently change human DNA.\\\"\",\n  \"verification_notes\": \"Consult peer-reviewed molecular biology literature. Check CDC, WHO, and NIH statements. Key mechanism to verify: mRNA cannot be reverse-transcribed into DNA without reverse transcriptase enzyme. Check if any credible peer-reviewed evidence to the contrary has emerged.\",\n  \"search_results\": \"[1] Do mRNA Vaccines Permanently Alter Human DNA, Making You a Genetically Modified Organism? By Brian Simpson\\nURL: https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component\\nExcerpt: According to Urso, if this turns out to be correct, the result of mRNA vaccination might be lifelong COVID-19. A new study by MIT and Harvard scientists demonstrates that segments of the RNA from the coronavirus itself are most likely becoming a permanent fixture in human DNA.\\n\\n[2] No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA” | Science-Based Medicine\\nURL: https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/\\nExcerpt: December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are trying to scare readers with is the idea that somehow mRNA vaccines permanently alter your DNA, but, again, they can’t do that.\\n\\n[3] Major COVID study that fueled vaccine skepticism retracted over ‘misinformation’ | Scientific American\\nURL: https://www.scientificamerican.com/article/major-covid-study-that-fueled-vaccine-skepticism-retracted-over-misinformation/\\nExcerpt: 4 days ago - In its retraction notice, the BMJ stated that Mostert’s proposed edits would have been “insufficient.” The journal also said Mostert wasn’t available to cooperate with the investigation held by the center and initially could not be contacted by the BMJ before she later told the journal’\\n\\n[4] Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST\\nURL: https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/\\nExcerpt: May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents enter the liver and permanently alters human chromosomes and rewrites DNA. Contrary to the CDC’s claim that the mRNA COVID-19 vaccines do not “change or interact with your DNA in any way,” a new Swedish study finds ..\\n\\n[5] Return of the revenge of the COVID vaccine \\\"spike\\\" in your DNA - RESPECTFUL INSOLENCE\\nURL: https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/\\nExcerpt: March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently based on a dubious study. These \\\"slasher lies\\\" never die.\\n\\n[6] Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab\\nURL: https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/\\nExcerpt: November 16, 2022 - At least 46 of the false narratives debunked by the fact-checking alliance claimed that mRNA-based vaccines, the technology used in Pfizer-BioNTech and Moderna COVID-19 vaccines, alter human DNA.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"reasoning\": \"The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false and has been thoroughly debunked by medical and scientific institutions worldwide, including the CDC, WHO, and NIH. mRNA from vaccines delivers temporary genetic instructions to the cell's cytoplasm to produce harmless viral spike proteins, triggering an immune response. Vaccine mRNA never enters the cell nucleus where human DNA is located, rapidly degrades after translation, and lacks the biological mechanisms (such as reverse transcriptase and integrase) required to reverse-transcribe into DNA or integrate into the human genome.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+        "mRNA vaccines alter human DNA",
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
+          "title": "Do mRNA Vaccines Permanently Alter Human DNA, Making You a Genetically Modified Organism? By Brian Simpson",
+          "snippet": "According to Urso, if this turns out to be correct, the result of mRNA vaccination might be lifelong COVID-19. A new study by MIT and Harvard scientists demonstrates that segments of the RNA from the coronavirus itself are most likely becoming a permanent fixture in human DNA."
+        },
+        {
+          "url": "https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/",
+          "title": "No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA” | Science-Based Medicine",
+          "snippet": "December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are trying to scare readers with is the idea that somehow mRNA vaccines permanently alter your DNA, but, again, they can’t do that."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/major-covid-study-that-fueled-vaccine-skepticism-retracted-over-misinformation/",
+          "title": "Major COVID study that fueled vaccine skepticism retracted over ‘misinformation’ | Scientific American",
+          "snippet": "4 days ago - In its retraction notice, the BMJ stated that Mostert’s proposed edits would have been “insufficient.” The journal also said Mostert wasn’t available to cooperate with the investigation held by the center and initially could not be contacted by the BMJ before she later told the journal’s investigators that other researchers had done most of the work. The Princess Máxima Center’s report detailing its own findings “concluded ... that the article pays disproportionate attention to the possibility that COVID-19 containment measures and vaccination might have caused excess mortality,” according to the BMJ’s retraction notice. “That excess mortality occurred, however, was known and not newsworthy,” the center wrote in its report. “Despite the fact that the authors do not investigate the causes for excess mortality, the introduction and discussion of the article are largely focused on how to explain the excess mortality.” ·"
+        },
+        {
+          "url": "https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/",
+          "title": "Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST",
+          "snippet": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents enter the liver and permanently alters human chromosomes and rewrites DNA. Contrary to the CDC’s claim that the mRNA COVID-19 vaccines do not “change or interact with your DNA in any way,” a new Swedish study finds ..."
+        },
+        {
+          "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
+          "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
+          "snippet": "March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently based on a dubious study. These \"slasher lies\" never die."
+        },
+        {
+          "url": "https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/",
+          "title": "Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab",
+          "snippet": "November 16, 2022 - At least 46 of the false narratives debunked by the fact-checking alliance claimed that mRNA-based vaccines, the technology used in Pfizer-BioNTech and Moderna COVID-19 vaccines, alter human DNA."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that humans only use 10% of their brain capacity is a widely debunked neurological myth",
+        "Modern neuroscience, supported by brain imaging technologies like fMRI and PET scans, demonstrates that virtually all areas of the brain show activity throughout the day, even during sleep",
+        "Brain damage to almost any area causes functional deficits, and inactive brain tissue naturally atrophies or degrades, further disproving the idea that 90% of the brain lies dormant and untapped."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\\\"\",\n  \"verification_notes\": \"Check neuroimaging studies (fMRI, PET). Verify whether any region of the brain is truly inactive. Look at what happens to brain tissue when it's genuinely unused (it atrophies). Check scientific consensus from neuroscience organizations.\",\n  \"search_results\": \"[1] Ten-percent-of-the-brain myth - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth\\nExcerpt: 1 week ago - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads experts t\\n\\n[2] Do We Really Use Only 10 Percent of Our Brain? | Britannica\\nURL: https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain\\nExcerpt: July 3, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities....\\n\\n[3] Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today\\nURL: https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains\\nExcerpt: May 15, 2025 - This notion, repeated in movies, motivational speeches, and even some classrooms, implies that a vast cognitive potential remains untapped. However, this idea is scientifically inaccurate and undermines our understanding of human mental capacity.\\n\\n[4] Do People Only Use 10 Percent of Their Brains? | Scientific American\\nURL: https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/\\nExcerpt: February 20, 2024 - Another mystery hidden within our crinkled cortices is that out of all the brain's cells, only 10 percent are neurons; the other 90 percent are glial cells, which encapsulate and support neurons, but whose function remains largely unknown.\\n\\n[5] Do we only use 10 percent of our brain? - MIT McGovern Institute\\nURL: https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/\\nExcerpt: March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis.\\n\\n[6] Do We Only Use 10% of our Brains? | Snopes.com\\nURL: https://www.snopes.com/fact-check/the-ten-percent-myth/\\nExcerpt: August 4, 2022 - In fact, most of us only use about 10 per cent of our brains, if that. The other 90 per cent is full of untapped potential and undiscovered abilities, which means our minds are only operating in a very limited way instead of at full stretch.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that humans only use 10% of their brain capacity is a widely debunked neurological myth. Modern neuroscience, supported by brain imaging technologies like fMRI and PET scans, demonstrates that virtually all areas of the brain show activity throughout the day, even during sleep. Brain damage to almost any area causes functional deficits, and inactive brain tissue naturally atrophies or degrades, further disproving the idea that 90% of the brain lies dormant and untapped.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+        "Humans only use 10% of their brains",
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
+          "title": "Ten-percent-of-the-brain myth - Wikipedia",
+          "snippet": "1 week ago - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads experts to believe that it stems from multiple areas of the brain. Therefore, as with Kalat's idea that humans have untapped cognitive ..."
+        },
+        {
+          "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
+          "title": "Do We Really Use Only 10 Percent of Our Brain? | Britannica",
+          "snippet": "July 3, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities...."
+        },
+        {
+          "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
+          "title": "Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today",
+          "snippet": "May 15, 2025 - This notion, repeated in movies, motivational speeches, and even some classrooms, implies that a vast cognitive potential remains untapped. However, this idea is scientifically inaccurate and undermines our understanding of human mental capacity."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+          "title": "Do People Only Use 10 Percent of Their Brains? | Scientific American",
+          "snippet": "February 20, 2024 - Another mystery hidden within our crinkled cortices is that out of all the brain's cells, only 10 percent are neurons; the other 90 percent are glial cells, which encapsulate and support neurons, but whose function remains largely unknown."
+        },
+        {
+          "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
+          "title": "Do we only use 10 percent of our brain? - MIT McGovern Institute",
+          "snippet": "March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis."
+        },
+        {
+          "url": "https://www.snopes.com/fact-check/the-ten-percent-myth/",
+          "title": "Do We Only Use 10% of our Brains? | Snopes.com",
+          "snippet": "August 4, 2022 - In fact, most of us only use about 10 per cent of our brains, if that. The other 90 per cent is full of untapped potential and undiscovered abilities, which means our minds are only operating in a very limited way instead of at full stretch."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-007",
+      "claim_title": "Great Wall of China visible from space",
+      "claim_text": "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that the Great Wall of China is visible from space with the naked eye—let alone the only man-made structure visible—is a well-documented myth",
+        "The Great Wall is only a few meters wide and constructed from materials that blend into the surrounding terrain, making it virtually impossible to distinguish with the unaided human eye from low Earth orbit or from the Moon",
+        "Conversely, numerous other human-made features, such as major highways, large bridges, airport runways, dams, and city lights at night, are far more visible from low Earth orbit without optical aid."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\\\"\",\n  \"verification_notes\": \"Check astronaut accounts, NASA statements, and optical physics. The wall is roughly 9 meters wide — compare to road widths. Verify what actually IS visible from low Earth orbit with the naked eye.\",\n  \"search_results\": \"[1] Beyond Myths: Can You Really See the Great Wall of China from ...\\nURL: https://englishpluspodcast.com/beyond-myths-can-you-really-see-the-great-wall-of-china-from-space/\\nExcerpt: Feb 22, 2024 · Is the Great Wall of China the only human-made structure visible from space? Discover the truth behind this common myth and the surprising limits of human eyesight.\\n\\n[2] Can you see the Great Wall of China from space?\\nURL: https://www.skyatnightmagazine.com/space-science/can-you-see-great-wall-china-from-space\\nExcerpt: Feb 27, 2024 · One of the biggest is the idea that the Great Wall of China is the only human-made structure that can be seen from space. Is this true?\\n\\n[3] Is it true that the Great Wall of China is the only man-made ...\\nURL: https://www.thenakedscientists.com/articles/questions/it-true-great-wall-china-only-man-made-object-visible-space\\nExcerpt: Jul 14, 2002 · This is a myth ! Although the Great Wall is extremely long it is only about 5 metres or so wide. At distances greater than about 20 km up (about twice the height of Mt. Everest), a person even with perfect eyesight, but without the aid of a telescope or binoculars, cannot physically r\\n\\n[4] Is the Great Wall of China really visible from space?\\nURL: https://www.sciencefocus.com/planet-earth/is-the-great-wall-of-china-really-visible-from-space\\nExcerpt: Is the Great Wall of China really visible from space? Contrary to popular belief, the Great Wall of China is a thin structure that blends in well with the surrounding landscape, making it very hard to spot.\\n\\n[5] Fact Check: Is The Great Wall Of China Visible From Space?Is the Great Wall of China visible from space? - Space CentreCan You See the Great Wall of China from Space? 2026\\nURL: https://www.timesnownews.com/travel/news/fact-check-is-the-great-wall-of-china-visible-from-space-article-112466738\\nExcerpt: Aug 17, 2024 · “The Great Wall of China is the only man-made structure that is visible from space.” As kids, this was one of the most popular statements that made us wonder at the sheer size of this wall. And this statement has stuck around for a long time; in fact from before the first man planted\\n\\n[6] Is the Great Wall of China visible from space? - Space Centre\\nURL: https://www.spacecentre.nz/resources/faq/solar-system/earth/great-wall-china.html\\nExcerpt: It is often said that the Great Wall of China is the only man-made object that can be seen from space (or the Moon). This is not actually the case.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"reasoning\": \"The claim that the Great Wall of China is visible from space with the naked eye—let alone the only man-made structure visible—is a well-documented myth. The Great Wall is only a few meters wide and constructed from materials that blend into the surrounding terrain, making it virtually impossible to distinguish with the unaided human eye from low Earth orbit or from the Moon. Conversely, numerous other human-made features, such as major highways, large bridges, airport runways, dams, and city lights at night, are far more visible from low Earth orbit without optical aid.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+        "Great Wall of China visible from space",
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://englishpluspodcast.com/beyond-myths-can-you-really-see-the-great-wall-of-china-from-space/",
+          "title": "Beyond Myths: Can You Really See the Great Wall of China from ...",
+          "snippet": "Feb 22, 2024 · Is the Great Wall of China the only human-made structure visible from space? Discover the truth behind this common myth and the surprising limits of human eyesight."
+        },
+        {
+          "url": "https://www.skyatnightmagazine.com/space-science/can-you-see-great-wall-china-from-space",
+          "title": "Can you see the Great Wall of China from space?",
+          "snippet": "Feb 27, 2024 · One of the biggest is the idea that the Great Wall of China is the only human-made structure that can be seen from space. Is this true?"
+        },
+        {
+          "url": "https://www.thenakedscientists.com/articles/questions/it-true-great-wall-china-only-man-made-object-visible-space",
+          "title": "Is it true that the Great Wall of China is the only man-made ...",
+          "snippet": "Jul 14, 2002 · This is a myth ! Although the Great Wall is extremely long it is only about 5 metres or so wide. At distances greater than about 20 km up (about twice the height of Mt. Everest), a person even with perfect eyesight, but without the aid of a telescope or binoculars, cannot physically resolve something that small on the ground."
+        },
+        {
+          "url": "https://www.sciencefocus.com/planet-earth/is-the-great-wall-of-china-really-visible-from-space",
+          "title": "Is the Great Wall of China really visible from space?",
+          "snippet": "Is the Great Wall of China really visible from space? Contrary to popular belief, the Great Wall of China is a thin structure that blends in well with the surrounding landscape, making it very hard to spot."
+        },
+        {
+          "url": "https://www.timesnownews.com/travel/news/fact-check-is-the-great-wall-of-china-visible-from-space-article-112466738",
+          "title": "Fact Check: Is The Great Wall Of China Visible From Space?Is the Great Wall of China visible from space? - Space CentreCan You See the Great Wall of China from Space? 2026",
+          "snippet": "Aug 17, 2024 · “The Great Wall of China is the only man-made structure that is visible from space.” As kids, this was one of the most popular statements that made us wonder at the sheer size of this wall. And this statement has stuck around for a long time; in fact from before the first man planted his feet on ... It is often said that the Great Wall of China is the only man-made object that can be seen from space (or the Moon). This is not actually the case. May 19, 2025 · Question: Can You See the Great Wall of China from Space? Quick Answer: No, the Great Wall is not visible to the naked eye from space due to its narrow width and natural coloring that blends into the landscape."
+        },
+        {
+          "url": "https://www.spacecentre.nz/resources/faq/solar-system/earth/great-wall-china.html",
+          "title": "Is the Great Wall of China visible from space? - Space Centre",
+          "snippet": "It is often said that the Great Wall of China is the only man-made object that can be seen from space (or the Moon). This is not actually the case."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_title": "Napoleon was unusually short",
+      "claim_text": "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a widespread historical misconception",
+        "At his autopsy, Napoleon was recorded as measuring 5 feet 2 inches in pre-metric French units (*pieds du roi*), which corresponds to approximately 5 feet 6.5 inches to 5 feet 7 inches (around 168–169 cm) in modern imperial units",
+        "For French men in the early 19th century, the average height was around 5 feet 4 to 5 feet 5 inches, meaning Napoleon was of average or slightly above-average stature for his time",
+        "The myth of his shortness was popularized by English unit translation errors and British wartime propaganda (such as caricatures by James Gillray)."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\\\"\",\n  \"verification_notes\": \"Check historical records of Napoleon's height in French inches vs English inches. Verify average male height in early 19th century France. Look at accounts from contemporaries and his physician's records. The British caricaturist James Gillray's role in perpetuating the myth is worth examining.\",\n  \"search_results\": \"[1] Was Napoleon Actually Short? The Myth Behind His Height\\nURL: https://historiacorner.com/people/was-napoleon-short/\\nExcerpt: Jun 11, 2026 · Britannica notes that Napoleon’s estimated height was typical for his period, and another Britannica summary says he may even have been above average compared to French men around 1820. So the better question is not: Was Napoleon short by today’s standards? The better question is: Was\\n\\n[2] Is \\\"Napoleon Bonaparte was unusually short\\\" true? - School Myths\\nURL: https://www.schoolmyths.com/fact/napoleon-was-short\\nExcerpt: Was \\\"Napoleon Bonaparte was unusually short\\\" taught in school? Yes — and not as a joke question on a quiz. This history claim showed up in textbooks, worksheets, and classroom posters through the 2010s, which is why so many people still remember it as settled fact long after the science moved on. Is\\n\\n[3] Was Napoleon Short? | Britannica\\nURL: https://www.britannica.com/story/was-napoleon-short\\nExcerpt: Napoleon was thus average or taller, no matter the interpretation. Although Napoleon’s death certificate seems to suggest that he was probably taller than the typical 19th-century Frenchman, English cartoons, his nickname, and other hearsay left a lasting impression that the emperor was short.\\n\\n[4] Was Napoleon Bonaparte Really So Short? - History Rundown\\nURL: https://www.historyrundown.com/was-napoleon-bonaparte-really-so-short/\\nExcerpt: Mar 7, 2020 · Was Napoleon Bonaparte Really So Short? Because of numerous paintings, movies and cartoons. We often imagine Napoleon Bonaparte as an unusually short man, even when compared to his contemporaries. However, the myth that Napoleon was short stems primarily from the fact that he was measu\\n\\n[5] How Tall Was Napoleon Bonaparte? Actually Pretty Average\\nURL: https://history.howstuffworks.com/history-vs-myth/napoleon-short.htm\\nExcerpt: Aug 27, 2024 · Have you ever heard the term \\\"Napoleon complex\\\" used to refer to a man seems to be overcompensating for his short stature? Named after French general Napoleon Bonaparte, who supposedly compensated for his lack of height with a bellicose personality, the term describes men who are ster\\n\\n[6] Debunked: Napoleon Was Not Actually Short | HistorIQly Blog\\nURL: https://blog.historiqly.com/blog/debunked-napoleon-was-short\\nExcerpt: Jul 4, 2026 · \\\"Napoleon complex\\\" is a genuinely useful shorthand that gets used constantly, in offices, in sports commentary, in casual conversation, and every use of it silently reinforces the premise that the historical Napoleon really was unusually short. A term that convenient does not need to b\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a widespread historical misconception. At his autopsy, Napoleon was recorded as measuring 5 feet 2 inches in pre-metric French units (*pieds du roi*), which corresponds to approximately 5 feet 6.5 inches to 5 feet 7 inches (around 168–169 cm) in modern imperial units. For French men in the early 19th century, the average height was around 5 feet 4 to 5 feet 5 inches, meaning Napoleon was of average or slightly above-average stature for his time. The myth of his shortness was popularized by English unit translation errors and British wartime propaganda (such as caricatures by James Gillray).\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+        "Napoleon was unusually short",
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://historiacorner.com/people/was-napoleon-short/",
+          "title": "Was Napoleon Actually Short? The Myth Behind His Height",
+          "snippet": "Jun 11, 2026 · Britannica notes that Napoleon’s estimated height was typical for his period, and another Britannica summary says he may even have been above average compared to French men around 1820. So the better question is not: Was Napoleon short by today’s standards? The better question is: Was Napoleon unusually short for his own time? And the ..."
+        },
+        {
+          "url": "https://www.schoolmyths.com/fact/napoleon-was-short",
+          "title": "Is \"Napoleon Bonaparte was unusually short\" true? - School Myths",
+          "snippet": "Was \"Napoleon Bonaparte was unusually short\" taught in school? Yes — and not as a joke question on a quiz. This history claim showed up in textbooks, worksheets, and classroom posters through the 2010s, which is why so many people still remember it as settled fact long after the science moved on. Is \"Napoleon Bonaparte was unusually short\" true?"
+        },
+        {
+          "url": "https://www.britannica.com/story/was-napoleon-short",
+          "title": "Was Napoleon Short? | Britannica",
+          "snippet": "Napoleon was thus average or taller, no matter the interpretation. Although Napoleon’s death certificate seems to suggest that he was probably taller than the typical 19th-century Frenchman, English cartoons, his nickname, and other hearsay left a lasting impression that the emperor was short."
+        },
+        {
+          "url": "https://www.historyrundown.com/was-napoleon-bonaparte-really-so-short/",
+          "title": "Was Napoleon Bonaparte Really So Short? - History Rundown",
+          "snippet": "Mar 7, 2020 · Was Napoleon Bonaparte Really So Short? Because of numerous paintings, movies and cartoons. We often imagine Napoleon Bonaparte as an unusually short man, even when compared to his contemporaries. However, the myth that Napoleon was short stems primarily from the fact that he was measured 5 feet 2 inches a few years before his death."
+        },
+        {
+          "url": "https://history.howstuffworks.com/history-vs-myth/napoleon-short.htm",
+          "title": "How Tall Was Napoleon Bonaparte? Actually Pretty Average",
+          "snippet": "Aug 27, 2024 · Have you ever heard the term \"Napoleon complex\" used to refer to a man seems to be overcompensating for his short stature? Named after French general Napoleon Bonaparte, who supposedly compensated for his lack of height with a bellicose personality, the term describes men who are stereotypically quick to start fights because they feel inferior to their taller counterparts. But how tall was ..."
+        },
+        {
+          "url": "https://blog.historiqly.com/blog/debunked-napoleon-was-short",
+          "title": "Debunked: Napoleon Was Not Actually Short | HistorIQly Blog",
+          "snippet": "Jul 4, 2026 · \"Napoleon complex\" is a genuinely useful shorthand that gets used constantly, in offices, in sports commentary, in casual conversation, and every use of it silently reinforces the premise that the historical Napoleon really was unusually short. A term that convenient does not need to be true to survive. It just needs to be useful."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to research from the Cambridge Centre for Alternative Finance (Cambridge Bitcoin Electricity Consumption Index - CBECI) and reports cited by major institutions (such as the BBC and Columbia University's Climate School), Bitcoin's estimated annual electricity consumption (ranging from 120 to over 150 TWh per year in recent years) surpasses the annual electricity consumption of countries like Argentina (approx",
+        "Multiple independent analyses confirm this comparison."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\\\"\",\n  \"verification_notes\": \"Check the Cambridge CBECI for current figures. Compare to IEA national electricity consumption data. Verify whether the comparison holds with current mining conditions. Note whether the claim refers to TWh/year.\",\n  \"search_results\": \"[1] Bitcoin consumes 'more electricity than Argentina' - BBC\\nURL: https://www.bbc.com/news/technology-56012952\\nExcerpt: Feb 10, 2021 · Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \\\"Mining\\\" for the cryptocurrency is power-hungry, involving heavy computer ...\\n\\n[2] Cryptocurrency’s Dirty Secret: Energy ConsumptionBitcoin consumes more electricity than Argentina, UAE, and ...Bitcoin Consumes as Much Electricity as Argentina—Cash Is the ...Bitcoin Mining Consumes More Electricity Annually Than Argentina61 Bitcoin Energy Consumption Statistics (2026)Bitcoin consumes 'More electricity than Argentina' - Cambridge\\nURL: https://news.climate.columbia.edu/2022/05/04/cryptocurrency-energy/\\nExcerpt: May 4, 2022 · But crypto has a dirty little secret that is very relevant to the real world: it uses a lot of energy. How much energy? Bitcoin, the world’s largest cryptocurrency, currently consumes an estimated 150 terawatt-hours of electricity annually — more than the entire country of Argentina, p\\n\\n[3] Bitcoin consumes more electricity than Argentina, UAE, and ...Bitcoin Consumes as Much Electricity as Argentina—Cash Is the ...Bitcoin Mining Consumes More Electricity Annually Than Argentina61 Bitcoin Energy Consumption Statistics (2026)Bitcoin consumes 'More electricity than Argentina' - Cambridge\\nURL: https://uk.finance.yahoo.com/news/bitcoin-cryptocurrency-consumes-more-electricity-than-argentina-140323187.html\\nExcerpt: Feb 11, 2021 · Photo: Getty If Bitcoin (BTC-USD) were a country, it would be in the top 30 energy users worldwide, consuming more electricity than Argentina. That's according to analysis by Cambridge University's online tool, which showed that the virtual coin uses around 121.36 terawatt-hours (TWh)\\n\\n[4] Bitcoin Consumes as Much Electricity as Argentina—Cash Is the ...\\nURL: https://www.cashmatters.org/blog/bitcoin-consumes-as-much-electricity-as-argentinacash-is-the-sustainable-alternative/\\nExcerpt: Sep 18, 2025 · The IMF highlights Bitcoin’s electricity use equalling Argentina’s annual consumption, exposing the hidden climate cost of digital payments. Unlike energy-hungry crypto and servers, cash operates with minimal impact, ensuring resilience, inclusion, and sustainability in global payment\\n\\n[5] Bitcoin Mining Consumes More Electricity Annually Than Argentina\\nURL: https://www.intelligentliving.co/bitcoin-consumes-more-electricity-than-argentina/\\nExcerpt: Feb 18, 2021 · Bitcoin would rank 30th in annual energy if it were a country. It consumes around 121.36 terawatt-hours (TWh) worth of electricity annually – or nearly 0.5% of the world’s energy production. That means that mining for bitcoin consumes more electricity than Argentina (121 TWh), the Uni\\n\\n[6] 61 Bitcoin Energy Consumption Statistics (2026)\\nURL: https://bitbo.io/mining-stats/\\nExcerpt: Sep 10, 2023 · Bitcoin currently consumes approximately 160 terawatt-hours of electricity annually - more than the entire country of Argentina. The Bitcoin network uses about 2% of the amount of electricity used by the USA every year.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to research from the Cambridge Centre for Alternative Finance (Cambridge Bitcoin Electricity Consumption Index - CBECI) and reports cited by major institutions (such as the BBC and Columbia University's Climate School), Bitcoin's estimated annual electricity consumption (ranging from 120 to over 150 TWh per year in recent years) surpasses the annual electricity consumption of countries like Argentina (approx. 121–130 TWh). Multiple independent analyses confirm this comparison.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+        "Bitcoin uses more electricity than Argentina",
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-56012952",
+          "title": "Bitcoin consumes 'more electricity than Argentina' - BBC",
+          "snippet": "Feb 10, 2021 · Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \"Mining\" for the cryptocurrency is power-hungry, involving heavy computer ..."
+        },
+        {
+          "url": "https://news.climate.columbia.edu/2022/05/04/cryptocurrency-energy/",
+          "title": "Cryptocurrency’s Dirty Secret: Energy ConsumptionBitcoin consumes more electricity than Argentina, UAE, and ...Bitcoin Consumes as Much Electricity as Argentina—Cash Is the ...Bitcoin Mining Consumes More Electricity Annually Than Argentina61 Bitcoin Energy Consumption Statistics (2026)Bitcoin consumes 'More electricity than Argentina' - Cambridge",
+          "snippet": "May 4, 2022 · But crypto has a dirty little secret that is very relevant to the real world: it uses a lot of energy. How much energy? Bitcoin, the world’s largest cryptocurrency, currently consumes an estimated 150 terawatt-hours of electricity annually — more than the entire country of Argentina, population 45 million. Feb 11, 2021 · Photo: Getty If Bitcoin (BTC-USD) were a country, it would be in the top 30 energy users worldwide, consuming more electricity than Argentina. That's according to analysis by Cambridge University's online tool, which showed that the virtual coin uses around 121.36 terawatt-hours (TWh) per year. Sep 18, 2025 · The IMF highlights Bitcoin’s electricity use equalling Argentina’s annual consumption, exposing the hidden climate cost of digital payments. Unlike energy-hungry crypto and servers, cash operates with minimal impact, ensuring resilience, inclusion, and sustainability in global payment systems. Feb 18, 2021 · Bitcoin would rank 30th in annual energy if it were a country. It consumes around 121.36 terawatt-hours (TWh) worth of electricity annually – or nearly 0.5% of the world’s energy production. That means that mining for bitcoin consumes more electricity than Argentina (121 TWh), the United Arab Emirates (113.20 TWh), and the Netherlands (108.8 TWh), and it ranks just under Norway (122.20 TWh). Sep 10, 2023 · Bitcoin currently consumes approximately 160 terawatt-hours of electricity annually - more than the entire country of Argentina. The Bitcoin network uses about 2% of the amount of electricity used by the USA every year. The Latest Developments Bitcoin energy consumption is mining's electricity use, driven by price, device efficiency, and energy mix. Cambridge estimates ~121 TWh yearly, rivaling mid-sized nations. Energy use rises with Bitcoin price; declines only if prices fall. Comparisons: Argentina, Netherlands, UAE; approaching Norway. Tesla's $1.5B Bitcoin buy drew criticism over environmental impact."
+        },
+        {
+          "url": "https://uk.finance.yahoo.com/news/bitcoin-cryptocurrency-consumes-more-electricity-than-argentina-140323187.html",
+          "title": "Bitcoin consumes more electricity than Argentina, UAE, and ...Bitcoin Consumes as Much Electricity as Argentina—Cash Is the ...Bitcoin Mining Consumes More Electricity Annually Than Argentina61 Bitcoin Energy Consumption Statistics (2026)Bitcoin consumes 'More electricity than Argentina' - Cambridge",
+          "snippet": "Feb 11, 2021 · Photo: Getty If Bitcoin (BTC-USD) were a country, it would be in the top 30 energy users worldwide, consuming more electricity than Argentina. That's according to analysis by Cambridge University's online tool, which showed that the virtual coin uses around 121.36 terawatt-hours (TWh) per year. Sep 18, 2025 · The IMF highlights Bitcoin’s electricity use equalling Argentina’s annual consumption, exposing the hidden climate cost of digital payments. Unlike energy-hungry crypto and servers, cash operates with minimal impact, ensuring resilience, inclusion, and sustainability in global payment systems. Feb 18, 2021 · Bitcoin would rank 30th in annual energy if it were a country. It consumes around 121.36 terawatt-hours (TWh) worth of electricity annually – or nearly 0.5% of the world’s energy production. That means that mining for bitcoin consumes more electricity than Argentina (121 TWh), the United Arab Emirates (113.20 TWh), and the Netherlands (108.8 TWh), and it ranks just under Norway (122.20 TWh). Sep 10, 2023 · Bitcoin currently consumes approximately 160 terawatt-hours of electricity annually - more than the entire country of Argentina. The Bitcoin network uses about 2% of the amount of electricity used by the USA every year. The Latest Developments Bitcoin energy consumption is mining's electricity use, driven by price, device efficiency, and energy mix. Cambridge estimates ~121 TWh yearly, rivaling mid-sized nations. Energy use rises with Bitcoin price; declines only if prices fall. Comparisons: Argentina, Netherlands, UAE; approaching Norway. Tesla's $1.5B Bitcoin buy drew criticism over environmental impact."
+        },
+        {
+          "url": "https://www.cashmatters.org/blog/bitcoin-consumes-as-much-electricity-as-argentinacash-is-the-sustainable-alternative/",
+          "title": "Bitcoin Consumes as Much Electricity as Argentina—Cash Is the ...",
+          "snippet": "Sep 18, 2025 · The IMF highlights Bitcoin’s electricity use equalling Argentina’s annual consumption, exposing the hidden climate cost of digital payments. Unlike energy-hungry crypto and servers, cash operates with minimal impact, ensuring resilience, inclusion, and sustainability in global payment systems."
+        },
+        {
+          "url": "https://www.intelligentliving.co/bitcoin-consumes-more-electricity-than-argentina/",
+          "title": "Bitcoin Mining Consumes More Electricity Annually Than Argentina",
+          "snippet": "Feb 18, 2021 · Bitcoin would rank 30th in annual energy if it were a country. It consumes around 121.36 terawatt-hours (TWh) worth of electricity annually – or nearly 0.5% of the world’s energy production. That means that mining for bitcoin consumes more electricity than Argentina (121 TWh), the United Arab Emirates (113.20 TWh), and the Netherlands (108.8 TWh), and it ranks just under Norway (122.20 TWh)."
+        },
+        {
+          "url": "https://bitbo.io/mining-stats/",
+          "title": "61 Bitcoin Energy Consumption Statistics (2026)",
+          "snippet": "Sep 10, 2023 · Bitcoin currently consumes approximately 160 terawatt-hours of electricity annually - more than the entire country of Argentina. The Bitcoin network uses about 2% of the amount of electricity used by the USA every year."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-011",
+      "claim_title": "MSG causes headaches — 'Chinese restaurant syndrome'",
+      "claim_text": "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Extensive scientific research and double-blind, placebo-controlled studies have failed to establish a causal relationship between monosodium glutamate (MSG) consumed in normal dietary amounts and symptoms such as headaches, numbness, or flushing (historically labeled \"Chinese restaurant syndrome\")",
+        "Major food safety and public health authorities—including the U.S",
+        "Food and Drug Administration (FDA), the World Health Organization (WHO), and the European Food Safety Authority (EFSA)—classify MSG as \"Generally Recognized as Safe\" (GRAS)",
+        "The glutamate in MSG is chemically indistinguishable from glutamate naturally found in foods like tomatoes, aged cheeses, and mushrooms",
+        "The myth originated largely from an anecdotal 1968 letter to the New England Journal of Medicine and subsequent poorly controlled early studies influenced by xenophobic biases."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\\\"\",\n  \"verification_notes\": \"Check FDA classification of MSG (GRAS status). Look for double-blind studies on MSG sensitivity. Verify whether glutamate in MSG differs from glutamate naturally present in tomatoes, cheese, and mushrooms. Check the original 1968 NEJM letter and subsequent research.\",\n  \"search_results\": \"[1] Glutamate flavoring - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Glutamate_flavoring\\nExcerpt: That MSG causes health problems may have thrived on racially charged biases from the outset. Ian Mosby, a food historian, wrote in a 2009 paper titled \\\"'That Won-Ton Soup Headache': The Chinese Restaurant Syndrome, MSG and the Making of American Food...\\n\\n[2] Is it true that mSG causes 'Chinese restaurant syndrome... | Verdik\\nURL: https://www.verdik.co/claims/msg-causes-chinese-restaurant-syndrome-headaches-most-adults-typical-food-doses\\nExcerpt: Review of alleged health hazards and preclinical studies; does not specifically address headaches or Chinese restaurant syndrome in typical doses. Counter-evidence considered.\\n\\n[3] MSG: All You Need To Know\\nURL: https://zoe.com/learn/msg\\nExcerpt: The term “Chinese restaurant syndrome” has racist connotations and, after some pressure from Ajinomoto via a media campaign, Merriam-Webster finally changed its definition.\\n\\n[4] 50 years ago, MSG in Chinese food got a bad rap | Science News\\nURL: https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome\\nExcerpt: March 8, 1969 cover Chinese Restaurant syndrome varies —.In the Feb. 21 Science, [researchers] report “evidence that it (MSG) causes headache, as well as symptoms of acute Chinese Restaurant disease–burning sensations, facial pressure and chest pain.”\\n\\n[5] 'Chinese Restaurant Syndrome' - what is it and is it racist?\\nURL: https://www.bbc.com/news/world-us-canada-51139005\\nExcerpt: What is 'Chinese Restaurant Syndrome'? Tucked between \\\"Chinese red\\\" and \\\"Chinese rose\\\", the disputed entry in Merriam-Webster's is defined asMerriam-Webster's has said that it will consider revising \\\"Chinese restaurant syndrome\\\".\\n\\n[6] The Rotten Science Behind the MSG Scare | Science History Institute\\nURL: https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/\\nExcerpt: As a result, the panic over Chinese Restaurant Syndrome kept building and building. Ralph Nader began pushing to ban MSG in baby food; other activists pushed to ban it altogether.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"Extensive scientific research and double-blind, placebo-controlled studies have failed to establish a causal relationship between monosodium glutamate (MSG) consumed in normal dietary amounts and symptoms such as headaches, numbness, or flushing (historically labeled \\\"Chinese restaurant syndrome\\\"). Major food safety and public health authorities—including the U.S. Food and Drug Administration (FDA), the World Health Organization (WHO), and the European Food Safety Authority (EFSA)—classify MSG as \\\"Generally Recognized as Safe\\\" (GRAS). The glutamate in MSG is chemically indistinguishable from glutamate naturally found in foods like tomatoes, aged cheeses, and mushrooms. The myth originated largely from an anecdotal 1968 letter to the New England Journal of Medicine and subsequent poorly controlled early studies influenced by xenophobic biases.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+        "MSG causes headaches — 'Chinese restaurant syndrome'",
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Glutamate_flavoring",
+          "title": "Glutamate flavoring - Wikipedia",
+          "snippet": "That MSG causes health problems may have thrived on racially charged biases from the outset. Ian Mosby, a food historian, wrote in a 2009 paper titled \"'That Won-Ton Soup Headache': The Chinese Restaurant Syndrome, MSG and the Making of American Food..."
+        },
+        {
+          "url": "https://www.verdik.co/claims/msg-causes-chinese-restaurant-syndrome-headaches-most-adults-typical-food-doses",
+          "title": "Is it true that mSG causes 'Chinese restaurant syndrome... | Verdik",
+          "snippet": "Review of alleged health hazards and preclinical studies; does not specifically address headaches or Chinese restaurant syndrome in typical doses. Counter-evidence considered."
+        },
+        {
+          "url": "https://zoe.com/learn/msg",
+          "title": "MSG: All You Need To Know",
+          "snippet": "The term “Chinese restaurant syndrome” has racist connotations and, after some pressure from Ajinomoto via a media campaign, Merriam-Webster finally changed its definition."
+        },
+        {
+          "url": "https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome",
+          "title": "50 years ago, MSG in Chinese food got a bad rap | Science News",
+          "snippet": "March 8, 1969 cover Chinese Restaurant syndrome varies —.In the Feb. 21 Science, [researchers] report “evidence that it (MSG) causes headache, as well as symptoms of acute Chinese Restaurant disease–burning sensations, facial pressure and chest pain.”"
+        },
+        {
+          "url": "https://www.bbc.com/news/world-us-canada-51139005",
+          "title": "'Chinese Restaurant Syndrome' - what is it and is it racist?",
+          "snippet": "What is 'Chinese Restaurant Syndrome'? Tucked between \"Chinese red\" and \"Chinese rose\", the disputed entry in Merriam-Webster's is defined asMerriam-Webster's has said that it will consider revising \"Chinese restaurant syndrome\"."
+        },
+        {
+          "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
+          "title": "The Rotten Science Behind the MSG Scare | Science History Institute",
+          "snippet": "As a result, the panic over Chinese Restaurant Syndrome kept building and building. Ralph Nader began pushing to ban MSG in baby food; other activists pushed to ban it altogether."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-013",
+      "claim_title": "Social media causes depression in teenagers",
+      "claim_text": "\"Social media use causes depression and anxiety in teenagers.\"",
+      "category": "health",
+      "verdict": "DISPUTED",
+      "confidence": 85,
+      "verdict_changed": false,
+      "previous_verdict": "DISPUTED",
+      "new_verdict": "DISPUTED",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": true,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 8,
+      "reasoning_steps": [
+        "The claim that social media use directly causes depression and anxiety in teenagers remains a subject of intense scientific debate",
+        "While numerous observational studies and public health advisories have documented statistical correlations between heavy social media consumption and adverse mental health outcomes in adolescents, establishing a definitive causal link has proven controversial",
+        "Large-scale meta-analyses and systematic reviews (e.g., Orben & Przybylski) indicate that the overall statistical effect sizes are very small, and bidirectional or reverse causality (such as already-depressed or anxious adolescents turning more frequently to social media) is common",
+        "Researchers disagree significantly on the degree of direct causation versus confounding factors such as sleep disruption, cyberbullying, pre-existing vulnerabilities, and the distinction between passive scrolling and active social connection",
+        "Consequently, scientific consensus does not support a sweeping, direct causal claim."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Social media use causes depression and anxiety in teenagers.\\\"\",\n  \"verification_notes\": \"Look for meta-analyses and systematic reviews. Check both Haidt's research and critics like Orben/Przybylski. Verify whether studies show correlation vs causation. Check whether effect sizes are practically significant. Note the difference between passive consumption and active engagement.\",\n  \"search_results\": \"[1] Is Social Media making our kids depressed? - Leiden Psychology Blog\\nURL: https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed\\nExcerpt: Social Media The use of smartphones and social media apps in teenagers has skyrocketed since 2010. Could there be a connection? A study in 2016 looked into the odds of having depression and anxiety for young adults who use social media.\\n\\n[2] Model Papers vs. Plagiarism: What Students Must Know\\nURL: https://collegeessay.org/blog/inside-collegeessay/model-papers-vs-plagiarism\\nExcerpt: 2. Student uses the model’s thesis: “Excessive social media use causes depression and anxiety in teenagers.” 3. Student copies the model’s organizational structure exactly. 4. Student paraphrases sections of the model, changing words but keeping ideas.\\n\\n[3] Teenagers: Death by Social Media. | Medium\\nURL: https://medium.com/@reynolow/teenagers-death-by-social-media-d71d0d019b41\\nExcerpt: Given that the rise in smartphone use coincided with the rise in depression, these two data are not only coincidences. Access to social media is made simpler as more teenagers buy smartphones.“Does Social Media Use Cause Depression?” Child Mind Institute, 14 Apr.\\n\\n[4] Social Media And Mental Illness | ENG 110: Mapping New York City\\nURL: https://eng110michael.commons.gc.cuny.edu/social-media-and-mental-illness/\\nExcerpt: Young teenagers tend to feed their brain with unnecessary information from the media and that information forces to reduce their cognitive ability. This is why today’s social media is harmful to mental health.“Does Social Media Cause Depression?”\\n\\n[5] Screens, Social Media & Child Mental Health | Chelmsford Osteopathy...\\nURL: https://chelmsfordosteopathyclinic.co.uk/teens-social-media-and-phones/\\nExcerpt: Does social media cause depression in children?Chelmsford Osteopathy Clinic. If your child is struggling with posture problems, screen-related tension, headaches, or stress-related discomfort, I offer gentle osteopathic care for children and teenagers in Chelmsford and across Essex.\\n\\n[6] How Does Social Media Affect Teens? - Clinical Psychology Associates\\nURL: https://www.clinical-psychology-associates.com/how-does-social-media-affect-teens/\\nExcerpt: Does social media cause depression, or does depression increase social media use? The answer may be yes to both questions. Research shows that young people’s use of social media is adding to their depression.\\n\\n[7] Are Social Networks Causing Loneliness Among Teens? | HuffPost Life\\nURL: https://www.huffpost.com/entry/are-social-networks-causi_b_12396080\\nExcerpt: There is some surprising research out there and it shows social networks might indeed be causing loneliness and even depression in teenagers.Continue reading to learn more about how social media is just adding to the depression of teens today. Real Social Skills Are Diminishing.\\n\\n[8] Social Media and Teen Mood: Separating the Evidence From the Panic\\nURL: https://www.jetlearn.com/blog/social-media-and-teen-mood-separating-the-evidence-from-the-panic\\nExcerpt: Is there solid scientific proof that social media causes anxiety and depression in teenagers? There's a genuinely well-established statistical association, but the causal direction and effect size remain actively debated among researchers — most evidence is correlational...\"\n}",
+      "raw_response": "{\n  \"verdict\": \"DISPUTED\",\n  \"confidence\": 85,\n  \"reasoning\": \"The claim that social media use directly causes depression and anxiety in teenagers remains a subject of intense scientific debate. While numerous observational studies and public health advisories have documented statistical correlations between heavy social media consumption and adverse mental health outcomes in adolescents, establishing a definitive causal link has proven controversial. Large-scale meta-analyses and systematic reviews (e.g., Orben & Przybylski) indicate that the overall statistical effect sizes are very small, and bidirectional or reverse causality (such as already-depressed or anxious adolescents turning more frequently to social media) is common. Researchers disagree significantly on the degree of direct causation versus confounding factors such as sleep disruption, cyberbullying, pre-existing vulnerabilities, and the distinction between passive scrolling and active social connection. Consequently, scientific consensus does not support a sweeping, direct causal claim.\",\n  \"conflicting_sources\": true,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Social media use causes depression and anxiety in teenagers.\"",
+        "Social media causes depression in teenagers",
+        "\"Social media use causes depression and anxiety in teenagers.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed",
+          "title": "Is Social Media making our kids depressed? - Leiden Psychology Blog",
+          "snippet": "Social Media The use of smartphones and social media apps in teenagers has skyrocketed since 2010. Could there be a connection? A study in 2016 looked into the odds of having depression and anxiety for young adults who use social media."
+        },
+        {
+          "url": "https://collegeessay.org/blog/inside-collegeessay/model-papers-vs-plagiarism",
+          "title": "Model Papers vs. Plagiarism: What Students Must Know",
+          "snippet": "2. Student uses the model’s thesis: “Excessive social media use causes depression and anxiety in teenagers.” 3. Student copies the model’s organizational structure exactly. 4. Student paraphrases sections of the model, changing words but keeping ideas."
+        },
+        {
+          "url": "https://medium.com/@reynolow/teenagers-death-by-social-media-d71d0d019b41",
+          "title": "Teenagers: Death by Social Media. | Medium",
+          "snippet": "Given that the rise in smartphone use coincided with the rise in depression, these two data are not only coincidences. Access to social media is made simpler as more teenagers buy smartphones.“Does Social Media Use Cause Depression?” Child Mind Institute, 14 Apr."
+        },
+        {
+          "url": "https://eng110michael.commons.gc.cuny.edu/social-media-and-mental-illness/",
+          "title": "Social Media And Mental Illness | ENG 110: Mapping New York City",
+          "snippet": "Young teenagers tend to feed their brain with unnecessary information from the media and that information forces to reduce their cognitive ability. This is why today’s social media is harmful to mental health.“Does Social Media Cause Depression?”"
+        },
+        {
+          "url": "https://chelmsfordosteopathyclinic.co.uk/teens-social-media-and-phones/",
+          "title": "Screens, Social Media & Child Mental Health | Chelmsford Osteopathy...",
+          "snippet": "Does social media cause depression in children?Chelmsford Osteopathy Clinic. If your child is struggling with posture problems, screen-related tension, headaches, or stress-related discomfort, I offer gentle osteopathic care for children and teenagers in Chelmsford and across Essex."
+        },
+        {
+          "url": "https://www.clinical-psychology-associates.com/how-does-social-media-affect-teens/",
+          "title": "How Does Social Media Affect Teens? - Clinical Psychology Associates",
+          "snippet": "Does social media cause depression, or does depression increase social media use? The answer may be yes to both questions. Research shows that young people’s use of social media is adding to their depression."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-015",
+      "claim_title": "AlphaGo defeated the world Go champion in 2016",
+      "claim_text": "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-016",
+      "claim_title": "Generative AI will replace 300 million jobs",
+      "claim_text": "\"Generative AI will replace 300 million jobs worldwide.\"",
+      "category": "economics",
+      "verdict": "MISLEADING",
+      "new_verdict": "MISLEADING",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict MISLEADING."
+      ]
+    },
+    {
+      "claim_id": "claim-004",
+      "claim_title": "AI systems now pass the bar exam",
+      "claim_text": "\"AI language models can now pass the US bar examination at above-average scores.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 4
+}
