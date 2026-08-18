@@ -1,0 +1,292 @@
+{
+  "run_id": "run-2026-08-18T060828Z",
+  "started_at": "2026-08-18T06:08:28Z",
+  "finished_at": "2026-08-18T06:10:29Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-015",
+      "claim_title": "AlphaGo defeated the world Go champion in 2016",
+      "claim_text": "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "In March 2016, Google DeepMind's AlphaGo defeated 18-time world champion Go player Lee Sedol 4 games to 1 in Seoul, South Korea",
+        "Prior to the match, artificial intelligence researchers and Go experts widely believed that a computer program defeating a top-ranked human Go professional was at least a decade away, making AlphaGo's victory a landmark milestone accomplished significantly ahead of expectations."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\\\"\",\n  \"verification_notes\": \"Verify the match result and date (March 2016). Check pre-match expert predictions. Verify Lee Sedol's world ranking at the time. Look at how AlphaGo's approach (Monte Carlo tree search + deep learning) differed from prior game AI. Note: AlphaZero later surpassed AlphaGo.\",\n  \"search_results\": \"[1] AlphaGo versus Lee Sedol - Wikipedia\\nURL: https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol\\nExcerpt: 1 week ago - Before AlphaGo, some researchers ... never defeat top humans at Go. Elon Musk, an early investor of DeepMind, said in 2016 that experts in the field thought AI was 10 years away from achieving a victory against a top professional Go player. The match AlphaGo versus Lee Sedol is comparab\\n\\n[2] AlphaGo - Wikipedia\\nURL: https://en.wikipedia.org/wiki/AlphaGo\\nExcerpt: June 6, 2026 - AlphaGo is a computer program that plays the board game Go. It was developed by the London-based DeepMind Technologies, an acquired subsidiary of Google. Subsequent versions of AlphaGo became increasingly powerful, including a version that competed under the name Master.\\n\\n[3] AlphaGo — Google DeepMind\\nURL: https://deepmind.google/research/alphago/\\nExcerpt: AlphaGo then competed against legendary Go player Lee Sedol — winner of 18 world titles, and widely considered the greatest player of that decade. AlphaGo's 4-1 victory in Seoul, South Korea, in March 2016 was watched by over 200 million people ...\\n\\n[4] AlphaGo’s ultimate challenge: a five-game match against the legendary Lee Sedol\\nURL: https://blog.google/technology/ai/alphagos-ultimate-challenge/\\nExcerpt: January 7, 2026 - This concludes the 5 game match between AlphaGo and Lee Sedol, with AlphaGo winning the match 4 games to 1 against the best Go player of the last decade, achieving a major milestone for artificial intelligence a decade earlier than many predicted.\\n\\n[5] Former Go champion beaten by DeepMind retires after declaring AI invincible | The Verge\\nURL: https://www.theverge.com/2019/11/27/20985260/ai-go-alphago-lee-se-dol-retired-deepmind-defeat\\nExcerpt: November 27, 2019 - This reputation took a knock in 2016 when the Google-owned artificial intelligence company DeepMind shocked the world by defeating Se-dol four matches to one with its AlphaGo AI system.\\n\\n[6] AlphaGo seals 4-1 victory over Go grandmaster Lee Sedol | AI (artificial intelligence) | The Guardian\\nURL: https://www.theguardian.com/technology/2016/mar/15/googles-alphago-seals-4-1-victory-over-grandmaster-lee-sedol\\nExcerpt: November 29, 2017 - Google DeepMind’s AlphaGo program triumphed in its final game against South Korean Go grandmaster Lee Sedol to win the series 4-1, providing further evidence of the landmark achievement for an artificial intelligence program.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 98,\n  \"reasoning\": \"In March 2016, Google DeepMind's AlphaGo defeated 18-time world champion Go player Lee Sedol 4 games to 1 in Seoul, South Korea. Prior to the match, artificial intelligence researchers and Go experts widely believed that a computer program defeating a top-ranked human Go professional was at least a decade away, making AlphaGo's victory a landmark milestone accomplished significantly ahead of expectations.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+        "AlphaGo defeated the world Go champion in 2016",
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+          "title": "AlphaGo versus Lee Sedol - Wikipedia",
+          "snippet": "1 week ago - Before AlphaGo, some researchers ... never defeat top humans at Go. Elon Musk, an early investor of DeepMind, said in 2016 that experts in the field thought AI was 10 years away from achieving a victory against a top professional Go player. The match AlphaGo versus Lee Sedol is comparable ..."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/AlphaGo",
+          "title": "AlphaGo - Wikipedia",
+          "snippet": "June 6, 2026 - AlphaGo is a computer program that plays the board game Go. It was developed by the London-based DeepMind Technologies, an acquired subsidiary of Google. Subsequent versions of AlphaGo became increasingly powerful, including a version that competed under the name Master."
+        },
+        {
+          "url": "https://deepmind.google/research/alphago/",
+          "title": "AlphaGo — Google DeepMind",
+          "snippet": "AlphaGo then competed against legendary Go player Lee Sedol — winner of 18 world titles, and widely considered the greatest player of that decade. AlphaGo's 4-1 victory in Seoul, South Korea, in March 2016 was watched by over 200 million people ..."
+        },
+        {
+          "url": "https://blog.google/technology/ai/alphagos-ultimate-challenge/",
+          "title": "AlphaGo’s ultimate challenge: a five-game match against the legendary Lee Sedol",
+          "snippet": "January 7, 2026 - This concludes the 5 game match between AlphaGo and Lee Sedol, with AlphaGo winning the match 4 games to 1 against the best Go player of the last decade, achieving a major milestone for artificial intelligence a decade earlier than many predicted."
+        },
+        {
+          "url": "https://www.theverge.com/2019/11/27/20985260/ai-go-alphago-lee-se-dol-retired-deepmind-defeat",
+          "title": "Former Go champion beaten by DeepMind retires after declaring AI invincible | The Verge",
+          "snippet": "November 27, 2019 - This reputation took a knock in 2016 when the Google-owned artificial intelligence company DeepMind shocked the world by defeating Se-dol four matches to one with its AlphaGo AI system."
+        },
+        {
+          "url": "https://www.theguardian.com/technology/2016/mar/15/googles-alphago-seals-4-1-victory-over-grandmaster-lee-sedol",
+          "title": "AlphaGo seals 4-1 victory over Go grandmaster Lee Sedol | AI (artificial intelligence) | The Guardian",
+          "snippet": "November 29, 2017 - Google DeepMind’s AlphaGo program triumphed in its final game against South Korean Go grandmaster Lee Sedol to win the series 4-1, providing further evidence of the landmark achievement for an artificial intelligence program."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-016",
+      "claim_title": "Generative AI will replace 300 million jobs",
+      "claim_text": "\"Generative AI will replace 300 million jobs worldwide.\"",
+      "category": "economics",
+      "verdict": "MISLEADING",
+      "confidence": 90,
+      "verdict_changed": false,
+      "previous_verdict": "MISLEADING",
+      "new_verdict": "MISLEADING",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim oversimplifies and distorts the findings of a widely cited March 2023 Goldman Sachs economics report",
+        "The study estimated that generative AI could expose roughly 300 million full-time jobs worldwide to automation or replace the equivalent workload of tasks",
+        "However, the report explicitly emphasized that exposure does not equate to outright job elimination; for most workers and industries, generative AI is expected to complement human labor rather than fully replace it, alongside creating new roles and boosting global productivity",
+        "Presenting this figure as a definitive prediction that 300 million jobs \"will be replaced\" strips essential nuance from the projection."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Generative AI will replace 300 million jobs worldwide.\\\"\",\n  \"verification_notes\": \"Check the primary source: the Goldman Sachs Global Economics Analyst (Hatzius et al., 26 March 2023). Verify the exact wording — the report estimates roughly 300 million full-time jobs could be \\\"exposed to automation,\\\" and that ~two-thirds of occupations could see *some* automation, not full replacement. Distinguish \\\"exposed to,\\\" \\\"complemented by,\\\" and \\\"replaced by.\\\" Note the report also projected AI could raise global GDP. Cross-check with later labour-economics commentary (e.g. MIT, Brookings) on automation creating as well as displacing jobs. Expected nuance: the bare \\\"will replace 300 million jobs\\\" framing overstates the source.\",\n  \"search_results\": \"[1] AI could replace equivalent of 300 million jobs - report\\nURL: https://www.bbc.com/news/technology-65102150\\nExcerpt: March 28, 2023 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom.\\n\\n[2] 43 AI Replacing Jobs Statistics You Should Know Right Now - Apollo Technical LLC\\nURL: https://www.apollotechnical.com/ai-replacing-jobs-statistics/\\nExcerpt: 1 month ago - Job “churn,” meaning the combined total of roles created and destroyed, is expected to equal 22% of all formal jobs tracked in the WEF dataset by 2030. A Goldman Sachs report estimates that generative AI exposes roughly 300 million full time jobs worldwide to some degree of automation.\\n\\n[3] How Many Jobs Will AI Replace by 2030? (Updated May 2026)\\nURL: https://piktochart.com/blog/how-many-jobs-will-ai-replace-by-2030/\\nExcerpt: May 22, 2026 - But the full picture is more nuanced. Goldman Sachs estimates up to 300 million jobs worldwide could be exposed to AI automation, while PwC puts 30% of US jobs at risk by the mid-2030s.\\n\\n[4] How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University\\nURL: https://www.nexford.edu/insights/how-will-ai-affect-jobs\\nExcerpt: 2 weeks ago - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom.\\n\\n[5] goldman sachs: Generative AI could replace 300 million jobs: Goldman Sachs report - The Economic Times\\nURL: https://economictimes.indiatimes.com/tech/technology/generative-ai-could-replace-300-million-jobs-goldman-sachs-report/articleshow/99085074.cms\\nExcerpt: May 8, 2026 - ... Generative AI has already made a huge impact on how technology is used on a daily basis. Soon, it will disrupt the labour market, according to a Goldman Sachs report, and could replace 300 million jobs globally.\\n\\n[6] 48 Jobs AI Will Replace by 2026: Check If Yours is at Risk\\nURL: https://www.winssolutions.org/jobs-ai-will-replace-challenge-opportunities/\\nExcerpt: February 11, 2026 - The jobs AI will replace cannot be underestimated. A Goldman Sachs analysis warns that AI could displace 300 million jobs worldwide as automation accelerates.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"MISLEADING\",\n  \"confidence\": 90,\n  \"reasoning\": \"The claim oversimplifies and distorts the findings of a widely cited March 2023 Goldman Sachs economics report. The study estimated that generative AI could expose roughly 300 million full-time jobs worldwide to automation or replace the equivalent workload of tasks. However, the report explicitly emphasized that exposure does not equate to outright job elimination; for most workers and industries, generative AI is expected to complement human labor rather than fully replace it, alongside creating new roles and boosting global productivity. Presenting this figure as a definitive prediction that 300 million jobs \\\"will be replaced\\\" strips essential nuance from the projection.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Generative AI will replace 300 million jobs worldwide.\"",
+        "Generative AI will replace 300 million jobs",
+        "\"Generative AI will replace 300 million jobs worldwide.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-65102150",
+          "title": "AI could replace equivalent of 300 million jobs - report",
+          "snippet": "March 28, 2023 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom."
+        },
+        {
+          "url": "https://www.apollotechnical.com/ai-replacing-jobs-statistics/",
+          "title": "43 AI Replacing Jobs Statistics You Should Know Right Now - Apollo Technical LLC",
+          "snippet": "1 month ago - Job “churn,” meaning the combined total of roles created and destroyed, is expected to equal 22% of all formal jobs tracked in the WEF dataset by 2030. A Goldman Sachs report estimates that generative AI exposes roughly 300 million full time jobs worldwide to some degree of automation."
+        },
+        {
+          "url": "https://piktochart.com/blog/how-many-jobs-will-ai-replace-by-2030/",
+          "title": "How Many Jobs Will AI Replace by 2030? (Updated May 2026)",
+          "snippet": "May 22, 2026 - But the full picture is more nuanced. Goldman Sachs estimates up to 300 million jobs worldwide could be exposed to AI automation, while PwC puts 30% of US jobs at risk by the mid-2030s."
+        },
+        {
+          "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
+          "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
+          "snippet": "2 weeks ago - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom."
+        },
+        {
+          "url": "https://economictimes.indiatimes.com/tech/technology/generative-ai-could-replace-300-million-jobs-goldman-sachs-report/articleshow/99085074.cms",
+          "title": "goldman sachs: Generative AI could replace 300 million jobs: Goldman Sachs report - The Economic Times",
+          "snippet": "May 8, 2026 - ... Generative AI has already made a huge impact on how technology is used on a daily basis. Soon, it will disrupt the labour market, according to a Goldman Sachs report, and could replace 300 million jobs globally."
+        },
+        {
+          "url": "https://www.winssolutions.org/jobs-ai-will-replace-challenge-opportunities/",
+          "title": "48 Jobs AI Will Replace by 2026: Check If Yours is at Risk",
+          "snippet": "February 11, 2026 - The jobs AI will replace cannot be underestimated. A Goldman Sachs analysis warns that AI could displace 300 million jobs worldwide as automation accelerates."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-004",
+      "claim_title": "AI systems now pass the bar exam",
+      "claim_text": "\"AI language models can now pass the US bar examination at above-average scores.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 3,
+      "reasoning_steps": [
+        "Peer-reviewed research and extensive empirical evaluations demonstrate that advanced AI language models such as GPT-4 successfully pass the Uniform Bar Examination (UBE)",
+        "The original study by Bommarito and Katz, along with subsequent tests, showed that the model achieved a score well exceeding the passing threshold in all US jurisdictions and outperformed the average human test-taker."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.7-flash",
+      "prompt": "Claim title: AI systems now pass the bar exam\n\nClaim to verify: \"AI language models can now pass the US bar examination at above-average scores.\"\n\nHuman context: GPT-4 was reported in early 2023 to pass the bar exam in the top 10% of test takers. Claim is often cited as evidence of AI surpassing human professional capabilities. Subsequent models have also been tested.\n\nVerification guidance: Verify the original GPT-4 bar exam study (Bommarito & Katz, 2023). Check if results have been replicated or updated with newer models. Note: passing score and top-10% are different claims — verify which is accurate.\n\nWeb search results:\n\n[1] AI Race to 100 Percent on the Bar Exam - Matthew Stubenberg\n    URL: https://matthewstubenberg.com/blog/AI+Race+to+100+Percent+on+the+Bar+Exam\n    Excerpt: September 23, 2025 - AI is raising the bar. More than two-thirds of the models scored higher than the average human test-taker. In fact, OpenAI’s newest model, Chat GPT 5, got a jaw-dropping 97.6% right.\n\n[2] GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence Tools in the Legal Profession - Legal Aggregate - Stanford Law School\n    URL: https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/\n    Excerpt: April 19, 2023 - CodeX–The Stanford Center for ... Research collaborators had deployed GPT-4, the latest generation Large Language Model (LLM), to take—and pass—the Uniform Bar Exam (UBE)....\n\n[3] Bar exam score shows AI can keep up with 'human lawyers,' researchers say | Reuters\n    URL: https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/\n    Excerpt: March 15, 2023 - March 15 (Reuters) - Artificial intelligence can now outperform most law school graduates on the bar exam, the grueling two-day test aspiring attorneys must pass to practice law in the United States, according to a new study, opens new tab released ...\n\n[4] GPT-4 passes the bar exam - PMC - NIH\n    URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/\n    Excerpt: GPT-4 delivers a 26.5% increase in the accuracy over ChatGPT, the previously best performing model. In addition, GPT-4’s MBE score is not only more than 15% above the minimum passing threshold, but also outperforms the average human test-taker by more than 7%.\n\n[5] Latest version of ChatGPT aces bar exam with score nearing 90th percentile\n    URL: https://www.abajournal.com/web/article/latest-version-of-chatgpt-aces-the-bar-exam-with-score-in-90th-percentile\n    Excerpt: The latest version of the artificial intelligence program ChatGPT has passed the Uniform Bar Examination by “a significant margin,” earning a combined score of 297 that surpasses even the high threshold of 273 set by Arizona.\n\n[6] GPT-4 Passes the Bar Exam | Illinois Institute of Technology\n    URL: https://www.iit.edu/news/gpt-4-passes-bar-exam\n    Excerpt: March 15, 2023 - In a period of roughly four years, the leading large language model family (GPT) has progressed from zero percent on the Multistate Bar Exam for GPT-2 to nearly 76 percent on the Multistate Bar Exam in GPT-4. (The Multistate Bar Exam is the multiple-choice section of the Uniform Bar\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"sources\": [\n    {\n      \"url\": \"https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/\",\n      \"title\": \"GPT-4 passes the bar exam - PMC - NIH\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"outperforms the average human test-taker by more than 7%.\"\n    },\n    {\n      \"url\": \"https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/\",\n      \"title\": \"Bar exam score shows AI can keep up with 'human lawyers,' researchers say | Reuters\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"Artificial intelligence can now outperform most law school graduates on the bar exam\"\n    },\n    {\n      \"url\": \"https://www.abajournal.com/web/article/latest-version-of-chatgpt-aces-the-bar-exam-with-score-in-90th-percentile\",\n      \"title\": \"Latest version of ChatGPT aces bar exam with score nearing 90th percentile\",\n      \"relevance\": \"high\",\n      \"supports_claim\": true,\n      \"excerpt\": \"passed the Uniform Bar Examination by “a significant margin,” earning a combined score of 297\"\n    }\n  ],\n  \"reasoning\": \"Peer-reviewed research and extensive empirical evaluations demonstrate that advanced AI language models such as GPT-4 successfully pass the Uniform Bar Examination (UBE). The original study by Bommarito and Katz, along with subsequent tests, showed that the model achieved a score well exceeding the passing threshold in all US jurisdictions and outperformed the average human test-taker.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1268,
+      "response_tokens": 498,
+      "total_tokens": 1985,
+      "dspy_used": false,
+      "search_queries": [
+        "\"AI language models can now pass the US bar examination at above-average scores.\"",
+        "AI systems now pass the bar exam",
+        "\"AI language models can now pass the US bar examination at above-average scores.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://matthewstubenberg.com/blog/AI+Race+to+100+Percent+on+the+Bar+Exam",
+          "title": "AI Race to 100 Percent on the Bar Exam - Matthew Stubenberg",
+          "snippet": "September 23, 2025 - AI is raising the bar. More than two-thirds of the models scored higher than the average human test-taker. In fact, OpenAI’s newest model, Chat GPT 5, got a jaw-dropping 97.6% right."
+        },
+        {
+          "url": "https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/",
+          "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence Tools in the Legal Profession - Legal Aggregate - Stanford Law School",
+          "snippet": "April 19, 2023 - CodeX–The Stanford Center for ... Research collaborators had deployed GPT-4, the latest generation Large Language Model (LLM), to take—and pass—the Uniform Bar Exam (UBE)...."
+        },
+        {
+          "url": "https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/",
+          "title": "Bar exam score shows AI can keep up with 'human lawyers,' researchers say | Reuters",
+          "snippet": "March 15, 2023 - March 15 (Reuters) - Artificial intelligence can now outperform most law school graduates on the bar exam, the grueling two-day test aspiring attorneys must pass to practice law in the United States, according to a new study, opens new tab released ..."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/",
+          "title": "GPT-4 passes the bar exam - PMC - NIH",
+          "snippet": "GPT-4 delivers a 26.5% increase in the accuracy over ChatGPT, the previously best performing model. In addition, GPT-4’s MBE score is not only more than 15% above the minimum passing threshold, but also outperforms the average human test-taker by more than 7%."
+        },
+        {
+          "url": "https://www.abajournal.com/web/article/latest-version-of-chatgpt-aces-the-bar-exam-with-score-in-90th-percentile",
+          "title": "Latest version of ChatGPT aces bar exam with score nearing 90th percentile",
+          "snippet": "The latest version of the artificial intelligence program ChatGPT has passed the Uniform Bar Examination by “a significant margin,” earning a combined score of 297 that surpasses even the high threshold of 273 set by Arizona."
+        },
+        {
+          "url": "https://www.iit.edu/news/gpt-4-passes-bar-exam",
+          "title": "GPT-4 Passes the Bar Exam | Illinois Institute of Technology",
+          "snippet": "March 15, 2023 - In a period of roughly four years, the leading large language model family (GPT) has progressed from zero percent on the Multistate Bar Exam for GPT-2 to nearly 76 percent on the Multistate Bar Exam in GPT-4. (The Multistate Bar Exam is the multiple-choice section of the Uniform Bar Exam.) Overall, the authors report a 297 Uniform Bar Exam score for GPT-4, which reflects passing the bar by a fairly comfortable margin."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to historical data on Congressional appropriations (reported by Pew Research Center, the Congressional Research Service, and other legislative trackers), the U.S",
+        "Congress has not enacted all required regular appropriations bills on time—prior to the start of the fiscal year on October 1—since Fiscal Year 1997",
+        "Since the enactment of the Congressional Budget Act of 1974, Congress has passed all required appropriations measures before the deadline in only four fiscal years: 1977, 1989, 1995, and 1997."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The US Congress has not passed a complete federal budget on time since 1997.\\\"\",\n  \"verification_notes\": \"Check Congressional Research Service records. Fiscal year starts October 1. Verify if any year between 1998 and present had all 12 appropriations bills enacted before the deadline. Note distinction between omnibus packages and individual bills.\",\n  \"search_results\": \"[1] Continuing resolution - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Continuing_resolution\\nExcerpt: 4 weeks ago - Between fiscal year 1977 and fiscal year 2015, Congress only passed all twelve regular appropriations bills on time in four years - fiscal years 1977, 1989, 1995, and 1997. Between 1980 and 2013, there were eight government shutdowns in the United States. Most of these shutdowns revolv\\n\\n[2] Congress has long struggled to pass spending bills on time | Pew Research Center\\nURL: https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/\\nExcerpt: October 1, 2025 - In the nearly five decades that ... place, Congress has passed all its required appropriations measures on time only four times: fiscal 1977 (the first full fiscal year under the current system), 1989, 1995 and 1997....\\n\\n[3] FEDERAL BUDGET PROCESS STRUCTURAL REFORM | Congress.gov | Library of Congress\\nURL: https://www.congress.gov/event/107th-congress/house-event/LC16636/text\\nExcerpt: Although biennial budgeting has been required for the Defense Department, and the President has proposed biennial budgets, Congress has continued to pass only one-year appropriations. We do not believe that continuing this approach makes sense, and that is why the administration has proposed the rep\\n\\n[4] The Federal Budget Timeline & Process\\nURL: https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline\\nExcerpt: April 8, 2026 - Since the Congressional Budget Act of 1974 went into effect in fiscal year 1977, Congress has only passed all its appropriations measures on time four times (1977, 1989, 1995, 1997).\\n\\n[5] How does the government budget process work? | USAFacts\\nURL: https://usafacts.org/articles/how-does-the-government-budget-process-work/\\nExcerpt: September 18, 2025 - Here’s the catch — for all of the 21st century, Congress has not met the appropriations deadlines and most federal funding has happened through continuing resolutions. These bills provide temporary financial coverage for government programs ...\\n\\n[6] Congress hasn’t passed a budget on time since 1997. We should fix that.\\nURL: https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/\\nExcerpt: December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article I, Section 9, which states that “No Money shall be drawn from the Treasury, but in Consequence of Appropriations made by Law.” Critically, the Constitution doesn’t mandate the current authorization and annu\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to historical data on Congressional appropriations (reported by Pew Research Center, the Congressional Research Service, and other legislative trackers), the U.S. Congress has not enacted all required regular appropriations bills on time—prior to the start of the fiscal year on October 1—since Fiscal Year 1997. Since the enactment of the Congressional Budget Act of 1974, Congress has passed all required appropriations measures before the deadline in only four fiscal years: 1977, 1989, 1995, and 1997.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+        "US Congress passed no budget on time since 1997",
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Continuing_resolution",
+          "title": "Continuing resolution - Wikipedia",
+          "snippet": "4 weeks ago - Between fiscal year 1977 and fiscal year 2015, Congress only passed all twelve regular appropriations bills on time in four years - fiscal years 1977, 1989, 1995, and 1997. Between 1980 and 2013, there were eight government shutdowns in the United States. Most of these shutdowns revolved around budget ..."
+        },
+        {
+          "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
+          "title": "Congress has long struggled to pass spending bills on time | Pew Research Center",
+          "snippet": "October 1, 2025 - In the nearly five decades that ... place, Congress has passed all its required appropriations measures on time only four times: fiscal 1977 (the first full fiscal year under the current system), 1989, 1995 and 1997...."
+        },
+        {
+          "url": "https://www.congress.gov/event/107th-congress/house-event/LC16636/text",
+          "title": "FEDERAL BUDGET PROCESS STRUCTURAL REFORM | Congress.gov | Library of Congress",
+          "snippet": "Although biennial budgeting has been required for the Defense Department, and the President has proposed biennial budgets, Congress has continued to pass only one-year appropriations. We do not believe that continuing this approach makes sense, and that is why the administration has proposed the repeal of this agency-specific biennial budgeting requirement for the Defense Department. Another approach for a phase-in is the non-binding, ``notional'' second-year budget I discussed in my testimony. This would involve a ``notional'' budget for the second year of the first two-year cycle, even though funds for that cycle would continue to be provided on an annual basis. During the budget process for that second year, OMB, the agencies, and Congress could compare the notional budget to what is actually happening in the ``real'' process for that year. A third option would be to begin full-fledged biennial budgeting in the third year, without using selected agencies or another type of formal ph"
+        },
+        {
+          "url": "https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline",
+          "title": "The Federal Budget Timeline & Process",
+          "snippet": "April 8, 2026 - Since the Congressional Budget Act of 1974 went into effect in fiscal year 1977, Congress has only passed all its appropriations measures on time four times (1977, 1989, 1995, 1997)."
+        },
+        {
+          "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
+          "title": "How does the government budget process work? | USAFacts",
+          "snippet": "September 18, 2025 - Here’s the catch — for all of the 21st century, Congress has not met the appropriations deadlines and most federal funding has happened through continuing resolutions. These bills provide temporary financial coverage for government programs ..."
+        },
+        {
+          "url": "https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/",
+          "title": "Congress hasn’t passed a budget on time since 1997. We should fix that.",
+          "snippet": "December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article I, Section 9, which states that “No Money shall be drawn from the Treasury, but in Consequence of Appropriations made by Law.” Critically, the Constitution doesn’t mandate the current authorization and annual appropriations process currently used. It simply requires that spending be authorized by law. The “textbook” legislative process requires Congress to pass approximately 12 appropriations bills by Oct. 1 for the following fiscal year — something Congress hasn’t done since 1996. Instead, the country lurches from continuing resolution to continuing resolution, with shutdowns or their threat becoming routine weapons in partisan warfare. Federal agencies can’t plan, contractors face uncertainty, and essential services hang in the balance while politicians posture."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}

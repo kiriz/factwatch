@@ -3,60 +3,60 @@
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
   "confidence": 90,
-  "last_checked_at": "2026-08-09T06:50:46Z",
+  "last_checked_at": "2026-08-18T06:09:23Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-08-09T064647Z",
+  "run_id": "run-2026-08-18T060828Z",
   "sources": [
     {
-      "url": "https://theaineighbor.com/will-ai-take-my-job/",
-      "title": "Will AI Take My Job?",
-      "domain": "theaineighbor.com",
+      "url": "https://www.bbc.com/news/technology-65102150",
+      "title": "AI could replace equivalent of 300 million jobs - report",
+      "domain": "bbc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Worried about AI taking your job? Here's an honest, friendly look at what's really at"
+      "excerpt": "March 28, 2023 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
     },
     {
-      "url": "https://therealbradlea.libsyn.com/ai-will-replace-300-million-jobs-by-2030-how-to-survive-the-shift",
-      "title": "Dropping Bombs: AI Will Replace 300 Million Jobs By 2030...",
-      "domain": "therealbradlea.libsyn.com",
+      "url": "https://www.apollotechnical.com/ai-replacing-jobs-statistics/",
+      "title": "43 AI Replacing Jobs Statistics You Should Know Right Now - Apollo Technical LLC",
+      "domain": "apollotechnical.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Perry drops hard truths about the AI apocalypse barreling toward us: how Microsoft, Amazon, and"
+      "excerpt": "1 month ago - Job “churn,” meaning the combined total of roles created and destroyed,"
     },
     {
-      "url": "https://digitizingpolaris.com/yesterdays-hot-job-may-offer-less-job-security-thanks-to-generative-ai-0a2633bef0ab",
-      "title": "Yesterday’s hot job may offer little security, thanks to generative AI",
-      "domain": "digitizingpolaris.com",
+      "url": "https://piktochart.com/blog/how-many-jobs-will-ai-replace-by-2030/",
+      "title": "How Many Jobs Will AI Replace by 2030? (Updated May 2026)",
+      "domain": "piktochart.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Reports indicate that as many as 300 million jobs worldwide could undergo transformation due to"
+      "excerpt": "May 22, 2026 - But the full picture is more nuanced. Goldman Sachs estimates up"
     },
     {
-      "url": "https://www.ai-jarvis.eu/ai-taking-jobs-and-unemployment-rising-how-prepare-while-theres-still-time",
-      "title": "AI Is Taking Jobs and Unemployment Is Rising. How to Prepare While...",
-      "domain": "ai-jarvis.eu",
+      "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
+      "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
+      "domain": "nexford.edu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "BCG and the Aspen Institute analyzed labor market impacts: generative AI will affect more than"
+      "excerpt": "2 weeks ago - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
     },
     {
-      "url": "https://www.linkedin.com/posts/gemmatouchstone_is-ai-is-coming-for-your-job-or-just-your-activity-7370586502902460416-5Lm-",
-      "title": "Will AI replace your boss or your job? Find out in this... | LinkedIn",
-      "domain": "linkedin.com",
+      "url": "https://economictimes.indiatimes.com/tech/technology/generative-ai-could-replace-300-million-jobs-goldman-sachs-report/articleshow/99085074.cms",
+      "title": "goldman sachs: Generative AI could replace 300 million jobs: Goldman Sachs report - The Economic Times",
+      "domain": "economictimes.indiatimes.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AI will replace 300 million jobs. And two thirds of American jobs can be automated."
+      "excerpt": "May 8, 2026 - ... Generative AI has already made a huge impact on how"
     },
     {
-      "url": "https://michaelfoster26.medium.com/fine-ai-is-going-to-take-all-the-jobs-but-when-684d5141c76d",
-      "title": "Fine, AI is Going to Take All The Jobs. But When? | Medium",
-      "domain": "michaelfoster26.medium.com",
+      "url": "https://www.winssolutions.org/jobs-ai-will-replace-challenge-opportunities/",
+      "title": "48 Jobs AI Will Replace by 2026: Check If Yours is at Risk",
+      "domain": "winssolutions.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "In short, AI is going to replace a lot of jobs, and it’s going to"
+      "excerpt": "February 11, 2026 - The jobs AI will replace cannot be underestimated. A Goldman Sachs"
     }
   ],
-  "reasoning": "The claim mischaracterizes findings from a widely cited March 2023 report by Goldman Sachs analysts. The report estimated that generative AI could expose the equivalent of roughly 300 million full-time jobs worldwide to automation, not that 300 million jobs would be outright eliminated or replaced. Goldman Sachs explicitly noted that for the vast majority of exposed occupations, AI serves as a complementary tool that automates specific tasks rather than replacing entire roles, and that automation historically leads to long-term job creation and global GDP growth.",
+  "reasoning": "The claim oversimplifies and distorts the findings of a widely cited March 2023 Goldman Sachs economics report. The study estimated that generative AI could expose roughly 300 million full-time jobs worldwide to automation or replace the equivalent workload of tasks. However, the report explicitly emphasized that exposure does not equate to outright job elimination; for most workers and industries, generative AI is expected to complement human labor rather than fully replace it, alongside creating new roles and boosting global productivity. Presenting this figure as a definitive prediction that 300 million jobs \"will be replaced\" strips essential nuance from the projection.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -117,6 +117,12 @@
       "confidence": 90,
       "checked_at": "2026-08-01T08:16:08Z",
       "run_id": "run-2026-08-01T081212Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 90,
+      "checked_at": "2026-08-09T06:50:46Z",
+      "run_id": "run-2026-08-09T064647Z"
     }
   ],
   "agent_flags": {

@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-005",
   "verdict": "TRUE",
-  "confidence": 90,
-  "last_checked_at": "2026-08-09T06:51:37Z",
+  "confidence": 95,
+  "last_checked_at": "2026-08-18T06:10:27Z",
   "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-08-09T064647Z",
+  "run_id": "run-2026-08-18T060828Z",
   "sources": [
     {
-      "url": "https://www.govtrack.us/congress/members/CA/42",
-      "title": "govtrack.us/congress/members/CA/42",
-      "domain": "govtrack.us",
+      "url": "https://en.wikipedia.org/wiki/Continuing_resolution",
+      "title": "Continuing resolution - Wikipedia",
+      "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Californias 42 nd Congressional District - GovTrack.us."
+      "excerpt": "4 weeks ago - Between fiscal year 1977 and fiscal year 2015, Congress only passed"
     },
     {
-      "url": "https://www.usa.gov/federal-budget-process",
-      "title": "The federal budget process | USAGov",
-      "domain": "usa.gov",
+      "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
+      "title": "Congress has long struggled to pass spending bills on time | Pew Research Center",
+      "domain": "pewresearch.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Learn about the federal government’s budget process, from the president’s budget plan to Congress’s work"
+      "excerpt": "October 1, 2025 - In the nearly five decades that ... place, Congress has passed"
     },
     {
-      "url": "https://nlihc.org/resource/congress-passes-and-president-trump-signs-law-year-long-stopgap-funding-bill-underfunding",
-      "title": "Congress Passes and President Trump Signs into Law Year-Long...",
-      "domain": "nlihc.org",
+      "url": "https://www.congress.gov/event/107th-congress/house-event/LC16636/text",
+      "title": "FEDERAL BUDGET PROCESS STRUCTURAL REFORM | Congress.gov | Library of Congress",
+      "domain": "congress.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Congress passed and President Donald Trump signed into law a year-long stopgap funding bill, known"
+      "excerpt": "Although biennial budgeting has been required for the Defense Department, and the President has proposed"
     },
     {
-      "url": "https://trendingpoliticsnews.com/breaking-u-s-congressman-passes-away-mace/",
-      "title": "BREAKING: U.S. Congressman Passes Away",
-      "domain": "trendingpoliticsnews.com",
+      "url": "https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline",
+      "title": "The Federal Budget Timeline & Process",
+      "domain": "fiscalnote.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "(D-NJ) announced his passing at the age of 87. The congressman, known for his deep-rooted.Serving"
+      "excerpt": "April 8, 2026 - Since the Congressional Budget Act of 1974 went into effect in"
     },
     {
-      "url": "https://www.dnj.com/story/news/local/2026/08/05/tennessee-changing-clocks-congress-passes-daylight-saving-time-permanent/91124361007/",
-      "title": "Tennessee will stop changing clocks if Congress passes daylight bill",
-      "domain": "dnj.com",
+      "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
+      "title": "How does the government budget process work? | USAFacts",
+      "domain": "usafacts.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "When does the time change? When we fall back in 2026. Daylight saving time for"
+      "excerpt": "September 18, 2025 - Here’s the catch — for all of the 21st century, Congress"
     },
     {
-      "url": "https://www.youtube.com/watch?v=KTiKzNcI1VU",
-      "title": "President Biden to address nation after Congress passed budget...",
-      "domain": "youtube.com",
+      "url": "https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/",
+      "title": "Congress hasn’t passed a budget on time since 1997. We should fix that.",
+      "domain": "thehill.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "О сервисе Прессе Авторские права Связаться с нами Авторам Рекламодателям..."
+      "excerpt": "December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article"
     }
   ],
-  "reasoning": "According to Congressional Research Service (CRS) records and historical budget data, the last time Congress enacted all regular annual appropriations bills before the start of the fiscal year (October 1) was for Fiscal Year 1997 (enacted in September 1996). Since FY 1998, Congress has failed to pass all regular individual spending bills prior to the October 1 deadline, relying instead on stopgap funding measures (continuing resolutions) and late omnibus spending packages. Therefore, the statement that Congress has not passed a complete federal budget on time since 1997 is accurate.",
+  "reasoning": "According to historical data on Congressional appropriations (reported by Pew Research Center, the Congressional Research Service, and other legislative trackers), the U.S. Congress has not enacted all required regular appropriations bills on time—prior to the start of the fiscal year on October 1—since Fiscal Year 1997. Since the enactment of the Congressional Budget Act of 1974, Congress has passed all required appropriations measures before the deadline in only four fiscal years: 1977, 1989, 1995, and 1997.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -123,6 +123,12 @@
       "confidence": 95,
       "checked_at": "2026-08-01T08:16:52Z",
       "run_id": "run-2026-08-01T081212Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 90,
+      "checked_at": "2026-08-09T06:51:37Z",
+      "run_id": "run-2026-08-09T064647Z"
     }
   ],
   "agent_flags": {
