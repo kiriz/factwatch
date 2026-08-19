@@ -3,60 +3,60 @@
   "claim_id": "claim-008",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-08-11T06:58:09Z",
+  "last_checked_at": "2026-08-19T06:09:26Z",
   "last_changed_at": "2026-06-09T23:47:06Z",
-  "run_id": "run-2026-08-11T065747Z",
+  "run_id": "run-2026-08-19T060905Z",
   "sources": [
     {
+      "url": "https://discoverwildscience.com/octopuses-have-three-hearts-and-nine-brains-heres-why-4-297069/",
+      "title": "Octopuses Have Three Hearts and Nine Brains—Here’s Why",
+      "domain": "discoverwildscience.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Apr 27, 2026 · Discover why octopuses have three hearts and nine brains, and how"
+    },
+    {
+      "url": "https://wowtoknow.com/octopuses-have-three-hearts-and-blue-blood/",
+      "title": "Octopuses Have Three Hearts and Blue Blood – Here’s Why ...",
+      "domain": "wowtoknow.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Mar 29, 2025 · Octopuses have not one but three hearts – and their blood"
+    },
+    {
+      "url": "https://www.scienceabc.com/nature/animals/why-do-octopuses-have-three-hearts",
+      "title": "Octopus Hearts: How Many Hearts Does An Octopus Have?",
+      "domain": "scienceabc.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Feb 29, 2020 · Octopuses have three hearts: two branchial hearts pump blood through the"
+    },
+    {
+      "url": "https://medium.com/did-you-know-short-fun-facts/did-you-know-octopuses-have-three-hearts-and-blue-blood-3dcbbf0f662d",
+      "title": "Did You Know… Octopuses Have Three Hearts and Blue Blood?",
+      "domain": "medium.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Aug 22, 2025 · So yes, octopuses have three hearts and blue blood. But maybe"
+    },
+    {
+      "url": "https://www.biologynotes.site/did-you-know-octopuses-have-three-hearts-blue-blood/",
+      "title": "Did You Know? Octopuses Have Three Hearts & Blue Blood!",
+      "domain": "biologynotes.site",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Feb 11, 2025 · Why Do Octopuses Have Three Hearts? ️ ️ ️ Most animals,"
+    },
+    {
       "url": "https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
-      "title": "Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood",
+      "title": "Ten Wild Facts About Octopuses: They Have Three Hearts, Big ...",
       "domain": "smithsonianmag.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 1, 2024 - To survive in the deep ocean, ... human blood. Whereas our"
-    },
-    {
-      "url": "https://www.nhm.ac.uk/discover/octopuses-keep-surprising-us-here-are-eight-examples-how.html",
-      "title": "Octopuses keep surprising us - here are eight examples how | Natural History Museum",
-      "domain": "nhm.ac.uk",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Octopuses have blue blood, three hearts and a doughnut-shaped brain. But these aren’t even the"
-    },
-    {
-      "url": "https://www.reddit.com/r/Damnthatsinteresting/comments/1cn5gdl/an_octopus_has_three_hearts_and_the_colour_of/",
-      "title": "r/Damnthatsinteresting on Reddit: An Octopus has three hearts and the colour of their blood is blue.They have eight arms and each arm contains its own 'mini brain'",
-      "domain": "reddit.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "May 8, 2024 - Octopuses have three hearts, blue blood, and nine brains, with each"
-    },
-    {
-      "url": "https://thesavemovement.org/did-you-know-octopus-have-three-hearts-and-blue-blood-these-magnificent-marine-mollusks-are-being-exploited-and-need-our-help/",
-      "title": "Did You Know Octopus Have Three Hearts And Blue Blood? These Magnificent Marine Mollusks Are Being Exploited And Need Our Help - Animal Save Movement",
-      "domain": "thesavemovement.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "May 24, 2025 - With three functioning hearts, ... to the rest of their body."
-    },
-    {
-      "url": "https://study.com/academy/lesson/the-octopus-circulatory-system.html",
-      "title": "Octopus | Circulatory System, Hearts & Brains - Lesson | Study.com",
-      "domain": "study.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "January 26, 2017 - Two of the hearts are used to deliver blood to gills"
-    },
-    {
-      "url": "https://www.sciencefocus.com/nature/why-does-an-octopus-have-more-than-one-heart",
-      "title": "How many hearts does an octopus have? - BBC Science Focus Magazine",
-      "domain": "sciencefocus.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "July 12, 2023 - Unlike vertebrates that have iron-rich haemoglobin packed into red blood cells,"
+      "excerpt": "Mar 13, 2024 · Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains"
     }
   ],
-  "reasoning": "Multiple reputable science and natural history sources, including Smithsonian Magazine and the Natural History Museum, confirm that octopuses have three hearts and blue blood. Two branchial hearts pump blood through the gills, while a main systemic heart circulates blood to the rest of the body. Their blood appears blue because it utilizes copper-rich hemocyanin to bind oxygen, unlike human blood which relies on iron-rich hemoglobin.",
+  "reasoning": "Octopuses indeed have three hearts and blue blood. Two branchial hearts pump blood through the gills to pick up oxygen, while a third systemic heart pumps oxygenated blood throughout the rest of the body. Furthermore, octopus blood is blue because it relies on the copper-rich protein hemocyanin rather than iron-based hemoglobin to transport oxygen in cold, low-oxygen marine environments.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -117,6 +117,12 @@
       "confidence": 100,
       "checked_at": "2026-08-03T09:34:30Z",
       "run_id": "run-2026-08-03T093350Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-08-11T06:58:09Z",
+      "run_id": "run-2026-08-11T065747Z"
     }
   ],
   "agent_flags": {

@@ -3,9 +3,9 @@
   "claim_id": "claim-014",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-08-11T06:58:42Z",
+  "last_checked_at": "2026-08-19T06:10:53Z",
   "last_changed_at": "2026-06-09T23:47:39Z",
-  "run_id": "run-2026-08-11T065747Z",
+  "run_id": "run-2026-08-19T060905Z",
   "sources": [
     {
       "url": "https://www.tiktok.com/discover/is-the-moon-leaving-earth",
@@ -24,20 +24,20 @@
       "excerpt": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about"
     },
     {
+      "url": "https://studyfinds.com/moon-not-geologically-dead/",
+      "title": "Moon not 'geologically dead world' after all. Why that might be a prob...",
+      "domain": "studyfinds.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Additionally, the Moon is slowly moving away from Earth at a rate of about 3.8"
+    },
+    {
       "url": "https://brainly.com/question/36789563",
       "title": "[FREE] Is the moon long-lasting? - brainly.com",
       "domain": "brainly.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Orbital Changes: The Moon is slowly moving away from Earth at a rate of about"
-    },
-    {
-      "url": "https://nabado.co.ke/2024/12/22/understanding-earths-rotation-speed-effects-and-implications/",
-      "title": "Understanding Earth's Rotation: Speed and Implications",
-      "domain": "nabado.co.ke",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Over time, the Moon has slowly pulled on Earth’s oceans, creating friction that has gradually"
     },
     {
       "url": "https://toxigon.com/tno-orbits-suns-gravity-after-eons",
@@ -48,15 +48,15 @@
       "excerpt": "The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters"
     },
     {
-      "url": "https://jeanglass.com/facts-about-the-moon/",
-      "title": "Facts about the moon - jeanglass.com",
-      "domain": "jeanglass.com",
+      "url": "https://quotepoem.com/rule/fascinating-facts-about-the-moon-for-kids/",
+      "title": "Fascinating Moon Facts for Kids: Learn and Explore the Wonders of...",
+      "domain": "quotepoem.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Worth knowing: The Moon is slowly moving away from Earth at a rate of about"
+      "excerpt": "The moon is slowly moving away from Earth at a rate of about 3.8 centimeters"
     }
   ],
-  "reasoning": "The claim is scientifically accurate and well-documented. Measurements from the Lunar Laser Ranging (LLR) experiment—which bounces lasers off retroreflectors left on the lunar surface during Apollo missions—confirm that the Moon is moving away from Earth at a rate of approximately 3.8 centimeters (1.5 inches) per year. This recession is caused by tidal interactions between Earth and the Moon: Earth's fast rotation carries its ocean tidal bulge slightly ahead of the Moon, creating a gravitational tug that accelerates the Moon into a higher orbit while gradually slowing Earth's rotation.",
+  "reasoning": "The claim is a well-established astronomical fact. Measurements from the Lunar Laser Ranging experiment, initiated during the Apollo missions by bouncing laser beams off retroreflectors placed on the lunar surface, precisely established that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This lunar recession is caused by tidal interactions and friction between Earth's oceans and the Moon, which transfer angular momentum from Earth's rotation to the Moon's orbit.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -117,6 +117,12 @@
       "confidence": 100,
       "checked_at": "2026-08-03T09:35:03Z",
       "run_id": "run-2026-08-03T093350Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-08-11T06:58:42Z",
+      "run_id": "run-2026-08-11T065747Z"
     }
   ],
   "agent_flags": {
