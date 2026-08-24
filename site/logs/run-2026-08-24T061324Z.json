@@ -1,0 +1,436 @@
+{
+  "run_id": "run-2026-08-24T061324Z",
+  "started_at": "2026-08-24T06:13:24Z",
+  "finished_at": "2026-08-24T06:16:05Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-001",
+      "claim_title": "Arctic sea ice decline since 1979",
+      "claim_text": "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 99,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Continuous satellite observation of Arctic sea ice began in 1979",
+        "Data from scientific and governmental organizations including NOAA, NSIDC, and the European Environment Agency consistently show a substantial, statistically significant decline in both sea ice extent and thickness since 1979, with summer minimum extent decreasing by approximately 12 to 13 percent per decade."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Arctic sea ice has declined significantly since satellite records began in 1979.\\\"\",\n  \"verification_notes\": \"Check NSIDC, NASA, and NOAA data. Look at September minimum extent as the primary metric. Verify trend is statistically significant, not just year-to-year variability.\",\n  \"search_results\": \"[1] Arctic sea ice decline - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Arctic_sea_ice_decline\\nExcerpt: 2 weeks ago - For January 2016, the satellite-based data showed the lowest overall Arctic sea ice extent of any January since records began in 1979.\\n\\n[2] Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov\\nURL: https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum\\nExcerpt: October 18, 2022 - The amount of sea ice that survives the Arctic summer has declined by 13 percent per decade since the start of the 43-year satellite record.\\n\\n[3] Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)\\nURL: https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice\\nExcerpt: November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has lost an area of 71,000km2 of sea ice per year in summer and 31,000km2 per year in winter since 1979. The Arctic sea ice area for summer 2025 was the second lowest ever and sea ice is becoming younger and thinner.\\n\\n[4] Satellites record second lowest Arctic sea ice extent since 1979\\nURL: https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979\\nExcerpt: October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice extent is the second lowest (after the record low of 2012) since the beginning of satellite monitoring in 1979.\\n\\n[5] Climate change: Arctic sea ice summer minimum | Climate.us\\nURL: https://www.climate.us/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum\\nExcerpt: June 9, 2026 - The amount of sea ice that survives the Arctic summer has declined by 12 percent per decade since the start of the satellite record in 1979.\\n\\n[6] How was Arctic sea ice measured before the satellite era? | National Snow and Ice Data Center\\nURL: https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era\\nExcerpt: Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was like before then, scientists use a combination of historical records and proxy measurements such as marine sediment cores. Taken together, these records indicate that the current Arctic sea ice decline ...\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 99,\n  \"reasoning\": \"Continuous satellite observation of Arctic sea ice began in 1979. Data from scientific and governmental organizations including NOAA, NSIDC, and the European Environment Agency consistently show a substantial, statistically significant decline in both sea ice extent and thickness since 1979, with summer minimum extent decreasing by approximately 12 to 13 percent per decade.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+        "Arctic sea ice decline since 1979",
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
+          "title": "Arctic sea ice decline - Wikipedia",
+          "snippet": "2 weeks ago - For January 2016, the satellite-based data showed the lowest overall Arctic sea ice extent of any January since records began in 1979."
+        },
+        {
+          "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
+          "title": "Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov",
+          "snippet": "October 18, 2022 - The amount of sea ice that survives the Arctic summer has declined by 13 percent per decade since the start of the 43-year satellite record."
+        },
+        {
+          "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
+          "title": "Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)",
+          "snippet": "November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has lost an area of 71,000km2 of sea ice per year in summer and 31,000km2 per year in winter since 1979. The Arctic sea ice area for summer 2025 was the second lowest ever and sea ice is becoming younger and thinner."
+        },
+        {
+          "url": "https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979",
+          "title": "Satellites record second lowest Arctic sea ice extent since 1979",
+          "snippet": "October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice extent is the second lowest (after the record low of 2012) since the beginning of satellite monitoring in 1979."
+        },
+        {
+          "url": "https://www.climate.us/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
+          "title": "Climate change: Arctic sea ice summer minimum | Climate.us",
+          "snippet": "June 9, 2026 - The amount of sea ice that survives the Arctic summer has declined by 12 percent per decade since the start of the satellite record in 1979."
+        },
+        {
+          "url": "https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era",
+          "title": "How was Arctic sea ice measured before the satellite era? | National Snow and Ice Data Center",
+          "snippet": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was like before then, scientists use a combination of historical records and proxy measurements such as marine sediment cores. Taken together, these records indicate that the current Arctic sea ice decline ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to data from the U.S",
+        "Department of the Treasury and reporting by the Associated Press, the U.S",
+        "gross national debt officially surpassed $34 trillion in early January 2024 and has continued to rise since."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The United States national debt has surpassed $34 trillion.\\\"\",\n  \"verification_notes\": \"Check US Treasury Fiscal Data (fiscaldata.treasury.gov). Note distinction between gross debt and debt held by the public. Verify current figure — may have grown beyond $34T by time of verification.\",\n  \"search_results\": \"[1] National debt of the United States - Wikipedia\\nURL: https://en.wikipedia.org/wiki/National_debt_of_the_United_States\\nExcerpt: 6 hours ago - In February 2024, the total federal government debt rose to $34.4 trillion, after increasing by approximately $1 trillion during each of two separate 100-day periods since the previous June. In 2024, federal interest payments on the national debt surpassed spending on both Medicare and\\n\\n[2] Debt to the Penny | U.S. Treasury Fiscal Data\\nURL: https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/\\nExcerpt: There are six datasets on Fiscal Data which include the national debt, which is referred to as Total Public Debt Outstanding (TPDO). TPDO is the sum of Debt Held by the Public and Intragovernmental (Intragov) Holdings. Some datasets include debt issued by the Federal Financing Bank (FFB).\\n\\n[3] National Debt Clock: What Is the National Debt Right Now?\\nURL: https://www.pgpf.org/national-debt-clock/\\nExcerpt: 5 hours ago - Debt per person is calculated by ... by the US Census Bureau. The $40 trillion gross federal debt equals debt held by the public plus debt held by federal trust funds and other government accounts....\\n\\n[4] Understanding the National Debt | U.S. Treasury Fiscal Data\\nURL: https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/\\nExcerpt: This ratio is considered a better indicator of a country’s fiscal situation than just the national debt number because it shows the burden of debt relative to the country’s total economic output and therefore its ability to repay it. The U.S. debt to GDP ratio surpassed 100% in 2013 when both debt a\\n\\n[5] US national debt hits record $34 trillion as Congress gears up for funding fight\\nURL: https://apnews.com/article/national-debt-deficits-biden-economy-inflation-record-b4258704f830c7f6e9c5e693748216cb\\nExcerpt: January 3, 2024 - WASHINGTON (AP) — The federal government’s gross national debt has surpassed $34 trillion, a record high that foreshadows the coming political and economic challenges to improve America’s balance sheet in the coming years.\\n\\n[6] The national debt just hit $40 trillion. But how much is $40 trillion? | CNN Business\\nURL: https://www.cnn.com/2026/08/23/economy/national-debt-40-trillion\\nExcerpt: 14 hours ago - The US economy, as measured by gross domestic product, was valued at over $32 trillion in the second quarter of this year, according to data from the Bureau of Economic Analysis. Comparing the debt to GDP can help make comparisons between different ...\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"According to data from the U.S. Department of the Treasury and reporting by the Associated Press, the U.S. gross national debt officially surpassed $34 trillion in early January 2024 and has continued to rise since.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The United States national debt has surpassed $34 trillion.\"",
+        "US federal debt exceeds $34 trillion",
+        "\"The United States national debt has surpassed $34 trillion.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/National_debt_of_the_United_States",
+          "title": "National debt of the United States - Wikipedia",
+          "snippet": "6 hours ago - In February 2024, the total federal government debt rose to $34.4 trillion, after increasing by approximately $1 trillion during each of two separate 100-day periods since the previous June. In 2024, federal interest payments on the national debt surpassed spending on both Medicare and national ..."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/datasets/debt-to-the-penny/",
+          "title": "Debt to the Penny | U.S. Treasury Fiscal Data",
+          "snippet": "There are six datasets on Fiscal Data which include the national debt, which is referred to as Total Public Debt Outstanding (TPDO). TPDO is the sum of Debt Held by the Public and Intragovernmental (Intragov) Holdings. Some datasets include debt issued by the Federal Financing Bank (FFB)."
+        },
+        {
+          "url": "https://www.pgpf.org/national-debt-clock/",
+          "title": "National Debt Clock: What Is the National Debt Right Now?",
+          "snippet": "5 hours ago - Debt per person is calculated by ... by the US Census Bureau. The $40 trillion gross federal debt equals debt held by the public plus debt held by federal trust funds and other government accounts...."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
+          "title": "Understanding the National Debt | U.S. Treasury Fiscal Data",
+          "snippet": "This ratio is considered a better indicator of a country’s fiscal situation than just the national debt number because it shows the burden of debt relative to the country’s total economic output and therefore its ability to repay it. The U.S. debt to GDP ratio surpassed 100% in 2013 when both debt and GDP were approximately 16.7 trillion."
+        },
+        {
+          "url": "https://apnews.com/article/national-debt-deficits-biden-economy-inflation-record-b4258704f830c7f6e9c5e693748216cb",
+          "title": "US national debt hits record $34 trillion as Congress gears up for funding fight",
+          "snippet": "January 3, 2024 - WASHINGTON (AP) — The federal government’s gross national debt has surpassed $34 trillion, a record high that foreshadows the coming political and economic challenges to improve America’s balance sheet in the coming years."
+        },
+        {
+          "url": "https://www.cnn.com/2026/08/23/economy/national-debt-40-trillion",
+          "title": "The national debt just hit $40 trillion. But how much is $40 trillion? | CNN Business",
+          "snippet": "14 hours ago - The US economy, as measured by gross domestic product, was valued at over $32 trillion in the second quarter of this year, according to data from the Bureau of Economic Analysis. Comparing the debt to GDP can help make comparisons between different ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-003",
+      "claim_title": "mRNA vaccines alter human DNA",
+      "claim_text": "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Major medical organizations and scientific consensus, including the Mayo Clinic, CDC, and WHO, confirm that mRNA COVID-19 vaccines do not alter, interact with, or integrate into human DNA",
+        "The mRNA delivers instructions to cellular machinery (ribosomes) in the cytoplasm to produce a harmless viral spike protein and naturally degrades shortly afterward without ever entering the cell's nucleus where DNA is stored",
+        "Claims that the vaccines alter human genetics are scientifically baseless."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"mRNA COVID-19 vaccines alter or permanently change human DNA.\\\"\",\n  \"verification_notes\": \"Consult peer-reviewed molecular biology literature. Check CDC, WHO, and NIH statements. Key mechanism to verify: mRNA cannot be reverse-transcribed into DNA without reverse transcriptase enzyme. Check if any credible peer-reviewed evidence to the contrary has emerged.\",\n  \"search_results\": \"[1] Do mRNA Vaccines Permanently Alter Human DNA, Making You a Genetically Modified Organism? By Brian Simpson\\nURL: https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component\\nExcerpt: According to Urso, if this turns out to be correct, the result of mRNA vaccination might be lifelong COVID-19. A new study by MIT and Harvard scientists demonstrates that segments of the RNA from the coronavirus itself are most likely becoming a permanent fixture in human DNA.\\n\\n[2] No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA” | Science-Based Medicine\\nURL: https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/\\nExcerpt: December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are trying to scare readers with is the idea that somehow mRNA vaccines permanently alter your DNA, but, again, they can’t do that.\\n\\n[3] Major COVID study that fueled vaccine skepticism retracted over ‘misinformation’ | Scientific American\\nURL: https://www.scientificamerican.com/article/major-covid-study-that-fueled-vaccine-skepticism-retracted-over-misinformation/\\nExcerpt: 2 weeks ago - In its retraction notice, the BMJ stated that Mostert’s proposed edits would have been “insufficient.” The journal also said Mostert wasn’t available to cooperate with the investigation held by the center and initially could not be contacted by the BMJ before she later told the journal\\n\\n[4] Debunking COVID-19 myths - Mayo Clinic\\nURL: https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/coronavirus-myths/art-20485720\\nExcerpt: No. COVID-19 vaccines cannot affect your DNA. Pfizer and Moderna COVID-19 vaccines only give your cells instructions for how to make a protein found on the surface of the COVID-19 virus.\\n\\n[5] Return of the revenge of the COVID vaccine \\\"spike\\\" in your DNA - RESPECTFUL INSOLENCE\\nURL: https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/\\nExcerpt: March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently based on a dubious study. These \\\"slasher lies\\\" never die.\\n\\n[6] Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST\\nURL: https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/\\nExcerpt: May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents enter the liver and permanently alters human chromosomes and rewrites DNA. Contrary to the CDC’s claim that the mRNA COVID-19 vaccines do not “change or interact with your DNA in any way,” a new Swedish study finds ..\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"reasoning\": \"Major medical organizations and scientific consensus, including the Mayo Clinic, CDC, and WHO, confirm that mRNA COVID-19 vaccines do not alter, interact with, or integrate into human DNA. The mRNA delivers instructions to cellular machinery (ribosomes) in the cytoplasm to produce a harmless viral spike protein and naturally degrades shortly afterward without ever entering the cell's nucleus where DNA is stored. Claims that the vaccines alter human genetics are scientifically baseless.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+        "mRNA vaccines alter human DNA",
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
+          "title": "Do mRNA Vaccines Permanently Alter Human DNA, Making You a Genetically Modified Organism? By Brian Simpson",
+          "snippet": "According to Urso, if this turns out to be correct, the result of mRNA vaccination might be lifelong COVID-19. A new study by MIT and Harvard scientists demonstrates that segments of the RNA from the coronavirus itself are most likely becoming a permanent fixture in human DNA."
+        },
+        {
+          "url": "https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/",
+          "title": "No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA” | Science-Based Medicine",
+          "snippet": "December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are trying to scare readers with is the idea that somehow mRNA vaccines permanently alter your DNA, but, again, they can’t do that."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/major-covid-study-that-fueled-vaccine-skepticism-retracted-over-misinformation/",
+          "title": "Major COVID study that fueled vaccine skepticism retracted over ‘misinformation’ | Scientific American",
+          "snippet": "2 weeks ago - In its retraction notice, the BMJ stated that Mostert’s proposed edits would have been “insufficient.” The journal also said Mostert wasn’t available to cooperate with the investigation held by the center and initially could not be contacted by the BMJ before she later told the journal’s investigators that other researchers had done most of the work. The Princess Máxima Center’s report detailing its own findings “concluded ... that the article pays disproportionate attention to the possibility that COVID-19 containment measures and vaccination might have caused excess mortality,” according to the BMJ’s retraction notice. “That excess mortality occurred, however, was known and not newsworthy,” the center wrote in its report. “Despite the fact that the authors do not investigate the causes for excess mortality, the introduction and discussion of the article are largely focused on how to explain the excess mortality.” ·"
+        },
+        {
+          "url": "https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/coronavirus-myths/art-20485720",
+          "title": "Debunking COVID-19 myths - Mayo Clinic",
+          "snippet": "No. COVID-19 vaccines cannot affect your DNA. Pfizer and Moderna COVID-19 vaccines only give your cells instructions for how to make a protein found on the surface of the COVID-19 virus."
+        },
+        {
+          "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
+          "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
+          "snippet": "March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently based on a dubious study. These \"slasher lies\" never die."
+        },
+        {
+          "url": "https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/",
+          "title": "Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST",
+          "snippet": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents enter the liver and permanently alters human chromosomes and rewrites DNA. Contrary to the CDC’s claim that the mRNA COVID-19 vaccines do not “change or interact with your DNA in any way,” a new Swedish study finds ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that humans only use 10% of their brain capacity is a well-known scientific myth",
+        "Neuroimaging techniques such as fMRI and PET scans demonstrate that virtually all parts of the brain are active and utilized throughout daily functioning, even during sleep",
+        "Neurological evidence also shows that damage to even tiny, specific areas of the brain can result in severe physical or cognitive impairments, which would not occur if 90% were dormant",
+        "Evolutionarily, the brain consumes roughly 20% of the body's energy despite accounting for only 2% of body mass, making the maintenance of a 90% dormant organ biologically untenable."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\\\"\",\n  \"verification_notes\": \"Check neuroimaging studies (fMRI, PET). Verify whether any region of the brain is truly inactive. Look at what happens to brain tissue when it's genuinely unused (it atrophies). Check scientific consensus from neuroscience organizations.\",\n  \"search_results\": \"[1] Ten-percent-of-the-brain myth - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth\\nExcerpt: 4 days ago - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads experts t\\n\\n[2] Do We Really Use Only 10 Percent of Our Brain? | Britannica\\nURL: https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain\\nExcerpt: July 13, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities....\\n\\n[3] Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today\\nURL: https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains\\nExcerpt: May 15, 2025 - This notion, repeated in movies, motivational speeches, and even some classrooms, implies that a vast cognitive potential remains untapped. However, this idea is scientifically inaccurate and undermines our understanding of human mental capacity.\\n\\n[4] Do we only use 10 percent of our brain? - MIT McGovern Institute\\nURL: https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/\\nExcerpt: March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis.\\n\\n[5] Do People Only Use 10 Percent of Their Brains? | Scientific American\\nURL: https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/\\nExcerpt: February 20, 2024 - Another mystery hidden within our crinkled cortices is that out of all the brain's cells, only 10 percent are neurons; the other 90 percent are glial cells, which encapsulate and support neurons, but whose function remains largely unknown.\\n\\n[6] Do We Only Use 10% of our Brains? | Snopes.com\\nURL: https://www.snopes.com/fact-check/the-ten-percent-myth/\\nExcerpt: August 4, 2022 - In fact, most of us only use about 10 per cent of our brains, if that. The other 90 per cent is full of untapped potential and undiscovered abilities, which means our minds are only operating in a very limited way instead of at full stretch.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"reasoning\": \"The claim that humans only use 10% of their brain capacity is a well-known scientific myth. Neuroimaging techniques such as fMRI and PET scans demonstrate that virtually all parts of the brain are active and utilized throughout daily functioning, even during sleep. Neurological evidence also shows that damage to even tiny, specific areas of the brain can result in severe physical or cognitive impairments, which would not occur if 90% were dormant. Evolutionarily, the brain consumes roughly 20% of the body's energy despite accounting for only 2% of body mass, making the maintenance of a 90% dormant organ biologically untenable.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+        "Humans only use 10% of their brains",
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
+          "title": "Ten-percent-of-the-brain myth - Wikipedia",
+          "snippet": "4 days ago - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads experts to believe that it stems from multiple areas of the brain. Therefore, as with Kalat's idea that humans have untapped cognitive ..."
+        },
+        {
+          "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
+          "title": "Do We Really Use Only 10 Percent of Our Brain? | Britannica",
+          "snippet": "July 13, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities...."
+        },
+        {
+          "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
+          "title": "Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today",
+          "snippet": "May 15, 2025 - This notion, repeated in movies, motivational speeches, and even some classrooms, implies that a vast cognitive potential remains untapped. However, this idea is scientifically inaccurate and undermines our understanding of human mental capacity."
+        },
+        {
+          "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
+          "title": "Do we only use 10 percent of our brain? - MIT McGovern Institute",
+          "snippet": "March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+          "title": "Do People Only Use 10 Percent of Their Brains? | Scientific American",
+          "snippet": "February 20, 2024 - Another mystery hidden within our crinkled cortices is that out of all the brain's cells, only 10 percent are neurons; the other 90 percent are glial cells, which encapsulate and support neurons, but whose function remains largely unknown."
+        },
+        {
+          "url": "https://www.snopes.com/fact-check/the-ten-percent-myth/",
+          "title": "Do We Only Use 10% of our Brains? | Snopes.com",
+          "snippet": "August 4, 2022 - In fact, most of us only use about 10 per cent of our brains, if that. The other 90 per cent is full of untapped potential and undiscovered abilities, which means our minds are only operating in a very limited way instead of at full stretch."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-007",
+      "claim_title": "Great Wall of China visible from space",
+      "claim_text": "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that the Great Wall of China is visible from space with the naked eye is a well-documented myth",
+        "In reality, the Great Wall is only a few meters wide and constructed from materials that blend into the surrounding terrain, making it virtually impossible to resolve with the unaided human eye from low Earth orbit (and completely impossible from the Moon)",
+        "Astronauts and space agencies have confirmed that the wall requires optical magnification or specific lighting conditions to be photographed or detected, whereas other human-made structures—such as major highways, large airports, canals, and city lights at night—are far more visible from orbit."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\\\"\",\n  \"verification_notes\": \"Check astronaut accounts, NASA statements, and optical physics. The wall is roughly 9 meters wide — compare to road widths. Verify what actually IS visible from low Earth orbit with the naked eye.\",\n  \"search_results\": \"[1] Great Wall China Visible Space Myth Debunked | Sikho.ai\\nURL: https://sikho.ai/blog/great-wall-china-visible-from-space-myth\\nExcerpt: March 10, 2026 - However, the Great Wall of China can be photographed or observed from space using magnification, it can't be seen with the naked eye. On 24 November 2004, an image of the Great Wall of China was captured from low Earth orbit by US astronaut ...\\n\\n[2] Can you see the Great Wall of China from space? - BBC Sky at ...\\nURL: https://www.skyatnightmagazine.com/space-science/can-you-see-great-wall-china-from-space\\nExcerpt: Feb 27, 2024 · When it comes to spaceflight and astronomy, many myths abound, one of the biggest being the idea that you can see the Great Wall of China from space. For example, there are plenty of strange things astronomers used to believe about the Moon. One space-based myth that we all have heard\\n\\n[3] Beyond Myths: Can You Really See the Great Wall of China from ...\\nURL: https://englishpluspodcast.com/beyond-myths-can-you-really-see-the-great-wall-of-china-from-space/\\nExcerpt: Feb 22, 2024 · Is the Great Wall of China the only human-made structure visible from space? Discover the truth behind this common myth and the surprising limits of human eyesight.\\n\\n[4] Is the Great Wall of China visible from space? - Space Centre\\nURL: https://www.spacecentre.nz/resources/faq/solar-system/earth/great-wall-china.html\\nExcerpt: It is often said that the Great Wall of China is the only man-made object that can be seen from space (or the Moon). This is not actually the case.\\n\\n[5] Fact Check: Is The Great Wall Of China Visible From Space?Is the Great Wall of China really visible from space?Can You See the Great Wall of China from Space? 2026Is it true that the Great Wall of China is the only man-made ...\\nURL: https://www.timesnownews.com/travel/news/fact-check-is-the-great-wall-of-china-visible-from-space-article-112466738\\nExcerpt: Aug 17, 2024 · “The Great Wall of China is the only man-made structure that is visible from space.” As kids, this was one of the most popular statements that made us wonder at the sheer size of this wall. And this statement has stuck around for a long time; in fact from before the first man planted\\n\\n[6] Is the Great Wall of China really visible from space?\\nURL: https://www.sciencefocus.com/planet-earth/is-the-great-wall-of-china-really-visible-from-space\\nExcerpt: Is the Great Wall of China really visible from space? Contrary to popular belief, the Great Wall of China is a thin structure that blends in well with the surrounding landscape, making it very hard to spot.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim that the Great Wall of China is visible from space with the naked eye is a well-documented myth. In reality, the Great Wall is only a few meters wide and constructed from materials that blend into the surrounding terrain, making it virtually impossible to resolve with the unaided human eye from low Earth orbit (and completely impossible from the Moon). Astronauts and space agencies have confirmed that the wall requires optical magnification or specific lighting conditions to be photographed or detected, whereas other human-made structures—such as major highways, large airports, canals, and city lights at night—are far more visible from orbit.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+        "Great Wall of China visible from space",
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://sikho.ai/blog/great-wall-china-visible-from-space-myth",
+          "title": "Great Wall China Visible Space Myth Debunked | Sikho.ai",
+          "snippet": "March 10, 2026 - However, the Great Wall of China can be photographed or observed from space using magnification, it can't be seen with the naked eye. On 24 November 2004, an image of the Great Wall of China was captured from low Earth orbit by US astronaut ..."
+        },
+        {
+          "url": "https://www.skyatnightmagazine.com/space-science/can-you-see-great-wall-china-from-space",
+          "title": "Can you see the Great Wall of China from space? - BBC Sky at ...",
+          "snippet": "Feb 27, 2024 · When it comes to spaceflight and astronomy, many myths abound, one of the biggest being the idea that you can see the Great Wall of China from space. For example, there are plenty of strange things astronomers used to believe about the Moon. One space-based myth that we all have heard is the idea the Great Wall of China is the only human-made structure that can be seen from space."
+        },
+        {
+          "url": "https://englishpluspodcast.com/beyond-myths-can-you-really-see-the-great-wall-of-china-from-space/",
+          "title": "Beyond Myths: Can You Really See the Great Wall of China from ...",
+          "snippet": "Feb 22, 2024 · Is the Great Wall of China the only human-made structure visible from space? Discover the truth behind this common myth and the surprising limits of human eyesight."
+        },
+        {
+          "url": "https://www.spacecentre.nz/resources/faq/solar-system/earth/great-wall-china.html",
+          "title": "Is the Great Wall of China visible from space? - Space Centre",
+          "snippet": "It is often said that the Great Wall of China is the only man-made object that can be seen from space (or the Moon). This is not actually the case."
+        },
+        {
+          "url": "https://www.timesnownews.com/travel/news/fact-check-is-the-great-wall-of-china-visible-from-space-article-112466738",
+          "title": "Fact Check: Is The Great Wall Of China Visible From Space?Is the Great Wall of China really visible from space?Can You See the Great Wall of China from Space? 2026Is it true that the Great Wall of China is the only man-made ...",
+          "snippet": "Aug 17, 2024 · “The Great Wall of China is the only man-made structure that is visible from space.” As kids, this was one of the most popular statements that made us wonder at the sheer size of this wall. And this statement has stuck around for a long time; in fact from before the first man planted his feet on ... Is the Great Wall of China really visible from space? Contrary to popular belief, the Great Wall of China is a thin structure that blends in well with the surrounding landscape, making it very hard to spot. May 19, 2025 · Question: Can You See the Great Wall of China from Space? Quick Answer: No, the Great Wall is not visible to the naked eye from space due to its narrow width and natural coloring that blends into the landscape. Jul 14, 2002 · This is a myth ! Although the Great Wall is extremely long it is only about 5 metres or so wide. At distances greater than about 20 km up (about twice the height of Mt. Everest), a person even with perfect eyesight, but without the aid of a telescope or binoculars, cannot physically resolve something that small on the ground."
+        },
+        {
+          "url": "https://www.sciencefocus.com/planet-earth/is-the-great-wall-of-china-really-visible-from-space",
+          "title": "Is the Great Wall of China really visible from space?",
+          "snippet": "Is the Great Wall of China really visible from space? Contrary to popular belief, the Great Wall of China is a thin structure that blends in well with the surrounding landscape, making it very hard to spot."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_title": "Napoleon was unusually short",
+      "claim_text": "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The belief that Napoleon Bonaparte was unusually short (around 5 feet 2 inches) is a historical misconception stemming from a confusion between French and British units of measurement, reinforced by contemporary British propaganda (such as caricatures by James Gillray)",
+        "At the time of his autopsy, Napoleon was measured at 5 feet 2 inches in pre-metric French measurements (pieds and pouces)",
+        "When converted to modern/English imperial units, his actual height was approximately 5 feet 6.5 inches to 5 feet 7 inches (around 169 cm)",
+        "This made him average or slightly above average in height for a French man of the early 19th century."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\\\"\",\n  \"verification_notes\": \"Check historical records of Napoleon's height in French inches vs English inches. Verify average male height in early 19th century France. Look at accounts from contemporaries and his physician's records. The British caricaturist James Gillray's role in perpetuating the myth is worth examining.\",\n  \"search_results\": \"[1] Was Napoleon Actually Short? The Myth Behind His Height\\nURL: https://historiacorner.com/people/was-napoleon-short/\\nExcerpt: Jun 11, 2026 · Britannica notes that Napoleon’s estimated height was typical for his period, and another Britannica summary says he may even have been above average compared to French men around 1820. So the better question is not: Was Napoleon short by today’s standards? The better question is: Was\\n\\n[2] Was Napoleon Short? | Britannica\\nURL: https://www.britannica.com/story/was-napoleon-short\\nExcerpt: Napoleon was thus average or taller, no matter the interpretation. Although Napoleon’s death certificate seems to suggest that he was probably taller than the typical 19th-century Frenchman, English cartoons, his nickname, and other hearsay left a lasting impression that the emperor was short.\\n\\n[3] Napoleon's Height Revealed - ThoughtCo\\nURL: https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108\\nExcerpt: May 13, 2025 · Was Napoleon Really Unusually Short? It turns out that Napoleon Bonaparte wasn't particularly short at all. Napoleon's height is sometimes described as being 5 foot 2 inches tall, which would definitely make him short for his era.\\n\\n[4] How Tall Was Napoleon Bonaparte? Actually Pretty Average\\nURL: https://history.howstuffworks.com/history-vs-myth/napoleon-short.htm\\nExcerpt: Aug 27, 2024 · Have you ever heard the term \\\"Napoleon complex\\\" used to refer to a man seems to be overcompensating for his short stature? Named after French general Napoleon Bonaparte, who supposedly compensated for his lack of height with a bellicose personality, the term describes men who are ster\\n\\n[5] Was Napoleon even short? Inside the history of discrimination ...\\nURL: https://www.nationalgeographic.com/history/article/napoleon-complex-height-discrimination-men-history\\nExcerpt: Nov 22, 2023 · He was a French dictator—the original short king. Napoleon's supposedly short stature made him the mockery of Europe and inspired a stigma that persists today.\\n\\n[6] Was Napoleon Bonaparte Really So Short? - History Rundown\\nURL: https://www.historyrundown.com/was-napoleon-bonaparte-really-so-short/\\nExcerpt: Mar 7, 2020 · Was Napoleon Bonaparte Really So Short? Because of numerous paintings, movies and cartoons. We often imagine Napoleon Bonaparte as an unusually short man, even when compared to his contemporaries. However, the myth that Napoleon was short stems primarily from the fact that he was measu\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The belief that Napoleon Bonaparte was unusually short (around 5 feet 2 inches) is a historical misconception stemming from a confusion between French and British units of measurement, reinforced by contemporary British propaganda (such as caricatures by James Gillray). At the time of his autopsy, Napoleon was measured at 5 feet 2 inches in pre-metric French measurements (pieds and pouces). When converted to modern/English imperial units, his actual height was approximately 5 feet 6.5 inches to 5 feet 7 inches (around 169 cm). This made him average or slightly above average in height for a French man of the early 19th century.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+        "Napoleon was unusually short",
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://historiacorner.com/people/was-napoleon-short/",
+          "title": "Was Napoleon Actually Short? The Myth Behind His Height",
+          "snippet": "Jun 11, 2026 · Britannica notes that Napoleon’s estimated height was typical for his period, and another Britannica summary says he may even have been above average compared to French men around 1820. So the better question is not: Was Napoleon short by today’s standards? The better question is: Was Napoleon unusually short for his own time? And the ..."
+        },
+        {
+          "url": "https://www.britannica.com/story/was-napoleon-short",
+          "title": "Was Napoleon Short? | Britannica",
+          "snippet": "Napoleon was thus average or taller, no matter the interpretation. Although Napoleon’s death certificate seems to suggest that he was probably taller than the typical 19th-century Frenchman, English cartoons, his nickname, and other hearsay left a lasting impression that the emperor was short."
+        },
+        {
+          "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
+          "title": "Napoleon's Height Revealed - ThoughtCo",
+          "snippet": "May 13, 2025 · Was Napoleon Really Unusually Short? It turns out that Napoleon Bonaparte wasn't particularly short at all. Napoleon's height is sometimes described as being 5 foot 2 inches tall, which would definitely make him short for his era."
+        },
+        {
+          "url": "https://history.howstuffworks.com/history-vs-myth/napoleon-short.htm",
+          "title": "How Tall Was Napoleon Bonaparte? Actually Pretty Average",
+          "snippet": "Aug 27, 2024 · Have you ever heard the term \"Napoleon complex\" used to refer to a man seems to be overcompensating for his short stature? Named after French general Napoleon Bonaparte, who supposedly compensated for his lack of height with a bellicose personality, the term describes men who are stereotypically quick to start fights because they feel inferior to their taller counterparts. But how tall was ..."
+        },
+        {
+          "url": "https://www.nationalgeographic.com/history/article/napoleon-complex-height-discrimination-men-history",
+          "title": "Was Napoleon even short? Inside the history of discrimination ...",
+          "snippet": "Nov 22, 2023 · He was a French dictator—the original short king. Napoleon's supposedly short stature made him the mockery of Europe and inspired a stigma that persists today."
+        },
+        {
+          "url": "https://www.historyrundown.com/was-napoleon-bonaparte-really-so-short/",
+          "title": "Was Napoleon Bonaparte Really So Short? - History Rundown",
+          "snippet": "Mar 7, 2020 · Was Napoleon Bonaparte Really So Short? Because of numerous paintings, movies and cartoons. We often imagine Napoleon Bonaparte as an unusually short man, even when compared to his contemporaries. However, the myth that Napoleon was short stems primarily from the fact that he was measured 5 feet 2 inches a few years before his death."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}

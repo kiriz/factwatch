@@ -3,9 +3,9 @@
   "claim_id": "claim-003",
   "verdict": "FALSE",
   "confidence": 98,
-  "last_checked_at": "2026-08-17T06:11:56Z",
+  "last_checked_at": "2026-08-24T06:14:39Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-08-17T061041Z",
+  "run_id": "run-2026-08-24T061324Z",
   "sources": [
     {
       "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
@@ -29,15 +29,15 @@
       "domain": "scientificamerican.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "4 days ago - In its retraction notice, the BMJ stated that Mostert’s proposed edits"
+      "excerpt": "2 weeks ago - In its retraction notice, the BMJ stated that Mostert’s proposed edits"
     },
     {
-      "url": "https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/",
-      "title": "Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST",
-      "domain": "route66post.com",
+      "url": "https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/coronavirus-myths/art-20485720",
+      "title": "Debunking COVID-19 myths - Mayo Clinic",
+      "domain": "mayoclinic.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents"
+      "excerpt": "No. COVID-19 vaccines cannot affect your DNA. Pfizer and Moderna COVID-19 vaccines only give your"
     },
     {
       "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
@@ -48,15 +48,15 @@
       "excerpt": "March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently"
     },
     {
-      "url": "https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/",
-      "title": "Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab",
-      "domain": "dfrlab.org",
+      "url": "https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/",
+      "title": "Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST",
+      "domain": "route66post.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "November 16, 2022 - At least 46 of the false narratives debunked by the fact-checking"
+      "excerpt": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents"
     }
   ],
-  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false and has been thoroughly debunked by medical and scientific institutions worldwide, including the CDC, WHO, and NIH. mRNA from vaccines delivers temporary genetic instructions to the cell's cytoplasm to produce harmless viral spike proteins, triggering an immune response. Vaccine mRNA never enters the cell nucleus where human DNA is located, rapidly degrades after translation, and lacks the biological mechanisms (such as reverse transcriptase and integrase) required to reverse-transcribe into DNA or integrate into the human genome.",
+  "reasoning": "Major medical organizations and scientific consensus, including the Mayo Clinic, CDC, and WHO, confirm that mRNA COVID-19 vaccines do not alter, interact with, or integrate into human DNA. The mRNA delivers instructions to cellular machinery (ribosomes) in the cytoplasm to produce a harmless viral spike protein and naturally degrades shortly afterward without ever entering the cell's nucleus where DNA is stored. Claims that the vaccines alter human genetics are scientifically baseless.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -129,6 +129,12 @@
       "confidence": 98,
       "checked_at": "2026-08-09T06:47:53Z",
       "run_id": "run-2026-08-09T064647Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 98,
+      "checked_at": "2026-08-17T06:11:56Z",
+      "run_id": "run-2026-08-17T061041Z"
     }
   ],
   "agent_flags": {
