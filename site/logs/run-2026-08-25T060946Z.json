@@ -1,0 +1,308 @@
+{
+  "run_id": "run-2026-08-25T060946Z",
+  "started_at": "2026-08-25T06:09:46Z",
+  "finished_at": "2026-08-25T06:13:08Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to estimates from the Cambridge Centre for Alternative Finance (CCAF) and analyses highlighted by institutions such as the BBC and the IMF, Bitcoin's annualized electricity consumption (often estimated around 120-140+ TWh per year) surpasses the total annual electricity consumption of countries like Argentina (around 121-127 TWh)."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\\\"\",\n  \"verification_notes\": \"Check the Cambridge CBECI for current figures. Compare to IEA national electricity consumption data. Verify whether the comparison holds with current mining conditions. Note whether the claim refers to TWh/year.\",\n  \"search_results\": \"[1] Bitcoin consumes 'more electricity than Argentina'\\nURL: https://www.bbc.com/news/technology-56012952\\nExcerpt: Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \\\"Mining\\\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions. Published: February 10, 2021\\n\\n[2] Bitcoin consumption beats Argentina's annual energy use\\nURL: https://www.aa.com.tr/en/energy/finance/bitcoin-consumption-beats-argentinas-annual-energy-use/31867\\nExcerpt: The data from the Cambridge Center for Alternative Finance shows that Bitcoin’s electricity consumption of 121.05 terawatt-hours (TWh) surpasses that of Argentina at 121 TWh and the United Arab Emirates at 113.20 TWh, and it close to that ...\\n\\n[3] How Much Electricity Does Bitcoin Mining Use? 2025 Analysis\\nURL: https://solartechonline.com/blog/bitcoin-electricity-consumption-mining-2025/\\nExcerpt: September 19, 2025 - Bitcoin mining consumes an astounding amount of electricity – equivalent to the entire annual consumption of countries like Poland or Argentina.\\n\\n[4] Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative – ICA\\nURL: https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/\\nExcerpt: Bitcoin consumes as much electricity as an entire country—Argentina. That striking fact, highlighted by the International Monetary Fund (IMF), should give every policymaker pause. While the digital payment world is celebrated as convenient and cutting-edge, it carries a hidden and massive ...\\n\\n[5] The Global Disparity in Bitcoin's Electricity Consumption: Data Insights\\nURL: https://www.linkedin.com/pulse/global-disparity-bitcoins-electricity-consumption-data-hassani-auc7e\\nExcerpt: November 16, 2023 - For instance: Argentina: With an estimated energy consumption of 127 TWh in recent years, Bitcoin’s energy usage surpasses that of Argentina, highlighting the immense scale of its power requirements.\\n\\n[6] Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative\\nURL: https://www.cashmatters.org/blog/bitcoin-consumes-as-much-electricity-as-argentinacash-is-the-sustainable-alternative\\nExcerpt: September 17, 2025 - The IMF highlights Bitcoin’s electricity use equalling Argentina’s annual consumption, exposing the hidden climate cost of digital payments. Unlike energy-hungry crypto and servers, cash operates with minimal impact, ensuring resilience, inclusion, and sustainability in global p\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to estimates from the Cambridge Centre for Alternative Finance (CCAF) and analyses highlighted by institutions such as the BBC and the IMF, Bitcoin's annualized electricity consumption (often estimated around 120-140+ TWh per year) surpasses the total annual electricity consumption of countries like Argentina (around 121-127 TWh).\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+        "Bitcoin uses more electricity than Argentina",
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-56012952",
+          "title": "Bitcoin consumes 'more electricity than Argentina'",
+          "snippet": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \"Mining\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions. Published: February 10, 2021"
+        },
+        {
+          "url": "https://www.aa.com.tr/en/energy/finance/bitcoin-consumption-beats-argentinas-annual-energy-use/31867",
+          "title": "Bitcoin consumption beats Argentina's annual energy use",
+          "snippet": "The data from the Cambridge Center for Alternative Finance shows that Bitcoin’s electricity consumption of 121.05 terawatt-hours (TWh) surpasses that of Argentina at 121 TWh and the United Arab Emirates at 113.20 TWh, and it close to that ..."
+        },
+        {
+          "url": "https://solartechonline.com/blog/bitcoin-electricity-consumption-mining-2025/",
+          "title": "How Much Electricity Does Bitcoin Mining Use? 2025 Analysis",
+          "snippet": "September 19, 2025 - Bitcoin mining consumes an astounding amount of electricity – equivalent to the entire annual consumption of countries like Poland or Argentina."
+        },
+        {
+          "url": "https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/",
+          "title": "Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative – ICA",
+          "snippet": "Bitcoin consumes as much electricity as an entire country—Argentina. That striking fact, highlighted by the International Monetary Fund (IMF), should give every policymaker pause. While the digital payment world is celebrated as convenient and cutting-edge, it carries a hidden and massive ..."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/global-disparity-bitcoins-electricity-consumption-data-hassani-auc7e",
+          "title": "The Global Disparity in Bitcoin's Electricity Consumption: Data Insights",
+          "snippet": "November 16, 2023 - For instance: Argentina: With an estimated energy consumption of 127 TWh in recent years, Bitcoin’s energy usage surpasses that of Argentina, highlighting the immense scale of its power requirements."
+        },
+        {
+          "url": "https://www.cashmatters.org/blog/bitcoin-consumes-as-much-electricity-as-argentinacash-is-the-sustainable-alternative",
+          "title": "Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative",
+          "snippet": "September 17, 2025 - The IMF highlights Bitcoin’s electricity use equalling Argentina’s annual consumption, exposing the hidden climate cost of digital payments. Unlike energy-hungry crypto and servers, cash operates with minimal impact, ensuring resilience, inclusion, and sustainability in global payment systems."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-011",
+      "claim_title": "MSG causes headaches — 'Chinese restaurant syndrome'",
+      "claim_text": "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 90,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Scientific consensus and rigorous double-blind, placebo-controlled clinical trials have consistently failed to demonstrate a causal link between normal dietary consumption of MSG (monosodium glutamate) and symptoms such as headaches, numbness, or flushing (historically dubbed \"Chinese restaurant syndrome\")",
+        "The term originated from an anecdotal 1968 letter to the New England Journal of Medicine rather than controlled clinical evidence",
+        "Food and health regulatory agencies, including the U.S",
+        "FDA, consider MSG to be \"Generally Recognized as Safe\" (GRAS), noting that the body metabolizes glutamate from MSG identically to glutamate naturally found in foods like tomatoes and aged cheese",
+        "While a small subset of individuals may self-report sensitivity, scientific reviews find no reproducible evidence that MSG causes these symptoms."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\\\"\",\n  \"verification_notes\": \"Check FDA classification of MSG (GRAS status). Look for double-blind studies on MSG sensitivity. Verify whether glutamate in MSG differs from glutamate naturally present in tomatoes, cheese, and mushrooms. Check the original 1968 NEJM letter and subsequent research.\",\n  \"search_results\": \"[1] MSG symptom complex: MedlinePlus Medical Encyclopedia\\nURL: https://medlineplus.gov/ency/article/001126.htm\\nExcerpt: MSG symptom complex is a set of symptoms associated with eating food with the additive monosodium glutamate (MSG). MSG is the sodium salt of a common amino acid, glutamic acid. MSG is found naturally in\\n\\n[2] Monosodium Glutamate (MSG) Symptom Complex (Chinese Restaurant Syndrome): Nightmare of Chinese Food Lovers! - PubMed\\nURL: https://pubmed.ncbi.nlm.nih.gov/37355848/\\nExcerpt: The spectrum of symptoms ranges from headache, sweating, abdominal pain, and urticaria to angioedema in severe cases. This group of symptoms is known as MSG symptom complex or Chinese restaurant syndrome (CRS).\\n\\n[3] The Rotten Science Behind the MSG Scare | Science History Institute\\nURL: https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/\\nExcerpt: February 19, 2026 - The symptoms catalogued in the letters included fainting, back spasms, sweating, dizziness, flushed skin, and a numb jaw. Puzzlingly, though, no two letter writers listed the same symptoms.\\n\\n[4] Reconsidering the effects of monosodium glutamate: a literature review - PubMed\\nURL: https://pubmed.ncbi.nlm.nih.gov/16999713/\\nExcerpt: Implications for practice: Despite a widespread belief that MSG can elicit a headache, among other symptoms, there are no consistent clinical data to support this claim. Findings from the literature indicate that there is no consistent evidence ...\\n\\n[5] Does MSG Cause Headaches?\\nURL: https://www.healthline.com/nutrition/msg-headache\\nExcerpt: May 14, 2024 - Although there’s limited research on MSG sensitivity, there are some reports of negative side effects after consuming MSG, such as fatigue, hives, swelling of the throat, muscle tightness, tingling, numbness, weakness, and flushing ( ... If ...\\n\\n[6] Medical Definition of Chinese restaurant syndrome\\nURL: https://www.rxlist.com/chinese_restaurant_syndrome/definition.htm\\nExcerpt: March 29, 2021 - Chinese restaurant syndrome: A syndrome first described in 1968 in people who had eaten Chinese food on which MSG (monosodium glutamate) had been lavished. The syndrome only seems to occur in some people.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 90,\n  \"reasoning\": \"Scientific consensus and rigorous double-blind, placebo-controlled clinical trials have consistently failed to demonstrate a causal link between normal dietary consumption of MSG (monosodium glutamate) and symptoms such as headaches, numbness, or flushing (historically dubbed \\\"Chinese restaurant syndrome\\\"). The term originated from an anecdotal 1968 letter to the New England Journal of Medicine rather than controlled clinical evidence. Food and health regulatory agencies, including the U.S. FDA, consider MSG to be \\\"Generally Recognized as Safe\\\" (GRAS), noting that the body metabolizes glutamate from MSG identically to glutamate naturally found in foods like tomatoes and aged cheese. While a small subset of individuals may self-report sensitivity, scientific reviews find no reproducible evidence that MSG causes these symptoms.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+        "MSG causes headaches — 'Chinese restaurant syndrome'",
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://medlineplus.gov/ency/article/001126.htm",
+          "title": "MSG symptom complex: MedlinePlus Medical Encyclopedia",
+          "snippet": "MSG symptom complex is a set of symptoms associated with eating food with the additive monosodium glutamate (MSG). MSG is the sodium salt of a common amino acid, glutamic acid. MSG is found naturally in"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37355848/",
+          "title": "Monosodium Glutamate (MSG) Symptom Complex (Chinese Restaurant Syndrome): Nightmare of Chinese Food Lovers! - PubMed",
+          "snippet": "The spectrum of symptoms ranges from headache, sweating, abdominal pain, and urticaria to angioedema in severe cases. This group of symptoms is known as MSG symptom complex or Chinese restaurant syndrome (CRS)."
+        },
+        {
+          "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
+          "title": "The Rotten Science Behind the MSG Scare | Science History Institute",
+          "snippet": "February 19, 2026 - The symptoms catalogued in the letters included fainting, back spasms, sweating, dizziness, flushed skin, and a numb jaw. Puzzlingly, though, no two letter writers listed the same symptoms."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16999713/",
+          "title": "Reconsidering the effects of monosodium glutamate: a literature review - PubMed",
+          "snippet": "Implications for practice: Despite a widespread belief that MSG can elicit a headache, among other symptoms, there are no consistent clinical data to support this claim. Findings from the literature indicate that there is no consistent evidence ..."
+        },
+        {
+          "url": "https://www.healthline.com/nutrition/msg-headache",
+          "title": "Does MSG Cause Headaches?",
+          "snippet": "May 14, 2024 - Although there’s limited research on MSG sensitivity, there are some reports of negative side effects after consuming MSG, such as fatigue, hives, swelling of the throat, muscle tightness, tingling, numbness, weakness, and flushing ( ... If ..."
+        },
+        {
+          "url": "https://www.rxlist.com/chinese_restaurant_syndrome/definition.htm",
+          "title": "Medical Definition of Chinese restaurant syndrome",
+          "snippet": "March 29, 2021 - Chinese restaurant syndrome: A syndrome first described in 1968 in people who had eaten Chinese food on which MSG (monosodium glutamate) had been lavished. The syndrome only seems to occur in some people."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-013",
+      "claim_title": "Social media causes depression in teenagers",
+      "claim_text": "\"Social media use causes depression and anxiety in teenagers.\"",
+      "category": "health",
+      "verdict": "DISPUTED",
+      "confidence": 85,
+      "verdict_changed": false,
+      "previous_verdict": "DISPUTED",
+      "new_verdict": "DISPUTED",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": true,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "While numerous public health advisories and observational studies show a clear association between heavy social media use and increased symptoms of anxiety and depression among adolescents (as noted by HHS and Mayo Clinic), scientific consensus remains divided on direct causality",
+        "Major psychological reviews and meta-analyses (such as those by Orben, Przybylski, and the American Psychological Association) emphasize that most evidence demonstrates correlation rather than causation, with effect sizes often being modest and influenced by confounding factors such as pre-existing mental health vulnerabilities, sleep disruption, cyberbullying, and whether usage is active or passive",
+        "Consequently, the definitive claim that social media use directly *causes* depression and anxiety in teenagers is an ongoing subject of scientific debate."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Social media use causes depression and anxiety in teenagers.\\\"\",\n  \"verification_notes\": \"Look for meta-analyses and systematic reviews. Check both Haidt's research and critics like Orben/Przybylski. Verify whether studies show correlation vs causation. Check whether effect sizes are practically significant. Note the difference between passive consumption and active engagement.\",\n  \"search_results\": \"[1] Social Media and Youth Mental Health | HHS.gov\\nURL: https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html\\nExcerpt: February 19, 2025 - Children and adolescents who spend more than 3 hours a day on social media face double the risk of mental health problems including experiencing symptoms of depression and anxiety.3 This is concerning as a recent survey showed that teenagers ...\\n\\n[2] How Social Media Affects Your Teen’s Mental Health: A Parent’s Guide | News | Yale Medicine\\nURL: https://www.yalemedicine.org/news/social-media-teen-mental-health-a-parents-guide\\nExcerpt: According to a research study of American teens ages 12-15, those who used social media over three hours each day faced twice the risk of having negative mental health outcomes, including depression and anxiety symptoms.\\n\\n[3] Does Social Media Cause Depression in Kids? - Child Mind Institute\\nURL: https://childmind.org/article/is-social-media-use-causing-depression/\\nExcerpt: May 6, 2026 - Evidence is mounting that there is a link between social media and depression. In a review of over 100 studies involving children, adolescents, and teens, social media use was associated with higher rates of depression and anxiety.\\n\\n[4] Teens and social media use: What's the impact? - Mayo Clinic\\nURL: https://www.mayoclinic.org/healthy-lifestyle/tween-and-teen-health/in-depth/teens-and-social-media-use/art-20474437\\nExcerpt: Being exposed to discrimination, hate or cyberbullying on social media also can raise the risk of anxiety or depression. What teens share about themselves on social media also matters.\\n\\n[5] Anxiety and depression amongst youth as adverse effects of using social media : A Review - PMC\\nURL: https://pmc.ncbi.nlm.nih.gov/articles/PMC10406047/\\nExcerpt: Social media use has become widely popularized in modern society and because of that, human interactions have drastically changed. In parallel, depression and anxiety have reached unprecedented levels among the youth, and concerns have emerged on social media use compromising mental health.\\n\\n[6] Effects of Social Media on Teenagers' Mental Health - Child Mind Institute\\nURL: https://childmind.org/article/how-using-social-media-affects-teenagers/\\nExcerpt: July 22, 2026 - Social media affects teenagers’ mental health negatively by limiting direct contact with peers and encouraging constant comparison online, which can lead to low self-esteem, anxiety, and depression.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"DISPUTED\",\n  \"confidence\": 85,\n  \"reasoning\": \"While numerous public health advisories and observational studies show a clear association between heavy social media use and increased symptoms of anxiety and depression among adolescents (as noted by HHS and Mayo Clinic), scientific consensus remains divided on direct causality. Major psychological reviews and meta-analyses (such as those by Orben, Przybylski, and the American Psychological Association) emphasize that most evidence demonstrates correlation rather than causation, with effect sizes often being modest and influenced by confounding factors such as pre-existing mental health vulnerabilities, sleep disruption, cyberbullying, and whether usage is active or passive. Consequently, the definitive claim that social media use directly *causes* depression and anxiety in teenagers is an ongoing subject of scientific debate.\",\n  \"conflicting_sources\": true,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Social media use causes depression and anxiety in teenagers.\"",
+        "Social media causes depression in teenagers",
+        "\"Social media use causes depression and anxiety in teenagers.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+          "title": "Social Media and Youth Mental Health | HHS.gov",
+          "snippet": "February 19, 2025 - Children and adolescents who spend more than 3 hours a day on social media face double the risk of mental health problems including experiencing symptoms of depression and anxiety.3 This is concerning as a recent survey showed that teenagers ..."
+        },
+        {
+          "url": "https://www.yalemedicine.org/news/social-media-teen-mental-health-a-parents-guide",
+          "title": "How Social Media Affects Your Teen’s Mental Health: A Parent’s Guide | News | Yale Medicine",
+          "snippet": "According to a research study of American teens ages 12-15, those who used social media over three hours each day faced twice the risk of having negative mental health outcomes, including depression and anxiety symptoms."
+        },
+        {
+          "url": "https://childmind.org/article/is-social-media-use-causing-depression/",
+          "title": "Does Social Media Cause Depression in Kids? - Child Mind Institute",
+          "snippet": "May 6, 2026 - Evidence is mounting that there is a link between social media and depression. In a review of over 100 studies involving children, adolescents, and teens, social media use was associated with higher rates of depression and anxiety."
+        },
+        {
+          "url": "https://www.mayoclinic.org/healthy-lifestyle/tween-and-teen-health/in-depth/teens-and-social-media-use/art-20474437",
+          "title": "Teens and social media use: What's the impact? - Mayo Clinic",
+          "snippet": "Being exposed to discrimination, hate or cyberbullying on social media also can raise the risk of anxiety or depression. What teens share about themselves on social media also matters."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10406047/",
+          "title": "Anxiety and depression amongst youth as adverse effects of using social media : A Review - PMC",
+          "snippet": "Social media use has become widely popularized in modern society and because of that, human interactions have drastically changed. In parallel, depression and anxiety have reached unprecedented levels among the youth, and concerns have emerged on social media use compromising mental health."
+        },
+        {
+          "url": "https://childmind.org/article/how-using-social-media-affects-teenagers/",
+          "title": "Effects of Social Media on Teenagers' Mental Health - Child Mind Institute",
+          "snippet": "July 22, 2026 - Social media affects teenagers’ mental health negatively by limiting direct contact with peers and encouraging constant comparison online, which can lead to low self-esteem, anxiety, and depression."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-015",
+      "claim_title": "AlphaGo defeated the world Go champion in 2016",
+      "claim_text": "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-016",
+      "claim_title": "Generative AI will replace 300 million jobs",
+      "claim_text": "\"Generative AI will replace 300 million jobs worldwide.\"",
+      "category": "economics",
+      "verdict": "MISLEADING",
+      "confidence": 90,
+      "verdict_changed": false,
+      "previous_verdict": "MISLEADING",
+      "new_verdict": "MISLEADING",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim is misleading because it misrepresents the findings of the widely cited March 2023 Goldman Sachs economic report",
+        "The report estimated that generative AI could expose the equivalent of roughly 300 million full-time jobs worldwide to automation, not that 300 million jobs will definitely be replaced or eliminated",
+        "Furthermore, the report emphasized that for the majority of occupations, generative AI would complement rather than fully substitute human labor, while also creating new roles and boosting global economic productivity",
+        "Framing this projection as a definitive statement that 300 million jobs \"will be replaced\" oversimplifies and exaggerates the research."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Generative AI will replace 300 million jobs worldwide.\\\"\",\n  \"verification_notes\": \"Check the primary source: the Goldman Sachs Global Economics Analyst (Hatzius et al., 26 March 2023). Verify the exact wording — the report estimates roughly 300 million full-time jobs could be \\\"exposed to automation,\\\" and that ~two-thirds of occupations could see *some* automation, not full replacement. Distinguish \\\"exposed to,\\\" \\\"complemented by,\\\" and \\\"replaced by.\\\" Note the report also projected AI could raise global GDP. Cross-check with later labour-economics commentary (e.g. MIT, Brookings) on automation creating as well as displacing jobs. Expected nuance: the bare \\\"will replace 300 million jobs\\\" framing overstates the source.\",\n  \"search_results\": \"[1] AI could replace equivalent of 300 million jobs - report\\nURL: https://www.bbc.com/news/technology-65102150\\nExcerpt: March 28, 2023 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom.\\n\\n[2] How Many Jobs Will AI Replace by 2030? (Updated May 2026)\\nURL: https://piktochart.com/blog/how-many-jobs-will-ai-replace-by-2030/\\nExcerpt: May 22, 2026 - But the full picture is more nuanced. Goldman Sachs estimates up to 300 million jobs worldwide could be exposed to AI automation, while PwC puts 30% of US jobs at risk by the mid-2030s.\\n\\n[3] 43 AI Replacing Jobs Statistics You Should Know Right Now - Apollo Technical LLC\\nURL: https://www.apollotechnical.com/ai-replacing-jobs-statistics/\\nExcerpt: July 19, 2026 - Job “churn,” meaning the combined total of roles created and destroyed, is expected to equal 22% of all formal jobs tracked in the WEF dataset by 2030. A Goldman Sachs report estimates that generative AI exposes roughly 300 million full time jobs worldwide to some degree of automatio\\n\\n[4] How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University\\nURL: https://www.nexford.edu/insights/how-will-ai-affect-jobs\\nExcerpt: 3 weeks ago - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom.\\n\\n[5] Goldman Sachs: Generative AI Could Replace 300 Million Jobs\\nURL: https://aibusiness.com/nlp/goldman-sachs-generative-ai-could-replace-300-million-jobs\\nExcerpt: March 29, 2023 - Goldman Sachs economists believe generative AI could replace up to one-fourth of current jobs globally, or 300 million.\\n\\n[6] goldman sachs: Generative AI could replace 300 million jobs: Goldman Sachs report - The Economic Times\\nURL: https://economictimes.indiatimes.com/tech/technology/generative-ai-could-replace-300-million-jobs-goldman-sachs-report/articleshow/99085074.cms\\nExcerpt: May 8, 2026 - ... Generative AI has already made a huge impact on how technology is used on a daily basis. Soon, it will disrupt the labour market, according to a Goldman Sachs report, and could replace 300 million jobs globally.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"MISLEADING\",\n  \"confidence\": 90,\n  \"reasoning\": \"The claim is misleading because it misrepresents the findings of the widely cited March 2023 Goldman Sachs economic report. The report estimated that generative AI could expose the equivalent of roughly 300 million full-time jobs worldwide to automation, not that 300 million jobs will definitely be replaced or eliminated. Furthermore, the report emphasized that for the majority of occupations, generative AI would complement rather than fully substitute human labor, while also creating new roles and boosting global economic productivity. Framing this projection as a definitive statement that 300 million jobs \\\"will be replaced\\\" oversimplifies and exaggerates the research.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Generative AI will replace 300 million jobs worldwide.\"",
+        "Generative AI will replace 300 million jobs",
+        "\"Generative AI will replace 300 million jobs worldwide.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-65102150",
+          "title": "AI could replace equivalent of 300 million jobs - report",
+          "snippet": "March 28, 2023 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom."
+        },
+        {
+          "url": "https://piktochart.com/blog/how-many-jobs-will-ai-replace-by-2030/",
+          "title": "How Many Jobs Will AI Replace by 2030? (Updated May 2026)",
+          "snippet": "May 22, 2026 - But the full picture is more nuanced. Goldman Sachs estimates up to 300 million jobs worldwide could be exposed to AI automation, while PwC puts 30% of US jobs at risk by the mid-2030s."
+        },
+        {
+          "url": "https://www.apollotechnical.com/ai-replacing-jobs-statistics/",
+          "title": "43 AI Replacing Jobs Statistics You Should Know Right Now - Apollo Technical LLC",
+          "snippet": "July 19, 2026 - Job “churn,” meaning the combined total of roles created and destroyed, is expected to equal 22% of all formal jobs tracked in the WEF dataset by 2030. A Goldman Sachs report estimates that generative AI exposes roughly 300 million full time jobs worldwide to some degree of automation."
+        },
+        {
+          "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
+          "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
+          "snippet": "3 weeks ago - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom."
+        },
+        {
+          "url": "https://aibusiness.com/nlp/goldman-sachs-generative-ai-could-replace-300-million-jobs",
+          "title": "Goldman Sachs: Generative AI Could Replace 300 Million Jobs",
+          "snippet": "March 29, 2023 - Goldman Sachs economists believe generative AI could replace up to one-fourth of current jobs globally, or 300 million."
+        },
+        {
+          "url": "https://economictimes.indiatimes.com/tech/technology/generative-ai-could-replace-300-million-jobs-goldman-sachs-report/articleshow/99085074.cms",
+          "title": "goldman sachs: Generative AI could replace 300 million jobs: Goldman Sachs report - The Economic Times",
+          "snippet": "May 8, 2026 - ... Generative AI has already made a huge impact on how technology is used on a daily basis. Soon, it will disrupt the labour market, according to a Goldman Sachs report, and could replace 300 million jobs globally."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 1
+}
