@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-012",
   "verdict": "FALSE",
-  "confidence": 100,
-  "last_checked_at": "2026-08-19T06:10:13Z",
+  "confidence": 98,
+  "last_checked_at": "2026-08-26T06:13:54Z",
   "last_changed_at": "2026-06-09T23:47:23Z",
-  "run_id": "run-2026-08-19T060905Z",
+  "run_id": "run-2026-08-26T061021Z",
   "sources": [
     {
-      "url": "https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html",
-      "title": "'Lightning Never Strikes the Same Place Twice'... Or Does It?",
-      "domain": "learningenglish.voanews.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Anything that comes to represent something that people criticize can be called a lightning rod."
-    },
-    {
-      "url": "https://www.aol.com/why-lightning-never-strikes-same-174500436.html",
-      "title": "Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL",
-      "domain": "aol.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Lightning is very good at striking the same place twice – you could even say"
-    },
-    {
-      "url": "https://idioms.thefreedictionary.com/lightning+never+strikes+(the+same+place)+twice",
-      "title": "Lightning never strikes (the same place) twice - Idioms by The Free...",
-      "domain": "idioms.thefreedictionary.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The same highly unlikely thing never happens to the same person twice. Jill: I'm scared"
-    },
-    {
       "url": "https://www.weather.gov/safety/lightning-myths",
-      "title": "Lightning Myths",
+      "title": "Lightning Myths and Facts",
       "domain": "weather.gov",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Myth: Lightning never strikes the same place twice. Fact: Lightning often strikes the same place"
     },
     {
-      "url": "https://writingexplained.org/idiom-dictionary/lightning-never-strikes-the-same-place-twice",
-      "title": "What Does Lightning Never Strikes The Same Place Twice Mean?",
-      "domain": "writingexplained.org",
+      "url": "https://www.reddit.com/r/shittyaskscience/comments/3ewilq/if_lightning_never_strikes_in_the_same_place/",
+      "title": "r/shittyaskscience on Reddit: If lightning never strikes in the same place twice, what happens when lightning strikes everywhere? Are there no more storms?",
+      "domain": "reddit.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "lightning never strikes twice in the same place This idiom likely originated in the book"
+      "excerpt": "July 28, 2015 - This eventually resulted in the discovery of \"dark matter,\" which is"
     },
     {
-      "url": "https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html",
-      "title": "VOA Special English - 'Lightning Never Strikes the Same Place...",
-      "domain": "21voa.com",
+      "url": "https://www.westeamahead.org/blog/2025/2/5/mythbuster-lightning-never-strikes-the-same-place-twice",
+      "title": "MythBuster: Lightning Never Strikes the Same Place Twice — STEAM Ahead",
+      "domain": "westeamahead.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "You know, lightning never strikes twice!\" That probably will not make your head feel any"
+      "excerpt": "February 5, 2025 - Lightning often strikes the same spot multiple times. It’s not a"
+    },
+    {
+      "url": "https://lpsfr.com/en/blog-lightning-never-strikes-twice/",
+      "title": "Lightning never strikes the same place twice: myth or reality?",
+      "domain": "lpsfr.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "June 15, 2026 - No, lightning doesn't choose its targets only once. It strikes where"
+    },
+    {
+      "url": "https://www.foxweather.com/learn/lightning-strike-same-place-twice-weather-sayings-lore",
+      "title": "Does lightning ever strike the same place twice? | Fox Weather",
+      "domain": "foxweather.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "So the next time you hear this popular phrase, remind yourself that it’s just a"
+    },
+    {
+      "url": "https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html",
+      "title": "'Lightning Never Strikes the Same Place Twice'... Or Does It?",
+      "domain": "learningenglish.voanews.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "July 11, 2020 - We use this expression when a very unusual event is not"
     }
   ],
-  "reasoning": "The claim that \"lightning never strikes the same place twice\" is a common myth that is scientifically false. According to the National Weather Service (NWS), lightning frequently strikes the exact same location repeatedly, particularly tall, pointed, or isolated structures that provide the path of least electrical resistance to the ground. A prominent example is the Empire State Building, which is struck by lightning an average of 23 to 25 times each year.",
+  "reasoning": "The claim that \"lightning never strikes the same place twice\" is a common myth that is scientifically false. According to the National Weather Service (NWS), lightning frequently strikes the exact same location multiple times, particularly tall, pointed, or isolated structures that offer a path of least resistance for electrical discharge. For example, tall structures like the Empire State Building are struck by lightning dozens of times each year.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -123,6 +123,12 @@
       "confidence": 100,
       "checked_at": "2026-08-11T06:58:25Z",
       "run_id": "run-2026-08-11T065747Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-08-19T06:10:13Z",
+      "run_id": "run-2026-08-19T060905Z"
     }
   ],
   "agent_flags": {

@@ -3,9 +3,9 @@
   "claim_id": "claim-015",
   "verdict": "TRUE",
   "confidence": 98,
-  "last_checked_at": "2026-08-18T06:09:03Z",
+  "last_checked_at": "2026-08-26T06:10:59Z",
   "last_changed_at": "2026-06-09T23:45:43Z",
-  "run_id": "run-2026-08-18T060828Z",
+  "run_id": "run-2026-08-26T061021Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
@@ -13,15 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "1 week ago - Before AlphaGo, some researchers ... never defeat top humans at Go."
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/AlphaGo",
-      "title": "AlphaGo - Wikipedia",
-      "domain": "en.wikipedia.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "June 6, 2026 - AlphaGo is a computer program that plays the board game Go."
+      "excerpt": "2 weeks ago - Before AlphaGo, some researchers ... never defeat top humans at Go."
     },
     {
       "url": "https://deepmind.google/research/alphago/",
@@ -32,7 +24,7 @@
       "excerpt": "AlphaGo then competed against legendary Go player Lee Sedol — winner of 18 world titles,"
     },
     {
-      "url": "https://blog.google/technology/ai/alphagos-ultimate-challenge/",
+      "url": "https://blog.google/innovation-and-ai/products/alphagos-ultimate-challenge/",
       "title": "AlphaGo’s ultimate challenge: a five-game match against the legendary Lee Sedol",
       "domain": "blog.google",
       "relevance": "medium",
@@ -40,12 +32,12 @@
       "excerpt": "January 7, 2026 - This concludes the 5 game match between AlphaGo and Lee Sedol,"
     },
     {
-      "url": "https://www.theverge.com/2019/11/27/20985260/ai-go-alphago-lee-se-dol-retired-deepmind-defeat",
-      "title": "Former Go champion beaten by DeepMind retires after declaring AI invincible | The Verge",
-      "domain": "theverge.com",
+      "url": "https://aitimeline.world/timeline/alphago-2016",
+      "title": "AlphaGo Defeats Lee Sedol (2016) | AI Timeline",
+      "domain": "aitimeline.world",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "November 27, 2019 - This reputation took a knock in 2016 when the Google-owned artificial"
+      "excerpt": "June 20, 2026 - DeepMind's AlphaGo defeated Lee Sedol, one of the greatest Go players"
     },
     {
       "url": "https://www.theguardian.com/technology/2016/mar/15/googles-alphago-seals-4-1-victory-over-grandmaster-lee-sedol",
@@ -54,9 +46,17 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "November 29, 2017 - Google DeepMind’s AlphaGo program triumphed in its final game against South"
+    },
+    {
+      "url": "https://www.nytimes.com/2016/03/16/world/asia/korea-alphago-vs-lee-sedol-go.html",
+      "title": "Google’s Computer Program Beats Lee Se-dol in Go Tournament - The New York Times",
+      "domain": "nytimes.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 15, 2016 - The program AlphaGo’s 4-1 victory was a historic stride for computer"
     }
   ],
-  "reasoning": "In March 2016, Google DeepMind's AlphaGo defeated 18-time world champion Go player Lee Sedol 4 games to 1 in Seoul, South Korea. Prior to the match, artificial intelligence researchers and Go experts widely believed that a computer program defeating a top-ranked human Go professional was at least a decade away, making AlphaGo's victory a landmark milestone accomplished significantly ahead of expectations.",
+  "reasoning": "In March 2016, Google DeepMind's artificial intelligence program AlphaGo defeated South Korean grandmaster Lee Sedol—one of the world's most accomplished and top-ranked Go players—by a score of 4 games to 1 in a five-game match in Seoul. Prior to the match, AI experts and researchers widely estimated that reaching human mastery in Go was at least a decade away, making AlphaGo's victory a milestone achieved roughly ten years ahead of expectations.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -123,6 +123,12 @@
       "confidence": 95,
       "checked_at": "2026-08-09T06:50:24Z",
       "run_id": "run-2026-08-09T064647Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-08-18T06:09:03Z",
+      "run_id": "run-2026-08-18T060828Z"
     }
   ],
   "agent_flags": {

@@ -3,9 +3,9 @@
   "claim_id": "claim-005",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-08-18T06:10:27Z",
+  "last_checked_at": "2026-08-26T06:12:24Z",
   "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-08-18T060828Z",
+  "run_id": "run-2026-08-26T061021Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Continuing_resolution",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "4 weeks ago - Between fiscal year 1977 and fiscal year 2015, Congress only passed"
+      "excerpt": "July 24, 2026 - Between fiscal year 1977 and fiscal year 2015, Congress only passed"
     },
     {
       "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
@@ -37,7 +37,7 @@
       "domain": "fiscalnote.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "April 8, 2026 - Since the Congressional Budget Act of 1974 went into effect in"
+      "excerpt": "March 31, 2026 - Since the Congressional Budget Act of 1974 went into effect in"
     },
     {
       "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
@@ -56,7 +56,7 @@
       "excerpt": "December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article"
     }
   ],
-  "reasoning": "According to historical data on Congressional appropriations (reported by Pew Research Center, the Congressional Research Service, and other legislative trackers), the U.S. Congress has not enacted all required regular appropriations bills on time—prior to the start of the fiscal year on October 1—since Fiscal Year 1997. Since the enactment of the Congressional Budget Act of 1974, Congress has passed all required appropriations measures before the deadline in only four fiscal years: 1977, 1989, 1995, and 1997.",
+  "reasoning": "Under the modern budget process established by the Congressional Budget Act of 1974, Congress is required to pass all regular appropriations bills before the new fiscal year begins on October 1. Since the law took effect in fiscal year 1977, Congress has passed all of its regular appropriations measures on time in only four fiscal years: 1977, 1989, 1995, and 1997. In every year since fiscal year 1997, Congress has failed to enact all required regular appropriations bills prior to the October 1 deadline, instead relying on continuing resolutions or late omnibus spending packages.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -129,6 +129,12 @@
       "confidence": 90,
       "checked_at": "2026-08-09T06:51:37Z",
       "run_id": "run-2026-08-09T064647Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-08-18T06:10:27Z",
+      "run_id": "run-2026-08-18T060828Z"
     }
   ],
   "agent_flags": {

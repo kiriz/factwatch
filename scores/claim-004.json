@@ -3,36 +3,60 @@
   "claim_id": "claim-004",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-08-18T06:10:09Z",
+  "last_checked_at": "2026-08-26T06:12:00Z",
   "last_changed_at": "2026-06-09T23:46:29Z",
-  "run_id": "run-2026-08-18T060828Z",
+  "run_id": "run-2026-08-26T061021Z",
   "sources": [
     {
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/",
-      "title": "GPT-4 passes the bar exam - PMC - NIH",
-      "domain": "pmc.ncbi.nlm.nih.gov",
-      "relevance": "high",
+      "url": "https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/",
+      "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence Tools in the Legal Profession - Legal Aggregate - Stanford Law School",
+      "domain": "law.stanford.edu",
+      "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "outperforms the average human test-taker by more than 7%."
+      "excerpt": "April 19, 2023 - CodeX–The Stanford Center for ... Research collaborators had deployed GPT-4, the"
     },
     {
       "url": "https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/",
       "title": "Bar exam score shows AI can keep up with 'human lawyers,' researchers say | Reuters",
       "domain": "reuters.com",
-      "relevance": "high",
+      "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Artificial intelligence can now outperform most law school graduates on the bar exam"
+      "excerpt": "March 15, 2023 - March 15 (Reuters) - Artificial intelligence can now outperform most law"
+    },
+    {
+      "url": "https://matthewstubenberg.com/blog/AI+Race+to+100+Percent+on+the+Bar+Exam",
+      "title": "AI Race to 100 Percent on the Bar Exam - Matthew Stubenberg",
+      "domain": "matthewstubenberg.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "September 23, 2025 - AI is raising the bar. More than two-thirds of the models"
+    },
+    {
+      "url": "https://www.iit.edu/news/gpt-4-passes-bar-exam",
+      "title": "GPT-4 Passes the Bar Exam | Illinois Institute of Technology",
+      "domain": "iit.edu",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 15, 2023 - In a period of roughly four years, the leading large language"
+    },
+    {
+      "url": "https://www.lawweekcolorado.com/article/expert-weighs-in-ai-passes-bar-exam/",
+      "title": "Expert Weighs In: AI Passes Bar Exam - Law Week Colorado",
+      "domain": "lawweekcolorado.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "April 19, 2023 - According to the most recent paper, it scored drastically higher in"
     },
     {
       "url": "https://www.abajournal.com/web/article/latest-version-of-chatgpt-aces-the-bar-exam-with-score-in-90th-percentile",
       "title": "Latest version of ChatGPT aces bar exam with score nearing 90th percentile",
       "domain": "abajournal.com",
-      "relevance": "high",
+      "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "passed the Uniform Bar Examination by “a significant margin,” earning a combined score of 297"
+      "excerpt": "The latest version of the artificial intelligence program ChatGPT has passed the Uniform Bar Examination"
     }
   ],
-  "reasoning": "Peer-reviewed research and extensive empirical evaluations demonstrate that advanced AI language models such as GPT-4 successfully pass the Uniform Bar Examination (UBE). The original study by Bommarito and Katz, along with subsequent tests, showed that the model achieved a score well exceeding the passing threshold in all US jurisdictions and outperformed the average human test-taker.",
+  "reasoning": "Empirical studies and reports (such as those by researchers evaluating GPT-4 on the Uniform Bar Examination) confirm that modern AI language models can pass the US bar exam with above-average scores, regularly exceeding the passing threshold and ranking in the top percentiles of human test-takers.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -105,6 +129,12 @@
       "confidence": 90,
       "checked_at": "2026-08-09T06:51:11Z",
       "run_id": "run-2026-08-09T064647Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-08-18T06:10:09Z",
+      "run_id": "run-2026-08-18T060828Z"
     }
   ],
   "agent_flags": {

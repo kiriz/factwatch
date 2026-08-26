@@ -1,0 +1,361 @@
+{
+  "run_id": "run-2026-08-26T061021Z",
+  "started_at": "2026-08-26T06:10:21Z",
+  "finished_at": "2026-08-26T06:13:57Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-015",
+      "claim_title": "AlphaGo defeated the world Go champion in 2016",
+      "claim_text": "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "In March 2016, Google DeepMind's artificial intelligence program AlphaGo defeated South Korean grandmaster Lee Sedol—one of the world's most accomplished and top-ranked Go players—by a score of 4 games to 1 in a five-game match in Seoul",
+        "Prior to the match, AI experts and researchers widely estimated that reaching human mastery in Go was at least a decade away, making AlphaGo's victory a milestone achieved roughly ten years ahead of expectations."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\\\"\",\n  \"verification_notes\": \"Verify the match result and date (March 2016). Check pre-match expert predictions. Verify Lee Sedol's world ranking at the time. Look at how AlphaGo's approach (Monte Carlo tree search + deep learning) differed from prior game AI. Note: AlphaZero later surpassed AlphaGo.\",\n  \"search_results\": \"[1] AlphaGo versus Lee Sedol - Wikipedia\\nURL: https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol\\nExcerpt: 2 weeks ago - Before AlphaGo, some researchers ... never defeat top humans at Go. Elon Musk, an early investor of DeepMind, said in 2016 that experts in the field thought AI was 10 years away from achieving a victory against a top professional Go player. The match AlphaGo versus Lee Sedol is compara\\n\\n[2] AlphaGo — Google DeepMind\\nURL: https://deepmind.google/research/alphago/\\nExcerpt: AlphaGo then competed against legendary Go player Lee Sedol — winner of 18 world titles, and widely considered the greatest player of that decade. AlphaGo's 4-1 victory in Seoul, South Korea, in March 2016 was watched by over 200 million people ...\\n\\n[3] AlphaGo’s ultimate challenge: a five-game match against the legendary Lee Sedol\\nURL: https://blog.google/innovation-and-ai/products/alphagos-ultimate-challenge/\\nExcerpt: January 7, 2026 - This concludes the 5 game match between AlphaGo and Lee Sedol, with AlphaGo winning the match 4 games to 1 against the best Go player of the last decade, achieving a major milestone for artificial intelligence a decade earlier than many predicted.\\n\\n[4] AlphaGo Defeats Lee Sedol (2016) | AI Timeline\\nURL: https://aitimeline.world/timeline/alphago-2016\\nExcerpt: June 20, 2026 - DeepMind's AlphaGo defeated Lee Sedol, one of the greatest Go players ever, 4-1 in a five-game match in Seoul. Go has more possible positions than atoms in the universe — brute force was impossible.\\n\\n[5] AlphaGo seals 4-1 victory over Go grandmaster Lee Sedol | AI (artificial intelligence) | The Guardian\\nURL: https://www.theguardian.com/technology/2016/mar/15/googles-alphago-seals-4-1-victory-over-grandmaster-lee-sedol\\nExcerpt: November 29, 2017 - Google DeepMind’s AlphaGo program triumphed in its final game against South Korean Go grandmaster Lee Sedol to win the series 4-1, providing further evidence of the landmark achievement for an artificial intelligence program.\\n\\n[6] Google’s Computer Program Beats Lee Se-dol in Go Tournament - The New York Times\\nURL: https://www.nytimes.com/2016/03/16/world/asia/korea-alphago-vs-lee-sedol-go.html\\nExcerpt: March 15, 2016 - The program AlphaGo’s 4-1 victory was a historic stride for computer programmers and artificial intelligence researchers trying to create software that can outwit humans in board games.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 98,\n  \"reasoning\": \"In March 2016, Google DeepMind's artificial intelligence program AlphaGo defeated South Korean grandmaster Lee Sedol—one of the world's most accomplished and top-ranked Go players—by a score of 4 games to 1 in a five-game match in Seoul. Prior to the match, AI experts and researchers widely estimated that reaching human mastery in Go was at least a decade away, making AlphaGo's victory a milestone achieved roughly ten years ahead of expectations.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+        "AlphaGo defeated the world Go champion in 2016",
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+          "title": "AlphaGo versus Lee Sedol - Wikipedia",
+          "snippet": "2 weeks ago - Before AlphaGo, some researchers ... never defeat top humans at Go. Elon Musk, an early investor of DeepMind, said in 2016 that experts in the field thought AI was 10 years away from achieving a victory against a top professional Go player. The match AlphaGo versus Lee Sedol is comparable ..."
+        },
+        {
+          "url": "https://deepmind.google/research/alphago/",
+          "title": "AlphaGo — Google DeepMind",
+          "snippet": "AlphaGo then competed against legendary Go player Lee Sedol — winner of 18 world titles, and widely considered the greatest player of that decade. AlphaGo's 4-1 victory in Seoul, South Korea, in March 2016 was watched by over 200 million people ..."
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/products/alphagos-ultimate-challenge/",
+          "title": "AlphaGo’s ultimate challenge: a five-game match against the legendary Lee Sedol",
+          "snippet": "January 7, 2026 - This concludes the 5 game match between AlphaGo and Lee Sedol, with AlphaGo winning the match 4 games to 1 against the best Go player of the last decade, achieving a major milestone for artificial intelligence a decade earlier than many predicted."
+        },
+        {
+          "url": "https://aitimeline.world/timeline/alphago-2016",
+          "title": "AlphaGo Defeats Lee Sedol (2016) | AI Timeline",
+          "snippet": "June 20, 2026 - DeepMind's AlphaGo defeated Lee Sedol, one of the greatest Go players ever, 4-1 in a five-game match in Seoul. Go has more possible positions than atoms in the universe — brute force was impossible."
+        },
+        {
+          "url": "https://www.theguardian.com/technology/2016/mar/15/googles-alphago-seals-4-1-victory-over-grandmaster-lee-sedol",
+          "title": "AlphaGo seals 4-1 victory over Go grandmaster Lee Sedol | AI (artificial intelligence) | The Guardian",
+          "snippet": "November 29, 2017 - Google DeepMind’s AlphaGo program triumphed in its final game against South Korean Go grandmaster Lee Sedol to win the series 4-1, providing further evidence of the landmark achievement for an artificial intelligence program."
+        },
+        {
+          "url": "https://www.nytimes.com/2016/03/16/world/asia/korea-alphago-vs-lee-sedol-go.html",
+          "title": "Google’s Computer Program Beats Lee Se-dol in Go Tournament - The New York Times",
+          "snippet": "March 15, 2016 - The program AlphaGo’s 4-1 victory was a historic stride for computer programmers and artificial intelligence researchers trying to create software that can outwit humans in board games."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-004",
+      "claim_title": "AI systems now pass the bar exam",
+      "claim_text": "\"AI language models can now pass the US bar examination at above-average scores.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Empirical studies and reports (such as those by researchers evaluating GPT-4 on the Uniform Bar Examination) confirm that modern AI language models can pass the US bar exam with above-average scores, regularly exceeding the passing threshold and ranking in the top percentiles of human test-takers."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"AI language models can now pass the US bar examination at above-average scores.\\\"\",\n  \"verification_notes\": \"Verify the original GPT-4 bar exam study (Bommarito & Katz, 2023). Check if results have been replicated or updated with newer models. Note: passing score and top-10% are different claims — verify which is accurate.\",\n  \"search_results\": \"[1] GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence Tools in the Legal Profession - Legal Aggregate - Stanford Law School\\nURL: https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/\\nExcerpt: April 19, 2023 - CodeX–The Stanford Center for ... Research collaborators had deployed GPT-4, the latest generation Large Language Model (LLM), to take—and pass—the Uniform Bar Exam (UBE)....\\n\\n[2] Bar exam score shows AI can keep up with 'human lawyers,' researchers say | Reuters\\nURL: https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/\\nExcerpt: March 15, 2023 - March 15 (Reuters) - Artificial intelligence can now outperform most law school graduates on the bar exam, the grueling two-day test aspiring attorneys must pass to practice law in the United States, according to a new study, opens new tab released ...\\n\\n[3] AI Race to 100 Percent on the Bar Exam - Matthew Stubenberg\\nURL: https://matthewstubenberg.com/blog/AI+Race+to+100+Percent+on+the+Bar+Exam\\nExcerpt: September 23, 2025 - AI is raising the bar. More than two-thirds of the models scored higher than the average human test-taker. In fact, OpenAI’s newest model, Chat GPT 5, got a jaw-dropping 97.6% right.\\n\\n[4] GPT-4 Passes the Bar Exam | Illinois Institute of Technology\\nURL: https://www.iit.edu/news/gpt-4-passes-bar-exam\\nExcerpt: March 15, 2023 - In a period of roughly four years, the leading large language model family (GPT) has progressed from zero percent on the Multistate Bar Exam for GPT-2 to nearly 76 percent on the Multistate Bar Exam in GPT-4. (The Multistate Bar Exam is the multiple-choice section of the Uniform Bar\\n\\n[5] Expert Weighs In: AI Passes Bar Exam - Law Week Colorado\\nURL: https://www.lawweekcolorado.com/article/expert-weighs-in-ai-passes-bar-exam/\\nExcerpt: April 19, 2023 - According to the most recent paper, it scored drastically higher in some of the multiple choice sections, including contracts and evidence, when compared with students.\\n\\n[6] Latest version of ChatGPT aces bar exam with score nearing 90th percentile\\nURL: https://www.abajournal.com/web/article/latest-version-of-chatgpt-aces-the-bar-exam-with-score-in-90th-percentile\\nExcerpt: The latest version of the artificial intelligence program ChatGPT has passed the Uniform Bar Examination by “a significant margin,” earning a combined score of 297 that surpasses even the high threshold of 273 set by Arizona.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"Empirical studies and reports (such as those by researchers evaluating GPT-4 on the Uniform Bar Examination) confirm that modern AI language models can pass the US bar exam with above-average scores, regularly exceeding the passing threshold and ranking in the top percentiles of human test-takers.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"AI language models can now pass the US bar examination at above-average scores.\"",
+        "AI systems now pass the bar exam",
+        "\"AI language models can now pass the US bar examination at above-average scores.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/",
+          "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence Tools in the Legal Profession - Legal Aggregate - Stanford Law School",
+          "snippet": "April 19, 2023 - CodeX–The Stanford Center for ... Research collaborators had deployed GPT-4, the latest generation Large Language Model (LLM), to take—and pass—the Uniform Bar Exam (UBE)...."
+        },
+        {
+          "url": "https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/",
+          "title": "Bar exam score shows AI can keep up with 'human lawyers,' researchers say | Reuters",
+          "snippet": "March 15, 2023 - March 15 (Reuters) - Artificial intelligence can now outperform most law school graduates on the bar exam, the grueling two-day test aspiring attorneys must pass to practice law in the United States, according to a new study, opens new tab released ..."
+        },
+        {
+          "url": "https://matthewstubenberg.com/blog/AI+Race+to+100+Percent+on+the+Bar+Exam",
+          "title": "AI Race to 100 Percent on the Bar Exam - Matthew Stubenberg",
+          "snippet": "September 23, 2025 - AI is raising the bar. More than two-thirds of the models scored higher than the average human test-taker. In fact, OpenAI’s newest model, Chat GPT 5, got a jaw-dropping 97.6% right."
+        },
+        {
+          "url": "https://www.iit.edu/news/gpt-4-passes-bar-exam",
+          "title": "GPT-4 Passes the Bar Exam | Illinois Institute of Technology",
+          "snippet": "March 15, 2023 - In a period of roughly four years, the leading large language model family (GPT) has progressed from zero percent on the Multistate Bar Exam for GPT-2 to nearly 76 percent on the Multistate Bar Exam in GPT-4. (The Multistate Bar Exam is the multiple-choice section of the Uniform Bar Exam.) Overall, the authors report a 297 Uniform Bar Exam score for GPT-4, which reflects passing the bar by a fairly comfortable margin."
+        },
+        {
+          "url": "https://www.lawweekcolorado.com/article/expert-weighs-in-ai-passes-bar-exam/",
+          "title": "Expert Weighs In: AI Passes Bar Exam - Law Week Colorado",
+          "snippet": "April 19, 2023 - According to the most recent paper, it scored drastically higher in some of the multiple choice sections, including contracts and evidence, when compared with students."
+        },
+        {
+          "url": "https://www.abajournal.com/web/article/latest-version-of-chatgpt-aces-the-bar-exam-with-score-in-90th-percentile",
+          "title": "Latest version of ChatGPT aces bar exam with score nearing 90th percentile",
+          "snippet": "The latest version of the artificial intelligence program ChatGPT has passed the Uniform Bar Examination by “a significant margin,” earning a combined score of 297 that surpasses even the high threshold of 273 set by Arizona."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Under the modern budget process established by the Congressional Budget Act of 1974, Congress is required to pass all regular appropriations bills before the new fiscal year begins on October 1",
+        "Since the law took effect in fiscal year 1977, Congress has passed all of its regular appropriations measures on time in only four fiscal years: 1977, 1989, 1995, and 1997",
+        "In every year since fiscal year 1997, Congress has failed to enact all required regular appropriations bills prior to the October 1 deadline, instead relying on continuing resolutions or late omnibus spending packages."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The US Congress has not passed a complete federal budget on time since 1997.\\\"\",\n  \"verification_notes\": \"Check Congressional Research Service records. Fiscal year starts October 1. Verify if any year between 1998 and present had all 12 appropriations bills enacted before the deadline. Note distinction between omnibus packages and individual bills.\",\n  \"search_results\": \"[1] Continuing resolution - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Continuing_resolution\\nExcerpt: July 24, 2026 - Between fiscal year 1977 and fiscal year 2015, Congress only passed all twelve regular appropriations bills on time in four years - fiscal years 1977, 1989, 1995, and 1997. Between 1980 and 2013, there were eight government shutdowns in the United States. Most of these shutdowns revo\\n\\n[2] Congress has long struggled to pass spending bills on time | Pew Research Center\\nURL: https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/\\nExcerpt: October 1, 2025 - In the nearly five decades that ... place, Congress has passed all its required appropriations measures on time only four times: fiscal 1977 (the first full fiscal year under the current system), 1989, 1995 and 1997....\\n\\n[3] FEDERAL BUDGET PROCESS STRUCTURAL REFORM | Congress.gov | Library of Congress\\nURL: https://www.congress.gov/event/107th-congress/house-event/LC16636/text\\nExcerpt: Although biennial budgeting has been required for the Defense Department, and the President has proposed biennial budgets, Congress has continued to pass only one-year appropriations. We do not believe that continuing this approach makes sense, and that is why the administration has proposed the rep\\n\\n[4] The Federal Budget Timeline & Process\\nURL: https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline\\nExcerpt: March 31, 2026 - Since the Congressional Budget Act of 1974 went into effect in fiscal year 1977, Congress has only passed all its appropriations measures on time four times (1977, 1989, 1995, 1997).\\n\\n[5] How does the government budget process work? | USAFacts\\nURL: https://usafacts.org/articles/how-does-the-government-budget-process-work/\\nExcerpt: September 18, 2025 - Here’s the catch — for all of the 21st century, Congress has not met the appropriations deadlines and most federal funding has happened through continuing resolutions. These bills provide temporary financial coverage for government programs ...\\n\\n[6] Congress hasn’t passed a budget on time since 1997. We should fix that.\\nURL: https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/\\nExcerpt: December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article I, Section 9, which states that “No Money shall be drawn from the Treasury, but in Consequence of Appropriations made by Law.” Critically, the Constitution doesn’t mandate the current authorization and annu\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"Under the modern budget process established by the Congressional Budget Act of 1974, Congress is required to pass all regular appropriations bills before the new fiscal year begins on October 1. Since the law took effect in fiscal year 1977, Congress has passed all of its regular appropriations measures on time in only four fiscal years: 1977, 1989, 1995, and 1997. In every year since fiscal year 1997, Congress has failed to enact all required regular appropriations bills prior to the October 1 deadline, instead relying on continuing resolutions or late omnibus spending packages.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+        "US Congress passed no budget on time since 1997",
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Continuing_resolution",
+          "title": "Continuing resolution - Wikipedia",
+          "snippet": "July 24, 2026 - Between fiscal year 1977 and fiscal year 2015, Congress only passed all twelve regular appropriations bills on time in four years - fiscal years 1977, 1989, 1995, and 1997. Between 1980 and 2013, there were eight government shutdowns in the United States. Most of these shutdowns revolved around budget ..."
+        },
+        {
+          "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
+          "title": "Congress has long struggled to pass spending bills on time | Pew Research Center",
+          "snippet": "October 1, 2025 - In the nearly five decades that ... place, Congress has passed all its required appropriations measures on time only four times: fiscal 1977 (the first full fiscal year under the current system), 1989, 1995 and 1997...."
+        },
+        {
+          "url": "https://www.congress.gov/event/107th-congress/house-event/LC16636/text",
+          "title": "FEDERAL BUDGET PROCESS STRUCTURAL REFORM | Congress.gov | Library of Congress",
+          "snippet": "Although biennial budgeting has been required for the Defense Department, and the President has proposed biennial budgets, Congress has continued to pass only one-year appropriations. We do not believe that continuing this approach makes sense, and that is why the administration has proposed the repeal of this agency-specific biennial budgeting requirement for the Defense Department. Another approach for a phase-in is the non-binding, ``notional'' second-year budget I discussed in my testimony. This would involve a ``notional'' budget for the second year of the first two-year cycle, even though funds for that cycle would continue to be provided on an annual basis. During the budget process for that second year, OMB, the agencies, and Congress could compare the notional budget to what is actually happening in the ``real'' process for that year. A third option would be to begin full-fledged biennial budgeting in the third year, without using selected agencies or another type of formal ph"
+        },
+        {
+          "url": "https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline",
+          "title": "The Federal Budget Timeline & Process",
+          "snippet": "March 31, 2026 - Since the Congressional Budget Act of 1974 went into effect in fiscal year 1977, Congress has only passed all its appropriations measures on time four times (1977, 1989, 1995, 1997)."
+        },
+        {
+          "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
+          "title": "How does the government budget process work? | USAFacts",
+          "snippet": "September 18, 2025 - Here’s the catch — for all of the 21st century, Congress has not met the appropriations deadlines and most federal funding has happened through continuing resolutions. These bills provide temporary financial coverage for government programs ..."
+        },
+        {
+          "url": "https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/",
+          "title": "Congress hasn’t passed a budget on time since 1997. We should fix that.",
+          "snippet": "December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article I, Section 9, which states that “No Money shall be drawn from the Treasury, but in Consequence of Appropriations made by Law.” Critically, the Constitution doesn’t mandate the current authorization and annual appropriations process currently used. It simply requires that spending be authorized by law. The “textbook” legislative process requires Congress to pass approximately 12 appropriations bills by Oct. 1 for the following fiscal year — something Congress hasn’t done since 1996. Instead, the country lurches from continuing resolution to continuing resolution, with shutdowns or their threat becoming routine weapons in partisan warfare. Federal agencies can’t plan, contractors face uncertainty, and essential services hang in the balance while politicians posture."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_title": "Octopuses have three hearts and blue blood",
+      "claim_text": "\"Octopuses have three hearts and their blood is blue.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim is biologically accurate",
+        "Octopuses have three hearts: two branchial hearts that pump blood through the gills to pick up oxygen, and one systemic heart that circulates oxygenated blood through the rest of the body",
+        "Additionally, their blood is blue because it relies on the copper-rich protein hemocyanin rather than iron-rich hemoglobin to transport oxygen throughout the body."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Octopuses have three hearts and their blood is blue.\\\"\",\n  \"verification_notes\": \"Check marine biology sources. Verify the function of each heart (two branchial hearts, one systemic). Confirm the copper-based hemocyanin mechanism that makes blood blue. Check whether the blood turns colorless when deoxygenated.\",\n  \"search_results\": \"[1] 10 weird and funny animal facts that sound fake... - The Times of India\\nURL: https://timesofindia.indiatimes.com/etimes/trending/10-weird-and-funny-animal-facts-that-sound-fake-but-are-completely-real/articleshow/125381246.cms\\nExcerpt: Octopuses have three hearts and their blood is blue.Two pump blood through their gills, while the third sends oxygenated blood through the rest of the body. Their blood is blue because it uses copper, not iron, to transport oxygen.\\n\\n[2] Octopus Blood Real Life | TikTok\\nURL: https://www.tiktok.com/discover/octopus-blood-real-life\\nExcerpt: Octopuses have three hearts and blue blood, and one of those hearts actually stops when they swim. Most of their neurons are located in their arms, allowing each arm to sense and react almost independently.\\n\\n[3] Ten things I learned in 2025: 1. Octopuses have three hearts, and...\\nURL: https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh\\nExcerpt: Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is blue because it uses copper (hemocyanin) rather than iron to transport oxygen 2. In 1518, a “dancing plague” broke out in Strasbourg: hundreds of people began dancing continuously for days, some until death...\\n\\n[4] Octopuses: 20 Amazing Facts\\nURL: https://www.divessi.com/en/blog/octopuses-20-amazing-facts-8560.html\\nExcerpt: 5. Octopuses have three hearts and their blood is blue due to being copper-based. 6. Octopuses are considered to be the most intelligent of all invertebrates. They have been known to use tools, open jars, complete mazes, and even recognise individual human faces.\\n\\n[5] spontex.org :: Octopuses have three hearts and their blood is blue.\\nURL: https://en.spontex.org/le_saviez_vous/457/blue-red-blood-three-hearts-octopus-tentacles\\nExcerpt: The main heart pumps blood through the body while the other two pump blood through the gills. Its blood is blue, and not red like in vertebrates, because hemocyanin is used to transport oxygen instead of hemoglobin.\\n\\n[6] Forums | TORN\\nURL: https://www.torn.com/forums.php?p=threads&f=13&t=16441242&b=0&a=0rh=96&&start=100\\nExcerpt: Octopuses have three hearts, and their blood is blue because it contains hemocyanin instead of hemoglobin.Butterflies can taste with their feet. - Their taste sensors are on their legs, allowing them to land on a plant and instantly know if it's good for laying eggs.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 98,\n  \"reasoning\": \"The claim is biologically accurate. Octopuses have three hearts: two branchial hearts that pump blood through the gills to pick up oxygen, and one systemic heart that circulates oxygenated blood through the rest of the body. Additionally, their blood is blue because it relies on the copper-rich protein hemocyanin rather than iron-rich hemoglobin to transport oxygen throughout the body.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Octopuses have three hearts and their blood is blue.\"",
+        "Octopuses have three hearts and blue blood",
+        "\"Octopuses have three hearts and their blood is blue.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://timesofindia.indiatimes.com/etimes/trending/10-weird-and-funny-animal-facts-that-sound-fake-but-are-completely-real/articleshow/125381246.cms",
+          "title": "10 weird and funny animal facts that sound fake... - The Times of India",
+          "snippet": "Octopuses have three hearts and their blood is blue.Two pump blood through their gills, while the third sends oxygenated blood through the rest of the body. Their blood is blue because it uses copper, not iron, to transport oxygen."
+        },
+        {
+          "url": "https://www.tiktok.com/discover/octopus-blood-real-life",
+          "title": "Octopus Blood Real Life | TikTok",
+          "snippet": "Octopuses have three hearts and blue blood, and one of those hearts actually stops when they swim. Most of their neurons are located in their arms, allowing each arm to sense and react almost independently."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh",
+          "title": "Ten things I learned in 2025: 1. Octopuses have three hearts, and...",
+          "snippet": "Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is blue because it uses copper (hemocyanin) rather than iron to transport oxygen 2. In 1518, a “dancing plague” broke out in Strasbourg: hundreds of people began dancing continuously for days, some until death..."
+        },
+        {
+          "url": "https://www.divessi.com/en/blog/octopuses-20-amazing-facts-8560.html",
+          "title": "Octopuses: 20 Amazing Facts",
+          "snippet": "5. Octopuses have three hearts and their blood is blue due to being copper-based. 6. Octopuses are considered to be the most intelligent of all invertebrates. They have been known to use tools, open jars, complete mazes, and even recognise individual human faces."
+        },
+        {
+          "url": "https://en.spontex.org/le_saviez_vous/457/blue-red-blood-three-hearts-octopus-tentacles",
+          "title": "spontex.org :: Octopuses have three hearts and their blood is blue.",
+          "snippet": "The main heart pumps blood through the body while the other two pump blood through the gills. Its blood is blue, and not red like in vertebrates, because hemocyanin is used to transport oxygen instead of hemoglobin."
+        },
+        {
+          "url": "https://www.torn.com/forums.php?p=threads&f=13&t=16441242&b=0&a=0rh=96&&start=100",
+          "title": "Forums | TORN",
+          "snippet": "Octopuses have three hearts, and their blood is blue because it contains hemocyanin instead of hemoglobin.Butterflies can taste with their feet. - Their taste sensors are on their legs, allowing them to land on a plant and instantly know if it's good for laying eggs."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that \"lightning never strikes the same place twice\" is a common myth that is scientifically false",
+        "According to the National Weather Service (NWS), lightning frequently strikes the exact same location multiple times, particularly tall, pointed, or isolated structures that offer a path of least resistance for electrical discharge",
+        "For example, tall structures like the Empire State Building are struck by lightning dozens of times each year."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Lightning never strikes the same place twice.\\\"\",\n  \"verification_notes\": \"Check National Weather Service and NOAA data on lightning strike patterns. Verify how many times the Empire State Building is struck per year. Explain the physics of why tall conductors are repeatedly targeted.\",\n  \"search_results\": \"[1] Lightning Myths and Facts\\nURL: https://www.weather.gov/safety/lightning-myths\\nExcerpt: Myth: Lightning never strikes the same place twice. Fact: Lightning often strikes the same place repeatedly, especially if it's a tall, pointy, isolated object.\\n\\n[2] r/shittyaskscience on Reddit: If lightning never strikes in the same place twice, what happens when lightning strikes everywhere? Are there no more storms?\\nURL: https://www.reddit.com/r/shittyaskscience/comments/3ewilq/if_lightning_never_strikes_in_the_same_place/\\nExcerpt: July 28, 2015 - This eventually resulted in the discovery of \\\"dark matter,\\\" which is comprised of those previously struck places in spacetime. In short, lightning can appear to strike twice in the same place, but only from a geocentric perspective.\\n\\n[3] MythBuster: Lightning Never Strikes the Same Place Twice — STEAM Ahead\\nURL: https://www.westeamahead.org/blog/2025/2/5/mythbuster-lightning-never-strikes-the-same-place-twice\\nExcerpt: February 5, 2025 - Lightning often strikes the same spot multiple times. It’s not a one-and-done phenomenon. In fact, some places get struck several times a year. Tall buildings? Prime targets. The Empire State Building alone gets hit by lightning about 25 times ...\\n\\n[4] Lightning never strikes the same place twice: myth or reality?\\nURL: https://lpsfr.com/en/blog-lightning-never-strikes-twice/\\nExcerpt: June 15, 2026 - No, lightning doesn't choose its targets only once. It strikes where physics dictates, again and again.\\n\\n[5] Does lightning ever strike the same place twice? | Fox Weather\\nURL: https://www.foxweather.com/learn/lightning-strike-same-place-twice-weather-sayings-lore\\nExcerpt: So the next time you hear this popular phrase, remind yourself that it’s just a myth—lightning can and will strike twice in the same place. Published: January 25, 2023\\n\\n[6] 'Lightning Never Strikes the Same Place Twice'... Or Does It?\\nURL: https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html\\nExcerpt: July 11, 2020 - We use this expression when a very unusual event is not likely to happen again to the same person or in the same place. It can be used when something good happens, such as winning a game of chance like the lottery.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"reasoning\": \"The claim that \\\"lightning never strikes the same place twice\\\" is a common myth that is scientifically false. According to the National Weather Service (NWS), lightning frequently strikes the exact same location multiple times, particularly tall, pointed, or isolated structures that offer a path of least resistance for electrical discharge. For example, tall structures like the Empire State Building are struck by lightning dozens of times each year.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Lightning never strikes the same place twice.\"",
+        "Lightning never strikes the same place twice",
+        "\"Lightning never strikes the same place twice.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.weather.gov/safety/lightning-myths",
+          "title": "Lightning Myths and Facts",
+          "snippet": "Myth: Lightning never strikes the same place twice. Fact: Lightning often strikes the same place repeatedly, especially if it's a tall, pointy, isolated object."
+        },
+        {
+          "url": "https://www.reddit.com/r/shittyaskscience/comments/3ewilq/if_lightning_never_strikes_in_the_same_place/",
+          "title": "r/shittyaskscience on Reddit: If lightning never strikes in the same place twice, what happens when lightning strikes everywhere? Are there no more storms?",
+          "snippet": "July 28, 2015 - This eventually resulted in the discovery of \"dark matter,\" which is comprised of those previously struck places in spacetime. In short, lightning can appear to strike twice in the same place, but only from a geocentric perspective."
+        },
+        {
+          "url": "https://www.westeamahead.org/blog/2025/2/5/mythbuster-lightning-never-strikes-the-same-place-twice",
+          "title": "MythBuster: Lightning Never Strikes the Same Place Twice — STEAM Ahead",
+          "snippet": "February 5, 2025 - Lightning often strikes the same spot multiple times. It’s not a one-and-done phenomenon. In fact, some places get struck several times a year. Tall buildings? Prime targets. The Empire State Building alone gets hit by lightning about 25 times ..."
+        },
+        {
+          "url": "https://lpsfr.com/en/blog-lightning-never-strikes-twice/",
+          "title": "Lightning never strikes the same place twice: myth or reality?",
+          "snippet": "June 15, 2026 - No, lightning doesn't choose its targets only once. It strikes where physics dictates, again and again."
+        },
+        {
+          "url": "https://www.foxweather.com/learn/lightning-strike-same-place-twice-weather-sayings-lore",
+          "title": "Does lightning ever strike the same place twice? | Fox Weather",
+          "snippet": "So the next time you hear this popular phrase, remind yourself that it’s just a myth—lightning can and will strike twice in the same place. Published: January 25, 2023"
+        },
+        {
+          "url": "https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html",
+          "title": "'Lightning Never Strikes the Same Place Twice'... Or Does It?",
+          "snippet": "July 11, 2020 - We use this expression when a very unusual event is not likely to happen again to the same person or in the same place. It can be used when something good happens, such as winning a game of chance like the lottery."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}
