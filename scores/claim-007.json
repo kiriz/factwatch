@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-007",
   "verdict": "FALSE",
-  "confidence": 95,
-  "last_checked_at": "2026-08-24T06:15:35Z",
+  "confidence": 98,
+  "last_checked_at": "2026-08-31T06:21:23Z",
   "last_changed_at": "2026-06-04T01:03:50Z",
-  "run_id": "run-2026-08-24T061324Z",
+  "run_id": "run-2026-08-31T061730Z",
   "sources": [
     {
       "url": "https://sikho.ai/blog/great-wall-china-visible-from-space-myth",
@@ -16,47 +16,47 @@
       "excerpt": "March 10, 2026 - However, the Great Wall of China can be photographed or observed"
     },
     {
-      "url": "https://www.skyatnightmagazine.com/space-science/can-you-see-great-wall-china-from-space",
-      "title": "Can you see the Great Wall of China from space? - BBC Sky at ...",
-      "domain": "skyatnightmagazine.com",
+      "url": "https://triviacafe.com/myths/myth/the-great-wall-of-china-is-the-only-man-made-structure-visible-from-space-with-the-naked-eye-1",
+      "title": "The Great Wall of China is the only man-made structure visible from ...",
+      "domain": "triviacafe.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 27, 2024 · When it comes to spaceflight and astronomy, many myths abound, one"
+      "excerpt": "Learn More The Great Wall of China is the only man-made structure visible from space"
     },
     {
-      "url": "https://englishpluspodcast.com/beyond-myths-can-you-really-see-the-great-wall-of-china-from-space/",
-      "title": "Beyond Myths: Can You Really See the Great Wall of China from ...",
-      "domain": "englishpluspodcast.com",
+      "url": "https://triviacafe.com/myths/myth/the-great-wall-of-china-is-the-only-man-made-structure-visible-from-space-with-the-naked-eye",
+      "title": "The Great Wall of China is the only man-made structure visible from ...",
+      "domain": "triviacafe.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 22, 2024 · Is the Great Wall of China the only human-made structure visible"
+      "excerpt": "Learn More The Great Wall of China is the only man-made structure visible from space"
     },
     {
-      "url": "https://www.spacecentre.nz/resources/faq/solar-system/earth/great-wall-china.html",
-      "title": "Is the Great Wall of China visible from space? - Space Centre",
-      "domain": "spacecentre.nz",
+      "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
+      "title": "Fact-check: The Great Wall of China is the only man-made...",
+      "domain": "consensise.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "It is often said that the Great Wall of China is the only man-made object"
+      "excerpt": "The total length of the Great Wall, including all its components, is approximately 13,171 miles."
     },
     {
-      "url": "https://www.timesnownews.com/travel/news/fact-check-is-the-great-wall-of-china-visible-from-space-article-112466738",
-      "title": "Fact Check: Is The Great Wall Of China Visible From Space?Is the Great Wall of China really visible from space?Can You See the Great Wall of China from Space? 2026Is it true that the Great Wall of China is the only man-made ...",
-      "domain": "timesnownews.com",
+      "url": "https://spellingbee.ninja/science/space-myths-lesson-and-quiz/",
+      "title": "Space Myths: Interactive Lesson on Astronomy... - Spelling Bee Ninja",
+      "domain": "spellingbee.ninja",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Aug 17, 2024 · “The Great Wall of China is the only man-made structure that"
+      "excerpt": "Myth: The Great Wall of China is the only man-made structure visible from space with"
     },
     {
-      "url": "https://www.sciencefocus.com/planet-earth/is-the-great-wall-of-china-really-visible-from-space",
-      "title": "Is the Great Wall of China really visible from space?",
-      "domain": "sciencefocus.com",
+      "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
+      "title": "Did You Know? The Great Wall Isn't Visible From Space With the...",
+      "domain": "aibrainbites.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Is the Great Wall of China really visible from space? Contrary to popular belief, the"
+      "excerpt": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands"
     }
   ],
-  "reasoning": "The claim that the Great Wall of China is visible from space with the naked eye is a well-documented myth. In reality, the Great Wall is only a few meters wide and constructed from materials that blend into the surrounding terrain, making it virtually impossible to resolve with the unaided human eye from low Earth orbit (and completely impossible from the Moon). Astronauts and space agencies have confirmed that the wall requires optical magnification or specific lighting conditions to be photographed or detected, whereas other human-made structures—such as major highways, large airports, canals, and city lights at night—are far more visible from orbit.",
+  "reasoning": "The claim is a well-documented myth. The Great Wall of China is not visible from space with the unaided (naked) eye because it is only about 5 to 9 meters wide and blends into the surrounding terrain and materials. Furthermore, it is not the \"only\" man-made structure visible from orbit; other human-made features such as major highways, large dams, agricultural fields, airports, and city lights at night are far more easily discerned from low Earth orbit without magnification.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -129,6 +129,12 @@
       "confidence": 98,
       "checked_at": "2026-08-17T06:12:48Z",
       "run_id": "run-2026-08-17T061041Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-08-24T06:15:35Z",
+      "run_id": "run-2026-08-24T061324Z"
     }
   ],
   "agent_flags": {

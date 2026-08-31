@@ -3,9 +3,9 @@
   "claim_id": "claim-003",
   "verdict": "FALSE",
   "confidence": 98,
-  "last_checked_at": "2026-08-24T06:14:39Z",
+  "last_checked_at": "2026-08-31T06:20:28Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-08-24T061324Z",
+  "run_id": "run-2026-08-31T061730Z",
   "sources": [
     {
       "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
@@ -29,15 +29,7 @@
       "domain": "scientificamerican.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "2 weeks ago - In its retraction notice, the BMJ stated that Mostert’s proposed edits"
-    },
-    {
-      "url": "https://www.mayoclinic.org/diseases-conditions/coronavirus/in-depth/coronavirus-myths/art-20485720",
-      "title": "Debunking COVID-19 myths - Mayo Clinic",
-      "domain": "mayoclinic.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "No. COVID-19 vaccines cannot affect your DNA. Pfizer and Moderna COVID-19 vaccines only give your"
+      "excerpt": "3 weeks ago - In its retraction notice, the BMJ stated that Mostert’s proposed edits"
     },
     {
       "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
@@ -54,9 +46,17 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents"
+    },
+    {
+      "url": "https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/",
+      "title": "Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab",
+      "domain": "dfrlab.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "November 16, 2022 - At least 46 of the false narratives debunked by the fact-checking"
     }
   ],
-  "reasoning": "Major medical organizations and scientific consensus, including the Mayo Clinic, CDC, and WHO, confirm that mRNA COVID-19 vaccines do not alter, interact with, or integrate into human DNA. The mRNA delivers instructions to cellular machinery (ribosomes) in the cytoplasm to produce a harmless viral spike protein and naturally degrades shortly afterward without ever entering the cell's nucleus where DNA is stored. Claims that the vaccines alter human genetics are scientifically baseless.",
+  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is biologically false and widely debunked by major scientific and public health organizations (including the CDC, WHO, and NIH). The mRNA from these vaccines instructs cells in the cytoplasm to produce the spike protein; it never enters the nucleus where genomic DNA is stored, nor can it integrate into the human genome, as human cells do not possess the necessary reverse transcriptase enzymes for such integration. The mRNA breaks down harmlessly shortly after delivery.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -135,6 +135,12 @@
       "confidence": 98,
       "checked_at": "2026-08-17T06:11:56Z",
       "run_id": "run-2026-08-17T061041Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 98,
+      "checked_at": "2026-08-24T06:14:39Z",
+      "run_id": "run-2026-08-24T061324Z"
     }
   ],
   "agent_flags": {

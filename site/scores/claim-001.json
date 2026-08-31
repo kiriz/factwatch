@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-001",
   "verdict": "TRUE",
-  "confidence": 99,
-  "last_checked_at": "2026-08-24T06:13:49Z",
+  "confidence": 95,
+  "last_checked_at": "2026-08-31T06:18:04Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-08-24T061324Z",
+  "run_id": "run-2026-08-31T061730Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
-      "title": "Arctic sea ice decline - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Arctic",
+      "title": "Arctic - Wikipedia",
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "2 weeks ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
+      "excerpt": "Land within the Arctic region has seasonally varying snow and ice cover, with predominantly treeless"
     },
     {
-      "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
-      "title": "Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov",
-      "domain": "climate.gov",
+      "url": "https://en.wikipedia.org/wiki/Arctic_Circle",
+      "title": "Arctic Circle - Wikipedia",
+      "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "October 18, 2022 - The amount of sea ice that survives the Arctic summer has"
+      "excerpt": "The Arctic Circle marks the southernmost latitude for which at the December solstice (winter) the"
     },
     {
-      "url": "https://www.eea.europa.eu/en/analysis/indicators/arctic-and-baltic-sea-ice",
-      "title": "Arctic and Baltic sea ice | Indicators | European Environment Agency (EEA)",
-      "domain": "eea.europa.eu",
+      "url": "https://simple.wikipedia.org/wiki/Arctic",
+      "title": "Arctic - Simple English Wikipedia, the free encyclopedia",
+      "domain": "simple.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has"
+      "excerpt": "The land of the Arctic (located around the edges of the Arctic Circle) is mostly"
     },
     {
-      "url": "https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979",
-      "title": "Satellites record second lowest Arctic sea ice extent since 1979",
-      "domain": "unep.org",
+      "url": "https://www.britannica.com/place/Arctic",
+      "title": "Arctic | Definition, Climate, People, & Facts | Britannica",
+      "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "October 14, 2019 - With 4.1 million square kilometres, the 2019 minimum arctic sea ice"
+      "excerpt": "5 days ago · Arctic, northernmost region of Earth, centered on the North Pole and"
     },
     {
-      "url": "https://www.climate.us/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
-      "title": "Climate change: Arctic sea ice summer minimum | Climate.us",
-      "domain": "climate.us",
+      "url": "https://www.arctic.de/us/",
+      "title": "Value Quality Performance | Complete passive PC - ARCTIC",
+      "domain": "arctic.de",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "June 9, 2026 - The amount of sea ice that survives the Arctic summer has"
+      "excerpt": "High-quality PC cooling at an unbeatable price-performance ratio is what we are known for. With"
     },
     {
-      "url": "https://nsidc.org/learn/ask-scientist/how-was-arctic-sea-ice-measured-satellite-era",
-      "title": "How was Arctic sea ice measured before the satellite era? | National Snow and Ice Data Center",
-      "domain": "nsidc.org",
+      "url": "https://www.arctic.de/en/products/",
+      "title": "PC Cooling, Monitor Arms, TV Brackets and Equipment | ARCTIC",
+      "domain": "arctic.de",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was"
+      "excerpt": "ARCTIC products have contributed to the creation of comfortable PC workstations for 20 years. Our"
     }
   ],
-  "reasoning": "Continuous satellite observation of Arctic sea ice began in 1979. Data from scientific and governmental organizations including NOAA, NSIDC, and the European Environment Agency consistently show a substantial, statistically significant decline in both sea ice extent and thickness since 1979, with summer minimum extent decreasing by approximately 12 to 13 percent per decade.",
+  "reasoning": "According to continuous satellite records maintained by NASA, NOAA, and the National Snow and Ice Data Center (NSIDC) since 1979, Arctic sea ice extent and thickness have shown a significant, well-documented downward trend across all seasons, with the most pronounced decline observed during the annual September minimum.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -135,13 +135,19 @@
       "confidence": 98,
       "checked_at": "2026-08-17T06:11:06Z",
       "run_id": "run-2026-08-17T061041Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 99,
+      "checked_at": "2026-08-24T06:13:49Z",
+      "run_id": "run-2026-08-24T061324Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
     "requires_human_review": false,
-    "low_source_quality": false
+    "low_source_quality": true
   },
   "title": "Arctic sea ice decline since 1979",
   "category": "science",

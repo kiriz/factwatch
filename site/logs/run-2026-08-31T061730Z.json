@@ -1,0 +1,434 @@
+{
+  "run_id": "run-2026-08-31T061730Z",
+  "started_at": "2026-08-31T06:17:30Z",
+  "finished_at": "2026-08-31T06:21:55Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-001",
+      "claim_title": "Arctic sea ice decline since 1979",
+      "claim_text": "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": true
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to continuous satellite records maintained by NASA, NOAA, and the National Snow and Ice Data Center (NSIDC) since 1979, Arctic sea ice extent and thickness have shown a significant, well-documented downward trend across all seasons, with the most pronounced decline observed during the annual September minimum."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Arctic sea ice has declined significantly since satellite records began in 1979.\\\"\",\n  \"verification_notes\": \"Check NSIDC, NASA, and NOAA data. Look at September minimum extent as the primary metric. Verify trend is statistically significant, not just year-to-year variability.\",\n  \"search_results\": \"[1] Arctic - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Arctic\\nExcerpt: Land within the Arctic region has seasonally varying snow and ice cover, with predominantly treeless permafrost under the tundra. Arctic seas contain seasonal sea ice in many places. The Arctic region is a unique area among Earth's ecosystems.\\n\\n[2] Arctic Circle - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Arctic_Circle\\nExcerpt: The Arctic Circle marks the southernmost latitude for which at the December solstice (winter) the Sun does not rise and at the June solstice (summer) the Sun does not set.\\n\\n[3] Arctic - Simple English Wikipedia, the free encyclopedia\\nURL: https://simple.wikipedia.org/wiki/Arctic\\nExcerpt: The land of the Arctic (located around the edges of the Arctic Circle) is mostly tundra. A tundra is a cold, almost treeless plain covered with moss and sedges (grass -like plants).\\n\\n[4] Arctic | Definition, Climate, People, & Facts | Britannica\\nURL: https://www.britannica.com/place/Arctic\\nExcerpt: 5 days ago · Arctic, northernmost region of Earth, centered on the North Pole and characterized by distinctively polar conditions of climate, plant and animal life, and other physical features. The term is derived from the Greek word arktos (‘bear’), referring to the northern constellation of the Be\\n\\n[5] Value Quality Performance | Complete passive PC - ARCTIC\\nURL: https://www.arctic.de/us/\\nExcerpt: High-quality PC cooling at an unbeatable price-performance ratio is what we are known for. With our first-class, individual customer support, we offer fast assistance with technical questions and long-term supplying of spare parts.\\n\\n[6] PC Cooling, Monitor Arms, TV Brackets and Equipment | ARCTIC\\nURL: https://www.arctic.de/en/products/\\nExcerpt: ARCTIC products have contributed to the creation of comfortable PC workstations for 20 years. Our core segment is cooling – quiet cooling systems and fans for PCs – but we also bring ergonomics and functionality to the workplace through a wide range of monitor stands and wall brackets.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to continuous satellite records maintained by NASA, NOAA, and the National Snow and Ice Data Center (NSIDC) since 1979, Arctic sea ice extent and thickness have shown a significant, well-documented downward trend across all seasons, with the most pronounced decline observed during the annual September minimum.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": true\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+        "Arctic sea ice decline since 1979",
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Arctic",
+          "title": "Arctic - Wikipedia",
+          "snippet": "Land within the Arctic region has seasonally varying snow and ice cover, with predominantly treeless permafrost under the tundra. Arctic seas contain seasonal sea ice in many places. The Arctic region is a unique area among Earth's ecosystems."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Arctic_Circle",
+          "title": "Arctic Circle - Wikipedia",
+          "snippet": "The Arctic Circle marks the southernmost latitude for which at the December solstice (winter) the Sun does not rise and at the June solstice (summer) the Sun does not set."
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Arctic",
+          "title": "Arctic - Simple English Wikipedia, the free encyclopedia",
+          "snippet": "The land of the Arctic (located around the edges of the Arctic Circle) is mostly tundra. A tundra is a cold, almost treeless plain covered with moss and sedges (grass -like plants)."
+        },
+        {
+          "url": "https://www.britannica.com/place/Arctic",
+          "title": "Arctic | Definition, Climate, People, & Facts | Britannica",
+          "snippet": "5 days ago · Arctic, northernmost region of Earth, centered on the North Pole and characterized by distinctively polar conditions of climate, plant and animal life, and other physical features. The term is derived from the Greek word arktos (‘bear’), referring to the northern constellation of the Bear."
+        },
+        {
+          "url": "https://www.arctic.de/us/",
+          "title": "Value Quality Performance | Complete passive PC - ARCTIC",
+          "snippet": "High-quality PC cooling at an unbeatable price-performance ratio is what we are known for. With our first-class, individual customer support, we offer fast assistance with technical questions and long-term supplying of spare parts."
+        },
+        {
+          "url": "https://www.arctic.de/en/products/",
+          "title": "PC Cooling, Monitor Arms, TV Brackets and Equipment | ARCTIC",
+          "snippet": "ARCTIC products have contributed to the creation of comfortable PC workstations for 20 years. Our core segment is cooling – quiet cooling systems and fans for PCs – but we also bring ergonomics and functionality to the workplace through a wide range of monitor stands and wall brackets."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "UNVERIFIED",
+      "confidence": 30,
+      "verdict_changed": true,
+      "previous_verdict": "TRUE",
+      "new_verdict": "UNVERIFIED",
+      "requires_human_review": true,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": true,
+        "low_source_quality": true
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The provided search results do not contain information related to the United States national debt, consisting entirely of irrelevant dictionary definitions for the word \"the\"",
+        "Consequently, the claim cannot be verified from the provided evidence."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The United States national debt has surpassed $34 trillion.\\\"\",\n  \"verification_notes\": \"Check US Treasury Fiscal Data (fiscaldata.treasury.gov). Note distinction between gross debt and debt held by the public. Verify current figure — may have grown beyond $34T by time of verification.\",\n  \"search_results\": \"[1] The - Wikipedia\\nURL: https://en.wikipedia.org/wiki/The\\nExcerpt: The is a grammatical article in English, denoting nouns that are already or about to be mentioned, under discussion, implied or otherwise presumed familiar to listeners, readers, or speakers. It is the definite article in English. The is the most frequently used word in the English language; studies\\n\\n[2] What Part of Speech Is the Word “The”? | Grammarly\\nURL: https://www.grammarly.com/blog/parts-of-speech/the-part-of-speech/\\nExcerpt: Jan 12, 2024 · The is the most commonly used word in the English language, according to the Oxford English Corpus, making it one of the most important words to learn. Part of learning it is understanding what part of speech is the. The can be used as a definite article to refer to something specific\\n\\n[3] THE | English meaning - Cambridge Dictionary\\nURL: https://dictionary.cambridge.org/dictionary/english/the\\nExcerpt: THE definition: 1. used before nouns to refer to particular things or people that have already been talked about or…. Learn more.\\n\\n[4] THE Definition & Meaning - Merriam-Webster\\nURL: https://www.merriam-webster.com/dictionary/the\\nExcerpt: Feb 24, 2026 · The meaning of THE is —used as a function word to indicate that a following noun or noun equivalent is definite or has been previously specified by context or by circumstance. How to use the in a sentence. Frequently Asked Questions About the.\\n\\n[5] How to Use the Article \\\"The\\\" in English - English Study Online\\nURL: https://englishstudyonline.org/article-the/\\nExcerpt: Apr 21, 2026 · Learn how to use the definite article “the” correctly in English! This easy guide explains when to use “the” with clear rules, examples, and tips to help you sound more natural and fluent.\\n\\n[6] The definite article: 'the' | LearnEnglish - British Council\\nURL: https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/definite-article\\nExcerpt: Level: beginner The definite article the is the most frequent word in English. We use the definite article in front of a noun when we believe the listener/reader knows exactly what we are referring to: because there is only one: The Pope is visiting Russia. The moon is very bright tonight. Who is th\"\n}",
+      "raw_response": "{\n  \"verdict\": \"UNVERIFIED\",\n  \"confidence\": 30,\n  \"reasoning\": \"The provided search results do not contain information related to the United States national debt, consisting entirely of irrelevant dictionary definitions for the word \\\"the\\\". Consequently, the claim cannot be verified from the provided evidence.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": true,\n  \"low_source_quality\": true\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The United States national debt has surpassed $34 trillion.\"",
+        "US federal debt exceeds $34 trillion",
+        "\"The United States national debt has surpassed $34 trillion.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/The",
+          "title": "The - Wikipedia",
+          "snippet": "The is a grammatical article in English, denoting nouns that are already or about to be mentioned, under discussion, implied or otherwise presumed familiar to listeners, readers, or speakers. It is the definite article in English. The is the most frequently used word in the English language; studies and analyses of texts have found it to account for seven percent of all printed English ..."
+        },
+        {
+          "url": "https://www.grammarly.com/blog/parts-of-speech/the-part-of-speech/",
+          "title": "What Part of Speech Is the Word “The”? | Grammarly",
+          "snippet": "Jan 12, 2024 · The is the most commonly used word in the English language, according to the Oxford English Corpus, making it one of the most important words to learn. Part of learning it is understanding what part of speech is the. The can be used as a definite article to refer to something specific or as an adverb when modifying another word. We’ll dive further into what part of speech the is and how to ..."
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/the",
+          "title": "THE | English meaning - Cambridge Dictionary",
+          "snippet": "THE definition: 1. used before nouns to refer to particular things or people that have already been talked about or…. Learn more."
+        },
+        {
+          "url": "https://www.merriam-webster.com/dictionary/the",
+          "title": "THE Definition & Meaning - Merriam-Webster",
+          "snippet": "Feb 24, 2026 · The meaning of THE is —used as a function word to indicate that a following noun or noun equivalent is definite or has been previously specified by context or by circumstance. How to use the in a sentence. Frequently Asked Questions About the."
+        },
+        {
+          "url": "https://englishstudyonline.org/article-the/",
+          "title": "How to Use the Article \"The\" in English - English Study Online",
+          "snippet": "Apr 21, 2026 · Learn how to use the definite article “the” correctly in English! This easy guide explains when to use “the” with clear rules, examples, and tips to help you sound more natural and fluent."
+        },
+        {
+          "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/definite-article",
+          "title": "The definite article: 'the' | LearnEnglish - British Council",
+          "snippet": "Level: beginner The definite article the is the most frequent word in English. We use the definite article in front of a noun when we believe the listener/reader knows exactly what we are referring to: because there is only one: The Pope is visiting Russia. The moon is very bright tonight. Who is the president of France? This is why we use the definite article with a superlative adjective: He ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-003",
+      "claim_title": "mRNA vaccines alter human DNA",
+      "claim_text": "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is biologically false and widely debunked by major scientific and public health organizations (including the CDC, WHO, and NIH)",
+        "The mRNA from these vaccines instructs cells in the cytoplasm to produce the spike protein; it never enters the nucleus where genomic DNA is stored, nor can it integrate into the human genome, as human cells do not possess the necessary reverse transcriptase enzymes for such integration",
+        "The mRNA breaks down harmlessly shortly after delivery."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"mRNA COVID-19 vaccines alter or permanently change human DNA.\\\"\",\n  \"verification_notes\": \"Consult peer-reviewed molecular biology literature. Check CDC, WHO, and NIH statements. Key mechanism to verify: mRNA cannot be reverse-transcribed into DNA without reverse transcriptase enzyme. Check if any credible peer-reviewed evidence to the contrary has emerged.\",\n  \"search_results\": \"[1] Do mRNA Vaccines Permanently Alter Human DNA, Making You a Genetically Modified Organism? By Brian Simpson\\nURL: https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component\\nExcerpt: According to Urso, if this turns out to be correct, the result of mRNA vaccination might be lifelong COVID-19. A new study by MIT and Harvard scientists demonstrates that segments of the RNA from the coronavirus itself are most likely becoming a permanent fixture in human DNA.\\n\\n[2] No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA” | Science-Based Medicine\\nURL: https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/\\nExcerpt: December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are trying to scare readers with is the idea that somehow mRNA vaccines permanently alter your DNA, but, again, they can’t do that.\\n\\n[3] Major COVID study that fueled vaccine skepticism retracted over ‘misinformation’ | Scientific American\\nURL: https://www.scientificamerican.com/article/major-covid-study-that-fueled-vaccine-skepticism-retracted-over-misinformation/\\nExcerpt: 3 weeks ago - In its retraction notice, the BMJ stated that Mostert’s proposed edits would have been “insufficient.” The journal also said Mostert wasn’t available to cooperate with the investigation held by the center and initially could not be contacted by the BMJ before she later told the journal\\n\\n[4] Return of the revenge of the COVID vaccine \\\"spike\\\" in your DNA - RESPECTFUL INSOLENCE\\nURL: https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/\\nExcerpt: March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently based on a dubious study. These \\\"slasher lies\\\" never die.\\n\\n[5] Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST\\nURL: https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/\\nExcerpt: May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents enter the liver and permanently alters human chromosomes and rewrites DNA. Contrary to the CDC’s claim that the mRNA COVID-19 vaccines do not “change or interact with your DNA in any way,” a new Swedish study finds ..\\n\\n[6] Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab\\nURL: https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/\\nExcerpt: November 16, 2022 - At least 46 of the false narratives debunked by the fact-checking alliance claimed that mRNA-based vaccines, the technology used in Pfizer-BioNTech and Moderna COVID-19 vaccines, alter human DNA.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"reasoning\": \"The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is biologically false and widely debunked by major scientific and public health organizations (including the CDC, WHO, and NIH). The mRNA from these vaccines instructs cells in the cytoplasm to produce the spike protein; it never enters the nucleus where genomic DNA is stored, nor can it integrate into the human genome, as human cells do not possess the necessary reverse transcriptase enzymes for such integration. The mRNA breaks down harmlessly shortly after delivery.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+        "mRNA vaccines alter human DNA",
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
+          "title": "Do mRNA Vaccines Permanently Alter Human DNA, Making You a Genetically Modified Organism? By Brian Simpson",
+          "snippet": "According to Urso, if this turns out to be correct, the result of mRNA vaccination might be lifelong COVID-19. A new study by MIT and Harvard scientists demonstrates that segments of the RNA from the coronavirus itself are most likely becoming a permanent fixture in human DNA."
+        },
+        {
+          "url": "https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/",
+          "title": "No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA” | Science-Based Medicine",
+          "snippet": "December 2, 2020 - This whole take is silly. Obviously, what Mercola and Madej are trying to scare readers with is the idea that somehow mRNA vaccines permanently alter your DNA, but, again, they can’t do that."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/major-covid-study-that-fueled-vaccine-skepticism-retracted-over-misinformation/",
+          "title": "Major COVID study that fueled vaccine skepticism retracted over ‘misinformation’ | Scientific American",
+          "snippet": "3 weeks ago - In its retraction notice, the BMJ stated that Mostert’s proposed edits would have been “insufficient.” The journal also said Mostert wasn’t available to cooperate with the investigation held by the center and initially could not be contacted by the BMJ before she later told the journal’s investigators that other researchers had done most of the work. The Princess Máxima Center’s report detailing its own findings “concluded ... that the article pays disproportionate attention to the possibility that COVID-19 containment measures and vaccination might have caused excess mortality,” according to the BMJ’s retraction notice. “That excess mortality occurred, however, was known and not newsworthy,” the center wrote in its report. “Despite the fact that the authors do not investigate the causes for excess mortality, the introduction and discussion of the article are largely focused on how to explain the excess mortality.” ·"
+        },
+        {
+          "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
+          "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
+          "snippet": "March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently based on a dubious study. These \"slasher lies\" never die."
+        },
+        {
+          "url": "https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/",
+          "title": "Pfizer’s Vaccine overwrites human DNA with new genetic code. They Told Us It Could Never Happen: Peer Reviewed Research - ROUTE 66 POST",
+          "snippet": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents enter the liver and permanently alters human chromosomes and rewrites DNA. Contrary to the CDC’s claim that the mRNA COVID-19 vaccines do not “change or interact with your DNA in any way,” a new Swedish study finds ..."
+        },
+        {
+          "url": "https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/",
+          "title": "Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab",
+          "snippet": "November 16, 2022 - At least 46 of the false narratives debunked by the fact-checking alliance claimed that mRNA-based vaccines, the technology used in Pfizer-BioNTech and Moderna COVID-19 vaccines, alter human DNA."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 99,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The statement that humans only use 10% of their brain capacity is a well-documented scientific myth",
+        "Modern neuroimaging techniques such as fMRI and PET scans demonstrate that virtually all areas of the healthy human brain are active and serve dedicated functions throughout the day",
+        "Neuroscience research, supported by institutions including the MIT McGovern Institute and Scientific American, confirms that no vast region of the brain remains dormant or unused."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\\\"\",\n  \"verification_notes\": \"Check neuroimaging studies (fMRI, PET). Verify whether any region of the brain is truly inactive. Look at what happens to brain tissue when it's genuinely unused (it atrophies). Check scientific consensus from neuroscience organizations.\",\n  \"search_results\": \"[1] Ten-percent-of-the-brain myth - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth\\nExcerpt: 2 weeks ago - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads experts\\n\\n[2] Do We Really Use Only 10 Percent of Our Brain? | Britannica\\nURL: https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain\\nExcerpt: July 14, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities....\\n\\n[3] Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today\\nURL: https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains\\nExcerpt: May 15, 2025 - This notion, repeated in movies, motivational speeches, and even some classrooms, implies that a vast cognitive potential remains untapped. However, this idea is scientifically inaccurate and undermines our understanding of human mental capacity.\\n\\n[4] Do we only use 10 percent of our brain? - MIT McGovern Institute\\nURL: https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/\\nExcerpt: March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis.\\n\\n[5] Do People Only Use 10 Percent of Their Brains? | Scientific American\\nURL: https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/\\nExcerpt: February 20, 2024 - Another mystery hidden within our crinkled cortices is that out of all the brain's cells, only 10 percent are neurons; the other 90 percent are glial cells, which encapsulate and support neurons, but whose function remains largely unknown.\\n\\n[6] Do We Only Use 10% of our Brains? | Snopes.com\\nURL: https://www.snopes.com/fact-check/the-ten-percent-myth/\\nExcerpt: August 4, 2022 - In fact, most of us only use about 10 per cent of our brains, if that. The other 90 per cent is full of untapped potential and undiscovered abilities, which means our minds are only operating in a very limited way instead of at full stretch.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 99,\n  \"reasoning\": \"The statement that humans only use 10% of their brain capacity is a well-documented scientific myth. Modern neuroimaging techniques such as fMRI and PET scans demonstrate that virtually all areas of the healthy human brain are active and serve dedicated functions throughout the day. Neuroscience research, supported by institutions including the MIT McGovern Institute and Scientific American, confirms that no vast region of the brain remains dormant or unused.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+        "Humans only use 10% of their brains",
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
+          "title": "Ten-percent-of-the-brain myth - Wikipedia",
+          "snippet": "2 weeks ago - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads experts to believe that it stems from multiple areas of the brain. Therefore, as with Kalat's idea that humans have untapped cognitive ..."
+        },
+        {
+          "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
+          "title": "Do We Really Use Only 10 Percent of Our Brain? | Britannica",
+          "snippet": "July 14, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities...."
+        },
+        {
+          "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
+          "title": "Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today",
+          "snippet": "May 15, 2025 - This notion, repeated in movies, motivational speeches, and even some classrooms, implies that a vast cognitive potential remains untapped. However, this idea is scientifically inaccurate and undermines our understanding of human mental capacity."
+        },
+        {
+          "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
+          "title": "Do we only use 10 percent of our brain? - MIT McGovern Institute",
+          "snippet": "March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+          "title": "Do People Only Use 10 Percent of Their Brains? | Scientific American",
+          "snippet": "February 20, 2024 - Another mystery hidden within our crinkled cortices is that out of all the brain's cells, only 10 percent are neurons; the other 90 percent are glial cells, which encapsulate and support neurons, but whose function remains largely unknown."
+        },
+        {
+          "url": "https://www.snopes.com/fact-check/the-ten-percent-myth/",
+          "title": "Do We Only Use 10% of our Brains? | Snopes.com",
+          "snippet": "August 4, 2022 - In fact, most of us only use about 10 per cent of our brains, if that. The other 90 per cent is full of untapped potential and undiscovered abilities, which means our minds are only operating in a very limited way instead of at full stretch."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-007",
+      "claim_title": "Great Wall of China visible from space",
+      "claim_text": "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim is a well-documented myth",
+        "The Great Wall of China is not visible from space with the unaided (naked) eye because it is only about 5 to 9 meters wide and blends into the surrounding terrain and materials",
+        "Furthermore, it is not the \"only\" man-made structure visible from orbit; other human-made features such as major highways, large dams, agricultural fields, airports, and city lights at night are far more easily discerned from low Earth orbit without magnification."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\\\"\",\n  \"verification_notes\": \"Check astronaut accounts, NASA statements, and optical physics. The wall is roughly 9 meters wide — compare to road widths. Verify what actually IS visible from low Earth orbit with the naked eye.\",\n  \"search_results\": \"[1] Great Wall China Visible Space Myth Debunked | Sikho.ai\\nURL: https://sikho.ai/blog/great-wall-china-visible-from-space-myth\\nExcerpt: March 10, 2026 - However, the Great Wall of China can be photographed or observed from space using magnification, it can't be seen with the naked eye. On 24 November 2004, an image of the Great Wall of China was captured from low Earth orbit by US astronaut ...\\n\\n[2] The Great Wall of China is the only man-made structure visible from ...\\nURL: https://triviacafe.com/myths/myth/the-great-wall-of-china-is-the-only-man-made-structure-visible-from-space-with-the-naked-eye-1\\nExcerpt: Learn More The Great Wall of China is the only man-made structure visible from space with the naked eye. The notion that the Great (Review) Wall of China is the sole human-made construction visible to the unaided eye from orbital heights is a widespread but incorrect belief.\\n\\n[3] The Great Wall of China is the only man-made structure visible from ...\\nURL: https://triviacafe.com/myths/myth/the-great-wall-of-china-is-the-only-man-made-structure-visible-from-space-with-the-naked-eye\\nExcerpt: Learn More The Great Wall of China is the only man-made structure visible from space with the naked eye. One of the most enduring popular misconceptions about space travel suggests that a particular ancient construction is the only man-made structure visible from orbit with the unaided eye.\\n\\n[4] Fact-check: The Great Wall of China is the only man-made...\\nURL: https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31\\nExcerpt: The total length of the Great Wall, including all its components, is approximately 13,171 miles. The Great Wall was not completed during the reign of Qin Shi Huang. Key Claims.\\n\\n[5] Space Myths: Interactive Lesson on Astronomy... - Spelling Bee Ninja\\nURL: https://spellingbee.ninja/science/space-myths-lesson-and-quiz/\\nExcerpt: Myth: The Great Wall of China is the only man-made structure visible from space with the naked eye. Fact: The Great Wall is not visible from low Earth orbit (where the International Space Station orbits) without magnification.\\n\\n[6] Did You Know? The Great Wall Isn't Visible From Space With the...\\nURL: https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/\\nExcerpt: And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands of kilometers across diverse terrain—it’s also quite narrow, only about 6 to 9 meters wide on average.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"reasoning\": \"The claim is a well-documented myth. The Great Wall of China is not visible from space with the unaided (naked) eye because it is only about 5 to 9 meters wide and blends into the surrounding terrain and materials. Furthermore, it is not the \\\"only\\\" man-made structure visible from orbit; other human-made features such as major highways, large dams, agricultural fields, airports, and city lights at night are far more easily discerned from low Earth orbit without magnification.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+        "Great Wall of China visible from space",
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://sikho.ai/blog/great-wall-china-visible-from-space-myth",
+          "title": "Great Wall China Visible Space Myth Debunked | Sikho.ai",
+          "snippet": "March 10, 2026 - However, the Great Wall of China can be photographed or observed from space using magnification, it can't be seen with the naked eye. On 24 November 2004, an image of the Great Wall of China was captured from low Earth orbit by US astronaut ..."
+        },
+        {
+          "url": "https://triviacafe.com/myths/myth/the-great-wall-of-china-is-the-only-man-made-structure-visible-from-space-with-the-naked-eye-1",
+          "title": "The Great Wall of China is the only man-made structure visible from ...",
+          "snippet": "Learn More The Great Wall of China is the only man-made structure visible from space with the naked eye. The notion that the Great (Review) Wall of China is the sole human-made construction visible to the unaided eye from orbital heights is a widespread but incorrect belief."
+        },
+        {
+          "url": "https://triviacafe.com/myths/myth/the-great-wall-of-china-is-the-only-man-made-structure-visible-from-space-with-the-naked-eye",
+          "title": "The Great Wall of China is the only man-made structure visible from ...",
+          "snippet": "Learn More The Great Wall of China is the only man-made structure visible from space with the naked eye. One of the most enduring popular misconceptions about space travel suggests that a particular ancient construction is the only man-made structure visible from orbit with the unaided eye."
+        },
+        {
+          "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
+          "title": "Fact-check: The Great Wall of China is the only man-made...",
+          "snippet": "The total length of the Great Wall, including all its components, is approximately 13,171 miles. The Great Wall was not completed during the reign of Qin Shi Huang. Key Claims."
+        },
+        {
+          "url": "https://spellingbee.ninja/science/space-myths-lesson-and-quiz/",
+          "title": "Space Myths: Interactive Lesson on Astronomy... - Spelling Bee Ninja",
+          "snippet": "Myth: The Great Wall of China is the only man-made structure visible from space with the naked eye. Fact: The Great Wall is not visible from low Earth orbit (where the International Space Station orbits) without magnification."
+        },
+        {
+          "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
+          "title": "Did You Know? The Great Wall Isn't Visible From Space With the...",
+          "snippet": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands of kilometers across diverse terrain—it’s also quite narrow, only about 6 to 9 meters wide on average."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_title": "Napoleon was unusually short",
+      "claim_text": "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a well-documented historical myth",
+        "Following his death, his autopsy recorded his height as 5 feet 2 inches (\"5 pieds 2 pouces\") in pre-metric French units",
+        "However, French inches (*pouces*) were longer than English/Imperial inches (approximately 2.7 cm versus 2.54 cm)",
+        "Converted to modern Imperial measurements, Napoleon was approximately 5 feet 6 inches to 5 feet 7 inches (around 168–170 cm) tall, which was average or slightly above average for a French male in the early 19th century",
+        "The misconception of him being unusually short stemmed from conversion errors and British wartime propaganda (such as caricatures by James Gillray)."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\\\"\",\n  \"verification_notes\": \"Check historical records of Napoleon's height in French inches vs English inches. Verify average male height in early 19th century France. Look at accounts from contemporaries and his physician's records. The British caricaturist James Gillray's role in perpetuating the myth is worth examining.\",\n  \"search_results\": \"[1] Napoleon complex - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Napoleon_complex\\nExcerpt: 1 week ago - The Napoleon complex is named after Napoleon Bonaparte, the first emperor of the French, who was estimated to have been 5 feet 2 inches tall (in pre–metric system French measures), which equals around 1.67 metres or just under 5 feet 6 inches in imperial measure.\\n\\n[2] Was Napoleon Bonaparte Really Short?\\nURL: https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108\\nExcerpt: May 13, 2025 - It turns out that Napoleon Bonaparte wasn't particularly short at all. Napoleon's height is sometimes described as being 5 foot 2 inches tall, which would definitely make him short for his era.\\n\\n[3] Was Napoleon Short? | Britannica\\nURL: https://www.britannica.com/story/was-napoleon-short\\nExcerpt: June 13, 2025 - Napoleon was thus average or taller, no matter the interpretation. Although Napoleon’s death certificate seems to suggest that he was probably taller than the typical 19th-century Frenchman, English cartoons, his nickname, and other hearsay ...\\n\\n[4] Was Napoleon Short? Origins of the 'Napoleon Complex' | HISTORY\\nURL: https://www.history.com/articles/napoleon-complex-short\\nExcerpt: According to pre–metric system French measures, he was a diminutive 5′2.” But the French inch (pouce) of the time was 2.7 cm, while the Imperial inch was shorter, at 2.54 cm. Published: July 10, 2025\\n\\n[5] Everyone Seems To Think Napoleon Was Short, Yet He Was Actually Taller Than The Average Frenchman Of His Time\\nURL: https://www.factinate.com/people/everyone-seems-think-napoleon-was-short-yet-he-was-actually-taller-average-frenchman-his-time\\nExcerpt: November 25, 2025 - ... After Napoleon’s passing in Saint Helena, his medical team performed an autopsy that listed his height as “5 pieds 2 pouces”. Later historians confirmed that the French measurement equaled roughly 5 feet 6.5 inches.\\n\\n[6] Napoleon Wasn’t Short—Here’s How the Myth Started and Spread - wondereo.com\\nURL: https://wondereo.com/napoleon-height-myth/\\nExcerpt: December 29, 2025 - Napoleon wasn't short—he was actually average height for his time at 5'7\\\" (170 cm). The myth that Napoleon Bonaparte was unusually short started from British propaganda and confusion between French and English measurement systems.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a well-documented historical myth. Following his death, his autopsy recorded his height as 5 feet 2 inches (\\\"5 pieds 2 pouces\\\") in pre-metric French units. However, French inches (*pouces*) were longer than English/Imperial inches (approximately 2.7 cm versus 2.54 cm). Converted to modern Imperial measurements, Napoleon was approximately 5 feet 6 inches to 5 feet 7 inches (around 168–170 cm) tall, which was average or slightly above average for a French male in the early 19th century. The misconception of him being unusually short stemmed from conversion errors and British wartime propaganda (such as caricatures by James Gillray).\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+        "Napoleon was unusually short",
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Napoleon_complex",
+          "title": "Napoleon complex - Wikipedia",
+          "snippet": "1 week ago - The Napoleon complex is named after Napoleon Bonaparte, the first emperor of the French, who was estimated to have been 5 feet 2 inches tall (in pre–metric system French measures), which equals around 1.67 metres or just under 5 feet 6 inches in imperial measure."
+        },
+        {
+          "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
+          "title": "Was Napoleon Bonaparte Really Short?",
+          "snippet": "May 13, 2025 - It turns out that Napoleon Bonaparte wasn't particularly short at all. Napoleon's height is sometimes described as being 5 foot 2 inches tall, which would definitely make him short for his era."
+        },
+        {
+          "url": "https://www.britannica.com/story/was-napoleon-short",
+          "title": "Was Napoleon Short? | Britannica",
+          "snippet": "June 13, 2025 - Napoleon was thus average or taller, no matter the interpretation. Although Napoleon’s death certificate seems to suggest that he was probably taller than the typical 19th-century Frenchman, English cartoons, his nickname, and other hearsay ..."
+        },
+        {
+          "url": "https://www.history.com/articles/napoleon-complex-short",
+          "title": "Was Napoleon Short? Origins of the 'Napoleon Complex' | HISTORY",
+          "snippet": "According to pre–metric system French measures, he was a diminutive 5′2.” But the French inch (pouce) of the time was 2.7 cm, while the Imperial inch was shorter, at 2.54 cm. Published: July 10, 2025"
+        },
+        {
+          "url": "https://www.factinate.com/people/everyone-seems-think-napoleon-was-short-yet-he-was-actually-taller-average-frenchman-his-time",
+          "title": "Everyone Seems To Think Napoleon Was Short, Yet He Was Actually Taller Than The Average Frenchman Of His Time",
+          "snippet": "November 25, 2025 - ... After Napoleon’s passing in Saint Helena, his medical team performed an autopsy that listed his height as “5 pieds 2 pouces”. Later historians confirmed that the French measurement equaled roughly 5 feet 6.5 inches."
+        },
+        {
+          "url": "https://wondereo.com/napoleon-height-myth/",
+          "title": "Napoleon Wasn’t Short—Here’s How the Myth Started and Spread - wondereo.com",
+          "snippet": "December 29, 2025 - Napoleon wasn't short—he was actually average height for his time at 5'7\" (170 cm). The myth that Napoleon Bonaparte was unusually short started from British propaganda and confusion between French and English measurement systems."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 1,
+  "errors": 0
+}
