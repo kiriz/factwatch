@@ -1,0 +1,65 @@
+{
+  "run_id": "run-2026-09-01T061430Z",
+  "started_at": "2026-09-01T06:14:30Z",
+  "finished_at": "2026-09-01T06:40:58Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-011",
+      "claim_title": "MSG causes headaches — 'Chinese restaurant syndrome'",
+      "claim_text": "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-013",
+      "claim_title": "Social media causes depression in teenagers",
+      "claim_text": "\"Social media use causes depression and anxiety in teenagers.\"",
+      "category": "health",
+      "verdict": "DISPUTED",
+      "new_verdict": "DISPUTED",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict DISPUTED."
+      ]
+    },
+    {
+      "claim_id": "claim-016",
+      "claim_title": "Generative AI will replace 300 million jobs",
+      "claim_text": "\"Generative AI will replace 300 million jobs worldwide.\"",
+      "category": "economics",
+      "verdict": "MISLEADING",
+      "new_verdict": "MISLEADING",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict MISLEADING."
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 4
+}
