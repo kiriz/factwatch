@@ -3,9 +3,9 @@
   "claim_id": "claim-005",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-08-26T06:12:24Z",
+  "last_checked_at": "2026-09-03T10:38:02Z",
   "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-08-26T061021Z",
+  "run_id": "run-2026-09-03T103417Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Continuing_resolution",
@@ -13,50 +13,50 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "July 24, 2026 - Between fiscal year 1977 and fiscal year 2015, Congress only passed"
+      "excerpt": "Between fiscal year 1977 and fiscal year 2015, Congress only passed all twelve regular appropriations"
     },
     {
       "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
-      "title": "Congress has long struggled to pass spending bills on time | Pew Research Center",
+      "title": "Congress has long struggled to pass spending bills on time",
       "domain": "pewresearch.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "October 1, 2025 - In the nearly five decades that ... place, Congress has passed"
+      "excerpt": "Oct 1, 2025 · In the nearly five decades that the current system for budgeting"
     },
     {
-      "url": "https://www.congress.gov/event/107th-congress/house-event/LC16636/text",
-      "title": "FEDERAL BUDGET PROCESS STRUCTURAL REFORM | Congress.gov | Library of Congress",
-      "domain": "congress.gov",
+      "url": "https://www.msn.com/en-us/news/politics/opinion-congress-hasn-t-passed-a-budget-on-time-since-1997-we-should-fix-that/ar-AA1SBWSG",
+      "title": "Opinion: Congress hasn’t passed a budget on time since 1997 ...",
+      "domain": "msn.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Although biennial budgeting has been required for the Defense Department, and the President has proposed"
+      "excerpt": "The “textbook” legislative process requires Congress to pass approximately 12 appropriations bills by Oct. 1"
     },
     {
-      "url": "https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline",
-      "title": "The Federal Budget Timeline & Process",
-      "domain": "fiscalnote.com",
+      "url": "https://reason.com/2023/03/21/the-budget-battle-book/",
+      "title": "Congress Hasn't Passed a Budget on Time in 27 Years - Reason.comWhat Happens after 28 Years without a Real Budget?Fact Check Team: Congress rarely passes its required ...Continuing resolution - WikipediaCongress Hasn’t Passed a Budget On Time in 20 Years",
+      "domain": "reason.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 31, 2026 - Since the Congressional Budget Act of 1974 went into effect in"
+      "excerpt": "Mar 21, 2023 · Politics Congress Hasn't Passed a Budget on Time in 27 Years"
     },
     {
-      "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
-      "title": "How does the government budget process work? | USAFacts",
-      "domain": "usafacts.org",
+      "url": "https://www.youngresearch.com/researchandanalysis/economy-researchandanalysis/what-happens-after-28-years-without-a-real-budget/",
+      "title": "What Happens after 28 Years without a Real Budget?",
+      "domain": "youngresearch.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "September 18, 2025 - Here’s the catch — for all of the 21st century, Congress"
+      "excerpt": "May 28, 2024 · He writes: If you made a list of all the reasons"
     },
     {
-      "url": "https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/",
-      "title": "Congress hasn’t passed a budget on time since 1997. We should fix that.",
-      "domain": "thehill.com",
+      "url": "https://thenationaldesk.com/news/fact-check-team/fact-check-team-congress-rarely-passes-its-required-appropriations-on-time-government-shutdown-budget-process-house-senate-spending-plan-appropriations-bills-constitutional-protections",
+      "title": "Fact Check Team: Congress rarely passes its required ...",
+      "domain": "thenationaldesk.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article"
+      "excerpt": "Sep 29, 2023 · Congress has passed all its required appropriations bills on time only"
     }
   ],
-  "reasoning": "Under the modern budget process established by the Congressional Budget Act of 1974, Congress is required to pass all regular appropriations bills before the new fiscal year begins on October 1. Since the law took effect in fiscal year 1977, Congress has passed all of its regular appropriations measures on time in only four fiscal years: 1977, 1989, 1995, and 1997. In every year since fiscal year 1997, Congress has failed to enact all required regular appropriations bills prior to the October 1 deadline, instead relying on continuing resolutions or late omnibus spending packages.",
+  "reasoning": "Under the Congressional Budget Act of 1974, the federal fiscal year begins on October 1, by which point Congress is required to enact all regular appropriations bills (now numbering 12) to fully fund the government on time. According to data from the Congressional Research Service and analyses by organizations such as the Pew Research Center, Congress has enacted all required regular appropriations bills before the start of the fiscal year in only four instances: fiscal years 1977, 1989, 1995, and 1997. Since fiscal year 1997, Congress has consistently relied on continuing resolutions, omnibus spending packages, or enacted appropriations well past the October 1 deadline.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -135,6 +135,12 @@
       "confidence": 95,
       "checked_at": "2026-08-18T06:10:27Z",
       "run_id": "run-2026-08-18T060828Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-08-26T06:12:24Z",
+      "run_id": "run-2026-08-26T061021Z"
     }
   ],
   "agent_flags": {

@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-015",
   "verdict": "TRUE",
-  "confidence": 98,
-  "last_checked_at": "2026-08-26T06:10:59Z",
+  "confidence": 100,
+  "last_checked_at": "2026-09-03T10:36:55Z",
   "last_changed_at": "2026-06-09T23:45:43Z",
-  "run_id": "run-2026-08-26T061021Z",
+  "run_id": "run-2026-09-03T103417Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "2 weeks ago - Before AlphaGo, some researchers ... never defeat top humans at Go."
+      "excerpt": "1 week ago - Before AlphaGo, some researchers ... never defeat top humans at Go."
     },
     {
       "url": "https://deepmind.google/research/alphago/",
@@ -32,20 +32,20 @@
       "excerpt": "January 7, 2026 - This concludes the 5 game match between AlphaGo and Lee Sedol,"
     },
     {
-      "url": "https://aitimeline.world/timeline/alphago-2016",
-      "title": "AlphaGo Defeats Lee Sedol (2016) | AI Timeline",
-      "domain": "aitimeline.world",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "June 20, 2026 - DeepMind's AlphaGo defeated Lee Sedol, one of the greatest Go players"
-    },
-    {
       "url": "https://www.theguardian.com/technology/2016/mar/15/googles-alphago-seals-4-1-victory-over-grandmaster-lee-sedol",
       "title": "AlphaGo seals 4-1 victory over Go grandmaster Lee Sedol | AI (artificial intelligence) | The Guardian",
       "domain": "theguardian.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "November 29, 2017 - Google DeepMind’s AlphaGo program triumphed in its final game against South"
+    },
+    {
+      "url": "https://aitimeline.world/timeline/alphago-2016",
+      "title": "AlphaGo Defeats Lee Sedol (2016) | AI Timeline",
+      "domain": "aitimeline.world",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "June 20, 2026 - DeepMind's AlphaGo defeated Lee Sedol, one of the greatest Go players"
     },
     {
       "url": "https://www.nytimes.com/2016/03/16/world/asia/korea-alphago-vs-lee-sedol-go.html",
@@ -56,7 +56,7 @@
       "excerpt": "March 15, 2016 - The program AlphaGo’s 4-1 victory was a historic stride for computer"
     }
   ],
-  "reasoning": "In March 2016, Google DeepMind's artificial intelligence program AlphaGo defeated South Korean grandmaster Lee Sedol—one of the world's most accomplished and top-ranked Go players—by a score of 4 games to 1 in a five-game match in Seoul. Prior to the match, AI experts and researchers widely estimated that reaching human mastery in Go was at least a decade away, making AlphaGo's victory a milestone achieved roughly ten years ahead of expectations.",
+  "reasoning": "In March 2016, Google DeepMind's AlphaGo played a five-game match in Seoul against South Korean Go grandmaster Lee Sedol, winning 4 games to 1. Lee Sedol, who won 18 international titles, was widely regarded as the premier Go player of the era. Prior to the match, AI experts widely believed that a computer program defeating a top human Go champion was at least a decade away due to the immense complexity and intuition required for Go.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -129,6 +129,12 @@
       "confidence": 98,
       "checked_at": "2026-08-18T06:09:03Z",
       "run_id": "run-2026-08-18T060828Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-08-26T06:10:59Z",
+      "run_id": "run-2026-08-26T061021Z"
     }
   ],
   "agent_flags": {

@@ -3,60 +3,60 @@
   "claim_id": "claim-004",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-08-26T06:12:00Z",
+  "last_checked_at": "2026-09-03T10:37:32Z",
   "last_changed_at": "2026-06-09T23:46:29Z",
-  "run_id": "run-2026-08-26T061021Z",
+  "run_id": "run-2026-09-03T103417Z",
   "sources": [
     {
+      "url": "https://www.linkedin.com/pulse/ai-can-pass-lsat-bar-examwhats-next-lawyers-taylor-galusha-bm2jc/",
+      "title": "If AI Can Pass the LSAT and Bar Exam—What’s Next for Lawyers?",
+      "domain": "linkedin.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Oct 29, 2025 · If AI can pass our entrance and licensing exams—and is increasingly"
+    },
+    {
+      "url": "https://www.courthousenews.com/an-ai-bot-has-passed-the-bar-exam-what-happens-next/",
+      "title": "An AI bot has passed the bar exam. What happens next?",
+      "domain": "courthousenews.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Mar 28, 2023 · CHICAGO (CN) — This past winter, an AI system known as"
+    },
+    {
       "url": "https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/",
-      "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence Tools in the Legal Profession - Legal Aggregate - Stanford Law School",
+      "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial ...",
       "domain": "law.stanford.edu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "April 19, 2023 - CodeX–The Stanford Center for ... Research collaborators had deployed GPT-4, the"
-    },
-    {
-      "url": "https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/",
-      "title": "Bar exam score shows AI can keep up with 'human lawyers,' researchers say | Reuters",
-      "domain": "reuters.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "March 15, 2023 - March 15 (Reuters) - Artificial intelligence can now outperform most law"
+      "excerpt": "Apr 19, 2023 · In earlier work, Katz and Bommarito found that a LLM released"
     },
     {
       "url": "https://matthewstubenberg.com/blog/AI+Race+to+100+Percent+on+the+Bar+Exam",
-      "title": "AI Race to 100 Percent on the Bar Exam - Matthew Stubenberg",
+      "title": "AI Race to 100 Percent on the Bar Exam - matthewstubenberg.com",
       "domain": "matthewstubenberg.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "September 23, 2025 - AI is raising the bar. More than two-thirds of the models"
+      "excerpt": "Posted: Sept. 23, 2025 What happens when you sit today’s most advanced AI models down"
     },
     {
-      "url": "https://www.iit.edu/news/gpt-4-passes-bar-exam",
-      "title": "GPT-4 Passes the Bar Exam | Illinois Institute of Technology",
-      "domain": "iit.edu",
+      "url": "https://medium.com/activated-thinker/the-ai-that-passed-the-law-exam-cc710a3d1b90",
+      "title": "The AI That Passed the Law Exam - Medium",
+      "domain": "medium.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 15, 2023 - In a period of roughly four years, the leading large language"
+      "excerpt": "Mar 6, 2026 · An AI system successfully solved bar-level legal exam questions, performing at"
     },
     {
-      "url": "https://www.lawweekcolorado.com/article/expert-weighs-in-ai-passes-bar-exam/",
-      "title": "Expert Weighs In: AI Passes Bar Exam - Law Week Colorado",
-      "domain": "lawweekcolorado.com",
+      "url": "https://www.linkedin.com/pulse/first-ai-pass-bar-exam-gone-now-has-beaten-pokémon-lewis-sorokin-s1jtf",
+      "title": "The First AI to Pass the Bar Exam Is Gone. Now, an AI Has ...",
+      "domain": "linkedin.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "April 19, 2023 - According to the most recent paper, it scored drastically higher in"
-    },
-    {
-      "url": "https://www.abajournal.com/web/article/latest-version-of-chatgpt-aces-the-bar-exam-with-score-in-90th-percentile",
-      "title": "Latest version of ChatGPT aces bar exam with score nearing 90th percentile",
-      "domain": "abajournal.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The latest version of the artificial intelligence program ChatGPT has passed the Uniform Bar Examination"
+      "excerpt": "May 6, 2025 · It made headlines for passing the bar exam, at the time"
     }
   ],
-  "reasoning": "Empirical studies and reports (such as those by researchers evaluating GPT-4 on the Uniform Bar Examination) confirm that modern AI language models can pass the US bar exam with above-average scores, regularly exceeding the passing threshold and ranking in the top percentiles of human test-takers.",
+  "reasoning": "The claim is accurate. Research conducted in early 2023 by Katz, Bommarito, et al. demonstrated that OpenAI's GPT-4 passed the Uniform Bar Examination (UBE) with a score of 297, well above the passing threshold in all UBE jurisdictions (which ranges between 260 and 270) and placing it well above the average/median score of human test-takers (estimated around the 68th to 90th percentile depending on the test cohort). Subsequent evaluations of leading LLMs have consistently confirmed and exceeded these performance benchmarks.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -135,6 +135,12 @@
       "confidence": 95,
       "checked_at": "2026-08-18T06:10:09Z",
       "run_id": "run-2026-08-18T060828Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-08-26T06:12:00Z",
+      "run_id": "run-2026-08-26T061021Z"
     }
   ],
   "agent_flags": {

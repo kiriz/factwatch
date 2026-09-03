@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
-  "confidence": 90,
-  "last_checked_at": "2026-08-25T06:13:06Z",
+  "confidence": 85,
+  "last_checked_at": "2026-09-03T10:37:13Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-08-25T060946Z",
+  "run_id": "run-2026-09-03T103417Z",
   "sources": [
     {
       "url": "https://www.bbc.com/news/technology-65102150",
@@ -24,20 +24,12 @@
       "excerpt": "May 22, 2026 - But the full picture is more nuanced. Goldman Sachs estimates up"
     },
     {
-      "url": "https://www.apollotechnical.com/ai-replacing-jobs-statistics/",
-      "title": "43 AI Replacing Jobs Statistics You Should Know Right Now - Apollo Technical LLC",
-      "domain": "apollotechnical.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "July 19, 2026 - Job “churn,” meaning the combined total of roles created and destroyed,"
-    },
-    {
       "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
       "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
       "domain": "nexford.edu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "3 weeks ago - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
+      "excerpt": "1 month ago - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
     },
     {
       "url": "https://aibusiness.com/nlp/goldman-sachs-generative-ai-could-replace-300-million-jobs",
@@ -54,9 +46,17 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "May 8, 2026 - ... Generative AI has already made a huge impact on how"
+    },
+    {
+      "url": "https://www.winssolutions.org/jobs-ai-will-replace-challenge-opportunities/",
+      "title": "Jobs AI Will Replace in 2026: 48 Roles Most at Risk",
+      "domain": "winssolutions.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "July 20, 2026 - The potential job displacement due to AI is huge; a 2023"
     }
   ],
-  "reasoning": "The claim is misleading because it misrepresents the findings of the widely cited March 2023 Goldman Sachs economic report. The report estimated that generative AI could expose the equivalent of roughly 300 million full-time jobs worldwide to automation, not that 300 million jobs will definitely be replaced or eliminated. Furthermore, the report emphasized that for the majority of occupations, generative AI would complement rather than fully substitute human labor, while also creating new roles and boosting global economic productivity. Framing this projection as a definitive statement that 300 million jobs \"will be replaced\" oversimplifies and exaggerates the research.",
+  "reasoning": "The claim is based on a March 2023 Goldman Sachs economic report, but mischaracterizes its findings. The report estimated that generative AI could expose the equivalent of approximately 300 million full-time jobs to automation, rather than definitively predicting that 300 million jobs \"will be replaced.\" In labor economics, exposure to automation means tasks within those jobs could be automated, with the authors noting that for most affected occupations, AI is likely to complement rather than fully substitute human labor. Furthermore, the report emphasized that technological automation historically drives productivity growth and creates new jobs, making the assertion of an outright net elimination of 300 million jobs misleading.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -129,6 +129,12 @@
       "confidence": 90,
       "checked_at": "2026-08-18T06:09:23Z",
       "run_id": "run-2026-08-18T060828Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 90,
+      "checked_at": "2026-08-25T06:13:06Z",
+      "run_id": "run-2026-08-25T060946Z"
     }
   ],
   "agent_flags": {

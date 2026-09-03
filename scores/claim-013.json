@@ -3,10 +3,18 @@
   "claim_id": "claim-013",
   "verdict": "DISPUTED",
   "confidence": 85,
-  "last_checked_at": "2026-08-25T06:11:27Z",
+  "last_checked_at": "2026-09-03T10:36:34Z",
   "last_changed_at": "2026-06-09T23:45:22Z",
-  "run_id": "run-2026-08-25T060946Z",
+  "run_id": "run-2026-09-03T103417Z",
   "sources": [
+    {
+      "url": "https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed",
+      "title": "Is Social Media making our kids depressed? - Leiden Psychology Blog",
+      "domain": "leidenpsychologyblog.nl",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Social Media The use of smartphones and social media apps in teenagers has skyrocketed since"
+    },
     {
       "url": "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
       "title": "Social Media and Youth Mental Health | HHS.gov",
@@ -24,6 +32,14 @@
       "excerpt": "According to a research study of American teens ages 12-15, those who used social media"
     },
     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392374/",
+      "title": "Social media use and depression in adolescents: a scoping review - PMC",
+      "domain": "pmc.ncbi.nlm.nih.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Woods and Scott (2016) found that nighttime-specific SM use (in addition to overall use and"
+    },
+    {
       "url": "https://childmind.org/article/is-social-media-use-causing-depression/",
       "title": "Does Social Media Cause Depression in Kids? - Child Mind Institute",
       "domain": "childmind.org",
@@ -38,25 +54,9 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Being exposed to discrimination, hate or cyberbullying on social media also can raise the risk"
-    },
-    {
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10406047/",
-      "title": "Anxiety and depression amongst youth as adverse effects of using social media : A Review - PMC",
-      "domain": "pmc.ncbi.nlm.nih.gov",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Social media use has become widely popularized in modern society and because of that, human"
-    },
-    {
-      "url": "https://childmind.org/article/how-using-social-media-affects-teenagers/",
-      "title": "Effects of Social Media on Teenagers' Mental Health - Child Mind Institute",
-      "domain": "childmind.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "July 22, 2026 - Social media affects teenagers’ mental health negatively by limiting direct contact"
     }
   ],
-  "reasoning": "While numerous public health advisories and observational studies show a clear association between heavy social media use and increased symptoms of anxiety and depression among adolescents (as noted by HHS and Mayo Clinic), scientific consensus remains divided on direct causality. Major psychological reviews and meta-analyses (such as those by Orben, Przybylski, and the American Psychological Association) emphasize that most evidence demonstrates correlation rather than causation, with effect sizes often being modest and influenced by confounding factors such as pre-existing mental health vulnerabilities, sleep disruption, cyberbullying, and whether usage is active or passive. Consequently, the definitive claim that social media use directly *causes* depression and anxiety in teenagers is an ongoing subject of scientific debate.",
+  "reasoning": "While numerous studies and health advisories (such as from the U.S. Surgeon General) show a strong correlation between high levels of social media use and increased symptoms of depression and anxiety in adolescents, a definitive causal link remains heavily debated among researchers. Prominent scholars and systematic reviews emphasize that the majority of research is correlational rather than experimental, making it difficult to establish directionality—depressed or anxious teens may spend more time on social media rather than social media causing their symptoms. Additionally, researchers like Amy Orben and Andrew Przybylski argue that aggregate effect sizes across large datasets are relatively small and mediated by specific factors like sleep deprivation, cyberbullying, or passive versus active use, rather than screen time itself.",
   "verdict_history": [
     {
       "verdict": "DISPUTED",
@@ -129,6 +129,12 @@
       "confidence": 85,
       "checked_at": "2026-08-17T06:14:34Z",
       "run_id": "run-2026-08-17T061041Z"
+    },
+    {
+      "verdict": "DISPUTED",
+      "confidence": 85,
+      "checked_at": "2026-08-25T06:11:27Z",
+      "run_id": "run-2026-08-25T060946Z"
     }
   ],
   "agent_flags": {
