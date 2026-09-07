@@ -3,25 +3,25 @@
   "claim_id": "claim-009",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-08-31T06:21:55Z",
+  "last_checked_at": "2026-09-07T11:27:36Z",
   "last_changed_at": "2026-06-09T23:44:21Z",
-  "run_id": "run-2026-08-31T061730Z",
+  "run_id": "run-2026-09-07T112403Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Napoleon_complex",
-      "title": "Napoleon complex - Wikipedia",
-      "domain": "en.wikipedia.org",
+      "url": "https://historiacorner.com/people/was-napoleon-short/",
+      "title": "Was Napoleon Actually Short? The Myth Behind His Height",
+      "domain": "historiacorner.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "1 week ago - The Napoleon complex is named after Napoleon Bonaparte, the first emperor"
+      "excerpt": "Jun 11, 2026 · Napoleon Bonaparte was not actually short by the standards of his"
     },
     {
-      "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
-      "title": "Was Napoleon Bonaparte Really Short?",
-      "domain": "thoughtco.com",
+      "url": "https://history.howstuffworks.com/history-vs-myth/napoleon-short.htm",
+      "title": "How Tall Was Napoleon Bonaparte? Actually Pretty Average",
+      "domain": "history.howstuffworks.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 13, 2025 - It turns out that Napoleon Bonaparte wasn't particularly short at all."
+      "excerpt": "Aug 27, 2024 · There's just one problem: He wasn't really short. At the time"
     },
     {
       "url": "https://www.britannica.com/story/was-napoleon-short",
@@ -29,7 +29,15 @@
       "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "June 13, 2025 - Napoleon was thus average or taller, no matter the interpretation. Although"
+      "excerpt": "The rumor was rampant during his lifetime and persisted centuries after his death. In the"
+    },
+    {
+      "url": "https://www.historyrundown.com/was-napoleon-bonaparte-really-so-short/",
+      "title": "Was Napoleon Bonaparte Really So Short? - History Rundown",
+      "domain": "historyrundown.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Mar 7, 2020 · We often imagine Napoleon Bonaparte as an unusually short man, even"
     },
     {
       "url": "https://www.history.com/articles/napoleon-complex-short",
@@ -37,26 +45,18 @@
       "domain": "history.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "According to pre–metric system French measures, he was a diminutive 5′2.” But the French inch"
+      "excerpt": "Nov 13, 2019 · But was Napoleon really short? In fact, he was probably of"
     },
     {
-      "url": "https://www.factinate.com/people/everyone-seems-think-napoleon-was-short-yet-he-was-actually-taller-average-frenchman-his-time",
-      "title": "Everyone Seems To Think Napoleon Was Short, Yet He Was Actually Taller Than The Average Frenchman Of His Time",
-      "domain": "factinate.com",
+      "url": "https://www.nationalgeographic.com/history/article/napoleon-complex-height-discrimination-men-history",
+      "title": "Was Napoleon even short? Inside the history of discrimination ...",
+      "domain": "nationalgeographic.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "November 25, 2025 - ... After Napoleon’s passing in Saint Helena, his medical team performed"
-    },
-    {
-      "url": "https://wondereo.com/napoleon-height-myth/",
-      "title": "Napoleon Wasn’t Short—Here’s How the Myth Started and Spread - wondereo.com",
-      "domain": "wondereo.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "December 29, 2025 - Napoleon wasn't short—he was actually average height for his time at"
+      "excerpt": "Nov 22, 2023 · He was a French dictator—the original short king. Napoleon's supposedly short"
     }
   ],
-  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a well-documented historical myth. Following his death, his autopsy recorded his height as 5 feet 2 inches (\"5 pieds 2 pouces\") in pre-metric French units. However, French inches (*pouces*) were longer than English/Imperial inches (approximately 2.7 cm versus 2.54 cm). Converted to modern Imperial measurements, Napoleon was approximately 5 feet 6 inches to 5 feet 7 inches (around 168–170 cm) tall, which was average or slightly above average for a French male in the early 19th century. The misconception of him being unusually short stemmed from conversion errors and British wartime propaganda (such as caricatures by James Gillray).",
+  "reasoning": "The claim that Napoleon Bonaparte was unusually short and stood around 5 feet 2 inches tall is a widespread historical myth. At his death, Napoleon was recorded as measuring 5 feet 2 inches in pre-metric French units (pieds and pouces). Because French inches were longer than British inches (each French inch being about 2.71 cm compared to the British inch of 2.54 cm), his actual height was approximately 5 feet 6 inches to 5 feet 7 inches (roughly 168–170 cm). For an early 19th-century French male, this was average or even slightly above average height. The enduring perception of him being miniature stems from unit conversion confusion and British wartime propaganda (such as caricatures by James Gillray).",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -135,6 +135,12 @@
       "confidence": 95,
       "checked_at": "2026-08-24T06:16:04Z",
       "run_id": "run-2026-08-24T061324Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-08-31T06:21:55Z",
+      "run_id": "run-2026-08-31T061730Z"
     }
   ],
   "agent_flags": {

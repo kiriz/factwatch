@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-003",
   "verdict": "FALSE",
-  "confidence": 98,
-  "last_checked_at": "2026-08-31T06:20:28Z",
+  "confidence": 99,
+  "last_checked_at": "2026-09-07T11:26:45Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-08-31T061730Z",
+  "run_id": "run-2026-09-07T112403Z",
   "sources": [
     {
       "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
@@ -29,15 +29,15 @@
       "domain": "scientificamerican.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "3 weeks ago - In its retraction notice, the BMJ stated that Mostert’s proposed edits"
+      "excerpt": "1 month ago - The Princess Máxima Center’s report detailing its own findings “concluded ..."
     },
     {
-      "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
-      "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
-      "domain": "respectfulinsolence.com",
+      "url": "https://my.clevelandclinic.org/health/treatments/21898-mrna-vaccines",
+      "title": "mRNA Vaccines: What They Are & How They Work",
+      "domain": "my.clevelandclinic.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently"
+      "excerpt": "February 11, 2026 - The only mRNA vaccines currently available are to protect against COVID-19."
     },
     {
       "url": "https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/",
@@ -48,15 +48,15 @@
       "excerpt": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents"
     },
     {
-      "url": "https://dfrlab.org/2022/02/08/tracing-the-myth-that-covid-19-vaccines-alter-human-dna/",
-      "title": "Tracing the myth that COVID-19 vaccines alter human DNA - DFRLab",
-      "domain": "dfrlab.org",
+      "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
+      "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
+      "domain": "respectfulinsolence.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "November 16, 2022 - At least 46 of the false narratives debunked by the fact-checking"
+      "excerpt": "March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently"
     }
   ],
-  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is biologically false and widely debunked by major scientific and public health organizations (including the CDC, WHO, and NIH). The mRNA from these vaccines instructs cells in the cytoplasm to produce the spike protein; it never enters the nucleus where genomic DNA is stored, nor can it integrate into the human genome, as human cells do not possess the necessary reverse transcriptase enzymes for such integration. The mRNA breaks down harmlessly shortly after delivery.",
+  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false. According to global health agencies (including the CDC, WHO, and NIH) and molecular biology consensus, mRNA from the vaccines delivers instructions to the cytoplasm of host cells to synthesize the harmless viral spike protein, triggering an immune response. The mRNA never enters the cell nucleus, where human DNA resides, and the body rapidly breaks down and eliminates the mRNA within days. Furthermore, human cells lack the biochemical mechanisms (such as reverse transcriptase and integrase) required to convert mRNA into DNA and integrate it into the human genome.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -141,6 +141,12 @@
       "confidence": 98,
       "checked_at": "2026-08-24T06:14:39Z",
       "run_id": "run-2026-08-24T061324Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 98,
+      "checked_at": "2026-08-31T06:20:28Z",
+      "run_id": "run-2026-08-31T061730Z"
     }
   ],
   "agent_flags": {
