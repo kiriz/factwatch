@@ -3,9 +3,9 @@
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
   "confidence": 85,
-  "last_checked_at": "2026-09-03T10:37:13Z",
+  "last_checked_at": "2026-09-11T10:42:49Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-09-03T103417Z",
+  "run_id": "run-2026-09-11T102916Z",
   "sources": [
     {
       "url": "https://www.bbc.com/news/technology-65102150",
@@ -29,7 +29,7 @@
       "domain": "nexford.edu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "1 month ago - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
+      "excerpt": "August 6, 2026 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time"
     },
     {
       "url": "https://aibusiness.com/nlp/goldman-sachs-generative-ai-could-replace-300-million-jobs",
@@ -48,15 +48,15 @@
       "excerpt": "May 8, 2026 - ... Generative AI has already made a huge impact on how"
     },
     {
-      "url": "https://www.winssolutions.org/jobs-ai-will-replace-challenge-opportunities/",
-      "title": "Jobs AI Will Replace in 2026: 48 Roles Most at Risk",
-      "domain": "winssolutions.org",
+      "url": "https://www.businessinsider.com/ai-radically-reshape-job-market-global-economy-employee-labor-innovation-2023-8",
+      "title": "AI Will Radically Reshape Job Market, Global Economy, Employee Productivity - Business Insider",
+      "domain": "businessinsider.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "July 20, 2026 - The potential job displacement due to AI is huge; a 2023"
+      "excerpt": "August 14, 2023 - AI is a tsunami about to upend the global economy, throwing"
     }
   ],
-  "reasoning": "The claim is based on a March 2023 Goldman Sachs economic report, but mischaracterizes its findings. The report estimated that generative AI could expose the equivalent of approximately 300 million full-time jobs to automation, rather than definitively predicting that 300 million jobs \"will be replaced.\" In labor economics, exposure to automation means tasks within those jobs could be automated, with the authors noting that for most affected occupations, AI is likely to complement rather than fully substitute human labor. Furthermore, the report emphasized that technological automation historically drives productivity growth and creates new jobs, making the assertion of an outright net elimination of 300 million jobs misleading.",
+  "reasoning": "The claim overstates and mischaracterizes the findings of a widely cited March 2023 Goldman Sachs report. The report estimated that generative AI could expose the equivalent of approximately 300 million full-time jobs to automation globally, rather than definitively predicting that 300 million workers will be laid off or replaced. Crucially, the authors distinguished between tasks being automated and entire jobs being eliminated, noting that most occupations would be complemented rather than substituted by AI. Additionally, the study noted that technological disruption historically drives new job creation and estimated a significant boost to global GDP over time. Framing this projection as a definitive forecast that AI \"will replace 300 million jobs\" ignores these essential economic nuances.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -135,6 +135,12 @@
       "confidence": 90,
       "checked_at": "2026-08-25T06:13:06Z",
       "run_id": "run-2026-08-25T060946Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 85,
+      "checked_at": "2026-09-03T10:37:13Z",
+      "run_id": "run-2026-09-03T103417Z"
     }
   ],
   "agent_flags": {

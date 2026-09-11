@@ -3,9 +3,9 @@
   "claim_id": "claim-013",
   "verdict": "DISPUTED",
   "confidence": 85,
-  "last_checked_at": "2026-09-03T10:36:34Z",
+  "last_checked_at": "2026-09-11T10:39:31Z",
   "last_changed_at": "2026-06-09T23:45:22Z",
-  "run_id": "run-2026-09-03T103417Z",
+  "run_id": "run-2026-09-11T102916Z",
   "sources": [
     {
       "url": "https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed",
@@ -56,7 +56,7 @@
       "excerpt": "Being exposed to discrimination, hate or cyberbullying on social media also can raise the risk"
     }
   ],
-  "reasoning": "While numerous studies and health advisories (such as from the U.S. Surgeon General) show a strong correlation between high levels of social media use and increased symptoms of depression and anxiety in adolescents, a definitive causal link remains heavily debated among researchers. Prominent scholars and systematic reviews emphasize that the majority of research is correlational rather than experimental, making it difficult to establish directionality—depressed or anxious teens may spend more time on social media rather than social media causing their symptoms. Additionally, researchers like Amy Orben and Andrew Przybylski argue that aggregate effect sizes across large datasets are relatively small and mediated by specific factors like sleep deprivation, cyberbullying, or passive versus active use, rather than screen time itself.",
+  "reasoning": "Whether social media use directly *causes* depression and anxiety in adolescents is a subject of significant scientific debate. While numerous studies, public health advisories (such as the U.S. Surgeon General's Advisory), and organizations like the Mayo Clinic and Child Mind Institute document strong correlations and elevated risks of depressive and anxiety symptoms among heavy users, establishing a direct causal relationship remains controversial. Prominent researchers (such as Amy Orben and Andrew Przybylski) have found that the overall association across large datasets has very small effect sizes and that evidence for direct causation is weak, suggesting that reverse causality (teens who are already depressed or anxious turning to social media) or confounding variables (such as sleep disruption, cyberbullying, or pre-existing mental health issues) often explain the link. Conversely, other researchers (such as Jonathan Haidt and Jean Twenge) argue that experimental and longitudinal data demonstrate a causal role. Because the scientific community remains divided on causality versus correlation, the blanket claim of causation is disputed.",
   "verdict_history": [
     {
       "verdict": "DISPUTED",
@@ -135,6 +135,12 @@
       "confidence": 85,
       "checked_at": "2026-08-25T06:11:27Z",
       "run_id": "run-2026-08-25T060946Z"
+    },
+    {
+      "verdict": "DISPUTED",
+      "confidence": 85,
+      "checked_at": "2026-09-03T10:36:34Z",
+      "run_id": "run-2026-09-03T103417Z"
     }
   ],
   "agent_flags": {

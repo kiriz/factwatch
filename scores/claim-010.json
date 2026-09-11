@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-010",
   "verdict": "TRUE",
-  "confidence": 92,
-  "last_checked_at": "2026-09-03T10:35:17Z",
+  "confidence": 95,
+  "last_checked_at": "2026-09-11T10:33:46Z",
   "last_changed_at": "2026-06-09T23:44:37Z",
-  "run_id": "run-2026-09-03T103417Z",
+  "run_id": "run-2026-09-11T102916Z",
   "sources": [
     {
       "url": "https://www.bbc.com/news/technology-56012952",
@@ -40,23 +40,23 @@
       "excerpt": "November 16, 2023 - For instance: Argentina: With an estimated energy consumption of 127 TWh"
     },
     {
-      "url": "https://solartechonline.com/blog/bitcoin-electricity-consumption-mining-2025/",
-      "title": "How Much Electricity Does Bitcoin Mining Use? 2025 Analysis",
-      "domain": "solartechonline.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "September 19, 2025 - Bitcoin mining consumes an astounding amount of electricity – equivalent to"
-    },
-    {
       "url": "https://www.cashmatters.org/blog/bitcoin-consumes-as-much-electricity-as-argentinacash-is-the-sustainable-alternative",
       "title": "Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative",
       "domain": "cashmatters.org",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "September 17, 2025 - The IMF highlights Bitcoin’s electricity use equalling Argentina’s annual consumption, exposing"
+    },
+    {
+      "url": "https://solartechonline.com/blog/bitcoin-electricity-consumption-mining-2025/",
+      "title": "How Much Electricity Does Bitcoin Mining Use? 2025 Analysis",
+      "domain": "solartechonline.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "September 19, 2025 - Bitcoin mining consumes an astounding amount of electricity – equivalent to"
     }
   ],
-  "reasoning": "Data from the Cambridge Centre for Alternative Finance (CCAF) and analyses highlighted by institutions such as the IMF confirm that Bitcoin's annualized electricity consumption (typically estimated between 120 and 150+ TWh) meets or exceeds the total annual electricity consumption of countries like Argentina (roughly 121–130 TWh). Multiple independent analyses and reports have corroborated this benchmark comparison.",
+  "reasoning": "According to research from the Cambridge Centre for Alternative Finance (CCAF) and reporting by major outlets including the BBC, Bitcoin's annualized electricity consumption has repeatedly been estimated to exceed or equal that of Argentina (approximately 121–130 TWh per year). Similar comparisons have also been highlighted by organizations such as the International Monetary Fund (IMF).",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -135,6 +135,12 @@
       "confidence": 95,
       "checked_at": "2026-08-25T06:10:40Z",
       "run_id": "run-2026-08-25T060946Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 92,
+      "checked_at": "2026-09-03T10:35:17Z",
+      "run_id": "run-2026-09-03T103417Z"
     }
   ],
   "agent_flags": {

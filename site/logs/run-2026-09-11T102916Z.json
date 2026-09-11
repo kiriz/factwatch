@@ -1,0 +1,611 @@
+{
+  "run_id": "run-2026-09-11T102916Z",
+  "started_at": "2026-09-11T10:29:16Z",
+  "finished_at": "2026-09-11T10:50:18Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to research from the Cambridge Centre for Alternative Finance (CCAF) and reporting by major outlets including the BBC, Bitcoin's annualized electricity consumption has repeatedly been estimated to exceed or equal that of Argentina (approximately 121–130 TWh per year)",
+        "Similar comparisons have also been highlighted by organizations such as the International Monetary Fund (IMF)."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\\\"\",\n  \"verification_notes\": \"Check the Cambridge CBECI for current figures. Compare to IEA national electricity consumption data. Verify whether the comparison holds with current mining conditions. Note whether the claim refers to TWh/year.\",\n  \"search_results\": \"[1] Bitcoin consumes 'more electricity than Argentina'\\nURL: https://www.bbc.com/news/technology-56012952\\nExcerpt: Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \\\"Mining\\\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions. Published: February 10, 2021\\n\\n[2] Bitcoin consumption beats Argentina's annual energy use\\nURL: https://www.aa.com.tr/en/energy/finance/bitcoin-consumption-beats-argentinas-annual-energy-use/31867\\nExcerpt: The data from the Cambridge Center for Alternative Finance shows that Bitcoin’s electricity consumption of 121.05 terawatt-hours (TWh) surpasses that of Argentina at 121 TWh and the United Arab Emirates at 113.20 TWh, and it close to that ...\\n\\n[3] Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative – ICA\\nURL: https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/\\nExcerpt: Bitcoin consumes as much electricity as an entire country—Argentina. That striking fact, highlighted by the International Monetary Fund (IMF), should give every policymaker pause. While the digital payment world is celebrated as convenient and cutting-edge, it carries a hidden and massive ...\\n\\n[4] The Global Disparity in Bitcoin's Electricity Consumption: Data Insights\\nURL: https://www.linkedin.com/pulse/global-disparity-bitcoins-electricity-consumption-data-hassani-auc7e\\nExcerpt: November 16, 2023 - For instance: Argentina: With an estimated energy consumption of 127 TWh in recent years, Bitcoin’s energy usage surpasses that of Argentina, highlighting the immense scale of its power requirements.\\n\\n[5] Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative\\nURL: https://www.cashmatters.org/blog/bitcoin-consumes-as-much-electricity-as-argentinacash-is-the-sustainable-alternative\\nExcerpt: September 17, 2025 - The IMF highlights Bitcoin’s electricity use equalling Argentina’s annual consumption, exposing the hidden climate cost of digital payments. Unlike energy-hungry crypto and servers, cash operates with minimal impact, ensuring resilience, inclusion, and sustainability in global p\\n\\n[6] How Much Electricity Does Bitcoin Mining Use? 2025 Analysis\\nURL: https://solartechonline.com/blog/bitcoin-electricity-consumption-mining-2025/\\nExcerpt: September 19, 2025 - Bitcoin mining consumes an astounding amount of electricity – equivalent to the entire annual consumption of countries like Poland or Argentina.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to research from the Cambridge Centre for Alternative Finance (CCAF) and reporting by major outlets including the BBC, Bitcoin's annualized electricity consumption has repeatedly been estimated to exceed or equal that of Argentina (approximately 121–130 TWh per year). Similar comparisons have also been highlighted by organizations such as the International Monetary Fund (IMF).\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+        "Bitcoin uses more electricity than Argentina",
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-56012952",
+          "title": "Bitcoin consumes 'more electricity than Argentina'",
+          "snippet": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \"Mining\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions. Published: February 10, 2021"
+        },
+        {
+          "url": "https://www.aa.com.tr/en/energy/finance/bitcoin-consumption-beats-argentinas-annual-energy-use/31867",
+          "title": "Bitcoin consumption beats Argentina's annual energy use",
+          "snippet": "The data from the Cambridge Center for Alternative Finance shows that Bitcoin’s electricity consumption of 121.05 terawatt-hours (TWh) surpasses that of Argentina at 121 TWh and the United Arab Emirates at 113.20 TWh, and it close to that ..."
+        },
+        {
+          "url": "https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/",
+          "title": "Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative – ICA",
+          "snippet": "Bitcoin consumes as much electricity as an entire country—Argentina. That striking fact, highlighted by the International Monetary Fund (IMF), should give every policymaker pause. While the digital payment world is celebrated as convenient and cutting-edge, it carries a hidden and massive ..."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/global-disparity-bitcoins-electricity-consumption-data-hassani-auc7e",
+          "title": "The Global Disparity in Bitcoin's Electricity Consumption: Data Insights",
+          "snippet": "November 16, 2023 - For instance: Argentina: With an estimated energy consumption of 127 TWh in recent years, Bitcoin’s energy usage surpasses that of Argentina, highlighting the immense scale of its power requirements."
+        },
+        {
+          "url": "https://www.cashmatters.org/blog/bitcoin-consumes-as-much-electricity-as-argentinacash-is-the-sustainable-alternative",
+          "title": "Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative",
+          "snippet": "September 17, 2025 - The IMF highlights Bitcoin’s electricity use equalling Argentina’s annual consumption, exposing the hidden climate cost of digital payments. Unlike energy-hungry crypto and servers, cash operates with minimal impact, ensuring resilience, inclusion, and sustainability in global payment systems."
+        },
+        {
+          "url": "https://solartechonline.com/blog/bitcoin-electricity-consumption-mining-2025/",
+          "title": "How Much Electricity Does Bitcoin Mining Use? 2025 Analysis",
+          "snippet": "September 19, 2025 - Bitcoin mining consumes an astounding amount of electricity – equivalent to the entire annual consumption of countries like Poland or Argentina."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-011",
+      "claim_title": "MSG causes headaches — 'Chinese restaurant syndrome'",
+      "claim_text": "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Extensive scientific research and double-blind, placebo-controlled studies have failed to establish a causal link between monosodium glutamate (MSG) and the cluster of symptoms historically dubbed \"Chinese restaurant syndrome\" (such as headaches, numbness, and flushing)",
+        "The concept originated from an anecdotal letter published in the New England Journal of Medicine in 1968 rather than rigorous clinical trials",
+        "Major food safety and health organizations, including the U.S",
+        "Food and Drug Administration (FDA) and the World Health Organization (WHO), classify MSG as \"generally recognized as safe\" (GRAS), noting that the human body metabolizes added glutamate identically to naturally occurring glutamate found in foods like tomatoes and parmesan cheese",
+        "While a tiny subset of individuals may have mild, transient sensitivity to unusually large doses consumed without food, there is no consistent evidence that typical dietary MSG consumption causes these symptoms."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\\\"\",\n  \"verification_notes\": \"Check FDA classification of MSG (GRAS status). Look for double-blind studies on MSG sensitivity. Verify whether glutamate in MSG differs from glutamate naturally present in tomatoes, cheese, and mushrooms. Check the original 1968 NEJM letter and subsequent research.\",\n  \"search_results\": \"[1] MSG symptom complex: MedlinePlus Medical Encyclopedia\\nURL: https://medlineplus.gov/ency/article/001126.htm\\nExcerpt: MSG symptom complex is a set of symptoms associated with eating food with the additive monosodium glutamate (MSG). MSG is the sodium salt of a common amino acid, glutamic acid. MSG is found naturally in\\n\\n[2] Monosodium Glutamate (MSG) Symptom Complex (Chinese Restaurant Syndrome): Nightmare of Chinese Food Lovers! - PubMed\\nURL: https://pubmed.ncbi.nlm.nih.gov/37355848/\\nExcerpt: The spectrum of symptoms ranges from headache, sweating, abdominal pain, and urticaria to angioedema in severe cases. This group of symptoms is known as MSG symptom complex or Chinese restaurant syndrome (CRS).\\n\\n[3] A review of the alleged health hazards of monosodium glutamate - PMC\\nURL: https://pmc.ncbi.nlm.nih.gov/articles/PMC6952072/\\nExcerpt: The “Chinese restaurant syndrome” ... (Freeman, 2006), consists of a series of symptoms such as weakness, flushing, dizziness, headache, difficulty in breathing, numbness, muscle tightness, and even syncope (Freeman, 2006; Niaz, Zaplatic, & Spoor, 2018; Walker, 1999; Williams ...\\n\\n[4] The Rotten Science Behind the MSG Scare | Science History Institute\\nURL: https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/\\nExcerpt: February 19, 2026 - The symptoms catalogued in the letters included fainting, back spasms, sweating, dizziness, flushed skin, and a numb jaw. Puzzlingly, though, no two letter writers listed the same symptoms.\\n\\n[5] Medical Definition of Chinese restaurant syndrome\\nURL: https://www.rxlist.com/chinese_restaurant_syndrome/definition.htm\\nExcerpt: March 29, 2021 - Chinese restaurant syndrome: A syndrome first described in 1968 in people who had eaten Chinese food on which MSG (monosodium glutamate) had been lavished. The syndrome only seems to occur in some people.\\n\\n[6] Reconsidering the effects of monosodium glutamate: a literature review - PubMed\\nURL: https://pubmed.ncbi.nlm.nih.gov/16999713/\\nExcerpt: Implications for practice: Despite a widespread belief that MSG can elicit a headache, among other symptoms, there are no consistent clinical data to support this claim. Findings from the literature indicate that there is no consistent evidence ...\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"Extensive scientific research and double-blind, placebo-controlled studies have failed to establish a causal link between monosodium glutamate (MSG) and the cluster of symptoms historically dubbed \\\"Chinese restaurant syndrome\\\" (such as headaches, numbness, and flushing). The concept originated from an anecdotal letter published in the New England Journal of Medicine in 1968 rather than rigorous clinical trials. Major food safety and health organizations, including the U.S. Food and Drug Administration (FDA) and the World Health Organization (WHO), classify MSG as \\\"generally recognized as safe\\\" (GRAS), noting that the human body metabolizes added glutamate identically to naturally occurring glutamate found in foods like tomatoes and parmesan cheese. While a tiny subset of individuals may have mild, transient sensitivity to unusually large doses consumed without food, there is no consistent evidence that typical dietary MSG consumption causes these symptoms.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+        "MSG causes headaches — 'Chinese restaurant syndrome'",
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://medlineplus.gov/ency/article/001126.htm",
+          "title": "MSG symptom complex: MedlinePlus Medical Encyclopedia",
+          "snippet": "MSG symptom complex is a set of symptoms associated with eating food with the additive monosodium glutamate (MSG). MSG is the sodium salt of a common amino acid, glutamic acid. MSG is found naturally in"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37355848/",
+          "title": "Monosodium Glutamate (MSG) Symptom Complex (Chinese Restaurant Syndrome): Nightmare of Chinese Food Lovers! - PubMed",
+          "snippet": "The spectrum of symptoms ranges from headache, sweating, abdominal pain, and urticaria to angioedema in severe cases. This group of symptoms is known as MSG symptom complex or Chinese restaurant syndrome (CRS)."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6952072/",
+          "title": "A review of the alleged health hazards of monosodium glutamate - PMC",
+          "snippet": "The “Chinese restaurant syndrome” ... (Freeman, 2006), consists of a series of symptoms such as weakness, flushing, dizziness, headache, difficulty in breathing, numbness, muscle tightness, and even syncope (Freeman, 2006; Niaz, Zaplatic, & Spoor, 2018; Walker, 1999; Williams ..."
+        },
+        {
+          "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
+          "title": "The Rotten Science Behind the MSG Scare | Science History Institute",
+          "snippet": "February 19, 2026 - The symptoms catalogued in the letters included fainting, back spasms, sweating, dizziness, flushed skin, and a numb jaw. Puzzlingly, though, no two letter writers listed the same symptoms."
+        },
+        {
+          "url": "https://www.rxlist.com/chinese_restaurant_syndrome/definition.htm",
+          "title": "Medical Definition of Chinese restaurant syndrome",
+          "snippet": "March 29, 2021 - Chinese restaurant syndrome: A syndrome first described in 1968 in people who had eaten Chinese food on which MSG (monosodium glutamate) had been lavished. The syndrome only seems to occur in some people."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16999713/",
+          "title": "Reconsidering the effects of monosodium glutamate: a literature review - PubMed",
+          "snippet": "Implications for practice: Despite a widespread belief that MSG can elicit a headache, among other symptoms, there are no consistent clinical data to support this claim. Findings from the literature indicate that there is no consistent evidence ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-013",
+      "claim_title": "Social media causes depression in teenagers",
+      "claim_text": "\"Social media use causes depression and anxiety in teenagers.\"",
+      "category": "health",
+      "verdict": "DISPUTED",
+      "confidence": 85,
+      "verdict_changed": false,
+      "previous_verdict": "DISPUTED",
+      "new_verdict": "DISPUTED",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": true,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Whether social media use directly *causes* depression and anxiety in adolescents is a subject of significant scientific debate",
+        "While numerous studies, public health advisories (such as the U.S",
+        "Surgeon General's Advisory), and organizations like the Mayo Clinic and Child Mind Institute document strong correlations and elevated risks of depressive and anxiety symptoms among heavy users, establishing a direct causal relationship remains controversial",
+        "Prominent researchers (such as Amy Orben and Andrew Przybylski) have found that the overall association across large datasets has very small effect sizes and that evidence for direct causation is weak, suggesting that reverse causality (teens who are already depressed or anxious turning to social media) or confounding variables (such as sleep disruption, cyberbullying, or pre-existing mental health issues) often explain the link",
+        "Conversely, other researchers (such as Jonathan Haidt and Jean Twenge) argue that experimental and longitudinal data demonstrate a causal role",
+        "Because the scientific community remains divided on causality versus correlation, the blanket claim of causation is disputed."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Social media use causes depression and anxiety in teenagers.\\\"\",\n  \"verification_notes\": \"Look for meta-analyses and systematic reviews. Check both Haidt's research and critics like Orben/Przybylski. Verify whether studies show correlation vs causation. Check whether effect sizes are practically significant. Note the difference between passive consumption and active engagement.\",\n  \"search_results\": \"[1] Is Social Media making our kids depressed? - Leiden Psychology Blog\\nURL: https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed\\nExcerpt: Social Media The use of smartphones and social media apps in teenagers has skyrocketed since 2010. Could there be a connection? A study in 2016 looked into the odds of having depression and anxiety for young adults who use social media.\\n\\n[2] Social Media and Youth Mental Health | HHS.gov\\nURL: https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html\\nExcerpt: February 19, 2025 - Children and adolescents who spend more than 3 hours a day on social media face double the risk of mental health problems including experiencing symptoms of depression and anxiety.3 This is concerning as a recent survey showed that teenagers ...\\n\\n[3] How Social Media Affects Your Teen’s Mental Health: A Parent’s Guide | News | Yale Medicine\\nURL: https://www.yalemedicine.org/news/social-media-teen-mental-health-a-parents-guide\\nExcerpt: According to a research study of American teens ages 12-15, those who used social media over three hours each day faced twice the risk of having negative mental health outcomes, including depression and anxiety symptoms.\\n\\n[4] Social media use and depression in adolescents: a scoping review - PMC\\nURL: https://pmc.ncbi.nlm.nih.gov/articles/PMC7392374/\\nExcerpt: Woods and Scott (2016) found that nighttime-specific SM use (in addition to overall use and emotional investment in SM) was associated with poorer sleep quality, anxiety and depressive symptoms. Finally, problematic SM use mediated the association between depressive symptoms and cyberbullying ...\\n\\n[5] Does Social Media Cause Depression in Kids? - Child Mind Institute\\nURL: https://childmind.org/article/is-social-media-use-causing-depression/\\nExcerpt: May 6, 2026 - Evidence is mounting that there is a link between social media and depression. In a review of over 100 studies involving children, adolescents, and teens, social media use was associated with higher rates of depression and anxiety.\\n\\n[6] Teens and social media use: What's the impact? - Mayo Clinic\\nURL: https://www.mayoclinic.org/healthy-lifestyle/tween-and-teen-health/in-depth/teens-and-social-media-use/art-20474437\\nExcerpt: Being exposed to discrimination, hate or cyberbullying on social media also can raise the risk of anxiety or depression. What teens share about themselves on social media also matters.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"DISPUTED\",\n  \"confidence\": 85,\n  \"reasoning\": \"Whether social media use directly *causes* depression and anxiety in adolescents is a subject of significant scientific debate. While numerous studies, public health advisories (such as the U.S. Surgeon General's Advisory), and organizations like the Mayo Clinic and Child Mind Institute document strong correlations and elevated risks of depressive and anxiety symptoms among heavy users, establishing a direct causal relationship remains controversial. Prominent researchers (such as Amy Orben and Andrew Przybylski) have found that the overall association across large datasets has very small effect sizes and that evidence for direct causation is weak, suggesting that reverse causality (teens who are already depressed or anxious turning to social media) or confounding variables (such as sleep disruption, cyberbullying, or pre-existing mental health issues) often explain the link. Conversely, other researchers (such as Jonathan Haidt and Jean Twenge) argue that experimental and longitudinal data demonstrate a causal role. Because the scientific community remains divided on causality versus correlation, the blanket claim of causation is disputed.\",\n  \"conflicting_sources\": true,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Social media use causes depression and anxiety in teenagers.\"",
+        "Social media causes depression in teenagers",
+        "\"Social media use causes depression and anxiety in teenagers.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed",
+          "title": "Is Social Media making our kids depressed? - Leiden Psychology Blog",
+          "snippet": "Social Media The use of smartphones and social media apps in teenagers has skyrocketed since 2010. Could there be a connection? A study in 2016 looked into the odds of having depression and anxiety for young adults who use social media."
+        },
+        {
+          "url": "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+          "title": "Social Media and Youth Mental Health | HHS.gov",
+          "snippet": "February 19, 2025 - Children and adolescents who spend more than 3 hours a day on social media face double the risk of mental health problems including experiencing symptoms of depression and anxiety.3 This is concerning as a recent survey showed that teenagers ..."
+        },
+        {
+          "url": "https://www.yalemedicine.org/news/social-media-teen-mental-health-a-parents-guide",
+          "title": "How Social Media Affects Your Teen’s Mental Health: A Parent’s Guide | News | Yale Medicine",
+          "snippet": "According to a research study of American teens ages 12-15, those who used social media over three hours each day faced twice the risk of having negative mental health outcomes, including depression and anxiety symptoms."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7392374/",
+          "title": "Social media use and depression in adolescents: a scoping review - PMC",
+          "snippet": "Woods and Scott (2016) found that nighttime-specific SM use (in addition to overall use and emotional investment in SM) was associated with poorer sleep quality, anxiety and depressive symptoms. Finally, problematic SM use mediated the association between depressive symptoms and cyberbullying ..."
+        },
+        {
+          "url": "https://childmind.org/article/is-social-media-use-causing-depression/",
+          "title": "Does Social Media Cause Depression in Kids? - Child Mind Institute",
+          "snippet": "May 6, 2026 - Evidence is mounting that there is a link between social media and depression. In a review of over 100 studies involving children, adolescents, and teens, social media use was associated with higher rates of depression and anxiety."
+        },
+        {
+          "url": "https://www.mayoclinic.org/healthy-lifestyle/tween-and-teen-health/in-depth/teens-and-social-media-use/art-20474437",
+          "title": "Teens and social media use: What's the impact? - Mayo Clinic",
+          "snippet": "Being exposed to discrimination, hate or cyberbullying on social media also can raise the risk of anxiety or depression. What teens share about themselves on social media also matters."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-015",
+      "claim_title": "AlphaGo defeated the world Go champion in 2016",
+      "claim_text": "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "In March 2016, Google DeepMind's artificial intelligence program AlphaGo played a five-game match against South Korean Go grandmaster Lee Sedol, winning 4 games to 1",
+        "Lee Sedol, winner of 18 international titles, was widely celebrated as the preeminent Go player of his era",
+        "Prior to the match, AI experts and researchers broadly believed that defeating a top human Go master was roughly a decade away, making AlphaGo's victory a milestone that arrived approximately ten years ahead of expectations."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\\\"\",\n  \"verification_notes\": \"Verify the match result and date (March 2016). Check pre-match expert predictions. Verify Lee Sedol's world ranking at the time. Look at how AlphaGo's approach (Monte Carlo tree search + deep learning) differed from prior game AI. Note: AlphaZero later surpassed AlphaGo.\",\n  \"search_results\": \"[1] AlphaGo versus Lee Sedol - Wikipedia\\nURL: https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol\\nExcerpt: 4 days ago - Before AlphaGo, some researchers ... never defeat top humans at Go. Elon Musk, an early investor of DeepMind, said in 2016 that experts in the field thought AI was 10 years away from achieving a victory against a top professional Go player. The match AlphaGo versus Lee Sedol is comparab\\n\\n[2] AlphaGo — Google DeepMind\\nURL: https://deepmind.google/research/alphago/\\nExcerpt: AlphaGo then competed against legendary Go player Lee Sedol — winner of 18 world titles, and widely considered the greatest player of that decade. AlphaGo's 4-1 victory in Seoul, South Korea, in March 2016 was watched by over 200 million people ...\\n\\n[3] AlphaGo’s ultimate challenge: a five-game match against the legendary Lee Sedol\\nURL: https://blog.google/innovation-and-ai/products/alphagos-ultimate-challenge/\\nExcerpt: January 7, 2026 - This concludes the 5 game match between AlphaGo and Lee Sedol, with AlphaGo winning the match 4 games to 1 against the best Go player of the last decade, achieving a major milestone for artificial intelligence a decade earlier than many predicted.\\n\\n[4] AlphaGo Defeats Lee Sedol (2016) | AI Timeline\\nURL: https://aitimeline.world/timeline/alphago-2016\\nExcerpt: June 20, 2026 - DeepMind's AlphaGo defeated Lee Sedol, one of the greatest Go players ever, 4-1 in a five-game match in Seoul. Go has more possible positions than atoms in the universe — brute force was impossible.\\n\\n[5] AlphaGo seals 4-1 victory over Go grandmaster Lee Sedol | AI (artificial intelligence) | The Guardian\\nURL: https://www.theguardian.com/technology/2016/mar/15/googles-alphago-seals-4-1-victory-over-grandmaster-lee-sedol\\nExcerpt: November 29, 2017 - Google DeepMind’s AlphaGo program triumphed in its final game against South Korean Go grandmaster Lee Sedol to win the series 4-1, providing further evidence of the landmark achievement for an artificial intelligence program.\\n\\n[6] Google’s Computer Program Beats Lee Se-dol in Go Tournament - The New York Times\\nURL: https://www.nytimes.com/2016/03/16/world/asia/korea-alphago-vs-lee-sedol-go.html\\nExcerpt: March 15, 2016 - The program AlphaGo’s 4-1 victory was a historic stride for computer programmers and artificial intelligence researchers trying to create software that can outwit humans in board games.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"In March 2016, Google DeepMind's artificial intelligence program AlphaGo played a five-game match against South Korean Go grandmaster Lee Sedol, winning 4 games to 1. Lee Sedol, winner of 18 international titles, was widely celebrated as the preeminent Go player of his era. Prior to the match, AI experts and researchers broadly believed that defeating a top human Go master was roughly a decade away, making AlphaGo's victory a milestone that arrived approximately ten years ahead of expectations.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+        "AlphaGo defeated the world Go champion in 2016",
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+          "title": "AlphaGo versus Lee Sedol - Wikipedia",
+          "snippet": "4 days ago - Before AlphaGo, some researchers ... never defeat top humans at Go. Elon Musk, an early investor of DeepMind, said in 2016 that experts in the field thought AI was 10 years away from achieving a victory against a top professional Go player. The match AlphaGo versus Lee Sedol is comparable ..."
+        },
+        {
+          "url": "https://deepmind.google/research/alphago/",
+          "title": "AlphaGo — Google DeepMind",
+          "snippet": "AlphaGo then competed against legendary Go player Lee Sedol — winner of 18 world titles, and widely considered the greatest player of that decade. AlphaGo's 4-1 victory in Seoul, South Korea, in March 2016 was watched by over 200 million people ..."
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/products/alphagos-ultimate-challenge/",
+          "title": "AlphaGo’s ultimate challenge: a five-game match against the legendary Lee Sedol",
+          "snippet": "January 7, 2026 - This concludes the 5 game match between AlphaGo and Lee Sedol, with AlphaGo winning the match 4 games to 1 against the best Go player of the last decade, achieving a major milestone for artificial intelligence a decade earlier than many predicted."
+        },
+        {
+          "url": "https://aitimeline.world/timeline/alphago-2016",
+          "title": "AlphaGo Defeats Lee Sedol (2016) | AI Timeline",
+          "snippet": "June 20, 2026 - DeepMind's AlphaGo defeated Lee Sedol, one of the greatest Go players ever, 4-1 in a five-game match in Seoul. Go has more possible positions than atoms in the universe — brute force was impossible."
+        },
+        {
+          "url": "https://www.theguardian.com/technology/2016/mar/15/googles-alphago-seals-4-1-victory-over-grandmaster-lee-sedol",
+          "title": "AlphaGo seals 4-1 victory over Go grandmaster Lee Sedol | AI (artificial intelligence) | The Guardian",
+          "snippet": "November 29, 2017 - Google DeepMind’s AlphaGo program triumphed in its final game against South Korean Go grandmaster Lee Sedol to win the series 4-1, providing further evidence of the landmark achievement for an artificial intelligence program."
+        },
+        {
+          "url": "https://www.nytimes.com/2016/03/16/world/asia/korea-alphago-vs-lee-sedol-go.html",
+          "title": "Google’s Computer Program Beats Lee Se-dol in Go Tournament - The New York Times",
+          "snippet": "March 15, 2016 - The program AlphaGo’s 4-1 victory was a historic stride for computer programmers and artificial intelligence researchers trying to create software that can outwit humans in board games."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-016",
+      "claim_title": "Generative AI will replace 300 million jobs",
+      "claim_text": "\"Generative AI will replace 300 million jobs worldwide.\"",
+      "category": "economics",
+      "verdict": "MISLEADING",
+      "confidence": 85,
+      "verdict_changed": false,
+      "previous_verdict": "MISLEADING",
+      "new_verdict": "MISLEADING",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim overstates and mischaracterizes the findings of a widely cited March 2023 Goldman Sachs report",
+        "The report estimated that generative AI could expose the equivalent of approximately 300 million full-time jobs to automation globally, rather than definitively predicting that 300 million workers will be laid off or replaced",
+        "Crucially, the authors distinguished between tasks being automated and entire jobs being eliminated, noting that most occupations would be complemented rather than substituted by AI",
+        "Additionally, the study noted that technological disruption historically drives new job creation and estimated a significant boost to global GDP over time",
+        "Framing this projection as a definitive forecast that AI \"will replace 300 million jobs\" ignores these essential economic nuances."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Generative AI will replace 300 million jobs worldwide.\\\"\",\n  \"verification_notes\": \"Check the primary source: the Goldman Sachs Global Economics Analyst (Hatzius et al., 26 March 2023). Verify the exact wording — the report estimates roughly 300 million full-time jobs could be \\\"exposed to automation,\\\" and that ~two-thirds of occupations could see *some* automation, not full replacement. Distinguish \\\"exposed to,\\\" \\\"complemented by,\\\" and \\\"replaced by.\\\" Note the report also projected AI could raise global GDP. Cross-check with later labour-economics commentary (e.g. MIT, Brookings) on automation creating as well as displacing jobs. Expected nuance: the bare \\\"will replace 300 million jobs\\\" framing overstates the source.\",\n  \"search_results\": \"[1] AI could replace equivalent of 300 million jobs - report\\nURL: https://www.bbc.com/news/technology-65102150\\nExcerpt: March 28, 2023 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom.\\n\\n[2] How Many Jobs Will AI Replace by 2030? (Updated May 2026)\\nURL: https://piktochart.com/blog/how-many-jobs-will-ai-replace-by-2030/\\nExcerpt: May 22, 2026 - But the full picture is more nuanced. Goldman Sachs estimates up to 300 million jobs worldwide could be exposed to AI automation, while PwC puts 30% of US jobs at risk by the mid-2030s.\\n\\n[3] How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University\\nURL: https://www.nexford.edu/insights/how-will-ai-affect-jobs\\nExcerpt: August 6, 2026 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom.\\n\\n[4] Goldman Sachs: Generative AI Could Replace 300 Million Jobs\\nURL: https://aibusiness.com/nlp/goldman-sachs-generative-ai-could-replace-300-million-jobs\\nExcerpt: March 29, 2023 - Goldman Sachs economists believe generative AI could replace up to one-fourth of current jobs globally, or 300 million.\\n\\n[5] goldman sachs: Generative AI could replace 300 million jobs: Goldman Sachs report - The Economic Times\\nURL: https://economictimes.indiatimes.com/tech/technology/generative-ai-could-replace-300-million-jobs-goldman-sachs-report/articleshow/99085074.cms\\nExcerpt: May 8, 2026 - ... Generative AI has already made a huge impact on how technology is used on a daily basis. Soon, it will disrupt the labour market, according to a Goldman Sachs report, and could replace 300 million jobs globally.\\n\\n[6] AI Will Radically Reshape Job Market, Global Economy, Employee Productivity - Business Insider\\nURL: https://www.businessinsider.com/ai-radically-reshape-job-market-global-economy-employee-labor-innovation-2023-8\\nExcerpt: August 14, 2023 - AI is a tsunami about to upend the global economy, throwing 300 million jobs into mayhem and forcing half the workforce to learn new skills.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"MISLEADING\",\n  \"confidence\": 85,\n  \"reasoning\": \"The claim overstates and mischaracterizes the findings of a widely cited March 2023 Goldman Sachs report. The report estimated that generative AI could expose the equivalent of approximately 300 million full-time jobs to automation globally, rather than definitively predicting that 300 million workers will be laid off or replaced. Crucially, the authors distinguished between tasks being automated and entire jobs being eliminated, noting that most occupations would be complemented rather than substituted by AI. Additionally, the study noted that technological disruption historically drives new job creation and estimated a significant boost to global GDP over time. Framing this projection as a definitive forecast that AI \\\"will replace 300 million jobs\\\" ignores these essential economic nuances.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Generative AI will replace 300 million jobs worldwide.\"",
+        "Generative AI will replace 300 million jobs",
+        "\"Generative AI will replace 300 million jobs worldwide.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-65102150",
+          "title": "AI could replace equivalent of 300 million jobs - report",
+          "snippet": "March 28, 2023 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom."
+        },
+        {
+          "url": "https://piktochart.com/blog/how-many-jobs-will-ai-replace-by-2030/",
+          "title": "How Many Jobs Will AI Replace by 2030? (Updated May 2026)",
+          "snippet": "May 22, 2026 - But the full picture is more nuanced. Goldman Sachs estimates up to 300 million jobs worldwide could be exposed to AI automation, while PwC puts 30% of US jobs at risk by the mid-2030s."
+        },
+        {
+          "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
+          "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
+          "snippet": "August 6, 2026 - Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom."
+        },
+        {
+          "url": "https://aibusiness.com/nlp/goldman-sachs-generative-ai-could-replace-300-million-jobs",
+          "title": "Goldman Sachs: Generative AI Could Replace 300 Million Jobs",
+          "snippet": "March 29, 2023 - Goldman Sachs economists believe generative AI could replace up to one-fourth of current jobs globally, or 300 million."
+        },
+        {
+          "url": "https://economictimes.indiatimes.com/tech/technology/generative-ai-could-replace-300-million-jobs-goldman-sachs-report/articleshow/99085074.cms",
+          "title": "goldman sachs: Generative AI could replace 300 million jobs: Goldman Sachs report - The Economic Times",
+          "snippet": "May 8, 2026 - ... Generative AI has already made a huge impact on how technology is used on a daily basis. Soon, it will disrupt the labour market, according to a Goldman Sachs report, and could replace 300 million jobs globally."
+        },
+        {
+          "url": "https://www.businessinsider.com/ai-radically-reshape-job-market-global-economy-employee-labor-innovation-2023-8",
+          "title": "AI Will Radically Reshape Job Market, Global Economy, Employee Productivity - Business Insider",
+          "snippet": "August 14, 2023 - AI is a tsunami about to upend the global economy, throwing 300 million jobs into mayhem and forcing half the workforce to learn new skills."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-004",
+      "claim_title": "AI systems now pass the bar exam",
+      "claim_text": "\"AI language models can now pass the US bar examination at above-average scores.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Extensive empirical research, including a peer-reviewed study evaluating GPT-4 on the Uniform Bar Examination (UBE), established that modern large language models can pass the US bar exam with scores exceeding the average human test-taker",
+        "Specifically, the study published by researchers at Chicago-Kent College of Law and Stanford showed that GPT-4 passed all components of the exam and scored significantly above the passing threshold, outperforming the average human test-taker on the Multistate Bar Examination (MBE) by roughly 7% or more",
+        "Subsequent benchmark tests with newer LLMs have consistently replicated and exceeded these results."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"AI language models can now pass the US bar examination at above-average scores.\\\"\",\n  \"verification_notes\": \"Verify the original GPT-4 bar exam study (Bommarito & Katz, 2023). Check if results have been replicated or updated with newer models. Note: passing score and top-10% are different claims — verify which is accurate.\",\n  \"search_results\": \"[1] GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence Tools in the Legal Profession - Legal Aggregate - Stanford Law School\\nURL: https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/\\nExcerpt: April 19, 2023 - CodeX–The Stanford Center for ... Research collaborators had deployed GPT-4, the latest generation Large Language Model (LLM), to take—and pass—the Uniform Bar Exam (UBE)....\\n\\n[2] AI Race to 100 Percent on the Bar Exam - Matthew Stubenberg\\nURL: https://matthewstubenberg.com/blog/AI+Race+to+100+Percent+on+the+Bar+Exam\\nExcerpt: September 23, 2025 - AI is raising the bar. More than two-thirds of the models scored higher than the average human test-taker. In fact, OpenAI’s newest model, Chat GPT 5, got a jaw-dropping 97.6% right.\\n\\n[3] Bar exam score shows AI can keep up with 'human lawyers,' researchers say | Reuters\\nURL: https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/\\nExcerpt: March 15, 2023 - March 15 (Reuters) - Artificial intelligence can now outperform most law school graduates on the bar exam, the grueling two-day test aspiring attorneys must pass to practice law in the United States, according to a new study, opens new tab released ...\\n\\n[4] GPT-4 Passes the Bar Exam | Illinois Institute of Technology\\nURL: https://www.iit.edu/news/gpt-4-passes-bar-exam\\nExcerpt: March 15, 2023 - In a period of roughly four years, the leading large language model family (GPT) has progressed from zero percent on the Multistate Bar Exam for GPT-2 to nearly 76 percent on the Multistate Bar Exam in GPT-4. (The Multistate Bar Exam is the multiple-choice section of the Uniform Bar\\n\\n[5] GPT-4 passes the bar exam - PMC - NIH\\nURL: https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/\\nExcerpt: GPT-4 delivers a 26.5% increase in the accuracy over ChatGPT, the previously best performing model. In addition, GPT-4’s MBE score is not only more than 15% above the minimum passing threshold, but also outperforms the average human test-taker by more than 7%.\\n\\n[6] Expert Weighs In: AI Passes Bar Exam - Law Week Colorado\\nURL: https://www.lawweekcolorado.com/article/expert-weighs-in-ai-passes-bar-exam/\\nExcerpt: April 19, 2023 - According to the most recent paper, it scored drastically higher in some of the multiple choice sections, including contracts and evidence, when compared with students.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"Extensive empirical research, including a peer-reviewed study evaluating GPT-4 on the Uniform Bar Examination (UBE), established that modern large language models can pass the US bar exam with scores exceeding the average human test-taker. Specifically, the study published by researchers at Chicago-Kent College of Law and Stanford showed that GPT-4 passed all components of the exam and scored significantly above the passing threshold, outperforming the average human test-taker on the Multistate Bar Examination (MBE) by roughly 7% or more. Subsequent benchmark tests with newer LLMs have consistently replicated and exceeded these results.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"AI language models can now pass the US bar examination at above-average scores.\"",
+        "AI systems now pass the bar exam",
+        "\"AI language models can now pass the US bar examination at above-average scores.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/",
+          "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence Tools in the Legal Profession - Legal Aggregate - Stanford Law School",
+          "snippet": "April 19, 2023 - CodeX–The Stanford Center for ... Research collaborators had deployed GPT-4, the latest generation Large Language Model (LLM), to take—and pass—the Uniform Bar Exam (UBE)...."
+        },
+        {
+          "url": "https://matthewstubenberg.com/blog/AI+Race+to+100+Percent+on+the+Bar+Exam",
+          "title": "AI Race to 100 Percent on the Bar Exam - Matthew Stubenberg",
+          "snippet": "September 23, 2025 - AI is raising the bar. More than two-thirds of the models scored higher than the average human test-taker. In fact, OpenAI’s newest model, Chat GPT 5, got a jaw-dropping 97.6% right."
+        },
+        {
+          "url": "https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/",
+          "title": "Bar exam score shows AI can keep up with 'human lawyers,' researchers say | Reuters",
+          "snippet": "March 15, 2023 - March 15 (Reuters) - Artificial intelligence can now outperform most law school graduates on the bar exam, the grueling two-day test aspiring attorneys must pass to practice law in the United States, according to a new study, opens new tab released ..."
+        },
+        {
+          "url": "https://www.iit.edu/news/gpt-4-passes-bar-exam",
+          "title": "GPT-4 Passes the Bar Exam | Illinois Institute of Technology",
+          "snippet": "March 15, 2023 - In a period of roughly four years, the leading large language model family (GPT) has progressed from zero percent on the Multistate Bar Exam for GPT-2 to nearly 76 percent on the Multistate Bar Exam in GPT-4. (The Multistate Bar Exam is the multiple-choice section of the Uniform Bar Exam.) Overall, the authors report a 297 Uniform Bar Exam score for GPT-4, which reflects passing the bar by a fairly comfortable margin."
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/",
+          "title": "GPT-4 passes the bar exam - PMC - NIH",
+          "snippet": "GPT-4 delivers a 26.5% increase in the accuracy over ChatGPT, the previously best performing model. In addition, GPT-4’s MBE score is not only more than 15% above the minimum passing threshold, but also outperforms the average human test-taker by more than 7%."
+        },
+        {
+          "url": "https://www.lawweekcolorado.com/article/expert-weighs-in-ai-passes-bar-exam/",
+          "title": "Expert Weighs In: AI Passes Bar Exam - Law Week Colorado",
+          "snippet": "April 19, 2023 - According to the most recent paper, it scored drastically higher in some of the multiple choice sections, including contracts and evidence, when compared with students."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Under the modern congressional budget process established by the Congressional Budget Act of 1974 (which took effect for fiscal year 1977), Congress is required to pass all regular appropriations bills before the start of the fiscal year on October 1",
+        "According to analyses from the Pew Research Center, Congressional Research Service, and government data, Congress has enacted all of its regular annual spending bills on time in only four fiscal years: 1977, 1989, 1995, and 1997",
+        "Since fiscal year 1997, Congress has consistently relied on continuing resolutions (stopgap funding) or late omnibus spending packages rather than enacting all individual appropriations bills before the statutory deadline."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The US Congress has not passed a complete federal budget on time since 1997.\\\"\",\n  \"verification_notes\": \"Check Congressional Research Service records. Fiscal year starts October 1. Verify if any year between 1998 and present had all 12 appropriations bills enacted before the deadline. Note distinction between omnibus packages and individual bills.\",\n  \"search_results\": \"[1] Continuing resolution - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Continuing_resolution\\nExcerpt: 4 days ago - Between fiscal year 1977 and fiscal year 2015, Congress only passed all twelve regular appropriations bills on time in four years - fiscal years 1977, 1989, 1995, and 1997. Between 1980 and 2013, there were eight government shutdowns in the United States. Most of these shutdowns revolve\\n\\n[2] Congress has long struggled to pass spending bills on time | Pew Research Center\\nURL: https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/\\nExcerpt: October 1, 2025 - In the nearly five decades that ... place, Congress has passed all its required appropriations measures on time only four times: fiscal 1977 (the first full fiscal year under the current system), 1989, 1995 and 1997....\\n\\n[3] FEDERAL BUDGET PROCESS STRUCTURAL REFORM | Congress.gov | Library of Congress\\nURL: https://www.congress.gov/event/107th-congress/house-event/LC16636/text\\nExcerpt: Although biennial budgeting has been required for the Defense Department, and the President has proposed biennial budgets, Congress has continued to pass only one-year appropriations. We do not believe that continuing this approach makes sense, and that is why the administration has proposed the rep\\n\\n[4] The Federal Budget Timeline & Process\\nURL: https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline\\nExcerpt: March 31, 2026 - Since the Congressional Budget Act of 1974 went into effect in fiscal year 1977, Congress has only passed all its appropriations measures on time four times (1977, 1989, 1995, 1997).\\n\\n[5] How does the government budget process work? | USAFacts\\nURL: https://usafacts.org/articles/how-does-the-government-budget-process-work/\\nExcerpt: September 18, 2025 - Here’s the catch — for all of the 21st century, Congress has not met the appropriations deadlines and most federal funding has happened through continuing resolutions. These bills provide temporary financial coverage for government programs ...\\n\\n[6] Congress hasn’t passed a budget on time since 1997. We should fix that.\\nURL: https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/\\nExcerpt: December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article I, Section 9, which states that “No Money shall be drawn from the Treasury, but in Consequence of Appropriations made by Law.” Critically, the Constitution doesn’t mandate the current authorization and annu\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"Under the modern congressional budget process established by the Congressional Budget Act of 1974 (which took effect for fiscal year 1977), Congress is required to pass all regular appropriations bills before the start of the fiscal year on October 1. According to analyses from the Pew Research Center, Congressional Research Service, and government data, Congress has enacted all of its regular annual spending bills on time in only four fiscal years: 1977, 1989, 1995, and 1997. Since fiscal year 1997, Congress has consistently relied on continuing resolutions (stopgap funding) or late omnibus spending packages rather than enacting all individual appropriations bills before the statutory deadline.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+        "US Congress passed no budget on time since 1997",
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Continuing_resolution",
+          "title": "Continuing resolution - Wikipedia",
+          "snippet": "4 days ago - Between fiscal year 1977 and fiscal year 2015, Congress only passed all twelve regular appropriations bills on time in four years - fiscal years 1977, 1989, 1995, and 1997. Between 1980 and 2013, there were eight government shutdowns in the United States. Most of these shutdowns revolved around budget ..."
+        },
+        {
+          "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
+          "title": "Congress has long struggled to pass spending bills on time | Pew Research Center",
+          "snippet": "October 1, 2025 - In the nearly five decades that ... place, Congress has passed all its required appropriations measures on time only four times: fiscal 1977 (the first full fiscal year under the current system), 1989, 1995 and 1997...."
+        },
+        {
+          "url": "https://www.congress.gov/event/107th-congress/house-event/LC16636/text",
+          "title": "FEDERAL BUDGET PROCESS STRUCTURAL REFORM | Congress.gov | Library of Congress",
+          "snippet": "Although biennial budgeting has been required for the Defense Department, and the President has proposed biennial budgets, Congress has continued to pass only one-year appropriations. We do not believe that continuing this approach makes sense, and that is why the administration has proposed the repeal of this agency-specific biennial budgeting requirement for the Defense Department. Another approach for a phase-in is the non-binding, ``notional'' second-year budget I discussed in my testimony. This would involve a ``notional'' budget for the second year of the first two-year cycle, even though funds for that cycle would continue to be provided on an annual basis. During the budget process for that second year, OMB, the agencies, and Congress could compare the notional budget to what is actually happening in the ``real'' process for that year. A third option would be to begin full-fledged biennial budgeting in the third year, without using selected agencies or another type of formal ph"
+        },
+        {
+          "url": "https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline",
+          "title": "The Federal Budget Timeline & Process",
+          "snippet": "March 31, 2026 - Since the Congressional Budget Act of 1974 went into effect in fiscal year 1977, Congress has only passed all its appropriations measures on time four times (1977, 1989, 1995, 1997)."
+        },
+        {
+          "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
+          "title": "How does the government budget process work? | USAFacts",
+          "snippet": "September 18, 2025 - Here’s the catch — for all of the 21st century, Congress has not met the appropriations deadlines and most federal funding has happened through continuing resolutions. These bills provide temporary financial coverage for government programs ..."
+        },
+        {
+          "url": "https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/",
+          "title": "Congress hasn’t passed a budget on time since 1997. We should fix that.",
+          "snippet": "December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article I, Section 9, which states that “No Money shall be drawn from the Treasury, but in Consequence of Appropriations made by Law.” Critically, the Constitution doesn’t mandate the current authorization and annual appropriations process currently used. It simply requires that spending be authorized by law. The “textbook” legislative process requires Congress to pass approximately 12 appropriations bills by Oct. 1 for the following fiscal year — something Congress hasn’t done since 1996. Instead, the country lurches from continuing resolution to continuing resolution, with shutdowns or their threat becoming routine weapons in partisan warfare. Federal agencies can’t plan, contractors face uncertainty, and essential services hang in the balance while politicians posture."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_title": "Octopuses have three hearts and blue blood",
+      "claim_text": "\"Octopuses have three hearts and their blood is blue.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim is biologically accurate",
+        "Octopuses have three hearts: two branchial hearts that pump blood through the gills and one systemic heart that circulates oxygenated blood through the rest of the body",
+        "Additionally, their blood is blue because it uses a copper-rich protein called hemocyanin (rather than iron-based hemoglobin) to transport oxygen, which appears blue when oxygenated."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Octopuses have three hearts and their blood is blue.\\\"\",\n  \"verification_notes\": \"Check marine biology sources. Verify the function of each heart (two branchial hearts, one systemic). Confirm the copper-based hemocyanin mechanism that makes blood blue. Check whether the blood turns colorless when deoxygenated.\",\n  \"search_results\": \"[1] 10 weird and funny animal facts that sound fake... - The Times of India\\nURL: https://timesofindia.indiatimes.com/etimes/trending/10-weird-and-funny-animal-facts-that-sound-fake-but-are-completely-real/articleshow/125381246.cms\\nExcerpt: Octopuses have three hearts and their blood is blue.Two pump blood through their gills, while the third sends oxygenated blood through the rest of the body. Their blood is blue because it uses copper, not iron, to transport oxygen.\\n\\n[2] Octopus Blood Real Life | TikTok\\nURL: https://www.tiktok.com/discover/octopus-blood-real-life\\nExcerpt: Octopuses have three hearts and blue blood, and one of those hearts actually stops when they swim. Most of their neurons are located in their arms, allowing each arm to sense and react almost independently.\\n\\n[3] Ten things I learned in 2025: 1. Octopuses have three hearts, and...\\nURL: https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh\\nExcerpt: Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is blue because it uses copper (hemocyanin) rather than iron to transport oxygen 2. In 1518, a “dancing plague” broke out in Strasbourg: hundreds of people began dancing continuously for days, some until death...\\n\\n[4] Octopuses: 20 Amazing Facts\\nURL: https://www.divessi.com/en/blog/octopuses-20-amazing-facts-8560.html\\nExcerpt: 5. Octopuses have three hearts and their blood is blue due to being copper-based. 6. Octopuses are considered to be the most intelligent of all invertebrates. They have been known to use tools, open jars, complete mazes, and even recognise individual human faces.\\n\\n[5] Forums | TORN\\nURL: https://www.torn.com/forums.php?p=threads&f=13&t=16441242&b=0&a=0rh=96&&start=100\\nExcerpt: Octopuses have three hearts, and their blood is blue because it contains hemocyanin instead of hemoglobin.Butterflies can taste with their feet. - Their taste sensors are on their legs, allowing them to land on a plant and instantly know if it's good for laying eggs.\\n\\n[6] results Archives – Math Corps\\nURL: https://mathcorps.org/tag/results/\\nExcerpt: In the summer of 2021, the Covid-19 pandemic had been ravaging the city of Detroit for a year and a half. Despite all the challenges, our kids showed up, demonstrated their resilience, and helped create an unforgettable summer!\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 98,\n  \"reasoning\": \"The claim is biologically accurate. Octopuses have three hearts: two branchial hearts that pump blood through the gills and one systemic heart that circulates oxygenated blood through the rest of the body. Additionally, their blood is blue because it uses a copper-rich protein called hemocyanin (rather than iron-based hemoglobin) to transport oxygen, which appears blue when oxygenated.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Octopuses have three hearts and their blood is blue.\"",
+        "Octopuses have three hearts and blue blood",
+        "\"Octopuses have three hearts and their blood is blue.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://timesofindia.indiatimes.com/etimes/trending/10-weird-and-funny-animal-facts-that-sound-fake-but-are-completely-real/articleshow/125381246.cms",
+          "title": "10 weird and funny animal facts that sound fake... - The Times of India",
+          "snippet": "Octopuses have three hearts and their blood is blue.Two pump blood through their gills, while the third sends oxygenated blood through the rest of the body. Their blood is blue because it uses copper, not iron, to transport oxygen."
+        },
+        {
+          "url": "https://www.tiktok.com/discover/octopus-blood-real-life",
+          "title": "Octopus Blood Real Life | TikTok",
+          "snippet": "Octopuses have three hearts and blue blood, and one of those hearts actually stops when they swim. Most of their neurons are located in their arms, allowing each arm to sense and react almost independently."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh",
+          "title": "Ten things I learned in 2025: 1. Octopuses have three hearts, and...",
+          "snippet": "Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is blue because it uses copper (hemocyanin) rather than iron to transport oxygen 2. In 1518, a “dancing plague” broke out in Strasbourg: hundreds of people began dancing continuously for days, some until death..."
+        },
+        {
+          "url": "https://www.divessi.com/en/blog/octopuses-20-amazing-facts-8560.html",
+          "title": "Octopuses: 20 Amazing Facts",
+          "snippet": "5. Octopuses have three hearts and their blood is blue due to being copper-based. 6. Octopuses are considered to be the most intelligent of all invertebrates. They have been known to use tools, open jars, complete mazes, and even recognise individual human faces."
+        },
+        {
+          "url": "https://www.torn.com/forums.php?p=threads&f=13&t=16441242&b=0&a=0rh=96&&start=100",
+          "title": "Forums | TORN",
+          "snippet": "Octopuses have three hearts, and their blood is blue because it contains hemocyanin instead of hemoglobin.Butterflies can taste with their feet. - Their taste sensors are on their legs, allowing them to land on a plant and instantly know if it's good for laying eggs."
+        },
+        {
+          "url": "https://mathcorps.org/tag/results/",
+          "title": "results Archives – Math Corps",
+          "snippet": "In the summer of 2021, the Covid-19 pandemic had been ravaging the city of Detroit for a year and a half. Despite all the challenges, our kids showed up, demonstrated their resilience, and helped create an unforgettable summer!"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 2
+}

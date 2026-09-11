@@ -3,9 +3,9 @@
   "claim_id": "claim-011",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-09-03T10:35:44Z",
+  "last_checked_at": "2026-09-11T10:37:35Z",
   "last_changed_at": "2026-07-10T09:35:32Z",
-  "run_id": "run-2026-09-03T103417Z",
+  "run_id": "run-2026-09-11T102916Z",
   "sources": [
     {
       "url": "https://medlineplus.gov/ency/article/001126.htm",
@@ -24,20 +24,20 @@
       "excerpt": "The spectrum of symptoms ranges from headache, sweating, abdominal pain, and urticaria to angioedema in"
     },
     {
-      "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
-      "title": "The Rotten Science Behind the MSG Scare | Science History Institute",
-      "domain": "sciencehistory.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "February 19, 2026 - The symptoms catalogued in the letters included fainting, back spasms, sweating,"
-    },
-    {
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6952072/",
       "title": "A review of the alleged health hazards of monosodium glutamate - PMC",
       "domain": "pmc.ncbi.nlm.nih.gov",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "The “Chinese restaurant syndrome” ... (Freeman, 2006), consists of a series of symptoms such as"
+    },
+    {
+      "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
+      "title": "The Rotten Science Behind the MSG Scare | Science History Institute",
+      "domain": "sciencehistory.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "February 19, 2026 - The symptoms catalogued in the letters included fainting, back spasms, sweating,"
     },
     {
       "url": "https://www.rxlist.com/chinese_restaurant_syndrome/definition.htm",
@@ -48,15 +48,15 @@
       "excerpt": "March 29, 2021 - Chinese restaurant syndrome: A syndrome first described in 1968 in people"
     },
     {
-      "url": "https://www.nature.com/articles/227611a0",
-      "title": "Monosodium Glutamate and the Chinese Restaurant Syndrome | Nature",
-      "domain": "nature.com",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16999713/",
+      "title": "Reconsidering the effects of monosodium glutamate: a literature review - PubMed",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "IT has been suggested1–4 that ... restaurant syndrome”—a burning sensation in the back of the"
+      "excerpt": "Implications for practice: Despite a widespread belief that MSG can elicit a headache, among other"
     }
   ],
-  "reasoning": "The claim that monosodium glutamate (MSG) causes headaches, numbness, and other symptoms collectively referred to as \"Chinese restaurant syndrome\" (or MSG symptom complex) has been debunked by extensive scientific research. The concept originated from an anecdotal letter published in the New England Journal of Medicine in 1968. Since then, rigorous, double-blind, placebo-controlled studies conducted by health authorities, including the U.S. Food and Drug Administration (FDA) and the Joint FAO/WHO Expert Committee on Food Additives (JECFA), have repeatedly failed to establish a causal link between normal dietary MSG consumption and these reported symptoms. The FDA classifies MSG as \"Generally Recognized as Safe\" (GRAS), noting that the body metabolizes glutamate added as seasoning identically to naturally occurring glutamate found in foods like tomatoes and parmesan cheese.",
+  "reasoning": "Extensive scientific research and double-blind, placebo-controlled studies have failed to establish a causal link between monosodium glutamate (MSG) and the cluster of symptoms historically dubbed \"Chinese restaurant syndrome\" (such as headaches, numbness, and flushing). The concept originated from an anecdotal letter published in the New England Journal of Medicine in 1968 rather than rigorous clinical trials. Major food safety and health organizations, including the U.S. Food and Drug Administration (FDA) and the World Health Organization (WHO), classify MSG as \"generally recognized as safe\" (GRAS), noting that the human body metabolizes added glutamate identically to naturally occurring glutamate found in foods like tomatoes and parmesan cheese. While a tiny subset of individuals may have mild, transient sensitivity to unusually large doses consumed without food, there is no consistent evidence that typical dietary MSG consumption causes these symptoms.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -135,6 +135,12 @@
       "confidence": 90,
       "checked_at": "2026-08-25T06:11:06Z",
       "run_id": "run-2026-08-25T060946Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-09-03T10:35:44Z",
+      "run_id": "run-2026-09-03T103417Z"
     }
   ],
   "agent_flags": {
