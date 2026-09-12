@@ -3,60 +3,60 @@
   "claim_id": "claim-014",
   "verdict": "TRUE",
   "confidence": 98,
-  "last_checked_at": "2026-09-04T10:27:58Z",
+  "last_checked_at": "2026-09-12T09:57:48Z",
   "last_changed_at": "2026-06-09T23:47:39Z",
-  "run_id": "run-2026-09-04T102540Z",
+  "run_id": "run-2026-09-12T095713Z",
   "sources": [
     {
+      "url": "https://www.reddit.com/r/todayilearned/comments/1661hc8/til_that_the_moon_moves_about_38_cm_farther_away/",
+      "title": "r/todayilearned on Reddit: TIL that the moon moves about 3.8 cm farther away from Earth every year, which means that one day there will be no more total solar eclipses.",
+      "domain": "reddit.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "August 31, 2023 - The moon is tidally locked to the Earth, but the Earth"
+    },
+    {
+      "url": "https://scienceblog.com/k-the-moon-is-drifting-away-from-earth-at-3-8-centimetres-a-year-so-what-happens-to-us-as-it-goes/",
+      "title": "The moon is drifting away from Earth at 3.8 centimetres a year, so what happens to us as it goes? - ScienceBlog.com",
+      "domain": "scienceblog.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "July 22, 2026 - ... The specific number, on the current best interpretation of five"
+    },
+    {
       "url": "https://www.iflscience.com/the-moon-is-moving-away-from-earth-at-a-rate-of-about-38-centimeters-per-year-will-it-ever-drift-apart-80834",
-      "title": "The Moon Is Moving Away From Earth At A Rate Of About 3.8 ...",
+      "title": "The Moon Is Moving Away From Earth At A Rate Of About 3.8 Centimeters Per Year. Will It Ever Drift Apart? | IFLScience",
       "domain": "iflscience.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Sep 16, 2025 · The Moon Is Moving Away From Earth At A Rate Of"
+      "excerpt": "September 16, 2025 - By aiming lasers at the reflector ... (1.2 inches). Taking repeated"
     },
     {
-      "url": "https://www.smorescience.com/the-moon-is-getting-slightly-farther-away-from-the-earth-each-year-−-a-physicist-explains-why/",
-      "title": "The Moon is getting slightly farther away from the Earth each ...",
-      "domain": "smorescience.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Aug 14, 2026 · Earth rises over the Moon, as seen by the Apollo 8"
-    },
-    {
-      "url": "https://timesofindia.indiatimes.com/science/why-is-the-moon-slowly-moving-away-from-earth-every-year-and-what-does-it-reveal-about-our-planets-future/articleshow/125189323.cms",
-      "title": "Why is the Moon slowly moving away from Earth every year and ...",
+      "url": "https://timesofindia.indiatimes.com/science/moon-is-drifting-away-from-earth-at-3-8-centimetres-a-year-what-will-happen-to-the-planet-as-it-goes-further/articleshow/132573201.cms",
+      "title": "Moon is drifting away from Earth at 3.8 centimetres a year. What will happen to the planet as it goes further? | - The Times of India",
       "domain": "timesofindia.indiatimes.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Nov 8, 2025 · Our Moon is slowly drifting away from Earth, not just due"
+      "excerpt": "July 23, 2026 - In what is coming to be defined ... planetary science, the"
     },
     {
-      "url": "https://www.scienceabc.com/nature/universe/why-is-the-moon-moving-away-from-earth",
-      "title": "Why Is The Moon Moving Away From Earth? » ScienceABC",
-      "domain": "scienceabc.com",
+      "url": "https://thehill.com/homenews/space/5884345-moon-moving-away-from-earth-report/",
+      "title": "Is the moon moving further away from Earth?",
+      "domain": "thehill.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Mar 2, 2017 · The Moon drifts about 3.8 cm farther from Earth every year"
+      "excerpt": "May 19, 2026 - A report from Space Daily says the moon is receding from"
     },
     {
-      "url": "https://timesofindia.indiatimes.com/science/why-is-the-moon-slowly-moving-away-from-earth-every-year-and-what-does-it-reveal-about-our-planets-future/articleshow/125189636.cms",
-      "title": "Why is the Moon slowly moving away from Earth every year and ...",
-      "domain": "timesofindia.indiatimes.com",
+      "url": "https://www.mid-day.com/news/world-news/article/why-the-moon-is-drifting-away-from-earth-23637981",
+      "title": "Why the Moon is drifting away from Earth",
+      "domain": "mid-day.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Nov 11, 2025 · Our Moon is slowly drifting away from Earth, not just due"
-    },
-    {
-      "url": "https://iere.org/why-is-the-moon-drifting-away-from-the-earth/",
-      "title": "Why Is The Moon Drifting Away from the Earth?",
-      "domain": "iere.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Jul 1, 2025 · The Moon is slowly but surely receding from our planet at"
+      "excerpt": "July 3, 2026 - Over the past 250 years, the Moon has moved about 31"
     }
   ],
-  "reasoning": "Scientific measurements, primarily obtained through the Lunar Laser Ranging experiment using retroreflectors placed during Apollo missions, confirm that the Moon is receding from Earth at an average rate of approximately 3.8 centimeters (about 1.5 inches) per year. This phenomenon is driven by tidal friction and the resulting transfer of angular momentum from Earth's rotation to the Moon's orbit.",
+  "reasoning": "The claim is scientifically accurate. Lunar Laser Ranging experiments, utilizing retroreflectors placed on the lunar surface during the Apollo missions and Soviet Lunokhod rovers, have measured that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (specifically about 3.82 to 3.83 cm) per year. This phenomenon is caused by tidal friction and tidal dissipation between the Earth and the Moon, which transfers Earth's rotational angular momentum to the Moon's orbital motion.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -135,6 +135,12 @@
       "confidence": 99,
       "checked_at": "2026-08-27T09:21:30Z",
       "run_id": "run-2026-08-27T090441Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-09-04T10:27:58Z",
+      "run_id": "run-2026-09-04T102540Z"
     }
   ],
   "agent_flags": {
