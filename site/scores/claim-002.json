@@ -3,9 +3,9 @@
   "claim_id": "claim-002",
   "verdict": "TRUE",
   "confidence": 98,
-  "last_checked_at": "2026-09-07T11:26:13Z",
+  "last_checked_at": "2026-09-14T11:36:19Z",
   "last_changed_at": "2026-09-07T11:26:13Z",
-  "run_id": "run-2026-09-07T112403Z",
+  "run_id": "run-2026-09-14T113439Z",
   "sources": [
     {
       "url": "https://apnews.com/article/national-debt-deficits-biden-economy-inflation-record-b4258704f830c7f6e9c5e693748216cb",
@@ -13,7 +13,15 @@
       "domain": "apnews.com",
       "relevance": "high",
       "supports_claim": true,
-      "excerpt": "federal government’s gross national debt has surpassed $34 trillion"
+      "excerpt": "The federal government’s gross national debt has surpassed $34 trillion"
+    },
+    {
+      "url": "https://budget.house.gov/press-release/national-debt-skyrockets-to-highest-level-yet",
+      "title": "National Debt Skyrockets to Highest Level Yet | The U.S. House Committee on the Budget",
+      "domain": "budget.house.gov",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "On Friday, December 29th the national debt hit $34 trillion."
     },
     {
       "url": "https://en.wikipedia.org/wiki/National_debt_of_the_United_States",
@@ -21,10 +29,10 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "total federal government debt rose to $34.4 trillion"
+      "excerpt": "In February 2024, the total federal government debt rose to $34.4 trillion"
     }
   ],
-  "reasoning": "According to official U.S. Department of the Treasury data reported in early January 2024, the total gross national debt of the United States officially surpassed the $34 trillion mark for the first time in history. Subsequent reporting confirms the debt continued to grow well beyond this threshold.",
+  "reasoning": "U.S. Treasury data confirmed that the gross national debt surpassed $34 trillion in late December 2023 / early January 2024. Official reports and reporting from major news outlets confirm that total federal debt has exceeded this milestone and continued to rise.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -115,6 +123,12 @@
       "confidence": 30,
       "checked_at": "2026-08-31T06:19:53Z",
       "run_id": "run-2026-08-31T061730Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-09-07T11:26:13Z",
+      "run_id": "run-2026-09-07T112403Z"
     }
   ],
   "agent_flags": {

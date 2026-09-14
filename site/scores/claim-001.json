@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-001",
   "verdict": "TRUE",
-  "confidence": 100,
-  "last_checked_at": "2026-09-07T11:24:28Z",
+  "confidence": 99,
+  "last_checked_at": "2026-09-14T11:35:07Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-09-07T112403Z",
+  "run_id": "run-2026-09-14T113439Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "1 month ago - For January 2016, the satellite-based data showed the lowest overall Arctic"
+      "excerpt": "August 11, 2026 - For January 2016, the satellite-based data showed the lowest overall Arctic"
     },
     {
       "url": "https://www.climate.gov/news-features/understanding-climate/climate-change-arctic-sea-ice-summer-minimum",
@@ -29,7 +29,7 @@
       "domain": "eea.europa.eu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "November 18, 2025 - Arctic sea ice is rapidly declining. On average, the Arctic has"
+      "excerpt": "Arctic sea ice is rapidly declining. On average, the Arctic has lost an area of"
     },
     {
       "url": "https://www.unep.org/news-and-stories/story/satellites-record-second-lowest-arctic-sea-ice-extent-1979",
@@ -56,7 +56,7 @@
       "excerpt": "Satellites have continuously monitored sea ice since 1979. To gauge what Arctic sea ice was"
     }
   ],
-  "reasoning": "Continuous satellite observation of Arctic sea ice began in 1979. According to official scientific and governmental agencies including NOAA, NSIDC, and the European Environment Agency, Arctic sea ice extent has exhibited a statistically significant long-term downward trend since records began, declining at an estimated rate of approximately 12 to 13 percent per decade for summer minimum extent.",
+  "reasoning": "Continuous satellite monitoring of Arctic sea ice began in 1979. Data from major scientific and environmental agencies, including NOAA, NSIDC, and the European Environment Agency, show that Arctic sea ice extent has declined significantly across all months since records began, with summer minimum extent decreasing by approximately 12 to 13 percent per decade.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -147,6 +147,12 @@
       "confidence": 95,
       "checked_at": "2026-08-31T06:18:04Z",
       "run_id": "run-2026-08-31T061730Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-09-07T11:24:28Z",
+      "run_id": "run-2026-09-07T112403Z"
     }
   ],
   "agent_flags": {

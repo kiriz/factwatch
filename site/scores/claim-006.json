@@ -3,9 +3,9 @@
   "claim_id": "claim-006",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-09-07T11:27:02Z",
+  "last_checked_at": "2026-09-14T11:36:59Z",
   "last_changed_at": "2026-06-09T23:43:44Z",
-  "run_id": "run-2026-09-07T112403Z",
+  "run_id": "run-2026-09-14T113439Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "3 weeks ago - Although several parts of the brain ... remains unclear. Perhaps the"
+      "excerpt": "4 weeks ago - Although several parts of the brain ... remains unclear. Perhaps the"
     },
     {
       "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
@@ -21,7 +21,7 @@
       "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "July 14, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows"
+      "excerpt": "July 13, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows"
     },
     {
       "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
@@ -56,7 +56,7 @@
       "excerpt": "August 4, 2022 - In fact, most of us only use about 10 per cent"
     }
   ],
-  "reasoning": "The claim that humans only use 10% of their brain capacity is a well-known scientific myth. Neuroimaging techniques such as fMRI and PET scans demonstrate that virtually all parts of the brain are active and have known functions, even during sleep or simple tasks [1, 4, 5]. Furthermore, neuroscientists emphasize that any genuinely unused or dormant brain tissue would degenerate or atrophy, and damage to even minute areas of the brain typically causes measurable cognitive or physical impairment [2, 3, 4]. Scientific consensus universally rejects the idea that 90% of the brain remains dormant.",
+  "reasoning": "The claim that humans only use 10% of their brain capacity is a well-known scientific myth. Neuroimaging studies, including fMRI and PET scans, show that virtually all parts of the brain have a known function and are active throughout the course of a normal day, even during sleep. Neurologists also note that brain tissue that goes unused typically atrophies or degenerates, and even minor damage to small areas of the brain often results in noticeable cognitive or physical impairments, contradicting the idea that 90% remains dormant. Major neuroscientific and medical institutions universally reject the 10% claim.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -141,6 +141,12 @@
       "confidence": 99,
       "checked_at": "2026-08-31T06:20:54Z",
       "run_id": "run-2026-08-31T061730Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-09-07T11:27:02Z",
+      "run_id": "run-2026-09-07T112403Z"
     }
   ],
   "agent_flags": {

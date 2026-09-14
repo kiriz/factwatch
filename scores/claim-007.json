@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-007",
   "verdict": "FALSE",
-  "confidence": 100,
-  "last_checked_at": "2026-09-07T11:27:19Z",
+  "confidence": 95,
+  "last_checked_at": "2026-09-14T11:37:28Z",
   "last_changed_at": "2026-06-04T01:03:50Z",
-  "run_id": "run-2026-09-07T112403Z",
+  "run_id": "run-2026-09-14T113439Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Artificial_structures_visible_from_space",
-      "title": "Artificial structures visible from space - Wikipedia",
-      "domain": "en.wikipedia.org",
+      "url": "https://sikho.ai/blog/great-wall-china-visible-from-space-myth",
+      "title": "Great Wall China Visible Space Myth Debunked | Sikho.ai",
+      "domain": "sikho.ai",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "June 10, 2026 - The Bingham Canyon Mine, more commonly ... Lake City, Utah, in"
+      "excerpt": "March 10, 2026 - However, the Great Wall of China can be photographed or observed"
     },
     {
-      "url": "https://triviacafe.com/myths/myth/the-great-wall-of-china-is-the-only-man-made-structure-visible-from-space-with-the-naked-eye-1",
-      "title": "The Great Wall of China is the only man-made structure visible from ...",
-      "domain": "triviacafe.com",
+      "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
+      "title": "Fact-check: The Great Wall of China is the only man-made...",
+      "domain": "consensise.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Learn More The Great Wall of China is the only man-made structure visible from space"
+      "excerpt": "The total length of the Great Wall, including all its components, is approximately 13,171 miles."
     },
     {
-      "url": "https://triviacafe.com/myths/myth/the-great-wall-of-china-is-the-only-man-made-structure-visible-from-space-with-the-naked-eye",
-      "title": "The Great Wall of China is the only man-made structure visible from ...",
-      "domain": "triviacafe.com",
+      "url": "https://spellingbee.ninja/science/space-myths-lesson-and-quiz/",
+      "title": "Space Myths: Interactive Lesson on Astronomy... - Spelling Bee Ninja",
+      "domain": "spellingbee.ninja",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Learn More The Great Wall of China is the only man-made structure visible from space"
+      "excerpt": "Myth: The Great Wall of China is the only man-made structure visible from space with"
     },
     {
-      "url": "https://www.wtamu.edu/~cbaird/sq/2012/12/11/what-makes-the-great-wall-of-china-the-only-man-made-object-visible-from-space/",
-      "title": "What makes the Great Wall of China the only man-made object visible from space? | Science Questions with Surprising Answers",
-      "domain": "wtamu.edu",
+      "url": "https://www.yahoo.com/lifestyle/step-travel-6-beautiful-stairways-205634250.html",
+      "title": "Step Up Your Travel: Here Are 6 Beautiful Stairways From Around The...",
+      "domain": "yahoo.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "December 11, 2012 - The Great Wall of China is not visible to the naked"
+      "excerpt": "Just along one 26-mile stretch — the official course of the Great Wall of China"
     },
     {
-      "url": "https://www.skyatnightmagazine.com/space-science/can-you-see-great-wall-china-from-space",
-      "title": "Can you see the Great Wall of China from space? | BBC Sky at Night Magazine",
-      "domain": "skyatnightmagazine.com",
+      "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
+      "title": "Did You Know? The Great Wall Isn't Visible From Space With the...",
+      "domain": "aibrainbites.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "October 1, 2024 - So while the Great Wall of China can be photographed or"
+      "excerpt": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands"
     },
     {
-      "url": "https://www.reddit.com/r/todayilearned/comments/1kg3uwe/til_the_great_wall_of_china_is_not_actually/",
-      "title": "r/todayilearned on Reddit: TIL the Great Wall of China is not actually visible from space, its just a myth.",
-      "domain": "reddit.com",
+      "url": "https://travelnaut.com/trip/the-great-wall-of-china-china-1-day-couples-itinerary-30ivr",
+      "title": "Romantic One-Day Sightseeing Tour of the Great Wall - Travelnaut",
+      "domain": "travelnaut.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "May 6, 2025 - ... EDIT: I meant the Great Wall ... misconceptions😅 ... Still"
+      "excerpt": "Did you know that the Great Wall of China is the only man-made structure visible"
     }
   ],
-  "reasoning": "The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented myth. According to NASA and astronaut observations—including China's first astronaut, Yang Liwei—the Great Wall is generally invisible to the unaided human eye from low Earth orbit due to its narrow width (only a few meters wide) and materials that blend into the surrounding terrain. Furthermore, other man-made structures and features (such as large highways, city lights at night, dams, and mines like the Bingham Canyon Mine) are visible from low Earth orbit under appropriate conditions, making both parts of the claim entirely false.",
+  "reasoning": "The claim that the Great Wall of China is visible from space with the naked eye—let alone the only man-made structure visible—is a well-documented myth. According to NASA and reports from astronauts, the Great Wall cannot be seen from low Earth orbit without magnification because it is narrow (typically only about 6 to 9 meters wide) and made of materials that blend into the surrounding landscape. Furthermore, many other man-made structures and features, such as highways, airports, dams, and cities at night, are actually visible from low Earth orbit with the naked eye.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -141,6 +141,12 @@
       "confidence": 98,
       "checked_at": "2026-08-31T06:21:23Z",
       "run_id": "run-2026-08-31T061730Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-09-07T11:27:19Z",
+      "run_id": "run-2026-09-07T112403Z"
     }
   ],
   "agent_flags": {
