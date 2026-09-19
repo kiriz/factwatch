@@ -3,60 +3,60 @@
   "claim_id": "claim-005",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-09-11T10:46:14Z",
+  "last_checked_at": "2026-09-19T10:14:39Z",
   "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-09-11T102916Z",
+  "run_id": "run-2026-09-19T101107Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Continuing_resolution",
-      "title": "Continuing resolution - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/United_States",
+      "title": "United States - Wikipedia",
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "4 days ago - Between fiscal year 1977 and fiscal year 2015, Congress only passed"
+      "excerpt": "The United States of America (USA), also known as the United States (U.S.) or America,"
     },
     {
-      "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
-      "title": "Congress has long struggled to pass spending bills on time | Pew Research Center",
-      "domain": "pewresearch.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "October 1, 2025 - In the nearly five decades that ... place, Congress has passed"
-    },
-    {
-      "url": "https://www.congress.gov/event/107th-congress/house-event/LC16636/text",
-      "title": "FEDERAL BUDGET PROCESS STRUCTURAL REFORM | Congress.gov | Library of Congress",
+      "url": "https://www.congress.gov/search?q={\"source\":\"legislation\"}",
+      "title": "congress.gov/search?q={\"source\":\"legislation\"}",
       "domain": "congress.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Although biennial budgeting has been required for the Defense Department, and the President has proposed"
+      "excerpt": "Learn about the current status of appropriations legislation on Congress.gov."
     },
     {
-      "url": "https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline",
-      "title": "The Federal Budget Timeline & Process",
-      "domain": "fiscalnote.com",
+      "url": "https://www.washingtontimes.com/news/2013/sep/24/inside-the-beltway-observations-du-jour/",
+      "title": "Inside the Beltway: Observations du jour - Washington Times",
+      "domain": "washingtontimes.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 31, 2026 - Since the Congressional Budget Act of 1974 went into effect in"
+      "excerpt": "Lawmakers have forgotten sensible kitchen table-style budgeting, he says, moving from crisis to crisis, governing"
     },
     {
-      "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
-      "title": "How does the government budget process work? | USAFacts",
-      "domain": "usafacts.org",
+      "url": "https://www.govtrack.us/congress/members/TN",
+      "title": "govtrack.us/congress/members/TN",
+      "domain": "govtrack.us",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "September 18, 2025 - Here’s the catch — for all of the 21st century, Congress"
+      "excerpt": "Although this map based on 2022 congressional districts is still the correct..."
     },
     {
-      "url": "https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/",
-      "title": "Congress hasn’t passed a budget on time since 1997. We should fix that.",
-      "domain": "thehill.com",
+      "url": "https://edition.cnn.com/politics/congress",
+      "title": "edition.cnn.com/politics/congress",
+      "domain": "edition.cnn.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article"
+      "excerpt": "Us Congress - New York Primary 2020: Election Date, Delegates, Map…"
+    },
+    {
+      "url": "https://nlihc.org/resource/congress-passes-and-president-trump-signs-law-year-long-stopgap-funding-bill-underfunding",
+      "title": "Congress Passes and President Trump Signs into Law Year-Long...",
+      "domain": "nlihc.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Congress passed and President Donald Trump signed into law a year-long stopgap funding bill, known"
     }
   ],
-  "reasoning": "Under the modern congressional budget process established by the Congressional Budget Act of 1974 (which took effect for fiscal year 1977), Congress is required to pass all regular appropriations bills before the start of the fiscal year on October 1. According to analyses from the Pew Research Center, Congressional Research Service, and government data, Congress has enacted all of its regular annual spending bills on time in only four fiscal years: 1977, 1989, 1995, and 1997. Since fiscal year 1997, Congress has consistently relied on continuing resolutions (stopgap funding) or late omnibus spending packages rather than enacting all individual appropriations bills before the statutory deadline.",
+  "reasoning": "According to records from the Congressional Research Service and historical appropriations data, the last time Congress enacted all regular annual spending/appropriations bills before the start of the fiscal year (October 1) was for Fiscal Year 1997 (completed in late September 1996). In every year since Fiscal Year 1998 (beginning in 1997), Congress has failed to pass all regular appropriations bills before the October 1 deadline, relying instead on stopgap continuing resolutions and omnibus packages enacted well past the start of the fiscal year.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -147,6 +147,12 @@
       "confidence": 95,
       "checked_at": "2026-09-03T10:38:02Z",
       "run_id": "run-2026-09-03T103417Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-09-11T10:46:14Z",
+      "run_id": "run-2026-09-11T102916Z"
     }
   ],
   "agent_flags": {

@@ -2,61 +2,45 @@
   "schema_version": "1.0",
   "claim_id": "claim-015",
   "verdict": "TRUE",
-  "confidence": 95,
-  "last_checked_at": "2026-09-11T10:41:56Z",
+  "confidence": 98,
+  "last_checked_at": "2026-09-19T10:13:39Z",
   "last_changed_at": "2026-06-09T23:45:43Z",
-  "run_id": "run-2026-09-11T102916Z",
+  "run_id": "run-2026-09-19T101107Z",
   "sources": [
-    {
-      "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
-      "title": "AlphaGo versus Lee Sedol - Wikipedia",
-      "domain": "en.wikipedia.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "4 days ago - Before AlphaGo, some researchers ... never defeat top humans at Go."
-    },
     {
       "url": "https://deepmind.google/research/alphago/",
       "title": "AlphaGo — Google DeepMind",
       "domain": "deepmind.google",
-      "relevance": "medium",
+      "relevance": "high",
       "supports_claim": true,
-      "excerpt": "AlphaGo then competed against legendary Go player Lee Sedol — winner of 18 world titles,"
+      "excerpt": "AlphaGo's 4-1 victory in Seoul, South Korea, in March 2016"
     },
     {
       "url": "https://blog.google/innovation-and-ai/products/alphagos-ultimate-challenge/",
       "title": "AlphaGo’s ultimate challenge: a five-game match against the legendary Lee Sedol",
       "domain": "blog.google",
-      "relevance": "medium",
+      "relevance": "high",
       "supports_claim": true,
-      "excerpt": "January 7, 2026 - This concludes the 5 game match between AlphaGo and Lee Sedol,"
-    },
-    {
-      "url": "https://aitimeline.world/timeline/alphago-2016",
-      "title": "AlphaGo Defeats Lee Sedol (2016) | AI Timeline",
-      "domain": "aitimeline.world",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "June 20, 2026 - DeepMind's AlphaGo defeated Lee Sedol, one of the greatest Go players"
-    },
-    {
-      "url": "https://www.theguardian.com/technology/2016/mar/15/googles-alphago-seals-4-1-victory-over-grandmaster-lee-sedol",
-      "title": "AlphaGo seals 4-1 victory over Go grandmaster Lee Sedol | AI (artificial intelligence) | The Guardian",
-      "domain": "theguardian.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "November 29, 2017 - Google DeepMind’s AlphaGo program triumphed in its final game against South"
+      "excerpt": "AlphaGo winning the match 4 games to 1... a decade earlier than many predicted."
     },
     {
       "url": "https://www.nytimes.com/2016/03/16/world/asia/korea-alphago-vs-lee-sedol-go.html",
       "title": "Google’s Computer Program Beats Lee Se-dol in Go Tournament - The New York Times",
       "domain": "nytimes.com",
-      "relevance": "medium",
+      "relevance": "high",
       "supports_claim": true,
-      "excerpt": "March 15, 2016 - The program AlphaGo’s 4-1 victory was a historic stride for computer"
+      "excerpt": "The program AlphaGo’s 4-1 victory was a historic stride"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+      "title": "AlphaGo versus Lee Sedol - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "relevance": "high",
+      "supports_claim": true,
+      "excerpt": "experts in the field thought AI was 10 years away"
     }
   ],
-  "reasoning": "In March 2016, Google DeepMind's artificial intelligence program AlphaGo played a five-game match against South Korean Go grandmaster Lee Sedol, winning 4 games to 1. Lee Sedol, winner of 18 international titles, was widely celebrated as the preeminent Go player of his era. Prior to the match, AI experts and researchers broadly believed that defeating a top human Go master was roughly a decade away, making AlphaGo's victory a milestone that arrived approximately ten years ahead of expectations.",
+  "reasoning": "In March 2016, Google DeepMind's AlphaGo played a five-game match in Seoul against Lee Sedol, an 18-time world champion widely considered the top Go player of the decade. AlphaGo won the match 4-1. Artificial intelligence experts and commentators widely noted that achieving superhuman performance in Go occurred roughly a decade earlier than previous expert consensus had predicted.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -141,6 +125,12 @@
       "confidence": 100,
       "checked_at": "2026-09-03T10:36:55Z",
       "run_id": "run-2026-09-03T103417Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-09-11T10:41:56Z",
+      "run_id": "run-2026-09-11T102916Z"
     }
   ],
   "agent_flags": {

@@ -3,60 +3,60 @@
   "claim_id": "claim-004",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-09-11T10:44:10Z",
+  "last_checked_at": "2026-09-19T10:14:19Z",
   "last_changed_at": "2026-06-09T23:46:29Z",
-  "run_id": "run-2026-09-11T102916Z",
+  "run_id": "run-2026-09-19T101107Z",
   "sources": [
     {
-      "url": "https://law.stanford.edu/2023/04/19/gpt-4-passes-the-bar-exam-what-that-means-for-artificial-intelligence-tools-in-the-legal-industry/",
-      "title": "GPT-4 Passes the Bar Exam: What That Means for Artificial Intelligence Tools in the Legal Profession - Legal Aggregate - Stanford Law School",
-      "domain": "law.stanford.edu",
+      "url": "https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam",
+      "title": "How to Use Ai to Study for The Bar Exam | TikTok",
+      "domain": "tiktok.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "April 19, 2023 - CodeX–The Stanford Center for ... Research collaborators had deployed GPT-4, the"
+      "excerpt": "“Are you ready to pass the 2026 Bar Exams using 227 real cases penned by"
     },
     {
-      "url": "https://matthewstubenberg.com/blog/AI+Race+to+100+Percent+on+the+Bar+Exam",
-      "title": "AI Race to 100 Percent on the Bar Exam - Matthew Stubenberg",
-      "domain": "matthewstubenberg.com",
+      "url": "https://execbar.com/2026/04/ai-and-the-bar-exam-a-tool-not-a-tutor/",
+      "title": "AI and the Bar Exam: A Tool, Not a Tutor. - California Bar Review",
+      "domain": "execbar.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "September 23, 2025 - AI is raising the bar. More than two-thirds of the models"
+      "excerpt": "The California bar exam pass rate hovers around 40 to 50 percent and that number"
     },
     {
-      "url": "https://www.reuters.com/technology/bar-exam-score-shows-ai-can-keep-up-with-human-lawyers-researchers-say-2023-03-15/",
-      "title": "Bar exam score shows AI can keep up with 'human lawyers,' researchers say | Reuters",
-      "domain": "reuters.com",
+      "url": "https://www.linkedin.com/posts/bommarito_can-gemini-3-pass-the-bar-exam-at-this-activity-7396575232737767424-0rLz",
+      "title": "Can Gemini 3 pass the Bar Exam? At this point, who cares.",
+      "domain": "linkedin.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 15, 2023 - March 15 (Reuters) - Artificial intelligence can now outperform most law"
+      "excerpt": "More interestingly, what does Gemini 3 think about its ability to pass the Bar Exam?"
     },
     {
-      "url": "https://www.iit.edu/news/gpt-4-passes-bar-exam",
-      "title": "GPT-4 Passes the Bar Exam | Illinois Institute of Technology",
-      "domain": "iit.edu",
+      "url": "https://www.nybarexam.org/",
+      "title": "Bole- official page new york state bar examination",
+      "domain": "nybarexam.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 15, 2023 - In a period of roughly four years, the leading large language"
+      "excerpt": "The results from the February 2026 New York State Bar Examination were posted on April"
     },
     {
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10894685/",
-      "title": "GPT-4 passes the bar exam - PMC - NIH",
-      "domain": "pmc.ncbi.nlm.nih.gov",
+      "url": "https://www.techbuzz.ai/articles/anthropic-won-t-say-claude-isn-t-conscious",
+      "title": "Anthropic Won't Say Claude Isn't Conscious | The Tech Buzz",
+      "domain": "techbuzz.ai",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "GPT-4 delivers a 26.5% increase in the accuracy over ChatGPT, the previously best performing model."
+      "excerpt": "AI systems now pass the bar exam, write production code, and engage in conversations that"
     },
     {
-      "url": "https://www.lawweekcolorado.com/article/expert-weighs-in-ai-passes-bar-exam/",
-      "title": "Expert Weighs In: AI Passes Bar Exam - Law Week Colorado",
-      "domain": "lawweekcolorado.com",
+      "url": "https://www.youtube.com/watch?v=7jsCV2BNmdo",
+      "title": "10 days to the bar exam. Avoid emotional foolishness! #barexam",
+      "domain": "youtube.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "April 19, 2023 - According to the most recent paper, it scored drastically higher in"
+      "excerpt": "How to Pass the Bar Exam in 10 Days Олег Тиньков: «Я пока в шоке!»Объясняет"
     }
   ],
-  "reasoning": "Extensive empirical research, including a peer-reviewed study evaluating GPT-4 on the Uniform Bar Examination (UBE), established that modern large language models can pass the US bar exam with scores exceeding the average human test-taker. Specifically, the study published by researchers at Chicago-Kent College of Law and Stanford showed that GPT-4 passed all components of the exam and scored significantly above the passing threshold, outperforming the average human test-taker on the Multistate Bar Examination (MBE) by roughly 7% or more. Subsequent benchmark tests with newer LLMs have consistently replicated and exceeded these results.",
+  "reasoning": "The claim is accurate. In a widely cited 2023 study by Daniel Martin Katz, Michael Bommarito, Shang Gao, and Pablo Arredondo (\"GPT-4 Passes the Bar Exam\"), OpenAI's GPT-4 achieved a score of 297 on the Uniform Bar Examination (UBE). This easily exceeded the passing score in all UBE jurisdictions (which typically range from 260 to 270) and placed the model significantly above average, in the upper tier (approximately the 90th percentile) of human test-takers. Subsequent frontier models have replicated or exceeded these capabilities.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -147,6 +147,12 @@
       "confidence": 95,
       "checked_at": "2026-09-03T10:37:32Z",
       "run_id": "run-2026-09-03T103417Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-09-11T10:44:10Z",
+      "run_id": "run-2026-09-11T102916Z"
     }
   ],
   "agent_flags": {

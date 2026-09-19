@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-008",
   "verdict": "TRUE",
-  "confidence": 98,
-  "last_checked_at": "2026-09-11T10:47:39Z",
+  "confidence": 100,
+  "last_checked_at": "2026-09-19T10:14:54Z",
   "last_changed_at": "2026-06-09T23:47:06Z",
-  "run_id": "run-2026-09-11T102916Z",
+  "run_id": "run-2026-09-19T101107Z",
   "sources": [
     {
       "url": "https://timesofindia.indiatimes.com/etimes/trending/10-weird-and-funny-animal-facts-that-sound-fake-but-are-completely-real/articleshow/125381246.cms",
@@ -40,23 +40,23 @@
       "excerpt": "5. Octopuses have three hearts and their blood is blue due to being copper-based. 6."
     },
     {
-      "url": "https://www.torn.com/forums.php?p=threads&f=13&t=16441242&b=0&a=0rh=96&&start=100",
-      "title": "Forums | TORN",
-      "domain": "torn.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Octopuses have three hearts, and their blood is blue because it contains hemocyanin instead of"
-    },
-    {
       "url": "https://mathcorps.org/tag/results/",
       "title": "results Archives – Math Corps",
       "domain": "mathcorps.org",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "In the summer of 2021, the Covid-19 pandemic had been ravaging the city of Detroit"
+    },
+    {
+      "url": "https://jeopardylabs.com/play/fact-or-fake-2",
+      "title": "FACT OR FAKE Jeopardy Template",
+      "domain": "jeopardylabs.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Humans only use 10% of their brains.Octopuses have three hearts and their blood is blue!"
     }
   ],
-  "reasoning": "The claim is biologically accurate. Octopuses have three hearts: two branchial hearts that pump blood through the gills and one systemic heart that circulates oxygenated blood through the rest of the body. Additionally, their blood is blue because it uses a copper-rich protein called hemocyanin (rather than iron-based hemoglobin) to transport oxygen, which appears blue when oxygenated.",
+  "reasoning": "The claim is biologically accurate. Octopuses have three hearts: two branchial hearts that pump blood through the gills and one systemic heart that pumps oxygenated blood to the rest of the body. Furthermore, their blood is blue due to the presence of hemocyanin, a copper-rich protein used to transport oxygen in cold, low-oxygen marine environments, unlike the iron-based hemoglobin found in vertebrates.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -141,6 +141,12 @@
       "confidence": 98,
       "checked_at": "2026-09-03T10:38:45Z",
       "run_id": "run-2026-09-03T103417Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-09-11T10:47:39Z",
+      "run_id": "run-2026-09-11T102916Z"
     }
   ],
   "agent_flags": {
