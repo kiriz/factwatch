@@ -3,17 +3,17 @@
   "claim_id": "claim-009",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-09-14T11:38:07Z",
+  "last_checked_at": "2026-09-21T11:51:14Z",
   "last_changed_at": "2026-06-09T23:44:21Z",
-  "run_id": "run-2026-09-14T113439Z",
+  "run_id": "run-2026-09-21T114745Z",
   "sources": [
     {
-      "url": "https://historiacorner.com/people/was-napoleon-short/",
-      "title": "Was Napoleon Actually Short? The Myth Behind His Height",
-      "domain": "historiacorner.com",
+      "url": "https://en.wikipedia.org/wiki/Napoleon_complex",
+      "title": "Napoleon complex - Wikipedia",
+      "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jun 11, 2026 · Napoleon Bonaparte was not actually short by the standards of his"
+      "excerpt": "August 21, 2026 - The Napoleon complex is named after Napoleon Bonaparte, the first emperor"
     },
     {
       "url": "https://www.britannica.com/story/was-napoleon-short",
@@ -21,42 +21,42 @@
       "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Although the range may seem short by 21st-century standards, it was typical in the 19th"
+      "excerpt": "June 13, 2025 - Napoleon was thus average or taller, no matter the interpretation. Although"
     },
     {
-      "url": "https://history.howstuffworks.com/history-vs-myth/napoleon-short.htm",
-      "title": "How Tall Was Napoleon Bonaparte? Actually Pretty Average",
-      "domain": "history.howstuffworks.com",
+      "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
+      "title": "Was Napoleon Bonaparte Really Short?",
+      "domain": "thoughtco.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Aug 27, 2024 · Napoleon's short stature is an enduring topic. There's just one problem:"
-    },
-    {
-      "url": "https://www.historyrundown.com/was-napoleon-bonaparte-really-so-short/",
-      "title": "Was Napoleon Bonaparte Really So Short? - History Rundown",
-      "domain": "historyrundown.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Mar 7, 2020 · We often imagine Napoleon Bonaparte as an unusually short man, even"
-    },
-    {
-      "url": "https://www.thehistoricalfrontier.co.uk/stories/napoleon-short",
-      "title": "Was Napoleon Unusually Short? | thehistoricalfrontier",
-      "domain": "thehistoricalfrontier.co.uk",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Jul 20, 2026 · French records of Napoleon's height used a measurement system different from"
+      "excerpt": "May 13, 2025 - It turns out that Napoleon Bonaparte wasn't particularly short at all."
     },
     {
       "url": "https://www.history.com/articles/napoleon-complex-short",
-      "title": "Was Napoleon Short? Origins of the ‘Napoleon Complex’",
+      "title": "Was Napoleon Short? Origins of the 'Napoleon Complex' | HISTORY",
       "domain": "history.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Nov 13, 2019 · His supposedly small stature and fiery temper has inspired the term"
+      "excerpt": "According to pre–metric system French measures, he was a diminutive 5′2.” But the French inch"
+    },
+    {
+      "url": "https://www.factinate.com/people/everyone-seems-think-napoleon-was-short-yet-he-was-actually-taller-average-frenchman-his-time",
+      "title": "Everyone Seems To Think Napoleon Was Short, Yet He Was Actually Taller Than The Average Frenchman Of His Time",
+      "domain": "factinate.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "November 25, 2025 - ... After Napoleon’s passing in Saint Helena, his medical team performed"
+    },
+    {
+      "url": "https://history.howstuffworks.com/history-vs-myth/napoleon-short.htm",
+      "title": "How Tall Was Napoleon Bonaparte? Actually Pretty Average | HowStuffWorks",
+      "domain": "history.howstuffworks.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "August 27, 2024 - At the time of his death, he measured 5 feet, 2"
     }
   ],
-  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a well-known historical misconception. At his autopsy, Napoleon was recorded as measuring 5 feet 2 inches in pre-metric French units (*pieds de roi* and *pouces*). When converted to modern/British imperial units, this equates to roughly 5 feet 6 inches to 5 feet 7 inches (approximately 168–170 cm). During the early 19th century, the average height for an adult French male was between 5 feet 2 inches and 5 feet 6 inches, meaning Napoleon was of average or slightly above-average height for his time, rather than unusually short. The myth of his diminutive stature was further popularized by contemporary British propaganda and political caricatures (such as those by James Gillray).",
+  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a well-documented historical misconception. Following his death on Saint Helena, Napoleon's autopsy recorded his height as \"5 pieds 2 pouces\" in pre-metric French units. Because a French inch (*pouce*) was longer than a British imperial inch (approximately 2.7 cm compared to 2.54 cm), 5 feet 2 inches in French measure converts to approximately 5 feet 6 inches to 5 feet 7 inches (168–169 cm) in standard modern measurements. In the early 19th century, the average height for an adult French male was around 5 feet 5 inches, meaning Napoleon was of average or slightly above-average height for his era. The perception that he was exceptionally short was largely popularized by British political propaganda (notably caricatures by James Gillray) and the confusion between French and imperial measurement systems.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -147,6 +147,12 @@
       "confidence": 95,
       "checked_at": "2026-09-07T11:27:36Z",
       "run_id": "run-2026-09-07T112403Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-09-14T11:38:07Z",
+      "run_id": "run-2026-09-14T113439Z"
     }
   ],
   "agent_flags": {

@@ -2,19 +2,11 @@
   "schema_version": "1.0",
   "claim_id": "claim-007",
   "verdict": "FALSE",
-  "confidence": 95,
-  "last_checked_at": "2026-09-14T11:37:28Z",
+  "confidence": 100,
+  "last_checked_at": "2026-09-21T11:50:48Z",
   "last_changed_at": "2026-06-04T01:03:50Z",
-  "run_id": "run-2026-09-14T113439Z",
+  "run_id": "run-2026-09-21T114745Z",
   "sources": [
-    {
-      "url": "https://sikho.ai/blog/great-wall-china-visible-from-space-myth",
-      "title": "Great Wall China Visible Space Myth Debunked | Sikho.ai",
-      "domain": "sikho.ai",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "March 10, 2026 - However, the Great Wall of China can be photographed or observed"
-    },
     {
       "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
       "title": "Fact-check: The Great Wall of China is the only man-made...",
@@ -32,12 +24,20 @@
       "excerpt": "Myth: The Great Wall of China is the only man-made structure visible from space with"
     },
     {
-      "url": "https://www.yahoo.com/lifestyle/step-travel-6-beautiful-stairways-205634250.html",
-      "title": "Step Up Your Travel: Here Are 6 Beautiful Stairways From Around The...",
-      "domain": "yahoo.com",
+      "url": "https://www.linkedin.com/pulse/common-misconceptions-unveiling-truth-behind-commonly-gokhan-unal-q5o0f",
+      "title": "Common Misconceptions: Unveiling the Truth Behind Commonly Held...",
+      "domain": "linkedin.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Just along one 26-mile stretch — the official course of the Great Wall of China"
+      "excerpt": "5. Misconception: \"The Great Wall of China is the Only Man-Made Object Visible from Space\"."
+    },
+    {
+      "url": "https://popsci.blog/great-wall-china-satellite-picture-myth",
+      "title": "Satellite Picture of Great Wall of China: Fact vs. Myth - PopSCI.blog",
+      "domain": "popsci.blog",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The persistent myth that the Great Wall of China is the only man-made structure visible"
     },
     {
       "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
@@ -48,15 +48,15 @@
       "excerpt": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands"
     },
     {
-      "url": "https://travelnaut.com/trip/the-great-wall-of-china-china-1-day-couples-itinerary-30ivr",
-      "title": "Romantic One-Day Sightseeing Tour of the Great Wall - Travelnaut",
+      "url": "https://travelnaut.com/trip/the-great-wall-of-china-china-1-day-friends-itinerary-jv90g/",
+      "title": "1-Day Great Wall of China Sightseeing Adventure with... - Travelnaut",
       "domain": "travelnaut.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Did you know that the Great Wall of China is the only man-made structure visible"
     }
   ],
-  "reasoning": "The claim that the Great Wall of China is visible from space with the naked eye—let alone the only man-made structure visible—is a well-documented myth. According to NASA and reports from astronauts, the Great Wall cannot be seen from low Earth orbit without magnification because it is narrow (typically only about 6 to 9 meters wide) and made of materials that blend into the surrounding landscape. Furthermore, many other man-made structures and features, such as highways, airports, dams, and cities at night, are actually visible from low Earth orbit with the naked eye.",
+  "reasoning": "The claim that the Great Wall of China is visible from space with the naked eye—let alone the only man-made structure visible—is a well-documented myth. Astronauts from NASA and China's space program (including Yang Liwei) have confirmed that the Great Wall cannot be distinguished from low Earth orbit without optical aid. Although it is very long, it is typically only 5 to 9 meters wide and constructed from local stones and soil that blend into the surrounding terrain, providing insufficient contrast and resolution for the human eye. In contrast, other man-made features (such as large highways, airports, canals, and city lights at night) can be seen with the unaided eye from low Earth orbit under favorable conditions.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -147,6 +147,12 @@
       "confidence": 100,
       "checked_at": "2026-09-07T11:27:19Z",
       "run_id": "run-2026-09-07T112403Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-09-14T11:37:28Z",
+      "run_id": "run-2026-09-14T113439Z"
     }
   ],
   "agent_flags": {

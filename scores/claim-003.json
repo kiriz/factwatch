@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-003",
   "verdict": "FALSE",
-  "confidence": 100,
-  "last_checked_at": "2026-09-14T11:36:42Z",
+  "confidence": 98,
+  "last_checked_at": "2026-09-21T11:49:21Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-09-14T113439Z",
+  "run_id": "run-2026-09-21T114745Z",
   "sources": [
     {
       "url": "https://blog.alor.org/index.php/do-mrna-vaccines-permanently-alter-human-dna-making-you-a-genetically-modified-organism-by-brian-simpson?format=print&print=1&tmpl=component",
@@ -32,20 +32,20 @@
       "excerpt": "May 31, 2023 - Updated December 27, 2022 March 3, 2022 Pfizer’s covid jab contents"
     },
     {
-      "url": "https://www.scientificamerican.com/article/major-covid-study-that-fueled-vaccine-skepticism-retracted-over-misinformation/",
-      "title": "Major COVID study that fueled vaccine skepticism retracted over ‘misinformation’ | Scientific American",
-      "domain": "scientificamerican.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "August 12, 2026 - The Princess Máxima Center’s report detailing its own findings “concluded ..."
-    },
-    {
       "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
       "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA - RESPECTFUL INSOLENCE",
       "domain": "respectfulinsolence.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "March 9, 2022 - Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently"
+    },
+    {
+      "url": "https://www.factcheck.org/2023/10/scicheck-covid-19-vaccines-have-not-been-shown-to-alter-dna-cause-cancer/",
+      "title": "COVID-19 Vaccines Have Not Been Shown to Alter DNA, Cause Cancer - FactCheck.org",
+      "domain": "factcheck.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "November 7, 2025 - Small amounts of DNA from the manufacturing process may remain in"
     },
     {
       "url": "https://www.sgtreport.com/2025/05/genetic-bombshell-covid-19-vaccines-change-the-human-genome/",
@@ -56,7 +56,7 @@
       "excerpt": "Approximately 8% of the human genome is not strictly human DNA, consisting of remnants of"
     }
   ],
-  "reasoning": "According to established molecular biology and public health authorities including the CDC, WHO, and NIH, mRNA vaccines do not alter, integrate into, or permanently change human DNA. mRNA delivered by vaccines functions strictly in the cytoplasm of the cell to instruct the ribosomes to produce harmless spike proteins. The mRNA does not enter the cell nucleus (where genomic DNA is housed) and naturally degrades quickly. Furthermore, human cells lack the enzymatic machinery (reverse transcriptase) required to transcribe mRNA back into genomic DNA. Claims alleging permanent genetic modification have been widely debunked as scientific misinformation.",
+  "reasoning": "Scientific consensus, established molecular biology, and health authorities (including the CDC, WHO, and FDA) confirm that mRNA vaccines cannot alter, edit, or integrate into human DNA. The mRNA delivered by the vaccines remains in the cytoplasm, does not enter the cell nucleus where DNA is housed, lacks the reverse transcriptase mechanisms necessary to integrate into the host genome, and is rapidly broken down by cellular processes shortly after translation.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -153,13 +153,19 @@
       "confidence": 99,
       "checked_at": "2026-09-07T11:26:45Z",
       "run_id": "run-2026-09-07T112403Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-09-14T11:36:42Z",
+      "run_id": "run-2026-09-14T113439Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
     "requires_human_review": false,
-    "low_source_quality": false
+    "low_source_quality": true
   },
   "title": "mRNA vaccines alter human DNA",
   "category": "health",

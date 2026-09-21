@@ -1,6 +1,13 @@
 {
   "runs": [
     {
+      "run_id": "run-2026-09-21T114745Z",
+      "started_at": "2026-09-21T11:47:45Z",
+      "claims_processed": 6,
+      "verdicts_changed": 0,
+      "errors": 1
+    },
+    {
       "run_id": "run-2026-09-20T102940Z",
       "started_at": "2026-09-20T10:29:40Z",
       "claims_processed": 1,
@@ -619,13 +626,6 @@
     {
       "run_id": "run-2026-06-23T071522Z",
       "started_at": "2026-06-23T07:15:22Z",
-      "claims_processed": 0,
-      "verdicts_changed": 0,
-      "errors": 0
-    },
-    {
-      "run_id": "run-2026-06-22T080125Z",
-      "started_at": "2026-06-22T08:01:25Z",
       "claims_processed": 0,
       "verdicts_changed": 0,
       "errors": 0
