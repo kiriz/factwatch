@@ -1,0 +1,81 @@
+{
+  "run_id": "run-2026-09-22T104949Z",
+  "started_at": "2026-09-22T10:49:49Z",
+  "finished_at": "2026-09-22T10:50:22Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 99,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that humans use only 10% of their brains is a well-known, widely debunked neurological myth",
+        "Brain imaging technologies such as fMRI and PET scans demonstrate that virtually all parts of the brain are active and have specific functions, even during simple tasks or sleep",
+        "Furthermore, evolutionary biology and clinical neurology show that unused brain areas would degenerate or atrophy over time; even minor damage to small regions of the brain often results in noticeable cognitive, sensory, or motor deficits",
+        "Neuroscientists widely agree that there is no large, dormant 90% portion of the brain waiting to be unlocked."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\\\"\",\n  \"verification_notes\": \"Check neuroimaging studies (fMRI, PET). Verify whether any region of the brain is truly inactive. Look at what happens to brain tissue when it's genuinely unused (it atrophies). Check scientific consensus from neuroscience organizations.\",\n  \"search_results\": \"[1] Ten-percent-of-the-brain myth - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth\\nExcerpt: August 20, 2026 - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads expe\\n\\n[2] Do We Really Use Only 10 Percent of Our Brain? | Britannica\\nURL: https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain\\nExcerpt: 3 weeks ago - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities....\\n\\n[3] Do we only use 10 percent of our brain? - MIT McGovern Institute\\nURL: https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/\\nExcerpt: March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis.\\n\\n[4] Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today\\nURL: https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains\\nExcerpt: May 15, 2025 - This notion, repeated in movies, motivational speeches, and even some classrooms, implies that a vast cognitive potential remains untapped. However, this idea is scientifically inaccurate and undermines our understanding of human mental capacity.\\n\\n[5] Do People Only Use 10 Percent of Their Brains? | Scientific American\\nURL: https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/\\nExcerpt: February 20, 2024 - Another mystery hidden within our ... is that out of all the brain's cells, only 10 percent are neurons; the other 90 percent are glial cells, which encapsulate and support neurons, but whose function remains largely unknown. Ultimately, it's not that we use 10 percent of our bra\\n\\n[6] Do We Only Use 10% of our Brains? | Snopes.com\\nURL: https://www.snopes.com//fact-check/the-ten-percent-myth/\\nExcerpt: August 4, 2022 - In fact, most of us only use about 10 per cent of our brains, if that. The other 90 per cent is full of untapped potential and undiscovered abilities, which means our minds are only operating in a very limited way instead of at full stretch.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 99,\n  \"reasoning\": \"The claim that humans use only 10% of their brains is a well-known, widely debunked neurological myth. Brain imaging technologies such as fMRI and PET scans demonstrate that virtually all parts of the brain are active and have specific functions, even during simple tasks or sleep. Furthermore, evolutionary biology and clinical neurology show that unused brain areas would degenerate or atrophy over time; even minor damage to small regions of the brain often results in noticeable cognitive, sensory, or motor deficits. Neuroscientists widely agree that there is no large, dormant 90% portion of the brain waiting to be unlocked.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+        "Humans only use 10% of their brains",
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
+          "title": "Ten-percent-of-the-brain myth - Wikipedia",
+          "snippet": "August 20, 2026 - Although several parts of the brain ... remains unclear. Perhaps the broadest, most mysterious question is how diverse regions of the brain collaborate to form conscious experiences. So far, there is no evidence that there is one site responsible for consciousness, which leads experts to believe that it stems from multiple areas of the brain. Therefore, as with Kalat's idea that humans have untapped cognitive ..."
+        },
+        {
+          "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
+          "title": "Do We Really Use Only 10 Percent of Our Brain? | Britannica",
+          "snippet": "3 weeks ago - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows otherwise ordinary human beings to display extraordinary mental abilities...."
+        },
+        {
+          "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
+          "title": "Do we only use 10 percent of our brain? - MIT McGovern Institute",
+          "snippet": "March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans use only 10 percent of their brains—and those who unlock a higher percentage wield powers like infinite memory or telekinesis."
+        },
+        {
+          "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
+          "title": "Beyond the Myth That We Use Only 10 Percent of Our Brains | Psychology Today",
+          "snippet": "May 15, 2025 - This notion, repeated in movies, motivational speeches, and even some classrooms, implies that a vast cognitive potential remains untapped. However, this idea is scientifically inaccurate and undermines our understanding of human mental capacity."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+          "title": "Do People Only Use 10 Percent of Their Brains? | Scientific American",
+          "snippet": "February 20, 2024 - Another mystery hidden within our ... is that out of all the brain's cells, only 10 percent are neurons; the other 90 percent are glial cells, which encapsulate and support neurons, but whose function remains largely unknown. Ultimately, it's not that we use 10 percent of our brains, merely that we only understand about 10 percent of how it functions...."
+        },
+        {
+          "url": "https://www.snopes.com//fact-check/the-ten-percent-myth/",
+          "title": "Do We Only Use 10% of our Brains? | Snopes.com",
+          "snippet": "August 4, 2022 - In fact, most of us only use about 10 per cent of our brains, if that. The other 90 per cent is full of untapped potential and undiscovered abilities, which means our minds are only operating in a very limited way instead of at full stretch."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}

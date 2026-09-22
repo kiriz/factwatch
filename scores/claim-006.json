@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-006",
   "verdict": "FALSE",
-  "confidence": 100,
-  "last_checked_at": "2026-09-14T11:36:59Z",
+  "confidence": 99,
+  "last_checked_at": "2026-09-22T10:50:20Z",
   "last_changed_at": "2026-06-09T23:43:44Z",
-  "run_id": "run-2026-09-14T113439Z",
+  "run_id": "run-2026-09-22T104949Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Ten-percent-of-the-brain_myth",
@@ -13,7 +13,7 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "4 weeks ago - Although several parts of the brain ... remains unclear. Perhaps the"
+      "excerpt": "August 20, 2026 - Although several parts of the brain ... remains unclear. Perhaps the"
     },
     {
       "url": "https://www.britannica.com/story/do-we-really-use-only-10-percent-of-our-brain",
@@ -21,7 +21,15 @@
       "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "July 13, 2026 - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows"
+      "excerpt": "3 weeks ago - It’s one of Hollywood’s favorite ... the remaining 90 percent—supposedly dormant—allows"
+    },
+    {
+      "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
+      "title": "Do we only use 10 percent of our brain? - MIT McGovern Institute",
+      "domain": "mcgovern.mit.edu",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans"
     },
     {
       "url": "https://www.psychologytoday.com/us/blog/common-sense-science/202505/beyond-the-myth-that-we-use-only-10-percent-of-our-brains",
@@ -40,15 +48,7 @@
       "excerpt": "February 20, 2024 - Another mystery hidden within our ... is that out of all"
     },
     {
-      "url": "https://mcgovern.mit.edu/2024/01/26/do-we-use-only-10-percent-of-our-brain/",
-      "title": "Do we only use 10 percent of our brain? - MIT McGovern Institute",
-      "domain": "mcgovern.mit.edu",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "March 4, 2024 - Movies like “Limitless” and “Lucy” play on the notion that humans"
-    },
-    {
-      "url": "https://www.snopes.com/fact-check/the-ten-percent-myth/",
+      "url": "https://www.snopes.com//fact-check/the-ten-percent-myth/",
       "title": "Do We Only Use 10% of our Brains? | Snopes.com",
       "domain": "snopes.com",
       "relevance": "medium",
@@ -56,7 +56,7 @@
       "excerpt": "August 4, 2022 - In fact, most of us only use about 10 per cent"
     }
   ],
-  "reasoning": "The claim that humans only use 10% of their brain capacity is a well-known scientific myth. Neuroimaging studies, including fMRI and PET scans, show that virtually all parts of the brain have a known function and are active throughout the course of a normal day, even during sleep. Neurologists also note that brain tissue that goes unused typically atrophies or degenerates, and even minor damage to small areas of the brain often results in noticeable cognitive or physical impairments, contradicting the idea that 90% remains dormant. Major neuroscientific and medical institutions universally reject the 10% claim.",
+  "reasoning": "The claim that humans use only 10% of their brains is a well-known, widely debunked neurological myth. Brain imaging technologies such as fMRI and PET scans demonstrate that virtually all parts of the brain are active and have specific functions, even during simple tasks or sleep. Furthermore, evolutionary biology and clinical neurology show that unused brain areas would degenerate or atrophy over time; even minor damage to small regions of the brain often results in noticeable cognitive, sensory, or motor deficits. Neuroscientists widely agree that there is no large, dormant 90% portion of the brain waiting to be unlocked.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -147,6 +147,12 @@
       "confidence": 100,
       "checked_at": "2026-09-07T11:27:02Z",
       "run_id": "run-2026-09-07T112403Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-09-14T11:36:59Z",
+      "run_id": "run-2026-09-14T113439Z"
     }
   ],
   "agent_flags": {
