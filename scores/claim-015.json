@@ -2,45 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-015",
   "verdict": "TRUE",
-  "confidence": 98,
-  "last_checked_at": "2026-09-19T10:13:39Z",
+  "confidence": 100,
+  "last_checked_at": "2026-09-26T10:43:59Z",
   "last_changed_at": "2026-06-09T23:45:43Z",
-  "run_id": "run-2026-09-19T101107Z",
+  "run_id": "run-2026-09-26T104134Z",
   "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+      "title": "AlphaGo versus Lee Sedol - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "3 weeks ago - Before AlphaGo, some researchers ... never defeat top humans at Go."
+    },
     {
       "url": "https://deepmind.google/research/alphago/",
       "title": "AlphaGo — Google DeepMind",
       "domain": "deepmind.google",
-      "relevance": "high",
+      "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AlphaGo's 4-1 victory in Seoul, South Korea, in March 2016"
+      "excerpt": "AlphaGo defeated a human Go world champion a decade before experts thought possible, inspired players"
     },
     {
       "url": "https://blog.google/innovation-and-ai/products/alphagos-ultimate-challenge/",
       "title": "AlphaGo’s ultimate challenge: a five-game match against the legendary Lee Sedol",
       "domain": "blog.google",
-      "relevance": "high",
+      "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AlphaGo winning the match 4 games to 1... a decade earlier than many predicted."
+      "excerpt": "January 7, 2026 - This concludes the 5 game match between AlphaGo and Lee Sedol,"
     },
     {
-      "url": "https://www.nytimes.com/2016/03/16/world/asia/korea-alphago-vs-lee-sedol-go.html",
-      "title": "Google’s Computer Program Beats Lee Se-dol in Go Tournament - The New York Times",
-      "domain": "nytimes.com",
-      "relevance": "high",
+      "url": "https://www.theguardian.com/technology/2016/mar/15/googles-alphago-seals-4-1-victory-over-grandmaster-lee-sedol",
+      "title": "AlphaGo seals 4-1 victory over Go grandmaster Lee Sedol | AI (artificial intelligence) | The Guardian",
+      "domain": "theguardian.com",
+      "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The program AlphaGo’s 4-1 victory was a historic stride"
+      "excerpt": "November 29, 2017 - Google DeepMind’s AlphaGo program triumphed in its final game against South"
     },
     {
-      "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
-      "title": "AlphaGo versus Lee Sedol - Wikipedia",
-      "domain": "en.wikipedia.org",
-      "relevance": "high",
+      "url": "https://www.theatlantic.com/technology/archive/2016/03/the-invisible-opponent/475611/",
+      "title": "How Google's AlphaGo Beat Lee Sedol, a Go World Champion - The Atlantic",
+      "domain": "theatlantic.com",
+      "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "experts in the field thought AI was 10 years away"
+      "excerpt": "April 8, 2016 - The news rippled through the Go world. It was widely believed"
+    },
+    {
+      "url": "https://www.businessinsider.com/ai-4-human-1-google-deepmind-beat-go-champion-lee-sedol-in-a-tense-final-game-2016-3",
+      "title": "AI 4 Human 1: Google DeepMind Beats Go Champion Lee Sedol in a Tense Final Game - Business Insider",
+      "domain": "businessinsider.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 15, 2016 - Google DeepMind's AI has won the fifth and final game of"
     }
   ],
-  "reasoning": "In March 2016, Google DeepMind's AlphaGo played a five-game match in Seoul against Lee Sedol, an 18-time world champion widely considered the top Go player of the decade. AlphaGo won the match 4-1. Artificial intelligence experts and commentators widely noted that achieving superhuman performance in Go occurred roughly a decade earlier than previous expert consensus had predicted.",
+  "reasoning": "In March 2016, Google DeepMind's AlphaGo defeated 18-time world Go champion Lee Sedol in a five-game match by a score of 4 to 1. Artificial intelligence experts and researchers widely regarded the achievement as being roughly a decade ahead of expectations, as computer mastery of Go had long been considered significantly harder than chess and years away from reaching top professional levels.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -131,6 +147,12 @@
       "confidence": 95,
       "checked_at": "2026-09-11T10:41:56Z",
       "run_id": "run-2026-09-11T102916Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-09-19T10:13:39Z",
+      "run_id": "run-2026-09-19T101107Z"
     }
   ],
   "agent_flags": {
