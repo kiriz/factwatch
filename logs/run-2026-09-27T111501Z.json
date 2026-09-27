@@ -1,0 +1,363 @@
+{
+  "run_id": "run-2026-09-27T111501Z",
+  "started_at": "2026-09-27T11:15:01Z",
+  "finished_at": "2026-09-27T11:17:04Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to data and models from the Cambridge Centre for Alternative Finance (CBECI) as well as assessments from the International Monetary Fund (IMF), Bitcoin's annualized electricity consumption (often estimated between 120 and 170+ TWh) has consistently matched or exceeded the total annual electricity consumption of countries like Argentina (which consumes roughly 125–135 TWh per year) [1, 2, 3, 4]."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\\\"\",\n  \"verification_notes\": \"Check the Cambridge CBECI for current figures. Compare to IEA national electricity consumption data. Verify whether the comparison holds with current mining conditions. Note whether the claim refers to TWh/year.\",\n  \"search_results\": \"[1] Bitcoin consumes 'more electricity than Argentina'\\nURL: https://www.bbc.com/news/technology-56012952\\nExcerpt: The University of Cambridge's online tool estimates Bitcoin's annual electricity consumption is more than The Netherlands, United Arab Emirates and Argentina Published: February 10, 2021\\n\\n[2] Bitcoin consumption beats Argentina's annual energy use\\nURL: https://www.aa.com.tr/en/energy/finance/bitcoin-consumption-beats-argentinas-annual-energy-use/31867\\nExcerpt: Bitcoin uses more electricity annually than the whole of Argentina and the United Arab Emirates, according to an analysis by Cambridge University.\\n\\n[3] The Global Disparity in Bitcoin's Electricity Consumption: Data Insights\\nURL: https://www.linkedin.com/pulse/global-disparity-bitcoins-electricity-consumption-data-hassani-auc7e\\nExcerpt: November 16, 2023 - For instance: Argentina: With an estimated energy consumption of 127 TWh in recent years, Bitcoin’s energy usage surpasses that of Argentina, highlighting the immense scale of its power requirements.\\n\\n[4] Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative – ICA\\nURL: https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/\\nExcerpt: Bitcoin consumes as much electricity as an entire country—Argentina. That striking fact, highlighted by the International Monetary Fund (IMF), should give every policymaker pause. While the digital payment world is celebrated as convenient and cutting-edge, it carries a hidden and massive ...\\n\\n[5] How Much Electricity Does Bitcoin Mining Use? 2025 Analysis\\nURL: https://solartechonline.com/blog/bitcoin-electricity-consumption-mining-2025/\\nExcerpt: September 19, 2025 - Bitcoin mining consumes an astounding amount of electricity – equivalent to the entire annual consumption of countries like Poland or Argentina.\\n\\n[6] Bitcoin consumes as much Electricity as Argentina, Says IMF\\nURL: https://www.cryptocoverage.co/news/bitcoin-consumes-as-much-electricity-as-argentina-says-imf\\nExcerpt: August 1, 2025 - The International Monetary Fund (IMF) has ignited global debate by revealing Bitcoin’s staggering energy footprint equivalent to Argentina’s entire annual electricity consumption while simultaneously acknowledging its exclusion from traditional economic metrics.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to data and models from the Cambridge Centre for Alternative Finance (CBECI) as well as assessments from the International Monetary Fund (IMF), Bitcoin's annualized electricity consumption (often estimated between 120 and 170+ TWh) has consistently matched or exceeded the total annual electricity consumption of countries like Argentina (which consumes roughly 125–135 TWh per year) [1, 2, 3, 4].\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+        "Bitcoin uses more electricity than Argentina",
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-56012952",
+          "title": "Bitcoin consumes 'more electricity than Argentina'",
+          "snippet": "The University of Cambridge's online tool estimates Bitcoin's annual electricity consumption is more than The Netherlands, United Arab Emirates and Argentina Published: February 10, 2021"
+        },
+        {
+          "url": "https://www.aa.com.tr/en/energy/finance/bitcoin-consumption-beats-argentinas-annual-energy-use/31867",
+          "title": "Bitcoin consumption beats Argentina's annual energy use",
+          "snippet": "Bitcoin uses more electricity annually than the whole of Argentina and the United Arab Emirates, according to an analysis by Cambridge University."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/global-disparity-bitcoins-electricity-consumption-data-hassani-auc7e",
+          "title": "The Global Disparity in Bitcoin's Electricity Consumption: Data Insights",
+          "snippet": "November 16, 2023 - For instance: Argentina: With an estimated energy consumption of 127 TWh in recent years, Bitcoin’s energy usage surpasses that of Argentina, highlighting the immense scale of its power requirements."
+        },
+        {
+          "url": "https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/",
+          "title": "Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative – ICA",
+          "snippet": "Bitcoin consumes as much electricity as an entire country—Argentina. That striking fact, highlighted by the International Monetary Fund (IMF), should give every policymaker pause. While the digital payment world is celebrated as convenient and cutting-edge, it carries a hidden and massive ..."
+        },
+        {
+          "url": "https://solartechonline.com/blog/bitcoin-electricity-consumption-mining-2025/",
+          "title": "How Much Electricity Does Bitcoin Mining Use? 2025 Analysis",
+          "snippet": "September 19, 2025 - Bitcoin mining consumes an astounding amount of electricity – equivalent to the entire annual consumption of countries like Poland or Argentina."
+        },
+        {
+          "url": "https://www.cryptocoverage.co/news/bitcoin-consumes-as-much-electricity-as-argentina-says-imf",
+          "title": "Bitcoin consumes as much Electricity as Argentina, Says IMF",
+          "snippet": "August 1, 2025 - The International Monetary Fund (IMF) has ignited global debate by revealing Bitcoin’s staggering energy footprint equivalent to Argentina’s entire annual electricity consumption while simultaneously acknowledging its exclusion from traditional economic metrics."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Under the Congressional Budget and Impoundment Control Act of 1974, the federal fiscal year begins on October 1",
+        "A complete budget requires enacting all regular appropriations bills prior to this deadline",
+        "According to Congressional Research Service data and analysis by the Pew Research Center, Congress has passed all required regular appropriations measures before October 1 only four times since 1977: for fiscal years 1977, 1989, 1995, and 1997",
+        "Since Fiscal Year 1997, Congress has consistently relied on continuing resolutions or passed full-year appropriations packages after the start of the fiscal year."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The US Congress has not passed a complete federal budget on time since 1997.\\\"\",\n  \"verification_notes\": \"Check Congressional Research Service records. Fiscal year starts October 1. Verify if any year between 1998 and present had all 12 appropriations bills enacted before the deadline. Note distinction between omnibus packages and individual bills.\",\n  \"search_results\": \"[1] Continuing resolution - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Continuing_resolution\\nExcerpt: 3 weeks ago - Between fiscal year 1977 and fiscal year 2015, Congress only passed all twelve regular appropriations bills on time in four years - fiscal years 1977, 1989, 1995, and 1997. Between 1980 and 2013, there were eight government shutdowns in the United States. Most of these shutdowns revolv\\n\\n[2] Congress has long struggled to pass spending bills on time | Pew Research Center\\nURL: https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/\\nExcerpt: October 1, 2025 - In the nearly five decades that ... place, Congress has passed all its required appropriations measures on time only four times: fiscal 1977 (the first full fiscal year under the current system), 1989, 1995 and 1997....\\n\\n[3] FEDERAL BUDGET PROCESS STRUCTURAL REFORM | Congress.gov | Library of Congress\\nURL: https://www.congress.gov/event/107th-congress/house-event/LC16636/text\\nExcerpt: Of course, additional supplementals ... and evolving priorities, while still saving a substantial amount of time that is currently devoted to budgeting and which could be redirected to longer-term planning and management initiatives. 2. In testimony before the Senate Governmental Affair's Committee\\n\\n[4] The Federal Budget Timeline & Process\\nURL: https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline\\nExcerpt: March 31, 2026 - Since the Congressional Budget Act of 1974 went into effect in fiscal year 1977, Congress has only passed all its appropriations measures on time four times (1977, 1989, 1995, 1997).\\n\\n[5] How does the government budget process work? | USAFacts\\nURL: https://usafacts.org/articles/how-does-the-government-budget-process-work/\\nExcerpt: September 18, 2025 - Here’s the catch — for all of the 21st century, Congress has not met the appropriations deadlines and most federal funding has happened through continuing resolutions. These bills provide temporary financial coverage for government programs ...\\n\\n[6] Congress hasn’t passed a budget on time since 1997. We should fix that.\\nURL: https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/\\nExcerpt: December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article I, Section 9, which states that “No Money shall be drawn from the Treasury, but in Consequence of Appropriations made by Law.” Critically, the Constitution doesn’t mandate the current authorization and annu\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"Under the Congressional Budget and Impoundment Control Act of 1974, the federal fiscal year begins on October 1. A complete budget requires enacting all regular appropriations bills prior to this deadline. According to Congressional Research Service data and analysis by the Pew Research Center, Congress has passed all required regular appropriations measures before October 1 only four times since 1977: for fiscal years 1977, 1989, 1995, and 1997. Since Fiscal Year 1997, Congress has consistently relied on continuing resolutions or passed full-year appropriations packages after the start of the fiscal year.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+        "US Congress passed no budget on time since 1997",
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Continuing_resolution",
+          "title": "Continuing resolution - Wikipedia",
+          "snippet": "3 weeks ago - Between fiscal year 1977 and fiscal year 2015, Congress only passed all twelve regular appropriations bills on time in four years - fiscal years 1977, 1989, 1995, and 1997. Between 1980 and 2013, there were eight government shutdowns in the United States. Most of these shutdowns revolved around budget ..."
+        },
+        {
+          "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
+          "title": "Congress has long struggled to pass spending bills on time | Pew Research Center",
+          "snippet": "October 1, 2025 - In the nearly five decades that ... place, Congress has passed all its required appropriations measures on time only four times: fiscal 1977 (the first full fiscal year under the current system), 1989, 1995 and 1997...."
+        },
+        {
+          "url": "https://www.congress.gov/event/107th-congress/house-event/LC16636/text",
+          "title": "FEDERAL BUDGET PROCESS STRUCTURAL REFORM | Congress.gov | Library of Congress",
+          "snippet": "Of course, additional supplementals ... and evolving priorities, while still saving a substantial amount of time that is currently devoted to budgeting and which could be redirected to longer-term planning and management initiatives. 2. In testimony before the Senate Governmental Affair's Committee in 1997, OMB Director Frank Raines with respect to biennial budgeting legislation (S. 261) stated: ``If there is any one area that I have found, since I have been in this job, to be lacking, it is time for the senior managers in the government to focus on actually implementing the laws that Congress has passed...."
+        },
+        {
+          "url": "https://fiscalnote.com/blog/14-steps-to-the-federal-budget-timeline",
+          "title": "The Federal Budget Timeline & Process",
+          "snippet": "March 31, 2026 - Since the Congressional Budget Act of 1974 went into effect in fiscal year 1977, Congress has only passed all its appropriations measures on time four times (1977, 1989, 1995, 1997)."
+        },
+        {
+          "url": "https://usafacts.org/articles/how-does-the-government-budget-process-work/",
+          "title": "How does the government budget process work? | USAFacts",
+          "snippet": "September 18, 2025 - Here’s the catch — for all of the 21st century, Congress has not met the appropriations deadlines and most federal funding has happened through continuing resolutions. These bills provide temporary financial coverage for government programs ..."
+        },
+        {
+          "url": "https://thehill.com/opinion/congress-blog/5651844-fixing-budget-chaos-congress/",
+          "title": "Congress hasn’t passed a budget on time since 1997. We should fix that.",
+          "snippet": "December 18, 2025 - The Constitution grants Congress the “power of the purse” through Article I, Section 9, which states that “No Money shall be drawn from the Treasury, but in Consequence of Appropriations made by Law.” Critically, the Constitution doesn’t mandate the current authorization and annual appropriations process currently used. It simply requires that spending be authorized by law. The “textbook” legislative process requires Congress to pass approximately 12 appropriations bills by Oct. 1 for the following fiscal year — something Congress hasn’t done since 1996. Instead, the country lurches from continuing resolution to continuing resolution, with shutdowns or their threat becoming routine weapons in partisan warfare. Federal agencies can’t plan, contractors face uncertainty, and essential services hang in the balance while politicians posture."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_title": "Octopuses have three hearts and blue blood",
+      "claim_text": "\"Octopuses have three hearts and their blood is blue.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Octopuses possess three hearts and blue blood",
+        "Two branchial hearts pump blood through the gills, while a third systemic heart pumps oxygenated blood to the rest of the body",
+        "Their blood is blue because it uses a copper-rich protein called hemocyanin to bind and transport oxygen, rather than the iron-based hemoglobin found in vertebrates",
+        "When oxygenated, hemocyanin turns a distinct blue color."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Octopuses have three hearts and their blood is blue.\\\"\",\n  \"verification_notes\": \"Check marine biology sources. Verify the function of each heart (two branchial hearts, one systemic). Confirm the copper-based hemocyanin mechanism that makes blood blue. Check whether the blood turns colorless when deoxygenated.\",\n  \"search_results\": \"[1] Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood\\nURL: https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/\\nExcerpt: May 1, 2024 - To survive in the deep ocean, ... human blood. Whereas our iron-rich blood is red when it meets oxygen, the copper in octopus blood makes it appear blue....\\n\\n[2] Did You Know Octopus Have Three Hearts And Blue Blood? These Magnificent Marine Mollusks Are Being Exploited And Need Our Help - Animal Save Movement\\nURL: https://thesavemovement.org/did-you-know-octopus-have-three-hearts-and-blue-blood-these-magnificent-marine-mollusks-are-being-exploited-and-need-our-help/\\nExcerpt: May 24, 2025 - With three functioning hearts, ... to the rest of their body. Not only can octopuses change colour and patterns due to their skin containing cells called chromatophores, but their blood is blue!...\\n\\n[3] Octopuses keep surprising us - here are eight examples how | Natural History Museum\\nURL: https://www.nhm.ac.uk/discover/octopuses-keep-surprising-us-here-are-eight-examples-how.html\\nExcerpt: 1 month ago - Octopuses have blue blood, three hearts and a doughnut-shaped brain. But these aren’t even the most unusual things about them! Known for their otherworldly look and remarkable intelligence, octopuses continue to reveal astonishing qualities, abilities and behaviour.\\n\\n[4] r/Damnthatsinteresting on Reddit: An Octopus has three hearts and the colour of their blood is blue.They have eight arms and each arm contains its own 'mini brain'\\nURL: https://www.reddit.com/r/Damnthatsinteresting/comments/1cn5gdl/an_octopus_has_three_hearts_and_the_colour_of/\\nExcerpt: May 8, 2024 - This is Centralian Blue Tongue Lizard, commonly found in Australia. It puffs up and flashes its blue tongue when it feels threatened ... Octopuses can rapidly edit their own RNA in response to colder temperatures, changing the proteins their ...\\n\\n[5] How many hearts does an octopus have? - BBC Science Focus Magazine\\nURL: https://www.sciencefocus.com/nature/why-does-an-octopus-have-more-than-one-heart\\nExcerpt: July 12, 2023 - Unlike vertebrates that have iron-rich haemoglobin packed into red blood cells, octopuses – along with some tarantulas, scorpions and horseshoe crabs – have copper-rich haemocyanin dissolved directly in their blood (this means their blood ...\\n\\n[6] Eight Strange and Wonderful Facts About Octopuses | Shedd Aquarium\\nURL: https://www.sheddaquarium.org/stories/eight-strange-and-wonderful-facts-about-octopuses\\nExcerpt: Copper-based hemocyanin is more ... our blood red. Octopuses also have three hearts: two just to pump blood through the gills and one more to circulate it to the organs....\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"Octopuses possess three hearts and blue blood. Two branchial hearts pump blood through the gills, while a third systemic heart pumps oxygenated blood to the rest of the body. Their blood is blue because it uses a copper-rich protein called hemocyanin to bind and transport oxygen, rather than the iron-based hemoglobin found in vertebrates. When oxygenated, hemocyanin turns a distinct blue color.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Octopuses have three hearts and their blood is blue.\"",
+        "Octopuses have three hearts and blue blood",
+        "\"Octopuses have three hearts and their blood is blue.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
+          "title": "Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood",
+          "snippet": "May 1, 2024 - To survive in the deep ocean, ... human blood. Whereas our iron-rich blood is red when it meets oxygen, the copper in octopus blood makes it appear blue...."
+        },
+        {
+          "url": "https://thesavemovement.org/did-you-know-octopus-have-three-hearts-and-blue-blood-these-magnificent-marine-mollusks-are-being-exploited-and-need-our-help/",
+          "title": "Did You Know Octopus Have Three Hearts And Blue Blood? These Magnificent Marine Mollusks Are Being Exploited And Need Our Help - Animal Save Movement",
+          "snippet": "May 24, 2025 - With three functioning hearts, ... to the rest of their body. Not only can octopuses change colour and patterns due to their skin containing cells called chromatophores, but their blood is blue!..."
+        },
+        {
+          "url": "https://www.nhm.ac.uk/discover/octopuses-keep-surprising-us-here-are-eight-examples-how.html",
+          "title": "Octopuses keep surprising us - here are eight examples how | Natural History Museum",
+          "snippet": "1 month ago - Octopuses have blue blood, three hearts and a doughnut-shaped brain. But these aren’t even the most unusual things about them! Known for their otherworldly look and remarkable intelligence, octopuses continue to reveal astonishing qualities, abilities and behaviour."
+        },
+        {
+          "url": "https://www.reddit.com/r/Damnthatsinteresting/comments/1cn5gdl/an_octopus_has_three_hearts_and_the_colour_of/",
+          "title": "r/Damnthatsinteresting on Reddit: An Octopus has three hearts and the colour of their blood is blue.They have eight arms and each arm contains its own 'mini brain'",
+          "snippet": "May 8, 2024 - This is Centralian Blue Tongue Lizard, commonly found in Australia. It puffs up and flashes its blue tongue when it feels threatened ... Octopuses can rapidly edit their own RNA in response to colder temperatures, changing the proteins their ..."
+        },
+        {
+          "url": "https://www.sciencefocus.com/nature/why-does-an-octopus-have-more-than-one-heart",
+          "title": "How many hearts does an octopus have? - BBC Science Focus Magazine",
+          "snippet": "July 12, 2023 - Unlike vertebrates that have iron-rich haemoglobin packed into red blood cells, octopuses – along with some tarantulas, scorpions and horseshoe crabs – have copper-rich haemocyanin dissolved directly in their blood (this means their blood ..."
+        },
+        {
+          "url": "https://www.sheddaquarium.org/stories/eight-strange-and-wonderful-facts-about-octopuses",
+          "title": "Eight Strange and Wonderful Facts About Octopuses | Shedd Aquarium",
+          "snippet": "Copper-based hemocyanin is more ... our blood red. Octopuses also have three hearts: two just to pump blood through the gills and one more to circulate it to the organs...."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that \"lightning never strikes the same place twice\" is a common myth that is scientifically false",
+        "According to the National Weather Service, lightning frequently strikes the exact same location repeatedly, particularly tall, pointed, or isolated structures that offer an optimal conductive path between the ground and cloud",
+        "For instance, the Empire State Building in New York City is struck by lightning an average of 20 to 25 times each year."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Lightning never strikes the same place twice.\\\"\",\n  \"verification_notes\": \"Check National Weather Service and NOAA data on lightning strike patterns. Verify how many times the Empire State Building is struck per year. Explain the physics of why tall conductors are repeatedly targeted.\",\n  \"search_results\": \"[1] 'Lightning Never Strikes the Same Place Twice'... Or Does It?\\nURL: https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html\\nExcerpt: Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice.\\n\\n[2] Lightning never strikes (the same place) twice - Idioms by The Free...\\nURL: https://idioms.thefreedictionary.com/lightning+never+strikes+(the+same+place)+twice\\nExcerpt: The same highly unlikely thing never happens to the same person twice. Jill: I'm scared to drive ever since that truck hit my car. Alan: Don't worry.It's strange, but I feel safer since my apartment was robbed; I figure lightning never strikes the same place twice.\\n\\n[3] Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL\\nURL: https://www.aol.com/news/why-lightning-never-strikes-same-174500436.html\\nExcerpt: Lightning is very good at striking the same place twice – you could even say that it's a special skill of lightning to hit the same place two (or even more!) times. The Empire State Building, for example, is hit on average 25 times per year, according to the National Weather Service.\\n\\n[4] What Does Lightning Never Strikes The Same Place Twice Mean?\\nURL: https://writingexplained.org/idiom-dictionary/lightning-never-strikes-the-same-place-twice\\nExcerpt: lightning never strikes twice in the same place This idiom likely originated in the book Thrilling Adventures of the Prisoner of the Border, published in the year 1860 by P. Hamilton Myer.\\n\\n[5] Lightning Myths\\nURL: https://www.weather.gov/safety/lightning-myths\\nExcerpt: Myth: Lightning never strikes the same place twice. Fact: Lightning often strikes the same place repeatedly, especially if it's a tall, pointy, isolated object. The Empire State Building is hit an average of 23 times a year.\\n\\n[6] VOA Special English - 'Lightning Never Strikes the Same Place...\\nURL: https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html\\nExcerpt: You know, lightning never strikes twice!\\\" That probably will not make your head feel any better. And you can tell your friend that scientists. say that lightning can and will strike the same place twice. Whether for something good or bad, the underlying truth remains the same\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that \\\"lightning never strikes the same place twice\\\" is a common myth that is scientifically false. According to the National Weather Service, lightning frequently strikes the exact same location repeatedly, particularly tall, pointed, or isolated structures that offer an optimal conductive path between the ground and cloud. For instance, the Empire State Building in New York City is struck by lightning an average of 20 to 25 times each year.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Lightning never strikes the same place twice.\"",
+        "Lightning never strikes the same place twice",
+        "\"Lightning never strikes the same place twice.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html",
+          "title": "'Lightning Never Strikes the Same Place Twice'... Or Does It?",
+          "snippet": "Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice."
+        },
+        {
+          "url": "https://idioms.thefreedictionary.com/lightning+never+strikes+(the+same+place)+twice",
+          "title": "Lightning never strikes (the same place) twice - Idioms by The Free...",
+          "snippet": "The same highly unlikely thing never happens to the same person twice. Jill: I'm scared to drive ever since that truck hit my car. Alan: Don't worry.It's strange, but I feel safer since my apartment was robbed; I figure lightning never strikes the same place twice."
+        },
+        {
+          "url": "https://www.aol.com/news/why-lightning-never-strikes-same-174500436.html",
+          "title": "Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL",
+          "snippet": "Lightning is very good at striking the same place twice – you could even say that it's a special skill of lightning to hit the same place two (or even more!) times. The Empire State Building, for example, is hit on average 25 times per year, according to the National Weather Service."
+        },
+        {
+          "url": "https://writingexplained.org/idiom-dictionary/lightning-never-strikes-the-same-place-twice",
+          "title": "What Does Lightning Never Strikes The Same Place Twice Mean?",
+          "snippet": "lightning never strikes twice in the same place This idiom likely originated in the book Thrilling Adventures of the Prisoner of the Border, published in the year 1860 by P. Hamilton Myer."
+        },
+        {
+          "url": "https://www.weather.gov/safety/lightning-myths",
+          "title": "Lightning Myths",
+          "snippet": "Myth: Lightning never strikes the same place twice. Fact: Lightning often strikes the same place repeatedly, especially if it's a tall, pointy, isolated object. The Empire State Building is hit an average of 23 times a year."
+        },
+        {
+          "url": "https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html",
+          "title": "VOA Special English - 'Lightning Never Strikes the Same Place...",
+          "snippet": "You know, lightning never strikes twice!\" That probably will not make your head feel any better. And you can tell your friend that scientists. say that lightning can and will strike the same place twice. Whether for something good or bad, the underlying truth remains the same"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Measurements from Lunar Laser Ranging experiments (using retroreflectors placed on the lunar surface during the Apollo missions and Soviet robotic landers) confirm that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (1.5 inches) per year",
+        "This gradual drift is caused by tidal friction between Earth's oceans and the crust, which transfers orbital energy and angular momentum from Earth's rotation to the Moon's orbit."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\\\"\",\n  \"verification_notes\": \"Check NASA and Lunar Laser Ranging experiment data. Verify the mechanism (tidal friction transferring angular momentum). Confirm the rate is ~3.8 cm/year. Calculate implications: how long until the Moon is too far for total solar eclipses?\",\n  \"search_results\": \"[1] The Moon Is Moving Away From Earth At A Rate Of About 3.8 ...\\nURL: https://www.iflscience.com/the-moon-is-moving-away-from-earth-at-a-rate-of-about-38-centimeters-per-year-will-it-ever-drift-apart-80834\\nExcerpt: Sep 16, 2025 · Taking repeated measurements showed us that the Moon is currently moving away from us at a rate of about 3.8 centimeters (1.5 inches) per year. This hasn't always been the case.\\n\\n[2] Our Moon Is Drifting Away. Here's What We Can Expect to ...\\nURL: https://www.sciencealert.com/our-moon-is-drifting-away-heres-what-we-can-expect-to-happen\\nExcerpt: Sep 16, 2025 · Scientists measure the distance to the Moon by bouncing lasers off mirrors placed there by space probes and astronauts. By measuring the amount of time it takes light to travel to the Moon and back, scientists can very precisely measure the distance to the Moon and how the distance ch\\n\\n[3] Why Is The Moon Moving Away From Earth? » ScienceABC\\nURL: https://www.scienceabc.com/nature/universe/why-is-the-moon-moving-away-from-earth\\nExcerpt: Mar 2, 2017 · However, our only natural satellite – the moon – is actually moving away from Earth. Its orbit is getting larger every year! The moon has been revolving around the Earth for the last 4.5 billion years.\\n\\n[4] Why Is The Moon Drifting Away from the Earth?\\nURL: https://iere.org/why-is-the-moon-drifting-away-from-the-earth/\\nExcerpt: Jul 1, 2025 · The Moon is slowly but surely receding from our planet at a rate of roughly 3.8 centimeters (1.5 inches) per year, approximately the same rate at which our fingernails grow. This lunar migration is a direct consequence of tidal forces and the conservation of angular momentum within the\\n\\n[5] The Moon is getting slightly farther away from the Earth each ...\\nURL: https://www.smorescience.com/the-moon-is-getting-slightly-farther-away-from-the-earth-each-year-−-a-physicist-explains-why/\\nExcerpt: 6 days ago · Earth rises over the Moon, as seen by the Apollo 8 astronauts. Bill Anders/NASA. The Moon is getting 1½ inches (3.8 centimeters) farther away from the Earth every year. Scientists measure the distance to the Moon by bouncing lasers off mirrors placed there by space probes and astronauts\\n\\n[6] Why is the Moon slowly moving away from Earth every year and ...\\nURL: https://timesofindia.indiatimes.com/science/why-is-the-moon-slowly-moving-away-from-earth-every-year-and-what-does-it-reveal-about-our-planets-future/articleshow/125189323.cms\\nExcerpt: Nov 8, 2025 · Our Moon is slowly drifting away from Earth, not just due to tidal friction as previously thought. New research suggests ancient planetary collisions and Earth's internal cooling, causing contraction and faster rotation, are also significant factors.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"Measurements from Lunar Laser Ranging experiments (using retroreflectors placed on the lunar surface during the Apollo missions and Soviet robotic landers) confirm that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (1.5 inches) per year. This gradual drift is caused by tidal friction between Earth's oceans and the crust, which transfers orbital energy and angular momentum from Earth's rotation to the Moon's orbit.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+        "The Moon is drifting away from Earth",
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.iflscience.com/the-moon-is-moving-away-from-earth-at-a-rate-of-about-38-centimeters-per-year-will-it-ever-drift-apart-80834",
+          "title": "The Moon Is Moving Away From Earth At A Rate Of About 3.8 ...",
+          "snippet": "Sep 16, 2025 · Taking repeated measurements showed us that the Moon is currently moving away from us at a rate of about 3.8 centimeters (1.5 inches) per year. This hasn't always been the case."
+        },
+        {
+          "url": "https://www.sciencealert.com/our-moon-is-drifting-away-heres-what-we-can-expect-to-happen",
+          "title": "Our Moon Is Drifting Away. Here's What We Can Expect to ...",
+          "snippet": "Sep 16, 2025 · Scientists measure the distance to the Moon by bouncing lasers off mirrors placed there by space probes and astronauts. By measuring the amount of time it takes light to travel to the Moon and back, scientists can very precisely measure the distance to the Moon and how the distance changes."
+        },
+        {
+          "url": "https://www.scienceabc.com/nature/universe/why-is-the-moon-moving-away-from-earth",
+          "title": "Why Is The Moon Moving Away From Earth? » ScienceABC",
+          "snippet": "Mar 2, 2017 · However, our only natural satellite – the moon – is actually moving away from Earth. Its orbit is getting larger every year! The moon has been revolving around the Earth for the last 4.5 billion years."
+        },
+        {
+          "url": "https://iere.org/why-is-the-moon-drifting-away-from-the-earth/",
+          "title": "Why Is The Moon Drifting Away from the Earth?",
+          "snippet": "Jul 1, 2025 · The Moon is slowly but surely receding from our planet at a rate of roughly 3.8 centimeters (1.5 inches) per year, approximately the same rate at which our fingernails grow. This lunar migration is a direct consequence of tidal forces and the conservation of angular momentum within the Earth-Moon system."
+        },
+        {
+          "url": "https://www.smorescience.com/the-moon-is-getting-slightly-farther-away-from-the-earth-each-year-−-a-physicist-explains-why/",
+          "title": "The Moon is getting slightly farther away from the Earth each ...",
+          "snippet": "6 days ago · Earth rises over the Moon, as seen by the Apollo 8 astronauts. Bill Anders/NASA. The Moon is getting 1½ inches (3.8 centimeters) farther away from the Earth every year. Scientists measure the distance to the Moon by bouncing lasers off mirrors placed there by space probes and astronauts."
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/science/why-is-the-moon-slowly-moving-away-from-earth-every-year-and-what-does-it-reveal-about-our-planets-future/articleshow/125189323.cms",
+          "title": "Why is the Moon slowly moving away from Earth every year and ...",
+          "snippet": "Nov 8, 2025 · Our Moon is slowly drifting away from Earth, not just due to tidal friction as previously thought. New research suggests ancient planetary collisions and Earth's internal cooling, causing contraction and faster rotation, are also significant factors."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}

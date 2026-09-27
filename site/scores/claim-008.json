@@ -3,60 +3,60 @@
   "claim_id": "claim-008",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-09-19T10:14:54Z",
+  "last_checked_at": "2026-09-27T11:16:09Z",
   "last_changed_at": "2026-06-09T23:47:06Z",
-  "run_id": "run-2026-09-19T101107Z",
+  "run_id": "run-2026-09-27T111501Z",
   "sources": [
     {
-      "url": "https://timesofindia.indiatimes.com/etimes/trending/10-weird-and-funny-animal-facts-that-sound-fake-but-are-completely-real/articleshow/125381246.cms",
-      "title": "10 weird and funny animal facts that sound fake... - The Times of India",
-      "domain": "timesofindia.indiatimes.com",
+      "url": "https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
+      "title": "Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood",
+      "domain": "smithsonianmag.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Octopuses have three hearts and their blood is blue.Two pump blood through their gills, while"
+      "excerpt": "May 1, 2024 - To survive in the deep ocean, ... human blood. Whereas our"
     },
     {
-      "url": "https://www.tiktok.com/discover/octopus-blood-real-life",
-      "title": "Octopus Blood Real Life | TikTok",
-      "domain": "tiktok.com",
+      "url": "https://thesavemovement.org/did-you-know-octopus-have-three-hearts-and-blue-blood-these-magnificent-marine-mollusks-are-being-exploited-and-need-our-help/",
+      "title": "Did You Know Octopus Have Three Hearts And Blue Blood? These Magnificent Marine Mollusks Are Being Exploited And Need Our Help - Animal Save Movement",
+      "domain": "thesavemovement.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Octopuses have three hearts and blue blood, and one of those hearts actually stops when"
+      "excerpt": "May 24, 2025 - With three functioning hearts, ... to the rest of their body."
     },
     {
-      "url": "https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh",
-      "title": "Ten things I learned in 2025: 1. Octopuses have three hearts, and...",
-      "domain": "linkedin.com",
+      "url": "https://www.nhm.ac.uk/discover/octopuses-keep-surprising-us-here-are-eight-examples-how.html",
+      "title": "Octopuses keep surprising us - here are eight examples how | Natural History Museum",
+      "domain": "nhm.ac.uk",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is"
+      "excerpt": "1 month ago - Octopuses have blue blood, three hearts and a doughnut-shaped brain. But"
     },
     {
-      "url": "https://www.divessi.com/en/blog/octopuses-20-amazing-facts-8560.html",
-      "title": "Octopuses: 20 Amazing Facts",
-      "domain": "divessi.com",
+      "url": "https://www.reddit.com/r/Damnthatsinteresting/comments/1cn5gdl/an_octopus_has_three_hearts_and_the_colour_of/",
+      "title": "r/Damnthatsinteresting on Reddit: An Octopus has three hearts and the colour of their blood is blue.They have eight arms and each arm contains its own 'mini brain'",
+      "domain": "reddit.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "5. Octopuses have three hearts and their blood is blue due to being copper-based. 6."
+      "excerpt": "May 8, 2024 - This is Centralian Blue Tongue Lizard, commonly found in Australia. It"
     },
     {
-      "url": "https://mathcorps.org/tag/results/",
-      "title": "results Archives – Math Corps",
-      "domain": "mathcorps.org",
+      "url": "https://www.sciencefocus.com/nature/why-does-an-octopus-have-more-than-one-heart",
+      "title": "How many hearts does an octopus have? - BBC Science Focus Magazine",
+      "domain": "sciencefocus.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "In the summer of 2021, the Covid-19 pandemic had been ravaging the city of Detroit"
+      "excerpt": "July 12, 2023 - Unlike vertebrates that have iron-rich haemoglobin packed into red blood cells,"
     },
     {
-      "url": "https://jeopardylabs.com/play/fact-or-fake-2",
-      "title": "FACT OR FAKE Jeopardy Template",
-      "domain": "jeopardylabs.com",
+      "url": "https://www.sheddaquarium.org/stories/eight-strange-and-wonderful-facts-about-octopuses",
+      "title": "Eight Strange and Wonderful Facts About Octopuses | Shedd Aquarium",
+      "domain": "sheddaquarium.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Humans only use 10% of their brains.Octopuses have three hearts and their blood is blue!"
+      "excerpt": "Copper-based hemocyanin is more ... our blood red. Octopuses also have three hearts: two just"
     }
   ],
-  "reasoning": "The claim is biologically accurate. Octopuses have three hearts: two branchial hearts that pump blood through the gills and one systemic heart that pumps oxygenated blood to the rest of the body. Furthermore, their blood is blue due to the presence of hemocyanin, a copper-rich protein used to transport oxygen in cold, low-oxygen marine environments, unlike the iron-based hemoglobin found in vertebrates.",
+  "reasoning": "Octopuses possess three hearts and blue blood. Two branchial hearts pump blood through the gills, while a third systemic heart pumps oxygenated blood to the rest of the body. Their blood is blue because it uses a copper-rich protein called hemocyanin to bind and transport oxygen, rather than the iron-based hemoglobin found in vertebrates. When oxygenated, hemocyanin turns a distinct blue color.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -147,6 +147,12 @@
       "confidence": 98,
       "checked_at": "2026-09-11T10:47:39Z",
       "run_id": "run-2026-09-11T102916Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-09-19T10:14:54Z",
+      "run_id": "run-2026-09-19T101107Z"
     }
   ],
   "agent_flags": {
