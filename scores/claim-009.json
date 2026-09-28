@@ -3,9 +3,9 @@
   "claim_id": "claim-009",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-09-21T11:51:14Z",
+  "last_checked_at": "2026-09-28T12:45:54Z",
   "last_changed_at": "2026-06-09T23:44:21Z",
-  "run_id": "run-2026-09-21T114745Z",
+  "run_id": "run-2026-09-28T124305Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Napoleon_complex",
@@ -37,7 +37,7 @@
       "domain": "history.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "According to pre–metric system French measures, he was a diminutive 5′2.” But the French inch"
+      "excerpt": "Three French sources—his valet Constant, General Gourgaud, and his personal physician Francesco Antommarchi—said that Napoleon's"
     },
     {
       "url": "https://www.factinate.com/people/everyone-seems-think-napoleon-was-short-yet-he-was-actually-taller-average-frenchman-his-time",
@@ -45,18 +45,18 @@
       "domain": "factinate.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "November 25, 2025 - ... After Napoleon’s passing in Saint Helena, his medical team performed"
+      "excerpt": "November 25, 2025 - In fact, he stood taller than the average Frenchman of his"
     },
     {
-      "url": "https://history.howstuffworks.com/history-vs-myth/napoleon-short.htm",
-      "title": "How Tall Was Napoleon Bonaparte? Actually Pretty Average | HowStuffWorks",
-      "domain": "history.howstuffworks.com",
+      "url": "https://wondereo.com/napoleon-height-myth/",
+      "title": "Napoleon Wasn’t Short—Here’s How the Myth Started and Spread - wondereo.com",
+      "domain": "wondereo.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "August 27, 2024 - At the time of his death, he measured 5 feet, 2"
+      "excerpt": "December 29, 2025 - Napoleon wasn't short—he was actually average height for his time at"
     }
   ],
-  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a well-documented historical misconception. Following his death on Saint Helena, Napoleon's autopsy recorded his height as \"5 pieds 2 pouces\" in pre-metric French units. Because a French inch (*pouce*) was longer than a British imperial inch (approximately 2.7 cm compared to 2.54 cm), 5 feet 2 inches in French measure converts to approximately 5 feet 6 inches to 5 feet 7 inches (168–169 cm) in standard modern measurements. In the early 19th century, the average height for an adult French male was around 5 feet 5 inches, meaning Napoleon was of average or slightly above-average height for his era. The perception that he was exceptionally short was largely popularized by British political propaganda (notably caricatures by James Gillray) and the confusion between French and imperial measurement systems.",
+  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a widespread historical misconception. Historical records, including his autopsy and memoirs by his physician and associates, recorded his height as approximately 5 feet 2 inches in pre-metric French units (\"pieds de roi\" and \"pouces\"). In standard English imperial units, this converts to roughly 5 feet 6 inches (approximately 1.67–1.68 meters). During the early 19th century, the average height for an adult French male was about 5 feet 5 inches, meaning Napoleon was actually of average or slightly above-average height for his era. The persistent myth of his shortness arose from the unit conversion discrepancy, British wartime political caricatures (notably by James Gillray), and his affectionate nickname among soldiers, \"le petit caporal.\"",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -153,6 +153,12 @@
       "confidence": 95,
       "checked_at": "2026-09-14T11:38:07Z",
       "run_id": "run-2026-09-14T113439Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-09-21T11:51:14Z",
+      "run_id": "run-2026-09-21T114745Z"
     }
   ],
   "agent_flags": {
