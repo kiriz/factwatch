@@ -3,9 +3,9 @@
   "claim_id": "claim-004",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-09-26T10:44:42Z",
+  "last_checked_at": "2026-10-03T11:01:46Z",
   "last_changed_at": "2026-06-09T23:46:29Z",
-  "run_id": "run-2026-09-26T104134Z",
+  "run_id": "run-2026-10-03T105933Z",
   "sources": [
     {
       "url": "https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam",
@@ -16,20 +16,28 @@
       "excerpt": "“Are you ready to pass the 2026 Bar Exams using 227 real cases penned by"
     },
     {
-      "url": "https://futurism.com/california-ai-bar-exam",
-      "title": "California Admits AI Was Used to Write Bar Exam Plagued by Problems",
-      "domain": "futurism.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The State Bar of California admitted that AI was used to draft dozens of questions"
-    },
-    {
       "url": "https://philippeboulanger.com/the-bar-exam-then-the-wall-for-ai/",
       "title": "The Bar Exam, Then the Wall for AI - Philippe Boulanger - Top global...",
       "domain": "philippeboulanger.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "AI is being sold the way top students used to be sold. It passes exams."
+    },
+    {
+      "url": "https://www.themisbar.com/",
+      "title": "Themis | Proven Bar Prep",
+      "domain": "themisbar.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Raising the Bar in Bar Prep. Everything you need to pass the bar with confidence."
+    },
+    {
+      "url": "https://execbar.com/2026/04/ai-and-the-bar-exam-a-tool-not-a-tutor/",
+      "title": "AI and the Bar Exam: A Tool, Not a Tutor. - California Bar Review",
+      "domain": "execbar.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The California bar exam pass rate hovers around 40 to 50 percent and that number"
     },
     {
       "url": "https://www.linkedin.com/posts/bommarito_can-gemini-3-pass-the-bar-exam-at-this-activity-7396575232737767424-0rLz",
@@ -40,23 +48,15 @@
       "excerpt": "More interestingly, what does Gemini 3 think about its ability to pass the Bar Exam?"
     },
     {
-      "url": "https://www.techbuzz.ai/articles/anthropic-won-t-say-claude-isn-t-conscious",
-      "title": "Anthropic Won't Say Claude Isn't Conscious | The Tech Buzz",
-      "domain": "techbuzz.ai",
+      "url": "https://apps.calbar.ca.gov/exam/",
+      "title": "apps.calbar.ca.gov/exam",
+      "domain": "apps.calbar.ca.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AI systems now pass the bar exam, write production code, and engage in conversations that"
-    },
-    {
-      "url": "https://floridabartutor.com/",
-      "title": "Florida Bar Tutor - Florida Bar Exam Preparation in Ft. Lauderdale",
-      "domain": "floridabartutor.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Passing the Bar Exam is not about being the smartest person in the room, it"
+      "excerpt": "Bar Exam Pass List - The State Bar of California."
     }
   ],
-  "reasoning": "Extensive empirical research, beginning with the landmark 2023 study by Katz, Bommarito, et al. evaluating OpenAI's GPT-4 on the Uniform Bar Examination (UBE), demonstrated that advanced AI language models can pass the US bar examination with above-average scores. GPT-4 scored 297 points on the UBE (where passing thresholds across US jurisdictions range from 260 to 272), placing its performance well above the median score of human test-takers (estimated between the 68th and 90th percentiles depending on the test cohort).",
+  "reasoning": "The claim is accurate. In early 2023, researchers evaluated OpenAI's GPT-4 on the Uniform Bar Examination (UBE), demonstrating that the model comfortably passed the exam with scores exceeding the average human test-taker. While OpenAI originally reported a 90th percentile score, follow-up independent analyses (such as by legal researcher Eric Martinez) noted that when comparing against the full pool of test-takers rather than retakers, the score was approximately at the 68th percentile—which remains well above average. Subsequent advanced foundation models (such as GPT-4o and Claude 3.5 Sonnet) have consistently replicated and exceeded these benchmark passing performances.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -159,6 +159,12 @@
       "confidence": 95,
       "checked_at": "2026-09-19T10:14:19Z",
       "run_id": "run-2026-09-19T101107Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-09-26T10:44:42Z",
+      "run_id": "run-2026-09-26T104134Z"
     }
   ],
   "agent_flags": {

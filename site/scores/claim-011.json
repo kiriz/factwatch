@@ -3,9 +3,9 @@
   "claim_id": "claim-011",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-09-26T10:43:03Z",
+  "last_checked_at": "2026-10-03T11:00:14Z",
   "last_changed_at": "2026-07-10T09:35:32Z",
-  "run_id": "run-2026-09-26T104134Z",
+  "run_id": "run-2026-10-03T105933Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Monosodium_glutamate",
@@ -13,31 +13,39 @@
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "3 days ago - It is a popular misconception that MSG can cause headaches and"
+      "excerpt": "\"There is no convincing evidence that MSG is a significant factor in causing systemic reactions"
     },
     {
-      "url": "https://medlineplus.gov/ency/article/001126.htm",
-      "title": "MSG symptom complex: MedlinePlus Medical Encyclopedia",
-      "domain": "medlineplus.gov",
+      "url": "https://www.verdik.co/claims/msg-causes-chinese-restaurant-syndrome-headaches-most-adults-typical-food-doses",
+      "title": "Is it true that mSG causes 'Chinese restaurant syndrome... | Verdik",
+      "domain": "verdik.co",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Most symptoms are mild, such as headache or flushing, and need no treatment."
+      "excerpt": "Review of alleged health hazards and preclinical studies; does not specifically address headaches or Chinese"
     },
     {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37355848/",
-      "title": "Monosodium Glutamate (MSG) Symptom Complex (Chinese Restaurant Syndrome): Nightmare of Chinese Food Lovers! - PubMed",
-      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "url": "https://www.bbc.com/news/world-us-canada-51139005",
+      "title": "'Chinese Restaurant Syndrome' - what is it and is it racist?",
+      "domain": "bbc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Chinese food, containing the ingredient ... in susceptible individuals. The spectrum of symptoms ranges from"
+      "excerpt": "What is 'Chinese Restaurant Syndrome'? Tucked between \"Chinese red\" and \"Chinese rose\", the disputed entry"
     },
     {
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6952072/",
-      "title": "A review of the alleged health hazards of monosodium glutamate - PMC",
-      "domain": "pmc.ncbi.nlm.nih.gov",
+      "url": "https://edition.cnn.com/2020/01/18/asia/chinese-restaurant-syndrome-msg-intl-hnk-scli/index.html",
+      "title": "MSG in Chinese restaurants isn’t unhealthy – you’re just racist...",
+      "domain": "edition.cnn.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The “Chinese restaurant syndrome” ... (Freeman, 2006), consists of a series of symptoms such as"
+      "excerpt": "“Chinese Restaurant Syndrome isn’t just scientifically false — it’s xenophobic.”A 1969 scientific paper identified MSG"
+    },
+    {
+      "url": "https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome",
+      "title": "50 years ago, MSG in Chinese food got a bad rap | Science News",
+      "domain": "sciencenews.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "March 8, 1969 cover Chinese Restaurant syndrome varies —.In the Feb. 21 Science, [researchers] report"
     },
     {
       "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
@@ -45,18 +53,10 @@
       "domain": "sciencehistory.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "February 19, 2026 - The symptoms catalogued in the letters included fainting, back spasms, sweating,"
-    },
-    {
-      "url": "https://www.nature.com/articles/227611a0",
-      "title": "Monosodium Glutamate and the Chinese Restaurant Syndrome | Nature",
-      "domain": "nature.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "IT has been suggested1–4 that ... restaurant syndrome”—a burning sensation in the back of the"
+      "excerpt": "As a result, the panic over Chinese Restaurant Syndrome kept building and building. Ralph Nader"
     }
   ],
-  "reasoning": "The claim that monosodium glutamate (MSG) causes headaches, numbness, and other symptoms known as \"Chinese restaurant syndrome\" has been thoroughly debunked by scientific research. The term originated from an anecdotal letter published in the New England Journal of Medicine in 1968, which prompted widespread public anxiety. However, rigorous, double-blind, placebo-controlled studies conducted over subsequent decades have consistently failed to demonstrate a causal link between dietary MSG consumption and these reported symptoms. Major food safety and health authorities worldwide, including the U.S. Food and Drug Administration (FDA) and the World Health Organization (WHO), consider MSG to be \"generally recognized as safe\" (GRAS), noting that the body metabolizes added glutamate identically to glutamate naturally found in foods like tomatoes, cheese, and mushrooms.",
+  "reasoning": "Extensive scientific research and double-blind, placebo-controlled studies have repeatedly failed to demonstrate a causal link between monosodium glutamate (MSG) consumed in normal dietary amounts and symptoms like headaches, numbness, or chest tightness. The concept of \"Chinese restaurant syndrome\" originated largely from an anecdotal 1968 letter to the New England Journal of Medicine, followed by flawed initial studies and anti-Asian xenophobia. Major regulatory and health organizations, including the U.S. Food and Drug Administration (FDA) and the World Health Organization (WHO), classify MSG as \"generally recognized as safe\" (GRAS), confirming that the body metabolizes glutamate added as MSG in the exact same manner as glutamate naturally found in foods like tomatoes and parmesan cheese.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -153,6 +153,12 @@
       "confidence": 95,
       "checked_at": "2026-09-19T10:12:02Z",
       "run_id": "run-2026-09-19T101107Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-09-26T10:43:03Z",
+      "run_id": "run-2026-09-26T104134Z"
     }
   ],
   "agent_flags": {
