@@ -3,9 +3,9 @@
   "claim_id": "claim-010",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-09-27T11:15:31Z",
+  "last_checked_at": "2026-10-04T11:41:50Z",
   "last_changed_at": "2026-06-09T23:44:37Z",
-  "run_id": "run-2026-09-27T111501Z",
+  "run_id": "run-2026-10-04T114130Z",
   "sources": [
     {
       "url": "https://www.bbc.com/news/technology-56012952",
@@ -13,50 +13,50 @@
       "domain": "bbc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The University of Cambridge's online tool estimates Bitcoin's annual electricity consumption is more than The"
+      "excerpt": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests."
     },
     {
-      "url": "https://www.aa.com.tr/en/energy/finance/bitcoin-consumption-beats-argentinas-annual-energy-use/31867",
-      "title": "Bitcoin consumption beats Argentina's annual energy use",
-      "domain": "aa.com.tr",
+      "url": "https://www.bbc.co.uk/news/technology-56012952",
+      "title": "Bitcoin consumes 'more electricity than Argentina' - BBC News",
+      "domain": "bbc.co.uk",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Bitcoin uses more electricity annually than the whole of Argentina and the United Arab Emirates,"
+      "excerpt": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests."
     },
     {
-      "url": "https://www.linkedin.com/pulse/global-disparity-bitcoins-electricity-consumption-data-hassani-auc7e",
-      "title": "The Global Disparity in Bitcoin's Electricity Consumption: Data Insights",
-      "domain": "linkedin.com",
+      "url": "https://uk.finance.yahoo.com/news/bitcoin-cryptocurrency-consumes-more-electricity-than-argentina-140323187.html",
+      "title": "Bitcoin consumes more electricity than Argentina, UAE, and the...",
+      "domain": "uk.finance.yahoo.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "November 16, 2023 - For instance: Argentina: With an estimated energy consumption of 127 TWh"
+      "excerpt": "If Bitcoin (BTC-USD) were a country, it would be in the top 30 energy users"
     },
     {
-      "url": "https://currencyassociation.org/bitcoin-consumes-as-much-electricity-as-argentina-cash-is-the-sustainable-alternative/",
-      "title": "Bitcoin Consumes as Much Electricity as Argentina—Cash Is the Sustainable Alternative – ICA",
-      "domain": "currencyassociation.org",
+      "url": "https://hackaday.com/2021/03/03/what-uses-more-power-than-argentina-but-doesnt-dance-the-tango/",
+      "title": "What Uses More Power Than Argentina But... | Hackaday",
+      "domain": "hackaday.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Bitcoin consumes as much electricity as an entire country—Argentina. That striking fact, highlighted by the"
+      "excerpt": "It’s usual to hear criticism of Bitcoin for its volatility or its sometime association with"
     },
     {
-      "url": "https://solartechonline.com/blog/bitcoin-electricity-consumption-mining-2025/",
-      "title": "How Much Electricity Does Bitcoin Mining Use? 2025 Analysis",
-      "domain": "solartechonline.com",
+      "url": "https://www.mensxp.com/technology/hacks/86020-mining-bitcoins-uses-more-electricity-than-argentina.html",
+      "title": "Mining Bitcoins Uses More Electricity Than Argentina & We Wonder...",
+      "domain": "mensxp.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "September 19, 2025 - Bitcoin mining consumes an astounding amount of electricity – equivalent to"
+      "excerpt": "“Rising bitcoin prices make mining more attractive, as the potential reward increases in value. As"
     },
     {
-      "url": "https://www.cryptocoverage.co/news/bitcoin-consumes-as-much-electricity-as-argentina-says-imf",
-      "title": "Bitcoin consumes as much Electricity as Argentina, Says IMF",
-      "domain": "cryptocoverage.co",
+      "url": "https://www.pioneeringminds.com/bitcoin-mining-electricity-argentina/",
+      "title": "Bitcoin Mining Uses More Electricity Than All of Argentina",
+      "domain": "pioneeringminds.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "August 1, 2025 - The International Monetary Fund (IMF) has ignited global debate by revealing"
+      "excerpt": "Using their energy use model, the researchers found that bitcoin mining uses more energy each"
     }
   ],
-  "reasoning": "According to data and models from the Cambridge Centre for Alternative Finance (CBECI) as well as assessments from the International Monetary Fund (IMF), Bitcoin's annualized electricity consumption (often estimated between 120 and 170+ TWh) has consistently matched or exceeded the total annual electricity consumption of countries like Argentina (which consumes roughly 125–135 TWh per year) [1, 2, 3, 4].",
+  "reasoning": "According to analysis from the Cambridge Centre for Alternative Finance (via the Cambridge Bitcoin Electricity Consumption Index), the Bitcoin network's annualized electricity consumption was estimated at approximately 121–140+ terawatt-hours (TWh), exceeding the annual electricity consumption of entire nations, including Argentina (which consumes around 121 TWh per year). This widely cited comparison has been reported by major outlets including BBC News and confirmed by independent energy data.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -153,6 +153,12 @@
       "confidence": 95,
       "checked_at": "2026-09-19T10:11:46Z",
       "run_id": "run-2026-09-19T101107Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-09-27T11:15:31Z",
+      "run_id": "run-2026-09-27T111501Z"
     }
   ],
   "agent_flags": {

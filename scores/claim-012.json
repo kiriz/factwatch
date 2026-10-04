@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-012",
   "verdict": "FALSE",
-  "confidence": 100,
-  "last_checked_at": "2026-09-27T11:16:41Z",
+  "confidence": 99,
+  "last_checked_at": "2026-10-04T11:42:33Z",
   "last_changed_at": "2026-06-09T23:47:23Z",
-  "run_id": "run-2026-09-27T111501Z",
+  "run_id": "run-2026-10-04T114130Z",
   "sources": [
     {
       "url": "https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html",
@@ -24,7 +24,7 @@
       "excerpt": "The same highly unlikely thing never happens to the same person twice. Jill: I'm scared"
     },
     {
-      "url": "https://www.aol.com/news/why-lightning-never-strikes-same-174500436.html",
+      "url": "https://www.aol.com/why-lightning-never-strikes-same-174500436.html",
       "title": "Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL",
       "domain": "aol.com",
       "relevance": "medium",
@@ -56,7 +56,7 @@
       "excerpt": "You know, lightning never strikes twice!\" That probably will not make your head feel any"
     }
   ],
-  "reasoning": "The claim that \"lightning never strikes the same place twice\" is a common myth that is scientifically false. According to the National Weather Service, lightning frequently strikes the exact same location repeatedly, particularly tall, pointed, or isolated structures that offer an optimal conductive path between the ground and cloud. For instance, the Empire State Building in New York City is struck by lightning an average of 20 to 25 times each year.",
+  "reasoning": "The claim that \"lightning never strikes the same place twice\" is a common myth that is factually false. According to the National Weather Service (NWS), lightning frequently strikes the same place repeatedly, particularly tall, pointed, isolated structures that provide an optimal conductive path between the ground and charged storm clouds. For instance, the NWS notes that the Empire State Building in New York City is struck by lightning an average of 23 to 25 times per year.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -153,6 +153,12 @@
       "confidence": 100,
       "checked_at": "2026-09-19T10:15:11Z",
       "run_id": "run-2026-09-19T101107Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-09-27T11:16:41Z",
+      "run_id": "run-2026-09-27T111501Z"
     }
   ],
   "agent_flags": {
