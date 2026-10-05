@@ -1,0 +1,237 @@
+{
+  "run_id": "run-2026-10-05T132410Z",
+  "started_at": "2026-10-05T13:24:10Z",
+  "finished_at": "2026-10-05T13:27:17Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-001",
+      "claim_title": "Arctic sea ice decline since 1979",
+      "claim_text": "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 99,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Satellite records beginning in 1979 consistently show a significant, long-term decline in Arctic sea ice across all seasons",
+        "According to observational data from NASA, the National Snow and Ice Data Center (NSIDC), and scientific studies, late summer (September) Arctic sea ice extent has decreased by approximately 12 to 13 percent per decade, representing a loss of roughly 40 percent of minimum ice cover since 1979."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Arctic sea ice has declined significantly since satellite records began in 1979.\\\"\",\n  \"verification_notes\": \"Check NSIDC, NASA, and NOAA data. Look at September minimum extent as the primary metric. Verify trend is statistically significant, not just year-to-year variability.\",\n  \"search_results\": \"[1] Humans causing up to two-thirds of Arctic summer sea ice loss, study...\\nURL: https://www.carbonbrief.org/humans-causing-up-to-two-thirds-arctic-summer-sea-ice-loss-study-confirms\\nExcerpt: Arctic sea ice extent is declining in every season, but particularly quickly in September, when the ice reaches its lowest extent for the year. Since the beginning of the satellite record in 1979, Arctic sea ice cover in September has decreased by around 13% per decade.\\n\\n[2] We Charted Arctic Sea Ice for Nearly Every Day Since 1979.\\nURL: https://www.nytimes.com/interactive/2017/09/22/climate/arctic-sea-ice-shrinking-trend-watch.html\\nExcerpt: Arctic sea ice has been in steep decline since the late 1970s, when satellite images were first used to study the region. NASA says that the extent of ice covering Arctic waters has fallen by 13 percent per decade.\\n\\n[3] Polar Oceans Are Changing as Warming Melts Ice Habitats | BGNES\\nURL: https://www.bgnes.com/science/polar-oceans-are-changing-as-warming-melts-ice-habitats\\nExcerpt: As temperatures rise, Arctic sea ice has been declining by nearly 500,000 square kilometres per decade since 1979 - an area equivalent to the size of Spain every 10 years.\\n\\n[4] Sea Ice Today | National Snow and Ice Data Center\\nURL: https://nsidc.org/sea-ice-today\\nExcerpt: On September 12, Arctic sea ice likely reached its annual minimum extent of 4.60 million square kilometers (1.78 million square miles). The 2026 minimum shares the tenth lowest spot in the nearly 48-year satellite record with 2008, 2010, and 2025.\\n\\n[5] Arctic cyclones could be missing link in sea ice depletion models\\nURL: https://phys.org/news/2025-02-arctic-cyclones-link-sea-ice.html\\nExcerpt: Since 1979, Arctic sea ice extent has decreased by 40% in late summer, with rapid loss events contributing to this decline. Cyclones can accelerate ice loss by breaking ice floes and causing upwelling, which melts ice from below.\\n\\n[6] The Arctic sea ice melt season grew longer for decades... | ScienceDaily\\nURL: https://www.sciencedaily.com/releases/2026/09/260922005658.htm\\nExcerpt: Since the start of the satellite record, the Arctic sea ice melt season has lengthened in most decades, particularly in the 2000s (left). Since 2010 (right), the melt season appears to have stabilized.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 99,\n  \"reasoning\": \"Satellite records beginning in 1979 consistently show a significant, long-term decline in Arctic sea ice across all seasons. According to observational data from NASA, the National Snow and Ice Data Center (NSIDC), and scientific studies, late summer (September) Arctic sea ice extent has decreased by approximately 12 to 13 percent per decade, representing a loss of roughly 40 percent of minimum ice cover since 1979.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+        "Arctic sea ice decline since 1979",
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.carbonbrief.org/humans-causing-up-to-two-thirds-arctic-summer-sea-ice-loss-study-confirms",
+          "title": "Humans causing up to two-thirds of Arctic summer sea ice loss, study...",
+          "snippet": "Arctic sea ice extent is declining in every season, but particularly quickly in September, when the ice reaches its lowest extent for the year. Since the beginning of the satellite record in 1979, Arctic sea ice cover in September has decreased by around 13% per decade."
+        },
+        {
+          "url": "https://www.nytimes.com/interactive/2017/09/22/climate/arctic-sea-ice-shrinking-trend-watch.html",
+          "title": "We Charted Arctic Sea Ice for Nearly Every Day Since 1979.",
+          "snippet": "Arctic sea ice has been in steep decline since the late 1970s, when satellite images were first used to study the region. NASA says that the extent of ice covering Arctic waters has fallen by 13 percent per decade."
+        },
+        {
+          "url": "https://www.bgnes.com/science/polar-oceans-are-changing-as-warming-melts-ice-habitats",
+          "title": "Polar Oceans Are Changing as Warming Melts Ice Habitats | BGNES",
+          "snippet": "As temperatures rise, Arctic sea ice has been declining by nearly 500,000 square kilometres per decade since 1979 - an area equivalent to the size of Spain every 10 years."
+        },
+        {
+          "url": "https://nsidc.org/sea-ice-today",
+          "title": "Sea Ice Today | National Snow and Ice Data Center",
+          "snippet": "On September 12, Arctic sea ice likely reached its annual minimum extent of 4.60 million square kilometers (1.78 million square miles). The 2026 minimum shares the tenth lowest spot in the nearly 48-year satellite record with 2008, 2010, and 2025."
+        },
+        {
+          "url": "https://phys.org/news/2025-02-arctic-cyclones-link-sea-ice.html",
+          "title": "Arctic cyclones could be missing link in sea ice depletion models",
+          "snippet": "Since 1979, Arctic sea ice extent has decreased by 40% in late summer, with rapid loss events contributing to this decline. Cyclones can accelerate ice loss by breaking ice floes and causing upwelling, which melts ice from below."
+        },
+        {
+          "url": "https://www.sciencedaily.com/releases/2026/09/260922005658.htm",
+          "title": "The Arctic sea ice melt season grew longer for decades... | ScienceDaily",
+          "snippet": "Since the start of the satellite record, the Arctic sea ice melt season has lengthened in most decades, particularly in the 2000s (left). Since 2010 (right), the melt season appears to have stabilized."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-003",
+      "claim_title": "mRNA vaccines alter human DNA",
+      "claim_text": "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": true,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 4,
+      "reasoning_steps": [
+        "The claim that mRNA COVID-19 vaccines alter human DNA is scientifically false",
+        "According to molecular biology and public health agencies, mRNA delivered by vaccines functions exclusively in the cell cytoplasm to produce the spike protein and cannot enter the cell nucleus where genomic DNA resides",
+        "Furthermore, mRNA lacks the reverse transcriptase enzyme required to convert RNA into DNA, and the vaccine mRNA degrades naturally within days after cellular delivery."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.8-flash",
+      "prompt": "Claim title: mRNA vaccines alter human DNA\n\nClaim to verify: \"mRNA COVID-19 vaccines alter or permanently change human DNA.\"\n\nHuman context: One of the most widely circulated vaccine misinformation claims during the COVID-19 pandemic. Disputed by virologists, molecular biologists, and major health agencies worldwide.\n\nVerification guidance: Consult peer-reviewed molecular biology literature. Check CDC, WHO, and NIH statements. Key mechanism to verify: mRNA cannot be reverse-transcribed into DNA without reverse transcriptase enzyme. Check if any credible peer-reviewed evidence to the contrary has emerged.\n\nWeb search results:\n\n[1] You asked, we answered: Can mRNA vaccines alter human DNA?\n    URL: https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna\n    Excerpt: Do mRNA vaccines work by altering human DNA? Answer from infectious diseases expert James Lawler, MD, MPH. No, the vaccines cannot change your DNA. Two of the COVID-19 vaccines approved for emergency use authorization by the U.S. Food and Drug Administration use...\n\n[2] Could mRNA Vaccines Permanently Alter DNA? Recent Science...\n    URL: https://childrenshealthdefense.org/defender/science-mrna-vaccines-alter-dna/\n    Excerpt: Research on SARS-CoV-2 RNA by scientists at Harvard and MIT has implications for how mRNA vaccines could permanently alter genomic DNA, according to Doug Corrigan, Ph.D., a biochemist-molecular biologist who says more research is needed.\n\n[3] mRNA Vaccines Are Able to Alter DNA\n    URL: https://www.angiesoptiongrm.org/blog/mrna-vaccines-are-able-to-alter-dna\n    Excerpt: For over two years, government agencies and pharmaceutical manufacturers have labeled as misinformation the idea that mRNA vaccines developed by Pfizer and Moderna could alter human DNA. A central tenet of molecular biology holds that DNA is transcribed into RNA which...\n\n[4] Do mRNA Vaccines Alter Human DNA? What Mainstream Scie...\n    URL: https://factually.co/fact-checks/science/do-mrna-vaccines-alter-human-dna-what-science-says-b04708\n    Excerpt: Executive summary Mainstream scientific sources conclude that mRNA vaccines are not known to alter or integrate into human genomic DNA under normal condit...\n\n[5] Huge Survey Finds the Truth About What mRNA Vaccines Do to the...\n    URL: https://health.yahoo.com/treatments/vaccines/articles/huge-survey-finds-truth-mrna-150200057.html\n    Excerpt: The study's results also dispel the erroneous notion that mRNA vaccines alter human DNA. Instead, as intended, mRNA vaccines provide human cells with what's basically a limited set of instructions that allow them to momentarily — and safely — replicate a given virus or disease...\n\n[6] Has Moderna's Boss Said That Vaccines Can Alter Human DNA?\n    URL: https://m.dailyhunt.in/news/india/english/boom+factcheck-epaper-boomfe/has+modernas+boss+said+that+vaccines+can+alter+human+dna+a+factcheck-newsid-n271067626\n    Excerpt: This quote was misleadingly used in the DC Dirty Laundry article to wrongly suggest that Zaks said mRNA vaccines can alter human DNA. When he alluded to changing a \"line of code\", Zaks was in fact referring to messenger RNA, not DNA.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"sources\": [\n    {\n      \"url\": \"https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna\",\n      \"title\": \"You asked, we answered: Can mRNA vaccines alter human DNA?\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"No, the vaccines cannot change your DNA.\"\n    },\n    {\n      \"url\": \"https://factually.co/fact-checks/science/do-mrna-vaccines-alter-human-dna-what-science-says-b04708\",\n      \"title\": \"Do mRNA Vaccines Alter Human DNA? What Mainstream Scie...\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"mRNA vaccines are not known to alter or integrate into human genomic DNA\"\n    },\n    {\n      \"url\": \"https://health.yahoo.com/treatments/vaccines/articles/huge-survey-finds-truth-mrna-150200057.html\",\n      \"title\": \"Huge Survey Finds the Truth About What mRNA Vaccines Do to the...\",\n      \"relevance\": \"medium\",\n      \"supports_claim\": false,\n      \"excerpt\": \"dispel the erroneous notion that mRNA vaccines alter human DNA.\"\n    },\n    {\n      \"url\": \"https://childrenshealthdefense.org/defender/science-mrna-vaccines-alter-dna/\",\n      \"title\": \"Could mRNA Vaccines Permanently Alter DNA? Recent Science...\",\n      \"relevance\": \"medium\",\n      \"supports_claim\": true,\n      \"excerpt\": \"implications for how mRNA vaccines could permanently alter genomic DNA\"\n    }\n  ],\n  \"reasoning\": \"The claim that mRNA COVID-19 vaccines alter human DNA is scientifically false. According to molecular biology and public health agencies, mRNA delivered by vaccines functions exclusively in the cell cytoplasm to produce the spike protein and cannot enter the cell nucleus where genomic DNA resides. Furthermore, mRNA lacks the reverse transcriptase enzyme required to convert RNA into DNA, and the vaccine mRNA degrades naturally within days after cellular delivery.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": true,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1143,
+      "response_tokens": 571,
+      "total_tokens": 2150,
+      "dspy_used": false,
+      "search_queries": [
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+        "mRNA vaccines alter human DNA",
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna",
+          "title": "You asked, we answered: Can mRNA vaccines alter human DNA?",
+          "snippet": "Do mRNA vaccines work by altering human DNA? Answer from infectious diseases expert James Lawler, MD, MPH. No, the vaccines cannot change your DNA. Two of the COVID-19 vaccines approved for emergency use authorization by the U.S. Food and Drug Administration use..."
+        },
+        {
+          "url": "https://childrenshealthdefense.org/defender/science-mrna-vaccines-alter-dna/",
+          "title": "Could mRNA Vaccines Permanently Alter DNA? Recent Science...",
+          "snippet": "Research on SARS-CoV-2 RNA by scientists at Harvard and MIT has implications for how mRNA vaccines could permanently alter genomic DNA, according to Doug Corrigan, Ph.D., a biochemist-molecular biologist who says more research is needed."
+        },
+        {
+          "url": "https://www.angiesoptiongrm.org/blog/mrna-vaccines-are-able-to-alter-dna",
+          "title": "mRNA Vaccines Are Able to Alter DNA",
+          "snippet": "For over two years, government agencies and pharmaceutical manufacturers have labeled as misinformation the idea that mRNA vaccines developed by Pfizer and Moderna could alter human DNA. A central tenet of molecular biology holds that DNA is transcribed into RNA which..."
+        },
+        {
+          "url": "https://factually.co/fact-checks/science/do-mrna-vaccines-alter-human-dna-what-science-says-b04708",
+          "title": "Do mRNA Vaccines Alter Human DNA? What Mainstream Scie...",
+          "snippet": "Executive summary Mainstream scientific sources conclude that mRNA vaccines are not known to alter or integrate into human genomic DNA under normal condit..."
+        },
+        {
+          "url": "https://health.yahoo.com/treatments/vaccines/articles/huge-survey-finds-truth-mrna-150200057.html",
+          "title": "Huge Survey Finds the Truth About What mRNA Vaccines Do to the...",
+          "snippet": "The study's results also dispel the erroneous notion that mRNA vaccines alter human DNA. Instead, as intended, mRNA vaccines provide human cells with what's basically a limited set of instructions that allow them to momentarily — and safely — replicate a given virus or disease..."
+        },
+        {
+          "url": "https://m.dailyhunt.in/news/india/english/boom+factcheck-epaper-boomfe/has+modernas+boss+said+that+vaccines+can+alter+human+dna+a+factcheck-newsid-n271067626",
+          "title": "Has Moderna's Boss Said That Vaccines Can Alter Human DNA?",
+          "snippet": "This quote was misleadingly used in the DC Dirty Laundry article to wrongly suggest that Zaks said mRNA vaccines can alter human DNA. When he alluded to changing a \"line of code\", Zaks was in fact referring to messenger RNA, not DNA."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_title": "Napoleon was unusually short",
+      "claim_text": "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a widespread historical misconception",
+        "At the time of his autopsy on Saint Helena, his height was recorded as 5 feet 2 inches in pre-metric French units (*pieds de roi*)",
+        "Because a French inch (*pouce*) was approximately 2.71 cm (longer than the English inch of 2.54 cm), this measurement translates to approximately 5 feet 6.5 inches (168–169 cm) in modern imperial units",
+        "Given that the average height for an adult French male in the early 19th century was roughly 5 feet 4 inches to 5 feet 5 inches (162–165 cm), Napoleon was of average or slightly above-average height for his era",
+        "The enduring myth of his diminutive stature was largely popularized by direct mistranslation of French measurements into British imperial units, British wartime political cartoons (notably by James Gillray portraying \"Little Boney\"), and his affectionate military nickname \"le Petit Caporal\" (the Little Corporal)."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\\\"\",\n  \"verification_notes\": \"Check historical records of Napoleon's height in French inches vs English inches. Verify average male height in early 19th century France. Look at accounts from contemporaries and his physician's records. The British caricaturist James Gillray's role in perpetuating the myth is worth examining.\",\n  \"search_results\": \"[1] Napoleon - Wikipedia\\nURL: https://en.m.wikipedia.org/wiki/Napoleon\\nExcerpt: He rose to prominence as a general during the French Revolution and led a series of military campaigns across Europe and the Middle East during the French Revolutionary and Napoleonic Wars. As a statesman, he implemented numerous legal and administrative reforms in France and Europe.\\n\\n[2] Napoléon Ier — Wikipédia\\nURL: https://fr.m.wikipedia.org/wiki/Napoléon_Ier\\nExcerpt: Il est le premier empereur des Français du 18 mai 1804 au 6 avril 1814 et du 20 mars au 22 juin 1815, sous le nom de Napoléon Ier.\\n\\n[3] Napoleón Bonaparte - Wikipedia, la enciclopedia libre\\nURL: https://es.m.wikipedia.org/wiki/Napoleón_Bonaparte\\nExcerpt: Fue el líder de facto de la República francesa como primer cónsul desde 1799 hasta 1804, y después emperador de los franceses desde 1804 hasta 1814 y, de nuevo, en 1815. El legado político y cultural de Napoleón perdura, en tanto líder tan célebre como controvertido.\\n\\n[4] Death of Napoleon - Wikipedia\\nURL: https://en.m.wikipedia.org/wiki/Death_of_Napoleon\\nExcerpt: Despite the conclusion of the original autopsies, there has been scholarly debate on the cause of Napoleon's death. A theory that he died from deliberate arsenic poisoning has been rejected by numerous scholarly studies and historians in the 21st century.\\n\\n[5] Napoleon - Simple English Wikipedia, the free encyclopedia\\nURL: https://simple.m.wikipedia.org/wiki/Napoleon\\nExcerpt: Napoleon Bonaparte (French: Napoléon Bonaparte) [1] was a French politician and army leader who ruled France from 1799 to 1814 and for a short period (the \\\"Hundred Days\\\") in 1815. He became Emperor of the French in 1804 as Napoleon I.\\n\\n[6] Napoleon I | Biography, Achievements, & Facts | Britannica\\nURL: https://www.britannica.com/biography/Napoleon-I\\nExcerpt: Sep 18, 2026 · Napoleon I, the ambitious French emperor and military genius, reshaped Europe’s political landscape through his conquests and introduced significant reforms that continue to influence modern society.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a widespread historical misconception. At the time of his autopsy on Saint Helena, his height was recorded as 5 feet 2 inches in pre-metric French units (*pieds de roi*). Because a French inch (*pouce*) was approximately 2.71 cm (longer than the English inch of 2.54 cm), this measurement translates to approximately 5 feet 6.5 inches (168–169 cm) in modern imperial units. Given that the average height for an adult French male in the early 19th century was roughly 5 feet 4 inches to 5 feet 5 inches (162–165 cm), Napoleon was of average or slightly above-average height for his era. The enduring myth of his diminutive stature was largely popularized by direct mistranslation of French measurements into British imperial units, British wartime political cartoons (notably by James Gillray portraying \\\"Little Boney\\\"), and his affectionate military nickname \\\"le Petit Caporal\\\" (the Little Corporal).\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+        "Napoleon was unusually short",
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.m.wikipedia.org/wiki/Napoleon",
+          "title": "Napoleon - Wikipedia",
+          "snippet": "He rose to prominence as a general during the French Revolution and led a series of military campaigns across Europe and the Middle East during the French Revolutionary and Napoleonic Wars. As a statesman, he implemented numerous legal and administrative reforms in France and Europe."
+        },
+        {
+          "url": "https://fr.m.wikipedia.org/wiki/Napoléon_Ier",
+          "title": "Napoléon Ier — Wikipédia",
+          "snippet": "Il est le premier empereur des Français du 18 mai 1804 au 6 avril 1814 et du 20 mars au 22 juin 1815, sous le nom de Napoléon Ier."
+        },
+        {
+          "url": "https://es.m.wikipedia.org/wiki/Napoleón_Bonaparte",
+          "title": "Napoleón Bonaparte - Wikipedia, la enciclopedia libre",
+          "snippet": "Fue el líder de facto de la República francesa como primer cónsul desde 1799 hasta 1804, y después emperador de los franceses desde 1804 hasta 1814 y, de nuevo, en 1815. El legado político y cultural de Napoleón perdura, en tanto líder tan célebre como controvertido."
+        },
+        {
+          "url": "https://en.m.wikipedia.org/wiki/Death_of_Napoleon",
+          "title": "Death of Napoleon - Wikipedia",
+          "snippet": "Despite the conclusion of the original autopsies, there has been scholarly debate on the cause of Napoleon's death. A theory that he died from deliberate arsenic poisoning has been rejected by numerous scholarly studies and historians in the 21st century."
+        },
+        {
+          "url": "https://simple.m.wikipedia.org/wiki/Napoleon",
+          "title": "Napoleon - Simple English Wikipedia, the free encyclopedia",
+          "snippet": "Napoleon Bonaparte (French: Napoléon Bonaparte) [1] was a French politician and army leader who ruled France from 1799 to 1814 and for a short period (the \"Hundred Days\") in 1815. He became Emperor of the French in 1804 as Napoleon I."
+        },
+        {
+          "url": "https://www.britannica.com/biography/Napoleon-I",
+          "title": "Napoleon I | Biography, Achievements, & Facts | Britannica",
+          "snippet": "Sep 18, 2026 · Napoleon I, the ambitious French emperor and military genius, reshaped Europe’s political landscape through his conquests and introduced significant reforms that continue to influence modern society."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 1
+}

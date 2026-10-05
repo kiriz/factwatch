@@ -3,60 +3,60 @@
   "claim_id": "claim-009",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-09-28T12:45:54Z",
+  "last_checked_at": "2026-10-05T13:27:15Z",
   "last_changed_at": "2026-06-09T23:44:21Z",
-  "run_id": "run-2026-09-28T124305Z",
+  "run_id": "run-2026-10-05T132410Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Napoleon_complex",
-      "title": "Napoleon complex - Wikipedia",
-      "domain": "en.wikipedia.org",
+      "url": "https://en.m.wikipedia.org/wiki/Napoleon",
+      "title": "Napoleon - Wikipedia",
+      "domain": "en.m.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "August 21, 2026 - The Napoleon complex is named after Napoleon Bonaparte, the first emperor"
+      "excerpt": "He rose to prominence as a general during the French Revolution and led a series"
     },
     {
-      "url": "https://www.britannica.com/story/was-napoleon-short",
-      "title": "Was Napoleon Short? | Britannica",
+      "url": "https://fr.m.wikipedia.org/wiki/Napoléon_Ier",
+      "title": "Napoléon Ier — Wikipédia",
+      "domain": "fr.m.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Il est le premier empereur des Français du 18 mai 1804 au 6 avril 1814"
+    },
+    {
+      "url": "https://es.m.wikipedia.org/wiki/Napoleón_Bonaparte",
+      "title": "Napoleón Bonaparte - Wikipedia, la enciclopedia libre",
+      "domain": "es.m.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Fue el líder de facto de la República francesa como primer cónsul desde 1799 hasta"
+    },
+    {
+      "url": "https://en.m.wikipedia.org/wiki/Death_of_Napoleon",
+      "title": "Death of Napoleon - Wikipedia",
+      "domain": "en.m.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Despite the conclusion of the original autopsies, there has been scholarly debate on the cause"
+    },
+    {
+      "url": "https://simple.m.wikipedia.org/wiki/Napoleon",
+      "title": "Napoleon - Simple English Wikipedia, the free encyclopedia",
+      "domain": "simple.m.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Napoleon Bonaparte (French: Napoléon Bonaparte) [1] was a French politician and army leader who ruled"
+    },
+    {
+      "url": "https://www.britannica.com/biography/Napoleon-I",
+      "title": "Napoleon I | Biography, Achievements, & Facts | Britannica",
       "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "June 13, 2025 - Napoleon was thus average or taller, no matter the interpretation. Although"
-    },
-    {
-      "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
-      "title": "Was Napoleon Bonaparte Really Short?",
-      "domain": "thoughtco.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "May 13, 2025 - It turns out that Napoleon Bonaparte wasn't particularly short at all."
-    },
-    {
-      "url": "https://www.history.com/articles/napoleon-complex-short",
-      "title": "Was Napoleon Short? Origins of the 'Napoleon Complex' | HISTORY",
-      "domain": "history.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Three French sources—his valet Constant, General Gourgaud, and his personal physician Francesco Antommarchi—said that Napoleon's"
-    },
-    {
-      "url": "https://www.factinate.com/people/everyone-seems-think-napoleon-was-short-yet-he-was-actually-taller-average-frenchman-his-time",
-      "title": "Everyone Seems To Think Napoleon Was Short, Yet He Was Actually Taller Than The Average Frenchman Of His Time",
-      "domain": "factinate.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "November 25, 2025 - In fact, he stood taller than the average Frenchman of his"
-    },
-    {
-      "url": "https://wondereo.com/napoleon-height-myth/",
-      "title": "Napoleon Wasn’t Short—Here’s How the Myth Started and Spread - wondereo.com",
-      "domain": "wondereo.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "December 29, 2025 - Napoleon wasn't short—he was actually average height for his time at"
+      "excerpt": "Sep 18, 2026 · Napoleon I, the ambitious French emperor and military genius, reshaped Europe’s"
     }
   ],
-  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a widespread historical misconception. Historical records, including his autopsy and memoirs by his physician and associates, recorded his height as approximately 5 feet 2 inches in pre-metric French units (\"pieds de roi\" and \"pouces\"). In standard English imperial units, this converts to roughly 5 feet 6 inches (approximately 1.67–1.68 meters). During the early 19th century, the average height for an adult French male was about 5 feet 5 inches, meaning Napoleon was actually of average or slightly above-average height for his era. The persistent myth of his shortness arose from the unit conversion discrepancy, British wartime political caricatures (notably by James Gillray), and his affectionate nickname among soldiers, \"le petit caporal.\"",
+  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a widespread historical misconception. At the time of his autopsy on Saint Helena, his height was recorded as 5 feet 2 inches in pre-metric French units (*pieds de roi*). Because a French inch (*pouce*) was approximately 2.71 cm (longer than the English inch of 2.54 cm), this measurement translates to approximately 5 feet 6.5 inches (168–169 cm) in modern imperial units. Given that the average height for an adult French male in the early 19th century was roughly 5 feet 4 inches to 5 feet 5 inches (162–165 cm), Napoleon was of average or slightly above-average height for his era. The enduring myth of his diminutive stature was largely popularized by direct mistranslation of French measurements into British imperial units, British wartime political cartoons (notably by James Gillray portraying \"Little Boney\"), and his affectionate military nickname \"le Petit Caporal\" (the Little Corporal).",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -159,6 +159,12 @@
       "confidence": 95,
       "checked_at": "2026-09-21T11:51:14Z",
       "run_id": "run-2026-09-21T114745Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-09-28T12:45:54Z",
+      "run_id": "run-2026-09-28T124305Z"
     }
   ],
   "agent_flags": {

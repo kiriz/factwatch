@@ -3,44 +3,44 @@
   "claim_id": "claim-003",
   "verdict": "FALSE",
   "confidence": 98,
-  "last_checked_at": "2026-09-28T12:45:02Z",
+  "last_checked_at": "2026-10-05T13:26:49Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-09-28T124305Z",
+  "run_id": "run-2026-10-05T132410Z",
   "sources": [
     {
-      "url": "https://sciencebasedmedicine.org/rna-vaccines-against-covid-19-will-not-permanently-alter-your-dna/",
-      "title": "No, the Moderna and Pfizer RNA vaccines for COVID-19 will not “permanently alter your DNA”",
-      "domain": "sciencebasedmedicine.org",
+      "url": "https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna",
+      "title": "You asked, we answered: Can mRNA vaccines alter human DNA?",
+      "domain": "nebraskamed.com",
       "relevance": "high",
       "supports_claim": false,
-      "excerpt": "mRNA vaccines permanently alter your DNA, but, again, they can’t do that."
+      "excerpt": "No, the vaccines cannot change your DNA."
     },
     {
-      "url": "https://dfrlab.org/2022/02/08/tracing-the-myth- biological-tracing-the-myth-that-covid-19-vaccines-alter-human-dna/",
-      "title": "Tracing the myth that COVID-19 vaccines alter human DNA",
-      "domain": "dfrlab.org",
+      "url": "https://factually.co/fact-checks/science/do-mrna-vaccines-alter-human-dna-what-science-says-b04708",
+      "title": "Do mRNA Vaccines Alter Human DNA? What Mainstream Scie...",
+      "domain": "factually.co",
       "relevance": "high",
       "supports_claim": false,
-      "excerpt": "false narratives debunked by the fact-checking alliance claimed that mRNA-based vaccines... alter human DNA."
+      "excerpt": "mRNA vaccines are not known to alter or integrate into human genomic DNA"
     },
     {
-      "url": "https://www.respectfulinsolence.com/2022/03/07/covid-vaccine-spike-in-your-dna/",
-      "title": "Return of the revenge of the COVID vaccine \"spike\" in your DNA",
-      "domain": "respectfulinsolence.com",
+      "url": "https://health.yahoo.com/treatments/vaccines/articles/huge-survey-finds-truth-mrna-150200057.html",
+      "title": "Huge Survey Finds the Truth About What mRNA Vaccines Do to the...",
+      "domain": "health.yahoo.com",
       "relevance": "medium",
       "supports_claim": false,
-      "excerpt": "Claims that COVID-19 vaccines “permanently alter your DNA” were resurrected recently based on a dubious"
+      "excerpt": "dispel the erroneous notion that mRNA vaccines alter human DNA."
     },
     {
-      "url": "https://route66post.com/pfizers-covid-19-vaccine-goes-into-liver-cells-and-is-converted-to-dna/",
-      "title": "Pfizer’s Vaccine overwrites human DNA with new genetic code",
-      "domain": "route66post.com",
+      "url": "https://childrenshealthdefense.org/defender/science-mrna-vaccines-alter-dna/",
+      "title": "Could mRNA Vaccines Permanently Alter DNA? Recent Science...",
+      "domain": "childrenshealthdefense.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Pfizer’s covid jab contents enter the liver and permanently alters human chromosomes"
+      "excerpt": "implications for how mRNA vaccines could permanently alter genomic DNA"
     }
   ],
-  "reasoning": "The claim that mRNA COVID-19 vaccines alter human DNA is biologically impossible and demonstrably false. Vaccine mRNA delivers instructions to cellular ribosomes located in the cytoplasm to produce the spike protein; it never enters the cell nucleus where genomic DNA is stored. Furthermore, human cells lack the reverse transcriptase enzymes necessary to convert RNA back into DNA, and mRNA degrades rapidly after translation. Major public health organizations and scientific consensus worldwide confirm that mRNA vaccines do not interact with or integrate into the human genome.",
+  "reasoning": "The claim that mRNA COVID-19 vaccines alter human DNA is scientifically false. According to molecular biology and public health agencies, mRNA delivered by vaccines functions exclusively in the cell cytoplasm to produce the spike protein and cannot enter the cell nucleus where genomic DNA resides. Furthermore, mRNA lacks the reverse transcriptase enzyme required to convert RNA into DNA, and the vaccine mRNA degrades naturally within days after cellular delivery.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -149,6 +149,12 @@
       "confidence": 98,
       "checked_at": "2026-09-21T11:49:21Z",
       "run_id": "run-2026-09-21T114745Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 98,
+      "checked_at": "2026-09-28T12:45:02Z",
+      "run_id": "run-2026-09-28T124305Z"
     }
   ],
   "agent_flags": {
