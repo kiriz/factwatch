@@ -1,0 +1,95 @@
+{
+  "run_id": "run-2026-10-06T123801Z",
+  "started_at": "2026-10-06T12:38:01Z",
+  "finished_at": "2026-10-06T12:47:09Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 7,
+      "reasoning_steps": [
+        "According to data released by the U.S",
+        "Department of the Treasury, the total U.S",
+        "national debt surpassed the $34 trillion threshold in late December 2023, as confirmed by established reporting and official fiscal tracking",
+        "Subsequent reporting indicates it has continued to rise past this milestone."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The United States national debt has surpassed $34 trillion.\\\"\",\n  \"verification_notes\": \"Check US Treasury Fiscal Data (fiscaldata.treasury.gov). Note distinction between gross debt and debt held by the public. Verify current figure — may have grown beyond $34T by time of verification.\",\n  \"search_results\": \"[1] National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...\\nURL: https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/\\nExcerpt: The United States national debt has surpassed $34.9 trillion for the first time, marking a somber milestone in the nation’s fiscal history. This figure, released by the Treasury Department, reflects a substantial increase from the $30 trillion threshold crossed just last year.\\n\\n[2] US national debt hits record $34 trillion | CNN Business\\nURL: https://edition.cnn.com/2024/01/03/economy/us-national-debt-34-trillion/index.html?trk=article-ssr-frontend-pulse_little-text-block\\nExcerpt: The US government’s debt has topped $34 trillion for the first time, just weeks ahead of deadlines for Congress to agree to new federal funding plans.The US Treasury Department said national debt surpassed $34 trillion on December 29.\\n\\n[3] The $34 Trillion Debt Bomb Sitting Under Global Markets\\nURL: https://www.linkedin.com/pulse/34-trillion-debt-bomb-sitting-under-global-markets-insiderindex-fcwkc\\nExcerpt: The United States now carries more than $34 trillion in federal debt. Interest costs alone approach $1 trillion each year. Debt markets rarely panic early. They tighten slowly until financing costs start reshaping everything.\\n\\n[4] U.S. federal debt is a serious impending national problem\\nURL: https://www.renewamerica.com/columns/lambert/240109\\nExcerpt: With the national debt now exceeding $34 trillion dollars, this problem should concern every American citizen. This should include members from both the Democrat and Republican parties.By balancing our federal budget, we are only protecting ourselves and our future generations.\\n\\n[5] America's debt exceeds $34 trillion, but it seems that the\\nURL: https://www.binance.com/en/square/post/8011328368026\\nExcerpt: Associated Press: For Mike Johnson, this was a priority on day one. It is time, as the newly elected Speaker of the House called for in October, to create a bipartisan commission to address the federal government's mounting $34.6 trillion debt.\\n\\n[6] Understanding the National Debt | U.S. Treasury Fiscal Data\\nURL: https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/\\nExcerpt: The cost of purchases exceeding the amount paid off represents a deficit, while accumulated deficits over time represents a person’s overall debt. The U.S. Treasury uses the terms “national debt,” “federal debt,” and “public debt” interchangeably.\\n\\n[7] $34 Trillion and Climbing – Ahead of the Herd\\nURL: https://aheadoftheherd.com/34-trillion-and-climbing/\\nExcerpt: In 2023 the US added $2.65 trillion in debt, the second largest annual increase in history after the 2020 increase of $4.5 trillion. Going back to 1995, Federal Debt has increased by just over $1 trillion per year, but since 2010 that number has jumped to $1.7 trillion annually.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 98,\n  \"reasoning\": \"According to data released by the U.S. Department of the Treasury, the total U.S. national debt surpassed the $34 trillion threshold in late December 2023, as confirmed by established reporting and official fiscal tracking. Subsequent reporting indicates it has continued to rise past this milestone.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The United States national debt has surpassed $34 trillion.\"",
+        "US federal debt exceeds $34 trillion",
+        "\"The United States national debt has surpassed $34 trillion.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/",
+          "title": "National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...",
+          "snippet": "The United States national debt has surpassed $34.9 trillion for the first time, marking a somber milestone in the nation’s fiscal history. This figure, released by the Treasury Department, reflects a substantial increase from the $30 trillion threshold crossed just last year."
+        },
+        {
+          "url": "https://edition.cnn.com/2024/01/03/economy/us-national-debt-34-trillion/index.html?trk=article-ssr-frontend-pulse_little-text-block",
+          "title": "US national debt hits record $34 trillion | CNN Business",
+          "snippet": "The US government’s debt has topped $34 trillion for the first time, just weeks ahead of deadlines for Congress to agree to new federal funding plans.The US Treasury Department said national debt surpassed $34 trillion on December 29."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/34-trillion-debt-bomb-sitting-under-global-markets-insiderindex-fcwkc",
+          "title": "The $34 Trillion Debt Bomb Sitting Under Global Markets",
+          "snippet": "The United States now carries more than $34 trillion in federal debt. Interest costs alone approach $1 trillion each year. Debt markets rarely panic early. They tighten slowly until financing costs start reshaping everything."
+        },
+        {
+          "url": "https://www.renewamerica.com/columns/lambert/240109",
+          "title": "U.S. federal debt is a serious impending national problem",
+          "snippet": "With the national debt now exceeding $34 trillion dollars, this problem should concern every American citizen. This should include members from both the Democrat and Republican parties.By balancing our federal budget, we are only protecting ourselves and our future generations."
+        },
+        {
+          "url": "https://www.binance.com/en/square/post/8011328368026",
+          "title": "America's debt exceeds $34 trillion, but it seems that the",
+          "snippet": "Associated Press: For Mike Johnson, this was a priority on day one. It is time, as the newly elected Speaker of the House called for in October, to create a bipartisan commission to address the federal government's mounting $34.6 trillion debt."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
+          "title": "Understanding the National Debt | U.S. Treasury Fiscal Data",
+          "snippet": "The cost of purchases exceeding the amount paid off represents a deficit, while accumulated deficits over time represents a person’s overall debt. The U.S. Treasury uses the terms “national debt,” “federal debt,” and “public debt” interchangeably."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 1
+}
