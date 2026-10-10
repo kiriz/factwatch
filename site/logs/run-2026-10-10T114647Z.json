@@ -1,0 +1,367 @@
+{
+  "run_id": "run-2026-10-10T114647Z",
+  "started_at": "2026-10-10T11:46:47Z",
+  "finished_at": "2026-10-10T11:49:02Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-011",
+      "claim_title": "MSG causes headaches — 'Chinese restaurant syndrome'",
+      "claim_text": "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Extensive scientific research and clinical evaluations have repeatedly failed to find a causal link between MSG (monosodium glutamate) and symptoms like headaches or numbness, collectively termed \"Chinese restaurant syndrome.\" Major health and regulatory authorities, including the U.S",
+        "FDA, the World Health Organization (WHO), and the European Food Safety Authority, consider MSG \"generally recognized as safe\" (GRAS) at typical dietary levels",
+        "Double-blind, placebo-controlled studies have demonstrated that self-identified sensitive individuals do not reliably react to MSG when given with food."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\\\"\",\n  \"verification_notes\": \"Check FDA classification of MSG (GRAS status). Look for double-blind studies on MSG sensitivity. Verify whether glutamate in MSG differs from glutamate naturally present in tomatoes, cheese, and mushrooms. Check the original 1968 NEJM letter and subsequent research.\",\n  \"search_results\": \"[1] Monosodium glutamate - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Monosodium_glutamate\\nExcerpt: \\\"There is no convincing evidence that MSG is a significant factor in causing systemic reactions resulting in severe illness or mortality. The studies conducted to date on Chinese restaurant syndrome (CRS) have largely failed to demonstrate a causal association with MSG.\\n\\n[2] Is it true that mSG causes 'Chinese restaurant syndrome... | Verdik\\nURL: https://www.verdik.co/claims/msg-causes-chinese-restaurant-syndrome-headaches-most-adults-typical-food-doses\\nExcerpt: Review of alleged health hazards and preclinical studies; does not specifically address headaches or Chinese restaurant syndrome in typical doses. Counter-evidence considered.\\n\\n[3] 50 years ago, MSG in Chinese food got a bad rap | Science News\\nURL: https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome?tgt=nr\\nExcerpt: 50 years ago, people thought MSG caused ‘Chinese restaurant syndrome’.March 8, 1969 cover Chinese Restaurant syndrome varies —. Twenty thousand tons of monosodium L-glutamate are manufactured annually in the United States….\\n\\n[4] The Rotten Science Behind the MSG Scare | Science History Institute\\nURL: https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/\\nExcerpt: As a result, the panic over Chinese Restaurant Syndrome kept building and building. Ralph Nader began pushing to ban MSG in baby food; other activists pushed to ban it altogether.\\n\\n[5] If MSG is so bad for you, why doesn't everyone in Asia... | The Guardian\\nURL: https://www.theguardian.com/lifeandstyle/2005/jul/10/foodanddrink.features3\\nExcerpt: And so was born Chinese restaurant syndrome (CRS) and a medico-academic industry dedicated to the researching and publicising of the dangers of MSG - the foreign migrant contaminating American kitchens.\\n\\n[6] MSG Conspiracy & 'Chinese Restaurant Syndrome'\\nURL: https://conspiracytheory.net/theory/msg-conspiracy/\\nExcerpt: MSG causes “Chinese Restaurant Syndrome” — a cluster of symptoms including headaches, numbness, chest tightness, sweating, flushing, and nausea supposedly triggered by eating food containing MSG.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"Extensive scientific research and clinical evaluations have repeatedly failed to find a causal link between MSG (monosodium glutamate) and symptoms like headaches or numbness, collectively termed \\\"Chinese restaurant syndrome.\\\" Major health and regulatory authorities, including the U.S. FDA, the World Health Organization (WHO), and the European Food Safety Authority, consider MSG \\\"generally recognized as safe\\\" (GRAS) at typical dietary levels. Double-blind, placebo-controlled studies have demonstrated that self-identified sensitive individuals do not reliably react to MSG when given with food.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+        "MSG causes headaches — 'Chinese restaurant syndrome'",
+        "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Monosodium_glutamate",
+          "title": "Monosodium glutamate - Wikipedia",
+          "snippet": "\"There is no convincing evidence that MSG is a significant factor in causing systemic reactions resulting in severe illness or mortality. The studies conducted to date on Chinese restaurant syndrome (CRS) have largely failed to demonstrate a causal association with MSG."
+        },
+        {
+          "url": "https://www.verdik.co/claims/msg-causes-chinese-restaurant-syndrome-headaches-most-adults-typical-food-doses",
+          "title": "Is it true that mSG causes 'Chinese restaurant syndrome... | Verdik",
+          "snippet": "Review of alleged health hazards and preclinical studies; does not specifically address headaches or Chinese restaurant syndrome in typical doses. Counter-evidence considered."
+        },
+        {
+          "url": "https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome?tgt=nr",
+          "title": "50 years ago, MSG in Chinese food got a bad rap | Science News",
+          "snippet": "50 years ago, people thought MSG caused ‘Chinese restaurant syndrome’.March 8, 1969 cover Chinese Restaurant syndrome varies —. Twenty thousand tons of monosodium L-glutamate are manufactured annually in the United States…."
+        },
+        {
+          "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
+          "title": "The Rotten Science Behind the MSG Scare | Science History Institute",
+          "snippet": "As a result, the panic over Chinese Restaurant Syndrome kept building and building. Ralph Nader began pushing to ban MSG in baby food; other activists pushed to ban it altogether."
+        },
+        {
+          "url": "https://www.theguardian.com/lifeandstyle/2005/jul/10/foodanddrink.features3",
+          "title": "If MSG is so bad for you, why doesn't everyone in Asia... | The Guardian",
+          "snippet": "And so was born Chinese restaurant syndrome (CRS) and a medico-academic industry dedicated to the researching and publicising of the dangers of MSG - the foreign migrant contaminating American kitchens."
+        },
+        {
+          "url": "https://conspiracytheory.net/theory/msg-conspiracy/",
+          "title": "MSG Conspiracy & 'Chinese Restaurant Syndrome'",
+          "snippet": "MSG causes “Chinese Restaurant Syndrome” — a cluster of symptoms including headaches, numbness, chest tightness, sweating, flushing, and nausea supposedly triggered by eating food containing MSG."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-013",
+      "claim_title": "Social media causes depression in teenagers",
+      "claim_text": "\"Social media use causes depression and anxiety in teenagers.\"",
+      "category": "health",
+      "verdict": "DISPUTED",
+      "confidence": 85,
+      "verdict_changed": false,
+      "previous_verdict": "DISPUTED",
+      "new_verdict": "DISPUTED",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": true,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 8,
+      "reasoning_steps": [
+        "The claim that social media use directly causes depression and anxiety in teenagers is a subject of ongoing debate among researchers, psychologists, and public health authorities",
+        "While strong correlations and some quasi-experimental studies (prominently cited by researchers such as Jonathan Haidt and Jean Twenge) suggest that heavy social media use can exacerbate mental health issues—particularly among adolescent girls through cyberbullying, sleep disruption, and negative social comparison—other prominent researchers (such as Amy Orben and Andrew Przybylski) point out that meta-analyses demonstrate very small statistical effect sizes and that correlation does not establish causation",
+        "Furthermore, longitudinal research indicates bidirectional relationships, where adolescents experiencing preexisting depression or anxiety may turn to social media more frequently",
+        "Major bodies, including the U.S",
+        "Surgeon General and the National Academies of Sciences, conclude that while social media presents potential harms, evidence of a direct, universal causal relationship remains inconclusive."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Social media use causes depression and anxiety in teenagers.\\\"\",\n  \"verification_notes\": \"Look for meta-analyses and systematic reviews. Check both Haidt's research and critics like Orben/Przybylski. Verify whether studies show correlation vs causation. Check whether effect sizes are practically significant. Note the difference between passive consumption and active engagement.\",\n  \"search_results\": \"[1] Is Social Media making our kids depressed? - Leiden Psychology Blog\\nURL: https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed\\nExcerpt: Social Media The use of smartphones and social media apps in teenagers has skyrocketed since 2010. Could there be a connection? A study in 2016 looked into the odds of having depression and anxiety for young adults who use social media.\\n\\n[2] Model Papers vs. Plagiarism: What Students Must Know\\nURL: https://collegeessay.org/blog/inside-collegeessay/model-papers-vs-plagiarism\\nExcerpt: 2. Student uses the model’s thesis: “Excessive social media use causes depression and anxiety in teenagers.” 3. Student copies the model’s organizational structure exactly. 4. Student paraphrases sections of the model, changing words but keeping ideas.\\n\\n[3] Causes of Depression in Teens: Risk Factors & More\\nURL: https://missionprephealthcare.com/mental-health-resources/depression/causes-and-risk-factors/\\nExcerpt: All teenagers face a variety of challenges every day: school and peer pressure, changing hormones and bodies, and social media – the list goes on. But why do adolescents become depressed and others don’t? Depression can be caused by a variety of things.\\n\\n[4] The truth about teens, social media and the mental health crisis\\nURL: https://www.wbaa.org/2023-04-25/the-truth-about-teens-social-media-and-the-mental-health-crisis\\nExcerpt: Is social media causing the mental health challenges? Finally, research can answer that question.Murky picture becomes clearer on causes of teen depression. But the timing doesn't tell you whether social media actually causes depression in teens.\\n\\n[5] Negative effects of social media for kids\\nURL: https://famisafe.wondershare.com/blog/social-media-link-to-depression.html\\nExcerpt: Does social media cause depression? A recent study concluded that there could be a link between social media uses and adverse effects on teen mental health. They published this study in the Journal of on Social Media and Clinical psychology.\\n\\n[6] Screens, Social Media & Child Mental Health | Chelmsford Osteopathy...\\nURL: https://chelmsfordosteopathyclinic.co.uk/teens-social-media-and-phones/\\nExcerpt: Does social media cause depression in children?Chelmsford Osteopathy Clinic. If your child is struggling with posture problems, screen-related tension, headaches, or stress-related discomfort, I offer gentle osteopathic care for children and teenagers in Chelmsford and across Essex.\\n\\n[7] Yes, Social Media Really Is a Cause of the Epidemic of Teenage...\\nURL: https://www.afterbabel.com/p/phone-based-childhood-cause-epidemic\\nExcerpt: Social Media is a Major Cause of the Mental Illness Epidemic in Teen Girls. Here’s the Evidence.They wrote: “Teens blame Instagram for increases in the rate of anxiety and depression. . . . This reaction was unprompted and consistent across all groups.”\\n\\n[8] 7 Ways Social Media Causes Depression in Teens.\\nURL: https://virtualwritingtutor.com/expressdev/vwtserver/public/listicle/419/7-ways-social-media-causes-depression-in-teens.html\\nExcerpt: Through social media, teens often experience viewing unrealistic expectations of people that are found to be idealistic. Seeing Kylie Jenner and hating oneself for not having the ideal hourglass body.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"DISPUTED\",\n  \"confidence\": 85,\n  \"reasoning\": \"The claim that social media use directly causes depression and anxiety in teenagers is a subject of ongoing debate among researchers, psychologists, and public health authorities. While strong correlations and some quasi-experimental studies (prominently cited by researchers such as Jonathan Haidt and Jean Twenge) suggest that heavy social media use can exacerbate mental health issues—particularly among adolescent girls through cyberbullying, sleep disruption, and negative social comparison—other prominent researchers (such as Amy Orben and Andrew Przybylski) point out that meta-analyses demonstrate very small statistical effect sizes and that correlation does not establish causation. Furthermore, longitudinal research indicates bidirectional relationships, where adolescents experiencing preexisting depression or anxiety may turn to social media more frequently. Major bodies, including the U.S. Surgeon General and the National Academies of Sciences, conclude that while social media presents potential harms, evidence of a direct, universal causal relationship remains inconclusive.\",\n  \"conflicting_sources\": true,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Social media use causes depression and anxiety in teenagers.\"",
+        "Social media causes depression in teenagers",
+        "\"Social media use causes depression and anxiety in teenagers.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed",
+          "title": "Is Social Media making our kids depressed? - Leiden Psychology Blog",
+          "snippet": "Social Media The use of smartphones and social media apps in teenagers has skyrocketed since 2010. Could there be a connection? A study in 2016 looked into the odds of having depression and anxiety for young adults who use social media."
+        },
+        {
+          "url": "https://collegeessay.org/blog/inside-collegeessay/model-papers-vs-plagiarism",
+          "title": "Model Papers vs. Plagiarism: What Students Must Know",
+          "snippet": "2. Student uses the model’s thesis: “Excessive social media use causes depression and anxiety in teenagers.” 3. Student copies the model’s organizational structure exactly. 4. Student paraphrases sections of the model, changing words but keeping ideas."
+        },
+        {
+          "url": "https://missionprephealthcare.com/mental-health-resources/depression/causes-and-risk-factors/",
+          "title": "Causes of Depression in Teens: Risk Factors & More",
+          "snippet": "All teenagers face a variety of challenges every day: school and peer pressure, changing hormones and bodies, and social media – the list goes on. But why do adolescents become depressed and others don’t? Depression can be caused by a variety of things."
+        },
+        {
+          "url": "https://www.wbaa.org/2023-04-25/the-truth-about-teens-social-media-and-the-mental-health-crisis",
+          "title": "The truth about teens, social media and the mental health crisis",
+          "snippet": "Is social media causing the mental health challenges? Finally, research can answer that question.Murky picture becomes clearer on causes of teen depression. But the timing doesn't tell you whether social media actually causes depression in teens."
+        },
+        {
+          "url": "https://famisafe.wondershare.com/blog/social-media-link-to-depression.html",
+          "title": "Negative effects of social media for kids",
+          "snippet": "Does social media cause depression? A recent study concluded that there could be a link between social media uses and adverse effects on teen mental health. They published this study in the Journal of on Social Media and Clinical psychology."
+        },
+        {
+          "url": "https://chelmsfordosteopathyclinic.co.uk/teens-social-media-and-phones/",
+          "title": "Screens, Social Media & Child Mental Health | Chelmsford Osteopathy...",
+          "snippet": "Does social media cause depression in children?Chelmsford Osteopathy Clinic. If your child is struggling with posture problems, screen-related tension, headaches, or stress-related discomfort, I offer gentle osteopathic care for children and teenagers in Chelmsford and across Essex."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-015",
+      "claim_title": "AlphaGo defeated the world Go champion in 2016",
+      "claim_text": "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "In March 2016, Google DeepMind's AI program AlphaGo played an historic five-game match against 18-time world Go champion Lee Sedol, winning 4 games to 1",
+        "Prior to AlphaGo's breakthrough, artificial intelligence researchers and Go experts widely believed that a computer beating a top human professional at Go was at least a decade away due to the immense complexity and intuition required by the game."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\\\"\",\n  \"verification_notes\": \"Verify the match result and date (March 2016). Check pre-match expert predictions. Verify Lee Sedol's world ranking at the time. Look at how AlphaGo's approach (Monte Carlo tree search + deep learning) differed from prior game AI. Note: AlphaZero later surpassed AlphaGo.\",\n  \"search_results\": \"[1] Google's AlphaGo AI defeats human in first game of Go contest\\nURL: https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest\\nExcerpt: The world champion at Go – an ancient Chinese board game – looked nervous. His eyes darted from side to side.AlphaGo’s defeat of a European Go champion in October last year – an achievement many thought was at least a decade away – should have acted as a warning.\\n\\n[2] From AlphaGo to AstraTennis: The World’s First... - YouTube\\nURL: https://www.youtube.com/watch?v=bcVNBn5R_rY\\nExcerpt: From AlphaGo to AstraTennis. In 2016, AlphaGo defeated world champion Go player Lee Sedol — marking a defining moment in AI history. A decade later, AI enters the physical world.\\n\\n[3] AlphaGo/AlphaGoZero/AlphaZero/MuZero: Mastering games using...\\nURL: https://vitalab.github.io/article/2020/11/19/AlphaMuGoZero.html\\nExcerpt: AlphaGo defeated the Go champion Lee Sedol in 2016 in a best-of-five tournament. Since then, Deepmind has released three subsequent versions of the algorithm, each imposing fewer priors and increasing performance.\\n\\n[4] The 10 most important moments in AI (so far) - Fast Company\\nURL: https://www.fastcompany.com/90402503/the-10-most-important-moments-in-ai-so-far\\nExcerpt: 10. AlphaGo Defeats human Go champion (2016). Back in 2013, researchers at a British startup called DeepMind published a paper showing how they could use a neural network to play and beat 50 old Atari games. Impressed, Google snatched up the company for a reported $400 million.\\n\\n[5] AlphaGo — Google DeepMind\\nURL: https://deepmind.google/research/alphago/\\nExcerpt: AlphaGo mastered the ancient game of Go, defeated a Go world champion, and inspired a new era of AI systems. A Go board – a wide grid with black and white stones placed on top.\\n\\n[6] AlphaGo | SmartWeb\\nURL: https://www.smartweb.jp/en/glossary/alphago/\\nExcerpt: AlphaGo is an AI system developed by Google DeepMind that defeated world Go champion Lee Sedol with a 4-1 victory in 2016, becoming the first program to beat a world-class Go player. Why is this so remarkable?\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"In March 2016, Google DeepMind's AI program AlphaGo played an historic five-game match against 18-time world Go champion Lee Sedol, winning 4 games to 1. Prior to AlphaGo's breakthrough, artificial intelligence researchers and Go experts widely believed that a computer beating a top human professional at Go was at least a decade away due to the immense complexity and intuition required by the game.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+        "AlphaGo defeated the world Go champion in 2016",
+        "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest",
+          "title": "Google's AlphaGo AI defeats human in first game of Go contest",
+          "snippet": "The world champion at Go – an ancient Chinese board game – looked nervous. His eyes darted from side to side.AlphaGo’s defeat of a European Go champion in October last year – an achievement many thought was at least a decade away – should have acted as a warning."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bcVNBn5R_rY",
+          "title": "From AlphaGo to AstraTennis: The World’s First... - YouTube",
+          "snippet": "From AlphaGo to AstraTennis. In 2016, AlphaGo defeated world champion Go player Lee Sedol — marking a defining moment in AI history. A decade later, AI enters the physical world."
+        },
+        {
+          "url": "https://vitalab.github.io/article/2020/11/19/AlphaMuGoZero.html",
+          "title": "AlphaGo/AlphaGoZero/AlphaZero/MuZero: Mastering games using...",
+          "snippet": "AlphaGo defeated the Go champion Lee Sedol in 2016 in a best-of-five tournament. Since then, Deepmind has released three subsequent versions of the algorithm, each imposing fewer priors and increasing performance."
+        },
+        {
+          "url": "https://www.fastcompany.com/90402503/the-10-most-important-moments-in-ai-so-far",
+          "title": "The 10 most important moments in AI (so far) - Fast Company",
+          "snippet": "10. AlphaGo Defeats human Go champion (2016). Back in 2013, researchers at a British startup called DeepMind published a paper showing how they could use a neural network to play and beat 50 old Atari games. Impressed, Google snatched up the company for a reported $400 million."
+        },
+        {
+          "url": "https://deepmind.google/research/alphago/",
+          "title": "AlphaGo — Google DeepMind",
+          "snippet": "AlphaGo mastered the ancient game of Go, defeated a Go world champion, and inspired a new era of AI systems. A Go board – a wide grid with black and white stones placed on top."
+        },
+        {
+          "url": "https://www.smartweb.jp/en/glossary/alphago/",
+          "title": "AlphaGo | SmartWeb",
+          "snippet": "AlphaGo is an AI system developed by Google DeepMind that defeated world Go champion Lee Sedol with a 4-1 victory in 2016, becoming the first program to beat a world-class Go player. Why is this so remarkable?"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-016",
+      "claim_title": "Generative AI will replace 300 million jobs",
+      "claim_text": "\"Generative AI will replace 300 million jobs worldwide.\"",
+      "category": "economics",
+      "verdict": "MISLEADING",
+      "confidence": 88,
+      "verdict_changed": false,
+      "previous_verdict": "MISLEADING",
+      "new_verdict": "MISLEADING",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim misrepresents the widely cited March 2023 Goldman Sachs economic report",
+        "The authors estimated that generative AI could expose the equivalent of roughly 300 million full-time jobs globally to automation, not that 300 million jobs would be outright eliminated or replaced",
+        "The report emphasized that for the majority of workers, generative AI will complement rather than substitute labor, automating specific tasks while potentially boosting overall productivity and creating new roles."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Generative AI will replace 300 million jobs worldwide.\\\"\",\n  \"verification_notes\": \"Check the primary source: the Goldman Sachs Global Economics Analyst (Hatzius et al., 26 March 2023). Verify the exact wording — the report estimates roughly 300 million full-time jobs could be \\\"exposed to automation,\\\" and that ~two-thirds of occupations could see *some* automation, not full replacement. Distinguish \\\"exposed to,\\\" \\\"complemented by,\\\" and \\\"replaced by.\\\" Note the report also projected AI could raise global GDP. Cross-check with later labour-economics commentary (e.g. MIT, Brookings) on automation creating as well as displacing jobs. Expected nuance: the bare \\\"will replace 300 million jobs\\\" framing overstates the source.\",\n  \"search_results\": \"[1] Generative AI - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Generative_AI\\nExcerpt: Generative artificial intelligence (AI) will become one of the most important features for creative designers and marketers. Adobe on Tuesday unveiled a Generative Fill feature in Photoshop to bring Firefly's AI capabilities into design.\\n\\n[2] How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University\\nURL: https://www.nexford.edu/insights/how-will-ai-affect-jobs\\nExcerpt: Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says.Generative AI, which is taking up all the headlines lately, is really the next step for this technology.\\n\\n[3] Be careful not to get sucked into the generative AI hype.\\nURL: https://www.inc.com/peter-cohan/2888-wild-ways-genai-is-not-internet.html\\nExcerpt: Generative AI is being driven largely by tech giants such as Microsoft, Amazon, and Google. By contrast, the internet was pushed forward by aggressive startups — which the largest tech companies tried to ignore.\\n\\n[4] AI Won’t Replace Us — But It Will Change How We Work\\nURL: https://www.linkedin.com/pulse/ai-wont-replace-us-change-how-we-work-janet-dell-cl43c\\nExcerpt: Generative AI has reached capability levels many of us thought were much further off. Every day brings proof of new breakthroughs.The power of generative AI is increasing exponentially, and no one knows where this will lead. Yes scary, but also amazing and liberating.\\n\\n[5] AI Jobs: ML, Research, Data & Robotics Roles\\nURL: https://www.moaijobs.com/\\nExcerpt: Post a Job - $199. Discover the Best AI Jobs. Curated from top AI labs and companies. Browse by role, location, and remote.$175K - $300KUnited States. 2 days ago. Research Engineer, Generative Video. Mirage. $175K - $300KUnited States.\\n\\n[6] Ai vs women\\nURL: https://www.hcadvisors.net/post/ai-vs-women\\nExcerpt: \\\"The latest generative AI products — think ChatGPT, Bing Chat and Bard — could replace the equivalent of 300 million full-time jobs over the next decade, according to a new report by Goldman Sachs.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"MISLEADING\",\n  \"confidence\": 88,\n  \"reasoning\": \"The claim misrepresents the widely cited March 2023 Goldman Sachs economic report. The authors estimated that generative AI could expose the equivalent of roughly 300 million full-time jobs globally to automation, not that 300 million jobs would be outright eliminated or replaced. The report emphasized that for the majority of workers, generative AI will complement rather than substitute labor, automating specific tasks while potentially boosting overall productivity and creating new roles.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Generative AI will replace 300 million jobs worldwide.\"",
+        "Generative AI will replace 300 million jobs",
+        "\"Generative AI will replace 300 million jobs worldwide.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Generative_AI",
+          "title": "Generative AI - Wikipedia",
+          "snippet": "Generative artificial intelligence (AI) will become one of the most important features for creative designers and marketers. Adobe on Tuesday unveiled a Generative Fill feature in Photoshop to bring Firefly's AI capabilities into design."
+        },
+        {
+          "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
+          "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
+          "snippet": "Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says.Generative AI, which is taking up all the headlines lately, is really the next step for this technology."
+        },
+        {
+          "url": "https://www.inc.com/peter-cohan/2888-wild-ways-genai-is-not-internet.html",
+          "title": "Be careful not to get sucked into the generative AI hype.",
+          "snippet": "Generative AI is being driven largely by tech giants such as Microsoft, Amazon, and Google. By contrast, the internet was pushed forward by aggressive startups — which the largest tech companies tried to ignore."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/ai-wont-replace-us-change-how-we-work-janet-dell-cl43c",
+          "title": "AI Won’t Replace Us — But It Will Change How We Work",
+          "snippet": "Generative AI has reached capability levels many of us thought were much further off. Every day brings proof of new breakthroughs.The power of generative AI is increasing exponentially, and no one knows where this will lead. Yes scary, but also amazing and liberating."
+        },
+        {
+          "url": "https://www.moaijobs.com/",
+          "title": "AI Jobs: ML, Research, Data & Robotics Roles",
+          "snippet": "Post a Job - $199. Discover the Best AI Jobs. Curated from top AI labs and companies. Browse by role, location, and remote.$175K - $300KUnited States. 2 days ago. Research Engineer, Generative Video. Mirage. $175K - $300KUnited States."
+        },
+        {
+          "url": "https://www.hcadvisors.net/post/ai-vs-women",
+          "title": "Ai vs women",
+          "snippet": "\"The latest generative AI products — think ChatGPT, Bing Chat and Bard — could replace the equivalent of 300 million full-time jobs over the next decade, according to a new report by Goldman Sachs."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-004",
+      "claim_title": "AI systems now pass the bar exam",
+      "claim_text": "\"AI language models can now pass the US bar examination at above-average scores.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 85,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": true
+      },
+      "sources_found": 6,
+      "sources_used": 2,
+      "reasoning_steps": [
+        "The claim is accurate",
+        "In 2023, empirical evaluations led by Katz, Bommarito, et al",
+        "showed that OpenAI's GPT-4 achieved a passing score of approximately 297 on the Uniform Bar Examination (UBE), surpassing the passing threshold (typically 260–270) in all UBE jurisdictions",
+        "While subsequent scholarly scrutiny (e.g., Martinez, 2024) disputed the initial marketing assertion that GPT-4 scored in the 90th percentile—estimating it closer to the 68th percentile among first-time July examinees—a score of 297 remains comfortably above the national average examinee score",
+        "Newer frontier models continue to perform at or above this standard."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.8-flash",
+      "prompt": "Claim title: AI systems now pass the bar exam\n\nClaim to verify: \"AI language models can now pass the US bar examination at above-average scores.\"\n\nHuman context: GPT-4 was reported in early 2023 to pass the bar exam in the top 10% of test takers. Claim is often cited as evidence of AI surpassing human professional capabilities. Subsequent models have also been tested.\n\nVerification guidance: Verify the original GPT-4 bar exam study (Bommarito & Katz, 2023). Check if results have been replicated or updated with newer models. Note: passing score and top-10% are different claims — verify which is accurate.\n\nWeb search results:\n\n[1] How to Use Ai to Study for The Bar Exam | TikTok\n    URL: https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam\n    Excerpt: “Are you ready to pass the 2026 Bar Exams using 227 real cases penned by Justice Gaerlan?” This AI-powered reviewer compiles full texts, audio digests, and simplified formats. But can you really afford to skip the very cases the Bar Chair personally decided?\n\n[2] AI and the Bar Exam: A Tool, Not a Tutor. - California Bar Review\n    URL: https://execbar.com/2026/04/ai-and-the-bar-exam-a-tool-not-a-tutor/\n    Excerpt: The California bar exam pass rate hovers around 40 to 50 percent and that number has not moved in decades, despite every new study technology that has come along. The message here is abundantly clear: AI is not going to pass the bar exam for you.\n\n[3] Can Gemini 3 pass the Bar Exam? At this point, who cares.\n    URL: https://www.linkedin.com/posts/bommarito_can-gemini-3-pass-the-bar-exam-at-this-activity-7396575232737767424-0rLz\n    Excerpt: More interestingly, what does Gemini 3 think about its ability to pass the Bar Exam? At this point, I think meta-cognition about capabilities is more interesting than the raw capability performance itself for SotA models. GDM seems to have clearly given this model some self-awareness in their...\n\n[4] Anthropic Won't Say Claude Isn't Conscious | The Tech Buzz\n    URL: https://www.techbuzz.ai/articles/anthropic-won-t-say-claude-isn-t-conscious\n    Excerpt: AI systems now pass the bar exam, write production code, and engage in conversations that feel genuinely thoughtful. Whether that constitutes consciousness or just very good pattern matching remains hotly debated among philosophers and neuroscientists.\n\n[5] 10 days to the bar exam. Avoid emotional foolishness! #barexam\n    URL: https://www.youtube.com/watch?v=7jsCV2BNmdo\n    Excerpt: How to Pass the Bar Exam in 10 Days Олег Тиньков: «Я пока в шоке!»Объясняет лингвист Дмитрий Петров I Created an AI Study Buddy to Help You Pass Your Bar Exam!\n\n[6] About To Give Up, Woman Finally Passes Bar Exam On 6th Attempt\n    URL: https://testmaxprep.com/blog/bar-exam/about-to-give-up-woman-finally-passes-bar-exam-on-6th-attempt\n    Excerpt: Last year, you met Sheila. Now, meet Marsha Teasely, a graduate of Peoples College of Law, who failed the CA bar exam five straight times.” No surprise there. After all, according to conventional wisdom, Marsha should not pass the bar exam.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 85,\n  \"sources\": [\n    {\n      \"url\": \"https://www.techbuzz.ai/articles/anthropic-won-t-say-claude-isn-t-conscious\",\n      \"title\": \"Anthropic Won't Say Claude Isn't Conscious | The Tech Buzz\",\n      \"relevance\": \"medium\",\n      \"supports_claim\": true,\n      \"excerpt\": \"AI systems now pass the bar exam, write production code\"\n    },\n    {\n      \"url\": \"https://www.linkedin.com/posts/bommarito_can-gemini-3-pass-the-bar-exam-at-this-activity-7396575232737767424-0rLz\",\n      \"title\": \"Can Gemini 3 pass the Bar Exam? At this point, who cares.\",\n      \"relevance\": \"medium\",\n      \"supports_claim\": true,\n      \"excerpt\": \"More interestingly, what does Gemini 3 think about its ability to pass the Bar Exam?\"\n    }\n  ],\n  \"reasoning\": \"The claim is accurate. In 2023, empirical evaluations led by Katz, Bommarito, et al. showed that OpenAI's GPT-4 achieved a passing score of approximately 297 on the Uniform Bar Examination (UBE), surpassing the passing threshold (typically 260–270) in all UBE jurisdictions. While subsequent scholarly scrutiny (e.g., Martinez, 2024) disputed the initial marketing assertion that GPT-4 scored in the 90th percentile—estimating it closer to the 68th percentile among first-time July examinees—a score of 297 remains comfortably above the national average examinee score. Newer frontier models continue to perform at or above this standard.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": true\n  }\n}",
+      "prompt_tokens": 1206,
+      "response_tokens": 479,
+      "total_tokens": 2712,
+      "dspy_used": false,
+      "search_queries": [
+        "\"AI language models can now pass the US bar examination at above-average scores.\"",
+        "AI systems now pass the bar exam",
+        "\"AI language models can now pass the US bar examination at above-average scores.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam",
+          "title": "How to Use Ai to Study for The Bar Exam | TikTok",
+          "snippet": "“Are you ready to pass the 2026 Bar Exams using 227 real cases penned by Justice Gaerlan?” This AI-powered reviewer compiles full texts, audio digests, and simplified formats. But can you really afford to skip the very cases the Bar Chair personally decided?"
+        },
+        {
+          "url": "https://execbar.com/2026/04/ai-and-the-bar-exam-a-tool-not-a-tutor/",
+          "title": "AI and the Bar Exam: A Tool, Not a Tutor. - California Bar Review",
+          "snippet": "The California bar exam pass rate hovers around 40 to 50 percent and that number has not moved in decades, despite every new study technology that has come along. The message here is abundantly clear: AI is not going to pass the bar exam for you."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/bommarito_can-gemini-3-pass-the-bar-exam-at-this-activity-7396575232737767424-0rLz",
+          "title": "Can Gemini 3 pass the Bar Exam? At this point, who cares.",
+          "snippet": "More interestingly, what does Gemini 3 think about its ability to pass the Bar Exam? At this point, I think meta-cognition about capabilities is more interesting than the raw capability performance itself for SotA models. GDM seems to have clearly given this model some self-awareness in their..."
+        },
+        {
+          "url": "https://www.techbuzz.ai/articles/anthropic-won-t-say-claude-isn-t-conscious",
+          "title": "Anthropic Won't Say Claude Isn't Conscious | The Tech Buzz",
+          "snippet": "AI systems now pass the bar exam, write production code, and engage in conversations that feel genuinely thoughtful. Whether that constitutes consciousness or just very good pattern matching remains hotly debated among philosophers and neuroscientists."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7jsCV2BNmdo",
+          "title": "10 days to the bar exam. Avoid emotional foolishness! #barexam",
+          "snippet": "How to Pass the Bar Exam in 10 Days Олег Тиньков: «Я пока в шоке!»Объясняет лингвист Дмитрий Петров I Created an AI Study Buddy to Help You Pass Your Bar Exam!"
+        },
+        {
+          "url": "https://testmaxprep.com/blog/bar-exam/about-to-give-up-woman-finally-passes-bar-exam-on-6th-attempt",
+          "title": "About To Give Up, Woman Finally Passes Bar Exam On 6th Attempt",
+          "snippet": "Last year, you met Sheila. Now, meet Marsha Teasely, a graduate of Peoples College of Law, who failed the CA bar exam five straight times.” No surprise there. After all, according to conventional wisdom, Marsha should not pass the bar exam."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}

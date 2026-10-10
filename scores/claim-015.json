@@ -3,18 +3,10 @@
   "claim_id": "claim-015",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-10-03T11:01:00Z",
+  "last_checked_at": "2026-10-10T11:47:59Z",
   "last_changed_at": "2026-06-09T23:45:43Z",
-  "run_id": "run-2026-10-03T105933Z",
+  "run_id": "run-2026-10-10T114647Z",
   "sources": [
-    {
-      "url": "https://www.youtube.com/watch?v=bcVNBn5R_rY",
-      "title": "From AlphaGo to AstraTennis: The World’s First... - YouTube",
-      "domain": "youtube.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "From AlphaGo to AstraTennis. In 2016, AlphaGo defeated world champion Go player Lee Sedol —"
-    },
     {
       "url": "https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest",
       "title": "Google's AlphaGo AI defeats human in first game of Go contest",
@@ -22,6 +14,14 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "The world champion at Go – an ancient Chinese board game – looked nervous. His"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=bcVNBn5R_rY",
+      "title": "From AlphaGo to AstraTennis: The World’s First... - YouTube",
+      "domain": "youtube.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "From AlphaGo to AstraTennis. In 2016, AlphaGo defeated world champion Go player Lee Sedol —"
     },
     {
       "url": "https://vitalab.github.io/article/2020/11/19/AlphaMuGoZero.html",
@@ -32,20 +32,20 @@
       "excerpt": "AlphaGo defeated the Go champion Lee Sedol in 2016 in a best-of-five tournament. Since then,"
     },
     {
-      "url": "https://deepmind.google/research/alphago/",
-      "title": "AlphaGo — Google DeepMind",
-      "domain": "deepmind.google",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "AlphaGo mastered the ancient game of Go, defeated a Go world champion, and inspired a"
-    },
-    {
       "url": "https://www.fastcompany.com/90402503/the-10-most-important-moments-in-ai-so-far",
       "title": "The 10 most important moments in AI (so far) - Fast Company",
       "domain": "fastcompany.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "10. AlphaGo Defeats human Go champion (2016). Back in 2013, researchers at a British startup"
+    },
+    {
+      "url": "https://deepmind.google/research/alphago/",
+      "title": "AlphaGo — Google DeepMind",
+      "domain": "deepmind.google",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "AlphaGo mastered the ancient game of Go, defeated a Go world champion, and inspired a"
     },
     {
       "url": "https://www.smartweb.jp/en/glossary/alphago/",
@@ -56,7 +56,7 @@
       "excerpt": "AlphaGo is an AI system developed by Google DeepMind that defeated world Go champion Lee"
     }
   ],
-  "reasoning": "In March 2016, Google DeepMind's AlphaGo program played an iconic five-game match against 18-time world Go champion Lee Sedol, winning 4 games to 1. Prior to AlphaGo's breakthrough, AI researchers and Go experts widely believed that a computer defeating an elite human Go player was at least a decade away due to the immense complexity and intuitive nature of the game.",
+  "reasoning": "In March 2016, Google DeepMind's AI program AlphaGo played an historic five-game match against 18-time world Go champion Lee Sedol, winning 4 games to 1. Prior to AlphaGo's breakthrough, artificial intelligence researchers and Go experts widely believed that a computer beating a top human professional at Go was at least a decade away due to the immense complexity and intuition required by the game.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -159,6 +159,12 @@
       "confidence": 100,
       "checked_at": "2026-09-26T10:43:59Z",
       "run_id": "run-2026-09-26T104134Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-10-03T11:01:00Z",
+      "run_id": "run-2026-10-03T105933Z"
     }
   ],
   "agent_flags": {
