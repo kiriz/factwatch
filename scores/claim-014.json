@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-014",
   "verdict": "TRUE",
-  "confidence": 98,
-  "last_checked_at": "2026-10-04T11:42:44Z",
+  "confidence": 100,
+  "last_checked_at": "2026-10-11T12:08:55Z",
   "last_changed_at": "2026-06-09T23:47:39Z",
-  "run_id": "run-2026-10-04T114130Z",
+  "run_id": "run-2026-10-11T115906Z",
   "sources": [
     {
       "url": "https://www.tiktok.com/discover/why-is-the-moon-moving-away-from-earth",
@@ -24,39 +24,39 @@
       "excerpt": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about"
     },
     {
-      "url": "https://studyfinds.com/moon-not-geologically-dead/",
-      "title": "Moon not 'geologically dead world' after all. Why that might be a prob...",
-      "domain": "studyfinds.com",
+      "url": "https://iere.org/how-is-the-earth-and-moon-alike/",
+      "title": "How Is the Earth and Moon Alike? - The Institute for Environmental...",
+      "domain": "iere.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Additionally, the Moon is slowly moving away from Earth at a rate of about 3.8"
+      "excerpt": "Yes, the Moon is slowly moving away from Earth at a rate of about 3.8"
     },
     {
-      "url": "https://brainly.com/question/36789563",
-      "title": "[FREE] Is the moon long-lasting? - brainly.com",
-      "domain": "brainly.com",
+      "url": "https://lsintspl3.wgbh.org/en-us/lesson/buac19-il-moonformearth/9?as_guest=True",
+      "title": "Distance and Rotation",
+      "domain": "lsintspl3.wgbh.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Orbital Changes: The Moon is slowly moving away from Earth at a rate of about"
+      "excerpt": "Distance and Rotation. By measuring the time it takes for a laser beam to reach"
     },
     {
-      "url": "https://nabado.co.ke/2024/12/22/understanding-earths-rotation-speed-effects-and-implications/",
-      "title": "Understanding Earth's Rotation: Speed and Implications",
-      "domain": "nabado.co.ke",
+      "url": "https://www.physicsforums.com/threads/what-is-going-to-happen-first.327599/",
+      "title": "What is going to happen first?",
+      "domain": "physicsforums.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Over time, the Moon has slowly pulled on Earth’s oceans, creating friction that has gradually"
+      "excerpt": "3) The moon is slowly moving away from Earth at a rate of about 3.8"
     },
     {
-      "url": "https://toxigon.com/tno-orbits-suns-gravity-after-eons",
-      "title": "The Fascinating Dance of Orbits, Suns, & Gravity Over E - Toxigon",
-      "domain": "toxigon.com",
+      "url": "https://storage.googleapis.com/jxpodptmpolhsblthmsly/weird-science-have-you-ever.html",
+      "title": "\"Uncovering Bizarre Science: Have You Ever? Fascinating Facts!\"",
+      "domain": "storage.googleapis.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters"
+      "excerpt": "Weird Science. You've probably heard that the moon is slowly moving away from Earth at"
     }
   ],
-  "reasoning": "Measurements from Lunar Laser Ranging experiments (using retroreflectors placed on the Moon during the Apollo missions) confirm that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This recession is driven by tidal friction, which transfers Earth's rotational angular momentum to the Moon's orbital motion.",
+  "reasoning": "The claim is accurate. Measurements from the Lunar Laser Ranging experiment, which bounces lasers off retroreflectors placed on the lunar surface during the Apollo and Lunokhod missions, have established that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This recession is driven by tidal friction, which transfers angular momentum from Earth's rotation to the Moon's orbit.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -159,6 +159,12 @@
       "confidence": 100,
       "checked_at": "2026-09-27T11:17:03Z",
       "run_id": "run-2026-09-27T111501Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-10-04T11:42:44Z",
+      "run_id": "run-2026-10-04T114130Z"
     }
   ],
   "agent_flags": {

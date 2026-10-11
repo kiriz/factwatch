@@ -2,19 +2,11 @@
   "schema_version": "1.0",
   "claim_id": "claim-008",
   "verdict": "TRUE",
-  "confidence": 100,
-  "last_checked_at": "2026-10-04T11:42:19Z",
+  "confidence": 98,
+  "last_checked_at": "2026-10-11T12:08:07Z",
   "last_changed_at": "2026-06-09T23:47:06Z",
-  "run_id": "run-2026-10-04T114130Z",
+  "run_id": "run-2026-10-11T115906Z",
   "sources": [
-    {
-      "url": "https://timesofindia.indiatimes.com/etimes/trending/10-weird-and-funny-animal-facts-that-sound-fake-but-are-completely-real/articleshow/125381246.cms",
-      "title": "10 weird and funny animal facts that sound fake... - The Times of India",
-      "domain": "timesofindia.indiatimes.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Octopuses have three hearts and their blood is blue.Two pump blood through their gills, while"
-    },
     {
       "url": "https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh",
       "title": "Ten things I learned in 2025: 1. Octopuses have three hearts, and...",
@@ -32,31 +24,39 @@
       "excerpt": "Octopuses Have Three Hearts and Blue Blood Octopuses have THREE hearts and their blood is"
     },
     {
-      "url": "https://www.divessi.com/en/blog/octopuses-20-amazing-facts-8560.html",
-      "title": "Octopuses: 20 Amazing Facts",
-      "domain": "divessi.com",
+      "url": "https://dandys-world-robloxhorror.fandom.com/f/p/4400000000000332935",
+      "title": "octopuses have three hearts and their blood is blue due... | Fandom",
+      "domain": "dandys-world-robloxhorror.fandom.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "5. Octopuses have three hearts and their blood is blue due to being copper-based. 6."
+      "excerpt": "octopuses have three hearts and their blood is blue due to a copper-based molecule called"
     },
     {
-      "url": "https://en.spontex.org/le_saviez_vous/457/blue-red-blood-three-hearts-octopus-tentacles",
-      "title": "spontex.org :: Octopuses have three hearts and their blood is blue.",
-      "domain": "en.spontex.org",
+      "url": "https://www.pinterest.com/pin/octopuses-have-three-hearts--1103100502469010580/",
+      "title": "Octopuses have three hearts... | Daily facts, Facts you didnt know...",
+      "domain": "pinterest.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The main heart pumps blood through the body while the other two pump blood through"
+      "excerpt": "Did you know that octopuses have three hearts and their blood is blue? Two hearts"
     },
     {
-      "url": "https://mathcorps.org/tag/results/",
-      "title": "results Archives – Math Corps",
-      "domain": "mathcorps.org",
+      "url": "https://news.ycombinator.com/item?id=42220533",
+      "title": "Me: Please tell me an interesting fact I don't know. | Hacker News",
+      "domain": "news.ycombinator.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "In the summer of 2021, the Covid-19 pandemic had been ravaging the city of Detroit"
+      "excerpt": "GPT: Did you know that octopuses have three hearts and their blood is blue? Two"
+    },
+    {
+      "url": "https://informativesisters.com/animal-facts-that-you-might-find-interesting/",
+      "title": "Animal Facts That You might find interesting - Informative Sisters",
+      "domain": "informativesisters.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Octopuses have three hearts, and their blood is blue. Unlike most animals with red blood,"
     }
   ],
-  "reasoning": "Octopuses possess three hearts: two branchial hearts that pump blood through the gills to pick up oxygen, and one systemic heart that circulates oxygenated blood to the rest of the body. Furthermore, their blood is blue because it relies on the copper-rich protein hemocyanin, rather than iron-based hemoglobin, to bind and transport oxygen in cold, low-oxygen marine environments.",
+  "reasoning": "Octopuses have three hearts: two branchial hearts that pump blood through the gills to pick up oxygen, and a single systemic heart that circulates oxygenated blood through the rest of the body. In addition, their blood appears blue due to hemocyanin, a copper-based protein used to transport oxygen instead of the iron-based hemoglobin found in vertebrates.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -159,13 +159,19 @@
       "confidence": 100,
       "checked_at": "2026-09-27T11:16:09Z",
       "run_id": "run-2026-09-27T111501Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-10-04T11:42:19Z",
+      "run_id": "run-2026-10-04T114130Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
     "requires_human_review": false,
-    "low_source_quality": false
+    "low_source_quality": true
   },
   "title": "Octopuses have three hearts and blue blood",
   "category": "science",

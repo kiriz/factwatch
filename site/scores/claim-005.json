@@ -2,18 +2,26 @@
   "schema_version": "1.0",
   "claim_id": "claim-005",
   "verdict": "TRUE",
-  "confidence": 95,
-  "last_checked_at": "2026-10-04T11:42:04Z",
+  "confidence": 85,
+  "last_checked_at": "2026-10-11T12:07:00Z",
   "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-10-04T114130Z",
+  "run_id": "run-2026-10-11T115906Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/United_States_congressional_apportionment",
-      "title": "United States congressional apportionment - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/United_States",
+      "title": "United States - Wikipedia",
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "United States congressional apportionment is the process[1] by which seats in the United States House"
+      "excerpt": "The United States of America (USA), also known as the United States (U.S.) or America,"
+    },
+    {
+      "url": "https://www.govtrack.us/congress/votes",
+      "title": "Congressional Votes Database - GovTrack.us",
+      "domain": "govtrack.us",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Get an email every time Congress votes on a bill or other matter. Browse roll"
     },
     {
       "url": "https://www.congress.gov/search?q={\"source\":\"legislation\"}",
@@ -24,39 +32,31 @@
       "excerpt": "Learn about the current status of appropriations legislation on Congress.gov."
     },
     {
-      "url": "https://www.govtrack.us/congress/members/CA/42",
-      "title": "govtrack.us/congress/members/CA/42",
-      "domain": "govtrack.us",
+      "url": "https://www.nbcnews.com/politics",
+      "title": "Politics News: Latest on Trump Administration, Congress... | NBC News",
+      "domain": "nbcnews.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Californias 42 nd Congressional District - GovTrack.us."
+      "excerpt": "Find the latest political news stories, photos, and videos on NBCNews.com. Read breaking headlines covering"
     },
     {
-      "url": "https://www.britannica.com/topic/Congress-of-the-United-States",
-      "title": "Congress of the United States | Members, Seats, Term... | Britannica",
-      "domain": "britannica.com",
+      "url": "https://readmedium.com/government-in-america-the-pt-barnum-debt-ceiling-circus-sideshow-47ea4d5ba101",
+      "title": "Government in America: The PT Barnum Debt Ceiling Circus Sideshow",
+      "domain": "readmedium.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Of common interest to both houses of Congress are also such matters as government printing,"
+      "excerpt": "The last time Congress passed a proper budget under a proper process was 1996. Let"
     },
     {
-      "url": "https://www.usa.gov/federal-budget-process",
-      "title": "The federal budget process | USAGov",
-      "domain": "usa.gov",
+      "url": "https://www.thoughtco.com/average-number-of-legislative-days-3368250",
+      "title": "thoughtco.com/average-number-of-legislative-days-3368250",
+      "domain": "thoughtco.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Learn about the federal government’s budget process, from the president’s budget plan to Congress’s work"
-    },
-    {
-      "url": "https://www.washingtontimes.com/news/2013/sep/24/inside-the-beltway-observations-du-jour/",
-      "title": "Inside the Beltway: Observations du jour - Washington Times",
-      "domain": "washingtontimes.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Lawmakers have forgotten sensible kitchen table-style budgeting, he says, moving from crisis to crisis, governing"
+      "excerpt": "How Many Days Congress Works - Annual Total and Average."
     }
   ],
-  "reasoning": "According to Congressional Research Service and congressional records, the last time Congress enacted all regular appropriations bills before the start of the fiscal year (October 1) was in 1996 for Fiscal Year 1997. Since FY 1997, Congress has relied on continuing resolutions (stopgap funding measures) and late omnibus or regular spending bills rather than enacting a full set of appropriations bills before the statutory deadline.",
+  "reasoning": "According to historical Congressional Research Service (CRS) and Pew Research Center records, the last time Congress enacted all of its regular appropriations bills before the start of the fiscal year (October 1) was for Fiscal Year 1997 (enacted in late September 1996). Since the passage of the Congressional Budget Act of 1974, Congress has only enacted all regular appropriations bills on time in four fiscal years: FY 1977, FY 1989, FY 1995, and FY 1997. Since FY 1997, Congress has consistently relied on continuing resolutions or omnibus spending packages enacted well after the October 1 deadline, meaning a complete budget has not been passed on time since then.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -165,13 +165,19 @@
       "confidence": 95,
       "checked_at": "2026-09-27T11:15:52Z",
       "run_id": "run-2026-09-27T111501Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-10-04T11:42:04Z",
+      "run_id": "run-2026-10-04T114130Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
     "requires_human_review": false,
-    "low_source_quality": false
+    "low_source_quality": true
   },
   "title": "US Congress passed no budget on time since 1997",
   "category": "politics",
