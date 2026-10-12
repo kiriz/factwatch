@@ -3,60 +3,60 @@
   "claim_id": "claim-001",
   "verdict": "TRUE",
   "confidence": 99,
-  "last_checked_at": "2026-10-05T13:24:45Z",
+  "last_checked_at": "2026-10-12T14:14:19Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-10-05T132410Z",
+  "run_id": "run-2026-10-12T141339Z",
   "sources": [
     {
-      "url": "https://www.carbonbrief.org/humans-causing-up-to-two-thirds-arctic-summer-sea-ice-loss-study-confirms",
-      "title": "Humans causing up to two-thirds of Arctic summer sea ice loss, study...",
-      "domain": "carbonbrief.org",
+      "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
+      "title": "Arctic sea ice decline - Wikipedia",
+      "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Arctic sea ice extent is declining in every season, but particularly quickly in September, when"
+      "excerpt": "Sea ice in the Arctic region has declined in recent decades in area and volume"
     },
     {
-      "url": "https://www.nytimes.com/interactive/2017/09/22/climate/arctic-sea-ice-shrinking-trend-watch.html",
-      "title": "We Charted Arctic Sea Ice for Nearly Every Day Since 1979.",
-      "domain": "nytimes.com",
+      "url": "https://globalocean.noaa.gov/the-ocean/arctic-sea-ice/",
+      "title": "Arctic Sea Ice - Global Ocean Monitoring and Observing",
+      "domain": "globalocean.noaa.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Arctic sea ice has been in steep decline since the late 1970s, when satellite images"
+      "excerpt": "Jul 23, 2026 · From 2007 to 2023, the sea ice extent was the lowest"
     },
     {
-      "url": "https://www.bgnes.com/science/polar-oceans-are-changing-as-warming-melts-ice-habitats",
-      "title": "Polar Oceans Are Changing as Warming Melts Ice Habitats | BGNES",
-      "domain": "bgnes.com",
+      "url": "https://svs.gsfc.nasa.gov/5395",
+      "title": "Annual Arctic Sea Ice Minimum Area 1979-2024, With Graph",
+      "domain": "svs.gsfc.nasa.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "As temperatures rise, Arctic sea ice has been declining by nearly 500,000 square kilometres per"
+      "excerpt": "Oct 4, 2024 · Every summer the Arctic ice cap melts down to what scientists"
     },
     {
-      "url": "https://nsidc.org/sea-ice-today",
-      "title": "Sea Ice Today | National Snow and Ice Data Center",
-      "domain": "nsidc.org",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2026GL122769",
+      "title": "The Declining Trend of Arctic Sea‐Ice Extent (1979–2025 ...",
+      "domain": "agupubs.onlinelibrary.wiley.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "On September 12, Arctic sea ice likely reached its annual minimum extent of 4.60 million"
+      "excerpt": "Abstract Arctic sea-ice extent (SIE), a high-accuracy observable, is a key indicator for assessing sea-ice"
     },
     {
-      "url": "https://phys.org/news/2025-02-arctic-cyclones-link-sea-ice.html",
-      "title": "Arctic cyclones could be missing link in sea ice depletion models",
-      "domain": "phys.org",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026GL122769",
+      "title": "The Declining Trend of Arctic Sea-Ice Extent (1979–2025 ...",
+      "domain": "agupubs.onlinelibrary.wiley.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Since 1979, Arctic sea ice extent has decreased by 40% in late summer, with rapid"
+      "excerpt": "Sep 2, 2026 · Employing Arctic SIE from 1979 to 2025, this study investigated the"
     },
     {
-      "url": "https://www.sciencedaily.com/releases/2026/09/260922005658.htm",
-      "title": "The Arctic sea ice melt season grew longer for decades... | ScienceDaily",
-      "domain": "sciencedaily.com",
+      "url": "https://www.climate.gov/feeds/dashboard/dashboard-data-arctic-sea-ice-graph",
+      "title": "Dashboard Data for Arctic Sea Ice - NOAA Climate.gov",
+      "domain": "climate.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Since the start of the satellite record, the Arctic sea ice melt season has lengthened"
+      "excerpt": "Jun 25, 2025 · Since 1979, the extent of ice covering the Arctic Ocean at"
     }
   ],
-  "reasoning": "Satellite records beginning in 1979 consistently show a significant, long-term decline in Arctic sea ice across all seasons. According to observational data from NASA, the National Snow and Ice Data Center (NSIDC), and scientific studies, late summer (September) Arctic sea ice extent has decreased by approximately 12 to 13 percent per decade, representing a loss of roughly 40 percent of minimum ice cover since 1979.",
+  "reasoning": "Satellite records of Arctic sea ice began in 1979. Data from scientific agencies including NOAA and NASA, as well as peer-reviewed literature, confirm that Arctic sea ice has experienced a substantial, statistically significant long-term decline in both extent and thickness across all seasons, most notably during the end-of-summer September minimum, which has decreased by approximately 40% or more since 1979.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -171,6 +171,12 @@
       "confidence": 98,
       "checked_at": "2026-09-28T12:43:39Z",
       "run_id": "run-2026-09-28T124305Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 99,
+      "checked_at": "2026-10-05T13:24:45Z",
+      "run_id": "run-2026-10-05T132410Z"
     }
   ],
   "agent_flags": {
