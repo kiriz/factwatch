@@ -2,50 +2,26 @@
   "schema_version": "1.0",
   "claim_id": "claim-002",
   "verdict": "TRUE",
-  "confidence": 98,
-  "last_checked_at": "2026-10-06T12:41:57Z",
+  "confidence": 95,
+  "last_checked_at": "2026-10-13T13:25:32Z",
   "last_changed_at": "2026-09-07T11:26:13Z",
-  "run_id": "run-2026-10-06T123801Z",
+  "run_id": "run-2026-10-13T132343Z",
   "sources": [
     {
-      "url": "https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/",
-      "title": "National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...",
-      "domain": "tampafp.com",
+      "url": "https://thedailyeconomy.org/article/34-trillion-and-climbing/",
+      "title": "$34 Trillion and Climbing | The Daily Economy",
+      "domain": "thedailyeconomy.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The United States national debt has surpassed $34.9 trillion for the first time, marking a"
+      "excerpt": "In 2023 the US added $2.65 trillion in debt, the second largest annual increase in"
     },
     {
-      "url": "https://edition.cnn.com/2024/01/03/economy/us-national-debt-34-trillion/index.html?trk=article-ssr-frontend-pulse_little-text-block",
-      "title": "US national debt hits record $34 trillion | CNN Business",
-      "domain": "edition.cnn.com",
+      "url": "https://www.thefinancialdistrict.com.ph/post/u-s-debt-surpasses-34-trillion-due-to-trump-s-borrowing",
+      "title": "U.S. Debt Surpasses $34 Trillion Due To Trump's Borrowing",
+      "domain": "thefinancialdistrict.com.ph",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The US government’s debt has topped $34 trillion for the first time, just weeks ahead"
-    },
-    {
-      "url": "https://www.linkedin.com/pulse/34-trillion-debt-bomb-sitting-under-global-markets-insiderindex-fcwkc",
-      "title": "The $34 Trillion Debt Bomb Sitting Under Global Markets",
-      "domain": "linkedin.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The United States now carries more than $34 trillion in federal debt. Interest costs alone"
-    },
-    {
-      "url": "https://www.renewamerica.com/columns/lambert/240109",
-      "title": "U.S. federal debt is a serious impending national problem",
-      "domain": "renewamerica.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "With the national debt now exceeding $34 trillion dollars, this problem should concern every American"
-    },
-    {
-      "url": "https://www.binance.com/en/square/post/8011328368026",
-      "title": "America's debt exceeds $34 trillion, but it seems that the",
-      "domain": "binance.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Associated Press: For Mike Johnson, this was a priority on day one. It is time,"
+      "excerpt": "The Congressional Budget Office’s January 2020 estimates had gross federal debt exceeding $34 trillion in"
     },
     {
       "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
@@ -56,15 +32,31 @@
       "excerpt": "The cost of purchases exceeding the amount paid off represents a deficit, while accumulated deficits"
     },
     {
-      "url": "https://aheadoftheherd.com/34-trillion-and-climbing/",
-      "title": "$34 Trillion and Climbing – Ahead of the Herd",
-      "domain": "aheadoftheherd.com",
+      "url": "https://fred.stlouisfed.org/series/GFDEBTN",
+      "title": "Federal Debt: Total Public Debt (GFDEBTN) | FRED | St. Louis Fed",
+      "domain": "fred.stlouisfed.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "In 2023 the US added $2.65 trillion in debt, the second largest annual increase in"
+      "excerpt": "Graph and download economic data for Federal Debt: Total Public Debt (GFDEBTN) from Q1 1966"
+    },
+    {
+      "url": "https://www.pgpf.org/national-debt-clock/",
+      "title": "National Debt Clock: What Is the National Debt Right Now?",
+      "domain": "pgpf.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Check our debt clock for the latest numbers and learn about the causes of our"
+    },
+    {
+      "url": "https://www.americanhartfordgold.com/the-34-trillion-problem/",
+      "title": "The $34 Trillion Problem | American Hartford Gold",
+      "domain": "americanhartfordgold.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "At $34 trillion, the United States’ debt is 1.2 times its annual economic output, higher"
     }
   ],
-  "reasoning": "According to data released by the U.S. Department of the Treasury, the total U.S. national debt surpassed the $34 trillion threshold in late December 2023, as confirmed by established reporting and official fiscal tracking. Subsequent reporting indicates it has continued to rise past this milestone.",
+  "reasoning": "The United States gross national debt officially surpassed $34 trillion in late December 2023 / early January 2024 and has continued to rise since then. Official data from the U.S. Department of the Treasury and reporting across economic organizations corroborate that total federal debt has crossed this milestone.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -179,6 +171,12 @@
       "confidence": 100,
       "checked_at": "2026-09-28T12:44:09Z",
       "run_id": "run-2026-09-28T124305Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-10-06T12:41:57Z",
+      "run_id": "run-2026-10-06T123801Z"
     }
   ],
   "agent_flags": {

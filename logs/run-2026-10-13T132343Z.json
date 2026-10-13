@@ -1,0 +1,80 @@
+{
+  "run_id": "run-2026-10-13T132343Z",
+  "started_at": "2026-10-13T13:23:43Z",
+  "finished_at": "2026-10-13T13:25:34Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The United States gross national debt officially surpassed $34 trillion in late December 2023 / early January 2024 and has continued to rise since then",
+        "Official data from the U.S",
+        "Department of the Treasury and reporting across economic organizations corroborate that total federal debt has crossed this milestone."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The United States national debt has surpassed $34 trillion.\\\"\",\n  \"verification_notes\": \"Check US Treasury Fiscal Data (fiscaldata.treasury.gov). Note distinction between gross debt and debt held by the public. Verify current figure — may have grown beyond $34T by time of verification.\",\n  \"search_results\": \"[1] $34 Trillion and Climbing | The Daily Economy\\nURL: https://thedailyeconomy.org/article/34-trillion-and-climbing/\\nExcerpt: In 2023 the US added $2.65 trillion in debt, the second largest annual increase in history after the 2020 increase of $4.5 trillion. Going back to 1995, Federal Debt has increased by just over $1 trillion per year, but since 2010 that number has jumped to $1.7 trillion annually.\\n\\n[2] U.S. Debt Surpasses $34 Trillion Due To Trump's Borrowing\\nURL: https://www.thefinancialdistrict.com.ph/post/u-s-debt-surpasses-34-trillion-due-to-trump-s-borrowing\\nExcerpt: The Congressional Budget Office’s January 2020 estimates had gross federal debt exceeding $34 trillion in fiscal year 2029. However, due to the faster-than-expected growth of debt caused by the multi-year pandemic starting in 2020, which led to the shutdown of much of the US...\\n\\n[3] Understanding the National Debt | U.S. Treasury Fiscal Data\\nURL: https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/\\nExcerpt: The cost of purchases exceeding the amount paid off represents a deficit, while accumulated deficits over time represents a person’s overall debt. The U.S. Treasury uses the terms “national debt,” “federal debt,” and “public debt” interchangeably.\\n\\n[4] Federal Debt: Total Public Debt (GFDEBTN) | FRED | St. Louis Fed\\nURL: https://fred.stlouisfed.org/series/GFDEBTN\\nExcerpt: Graph and download economic data for Federal Debt: Total Public Debt (GFDEBTN) from Q1 1966 to Q2 2026 about public, debt, federal, government, and USA.\\n\\n[5] National Debt Clock: What Is the National Debt Right Now?\\nURL: https://www.pgpf.org/national-debt-clock/\\nExcerpt: Check our debt clock for the latest numbers and learn about the causes of our high and rising debt.The $40 trillion gross federal debt equals debt held by the public plus debt held by federal trust funds and other government accounts.\\n\\n[6] The $34 Trillion Problem | American Hartford Gold\\nURL: https://www.americanhartfordgold.com/the-34-trillion-problem/\\nExcerpt: At $34 trillion, the United States’ debt is 1.2 times its annual economic output, higher than the 1.1 ratio dating back to World War II. The astronomical sum is the result of lawmakers raising the debt ceiling last year to avoid a default.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The United States gross national debt officially surpassed $34 trillion in late December 2023 / early January 2024 and has continued to rise since then. Official data from the U.S. Department of the Treasury and reporting across economic organizations corroborate that total federal debt has crossed this milestone.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The United States national debt has surpassed $34 trillion.\"",
+        "US federal debt exceeds $34 trillion",
+        "\"The United States national debt has surpassed $34 trillion.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://thedailyeconomy.org/article/34-trillion-and-climbing/",
+          "title": "$34 Trillion and Climbing | The Daily Economy",
+          "snippet": "In 2023 the US added $2.65 trillion in debt, the second largest annual increase in history after the 2020 increase of $4.5 trillion. Going back to 1995, Federal Debt has increased by just over $1 trillion per year, but since 2010 that number has jumped to $1.7 trillion annually."
+        },
+        {
+          "url": "https://www.thefinancialdistrict.com.ph/post/u-s-debt-surpasses-34-trillion-due-to-trump-s-borrowing",
+          "title": "U.S. Debt Surpasses $34 Trillion Due To Trump's Borrowing",
+          "snippet": "The Congressional Budget Office’s January 2020 estimates had gross federal debt exceeding $34 trillion in fiscal year 2029. However, due to the faster-than-expected growth of debt caused by the multi-year pandemic starting in 2020, which led to the shutdown of much of the US..."
+        },
+        {
+          "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
+          "title": "Understanding the National Debt | U.S. Treasury Fiscal Data",
+          "snippet": "The cost of purchases exceeding the amount paid off represents a deficit, while accumulated deficits over time represents a person’s overall debt. The U.S. Treasury uses the terms “national debt,” “federal debt,” and “public debt” interchangeably."
+        },
+        {
+          "url": "https://fred.stlouisfed.org/series/GFDEBTN",
+          "title": "Federal Debt: Total Public Debt (GFDEBTN) | FRED | St. Louis Fed",
+          "snippet": "Graph and download economic data for Federal Debt: Total Public Debt (GFDEBTN) from Q1 1966 to Q2 2026 about public, debt, federal, government, and USA."
+        },
+        {
+          "url": "https://www.pgpf.org/national-debt-clock/",
+          "title": "National Debt Clock: What Is the National Debt Right Now?",
+          "snippet": "Check our debt clock for the latest numbers and learn about the causes of our high and rising debt.The $40 trillion gross federal debt equals debt held by the public plus debt held by federal trust funds and other government accounts."
+        },
+        {
+          "url": "https://www.americanhartfordgold.com/the-34-trillion-problem/",
+          "title": "The $34 Trillion Problem | American Hartford Gold",
+          "snippet": "At $34 trillion, the United States’ debt is 1.2 times its annual economic output, higher than the 1.1 ratio dating back to World War II. The astronomical sum is the result of lawmakers raising the debt ceiling last year to avoid a default."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}
