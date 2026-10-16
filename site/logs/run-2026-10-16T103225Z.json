@@ -1,0 +1,95 @@
+{
+  "run_id": "run-2026-10-16T103225Z",
+  "started_at": "2026-10-16T10:32:25Z",
+  "finished_at": "2026-10-16T10:34:25Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-007",
+      "claim_title": "Great Wall of China visible from space",
+      "claim_text": "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 4,
+      "reasoning_steps": [
+        "The claim is demonstrably false",
+        "The Great Wall of China is not visible to the naked human eye from low Earth orbit, let alone further out in space",
+        "Averaging only about 6 to 9 meters in width and constructed from local stone and soil that blends into the surrounding landscape, it lacks the optical contrast and angular size necessary for human visual resolution from orbit",
+        "Astronauts from NASA and China's space program (such as Yang Liwei in 2003) have repeatedly confirmed it cannot be identified with the unaided eye, whereas other human-made features like highways, canals, and city lights are easily discernible."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "gemini-3.8-flash",
+      "prompt": "Claim title: Great Wall of China visible from space\n\nClaim to verify: \"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"\n\nHuman context: Appears in textbooks worldwide and was repeated for decades as fact. Chinese astronaut Yang Liwei attempted to see it from orbit in 2003 and could not. NASA has weighed in. Yet the myth persists in curricula.\n\nVerification guidance: Check astronaut accounts, NASA statements, and optical physics. The wall is roughly 9 meters wide — compare to road widths. Verify what actually IS visible from low Earth orbit with the naked eye.\n\nWeb search results:\n\n[1] Fact-check: The Great Wall of China is the only man-made...\n    URL: https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31\n    Excerpt: The total length of the Great Wall, including all its components, is approximately 13,171 miles. The Great Wall was not completed during the reign of Qin Shi Huang. Key Claims.\n\n[2] Space Myths: Interactive Lesson on Astronomy... - Spelling Bee Ninja\n    URL: https://spellingbee.ninja/science/space-myths-lesson-and-quiz/\n    Excerpt: Myth: The Great Wall of China is the only man-made structure visible from space with the naked eye. Fact: The Great Wall is not visible from low Earth orbit (where the International Space Station orbits) without magnification.\n\n[3] Step Up Your Travel: Here Are 6 Beautiful Stairways From Around The...\n    URL: https://www.yahoo.com/lifestyle/step-travel-6-beautiful-stairways-205634250.html\n    Excerpt: Just along one 26-mile stretch — the official course of the Great Wall of China marathon — there are 5,164 stone steps. That's a lot of steps!\" Also, according to Travel Facts, \"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"\n\n[4] 5 Truths & 1 Lie about China — Can you spot the myth? | CTS Tours\n    URL: https://www.ctstours.co.nz/play/spot-the-lie-china-icons-1\n    Excerpt: The Great Wall of China snaking through autumn-coloured forested mountains D.The Great Wall of China is the only man-made structure visible from space with the naked eye, stretching over 21,000 kilometres across the country.\n\n[5] Did You Know? The Great Wall Isn't Visible From Space With the...\n    URL: https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/\n    Excerpt: And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands of kilometers across diverse terrain—it’s also quite narrow, only about 6 to 9 meters wide on average.\n\n[6] Satellite Picture of Great Wall of China: Fact vs. Myth - PopSCI.blog\n    URL: https://popsci.blog/great-wall-china-satellite-picture-myth\n    Excerpt: The persistent myth that the Great Wall of China is the only man-made structure visible from space with the naked eye is a common misconception.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"sources\": [\n    {\n      \"url\": \"https://spellingbee.ninja/science/space-myths-lesson-and-quiz/\",\n      \"title\": \"Space Myths: Interactive Lesson on Astronomy... - Spelling Bee Ninja\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"Great Wall is not visible from low Earth orbit... without magnification.\"\n    },\n    {\n      \"url\": \"https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/\",\n      \"title\": \"Did You Know? The Great Wall Isn't Visible From Space With the...\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"it’s also quite narrow, only about 6 to 9 meters wide\"\n    },\n    {\n      \"url\": \"https://popsci.blog/great-wall-china-satellite-picture-myth\",\n      \"title\": \"Satellite Picture of Great Wall of China: Fact vs. Myth - PopSCI.blog\",\n      \"relevance\": \"high\",\n      \"supports_claim\": false,\n      \"excerpt\": \"The persistent myth that the Great Wall... is a common misconception.\"\n    },\n    {\n      \"url\": \"https://www.yahoo.com/lifestyle/step-travel-6-beautiful-stairways-205634250.html\",\n      \"title\": \"Step Up Your Travel: Here Are 6 Beautiful Stairways From Around The...\",\n      \"relevance\": \"low\",\n      \"supports_claim\": true,\n      \"excerpt\": \"Great Wall of China is the only man-made structure visible from space\"\n    }\n  ],\n  \"reasoning\": \"The claim is demonstrably false. The Great Wall of China is not visible to the naked human eye from low Earth orbit, let alone further out in space. Averaging only about 6 to 9 meters in width and constructed from local stone and soil that blends into the surrounding landscape, it lacks the optical contrast and angular size necessary for human visual resolution from orbit. Astronauts from NASA and China's space program (such as Yang Liwei in 2003) have repeatedly confirmed it cannot be identified with the unaided eye, whereas other human-made features like highways, canals, and city lights are easily discernible.\",\n  \"agent_flags\": {\n    \"conflicting_sources\": false,\n    \"outdated_evidence\": false,\n    \"requires_human_review\": false,\n    \"low_source_quality\": false\n  }\n}",
+      "prompt_tokens": 1123,
+      "response_tokens": 624,
+      "total_tokens": 2019,
+      "dspy_used": false,
+      "search_queries": [
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+        "Great Wall of China visible from space",
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
+          "title": "Fact-check: The Great Wall of China is the only man-made...",
+          "snippet": "The total length of the Great Wall, including all its components, is approximately 13,171 miles. The Great Wall was not completed during the reign of Qin Shi Huang. Key Claims."
+        },
+        {
+          "url": "https://spellingbee.ninja/science/space-myths-lesson-and-quiz/",
+          "title": "Space Myths: Interactive Lesson on Astronomy... - Spelling Bee Ninja",
+          "snippet": "Myth: The Great Wall of China is the only man-made structure visible from space with the naked eye. Fact: The Great Wall is not visible from low Earth orbit (where the International Space Station orbits) without magnification."
+        },
+        {
+          "url": "https://www.yahoo.com/lifestyle/step-travel-6-beautiful-stairways-205634250.html",
+          "title": "Step Up Your Travel: Here Are 6 Beautiful Stairways From Around The...",
+          "snippet": "Just along one 26-mile stretch — the official course of the Great Wall of China marathon — there are 5,164 stone steps. That's a lot of steps!\" Also, according to Travel Facts, \"The Great Wall of China is the only man-made structure visible from space with the naked eye.\""
+        },
+        {
+          "url": "https://www.ctstours.co.nz/play/spot-the-lie-china-icons-1",
+          "title": "5 Truths & 1 Lie about China — Can you spot the myth? | CTS Tours",
+          "snippet": "The Great Wall of China snaking through autumn-coloured forested mountains D.The Great Wall of China is the only man-made structure visible from space with the naked eye, stretching over 21,000 kilometres across the country."
+        },
+        {
+          "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
+          "title": "Did You Know? The Great Wall Isn't Visible From Space With the...",
+          "snippet": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands of kilometers across diverse terrain—it’s also quite narrow, only about 6 to 9 meters wide on average."
+        },
+        {
+          "url": "https://popsci.blog/great-wall-china-satellite-picture-myth",
+          "title": "Satellite Picture of Great Wall of China: Fact vs. Myth - PopSCI.blog",
+          "snippet": "The persistent myth that the Great Wall of China is the only man-made structure visible from space with the naked eye is a common misconception."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 1
+}
