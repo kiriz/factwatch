@@ -1,0 +1,80 @@
+{
+  "run_id": "run-2026-10-17T100232Z",
+  "started_at": "2026-10-17T10:02:32Z",
+  "finished_at": "2026-10-17T10:03:03Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that humans only use 10% of their brain capacity is a well-known scientific myth",
+        "Neuroimaging techniques such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET) demonstrate that virtually all areas of the brain are active and have designated functions throughout the course of a day, even during sleep",
+        "Furthermore, evolutionary biology and clinical neurology show that unutilized brain tissue would atrophy or be selected against, and damage to even minute regions of the brain almost always results in measurable functional deficits."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\\\"\",\n  \"verification_notes\": \"Check neuroimaging studies (fMRI, PET). Verify whether any region of the brain is truly inactive. Look at what happens to brain tissue when it's genuinely unused (it atrophies). Check scientific consensus from neuroscience organizations.\",\n  \"search_results\": \"[1] [FREE] True or False: Humans only use about 10% of their brains.\\nURL: https://brainly.com/question/59412926\\nExcerpt: Humans do not only use 10% of their brains; this statement is false. Scientific evidence reveals that nearly all parts of the brain have specific functions and are active during various activities. Therefore, the brain's full capacity is utilized regularly.\\n\\n[2] The Irony of Believing Humans Use Only 10% of Their Brains\\nURL: https://radicalscholarship.com/2015/08/02/the-irony-of-believing-humans-use-only-10-of-their-brains/\\nExcerpt: Humans Already Use Way, Way More Than 10% of Their Brains, The Atlantic. How to Use More Than 10 Percent of Your Brain, Slate. All You Need to Know about the 10 Percent Brain Myth, in 60 Seconds, WIRED. It’s a myth that we only use 10% of our brains – here’s why, The...\\n\\n[3] Solved Do people really use only 10% of their brains? | Chegg.com\\nURL: https://www.chegg.com/homework-help/questions-and-answers/people-really-use-10-brains-use-entire-brain-although-individual-tasks-might-rely-primaril-q191836172\\nExcerpt: , we use our entire brain. ( although individual tasks might rely primarily on specialized regions of the brain. ) Chegg Logo. Here’s the best way to solve it. Solution. The claim that humans only use 10% of their brains is a popular myth.\\n\\n[4] Humans Use More Than 10% of Their Power | by Alex... | Medium\\nURL: https://thealexcrowley.medium.com/humans-use-more-than-10-of-their-power-a259eaf12173\\nExcerpt: The idea that humans only use 10% of their brain power is a myth that has been debunked by neuroscientists. Advanced brain imaging techniques, such as functional magnetic resonance imaging (fMRI), have shown that even during rest or seemingly simple tasks, the brain remains...\\n\\n[5] Do humans only use 10% of their brains?\\nURL: https://www.youtube.com/watch?v=NGEVEkZ27sk\\nExcerpt:\\n\\n[6] How many of these 15 'facts' do you believe? Most people get the...\\nURL: https://www.grimsbytelegraph.co.uk/whats-on/whats-on-news/how-many-15-facts-you-8564911\\nExcerpt: Humans use just 10% of their brains. The Great Wall of China is visible from space. Peeing on a jellyfish stings eases the pain.· You swallow spiders when you are asleep. · Humans only use 10% of their brains.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that humans only use 10% of their brain capacity is a well-known scientific myth. Neuroimaging techniques such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET) demonstrate that virtually all areas of the brain are active and have designated functions throughout the course of a day, even during sleep. Furthermore, evolutionary biology and clinical neurology show that unutilized brain tissue would atrophy or be selected against, and damage to even minute regions of the brain almost always results in measurable functional deficits.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+        "Humans only use 10% of their brains",
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://brainly.com/question/59412926",
+          "title": "[FREE] True or False: Humans only use about 10% of their brains.",
+          "snippet": "Humans do not only use 10% of their brains; this statement is false. Scientific evidence reveals that nearly all parts of the brain have specific functions and are active during various activities. Therefore, the brain's full capacity is utilized regularly."
+        },
+        {
+          "url": "https://radicalscholarship.com/2015/08/02/the-irony-of-believing-humans-use-only-10-of-their-brains/",
+          "title": "The Irony of Believing Humans Use Only 10% of Their Brains",
+          "snippet": "Humans Already Use Way, Way More Than 10% of Their Brains, The Atlantic. How to Use More Than 10 Percent of Your Brain, Slate. All You Need to Know about the 10 Percent Brain Myth, in 60 Seconds, WIRED. It’s a myth that we only use 10% of our brains – here’s why, The..."
+        },
+        {
+          "url": "https://www.chegg.com/homework-help/questions-and-answers/people-really-use-10-brains-use-entire-brain-although-individual-tasks-might-rely-primaril-q191836172",
+          "title": "Solved Do people really use only 10% of their brains? | Chegg.com",
+          "snippet": ", we use our entire brain. ( although individual tasks might rely primarily on specialized regions of the brain. ) Chegg Logo. Here’s the best way to solve it. Solution. The claim that humans only use 10% of their brains is a popular myth."
+        },
+        {
+          "url": "https://thealexcrowley.medium.com/humans-use-more-than-10-of-their-power-a259eaf12173",
+          "title": "Humans Use More Than 10% of Their Power | by Alex... | Medium",
+          "snippet": "The idea that humans only use 10% of their brain power is a myth that has been debunked by neuroscientists. Advanced brain imaging techniques, such as functional magnetic resonance imaging (fMRI), have shown that even during rest or seemingly simple tasks, the brain remains..."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NGEVEkZ27sk",
+          "title": "Do humans only use 10% of their brains?",
+          "snippet": ""
+        },
+        {
+          "url": "https://www.grimsbytelegraph.co.uk/whats-on/whats-on-news/how-many-15-facts-you-8564911",
+          "title": "How many of these 15 'facts' do you believe? Most people get the...",
+          "snippet": "Humans use just 10% of their brains. The Great Wall of China is visible from space. Peeing on a jellyfish stings eases the pain.· You swallow spiders when you are asleep. · Humans only use 10% of their brains."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}

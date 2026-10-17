@@ -3,9 +3,9 @@
   "claim_id": "claim-006",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-10-08T12:41:26Z",
+  "last_checked_at": "2026-10-17T10:03:01Z",
   "last_changed_at": "2026-06-09T23:43:44Z",
-  "run_id": "run-2026-10-08T124058Z",
+  "run_id": "run-2026-10-17T100232Z",
   "sources": [
     {
       "url": "https://brainly.com/question/59412926",
@@ -22,14 +22,6 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Humans Already Use Way, Way More Than 10% of Their Brains, The Atlantic. How to"
-    },
-    {
-      "url": "https://monthlymagazine.com/en/article/908/do-humans-use-only-10-of-their-brains-debunking-myth-77",
-      "title": "The Monthly Magazine | Do Humans Use Only 10% of Their Brains?...",
-      "domain": "monthlymagazine.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "If only 10% of it were used, it seems unlikely that the brain would grow"
     },
     {
       "url": "https://www.chegg.com/homework-help/questions-and-answers/people-really-use-10-brains-use-entire-brain-although-individual-tasks-might-rely-primaril-q191836172",
@@ -54,9 +46,17 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": ""
+    },
+    {
+      "url": "https://www.grimsbytelegraph.co.uk/whats-on/whats-on-news/how-many-15-facts-you-8564911",
+      "title": "How many of these 15 'facts' do you believe? Most people get the...",
+      "domain": "grimsbytelegraph.co.uk",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Humans use just 10% of their brains. The Great Wall of China is visible from"
     }
   ],
-  "reasoning": "The claim that humans only use 10% of their brain is a well-documented and widely debunked myth. Modern neuroscience, utilizing neuroimaging technologies such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET), demonstrates that virtually all areas of the brain are active and have designated functions. Even during sleep or simple tasks, vast networks across the entire brain remain active, and there is no 90% portion that sits dormant or untapped. Furthermore, evolutionary biology and clinical neurology show that unused brain tissue naturally atrophies or degrades, meaning an unused 90% would not be maintained by the body.",
+  "reasoning": "The claim that humans only use 10% of their brain capacity is a well-known scientific myth. Neuroimaging techniques such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET) demonstrate that virtually all areas of the brain are active and have designated functions throughout the course of a day, even during sleep. Furthermore, evolutionary biology and clinical neurology show that unutilized brain tissue would atrophy or be selected against, and damage to even minute regions of the brain almost always results in measurable functional deficits.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -165,6 +165,12 @@
       "confidence": 98,
       "checked_at": "2026-09-29T12:00:48Z",
       "run_id": "run-2026-09-29T115947Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-10-08T12:41:26Z",
+      "run_id": "run-2026-10-08T124058Z"
     }
   ],
   "agent_flags": {
