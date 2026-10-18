@@ -3,9 +3,9 @@
   "claim_id": "claim-013",
   "verdict": "DISPUTED",
   "confidence": 85,
-  "last_checked_at": "2026-10-10T11:47:38Z",
+  "last_checked_at": "2026-10-18T10:19:26Z",
   "last_changed_at": "2026-06-09T23:45:22Z",
-  "run_id": "run-2026-10-10T114647Z",
+  "run_id": "run-2026-10-18T101513Z",
   "sources": [
     {
       "url": "https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed",
@@ -24,28 +24,20 @@
       "excerpt": "2. Student uses the model’s thesis: “Excessive social media use causes depression and anxiety in"
     },
     {
-      "url": "https://missionprephealthcare.com/mental-health-resources/depression/causes-and-risk-factors/",
-      "title": "Causes of Depression in Teens: Risk Factors & More",
-      "domain": "missionprephealthcare.com",
+      "url": "https://eng110michael.commons.gc.cuny.edu/social-media-and-mental-illness/",
+      "title": "Social Media And Mental Illness | ENG 110: Mapping New York City",
+      "domain": "eng110michael.commons.gc.cuny.edu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "All teenagers face a variety of challenges every day: school and peer pressure, changing hormones"
+      "excerpt": "Young teenagers tend to feed their brain with unnecessary information from the media and that"
     },
     {
-      "url": "https://www.wbaa.org/2023-04-25/the-truth-about-teens-social-media-and-the-mental-health-crisis",
-      "title": "The truth about teens, social media and the mental health crisis",
-      "domain": "wbaa.org",
+      "url": "https://medium.com/@reynolow/teenagers-death-by-social-media-d71d0d019b41",
+      "title": "Teenagers: Death by Social Media. | Medium",
+      "domain": "medium.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Is social media causing the mental health challenges? Finally, research can answer that question.Murky picture"
-    },
-    {
-      "url": "https://famisafe.wondershare.com/blog/social-media-link-to-depression.html",
-      "title": "Negative effects of social media for kids",
-      "domain": "famisafe.wondershare.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Does social media cause depression? A recent study concluded that there could be a link"
+      "excerpt": "Given that the rise in smartphone use coincided with the rise in depression, these two"
     },
     {
       "url": "https://chelmsfordosteopathyclinic.co.uk/teens-social-media-and-phones/",
@@ -56,23 +48,31 @@
       "excerpt": "Does social media cause depression in children?Chelmsford Osteopathy Clinic. If your child is struggling with"
     },
     {
-      "url": "https://www.afterbabel.com/p/phone-based-childhood-cause-epidemic",
-      "title": "Yes, Social Media Really Is a Cause of the Epidemic of Teenage...",
-      "domain": "afterbabel.com",
+      "url": "https://www.jetlearn.com/blog/social-media-and-teen-mood-separating-the-evidence-from-the-panic",
+      "title": "Social Media and Teen Mood: Separating the Evidence From the Panic",
+      "domain": "jetlearn.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Social Media is a Major Cause of the Mental Illness Epidemic in Teen Girls. Here’s"
+      "excerpt": "Is there solid scientific proof that social media causes anxiety and depression in teenagers? There's"
     },
     {
-      "url": "https://virtualwritingtutor.com/expressdev/vwtserver/public/listicle/419/7-ways-social-media-causes-depression-in-teens.html",
-      "title": "7 Ways Social Media Causes Depression in Teens.",
-      "domain": "virtualwritingtutor.com",
+      "url": "https://www.teenink.com/opinion/all/article/1018290/Social-Media-Causing-Depression-And-Anxiety-In-Teens",
+      "title": "Social Media Causing Depression and Anxiety in Teens? | Teen Ink",
+      "domain": "teenink.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Through social media, teens often experience viewing unrealistic expectations of people that are found to"
+      "excerpt": "Social media is a great way to keep in touch with friends and family, but"
+    },
+    {
+      "url": "https://www.huffpost.com/entry/are-social-networks-causi_b_12396080",
+      "title": "Are Social Networks Causing Loneliness Among Teens? | HuffPost Life",
+      "domain": "huffpost.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "There is some surprising research out there and it shows social networks might indeed be"
     }
   ],
-  "reasoning": "The claim that social media use directly causes depression and anxiety in teenagers is a subject of ongoing debate among researchers, psychologists, and public health authorities. While strong correlations and some quasi-experimental studies (prominently cited by researchers such as Jonathan Haidt and Jean Twenge) suggest that heavy social media use can exacerbate mental health issues—particularly among adolescent girls through cyberbullying, sleep disruption, and negative social comparison—other prominent researchers (such as Amy Orben and Andrew Przybylski) point out that meta-analyses demonstrate very small statistical effect sizes and that correlation does not establish causation. Furthermore, longitudinal research indicates bidirectional relationships, where adolescents experiencing preexisting depression or anxiety may turn to social media more frequently. Major bodies, including the U.S. Surgeon General and the National Academies of Sciences, conclude that while social media presents potential harms, evidence of a direct, universal causal relationship remains inconclusive.",
+  "reasoning": "The claim that social media use directly causes depression and anxiety in teenagers remains heavily debated among psychologists and researchers. While numerous observational studies demonstrate a statistical correlation between high social media use and poorer mental health outcomes in adolescents, establishing direct causation has proven elusive. \n\nMajor reviews, including reports by the U.S. Surgeon General and the National Academies of Sciences, Engineering, and Medicine, highlight that evidence is predominantly correlational rather than causal. Prominent researchers such as Jonathan Haidt and Jean Twenge argue that social media plays a significant causal role in adolescent mental distress, particularly among teenage girls. In contrast, researchers such as Amy Orben and Andrew Przybylski show in large-scale specification curve analyses that the statistical association is tiny (accounting for less than 1% of the variance in well-being) and that issues like reverse causation (depressed teens turning to social media) or confounding factors (such as sleep disruption, cyberbullying, or home environment) explain the trend. Because scientific consensus has not established blanket causation, the claim is classified as disputed.",
   "verdict_history": [
     {
       "verdict": "DISPUTED",
@@ -181,6 +181,12 @@
       "confidence": 85,
       "checked_at": "2026-10-03T11:00:36Z",
       "run_id": "run-2026-10-03T105933Z"
+    },
+    {
+      "verdict": "DISPUTED",
+      "confidence": 85,
+      "checked_at": "2026-10-10T11:47:38Z",
+      "run_id": "run-2026-10-10T114647Z"
     }
   ],
   "agent_flags": {

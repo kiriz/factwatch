@@ -2,18 +2,18 @@
   "schema_version": "1.0",
   "claim_id": "claim-004",
   "verdict": "TRUE",
-  "confidence": 85,
-  "last_checked_at": "2026-10-10T11:48:59Z",
+  "confidence": 95,
+  "last_checked_at": "2026-10-18T10:20:44Z",
   "last_changed_at": "2026-06-09T23:46:29Z",
-  "run_id": "run-2026-10-10T114647Z",
+  "run_id": "run-2026-10-18T101513Z",
   "sources": [
     {
-      "url": "https://www.techbuzz.ai/articles/anthropic-won-t-say-claude-isn-t-conscious",
-      "title": "Anthropic Won't Say Claude Isn't Conscious | The Tech Buzz",
-      "domain": "techbuzz.ai",
+      "url": "https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam",
+      "title": "How to Use Ai to Study for The Bar Exam | TikTok",
+      "domain": "tiktok.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AI systems now pass the bar exam, write production code"
+      "excerpt": "“Are you ready to pass the 2026 Bar Exams using 227 real cases penned by"
     },
     {
       "url": "https://www.linkedin.com/posts/bommarito_can-gemini-3-pass-the-bar-exam-at-this-activity-7396575232737767424-0rLz",
@@ -22,9 +22,41 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "More interestingly, what does Gemini 3 think about its ability to pass the Bar Exam?"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ytriaH9gmUU",
+      "title": "How to Outline Bar Exam Essay - MEE Structure Tips - YouTube",
+      "domain": "youtube.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "In this video, we’ll be going over how to outline a bar exam essay. Having"
+    },
+    {
+      "url": "https://safe.ai/",
+      "title": "Center for AI Safety (CAIS)",
+      "domain": "safe.ai",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Training 1000+ future AI safety leaders. The course offers a comprehensive introduction to how current"
+    },
+    {
+      "url": "https://portal.nybarexam.org/",
+      "title": "Home Page",
+      "domain": "portal.nybarexam.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Applying to sit for the bar examination in New York.Registering for and sitting for the"
+    },
+    {
+      "url": "https://lovable.dev/",
+      "title": "App & Website Builder | Build Software in Minutes | Lovable",
+      "domain": "lovable.dev",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "These three students created an AI system from the ground up to help anyone learn"
     }
   ],
-  "reasoning": "The claim is accurate. In 2023, empirical evaluations led by Katz, Bommarito, et al. showed that OpenAI's GPT-4 achieved a passing score of approximately 297 on the Uniform Bar Examination (UBE), surpassing the passing threshold (typically 260–270) in all UBE jurisdictions. While subsequent scholarly scrutiny (e.g., Martinez, 2024) disputed the initial marketing assertion that GPT-4 scored in the 90th percentile—estimating it closer to the 68th percentile among first-time July examinees—a score of 297 remains comfortably above the national average examinee score. Newer frontier models continue to perform at or above this standard.",
+  "reasoning": "In early 2023, researchers Daniel Martin Katz and Michael Bommarito evaluated OpenAI's GPT-4 on the Uniform Bar Examination (UBE). GPT-4 achieved a total score of approximately 297 out of 400, well above the 260–270 passing thresholds established by US jurisdictions. While there has been debate regarding the exact percentile comparison (OpenAI initially cited the 90th percentile, whereas a subsequent analysis placed it around the 68th percentile among all test-takers), both evaluations confirm that the model scored substantially above the average human test-taker score.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -139,13 +171,19 @@
       "confidence": 95,
       "checked_at": "2026-10-03T11:01:46Z",
       "run_id": "run-2026-10-03T105933Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 85,
+      "checked_at": "2026-10-10T11:48:59Z",
+      "run_id": "run-2026-10-10T114647Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
     "requires_human_review": false,
-    "low_source_quality": true
+    "low_source_quality": false
   },
   "title": "AI systems now pass the bar exam",
   "category": "technology",

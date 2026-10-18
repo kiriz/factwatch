@@ -3,17 +3,17 @@
   "claim_id": "claim-015",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-10-10T11:47:59Z",
+  "last_checked_at": "2026-10-18T10:19:46Z",
   "last_changed_at": "2026-06-09T23:45:43Z",
-  "run_id": "run-2026-10-10T114647Z",
+  "run_id": "run-2026-10-18T101513Z",
   "sources": [
     {
-      "url": "https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest",
-      "title": "Google's AlphaGo AI defeats human in first game of Go contest",
-      "domain": "theguardian.com",
+      "url": "https://en.wikipedia.org/wiki/AlphaGo",
+      "title": "AlphaGo - Wikipedia",
+      "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The world champion at Go – an ancient Chinese board game – looked nervous. His"
+      "excerpt": "AlphaGo is a computer program that plays the board game Go. It was developed by"
     },
     {
       "url": "https://www.youtube.com/watch?v=bcVNBn5R_rY",
@@ -32,14 +32,6 @@
       "excerpt": "AlphaGo defeated the Go champion Lee Sedol in 2016 in a best-of-five tournament. Since then,"
     },
     {
-      "url": "https://www.fastcompany.com/90402503/the-10-most-important-moments-in-ai-so-far",
-      "title": "The 10 most important moments in AI (so far) - Fast Company",
-      "domain": "fastcompany.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "10. AlphaGo Defeats human Go champion (2016). Back in 2013, researchers at a British startup"
-    },
-    {
       "url": "https://deepmind.google/research/alphago/",
       "title": "AlphaGo — Google DeepMind",
       "domain": "deepmind.google",
@@ -48,15 +40,23 @@
       "excerpt": "AlphaGo mastered the ancient game of Go, defeated a Go world champion, and inspired a"
     },
     {
-      "url": "https://www.smartweb.jp/en/glossary/alphago/",
-      "title": "AlphaGo | SmartWeb",
-      "domain": "smartweb.jp",
+      "url": "https://www.eurekalert.org/news-releases/730838",
+      "title": "ACM Prize in Computing awarded to AlphaGo developer | EurekAlert!",
+      "domain": "eurekalert.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AlphaGo is an AI system developed by Google DeepMind that defeated world Go champion Lee"
+      "excerpt": "AlphaGo's defeat of world Go champion Lee Sedol in March 2016 was hailed as a"
+    },
+    {
+      "url": "https://medium.com/fast-company/the-10-most-important-moments-in-ai-so-far-63251f6d32e7",
+      "title": "The 10 Most Important Moments in AI (So Far) | by Fast... | Medium",
+      "domain": "medium.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "10. AlphaGo Defeats Human Go Champion (2016).AlphaGo defeated the greatest Go player in the world,"
     }
   ],
-  "reasoning": "In March 2016, Google DeepMind's AI program AlphaGo played an historic five-game match against 18-time world Go champion Lee Sedol, winning 4 games to 1. Prior to AlphaGo's breakthrough, artificial intelligence researchers and Go experts widely believed that a computer beating a top human professional at Go was at least a decade away due to the immense complexity and intuition required by the game.",
+  "reasoning": "In March 2016, Google DeepMind's AlphaGo played a five-game match against 18-time world Go champion Lee Sedol, winning 4 games to 1. Prior to AlphaGo's breakthrough, artificial intelligence researchers and Go experts widely believed that a computer program defeating a top human master at Go was at least a decade away due to the game's immense complexity and reliance on intuition.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -165,6 +165,12 @@
       "confidence": 95,
       "checked_at": "2026-10-03T11:01:00Z",
       "run_id": "run-2026-10-03T105933Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-10-10T11:47:59Z",
+      "run_id": "run-2026-10-10T114647Z"
     }
   ],
   "agent_flags": {

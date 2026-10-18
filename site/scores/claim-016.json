@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
-  "confidence": 88,
-  "last_checked_at": "2026-10-10T11:48:25Z",
+  "confidence": 95,
+  "last_checked_at": "2026-10-18T10:20:22Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-10-10T114647Z",
+  "run_id": "run-2026-10-18T101513Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Generative_AI",
@@ -24,28 +24,28 @@
       "excerpt": "Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by"
     },
     {
-      "url": "https://www.inc.com/peter-cohan/2888-wild-ways-genai-is-not-internet.html",
-      "title": "Be careful not to get sucked into the generative AI hype.",
-      "domain": "inc.com",
+      "url": "https://readmedium.com/andrew-ngs-generative-ai-for-everybody-course-my-take-a5f1fac42c8d",
+      "title": "Andrew NG’s Generative AI for Everybody Course — My Take",
+      "domain": "readmedium.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Generative AI is being driven largely by tech giants such as Microsoft, Amazon, and Google."
+      "excerpt": "The course covers how generative AI works, its capabilities and limitations, and tips for crafting"
     },
     {
-      "url": "https://www.linkedin.com/pulse/ai-wont-replace-us-change-how-we-work-janet-dell-cl43c",
-      "title": "AI Won’t Replace Us — But It Will Change How We Work",
-      "domain": "linkedin.com",
+      "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+      "title": "reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+      "domain": "reports.weforum.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Generative AI has reached capability levels many of us thought were much further off. Every"
+      "excerpt": "AI will displace about 9 million positions by 2030."
     },
     {
-      "url": "https://www.moaijobs.com/",
-      "title": "AI Jobs: ML, Research, Data & Robotics Roles",
-      "domain": "moaijobs.com",
+      "url": "https://www.adpresearch.com/research/worker-sentiment-ai-impact",
+      "title": "Most workers think AI will affect their jobs. They disagree",
+      "domain": "adpresearch.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Post a Job - $199. Discover the Best AI Jobs. Curated from top AI labs"
+      "excerpt": "AI will replace job functions. High impact. It’s going to help me save time on"
     },
     {
       "url": "https://www.hcadvisors.net/post/ai-vs-women",
@@ -56,7 +56,7 @@
       "excerpt": "\"The latest generative AI products — think ChatGPT, Bing Chat and Bard — could replace"
     }
   ],
-  "reasoning": "The claim misrepresents the widely cited March 2023 Goldman Sachs economic report. The authors estimated that generative AI could expose the equivalent of roughly 300 million full-time jobs globally to automation, not that 300 million jobs would be outright eliminated or replaced. The report emphasized that for the majority of workers, generative AI will complement rather than substitute labor, automating specific tasks while potentially boosting overall productivity and creating new roles.",
+  "reasoning": "The claim misrepresents the findings of a widely cited March 2023 Goldman Sachs research report. The report estimated that generative AI could expose the equivalent of 300 million full-time jobs globally to automation, not that 300 million jobs would be outright replaced. In the report's actual model, most exposed workers (approximately two-thirds of occupations) would have only a portion of their tasks automated and would see their work complemented by AI rather than substituted entirely. Furthermore, the report emphasized that technological displacement is historically offset by new job creation and estimated that generative AI could boost global GDP by 7%. Presenting the 300 million figure as a definitive prediction of direct job losses distorts the study's conclusions.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -165,6 +165,12 @@
       "confidence": 90,
       "checked_at": "2026-10-03T11:01:29Z",
       "run_id": "run-2026-10-03T105933Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 88,
+      "checked_at": "2026-10-10T11:48:25Z",
+      "run_id": "run-2026-10-10T114647Z"
     }
   ],
   "agent_flags": {
