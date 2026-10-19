@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-005",
   "verdict": "TRUE",
-  "confidence": 85,
-  "last_checked_at": "2026-10-11T12:07:00Z",
+  "confidence": 95,
+  "last_checked_at": "2026-10-19T11:55:15Z",
   "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-10-11T115906Z",
+  "run_id": "run-2026-10-19T115426Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/United_States",
@@ -16,6 +16,14 @@
       "excerpt": "The United States of America (USA), also known as the United States (U.S.) or America,"
     },
     {
+      "url": "https://www.congress.gov/search?q={\"source\":\"legislation\"}",
+      "title": "congress.gov/search?q={\"source\":\"legislation\"}",
+      "domain": "congress.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Learn about the current status of appropriations legislation on Congress.gov."
+    },
+    {
       "url": "https://www.govtrack.us/congress/votes",
       "title": "Congressional Votes Database - GovTrack.us",
       "domain": "govtrack.us",
@@ -24,12 +32,12 @@
       "excerpt": "Get an email every time Congress votes on a bill or other matter. Browse roll"
     },
     {
-      "url": "https://www.congress.gov/search?q={\"source\":\"legislation\"}",
-      "title": "congress.gov/search?q={\"source\":\"legislation\"}",
-      "domain": "congress.gov",
+      "url": "https://www.theguardian.com/us-news/2025/jul/03/trump-tax-bill-passes-congress",
+      "title": "Trump’s tax-and-spending bill passes Congress in... | The Guardian",
+      "domain": "theguardian.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Learn about the current status of appropriations legislation on Congress.gov."
+      "excerpt": "Mike Johnson shakes hands with Steve Scalise after the US House passed the Republican budget"
     },
     {
       "url": "https://www.nbcnews.com/politics",
@@ -40,23 +48,15 @@
       "excerpt": "Find the latest political news stories, photos, and videos on NBCNews.com. Read breaking headlines covering"
     },
     {
-      "url": "https://readmedium.com/government-in-america-the-pt-barnum-debt-ceiling-circus-sideshow-47ea4d5ba101",
-      "title": "Government in America: The PT Barnum Debt Ceiling Circus Sideshow",
-      "domain": "readmedium.com",
+      "url": "https://www.aol.com/articles/elizabeth-warren-slams-newly-passed-143000000.html",
+      "title": "Elizabeth Warren slams newly passed congressional stock... - AOL",
+      "domain": "aol.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The last time Congress passed a proper budget under a proper process was 1996. Let"
-    },
-    {
-      "url": "https://www.thoughtco.com/average-number-of-legislative-days-3368250",
-      "title": "thoughtco.com/average-number-of-legislative-days-3368250",
-      "domain": "thoughtco.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "How Many Days Congress Works - Annual Total and Average."
+      "excerpt": "What the House-passed stock ban does and doesn’t do. The legislation bans individual stock trading"
     }
   ],
-  "reasoning": "According to historical Congressional Research Service (CRS) and Pew Research Center records, the last time Congress enacted all of its regular appropriations bills before the start of the fiscal year (October 1) was for Fiscal Year 1997 (enacted in late September 1996). Since the passage of the Congressional Budget Act of 1974, Congress has only enacted all regular appropriations bills on time in four fiscal years: FY 1977, FY 1989, FY 1995, and FY 1997. Since FY 1997, Congress has consistently relied on continuing resolutions or omnibus spending packages enacted well after the October 1 deadline, meaning a complete budget has not been passed on time since then.",
+  "reasoning": "According to the Congressional Research Service (CRS) and historical budget records, the last time Congress enacted all regular annual appropriations bills before the start of the fiscal year (October 1) was for Fiscal Year 1997 (completed in late September 1996). Since the modern congressional budget process was established under the Congressional Budget and Impoundment Control Act of 1974, all regular spending bills have been passed on time in only four fiscal years: FY 1977, FY 1989, FY 1995, and FY 1997. Since then, Congress has consistently relied on continuing resolutions and late omnibus spending packages to fund the federal government.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -171,13 +171,19 @@
       "confidence": 95,
       "checked_at": "2026-10-04T11:42:04Z",
       "run_id": "run-2026-10-04T114130Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 85,
+      "checked_at": "2026-10-11T12:07:00Z",
+      "run_id": "run-2026-10-11T115906Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
     "requires_human_review": false,
-    "low_source_quality": true
+    "low_source_quality": false
   },
   "title": "US Congress passed no budget on time since 1997",
   "category": "politics",

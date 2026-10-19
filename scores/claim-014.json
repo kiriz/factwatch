@@ -3,60 +3,60 @@
   "claim_id": "claim-014",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-10-11T12:08:55Z",
+  "last_checked_at": "2026-10-19T11:55:58Z",
   "last_changed_at": "2026-06-09T23:47:39Z",
-  "run_id": "run-2026-10-11T115906Z",
+  "run_id": "run-2026-10-19T115426Z",
   "sources": [
     {
-      "url": "https://www.tiktok.com/discover/why-is-the-moon-moving-away-from-earth",
-      "title": "Why Is The Moon Moving Away from Earth | TikTok",
-      "domain": "tiktok.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The earth is leaving moon #shorts #The Moon is slowly moving away from Earth at"
-    },
-    {
-      "url": "https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069",
-      "title": "Blue and Purple Illustrated Night Sky Group Project...",
-      "domain": "slideshare.net",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about"
-    },
-    {
-      "url": "https://iere.org/how-is-the-earth-and-moon-alike/",
-      "title": "How Is the Earth and Moon Alike? - The Institute for Environmental...",
+      "url": "https://iere.org/why-is-the-moon-moving-away-from-earth/",
+      "title": "Why Is The Moon Moving Away from Earth? - The Institute for ...",
       "domain": "iere.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Yes, the Moon is slowly moving away from Earth at a rate of about 3.8"
+      "excerpt": "Jul 1, 2025 · The Moon is gradually drifting away from Earth at a rate"
     },
     {
-      "url": "https://lsintspl3.wgbh.org/en-us/lesson/buac19-il-moonformearth/9?as_guest=True",
-      "title": "Distance and Rotation",
-      "domain": "lsintspl3.wgbh.org",
+      "url": "https://www.scienceabc.com/nature/universe/why-is-the-moon-moving-away-from-earth",
+      "title": "Why Is The Moon Moving Away From Earth? » ScienceABC",
+      "domain": "scienceabc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Distance and Rotation. By measuring the time it takes for a laser beam to reach"
+      "excerpt": "Mar 2, 2017 · The Moon drifts about 3.8 cm farther from Earth every year"
     },
     {
-      "url": "https://www.physicsforums.com/threads/what-is-going-to-happen-first.327599/",
-      "title": "What is going to happen first?",
-      "domain": "physicsforums.com",
+      "url": "https://iere.org/why-is-the-moon-drifting-away-from-the-earth/",
+      "title": "Why Is The Moon Drifting Away from the Earth?",
+      "domain": "iere.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "3) The moon is slowly moving away from Earth at a rate of about 3.8"
+      "excerpt": "Jul 1, 2025 · The Moon is slowly but surely receding from our planet at"
     },
     {
-      "url": "https://storage.googleapis.com/jxpodptmpolhsblthmsly/weird-science-have-you-ever.html",
-      "title": "\"Uncovering Bizarre Science: Have You Ever? Fascinating Facts!\"",
-      "domain": "storage.googleapis.com",
+      "url": "https://www.wionews.com/science/moon-is-slowing-moving-away-from-earth-heres-why-566867",
+      "title": "Moon is slowly moving away from Earth. Here’s why",
+      "domain": "wionews.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Weird Science. You've probably heard that the moon is slowly moving away from Earth at"
+      "excerpt": "Feb 27, 2023 · Scientists have found that Moon is slowly drifting away from Earth"
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/science/why-is-the-moon-slowly-moving-away-from-earth-every-year-and-what-does-it-reveal-about-our-planets-future/articleshow/125189323.cms",
+      "title": "Why is the Moon slowly moving away from Earth every year and ...",
+      "domain": "timesofindia.indiatimes.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Nov 8, 2025 · Our Moon is slowly drifting away from Earth, not just due"
+    },
+    {
+      "url": "https://www.smorescience.com/the-moon-is-getting-slightly-farther-away-from-the-earth-each-year-−-a-physicist-explains-why/",
+      "title": "The Moon is getting slightly farther away from the Earth each ...",
+      "domain": "smorescience.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Oct 9, 2026 · Earth rises over the Moon, as seen by the Apollo 8"
     }
   ],
-  "reasoning": "The claim is accurate. Measurements from the Lunar Laser Ranging experiment, which bounces lasers off retroreflectors placed on the lunar surface during the Apollo and Lunokhod missions, have established that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This recession is driven by tidal friction, which transfers angular momentum from Earth's rotation to the Moon's orbit.",
+  "reasoning": "Scientific measurements, notably using Lunar Laser Ranging retroreflectors installed during the Apollo missions, have confirmed that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This lunar drift is primarily driven by tidal interactions between Earth and the Moon, which transfer angular momentum from Earth's rotation to the Moon's orbit.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -165,6 +165,12 @@
       "confidence": 98,
       "checked_at": "2026-10-04T11:42:44Z",
       "run_id": "run-2026-10-04T114130Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-10-11T12:08:55Z",
+      "run_id": "run-2026-10-11T115906Z"
     }
   ],
   "agent_flags": {

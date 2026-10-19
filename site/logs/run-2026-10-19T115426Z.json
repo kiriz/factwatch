@@ -1,0 +1,363 @@
+{
+  "run_id": "run-2026-10-19T115426Z",
+  "started_at": "2026-10-19T11:54:26Z",
+  "finished_at": "2026-10-19T11:56:01Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to data from the Cambridge Bitcoin Electricity Consumption Index (CBECI) produced by the Cambridge Centre for Alternative Finance, Bitcoin's annualized electricity consumption has been estimated at approximately 120–160 terawatt-hours (TWh)",
+        "This level of consumption surpasses the annual electricity consumption of Argentina (which typically consumes around 125–135 TWh per year), as reported by major outlets like the BBC and verified by energy benchmarking indices."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\\\"\",\n  \"verification_notes\": \"Check the Cambridge CBECI for current figures. Compare to IEA national electricity consumption data. Verify whether the comparison holds with current mining conditions. Note whether the claim refers to TWh/year.\",\n  \"search_results\": \"[1] Bitcoin consumes 'more electricity than Argentina' - BBC\\nURL: https://www.bbc.com/news/technology-56012952\\nExcerpt: Feb 10, 2021 · Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \\\"Mining\\\" for the cryptocurrency is power-hungry, involving heavy computer ...\\n\\n[2] Bitcoin Mining Consumes More Electricity Annually Than Argentina\\nURL: https://www.intelligentliving.co/bitcoin-consumes-more-electricity-than-argentina/\\nExcerpt: Feb 18, 2021 · It assumes all the Bitcoin mining machines work at various efficiencies, thus averaging the electricity price to $0.05 per kilowatt-hour. The tool uses this price average and the Bitcoin network’s energy demands to get the best possible figure of consumption at any one time.\\n\\n[3] 61 Bitcoin Energy Consumption Statistics (2026)\\nURL: https://bitbo.io/mining-stats/\\nExcerpt: Sep 10, 2023 · Bitcoin currently consumes approximately 160 terawatt-hours of electricity annually - more than the entire country of Argentina. The Bitcoin network uses about 2% of the amount of electricity used by the USA every year.\\n\\n[4] Bitcoin consumes 'More electricity than Argentina' - Cambridge\\nURL: https://electricityforum.com/news/bitcoin-electricity-consumption\\nExcerpt: Bitcoin energy consumption is driven by mining electricity demand, with TWh-scale power use, carbon footprint concerns, and Cambridge estimates. Rising prices incentivize more hardware; efficiency gains and renewables adoption shape sustainability outcomes. Bitcoin energy consumption is mining's ...\\n\\n[5] Bitcoin Mining Uses More Electricity Than Entire Argentina ...\\nURL: https://telegrafi.com/en/Bitcoin-mining-consumes-more-electricity-than-all-of-Argentina/\\nExcerpt: Feb 11, 2021 · Bitcoin uses more electricity each year than all of Argentina, so says analysis from the University of Cambridge. \\\"Mining\\\" this cryptocurrency is energy-hungry, involving complex computer calculations to verify transactions.\\n\\n[6] Bitcoin Consumes 'More Electricity Than Argentina'\\nURL: https://subjecttoclimate.org/external-resources/bitcoin-consumes-more-electricity-than-argentina\\nExcerpt: Apr 27, 2021 · This resource evaluates energy consumption from operating bitcoin as compared with Countries who consume terrawats of electricity, this is a good finding from Cambridge researchers as data in the chart depicts that using Bitcoin consumes more energy than Argentina, though data in the\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to data from the Cambridge Bitcoin Electricity Consumption Index (CBECI) produced by the Cambridge Centre for Alternative Finance, Bitcoin's annualized electricity consumption has been estimated at approximately 120–160 terawatt-hours (TWh). This level of consumption surpasses the annual electricity consumption of Argentina (which typically consumes around 125–135 TWh per year), as reported by major outlets like the BBC and verified by energy benchmarking indices.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+        "Bitcoin uses more electricity than Argentina",
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-56012952",
+          "title": "Bitcoin consumes 'more electricity than Argentina' - BBC",
+          "snippet": "Feb 10, 2021 · Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \"Mining\" for the cryptocurrency is power-hungry, involving heavy computer ..."
+        },
+        {
+          "url": "https://www.intelligentliving.co/bitcoin-consumes-more-electricity-than-argentina/",
+          "title": "Bitcoin Mining Consumes More Electricity Annually Than Argentina",
+          "snippet": "Feb 18, 2021 · It assumes all the Bitcoin mining machines work at various efficiencies, thus averaging the electricity price to $0.05 per kilowatt-hour. The tool uses this price average and the Bitcoin network’s energy demands to get the best possible figure of consumption at any one time."
+        },
+        {
+          "url": "https://bitbo.io/mining-stats/",
+          "title": "61 Bitcoin Energy Consumption Statistics (2026)",
+          "snippet": "Sep 10, 2023 · Bitcoin currently consumes approximately 160 terawatt-hours of electricity annually - more than the entire country of Argentina. The Bitcoin network uses about 2% of the amount of electricity used by the USA every year."
+        },
+        {
+          "url": "https://electricityforum.com/news/bitcoin-electricity-consumption",
+          "title": "Bitcoin consumes 'More electricity than Argentina' - Cambridge",
+          "snippet": "Bitcoin energy consumption is driven by mining electricity demand, with TWh-scale power use, carbon footprint concerns, and Cambridge estimates. Rising prices incentivize more hardware; efficiency gains and renewables adoption shape sustainability outcomes. Bitcoin energy consumption is mining's ..."
+        },
+        {
+          "url": "https://telegrafi.com/en/Bitcoin-mining-consumes-more-electricity-than-all-of-Argentina/",
+          "title": "Bitcoin Mining Uses More Electricity Than Entire Argentina ...",
+          "snippet": "Feb 11, 2021 · Bitcoin uses more electricity each year than all of Argentina, so says analysis from the University of Cambridge. \"Mining\" this cryptocurrency is energy-hungry, involving complex computer calculations to verify transactions."
+        },
+        {
+          "url": "https://subjecttoclimate.org/external-resources/bitcoin-consumes-more-electricity-than-argentina",
+          "title": "Bitcoin Consumes 'More Electricity Than Argentina'",
+          "snippet": "Apr 27, 2021 · This resource evaluates energy consumption from operating bitcoin as compared with Countries who consume terrawats of electricity, this is a good finding from Cambridge researchers as data in the chart depicts that using Bitcoin consumes more energy than Argentina, though data in the chat is not sufficient to infer the potency of Bitocin impact on climate in the future especially when the ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to the Congressional Research Service (CRS) and historical budget records, the last time Congress enacted all regular annual appropriations bills before the start of the fiscal year (October 1) was for Fiscal Year 1997 (completed in late September 1996)",
+        "Since the modern congressional budget process was established under the Congressional Budget and Impoundment Control Act of 1974, all regular spending bills have been passed on time in only four fiscal years: FY 1977, FY 1989, FY 1995, and FY 1997",
+        "Since then, Congress has consistently relied on continuing resolutions and late omnibus spending packages to fund the federal government."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The US Congress has not passed a complete federal budget on time since 1997.\\\"\",\n  \"verification_notes\": \"Check Congressional Research Service records. Fiscal year starts October 1. Verify if any year between 1998 and present had all 12 appropriations bills enacted before the deadline. Note distinction between omnibus packages and individual bills.\",\n  \"search_results\": \"[1] United States - Wikipedia\\nURL: https://en.wikipedia.org/wiki/United_States\\nExcerpt: The United States of America (USA), also known as the United States (U.S.) or America, is a country primarily located in North America. It is a federal republic consisting of 50 states and a federal capital district, Washington, D.C. The 48 contiguous states border Canada to the north and...\\n\\n[2] congress.gov/search?q={\\\"source\\\":\\\"legislation\\\"}\\nURL: https://www.congress.gov/search?q={\\\"source\\\":\\\"legislation\\\"}\\nExcerpt: Learn about the current status of appropriations legislation on Congress.gov.\\n\\n[3] Congressional Votes Database - GovTrack.us\\nURL: https://www.govtrack.us/congress/votes\\nExcerpt: Get an email every time Congress votes on a bill or other matter. Browse roll call votes in the House of Representatives and in the Senate to pass bills, resolutions, nominations, and treaties and votes on cloture and other motions.\\n\\n[4] Trump’s tax-and-spending bill passes Congress in... | The Guardian\\nURL: https://www.theguardian.com/us-news/2025/jul/03/trump-tax-bill-passes-congress\\nExcerpt: Mike Johnson shakes hands with Steve Scalise after the US House passed the Republican budget bill, in Washington DC on Thursday. Photograph: Graeme Sloan/EPA.\\n\\n[5] Politics News: Latest on Trump Administration, Congress... | NBC News\\nURL: https://www.nbcnews.com/politics\\nExcerpt: Find the latest political news stories, photos, and videos on NBCNews.com. Read breaking headlines covering Congress, Democrats, Republicans, and more.\\n\\n[6] Elizabeth Warren slams newly passed congressional stock... - AOL\\nURL: https://www.aol.com/articles/elizabeth-warren-slams-newly-passed-143000000.html\\nExcerpt: What the House-passed stock ban does and doesn’t do. The legislation bans individual stock trading among members of Congress and their families. Yet they are able to keep current stock portfolios intact and reinvest any dividends from their investments.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to the Congressional Research Service (CRS) and historical budget records, the last time Congress enacted all regular annual appropriations bills before the start of the fiscal year (October 1) was for Fiscal Year 1997 (completed in late September 1996). Since the modern congressional budget process was established under the Congressional Budget and Impoundment Control Act of 1974, all regular spending bills have been passed on time in only four fiscal years: FY 1977, FY 1989, FY 1995, and FY 1997. Since then, Congress has consistently relied on continuing resolutions and late omnibus spending packages to fund the federal government.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+        "US Congress passed no budget on time since 1997",
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States",
+          "title": "United States - Wikipedia",
+          "snippet": "The United States of America (USA), also known as the United States (U.S.) or America, is a country primarily located in North America. It is a federal republic consisting of 50 states and a federal capital district, Washington, D.C. The 48 contiguous states border Canada to the north and..."
+        },
+        {
+          "url": "https://www.congress.gov/search?q={\"source\":\"legislation\"}",
+          "title": "congress.gov/search?q={\"source\":\"legislation\"}",
+          "snippet": "Learn about the current status of appropriations legislation on Congress.gov."
+        },
+        {
+          "url": "https://www.govtrack.us/congress/votes",
+          "title": "Congressional Votes Database - GovTrack.us",
+          "snippet": "Get an email every time Congress votes on a bill or other matter. Browse roll call votes in the House of Representatives and in the Senate to pass bills, resolutions, nominations, and treaties and votes on cloture and other motions."
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2025/jul/03/trump-tax-bill-passes-congress",
+          "title": "Trump’s tax-and-spending bill passes Congress in... | The Guardian",
+          "snippet": "Mike Johnson shakes hands with Steve Scalise after the US House passed the Republican budget bill, in Washington DC on Thursday. Photograph: Graeme Sloan/EPA."
+        },
+        {
+          "url": "https://www.nbcnews.com/politics",
+          "title": "Politics News: Latest on Trump Administration, Congress... | NBC News",
+          "snippet": "Find the latest political news stories, photos, and videos on NBCNews.com. Read breaking headlines covering Congress, Democrats, Republicans, and more."
+        },
+        {
+          "url": "https://www.aol.com/articles/elizabeth-warren-slams-newly-passed-143000000.html",
+          "title": "Elizabeth Warren slams newly passed congressional stock... - AOL",
+          "snippet": "What the House-passed stock ban does and doesn’t do. The legislation bans individual stock trading among members of Congress and their families. Yet they are able to keep current stock portfolios intact and reinvest any dividends from their investments."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_title": "Octopuses have three hearts and blue blood",
+      "claim_text": "\"Octopuses have three hearts and their blood is blue.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim is biologically accurate",
+        "Octopuses have three hearts: two branchial hearts that pump blood through the gills and one systemic heart that circulates oxygenated blood to the rest of the body",
+        "Furthermore, their blood is blue due to hemocyanin, a copper-based protein responsible for oxygen transport in cold, low-oxygen marine environments."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Octopuses have three hearts and their blood is blue.\\\"\",\n  \"verification_notes\": \"Check marine biology sources. Verify the function of each heart (two branchial hearts, one systemic). Confirm the copper-based hemocyanin mechanism that makes blood blue. Check whether the blood turns colorless when deoxygenated.\",\n  \"search_results\": \"[1] Ten things I learned in 2025: 1. Octopuses have three hearts, and...\\nURL: https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh\\nExcerpt: Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is blue because it uses copper (hemocyanin) rather than iron to transport oxygen 2. In 1518, a “dancing plague” broke out in Strasbourg: hundreds of people began dancing continuously for days, some until death...\\n\\n[2] Octopuses: Three Hearts and Blue Blood Explained | TikTok\\nURL: https://www.tiktok.com/@nanobrief/video/7508425576114359560\\nExcerpt: Discover why octopuses have three hearts and blue blood! Learn fascinating ocean life facts.\\n\\n[3] octopuses have three hearts and their blood is blue due... | Fandom\\nURL: https://dandys-world-robloxhorror.fandom.com/f/p/4400000000000332935\\nExcerpt: octopuses have three hearts and their blood is blue due to a copper-based molecule called hemocyanin.\\n\\n[4] Octopuses have three hearts... | Daily facts, Facts you didnt know...\\nURL: https://www.pinterest.com/pin/octopuses-have-three-hearts--1103100502469010580/\\nExcerpt: Did you know that octopuses have three hearts and their blood is blue? Two hearts pump blood to the gills, while the third pumps it to the rest of the body!\\n\\n[5] Weird Animal Fact Generator – Kid‑Friendly & Illustrated\\nURL: https://en.ud5.com/tool/random-animal-fact-generator-kids\\nExcerpt: Octopuses have three hearts, and their blood is blue!Earthworms have the most hearts — they have 5 pairs of aortic arches that function like hearts, pumping blood throughout their segmented bodies. But the animal with the most actual hearts is the hagfish, which has 4 hearts!\\n\\n[6] Me: Please tell me an interesting fact I don't know. | Hacker News\\nURL: https://news.ycombinator.com/item?id=42220533\\nExcerpt: GPT: Did you know that octopuses have three hearts and their blood is blue? Two of their hearts pump blood to the gills, while the third pumps it to the rest of the body.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim is biologically accurate. Octopuses have three hearts: two branchial hearts that pump blood through the gills and one systemic heart that circulates oxygenated blood to the rest of the body. Furthermore, their blood is blue due to hemocyanin, a copper-based protein responsible for oxygen transport in cold, low-oxygen marine environments.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Octopuses have three hearts and their blood is blue.\"",
+        "Octopuses have three hearts and blue blood",
+        "\"Octopuses have three hearts and their blood is blue.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh",
+          "title": "Ten things I learned in 2025: 1. Octopuses have three hearts, and...",
+          "snippet": "Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is blue because it uses copper (hemocyanin) rather than iron to transport oxygen 2. In 1518, a “dancing plague” broke out in Strasbourg: hundreds of people began dancing continuously for days, some until death..."
+        },
+        {
+          "url": "https://www.tiktok.com/@nanobrief/video/7508425576114359560",
+          "title": "Octopuses: Three Hearts and Blue Blood Explained | TikTok",
+          "snippet": "Discover why octopuses have three hearts and blue blood! Learn fascinating ocean life facts."
+        },
+        {
+          "url": "https://dandys-world-robloxhorror.fandom.com/f/p/4400000000000332935",
+          "title": "octopuses have three hearts and their blood is blue due... | Fandom",
+          "snippet": "octopuses have three hearts and their blood is blue due to a copper-based molecule called hemocyanin."
+        },
+        {
+          "url": "https://www.pinterest.com/pin/octopuses-have-three-hearts--1103100502469010580/",
+          "title": "Octopuses have three hearts... | Daily facts, Facts you didnt know...",
+          "snippet": "Did you know that octopuses have three hearts and their blood is blue? Two hearts pump blood to the gills, while the third pumps it to the rest of the body!"
+        },
+        {
+          "url": "https://en.ud5.com/tool/random-animal-fact-generator-kids",
+          "title": "Weird Animal Fact Generator – Kid‑Friendly & Illustrated",
+          "snippet": "Octopuses have three hearts, and their blood is blue!Earthworms have the most hearts — they have 5 pairs of aortic arches that function like hearts, pumping blood throughout their segmented bodies. But the animal with the most actual hearts is the hagfish, which has 4 hearts!"
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=42220533",
+          "title": "Me: Please tell me an interesting fact I don't know. | Hacker News",
+          "snippet": "GPT: Did you know that octopuses have three hearts and their blood is blue? Two of their hearts pump blood to the gills, while the third pumps it to the rest of the body."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that \"lightning never strikes the same place twice\" is a common myth and scientifically false",
+        "Lightning regularly strikes the same location multiple times, particularly tall, pointed, or isolated structures that offer an easier path of electrical discharge between clouds and the ground",
+        "According to the National Oceanic and Atmospheric Administration (NOAA) and the National Weather Service (NWS), tall structures like the Empire State Building are struck by lightning an average of 25 times per year",
+        "Furthermore, within a single lightning flash, multiple individual strokes often travel along the exact same ionized channel in rapid succession."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Lightning never strikes the same place twice.\\\"\",\n  \"verification_notes\": \"Check National Weather Service and NOAA data on lightning strike patterns. Verify how many times the Empire State Building is struck per year. Explain the physics of why tall conductors are repeatedly targeted.\",\n  \"search_results\": \"[1] Lightning never strikes twice - Idioms by The Free Dictionary\\nURL: https://idioms.thefreedictionary.com/Lightning+never+strikes+twice\\nExcerpt: Lightning never strikes (the same place) twice. Prov. The same highly unlikely thing never happens to the same person twice. Jill: I'm scared to drive ever since that truck hit my car. Alan: Don't worry.\\n\\n[2] Definition & Meaning of \\\"Lightning never strikes the same place...\\\"...\\nURL: https://dictionary.langeek.co/en/word/215698?entry=lightning+never+strikes+the+same+place+twice\\nExcerpt: The origin of the proverb \\\"lightning never strikes the same place twice\\\" is believed to come from common folk wisdom and has been used in various cultures to explain the rarity of unusual events or accidents.\\n\\n[3] Lightning Never Strike Twice - Andre Lattimore: Song Lyrics, Music...\\nURL: https://www.shazam.com/song/6774828478/lightning-never-strike-twice\\nExcerpt: Lightning never strikes the same place twice. Oh, the same place twice. Oh, I tried to shake it loose. Tried to shut that gate. But your kiss hit my bones. Like a storm with no rain. Lightning never strikes twice (Strike twice).\\n\\n[4] Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL\\nURL: https://www.aol.com/why-lightning-never-strikes-same-174500436.html\\nExcerpt: Lightning is very good at striking the same place twice – you could even say that it's a special skill of lightning to hit the same place two (or even more!) times. The Empire State Building, for example, is hit on average 25 times per year , according to the National Weather Service.\\n\\n[5] Dispelling the Myth: Lightning Strikes the Same Place Twice\\nURL: https://englishpluspodcast.com/dispelling-the-myth-lightning-strikes-the-same-place-twice/\\nExcerpt: Myth 1: Lightning never strikes the same place twice.Lightning, with its dazzling displays of electric power, has captivated humanity since time immemorial. Among the many myths surrounding lightning, one enduring belief is that it never strikes the same place twice.\\n\\n[6] (DOC) 'Lightning Never Strikes the Same Place Twice'... Or Does It\\nURL: https://www.academia.edu/44370312/Lightning_Never_Strikes_the_Same_Place_Twice_Or_Does_It\\nExcerpt: Issues and even objects can become lightning rods, too. Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that \\\"lightning never strikes the same place twice\\\" is a common myth and scientifically false. Lightning regularly strikes the same location multiple times, particularly tall, pointed, or isolated structures that offer an easier path of electrical discharge between clouds and the ground. According to the National Oceanic and Atmospheric Administration (NOAA) and the National Weather Service (NWS), tall structures like the Empire State Building are struck by lightning an average of 25 times per year. Furthermore, within a single lightning flash, multiple individual strokes often travel along the exact same ionized channel in rapid succession.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Lightning never strikes the same place twice.\"",
+        "Lightning never strikes the same place twice",
+        "\"Lightning never strikes the same place twice.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://idioms.thefreedictionary.com/Lightning+never+strikes+twice",
+          "title": "Lightning never strikes twice - Idioms by The Free Dictionary",
+          "snippet": "Lightning never strikes (the same place) twice. Prov. The same highly unlikely thing never happens to the same person twice. Jill: I'm scared to drive ever since that truck hit my car. Alan: Don't worry."
+        },
+        {
+          "url": "https://dictionary.langeek.co/en/word/215698?entry=lightning+never+strikes+the+same+place+twice",
+          "title": "Definition & Meaning of \"Lightning never strikes the same place...\"...",
+          "snippet": "The origin of the proverb \"lightning never strikes the same place twice\" is believed to come from common folk wisdom and has been used in various cultures to explain the rarity of unusual events or accidents."
+        },
+        {
+          "url": "https://www.shazam.com/song/6774828478/lightning-never-strike-twice",
+          "title": "Lightning Never Strike Twice - Andre Lattimore: Song Lyrics, Music...",
+          "snippet": "Lightning never strikes the same place twice. Oh, the same place twice. Oh, I tried to shake it loose. Tried to shut that gate. But your kiss hit my bones. Like a storm with no rain. Lightning never strikes twice (Strike twice)."
+        },
+        {
+          "url": "https://www.aol.com/why-lightning-never-strikes-same-174500436.html",
+          "title": "Why 'Lightning Never Strikes The Same Place Twice' Is An... - AOL",
+          "snippet": "Lightning is very good at striking the same place twice – you could even say that it's a special skill of lightning to hit the same place two (or even more!) times. The Empire State Building, for example, is hit on average 25 times per year , according to the National Weather Service."
+        },
+        {
+          "url": "https://englishpluspodcast.com/dispelling-the-myth-lightning-strikes-the-same-place-twice/",
+          "title": "Dispelling the Myth: Lightning Strikes the Same Place Twice",
+          "snippet": "Myth 1: Lightning never strikes the same place twice.Lightning, with its dazzling displays of electric power, has captivated humanity since time immemorial. Among the many myths surrounding lightning, one enduring belief is that it never strikes the same place twice."
+        },
+        {
+          "url": "https://www.academia.edu/44370312/Lightning_Never_Strikes_the_Same_Place_Twice_Or_Does_It",
+          "title": "(DOC) 'Lightning Never Strikes the Same Place Twice'... Or Does It",
+          "snippet": "Issues and even objects can become lightning rods, too. Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Scientific measurements, notably using Lunar Laser Ranging retroreflectors installed during the Apollo missions, have confirmed that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year",
+        "This lunar drift is primarily driven by tidal interactions between Earth and the Moon, which transfer angular momentum from Earth's rotation to the Moon's orbit."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\\\"\",\n  \"verification_notes\": \"Check NASA and Lunar Laser Ranging experiment data. Verify the mechanism (tidal friction transferring angular momentum). Confirm the rate is ~3.8 cm/year. Calculate implications: how long until the Moon is too far for total solar eclipses?\",\n  \"search_results\": \"[1] Why Is The Moon Moving Away from Earth? - The Institute for ...\\nURL: https://iere.org/why-is-the-moon-moving-away-from-earth/\\nExcerpt: Jul 1, 2025 · The Moon is gradually drifting away from Earth at a rate of approximately 3.8 centimeters (1.5 inches) per year. This slow but steady recession is primarily due to the tidal interactions between the Earth and the Moon.\\n\\n[2] Why Is The Moon Moving Away From Earth? » ScienceABC\\nURL: https://www.scienceabc.com/nature/universe/why-is-the-moon-moving-away-from-earth\\nExcerpt: Mar 2, 2017 · The Moon drifts about 3.8 cm farther from Earth every year because tidal interaction between Earth’s ocean bulge and the Moon transfers angular momentum from Earth’s spin to the Moon’s orbit.\\n\\n[3] Why Is The Moon Drifting Away from the Earth?\\nURL: https://iere.org/why-is-the-moon-drifting-away-from-the-earth/\\nExcerpt: Jul 1, 2025 · The Moon is slowly but surely receding from our planet at a rate of roughly 3.8 centimeters (1.5 inches) per year, approximately the same rate at which our fingernails grow. This lunar migration is a direct consequence of tidal forces and the conservation of angular momentum within the\\n\\n[4] Moon is slowly moving away from Earth. Here’s why\\nURL: https://www.wionews.com/science/moon-is-slowing-moving-away-from-earth-heres-why-566867\\nExcerpt: Feb 27, 2023 · Scientists have found that Moon is slowly drifting away from Earth at a rate of 3.8 cm per year. Experts at the National Radio Astronomy Observatory (NRAO) made the discovery thanks to Apollo-mission era reflective panels that were installed on the Moon in 1969.\\n\\n[5] Why is the Moon slowly moving away from Earth every year and ...\\nURL: https://timesofindia.indiatimes.com/science/why-is-the-moon-slowly-moving-away-from-earth-every-year-and-what-does-it-reveal-about-our-planets-future/articleshow/125189323.cms\\nExcerpt: Nov 8, 2025 · Our Moon is slowly drifting away from Earth, not just due to tidal friction as previously thought. New research suggests ancient planetary collisions and Earth's internal cooling, causing ...\\n\\n[6] The Moon is getting slightly farther away from the Earth each ...\\nURL: https://www.smorescience.com/the-moon-is-getting-slightly-farther-away-from-the-earth-each-year-−-a-physicist-explains-why/\\nExcerpt: Oct 9, 2026 · Earth rises over the Moon, as seen by the Apollo 8 astronauts. Bill Anders/NASA The Moon is getting 1½ inches (3.8 centimeters) farther away from the Earth every year. Scientists measure the distance to the Moon by bouncing lasers off mirrors placed there by space probes and astronauts\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"Scientific measurements, notably using Lunar Laser Ranging retroreflectors installed during the Apollo missions, have confirmed that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This lunar drift is primarily driven by tidal interactions between Earth and the Moon, which transfer angular momentum from Earth's rotation to the Moon's orbit.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+        "The Moon is drifting away from Earth",
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://iere.org/why-is-the-moon-moving-away-from-earth/",
+          "title": "Why Is The Moon Moving Away from Earth? - The Institute for ...",
+          "snippet": "Jul 1, 2025 · The Moon is gradually drifting away from Earth at a rate of approximately 3.8 centimeters (1.5 inches) per year. This slow but steady recession is primarily due to the tidal interactions between the Earth and the Moon."
+        },
+        {
+          "url": "https://www.scienceabc.com/nature/universe/why-is-the-moon-moving-away-from-earth",
+          "title": "Why Is The Moon Moving Away From Earth? » ScienceABC",
+          "snippet": "Mar 2, 2017 · The Moon drifts about 3.8 cm farther from Earth every year because tidal interaction between Earth’s ocean bulge and the Moon transfers angular momentum from Earth’s spin to the Moon’s orbit."
+        },
+        {
+          "url": "https://iere.org/why-is-the-moon-drifting-away-from-the-earth/",
+          "title": "Why Is The Moon Drifting Away from the Earth?",
+          "snippet": "Jul 1, 2025 · The Moon is slowly but surely receding from our planet at a rate of roughly 3.8 centimeters (1.5 inches) per year, approximately the same rate at which our fingernails grow. This lunar migration is a direct consequence of tidal forces and the conservation of angular momentum within the Earth-Moon system."
+        },
+        {
+          "url": "https://www.wionews.com/science/moon-is-slowing-moving-away-from-earth-heres-why-566867",
+          "title": "Moon is slowly moving away from Earth. Here’s why",
+          "snippet": "Feb 27, 2023 · Scientists have found that Moon is slowly drifting away from Earth at a rate of 3.8 cm per year. Experts at the National Radio Astronomy Observatory (NRAO) made the discovery thanks to Apollo-mission era reflective panels that were installed on the Moon in 1969."
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/science/why-is-the-moon-slowly-moving-away-from-earth-every-year-and-what-does-it-reveal-about-our-planets-future/articleshow/125189323.cms",
+          "title": "Why is the Moon slowly moving away from Earth every year and ...",
+          "snippet": "Nov 8, 2025 · Our Moon is slowly drifting away from Earth, not just due to tidal friction as previously thought. New research suggests ancient planetary collisions and Earth's internal cooling, causing ..."
+        },
+        {
+          "url": "https://www.smorescience.com/the-moon-is-getting-slightly-farther-away-from-the-earth-each-year-−-a-physicist-explains-why/",
+          "title": "The Moon is getting slightly farther away from the Earth each ...",
+          "snippet": "Oct 9, 2026 · Earth rises over the Moon, as seen by the Apollo 8 astronauts. Bill Anders/NASA The Moon is getting 1½ inches (3.8 centimeters) farther away from the Earth every year. Scientists measure the distance to the Moon by bouncing lasers off mirrors placed there by space probes and astronauts. By measuring the amount of time it takes light to travel to the Moon and back, scientists can very ..."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}
