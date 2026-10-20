@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-003",
   "verdict": "FALSE",
-  "confidence": 99,
-  "last_checked_at": "2026-10-12T14:15:35Z",
+  "confidence": 98,
+  "last_checked_at": "2026-10-20T10:52:19Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-10-12T141339Z",
+  "run_id": "run-2026-10-20T105008Z",
   "sources": [
     {
-      "url": "https://hcrl.wustl.edu/claims-that-mrna-vaccines-change-human-dna-are-back/",
-      "title": "Claims that mRNA vaccines change human DNA are back",
-      "domain": "hcrl.wustl.edu",
+      "url": "https://childrenshealthdefense.org/defender/science-mrna-vaccines-alter-dna/",
+      "title": "Could mRNA Vaccines Permanently Alter DNA? Recent Science...",
+      "domain": "childrenshealthdefense.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 1, 2024 · Despite being unsupported by research, claims about COVID-19 mRNA vaccines interfering"
+      "excerpt": "Research on SARS-CoV-2 RNA by scientists at Harvard and MIT has implications for how mRNA"
     },
     {
-      "url": "https://publichealthcollaborative.org/alerts/posts-claim-that-mrna-vaccines-are-modified-mrna-meant-to-alter-human-dna/",
-      "title": "Posts claim that mRNA vaccines are “modified mRNA” meant to ...",
-      "domain": "publichealthcollaborative.org",
+      "url": "https://www.vaccinationfacts.com/controversies/mrna-dna-alteration",
+      "title": "Do mRNA Vaccines Alter Human DNA? | Vaccination Facts",
+      "domain": "vaccinationfacts.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Aug 19, 2023 · These posts, often using the hashtag #modRNA, claim that mRNA vaccines"
+      "excerpt": "Fact-check of the claim that mRNA vaccines integrate into or permanently alter human DNA."
     },
     {
-      "url": "https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna",
-      "title": "You asked, we answered: Can mRNA vaccines alter human DNA?",
-      "domain": "nebraskamed.com",
+      "url": "https://health.yahoo.com/treatments/vaccines/articles/huge-survey-finds-truth-mrna-150200057.html",
+      "title": "Huge Survey Finds the Truth About What mRNA Vaccines Do to the...",
+      "domain": "health.yahoo.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Dec 21, 2020 · Do mRNA vaccines work by altering human DNA? No, the vaccines"
+      "excerpt": "The study's results also dispel the erroneous notion that mRNA vaccines alter human DNA. Instead,"
     },
     {
-      "url": "https://www.reuters.com/article/fact-check/mrna-vaccines-do-not-turn-humans-into-hybrids-or-alter-recipients-dna-idUSL1N2M61HW/",
-      "title": "Fact Check: mRNA vaccines do not turn humans into ‘hybrids ...",
-      "domain": "reuters.com",
+      "url": "https://www.boomlive.in/world/has-modernas-boss-said-that-vaccines-can-alter-human-dna-a-factcheck-12758",
+      "title": "Has Moderna's Boss Said That Vaccines Can Alter Human DNA?",
+      "domain": "boomlive.in",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Apr 13, 2021 · Contrary to claims on social media, COVID-19 vaccines using messenger RNA"
+      "excerpt": "During the talk, he said messenger RNA (mRNA) vaccines could be used to treat illnesses"
     },
     {
-      "url": "https://www.scientificamerican.com/article/no-covid-mrna-vaccines-wont-damage-your-dna1/",
-      "title": "No, COVID mRNA Vaccines Won’t Damage Your DNA",
-      "domain": "scientificamerican.com",
+      "url": "https://factually.co/fact-checks/science/do-mrna-vaccines-alter-human-dna-what-science-says-b04708",
+      "title": "Do mRNA Vaccines Alter Human DNA? What Mainstream Scie...",
+      "domain": "factually.co",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jan 4, 2024 · On Wednesday Florida’s state surgeon general Joseph Ladapo called for stopping"
+      "excerpt": "Executive summary Mainstream scientific sources conclude that mRNA vaccines are not known to alter or"
     },
     {
-      "url": "https://www.gavi.org/vaccineswork/will-mrna-vaccine-alter-my-dna",
-      "title": "Will an mRNA vaccine alter my DNA? - GAVI",
-      "domain": "gavi.org",
+      "url": "https://www.healthywomen.org/your-health/facts-about-covid-vaccines/6-covid-mrna-vaccines-cannot-alter-human-dna",
+      "title": "6. Covid mRNA vaccines cannot alter human DNA - HealthyWomen",
+      "domain": "healthywomen.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Dec 15, 2020 · So, although mRNA vaccines are a new technology, there is no"
+      "excerpt": "From diving into whether mRNA vaccines can alter human DNA to uncovering whether it’s safe"
     }
   ],
-  "reasoning": "mRNA COVID-19 vaccines do not alter, integrate into, or permanently change human DNA. Scientifically, mRNA functions in the cytoplasm and does not enter the cell's nucleus, where genomic DNA resides. Furthermore, mRNA lacks the reverse transcriptase enzymes required to convert RNA into DNA, and human cells rapidly degrade the vaccine mRNA after translating it into the target spike protein. Health authorities worldwide (including the CDC, WHO, and FDA) and scientific consensus firmly confirm that mRNA vaccines cannot modify human genetics [1][3][4][5][6].",
+  "reasoning": "Extensive scientific consensus from major health organizations (including the CDC, WHO, and NIH) and molecular biology literature confirms that mRNA COVID-19 vaccines do not alter, integrate into, or permanently change human DNA. Messenger RNA delivers temporary instructions to the cellular cytoplasm to produce the spike protein, triggering an immune response. The mRNA never enters the cell nucleus where DNA resides, cannot be converted into DNA without reverse transcriptase enzymes, and naturally degrades quickly within the cell. Claims suggesting genomic alteration have been widely debunked.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -177,6 +177,12 @@
       "confidence": 98,
       "checked_at": "2026-10-05T13:26:49Z",
       "run_id": "run-2026-10-05T132410Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 99,
+      "checked_at": "2026-10-12T14:15:35Z",
+      "run_id": "run-2026-10-12T141339Z"
     }
   ],
   "agent_flags": {

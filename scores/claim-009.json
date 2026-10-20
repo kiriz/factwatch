@@ -3,9 +3,9 @@
   "claim_id": "claim-009",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-10-12T14:17:23Z",
+  "last_checked_at": "2026-10-20T10:52:44Z",
   "last_changed_at": "2026-06-09T23:44:21Z",
-  "run_id": "run-2026-10-12T141339Z",
+  "run_id": "run-2026-10-20T105008Z",
   "sources": [
     {
       "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
@@ -56,7 +56,7 @@
       "excerpt": "Then there is the psychology. \"Napoleon complex\" is a genuinely useful shorthand that gets used"
     }
   ],
-  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a well-known historical misconception. At his autopsy in 1821, Napoleon's height was recorded as 5 pieds 2 pouces (French feet and inches). Because the pre-metric French inch (*pouce*) was longer than the British inch (approximately 2.7 cm versus 2.54 cm), his measurement translates to approximately 5 feet 5.5 inches to 5 feet 7 inches (around 1.67–1.69 meters) in modern/English units. This placed him at average or even slightly above-average height for an adult French male of the late 18th and early 19th centuries. The perception that he was exceptionally diminutive was largely fueled by direct translation confusion and contemporary British wartime propaganda (such as caricatures by James Gillray).",
+  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a well-documented historical myth. Napoleon's height was recorded at his autopsy as roughly 5 feet 2 inches in pre-metric French units (\"pieds\" and \"pouces\"). Because a French inch (pouce) was approximately 2.71 centimeters compared to the English inch of 2.54 centimeters, his height in modern imperial measurements translates to roughly 5 feet 6 to 5 feet 7 inches (around 1.67 to 1.69 meters). This made him average or even slightly above average height for a French man in the early 19th century. The misconception was further amplified by British wartime propaganda caricatures (such as those by James Gillray) and his nickname \"le Petit Caporal.\"",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -171,6 +171,12 @@
       "confidence": 95,
       "checked_at": "2026-10-05T13:27:15Z",
       "run_id": "run-2026-10-05T132410Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-10-12T14:17:23Z",
+      "run_id": "run-2026-10-12T141339Z"
     }
   ],
   "agent_flags": {

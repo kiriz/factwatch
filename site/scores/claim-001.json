@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-001",
   "verdict": "TRUE",
-  "confidence": 99,
-  "last_checked_at": "2026-10-12T14:14:19Z",
+  "confidence": 100,
+  "last_checked_at": "2026-10-20T10:51:36Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-10-12T141339Z",
+  "run_id": "run-2026-10-20T105008Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
-      "title": "Arctic sea ice decline - Wikipedia",
-      "domain": "en.wikipedia.org",
+      "url": "https://nsidc.org/news-analyses/news-stories/arctic-sea-ice-shatters-all-previous-record-lows",
+      "title": "Arctic Sea Ice shatters all previous record lows | National Snow and...",
+      "domain": "nsidc.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Sea ice in the Arctic region has declined in recent decades in area and volume"
+      "excerpt": "The September rate of sea ice decline since 1979 is now approximately 10 percent per"
     },
     {
-      "url": "https://globalocean.noaa.gov/the-ocean/arctic-sea-ice/",
-      "title": "Arctic Sea Ice - Global Ocean Monitoring and Observing",
-      "domain": "globalocean.noaa.gov",
+      "url": "https://www.carbonbrief.org/humans-causing-up-to-two-thirds-arctic-summer-sea-ice-loss-study-confirms",
+      "title": "Humans causing up to two-thirds of Arctic summer sea ice loss, study...",
+      "domain": "carbonbrief.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jul 23, 2026 · From 2007 to 2023, the sea ice extent was the lowest"
+      "excerpt": "Arctic sea ice extent is declining in every season, but particularly quickly in September, when"
     },
     {
-      "url": "https://svs.gsfc.nasa.gov/5395",
-      "title": "Annual Arctic Sea Ice Minimum Area 1979-2024, With Graph",
-      "domain": "svs.gsfc.nasa.gov",
+      "url": "https://www.nytimes.com/interactive/2017/09/22/climate/arctic-sea-ice-shrinking-trend-watch.html",
+      "title": "We Charted Arctic Sea Ice for Nearly Every Day Since 1979.",
+      "domain": "nytimes.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Oct 4, 2024 · Every summer the Arctic ice cap melts down to what scientists"
+      "excerpt": "Arctic sea ice has been in steep decline since the late 1970s, when satellite images"
     },
     {
-      "url": "https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2026GL122769",
-      "title": "The Declining Trend of Arctic Sea‐Ice Extent (1979–2025 ...",
-      "domain": "agupubs.onlinelibrary.wiley.com",
+      "url": "https://phys.org/news/2025-02-arctic-cyclones-link-sea-ice.html",
+      "title": "Arctic cyclones could be missing link in sea ice depletion models",
+      "domain": "phys.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Abstract Arctic sea-ice extent (SIE), a high-accuracy observable, is a key indicator for assessing sea-ice"
+      "excerpt": "Since 1979, Arctic sea ice extent has decreased by 40% in late summer, with rapid"
     },
     {
-      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2026GL122769",
-      "title": "The Declining Trend of Arctic Sea-Ice Extent (1979–2025 ...",
-      "domain": "agupubs.onlinelibrary.wiley.com",
+      "url": "https://theconversation.com/atmospheric-rivers-are-hitting-the-arctic-more-often-and-increasingly-melting-its-sea-ice-199189",
+      "title": "Atmospheric rivers are hitting the Arctic more often, and increasingly...",
+      "domain": "theconversation.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Sep 2, 2026 · Employing Arctic SIE from 1979 to 2025, this study investigated the"
+      "excerpt": "What sea ice decline means for humans. Like just about everything, sea ice loss has"
     },
     {
-      "url": "https://www.climate.gov/feeds/dashboard/dashboard-data-arctic-sea-ice-graph",
-      "title": "Dashboard Data for Arctic Sea Ice - NOAA Climate.gov",
-      "domain": "climate.gov",
+      "url": "https://blog.alor.org/the-arctic-pause-when-climate-science-eats-its-own-talking-points-by-brian-simpson",
+      "title": "The Arctic Pause: When Climate Science Eats Its Own Talking Points!",
+      "domain": "blog.alor.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jun 25, 2025 · Since 1979, the extent of ice covering the Arctic Ocean at"
+      "excerpt": "According to new research in Geophysical Research Letters, Arctic Sea ice extent hasn't declined significantly"
     }
   ],
-  "reasoning": "Satellite records of Arctic sea ice began in 1979. Data from scientific agencies including NOAA and NASA, as well as peer-reviewed literature, confirm that Arctic sea ice has experienced a substantial, statistically significant long-term decline in both extent and thickness across all seasons, most notably during the end-of-summer September minimum, which has decreased by approximately 40% or more since 1979.",
+  "reasoning": "Satellite records maintained continuously since 1979 by agencies such as NASA and the National Snow and Ice Data Center (NSIDC) confirm that Arctic sea ice extent has declined significantly. Across the satellite era, late-summer Arctic sea ice extent has declined by approximately 12 to 13 percent per decade (amounting to roughly a 40 percent loss in summer ice extent since 1979), with significant declines observed across all months of the year.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -177,6 +177,12 @@
       "confidence": 99,
       "checked_at": "2026-10-05T13:24:45Z",
       "run_id": "run-2026-10-05T132410Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 99,
+      "checked_at": "2026-10-12T14:14:19Z",
+      "run_id": "run-2026-10-12T141339Z"
     }
   ],
   "agent_flags": {
