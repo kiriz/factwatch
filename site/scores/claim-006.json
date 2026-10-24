@@ -2,18 +2,42 @@
   "schema_version": "1.0",
   "claim_id": "claim-006",
   "verdict": "FALSE",
-  "confidence": 100,
-  "last_checked_at": "2026-10-17T10:03:01Z",
+  "confidence": 99,
+  "last_checked_at": "2026-10-24T10:12:08Z",
   "last_changed_at": "2026-06-09T23:43:44Z",
-  "run_id": "run-2026-10-17T100232Z",
+  "run_id": "run-2026-10-24T100844Z",
   "sources": [
     {
-      "url": "https://brainly.com/question/59412926",
-      "title": "[FREE] True or False: Humans only use about 10% of their brains.",
+      "url": "https://www.youtube.com/watch?v=AdOoQaKUfAw",
+      "title": "Humans Only Use 10% of Their Brain? Myth Busted - YouTube",
+      "domain": "youtube.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "We’ve all heard it — \"you only use 10% of your brain.\" But neuroscience disagrees."
+    },
+    {
+      "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+      "title": "Do People Only Use 10 Percent of Their Brains? | Scientific American",
+      "domain": "scientificamerican.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Adding to that mystery is the contention that humans \"only\" employ 10 percent of their"
+    },
+    {
+      "url": "https://brainly.com/question/47032753",
+      "title": "[FREE] True or false: Humans use only 10 percent of their brains.",
       "domain": "brainly.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Humans do not only use 10% of their brains; this statement is false. Scientific evidence"
+      "excerpt": "A. False, because humans use 50% of their brains at any given time.In fact, the"
+    },
+    {
+      "url": "https://www.westeamahead.org/blog/do-we-only-use-10-of-our-brain",
+      "title": "MythBuster: Do We Only Use 10% of Our Brain — STEAM Ahead...",
+      "domain": "westeamahead.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The myth that humans only use 10% of their brains is FALSE. Movies like Lucy"
     },
     {
       "url": "https://radicalscholarship.com/2015/08/02/the-irony-of-believing-humans-use-only-10-of-their-brains/",
@@ -24,39 +48,15 @@
       "excerpt": "Humans Already Use Way, Way More Than 10% of Their Brains, The Atlantic. How to"
     },
     {
-      "url": "https://www.chegg.com/homework-help/questions-and-answers/people-really-use-10-brains-use-entire-brain-although-individual-tasks-might-rely-primaril-q191836172",
-      "title": "Solved Do people really use only 10% of their brains? | Chegg.com",
-      "domain": "chegg.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": ", we use our entire brain. ( although individual tasks might rely primarily on specialized"
-    },
-    {
-      "url": "https://thealexcrowley.medium.com/humans-use-more-than-10-of-their-power-a259eaf12173",
-      "title": "Humans Use More Than 10% of Their Power | by Alex... | Medium",
-      "domain": "thealexcrowley.medium.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The idea that humans only use 10% of their brain power is a myth that"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=NGEVEkZ27sk",
-      "title": "Do humans only use 10% of their brains?",
-      "domain": "youtube.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": ""
-    },
-    {
-      "url": "https://www.grimsbytelegraph.co.uk/whats-on/whats-on-news/how-many-15-facts-you-8564911",
-      "title": "How many of these 15 'facts' do you believe? Most people get the...",
-      "domain": "grimsbytelegraph.co.uk",
+      "url": "https://www.nottinghampost.com/whats-on/whats-on-news/how-many-15-facts-you-8564911",
+      "title": "How many of these 15 'facts' do you believe? - Nottingham Post",
+      "domain": "nottinghampost.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Humans use just 10% of their brains. The Great Wall of China is visible from"
     }
   ],
-  "reasoning": "The claim that humans only use 10% of their brain capacity is a well-known scientific myth. Neuroimaging techniques such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET) demonstrate that virtually all areas of the brain are active and have designated functions throughout the course of a day, even during sleep. Furthermore, evolutionary biology and clinical neurology show that unutilized brain tissue would atrophy or be selected against, and damage to even minute regions of the brain almost always results in measurable functional deficits.",
+  "reasoning": "The claim that humans only use 10% of their brain capacity is a well-known neuromyth. Modern neuroimaging techniques, such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET), show that virtually all regions of the brain are active and have designated functions. Even during sleep, all areas of the brain show some level of activity. Furthermore, evolutionary neuroscience notes that the brain consumes roughly 20% of the body's energy despite accounting for only 2% of its weight, making a 90% dormant organ an evolutionary impossibility. Scientific authorities, including Scientific American and neuroscientific organizations worldwide, have repeatedly debunked this claim.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -171,6 +171,12 @@
       "confidence": 100,
       "checked_at": "2026-10-08T12:41:26Z",
       "run_id": "run-2026-10-08T124058Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-10-17T10:03:01Z",
+      "run_id": "run-2026-10-17T100232Z"
     }
   ],
   "agent_flags": {
