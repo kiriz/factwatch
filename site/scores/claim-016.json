@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
-  "confidence": 95,
-  "last_checked_at": "2026-10-18T10:20:22Z",
+  "confidence": 88,
+  "last_checked_at": "2026-10-25T10:43:07Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-10-18T101513Z",
+  "run_id": "run-2026-10-25T103432Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Generative_AI",
@@ -24,39 +24,39 @@
       "excerpt": "Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by"
     },
     {
-      "url": "https://readmedium.com/andrew-ngs-generative-ai-for-everybody-course-my-take-a5f1fac42c8d",
-      "title": "Andrew NG’s Generative AI for Everybody Course — My Take",
-      "domain": "readmedium.com",
+      "url": "https://www.linkedin.com/pulse/generative-ai-could-save-300-billion-work-hours-year-two-behbahani-w2oze",
+      "title": "Generative AI could save 300 billion work hours a year, equivalent to...",
+      "domain": "linkedin.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The course covers how generative AI works, its capabilities and limitations, and tips for crafting"
+      "excerpt": "As generative AI reshapes the workplace, it could place new stresses on organizational structures. The"
     },
     {
-      "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
-      "title": "reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
-      "domain": "reports.weforum.org",
+      "url": "https://www.businessinsider.com/ai-taking-jobs-fears-artists-say-already-happening-2023-10",
+      "title": "Workers Fear AI Taking Their Jobs, but Artists Say... - Business Insider",
+      "domain": "businessinsider.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Goldman Sachs predict that 300 million jobs could be disrupted by AI, with workers worrying"
+    },
+    {
+      "url": "https://hackernoon.com/the-future-of-work-ai-automation-to-replace-half-of-human-jobs-by-2045",
+      "title": "The Future of Work: AI Automation to Replace Half of Human Jobs by...",
+      "domain": "hackernoon.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The Future of Work: How Generative AI Will Transform Jobs. Also, the report offers fascinating"
+    },
+    {
+      "url": "https://www3.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+      "title": "www3.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
+      "domain": "www3.weforum.org",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "AI will displace about 9 million positions by 2030."
-    },
-    {
-      "url": "https://www.adpresearch.com/research/worker-sentiment-ai-impact",
-      "title": "Most workers think AI will affect their jobs. They disagree",
-      "domain": "adpresearch.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "AI will replace job functions. High impact. It’s going to help me save time on"
-    },
-    {
-      "url": "https://www.hcadvisors.net/post/ai-vs-women",
-      "title": "Ai vs women",
-      "domain": "hcadvisors.net",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "\"The latest generative AI products — think ChatGPT, Bing Chat and Bard — could replace"
     }
   ],
-  "reasoning": "The claim misrepresents the findings of a widely cited March 2023 Goldman Sachs research report. The report estimated that generative AI could expose the equivalent of 300 million full-time jobs globally to automation, not that 300 million jobs would be outright replaced. In the report's actual model, most exposed workers (approximately two-thirds of occupations) would have only a portion of their tasks automated and would see their work complemented by AI rather than substituted entirely. Furthermore, the report emphasized that technological displacement is historically offset by new job creation and estimated that generative AI could boost global GDP by 7%. Presenting the 300 million figure as a definitive prediction of direct job losses distorts the study's conclusions.",
+  "reasoning": "The claim distorts the findings of a widely cited March 2023 report by Goldman Sachs (\"The Potentially Large Effects of Artificial Intelligence on Economic Growth\"). \n\nThe report did not state that generative AI *will replace* 300 million jobs. Instead, it estimated that generative AI could expose roughly 300 million full-time jobs worldwide to automation. Specifically, the authors projected that roughly two-thirds of U.S. and European occupations are exposed to some degree of AI automation, but for the majority of these roles, AI is more likely to complement human labor rather than replace it entirely. Additionally, the report noted that technological displacement is historically offset by the creation of new occupations and significant long-term boosts to global GDP. Presenting the figure as a definitive prediction that 300 million workers will lose their jobs strips away crucial context and overstates the study's conclusions.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -171,6 +171,12 @@
       "confidence": 88,
       "checked_at": "2026-10-10T11:48:25Z",
       "run_id": "run-2026-10-10T114647Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 95,
+      "checked_at": "2026-10-18T10:20:22Z",
+      "run_id": "run-2026-10-18T101513Z"
     }
   ],
   "agent_flags": {

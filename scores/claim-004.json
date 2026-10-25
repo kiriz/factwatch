@@ -3,9 +3,9 @@
   "claim_id": "claim-004",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-10-18T10:20:44Z",
+  "last_checked_at": "2026-10-25T10:46:17Z",
   "last_changed_at": "2026-06-09T23:46:29Z",
-  "run_id": "run-2026-10-18T101513Z",
+  "run_id": "run-2026-10-25T103432Z",
   "sources": [
     {
       "url": "https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam",
@@ -24,12 +24,20 @@
       "excerpt": "More interestingly, what does Gemini 3 think about its ability to pass the Bar Exam?"
     },
     {
-      "url": "https://www.youtube.com/watch?v=ytriaH9gmUU",
-      "title": "How to Outline Bar Exam Essay - MEE Structure Tips - YouTube",
+      "url": "https://www.techbuzz.ai/articles/anthropic-won-t-say-claude-isn-t-conscious",
+      "title": "Anthropic Won't Say Claude Isn't Conscious | The Tech Buzz",
+      "domain": "techbuzz.ai",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "AI systems now pass the bar exam, write production code, and engage in conversations that"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZpaK3hv8h8o",
+      "title": "The Bar Exam | The Stories You Don't Hear - YouTube",
       "domain": "youtube.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "In this video, we’ll be going over how to outline a bar exam essay. Having"
+      "excerpt": "How I Passed the Bar Exam on the First TrySisters in Law13K views • 6"
     },
     {
       "url": "https://safe.ai/",
@@ -46,17 +54,9 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Applying to sit for the bar examination in New York.Registering for and sitting for the"
-    },
-    {
-      "url": "https://lovable.dev/",
-      "title": "App & Website Builder | Build Software in Minutes | Lovable",
-      "domain": "lovable.dev",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "These three students created an AI system from the ground up to help anyone learn"
     }
   ],
-  "reasoning": "In early 2023, researchers Daniel Martin Katz and Michael Bommarito evaluated OpenAI's GPT-4 on the Uniform Bar Examination (UBE). GPT-4 achieved a total score of approximately 297 out of 400, well above the 260–270 passing thresholds established by US jurisdictions. While there has been debate regarding the exact percentile comparison (OpenAI initially cited the 90th percentile, whereas a subsequent analysis placed it around the 68th percentile among all test-takers), both evaluations confirm that the model scored substantially above the average human test-taker score.",
+  "reasoning": "Extensive empirical research, beginning with the study by Katz, Bommarito et al. (2023) on the Uniform Bar Examination (UBE), established that modern large language models such as GPT-4 can comfortably pass the bar exam. In evaluations across the Multistate Bar Examination (MBE), Multistate Essay Examination (MEE), and Multistate Performance Test (MPT), GPT-4 achieved a composite score of approximately 297, exceeding the passing threshold of every U.S. jurisdiction (which ranges from 260 to 270). While follow-up scholarship refined the exact percentile rank of the model compared to human test-takers, it consistently placed GPT-4's performance above the median/average score of test-takers. Subsequent frontier models have further replicated and exceeded these benchmark capabilities.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -177,6 +177,12 @@
       "confidence": 85,
       "checked_at": "2026-10-10T11:48:59Z",
       "run_id": "run-2026-10-10T114647Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-10-18T10:20:44Z",
+      "run_id": "run-2026-10-18T101513Z"
     }
   ],
   "agent_flags": {
