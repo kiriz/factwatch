@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-014",
   "verdict": "TRUE",
-  "confidence": 100,
-  "last_checked_at": "2026-10-19T11:55:58Z",
+  "confidence": 95,
+  "last_checked_at": "2026-10-26T12:29:36Z",
   "last_changed_at": "2026-06-09T23:47:39Z",
-  "run_id": "run-2026-10-19T115426Z",
+  "run_id": "run-2026-10-26T120739Z",
   "sources": [
     {
-      "url": "https://iere.org/why-is-the-moon-moving-away-from-earth/",
-      "title": "Why Is The Moon Moving Away from Earth? - The Institute for ...",
+      "url": "https://www.tiktok.com/discover/why-is-the-moon-moving-away-from-earth",
+      "title": "Why Is The Moon Moving Away from Earth | TikTok",
+      "domain": "tiktok.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The earth is leaving moon #shorts #The Moon is slowly moving away from Earth at"
+    },
+    {
+      "url": "https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069",
+      "title": "Blue and Purple Illustrated Night Sky Group Project...",
+      "domain": "slideshare.net",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about"
+    },
+    {
+      "url": "https://nabado.co.ke/understanding-earths-rotation-speed-effects-and-implications/",
+      "title": "Understanding Earth's Rotation: Speed and Implications",
+      "domain": "nabado.co.ke",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Over time, the Moon has slowly pulled on Earth’s oceans, creating friction that has gradually"
+    },
+    {
+      "url": "https://jeanglass.com/facts-about-the-moon/",
+      "title": "Facts about the moon - jeanglass.com",
+      "domain": "jeanglass.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Worth knowing: The Moon is slowly moving away from Earth at a rate of about"
+    },
+    {
+      "url": "https://iere.org/how-is-the-earth-and-moon-alike/",
+      "title": "How Is the Earth and Moon Alike? - The Institute for Environmental...",
       "domain": "iere.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jul 1, 2025 · The Moon is gradually drifting away from Earth at a rate"
+      "excerpt": "Yes, the Moon is slowly moving away from Earth at a rate of about 3.8"
     },
     {
-      "url": "https://www.scienceabc.com/nature/universe/why-is-the-moon-moving-away-from-earth",
-      "title": "Why Is The Moon Moving Away From Earth? » ScienceABC",
-      "domain": "scienceabc.com",
+      "url": "https://enviroliteracy.org/how-many-feet-is-the-moon-away-from-earth/",
+      "title": "How Many Feet Is the Moon Away From Earth? - The Environmental...",
+      "domain": "enviroliteracy.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Mar 2, 2017 · The Moon drifts about 3.8 cm farther from Earth every year"
-    },
-    {
-      "url": "https://iere.org/why-is-the-moon-drifting-away-from-the-earth/",
-      "title": "Why Is The Moon Drifting Away from the Earth?",
-      "domain": "iere.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Jul 1, 2025 · The Moon is slowly but surely receding from our planet at"
-    },
-    {
-      "url": "https://www.wionews.com/science/moon-is-slowing-moving-away-from-earth-heres-why-566867",
-      "title": "Moon is slowly moving away from Earth. Here’s why",
-      "domain": "wionews.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Feb 27, 2023 · Scientists have found that Moon is slowly drifting away from Earth"
-    },
-    {
-      "url": "https://timesofindia.indiatimes.com/science/why-is-the-moon-slowly-moving-away-from-earth-every-year-and-what-does-it-reveal-about-our-planets-future/articleshow/125189323.cms",
-      "title": "Why is the Moon slowly moving away from Earth every year and ...",
-      "domain": "timesofindia.indiatimes.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Nov 8, 2025 · Our Moon is slowly drifting away from Earth, not just due"
-    },
-    {
-      "url": "https://www.smorescience.com/the-moon-is-getting-slightly-farther-away-from-the-earth-each-year-−-a-physicist-explains-why/",
-      "title": "The Moon is getting slightly farther away from the Earth each ...",
-      "domain": "smorescience.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Oct 9, 2026 · Earth rises over the Moon, as seen by the Apollo 8"
+      "excerpt": "The Moon is slowly moving away from Earth, at a rate of about 3.8 centimeters"
     }
   ],
-  "reasoning": "Scientific measurements, notably using Lunar Laser Ranging retroreflectors installed during the Apollo missions, have confirmed that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This lunar drift is primarily driven by tidal interactions between Earth and the Moon, which transfer angular momentum from Earth's rotation to the Moon's orbit.",
+  "reasoning": "The claim is accurate and scientifically well-established. Measurements obtained primarily through the Lunar Laser Ranging experiments (using retroreflectors placed on the lunar surface during the Apollo missions) show that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This recession is caused by tidal interactions between Earth and the Moon, where tidal friction gradually slows Earth's rotation and transfers angular momentum to the Moon's orbit.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -171,6 +171,12 @@
       "confidence": 100,
       "checked_at": "2026-10-11T12:08:55Z",
       "run_id": "run-2026-10-11T115906Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-10-19T11:55:58Z",
+      "run_id": "run-2026-10-19T115426Z"
     }
   ],
   "agent_flags": {

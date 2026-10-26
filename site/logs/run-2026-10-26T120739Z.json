@@ -1,0 +1,306 @@
+{
+  "run_id": "run-2026-10-26T120739Z",
+  "started_at": "2026-10-26T12:07:39Z",
+  "finished_at": "2026-10-26T12:29:38Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to analysis from the Cambridge Centre for Alternative Finance (Cambridge Bitcoin Electricity Consumption Index / CBECI), Bitcoin's estimated annualized electricity consumption has repeatedly exceeded that of entire nations, including Argentina (which consumes roughly 120 to 130 TWh per year)",
+        "Prominent reports by the BBC and scientific indices confirmed that Bitcoin mining reached and surpassed Argentina's annual electricity demand."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\\\"\",\n  \"verification_notes\": \"Check the Cambridge CBECI for current figures. Compare to IEA national electricity consumption data. Verify whether the comparison holds with current mining conditions. Note whether the claim refers to TWh/year.\",\n  \"search_results\": \"[1] Bitcoin consumes 'more electricity than Argentina' - BBC\\nURL: https://www.bbc.com/news/technology-56012952\\nExcerpt: Feb 10, 2021 · Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \\\"Mining\\\" for the cryptocurrency is power-hungry, involving heavy computer ...\\n\\n[2] Bitcoin Mining Consumes More Electricity Annually Than Argentina\\nURL: https://www.intelligentliving.co/bitcoin-consumes-more-electricity-than-argentina/\\nExcerpt: Feb 18, 2021 · It assumes all the Bitcoin mining machines work at various efficiencies, thus averaging the electricity price to $0.05 per kilowatt-hour. The tool uses this price average and the Bitcoin network’s energy demands to get the best possible figure of consumption at any one time.\\n\\n[3] Bitcoin Mining Uses More Electricity Than All of ArgentinaBitcoin consumes 'More electricity than Argentina' - CambridgeBitcoin Mining Now Uses More Electricity Than ArgentinaBitcoin Consumes 'More Electricity Than Argentina'Bitcoin Mining Uses More Electricity Than Entire Argentina ...\\nURL: https://www.popularmechanics.com/technology/a35482641/bitcoin-mining-electricity-consumption/\\nExcerpt: Feb 12, 2021 · It turns out bitcoin mining uses more electricity than entire countries, including Argentina. Making a more efficient bitcoin-mining algorithm would go against the spirit of bitcoin mining. Bitcoin energy consumption is driven by mining electricity demand, with TWh-scale power use, ca\\n\\n[4] Bitcoin consumes 'More electricity than Argentina' - Cambridge\\nURL: https://electricityforum.com/news/bitcoin-electricity-consumption\\nExcerpt: Bitcoin energy consumption is driven by mining electricity demand, with TWh-scale power use, carbon footprint concerns, and Cambridge estimates. Rising prices incentivize more hardware; efficiency gains and renewables adoption shape sustainability outcomes. Bitcoin energy consumption is mining's ...\\n\\n[5] Bitcoin Mining Now Uses More Electricity Than Argentina\\nURL: https://www.iflscience.com/bitcoin-mining-now-uses-more-electricity-than-argentina-58710\\nExcerpt: Feb 11, 2021 · Mining for bitcoin is now consuming more electricity than the entirety of Argentina, suggests an energy tracker run by Cambridge University.\\n\\n[6] Bitcoin Consumes 'More Electricity Than Argentina'\\nURL: https://subjecttoclimate.org/external-resources/bitcoin-consumes-more-electricity-than-argentina\\nExcerpt: Apr 27, 2021 · This resource evaluates energy consumption from operating bitcoin as compared with Countries who consume terrawats of electricity, this is a good finding from Cambridge researchers as data in the chart depicts that using Bitcoin consumes more energy than Argentina, though data in the\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to analysis from the Cambridge Centre for Alternative Finance (Cambridge Bitcoin Electricity Consumption Index / CBECI), Bitcoin's estimated annualized electricity consumption has repeatedly exceeded that of entire nations, including Argentina (which consumes roughly 120 to 130 TWh per year). Prominent reports by the BBC and scientific indices confirmed that Bitcoin mining reached and surpassed Argentina's annual electricity demand.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+        "Bitcoin uses more electricity than Argentina",
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-56012952",
+          "title": "Bitcoin consumes 'more electricity than Argentina' - BBC",
+          "snippet": "Feb 10, 2021 · Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \"Mining\" for the cryptocurrency is power-hungry, involving heavy computer ..."
+        },
+        {
+          "url": "https://www.intelligentliving.co/bitcoin-consumes-more-electricity-than-argentina/",
+          "title": "Bitcoin Mining Consumes More Electricity Annually Than Argentina",
+          "snippet": "Feb 18, 2021 · It assumes all the Bitcoin mining machines work at various efficiencies, thus averaging the electricity price to $0.05 per kilowatt-hour. The tool uses this price average and the Bitcoin network’s energy demands to get the best possible figure of consumption at any one time."
+        },
+        {
+          "url": "https://www.popularmechanics.com/technology/a35482641/bitcoin-mining-electricity-consumption/",
+          "title": "Bitcoin Mining Uses More Electricity Than All of ArgentinaBitcoin consumes 'More electricity than Argentina' - CambridgeBitcoin Mining Now Uses More Electricity Than ArgentinaBitcoin Consumes 'More Electricity Than Argentina'Bitcoin Mining Uses More Electricity Than Entire Argentina ...",
+          "snippet": "Feb 12, 2021 · It turns out bitcoin mining uses more electricity than entire countries, including Argentina. Making a more efficient bitcoin-mining algorithm would go against the spirit of bitcoin mining. Bitcoin energy consumption is driven by mining electricity demand, with TWh-scale power use, carbon footprint concerns, and Cambridge estimates. Rising prices incentivize more hardware; efficiency gains and renewables adoption shape sustainability outcomes. Bitcoin energy consumption is mining's ... Feb 11, 2021 · Mining for bitcoin is now consuming more electricity than the entirety of Argentina, suggests an energy tracker run by Cambridge University. Apr 27, 2021 · This resource evaluates energy consumption from operating bitcoin as compared with Countries who consume terrawats of electricity, this is a good finding from Cambridge researchers as data in the chart depicts that using Bitcoin consumes more energy than Argentina, though data in the chat is not sufficient to infer the potency of Bitocin impact on climate in the future especially when the ... Feb 11, 2021 · Bitcoin uses more electricity each year than all of Argentina, so says analysis from the University of Cambridge. \"Mining\" this cryptocurrency is energy-hungry, involving complex computer calculations to verify transactions."
+        },
+        {
+          "url": "https://electricityforum.com/news/bitcoin-electricity-consumption",
+          "title": "Bitcoin consumes 'More electricity than Argentina' - Cambridge",
+          "snippet": "Bitcoin energy consumption is driven by mining electricity demand, with TWh-scale power use, carbon footprint concerns, and Cambridge estimates. Rising prices incentivize more hardware; efficiency gains and renewables adoption shape sustainability outcomes. Bitcoin energy consumption is mining's ..."
+        },
+        {
+          "url": "https://www.iflscience.com/bitcoin-mining-now-uses-more-electricity-than-argentina-58710",
+          "title": "Bitcoin Mining Now Uses More Electricity Than Argentina",
+          "snippet": "Feb 11, 2021 · Mining for bitcoin is now consuming more electricity than the entirety of Argentina, suggests an energy tracker run by Cambridge University."
+        },
+        {
+          "url": "https://subjecttoclimate.org/external-resources/bitcoin-consumes-more-electricity-than-argentina",
+          "title": "Bitcoin Consumes 'More Electricity Than Argentina'",
+          "snippet": "Apr 27, 2021 · This resource evaluates energy consumption from operating bitcoin as compared with Countries who consume terrawats of electricity, this is a good finding from Cambridge researchers as data in the chart depicts that using Bitcoin consumes more energy than Argentina, though data in the chat is not sufficient to infer the potency of Bitocin impact on climate in the future especially when the ..."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_title": "Octopuses have three hearts and blue blood",
+      "claim_text": "\"Octopuses have three hearts and their blood is blue.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Scientific consensus confirms that octopuses possess three hearts and blue blood",
+        "Two branchial hearts pump deoxygenated blood through the gills to receive oxygen, while a single systemic heart circulates the oxygenated blood throughout the rest of the body",
+        "Their blood appears blue because it relies on a copper-rich protein called hemocyanin, rather than iron-based hemoglobin, to transport oxygen."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Octopuses have three hearts and their blood is blue.\\\"\",\n  \"verification_notes\": \"Check marine biology sources. Verify the function of each heart (two branchial hearts, one systemic). Confirm the copper-based hemocyanin mechanism that makes blood blue. Check whether the blood turns colorless when deoxygenated.\",\n  \"search_results\": \"[1] 10 weird and funny animal facts that sound fake... - The Times of India\\nURL: https://timesofindia.indiatimes.com/etimes/trending/10-weird-and-funny-animal-facts-that-sound-fake-but-are-completely-real/articleshow/125381246.cms\\nExcerpt: Octopuses have three hearts and their blood is blue.Two pump blood through their gills, while the third sends oxygenated blood through the rest of the body. Their blood is blue because it uses copper, not iron, to transport oxygen.\\n\\n[2] Ten things I learned in 2025: 1. Octopuses have three hearts, and...\\nURL: https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh\\nExcerpt: Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is blue because it uses copper (hemocyanin) rather than iron to transport oxygen 2. In 1518, a “dancing plague” broke out in Strasbourg: hundreds of people began dancing continuously for days, some until death...\\n\\n[3] Octopus Blood Real Life | TikTok\\nURL: https://www.tiktok.com/discover/octopus-blood-real-life\\nExcerpt: Octopuses have three hearts and blue blood, and one of those hearts actually stops when they swim. Most of their neurons are located in their arms, allowing each arm to sense and react almost independently.\\n\\n[4] octopuses have three hearts and their blood is blue due... | Fandom\\nURL: https://dandys-world-robloxhorror.fandom.com/f/p/4400000000000332935\\nExcerpt: octopuses have three hearts and their blood is blue due to a copper-based molecule called hemocyanin.\\n\\n[5] board Archives – Math Corps\\nURL: https://mathcorps.org/tag/board/\\nExcerpt: A dedicated Detroit native and a successful entrepreneur, Moses Shepherd’s remarkable journey and unwavering commitment to our community aligns perfectly with our mission. For three decades, Moses Shepherd has been an entrepreneurial force in Detroit.\\n\\n[6] Me: Please tell me an interesting fact I don't know. | Hacker News\\nURL: https://news.ycombinator.com/item?id=42220533\\nExcerpt: GPT: Did you know that octopuses have three hearts and their blood is blue? Two of their hearts pump blood to the gills, while the third pumps it to the rest of the body.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 98,\n  \"reasoning\": \"Scientific consensus confirms that octopuses possess three hearts and blue blood. Two branchial hearts pump deoxygenated blood through the gills to receive oxygen, while a single systemic heart circulates the oxygenated blood throughout the rest of the body. Their blood appears blue because it relies on a copper-rich protein called hemocyanin, rather than iron-based hemoglobin, to transport oxygen.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Octopuses have three hearts and their blood is blue.\"",
+        "Octopuses have three hearts and blue blood",
+        "\"Octopuses have three hearts and their blood is blue.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://timesofindia.indiatimes.com/etimes/trending/10-weird-and-funny-animal-facts-that-sound-fake-but-are-completely-real/articleshow/125381246.cms",
+          "title": "10 weird and funny animal facts that sound fake... - The Times of India",
+          "snippet": "Octopuses have three hearts and their blood is blue.Two pump blood through their gills, while the third sends oxygenated blood through the rest of the body. Their blood is blue because it uses copper, not iron, to transport oxygen."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh",
+          "title": "Ten things I learned in 2025: 1. Octopuses have three hearts, and...",
+          "snippet": "Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is blue because it uses copper (hemocyanin) rather than iron to transport oxygen 2. In 1518, a “dancing plague” broke out in Strasbourg: hundreds of people began dancing continuously for days, some until death..."
+        },
+        {
+          "url": "https://www.tiktok.com/discover/octopus-blood-real-life",
+          "title": "Octopus Blood Real Life | TikTok",
+          "snippet": "Octopuses have three hearts and blue blood, and one of those hearts actually stops when they swim. Most of their neurons are located in their arms, allowing each arm to sense and react almost independently."
+        },
+        {
+          "url": "https://dandys-world-robloxhorror.fandom.com/f/p/4400000000000332935",
+          "title": "octopuses have three hearts and their blood is blue due... | Fandom",
+          "snippet": "octopuses have three hearts and their blood is blue due to a copper-based molecule called hemocyanin."
+        },
+        {
+          "url": "https://mathcorps.org/tag/board/",
+          "title": "board Archives – Math Corps",
+          "snippet": "A dedicated Detroit native and a successful entrepreneur, Moses Shepherd’s remarkable journey and unwavering commitment to our community aligns perfectly with our mission. For three decades, Moses Shepherd has been an entrepreneurial force in Detroit."
+        },
+        {
+          "url": "https://news.ycombinator.com/item?id=42220533",
+          "title": "Me: Please tell me an interesting fact I don't know. | Hacker News",
+          "snippet": "GPT: Did you know that octopuses have three hearts and their blood is blue? Two of their hearts pump blood to the gills, while the third pumps it to the rest of the body."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that \"lightning never strikes the same place twice\" is a common myth and scientifically false",
+        "Lightning naturally follows the path of least electrical resistance to ground, meaning tall, isolated, and conductive structures are struck repeatedly",
+        "For instance, according to meteorological data from NOAA and the National Weather Service, tall buildings like the Empire State Building are struck by lightning dozens of times every year, and individual lightning flashes can also strike the ground in multiple places or re-strike the same channel during a single event."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Lightning never strikes the same place twice.\\\"\",\n  \"verification_notes\": \"Check National Weather Service and NOAA data on lightning strike patterns. Verify how many times the Empire State Building is struck per year. Explain the physics of why tall conductors are repeatedly targeted.\",\n  \"search_results\": \"[1] 'Lightning Never Strikes the Same Place Twice'... Or Does It?\\nURL: https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html\\nExcerpt: Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice.\\n\\n[2] Lightning never strikes the same place twice - Idioms by The Free...\\nURL: https://idioms.thefreedictionary.com/lightning+never+strikes+the+same+place+twice\\nExcerpt: ˌlightning never strikes (in the same place) ˈtwice.In a copy of the resolution uploaded on the Sandiganbayan website, the court sounded literary in denying the bail by stressing that the phrase lightning never strikes the same place twice does not apply to Estrada.\\n\\n[3] VOA Special English - 'Lightning Never Strikes the Same Place...\\nURL: https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html\\nExcerpt: You know, lightning never strikes twice!\\\" That probably will not make your head feel any better. And you can tell your friend that scientists. say that lightning can and will strike the same place twice. Whether for something good or bad, the underlying truth remains the same\\n\\n[4] Lightning Never Strikes Twice – Or Does It? | Weather.com\\nURL: https://weather.com/science/weather-explainers/news/2025-03-17-lightning-never-strikes-twice-fact-fiction\\nExcerpt: “Lightning never strikes the same place twice” is a common idiom used to mean that unusual events don’t happen twice to the same person or in the same place. But unfortunately, it’s not a very good idiom, because it’s not true.\\n\\n[5] Lightning Never Strike Twice - Andre Lattimore: Song Lyrics, Music...\\nURL: https://www.shazam.com/song/6774828478/lightning-never-strike-twice\\nExcerpt: Lightning never strikes the same place twice. Oh, the same place twice. Oh, I tried to shake it loose. Tried to shut that gate. But your kiss hit my bones. Like a storm with no rain. Lightning never strikes twice (Strike twice).\\n\\n[6] Dispelling the Myth: Lightning Strikes the Same Place Twice\\nURL: https://englishpluspodcast.com/dispelling-the-myth-lightning-strikes-the-same-place-twice/\\nExcerpt: Myth 1: Lightning never strikes the same place twice.Lightning, with its dazzling displays of electric power, has captivated humanity since time immemorial. Among the many myths surrounding lightning, one enduring belief is that it never strikes the same place twice.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that \\\"lightning never strikes the same place twice\\\" is a common myth and scientifically false. Lightning naturally follows the path of least electrical resistance to ground, meaning tall, isolated, and conductive structures are struck repeatedly. For instance, according to meteorological data from NOAA and the National Weather Service, tall buildings like the Empire State Building are struck by lightning dozens of times every year, and individual lightning flashes can also strike the ground in multiple places or re-strike the same channel during a single event.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Lightning never strikes the same place twice.\"",
+        "Lightning never strikes the same place twice",
+        "\"Lightning never strikes the same place twice.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html",
+          "title": "'Lightning Never Strikes the Same Place Twice'... Or Does It?",
+          "snippet": "Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice."
+        },
+        {
+          "url": "https://idioms.thefreedictionary.com/lightning+never+strikes+the+same+place+twice",
+          "title": "Lightning never strikes the same place twice - Idioms by The Free...",
+          "snippet": "ˌlightning never strikes (in the same place) ˈtwice.In a copy of the resolution uploaded on the Sandiganbayan website, the court sounded literary in denying the bail by stressing that the phrase lightning never strikes the same place twice does not apply to Estrada."
+        },
+        {
+          "url": "https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html",
+          "title": "VOA Special English - 'Lightning Never Strikes the Same Place...",
+          "snippet": "You know, lightning never strikes twice!\" That probably will not make your head feel any better. And you can tell your friend that scientists. say that lightning can and will strike the same place twice. Whether for something good or bad, the underlying truth remains the same"
+        },
+        {
+          "url": "https://weather.com/science/weather-explainers/news/2025-03-17-lightning-never-strikes-twice-fact-fiction",
+          "title": "Lightning Never Strikes Twice – Or Does It? | Weather.com",
+          "snippet": "“Lightning never strikes the same place twice” is a common idiom used to mean that unusual events don’t happen twice to the same person or in the same place. But unfortunately, it’s not a very good idiom, because it’s not true."
+        },
+        {
+          "url": "https://www.shazam.com/song/6774828478/lightning-never-strike-twice",
+          "title": "Lightning Never Strike Twice - Andre Lattimore: Song Lyrics, Music...",
+          "snippet": "Lightning never strikes the same place twice. Oh, the same place twice. Oh, I tried to shake it loose. Tried to shut that gate. But your kiss hit my bones. Like a storm with no rain. Lightning never strikes twice (Strike twice)."
+        },
+        {
+          "url": "https://englishpluspodcast.com/dispelling-the-myth-lightning-strikes-the-same-place-twice/",
+          "title": "Dispelling the Myth: Lightning Strikes the Same Place Twice",
+          "snippet": "Myth 1: Lightning never strikes the same place twice.Lightning, with its dazzling displays of electric power, has captivated humanity since time immemorial. Among the many myths surrounding lightning, one enduring belief is that it never strikes the same place twice."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim is accurate and scientifically well-established",
+        "Measurements obtained primarily through the Lunar Laser Ranging experiments (using retroreflectors placed on the lunar surface during the Apollo missions) show that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year",
+        "This recession is caused by tidal interactions between Earth and the Moon, where tidal friction gradually slows Earth's rotation and transfers angular momentum to the Moon's orbit."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\\\"\",\n  \"verification_notes\": \"Check NASA and Lunar Laser Ranging experiment data. Verify the mechanism (tidal friction transferring angular momentum). Confirm the rate is ~3.8 cm/year. Calculate implications: how long until the Moon is too far for total solar eclipses?\",\n  \"search_results\": \"[1] Why Is The Moon Moving Away from Earth | TikTok\\nURL: https://www.tiktok.com/discover/why-is-the-moon-moving-away-from-earth\\nExcerpt: The earth is leaving moon #shorts #The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year due to tidal interactions between the two bodies.\\n\\n[2] Blue and Purple Illustrated Night Sky Group Project...\\nURL: https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069\\nExcerpt: INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about 3.8 centimeters per year, which may slightly affect tides in the far future. •\\n\\n[3] Understanding Earth's Rotation: Speed and Implications\\nURL: https://nabado.co.ke/understanding-earths-rotation-speed-effects-and-implications/\\nExcerpt: Over time, the Moon has slowly pulled on Earth’s oceans, creating friction that has gradually slowed down the Earth’s rotation. In return, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\\n\\n[4] Facts about the moon - jeanglass.com\\nURL: https://jeanglass.com/facts-about-the-moon/\\nExcerpt: Worth knowing: The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This gradual recession is caused by the same tidal forces that once slowed Earth’s rotation.\\n\\n[5] How Is the Earth and Moon Alike? - The Institute for Environmental...\\nURL: https://iere.org/how-is-the-earth-and-moon-alike/\\nExcerpt: Yes, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This is due to the tidal forces between the Earth and the Moon. As the Moon pulls on Earth’s oceans, it creates a bulge.\\n\\n[6] How Many Feet Is the Moon Away From Earth? - The Environmental...\\nURL: https://enviroliteracy.org/how-many-feet-is-the-moon-away-from-earth/\\nExcerpt: The Moon is slowly moving away from Earth, at a rate of about 3.8 centimeters per year. This slow recession is due to tidal forces.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim is accurate and scientifically well-established. Measurements obtained primarily through the Lunar Laser Ranging experiments (using retroreflectors placed on the lunar surface during the Apollo missions) show that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This recession is caused by tidal interactions between Earth and the Moon, where tidal friction gradually slows Earth's rotation and transfers angular momentum to the Moon's orbit.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+        "The Moon is drifting away from Earth",
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.tiktok.com/discover/why-is-the-moon-moving-away-from-earth",
+          "title": "Why Is The Moon Moving Away from Earth | TikTok",
+          "snippet": "The earth is leaving moon #shorts #The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year due to tidal interactions between the two bodies."
+        },
+        {
+          "url": "https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069",
+          "title": "Blue and Purple Illustrated Night Sky Group Project...",
+          "snippet": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about 3.8 centimeters per year, which may slightly affect tides in the far future. •"
+        },
+        {
+          "url": "https://nabado.co.ke/understanding-earths-rotation-speed-effects-and-implications/",
+          "title": "Understanding Earth's Rotation: Speed and Implications",
+          "snippet": "Over time, the Moon has slowly pulled on Earth’s oceans, creating friction that has gradually slowed down the Earth’s rotation. In return, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year."
+        },
+        {
+          "url": "https://jeanglass.com/facts-about-the-moon/",
+          "title": "Facts about the moon - jeanglass.com",
+          "snippet": "Worth knowing: The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This gradual recession is caused by the same tidal forces that once slowed Earth’s rotation."
+        },
+        {
+          "url": "https://iere.org/how-is-the-earth-and-moon-alike/",
+          "title": "How Is the Earth and Moon Alike? - The Institute for Environmental...",
+          "snippet": "Yes, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This is due to the tidal forces between the Earth and the Moon. As the Moon pulls on Earth’s oceans, it creates a bulge."
+        },
+        {
+          "url": "https://enviroliteracy.org/how-many-feet-is-the-moon-away-from-earth/",
+          "title": "How Many Feet Is the Moon Away From Earth? - The Environmental...",
+          "snippet": "The Moon is slowly moving away from Earth, at a rate of about 3.8 centimeters per year. This slow recession is due to tidal forces."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 1
+}

@@ -2,11 +2,19 @@
   "schema_version": "1.0",
   "claim_id": "claim-008",
   "verdict": "TRUE",
-  "confidence": 100,
-  "last_checked_at": "2026-10-19T11:55:29Z",
+  "confidence": 98,
+  "last_checked_at": "2026-10-26T12:21:08Z",
   "last_changed_at": "2026-06-09T23:47:06Z",
-  "run_id": "run-2026-10-19T115426Z",
+  "run_id": "run-2026-10-26T120739Z",
   "sources": [
+    {
+      "url": "https://timesofindia.indiatimes.com/etimes/trending/10-weird-and-funny-animal-facts-that-sound-fake-but-are-completely-real/articleshow/125381246.cms",
+      "title": "10 weird and funny animal facts that sound fake... - The Times of India",
+      "domain": "timesofindia.indiatimes.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Octopuses have three hearts and their blood is blue.Two pump blood through their gills, while"
+    },
     {
       "url": "https://www.linkedin.com/posts/giovanni-luca-cascio-rizzo-314774139_ten-things-i-learned-in-2025-1-octopuses-activity-7412242409864011776-oSfh",
       "title": "Ten things I learned in 2025: 1. Octopuses have three hearts, and...",
@@ -16,12 +24,12 @@
       "excerpt": "Ten things I learned in 2025: 1. Octopuses have three hearts, and their blood is"
     },
     {
-      "url": "https://www.tiktok.com/@nanobrief/video/7508425576114359560",
-      "title": "Octopuses: Three Hearts and Blue Blood Explained | TikTok",
+      "url": "https://www.tiktok.com/discover/octopus-blood-real-life",
+      "title": "Octopus Blood Real Life | TikTok",
       "domain": "tiktok.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Discover why octopuses have three hearts and blue blood! Learn fascinating ocean life facts."
+      "excerpt": "Octopuses have three hearts and blue blood, and one of those hearts actually stops when"
     },
     {
       "url": "https://dandys-world-robloxhorror.fandom.com/f/p/4400000000000332935",
@@ -32,20 +40,12 @@
       "excerpt": "octopuses have three hearts and their blood is blue due to a copper-based molecule called"
     },
     {
-      "url": "https://www.pinterest.com/pin/octopuses-have-three-hearts--1103100502469010580/",
-      "title": "Octopuses have three hearts... | Daily facts, Facts you didnt know...",
-      "domain": "pinterest.com",
+      "url": "https://mathcorps.org/tag/board/",
+      "title": "board Archives – Math Corps",
+      "domain": "mathcorps.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Did you know that octopuses have three hearts and their blood is blue? Two hearts"
-    },
-    {
-      "url": "https://en.ud5.com/tool/random-animal-fact-generator-kids",
-      "title": "Weird Animal Fact Generator – Kid‑Friendly & Illustrated",
-      "domain": "en.ud5.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Octopuses have three hearts, and their blood is blue!Earthworms have the most hearts — they"
+      "excerpt": "A dedicated Detroit native and a successful entrepreneur, Moses Shepherd’s remarkable journey and unwavering commitment"
     },
     {
       "url": "https://news.ycombinator.com/item?id=42220533",
@@ -56,7 +56,7 @@
       "excerpt": "GPT: Did you know that octopuses have three hearts and their blood is blue? Two"
     }
   ],
-  "reasoning": "The claim is biologically accurate. Octopuses have three hearts: two branchial hearts that pump blood through the gills and one systemic heart that circulates oxygenated blood to the rest of the body. Furthermore, their blood is blue due to hemocyanin, a copper-based protein responsible for oxygen transport in cold, low-oxygen marine environments.",
+  "reasoning": "Scientific consensus confirms that octopuses possess three hearts and blue blood. Two branchial hearts pump deoxygenated blood through the gills to receive oxygen, while a single systemic heart circulates the oxygenated blood throughout the rest of the body. Their blood appears blue because it relies on a copper-rich protein called hemocyanin, rather than iron-based hemoglobin, to transport oxygen.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -171,6 +171,12 @@
       "confidence": 98,
       "checked_at": "2026-10-11T12:08:07Z",
       "run_id": "run-2026-10-11T115906Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-10-19T11:55:29Z",
+      "run_id": "run-2026-10-19T115426Z"
     }
   ],
   "agent_flags": {
