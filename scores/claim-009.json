@@ -3,9 +3,9 @@
   "claim_id": "claim-009",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-10-20T10:52:44Z",
+  "last_checked_at": "2026-10-28T12:10:54Z",
   "last_changed_at": "2026-06-09T23:44:21Z",
-  "run_id": "run-2026-10-20T105008Z",
+  "run_id": "run-2026-10-28T115923Z",
   "sources": [
     {
       "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
@@ -48,15 +48,15 @@
       "excerpt": "One of the main reasons people believe Napoleon Bonaparte was unusually short stems from the"
     },
     {
-      "url": "https://blog.historiqly.com/blog/debunked-napoleon-was-short",
-      "title": "Debunked: Napoleon Was Not Actually Short | HistorIQly Blog",
-      "domain": "blog.historiqly.com",
+      "url": "https://factsentinel.com/check/napoleon-was-unusually-short",
+      "title": "Fact Check: Napoleon was unusually short - False | FactSentinel",
+      "domain": "factsentinel.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Then there is the psychology. \"Napoleon complex\" is a genuinely useful shorthand that gets used"
+      "excerpt": "The claim that Napoleon Bonaparte was unusually short is a persistent historical myth that contradicts"
     }
   ],
-  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a well-documented historical myth. Napoleon's height was recorded at his autopsy as roughly 5 feet 2 inches in pre-metric French units (\"pieds\" and \"pouces\"). Because a French inch (pouce) was approximately 2.71 centimeters compared to the English inch of 2.54 centimeters, his height in modern imperial measurements translates to roughly 5 feet 6 to 5 feet 7 inches (around 1.67 to 1.69 meters). This made him average or even slightly above average height for a French man in the early 19th century. The misconception was further amplified by British wartime propaganda caricatures (such as those by James Gillray) and his nickname \"le Petit Caporal.\"",
+  "reasoning": "The claim that Napoleon Bonaparte was unusually short (5 feet 2 inches) is a well-documented historical misconception. At his death, Napoleon's height was recorded as 5 pieds 2 pouces (French feet and inches). Because the pre-metric French inch (*pouce*) was longer than the English inch (approximately 2.7 cm compared to 2.54 cm), his height translates to roughly 5 feet 6 inches to 5 feet 7 inches (about 1.67–1.69 m) in modern Imperial measurements. For a French male in the early 19th century, this was average or even slightly above average. The persistent myth of his diminutive stature was largely fueled by this unit discrepancy alongside contemporary British political caricatures and propaganda.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -177,6 +177,12 @@
       "confidence": 95,
       "checked_at": "2026-10-12T14:17:23Z",
       "run_id": "run-2026-10-12T141339Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-10-20T10:52:44Z",
+      "run_id": "run-2026-10-20T105008Z"
     }
   ],
   "agent_flags": {

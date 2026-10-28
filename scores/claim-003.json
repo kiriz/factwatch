@@ -3,60 +3,60 @@
   "claim_id": "claim-003",
   "verdict": "FALSE",
   "confidence": 98,
-  "last_checked_at": "2026-10-20T10:52:19Z",
+  "last_checked_at": "2026-10-28T12:08:44Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-10-20T105008Z",
+  "run_id": "run-2026-10-28T115923Z",
   "sources": [
     {
-      "url": "https://childrenshealthdefense.org/defender/science-mrna-vaccines-alter-dna/",
-      "title": "Could mRNA Vaccines Permanently Alter DNA? Recent Science...",
-      "domain": "childrenshealthdefense.org",
+      "url": "https://en.wikipedia.org/wiki/Messenger_RNA",
+      "title": "Messenger RNA - Wikipedia",
+      "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Research on SARS-CoV-2 RNA by scientists at Harvard and MIT has implications for how mRNA"
+      "excerpt": "Messenger ribonucleic acid (mRNA) is a single-stranded molecule of RNA that corresponds to the genetic"
     },
     {
-      "url": "https://www.vaccinationfacts.com/controversies/mrna-dna-alteration",
-      "title": "Do mRNA Vaccines Alter Human DNA? | Vaccination Facts",
-      "domain": "vaccinationfacts.com",
+      "url": "https://en.wikipedia.org/wiki/MRNA_vaccine",
+      "title": "mRNA vaccine - Wikipedia",
+      "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Fact-check of the claim that mRNA vaccines integrate into or permanently alter human DNA."
+      "excerpt": "An mRNA vaccine is a type of vaccine that uses a copy of a molecule"
     },
     {
-      "url": "https://health.yahoo.com/treatments/vaccines/articles/huge-survey-finds-truth-mrna-150200057.html",
-      "title": "Huge Survey Finds the Truth About What mRNA Vaccines Do to the...",
-      "domain": "health.yahoo.com",
+      "url": "https://my.clevelandclinic.org/health/treatments/21898-mrna-vaccines",
+      "title": "mRNA Vaccines: What They Are & How They Work - Cleveland Clinic",
+      "domain": "my.clevelandclinic.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The study's results also dispel the erroneous notion that mRNA vaccines alter human DNA. Instead,"
+      "excerpt": "Oct 25, 2024 · MRNA — or messenger ribonucleic acid — is a molecule in"
     },
     {
-      "url": "https://www.boomlive.in/world/has-modernas-boss-said-that-vaccines-can-alter-human-dna-a-factcheck-12758",
-      "title": "Has Moderna's Boss Said That Vaccines Can Alter Human DNA?",
-      "domain": "boomlive.in",
+      "url": "https://biologyinsights.com/what-is-mrna-and-how-does-it-actually-work/",
+      "title": "What is mRNA and How Does it Actually Work? - Biology Insights",
+      "domain": "biologyinsights.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "During the talk, he said messenger RNA (mRNA) vaccines could be used to treat illnesses"
+      "excerpt": "Sep 27, 2026 · Messenger RNA, or mRNA, is the molecular middleman between your DNA"
     },
     {
-      "url": "https://factually.co/fact-checks/science/do-mrna-vaccines-alter-human-dna-what-science-says-b04708",
-      "title": "Do mRNA Vaccines Alter Human DNA? What Mainstream Scie...",
-      "domain": "factually.co",
+      "url": "https://www.britannica.com/science/messenger-RNA",
+      "title": "Messenger RNA (mRNA) | Description & Function | Britannica",
+      "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Executive summary Mainstream scientific sources conclude that mRNA vaccines are not known to alter or"
+      "excerpt": "Sep 17, 2026 · Messenger RNA (mRNA) is a molecule in cells that carries codes"
     },
     {
-      "url": "https://www.healthywomen.org/your-health/facts-about-covid-vaccines/6-covid-mrna-vaccines-cannot-alter-human-dna",
-      "title": "6. Covid mRNA vaccines cannot alter human DNA - HealthyWomen",
-      "domain": "healthywomen.org",
+      "url": "https://www.genome.gov/genetics-glossary/Messenger-RNA-mRNA",
+      "title": "Messenger RNA (mRNA) - National Human Genome Research Institute",
+      "domain": "genome.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "From diving into whether mRNA vaccines can alter human DNA to uncovering whether it’s safe"
+      "excerpt": "3 days ago · Messenger RNA (abbreviated mRNA) is a type of single-stranded RNA involved"
     }
   ],
-  "reasoning": "Extensive scientific consensus from major health organizations (including the CDC, WHO, and NIH) and molecular biology literature confirms that mRNA COVID-19 vaccines do not alter, integrate into, or permanently change human DNA. Messenger RNA delivers temporary instructions to the cellular cytoplasm to produce the spike protein, triggering an immune response. The mRNA never enters the cell nucleus where DNA resides, cannot be converted into DNA without reverse transcriptase enzymes, and naturally degrades quickly within the cell. Claims suggesting genomic alteration have been widely debunked.",
+  "reasoning": "According to established molecular biology and guidance from global health authorities (including the CDC, WHO, and NIH), mRNA COVID-19 vaccines cannot alter or interact with human DNA. The mRNA delivered by the vaccine operates entirely within the cytoplasm of the cell, where ribosomes translate it into the target viral spike protein. It never enters the cell nucleus where genetic material (DNA) is kept. Furthermore, human cells do not possess the enzymes (such as reverse transcriptase and integrase) required to reverse-transcribe synthetic mRNA into DNA and integrate it into the human genome. The vaccine mRNA is fragile and is naturally degraded and cleared by normal cellular processes shortly after being translated.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -183,6 +183,12 @@
       "confidence": 99,
       "checked_at": "2026-10-12T14:15:35Z",
       "run_id": "run-2026-10-12T141339Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 98,
+      "checked_at": "2026-10-20T10:52:19Z",
+      "run_id": "run-2026-10-20T105008Z"
     }
   ],
   "agent_flags": {

@@ -1,62 +1,62 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-005",
-  "verdict": "TRUE",
-  "confidence": 95,
-  "last_checked_at": "2026-10-19T11:55:15Z",
-  "last_changed_at": "2026-06-09T23:46:49Z",
-  "run_id": "run-2026-10-19T115426Z",
+  "verdict": "UNVERIFIED",
+  "confidence": 20,
+  "last_checked_at": "2026-10-28T12:15:08Z",
+  "last_changed_at": "2026-10-28T12:15:08Z",
+  "run_id": "run-2026-10-28T115923Z",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/United_States",
-      "title": "United States - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The",
+      "title": "The - Wikipedia",
       "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The United States of America (USA), also known as the United States (U.S.) or America,"
+      "excerpt": "The is a grammatical article in English, denoting nouns that are already or about to"
     },
     {
-      "url": "https://www.congress.gov/search?q={\"source\":\"legislation\"}",
-      "title": "congress.gov/search?q={\"source\":\"legislation\"}",
-      "domain": "congress.gov",
+      "url": "https://en.wikipedia.org/wiki/English_articles",
+      "title": "English articles - Wikipedia",
+      "domain": "en.wikipedia.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Learn about the current status of appropriations legislation on Congress.gov."
+      "excerpt": "The articles in English are the definite article the and the indefinite article a (which"
     },
     {
-      "url": "https://www.govtrack.us/congress/votes",
-      "title": "Congressional Votes Database - GovTrack.us",
-      "domain": "govtrack.us",
+      "url": "https://dictionary.cambridge.org/dictionary/english/the",
+      "title": "THE | English meaning - Cambridge Dictionary",
+      "domain": "dictionary.cambridge.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Get an email every time Congress votes on a bill or other matter. Browse roll"
+      "excerpt": "THE definition: 1. used before nouns to refer to particular things or people that have"
     },
     {
-      "url": "https://www.theguardian.com/us-news/2025/jul/03/trump-tax-bill-passes-congress",
-      "title": "Trump’s tax-and-spending bill passes Congress in... | The Guardian",
-      "domain": "theguardian.com",
+      "url": "https://www.merriam-webster.com/dictionary/the",
+      "title": "THE Definition & Meaning - Merriam-Webster",
+      "domain": "merriam-webster.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Mike Johnson shakes hands with Steve Scalise after the US House passed the Republican budget"
+      "excerpt": "Feb 24, 2026 · The meaning of THE is —used as a function word to"
     },
     {
-      "url": "https://www.nbcnews.com/politics",
-      "title": "Politics News: Latest on Trump Administration, Congress... | NBC News",
-      "domain": "nbcnews.com",
+      "url": "https://www.grammarly.com/blog/parts-of-speech/the-part-of-speech/",
+      "title": "What Part of Speech Is the Word “The”? | Grammarly",
+      "domain": "grammarly.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Find the latest political news stories, photos, and videos on NBCNews.com. Read breaking headlines covering"
+      "excerpt": "Jan 12, 2024 · What part of speech is the word “the,” and how do"
     },
     {
-      "url": "https://www.aol.com/articles/elizabeth-warren-slams-newly-passed-143000000.html",
-      "title": "Elizabeth Warren slams newly passed congressional stock... - AOL",
-      "domain": "aol.com",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/definite-article",
+      "title": "The definite article: 'the' | LearnEnglish - British Council",
+      "domain": "learnenglish.britishcouncil.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "What the House-passed stock ban does and doesn’t do. The legislation bans individual stock trading"
+      "excerpt": "Level: beginner The definite article the is the most frequent word in English. We use"
     }
   ],
-  "reasoning": "According to the Congressional Research Service (CRS) and historical budget records, the last time Congress enacted all regular annual appropriations bills before the start of the fiscal year (October 1) was for Fiscal Year 1997 (completed in late September 1996). Since the modern congressional budget process was established under the Congressional Budget and Impoundment Control Act of 1974, all regular spending bills have been passed on time in only four fiscal years: FY 1977, FY 1989, FY 1995, and FY 1997. Since then, Congress has consistently relied on continuing resolutions and late omnibus spending packages to fund the federal government.",
+  "reasoning": "The provided search results contain no relevant information regarding federal budget history, Congressional appropriations, or fiscal deadlines, instead returning dictionary and grammatical entries for the word \"the\". As a result, the claim cannot be verified against the provided evidence.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -177,13 +177,19 @@
       "confidence": 85,
       "checked_at": "2026-10-11T12:07:00Z",
       "run_id": "run-2026-10-11T115906Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-10-19T11:55:15Z",
+      "run_id": "run-2026-10-19T115426Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": false,
-    "low_source_quality": false
+    "requires_human_review": true,
+    "low_source_quality": true
   },
   "title": "US Congress passed no budget on time since 1997",
   "category": "politics",
