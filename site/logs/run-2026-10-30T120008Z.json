@@ -1,0 +1,80 @@
+{
+  "run_id": "run-2026-10-30T120008Z",
+  "started_at": "2026-10-30T12:00:08Z",
+  "finished_at": "2026-10-30T12:03:50Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-007",
+      "claim_title": "Great Wall of China visible from space",
+      "claim_text": "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented misconception",
+        "NASA and astronauts, including China's first astronaut Yang Liwei, have confirmed that the Great Wall is virtually impossible to see from low Earth orbit without telescopic aid, largely because it is only a few meters wide and made of materials that blend into the surrounding landscape",
+        "Furthermore, many other man-made structures—such as highways, large dams, airports, bridges, and illuminated cities at night—can be seen from low Earth orbit with the unaided eye."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\\\"\",\n  \"verification_notes\": \"Check astronaut accounts, NASA statements, and optical physics. The wall is roughly 9 meters wide — compare to road widths. Verify what actually IS visible from low Earth orbit with the naked eye.\",\n  \"search_results\": \"[1] Fact-check: The Great Wall of China is the only man-made...\\nURL: https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31\\nExcerpt: The total length of the Great Wall, including all its components, is approximately 13,171 miles. The Great Wall was not completed during the reign of Qin Shi Huang. Key Claims.\\n\\n[2] Did You Know? The Great Wall Isn't Visible From Space With the...\\nURL: https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/\\nExcerpt: And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands of kilometers across diverse terrain—it’s also quite narrow, only about 6 to 9 meters wide on average.\\n\\n[3] Satellite Picture of Great Wall of China: Fact vs. Myth - PopSCI.blog\\nURL: https://popsci.blog/great-wall-china-satellite-picture-myth\\nExcerpt: The persistent myth that the Great Wall of China is the only man-made structure visible from space with the naked eye is a common misconception.\\n\\n[4] Embracing the Future: How AI and Machine Learning Are Enhancing...\\nURL: https://smarterwatches.net/embracing-the-future-how-ai-and-machine-learning-are-enhancing-our-daily-lives/\\nExcerpt: 4. The Great Wall of China is the only man-made structure visible from space with the naked eye. 5. Octopuses have three hearts, nine brains, and blue blood.\\n\\n[5] Read the statements. Decide whether they are True or False.\\nURL: https://gdz.ru/ai-solution/solution/69edb5b6e7fc1fa007289df3/\\nExcerpt: 5. **The Great Wall of China is the only man-made structure visible from space with the naked eye.** — * *False** (Это популярный миф, Великая Китайская стена не видна из космоса невооруженным глазом).\\n\\n[6] Science True or False: Interactive General Science... - Spelling Bee Ninja\\nURL: https://spellingbee.ninja/science/science-true-or-false-lesson-and-quiz/\\nExcerpt: Statement: The Great Wall of China is the only man-made structure visible from space with the naked eye. Is this true or false?The Great Wall is not visible from low Earth orbit (where the International Space Station orbits) with the naked eye. Astronauts have confirmed this.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"reasoning\": \"The claim that the Great Wall of China is the only man-made structure visible from space with the naked eye is a well-documented misconception. NASA and astronauts, including China's first astronaut Yang Liwei, have confirmed that the Great Wall is virtually impossible to see from low Earth orbit without telescopic aid, largely because it is only a few meters wide and made of materials that blend into the surrounding landscape. Furthermore, many other man-made structures—such as highways, large dams, airports, bridges, and illuminated cities at night—can be seen from low Earth orbit with the unaided eye.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+        "Great Wall of China visible from space",
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
+          "title": "Fact-check: The Great Wall of China is the only man-made...",
+          "snippet": "The total length of the Great Wall, including all its components, is approximately 13,171 miles. The Great Wall was not completed during the reign of Qin Shi Huang. Key Claims."
+        },
+        {
+          "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
+          "title": "Did You Know? The Great Wall Isn't Visible From Space With the...",
+          "snippet": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands of kilometers across diverse terrain—it’s also quite narrow, only about 6 to 9 meters wide on average."
+        },
+        {
+          "url": "https://popsci.blog/great-wall-china-satellite-picture-myth",
+          "title": "Satellite Picture of Great Wall of China: Fact vs. Myth - PopSCI.blog",
+          "snippet": "The persistent myth that the Great Wall of China is the only man-made structure visible from space with the naked eye is a common misconception."
+        },
+        {
+          "url": "https://smarterwatches.net/embracing-the-future-how-ai-and-machine-learning-are-enhancing-our-daily-lives/",
+          "title": "Embracing the Future: How AI and Machine Learning Are Enhancing...",
+          "snippet": "4. The Great Wall of China is the only man-made structure visible from space with the naked eye. 5. Octopuses have three hearts, nine brains, and blue blood."
+        },
+        {
+          "url": "https://gdz.ru/ai-solution/solution/69edb5b6e7fc1fa007289df3/",
+          "title": "Read the statements. Decide whether they are True or False.",
+          "snippet": "5. **The Great Wall of China is the only man-made structure visible from space with the naked eye.** — * *False** (Это популярный миф, Великая Китайская стена не видна из космоса невооруженным глазом)."
+        },
+        {
+          "url": "https://spellingbee.ninja/science/science-true-or-false-lesson-and-quiz/",
+          "title": "Science True or False: Interactive General Science... - Spelling Bee Ninja",
+          "snippet": "Statement: The Great Wall of China is the only man-made structure visible from space with the naked eye. Is this true or false?The Great Wall is not visible from low Earth orbit (where the International Space Station orbits) with the naked eye. Astronauts have confirmed this."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}
