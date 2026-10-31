@@ -1,0 +1,80 @@
+{
+  "run_id": "run-2026-10-31T113512Z",
+  "started_at": "2026-10-31T11:35:12Z",
+  "finished_at": "2026-10-31T11:39:35Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that humans only use 10% of their brain capacity is a widely debunked neuroscientific myth",
+        "Modern neuroimaging technologies, such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET), demonstrate that virtually all parts of the brain are active and utilized, even during sleep or simple tasks",
+        "Additionally, evolutionary biology and clinical neurology show that unutilized brain tissue would atrophy, and even minor damage to nearly any area of the brain results in profound cognitive or physical deficits, disproving the notion of a 90% dormant reserve."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\\\"\",\n  \"verification_notes\": \"Check neuroimaging studies (fMRI, PET). Verify whether any region of the brain is truly inactive. Look at what happens to brain tissue when it's genuinely unused (it atrophies). Check scientific consensus from neuroscience organizations.\",\n  \"search_results\": \"[1] Humans Only Use 10% of Their Brain? Myth Busted - YouTube\\nURL: https://www.youtube.com/watch?v=AdOoQaKUfAw\\nExcerpt: We’ve all heard it — \\\"you only use 10% of your brain.\\\" But neuroscience disagrees. This short breaks it down with visuals, expert tone, and clarity.\\n\\n[2] Do People Only Use 10 Percent of Their Brains? | Scientific American\\nURL: https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/\\nExcerpt: Adding to that mystery is the contention that humans \\\"only\\\" employ 10 percent of their brain.This is a false assumption. What is correct, however, is that at certain moments in anyone's life, such as when we are simply at rest and thinking, we may be using only 10 percent of our brains.\\n\\n[3] [FREE] True or false: Humans use only 10 percent of their brains.\\nURL: https://brainly.com/question/35876020\\nExcerpt: A. False, because humans use 50% of their brains at any given time.The statement that humans only use 10 percent of their brains is actually false.\\n\\n[4] Solved Do people really use only 10% of their brains? | Chegg.com\\nURL: https://www.chegg.com/homework-help/questions-and-answers/people-really-use-10-brains-use-entire-brain-although-individual-tasks-might-rely-primaril-q191836172\\nExcerpt: , we use our entire brain. ( although individual tasks might rely primarily on specialized regions of the brain. ) Chegg Logo. Here’s the best way to solve it. Solution. The claim that humans only use 10% of their brains is a popular myth.\\n\\n[5] Humans Use More Than 10% of Their Power | by Alex... | Medium\\nURL: https://thealexcrowley.medium.com/humans-use-more-than-10-of-their-power-a259eaf12173\\nExcerpt: The idea that humans only use 10% of their brain power is a myth that has been debunked by neuroscientists. Advanced brain imaging techniques, such as functional magnetic resonance imaging (fMRI), have shown that even during rest or seemingly simple tasks, the brain remains...\\n\\n[6] Humans Only Use Ten Percent Of Their Brains by on Prezi\\nURL: https://prezi.com/dwksxu2db1lr/humans-only-use-ten-percent-of-their-brains/\\nExcerpt: We can only utilize 10% of our brain power. Barry Gordon. \\\"It turns out though, that we use virtually every part of the brain, and that the brain is active almost all the time.\\\" Telekenesis. Eidetic memory.\\\"People only meet a fraction of their full mental potential\\\". Lowell Thomas.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 98,\n  \"reasoning\": \"The claim that humans only use 10% of their brain capacity is a widely debunked neuroscientific myth. Modern neuroimaging technologies, such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET), demonstrate that virtually all parts of the brain are active and utilized, even during sleep or simple tasks. Additionally, evolutionary biology and clinical neurology show that unutilized brain tissue would atrophy, and even minor damage to nearly any area of the brain results in profound cognitive or physical deficits, disproving the notion of a 90% dormant reserve.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+        "Humans only use 10% of their brains",
+        "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.youtube.com/watch?v=AdOoQaKUfAw",
+          "title": "Humans Only Use 10% of Their Brain? Myth Busted - YouTube",
+          "snippet": "We’ve all heard it — \"you only use 10% of your brain.\" But neuroscience disagrees. This short breaks it down with visuals, expert tone, and clarity."
+        },
+        {
+          "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+          "title": "Do People Only Use 10 Percent of Their Brains? | Scientific American",
+          "snippet": "Adding to that mystery is the contention that humans \"only\" employ 10 percent of their brain.This is a false assumption. What is correct, however, is that at certain moments in anyone's life, such as when we are simply at rest and thinking, we may be using only 10 percent of our brains."
+        },
+        {
+          "url": "https://brainly.com/question/35876020",
+          "title": "[FREE] True or false: Humans use only 10 percent of their brains.",
+          "snippet": "A. False, because humans use 50% of their brains at any given time.The statement that humans only use 10 percent of their brains is actually false."
+        },
+        {
+          "url": "https://www.chegg.com/homework-help/questions-and-answers/people-really-use-10-brains-use-entire-brain-although-individual-tasks-might-rely-primaril-q191836172",
+          "title": "Solved Do people really use only 10% of their brains? | Chegg.com",
+          "snippet": ", we use our entire brain. ( although individual tasks might rely primarily on specialized regions of the brain. ) Chegg Logo. Here’s the best way to solve it. Solution. The claim that humans only use 10% of their brains is a popular myth."
+        },
+        {
+          "url": "https://thealexcrowley.medium.com/humans-use-more-than-10-of-their-power-a259eaf12173",
+          "title": "Humans Use More Than 10% of Their Power | by Alex... | Medium",
+          "snippet": "The idea that humans only use 10% of their brain power is a myth that has been debunked by neuroscientists. Advanced brain imaging techniques, such as functional magnetic resonance imaging (fMRI), have shown that even during rest or seemingly simple tasks, the brain remains..."
+        },
+        {
+          "url": "https://prezi.com/dwksxu2db1lr/humans-only-use-ten-percent-of-their-brains/",
+          "title": "Humans Only Use Ten Percent Of Their Brains by on Prezi",
+          "snippet": "We can only utilize 10% of our brain power. Barry Gordon. \"It turns out though, that we use virtually every part of the brain, and that the brain is active almost all the time.\" Telekenesis. Eidetic memory.\"People only meet a fraction of their full mental potential\". Lowell Thomas."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}
