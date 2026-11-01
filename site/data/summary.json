@@ -4,9 +4,8 @@
     "TRUE": 6,
     "UNVERIFIED": 2,
     "FALSE": 6,
-    "DISPUTED": 1,
-    "MISLEADING": 1
+    "MISLEADING": 2
   },
-  "last_run_at": "2026-10-31T11:39:35Z",
-  "last_run_id": "run-2026-10-31T113512Z"
+  "last_run_at": "2026-11-01T12:41:00Z",
+  "last_run_id": "run-2026-11-01T123242Z"
 }

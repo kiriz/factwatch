@@ -2,19 +2,11 @@
   "schema_version": "1.0",
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
-  "confidence": 88,
-  "last_checked_at": "2026-10-25T10:43:07Z",
+  "confidence": 90,
+  "last_checked_at": "2026-11-01T12:38:44Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-10-25T103432Z",
+  "run_id": "run-2026-11-01T123242Z",
   "sources": [
-    {
-      "url": "https://en.wikipedia.org/wiki/Generative_AI",
-      "title": "Generative AI - Wikipedia",
-      "domain": "en.wikipedia.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Generative artificial intelligence (AI) will become one of the most important features for creative designers"
-    },
     {
       "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
       "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
@@ -22,14 +14,6 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by"
-    },
-    {
-      "url": "https://www.linkedin.com/pulse/generative-ai-could-save-300-billion-work-hours-year-two-behbahani-w2oze",
-      "title": "Generative AI could save 300 billion work hours a year, equivalent to...",
-      "domain": "linkedin.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "As generative AI reshapes the workplace, it could place new stresses on organizational structures. The"
     },
     {
       "url": "https://www.businessinsider.com/ai-taking-jobs-fears-artists-say-already-happening-2023-10",
@@ -40,23 +24,39 @@
       "excerpt": "Goldman Sachs predict that 300 million jobs could be disrupted by AI, with workers worrying"
     },
     {
-      "url": "https://hackernoon.com/the-future-of-work-ai-automation-to-replace-half-of-human-jobs-by-2045",
-      "title": "The Future of Work: AI Automation to Replace Half of Human Jobs by...",
-      "domain": "hackernoon.com",
+      "url": "https://www.linkedin.com/pulse/generative-ai-my-daughters-future-work-ben-pouladian-y6ouc",
+      "title": "Amazon CEO Andy Jassy’s Generative AI Message—and How It...",
+      "domain": "linkedin.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The Future of Work: How Generative AI Will Transform Jobs. Also, the report offers fascinating"
+      "excerpt": "A Generation Facing an AI-Powered Job Market. My daughters’ generation – Generation Alpha – will"
     },
     {
-      "url": "https://www3.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
-      "title": "www3.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf",
-      "domain": "www3.weforum.org",
+      "url": "https://therealbradlea.libsyn.com/ai-will-replace-300-million-jobs-by-2030-how-to-survive-the-shift",
+      "title": "Dropping Bombs: AI Will Replace 300 Million Jobs By 2030...",
+      "domain": "therealbradlea.libsyn.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AI will displace about 9 million positions by 2030."
+      "excerpt": "Perry drops hard truths about the AI apocalypse barreling toward us: how Microsoft, Amazon, and"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Z1U9CS8Z-2U",
+      "title": "Will AI take your job? | Start Here - YouTube",
+      "domain": "youtube.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "AI can now do things we used to think only humans could do. So how"
+    },
+    {
+      "url": "https://yourstory.com/2025/04/generative-ai-is-not-a-magic-wand--its-a-strategic-tool",
+      "title": "Generative AI is not a magic wand, it’s a strategic tool | YourStory",
+      "domain": "yourstory.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "McKinsey puts the contribution of generative AI (GenAI) to the global economy at up to"
     }
   ],
-  "reasoning": "The claim distorts the findings of a widely cited March 2023 report by Goldman Sachs (\"The Potentially Large Effects of Artificial Intelligence on Economic Growth\"). \n\nThe report did not state that generative AI *will replace* 300 million jobs. Instead, it estimated that generative AI could expose roughly 300 million full-time jobs worldwide to automation. Specifically, the authors projected that roughly two-thirds of U.S. and European occupations are exposed to some degree of AI automation, but for the majority of these roles, AI is more likely to complement human labor rather than replace it entirely. Additionally, the report noted that technological displacement is historically offset by the creation of new occupations and significant long-term boosts to global GDP. Presenting the figure as a definitive prediction that 300 million workers will lose their jobs strips away crucial context and overstates the study's conclusions.",
+  "reasoning": "The claim misrepresents the findings of a widely cited March 2023 report by Goldman Sachs economists (Hatzius et al.). The report did not predict that generative AI \"will replace\" 300 million jobs. Rather, it estimated that generative AI could expose the equivalent of roughly 300 million full-time jobs globally to automation. \n\nCrucially, the authors distinguished between tasks being automated and workers being replaced. The report noted that for most workers, AI would serve as a complement rather than a substitute, partially automating tasks while enhancing overall productivity. Transforming an economic estimate of potential task exposure into a definitive prediction of 300 million job losses exaggerates and distorts the source's actual conclusions.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -177,6 +177,12 @@
       "confidence": 95,
       "checked_at": "2026-10-18T10:20:22Z",
       "run_id": "run-2026-10-18T101513Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 88,
+      "checked_at": "2026-10-25T10:43:07Z",
+      "run_id": "run-2026-10-25T103432Z"
     }
   ],
   "agent_flags": {
