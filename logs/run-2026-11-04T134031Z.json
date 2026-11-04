@@ -1,0 +1,245 @@
+{
+  "run_id": "run-2026-11-04T134031Z",
+  "started_at": "2026-11-04T13:40:31Z",
+  "finished_at": "2026-11-04T13:51:20Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-001",
+      "claim_title": "Arctic sea ice decline since 1979",
+      "claim_text": "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "UNVERIFIED",
+      "confidence": 0,
+      "verdict_changed": false,
+      "previous_verdict": "UNVERIFIED",
+      "new_verdict": "UNVERIFIED",
+      "requires_human_review": true,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": true,
+        "low_source_quality": true
+      },
+      "sources_found": 6,
+      "sources_used": 0,
+      "reasoning_steps": [
+        "Fact-check failed: API error after retry"
+      ],
+      "error": true,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "Claim title: US federal debt exceeds $34 trillion\n\nClaim to verify: \"The United States national debt has surpassed $34 trillion.\"\n\nHuman context: Widely cited in political and economic commentary. The US Treasury publishes real-time debt figures. Claim became prominent in early 2024 when the debt first crossed this threshold.\n\nVerification guidance: Check US Treasury Fiscal Data (fiscaldata.treasury.gov). Note distinction between gross debt and debt held by the public. Verify current figure — may have grown beyond $34T by time of verification.\n\nWeb search results:\n\n[1] National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...\n    URL: https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/\n    Excerpt: The United States national debt has surpassed $34.9 trillion for the first time, marking a somber milestone in the nation’s fiscal history. This figure, released by the Treasury Department, reflects a substantial increase from the $30 trillion threshold crossed just last year.\n\n[2] US Debt Clock — Live United States / America National Debt\n    URL: https://www.us-debt-clock.com/\n    Excerpt: See the US Debt Clock live: U.S. national debt now $40.2 Trillion and climbing. Official Treasury data, updated November 2026, plus your share, about $120K per person.\n\n[3] U.S. government debt passes $40 trillion, more than doubling ...\n    URL: https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html\n    Excerpt: Aug 19, 2026 · The total U.S. government debt reached $40.05 trillion as of Tuesday, according to the Treasury Department. Treasury reported a $432.3 billion deficit in July — the highest monthly level in more ...\n\n[4] US national debt hits record $34 trillion - Yahoo Finance\n    URL: https://finance.yahoo.com/news/us-national-debt-hits-record-115340908.html?fr=sycsrp_catchall\n    Excerpt: Jan 3, 2024 · The US government’s debt has topped $34 trillion for the first time, just weeks ahead of deadlines for Congress to agree to new federal funding plans.\n\n[5] National Debt Tops $39 Trillion - EPIC\n    URL: https://epicforamerica.org/federal-budget/national-debt-tops-39-trillion/\n    Excerpt: Mar 18, 2026 · For comparison, the debt was $34.5 trillion on March 15, 2024, an increase of $4.5 trillion in just two years. This took place without a recession, a large “stimulus” spending package, or a full-scale military operation.\n\n[6] U.S. national debt skyrockets past $38 trillion, the Treasury ...\n    URL: https://www.fastcompany.com/91427621/u-s-national-debt-skyrockets-past-38-trillion-treasury-department-reports\n    Excerpt: Oct 23, 2025 · The nation reached $34 trillion in debt in January 2024, $35 trillion in July 2024, and $36 trillion in November 2024.\n\n[7] U.S. Debt Doubles Under Trump and Biden — Now Exceeds $40 ...\n    URL: https://finance.yahoo.com/economy/policy/articles/u-debt-doubles-under-trump-145552736.html?fr=sycsrp_catchall\n    Excerpt: Trump and Biden together added roughly $20 trillion to the national debt, with the latest $1 trillion accumulating in under five months. Interest payments have surged to $1.25 trillion annually ...\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": false,
+      "search_queries": [
+        "\"The United States national debt has surpassed $34 trillion.\"",
+        "US federal debt exceeds $34 trillion",
+        "\"The United States national debt has surpassed $34 trillion.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/",
+          "title": "National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...",
+          "snippet": "The United States national debt has surpassed $34.9 trillion for the first time, marking a somber milestone in the nation’s fiscal history. This figure, released by the Treasury Department, reflects a substantial increase from the $30 trillion threshold crossed just last year."
+        },
+        {
+          "url": "https://www.us-debt-clock.com/",
+          "title": "US Debt Clock — Live United States / America National Debt",
+          "snippet": "See the US Debt Clock live: U.S. national debt now $40.2 Trillion and climbing. Official Treasury data, updated November 2026, plus your share, about $120K per person."
+        },
+        {
+          "url": "https://www.cnbc.com/2026/08/19/us-government-debt-passes-40-trillion-mark-for-the-first-time.html",
+          "title": "U.S. government debt passes $40 trillion, more than doubling ...",
+          "snippet": "Aug 19, 2026 · The total U.S. government debt reached $40.05 trillion as of Tuesday, according to the Treasury Department. Treasury reported a $432.3 billion deficit in July — the highest monthly level in more ..."
+        },
+        {
+          "url": "https://finance.yahoo.com/news/us-national-debt-hits-record-115340908.html?fr=sycsrp_catchall",
+          "title": "US national debt hits record $34 trillion - Yahoo Finance",
+          "snippet": "Jan 3, 2024 · The US government’s debt has topped $34 trillion for the first time, just weeks ahead of deadlines for Congress to agree to new federal funding plans."
+        },
+        {
+          "url": "https://epicforamerica.org/federal-budget/national-debt-tops-39-trillion/",
+          "title": "National Debt Tops $39 Trillion - EPIC",
+          "snippet": "Mar 18, 2026 · For comparison, the debt was $34.5 trillion on March 15, 2024, an increase of $4.5 trillion in just two years. This took place without a recession, a large “stimulus” spending package, or a full-scale military operation."
+        },
+        {
+          "url": "https://www.fastcompany.com/91427621/u-s-national-debt-skyrockets-past-38-trillion-treasury-department-reports",
+          "title": "U.S. national debt skyrockets past $38 trillion, the Treasury ...",
+          "snippet": "Oct 23, 2025 · The nation reached $34 trillion in debt in January 2024, $35 trillion in July 2024, and $36 trillion in November 2024."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-003",
+      "claim_title": "mRNA vaccines alter human DNA",
+      "claim_text": "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_title": "Napoleon was unusually short",
+      "claim_text": "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "UNVERIFIED",
+      "confidence": 0,
+      "verdict_changed": false,
+      "previous_verdict": "UNVERIFIED",
+      "new_verdict": "UNVERIFIED",
+      "requires_human_review": true,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": true,
+        "low_source_quality": true
+      },
+      "sources_found": 6,
+      "sources_used": 0,
+      "reasoning_steps": [
+        "Fact-check failed: API error after retry"
+      ],
+      "error": true,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "Claim title: US Congress passed no budget on time since 1997\n\nClaim to verify: \"The US Congress has not passed a complete federal budget on time since 1997.\"\n\nHuman context: Often cited to illustrate Congressional dysfunction. The claim hinges on the definition of \"on time\" (before October 1, the start of the fiscal year) and \"complete\" (all 12 appropriations bills passed before the deadline).\n\nVerification guidance: Check Congressional Research Service records. Fiscal year starts October 1. Verify if any year between 1998 and present had all 12 appropriations bills enacted before the deadline. Note distinction between omnibus packages and individual bills.\n\nWeb search results:\n\n[1] United States congressional apportionment - Wikipedia\n    URL: https://en.wikipedia.org/wiki/United_States_congressional_apportionment\n    Excerpt: United States congressional apportionment is the process[1] by which seats in the United States House of Representatives are distributed among the 50 states according to the most recent decennial census mandated by the United States Constitution.\n\n[2] What Is The Meaning O Termminating A Budget on Congres | TikTok\n    URL: https://www.tiktok.com/discover/what-is-the-meaning-o-termminating-a-budget-on-congres\n    Excerpt: The 27-Year Excuse — Why Congress Hasn’t Passed a Budget on Time Since 1997. They can send billions overseas in a week, but pass a budget on time? That’s apparently above their pay grade.\n\n[3] The federal budget process | USAGov\n    URL: https://www.usa.gov/federal-budget-process\n    Excerpt: Learn about the federal government’s budget process, from the president’s budget plan to Congress’s work creating funding bills for the president to sign.\n\n[4] legiscan.com/US/legislation?status=passed\n    URL: https://legiscan.com/US/legislation?status=passed\n    Excerpt: statistics provided by LegiScan for the 118th Congress.\n\n[5] Congressional Votes Database - GovTrack.us\n    URL: https://www.govtrack.us/congress/votes\n    Excerpt: Get an email every time Congress votes on a bill or other matter. Browse roll call votes in the House of Representatives and in the Senate to pass bills, resolutions, nominations, and treaties and votes on cloture and other motions.\n\n[6] We Regret to Inform You That Congress Is Doing... | The New Republic\n    URL: https://newrepublic.com/article/163636/congress-debt-ceiling-janet-yellen\n    Excerpt: (In accordance with the Congressional Budget Act of 1974, Congress is supposed to have completed action on a budget resolution by April 15.) MacGuineas suggested that Congress could take a vote to raise the limit at the same time it votes on legislation that would incur debt.\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": false,
+      "search_queries": [
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+        "US Congress passed no budget on time since 1997",
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_congressional_apportionment",
+          "title": "United States congressional apportionment - Wikipedia",
+          "snippet": "United States congressional apportionment is the process[1] by which seats in the United States House of Representatives are distributed among the 50 states according to the most recent decennial census mandated by the United States Constitution."
+        },
+        {
+          "url": "https://www.tiktok.com/discover/what-is-the-meaning-o-termminating-a-budget-on-congres",
+          "title": "What Is The Meaning O Termminating A Budget on Congres | TikTok",
+          "snippet": "The 27-Year Excuse — Why Congress Hasn’t Passed a Budget on Time Since 1997. They can send billions overseas in a week, but pass a budget on time? That’s apparently above their pay grade."
+        },
+        {
+          "url": "https://www.usa.gov/federal-budget-process",
+          "title": "The federal budget process | USAGov",
+          "snippet": "Learn about the federal government’s budget process, from the president’s budget plan to Congress’s work creating funding bills for the president to sign."
+        },
+        {
+          "url": "https://legiscan.com/US/legislation?status=passed",
+          "title": "legiscan.com/US/legislation?status=passed",
+          "snippet": "statistics provided by LegiScan for the 118th Congress."
+        },
+        {
+          "url": "https://www.govtrack.us/congress/votes",
+          "title": "Congressional Votes Database - GovTrack.us",
+          "snippet": "Get an email every time Congress votes on a bill or other matter. Browse roll call votes in the House of Representatives and in the Senate to pass bills, resolutions, nominations, and treaties and votes on cloture and other motions."
+        },
+        {
+          "url": "https://newrepublic.com/article/163636/congress-debt-ceiling-janet-yellen",
+          "title": "We Regret to Inform You That Congress Is Doing... | The New Republic",
+          "snippet": "(In accordance with the Congressional Budget Act of 1974, Congress is supposed to have completed action on a budget resolution by April 15.) MacGuineas suggested that Congress could take a vote to raise the limit at the same time it votes on legislation that would incur debt."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_title": "Octopuses have three hearts and blue blood",
+      "claim_text": "\"Octopuses have three hearts and their blood is blue.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 9
+}

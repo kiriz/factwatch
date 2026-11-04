@@ -2,61 +2,12 @@
   "schema_version": "1.0",
   "claim_id": "claim-005",
   "verdict": "UNVERIFIED",
-  "confidence": 20,
-  "last_checked_at": "2026-10-28T12:15:08Z",
+  "confidence": 0,
+  "last_checked_at": "2026-11-04T13:49:38Z",
   "last_changed_at": "2026-10-28T12:15:08Z",
-  "run_id": "run-2026-10-28T115923Z",
-  "sources": [
-    {
-      "url": "https://en.wikipedia.org/wiki/The",
-      "title": "The - Wikipedia",
-      "domain": "en.wikipedia.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The is a grammatical article in English, denoting nouns that are already or about to"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/English_articles",
-      "title": "English articles - Wikipedia",
-      "domain": "en.wikipedia.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The articles in English are the definite article the and the indefinite article a (which"
-    },
-    {
-      "url": "https://dictionary.cambridge.org/dictionary/english/the",
-      "title": "THE | English meaning - Cambridge Dictionary",
-      "domain": "dictionary.cambridge.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "THE definition: 1. used before nouns to refer to particular things or people that have"
-    },
-    {
-      "url": "https://www.merriam-webster.com/dictionary/the",
-      "title": "THE Definition & Meaning - Merriam-Webster",
-      "domain": "merriam-webster.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Feb 24, 2026 · The meaning of THE is —used as a function word to"
-    },
-    {
-      "url": "https://www.grammarly.com/blog/parts-of-speech/the-part-of-speech/",
-      "title": "What Part of Speech Is the Word “The”? | Grammarly",
-      "domain": "grammarly.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Jan 12, 2024 · What part of speech is the word “the,” and how do"
-    },
-    {
-      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/definite-article",
-      "title": "The definite article: 'the' | LearnEnglish - British Council",
-      "domain": "learnenglish.britishcouncil.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Level: beginner The definite article the is the most frequent word in English. We use"
-    }
-  ],
-  "reasoning": "The provided search results contain no relevant information regarding federal budget history, Congressional appropriations, or fiscal deadlines, instead returning dictionary and grammatical entries for the word \"the\". As a result, the claim cannot be verified against the provided evidence.",
+  "run_id": "run-2026-11-04T134031Z",
+  "sources": [],
+  "reasoning": "Fact-check failed: API error after retry",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -183,6 +134,12 @@
       "confidence": 95,
       "checked_at": "2026-10-19T11:55:15Z",
       "run_id": "run-2026-10-19T115426Z"
+    },
+    {
+      "verdict": "UNVERIFIED",
+      "confidence": 20,
+      "checked_at": "2026-10-28T12:15:08Z",
+      "run_id": "run-2026-10-28T115923Z"
     }
   ],
   "agent_flags": {
