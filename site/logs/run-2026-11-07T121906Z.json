@@ -1,0 +1,478 @@
+{
+  "run_id": "run-2026-11-07T121906Z",
+  "started_at": "2026-11-07T12:19:06Z",
+  "finished_at": "2026-11-07T12:35:02Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-001",
+      "claim_title": "Arctic sea ice decline since 1979",
+      "claim_text": "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to continuous satellite observations recorded by NASA, NOAA, and the National Snow and Ice Data Center (NSIDC) since 1979, Arctic sea ice extent and volume have experienced a steep, statistically significant decline",
+        "NOAA reports that end-of-summer sea ice extent has decreased by over 40% between 1979 and recent years, with all of the lowest recorded extents occurring in the past two decades."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Arctic sea ice has declined significantly since satellite records began in 1979.\\\"\",\n  \"verification_notes\": \"Check NSIDC, NASA, and NOAA data. Look at September minimum extent as the primary metric. Verify trend is statistically significant, not just year-to-year variability.\",\n  \"search_results\": \"[1] Arctic sea ice decline - Wikipedia\\nURL: https://en.wikipedia.org/wiki/Arctic_sea_ice_decline\\nExcerpt: Sea ice in the Arctic region has declined in recent decades in area and volume due to climate change. It has been melting more in summer than it refreezes in winter. Global warming, caused by greenhouse gas forcing is responsible for the decline in Arctic sea ice.\\n\\n[2] Arctic Sea Ice - Global Ocean Monitoring and Observing\\nURL: https://globalocean.noaa.gov/the-ocean/arctic-sea-ice/\\nExcerpt: Jul 23, 2026 · From 2007 to 2023, the sea ice extent was the lowest ever recorded in the satellite record, which dates back to 1979. In 2023, the September monthly average extent was 1.21 million square kilometers smaller than the 1991-2020 average, marking a 43 percent decrease since 1979.\\n\\n[3] Annual Arctic Sea Ice Minimum Area 1979-2024, With Graph\\nURL: https://svs.gsfc.nasa.gov/5395\\nExcerpt: Oct 4, 2024 · Every summer the Arctic ice cap melts down to what scientists call its \\\"minimum\\\" before colder weather begins to cause ice cover to increase. This graph displays the area of the minimum sea ice coverage each year from 1979 through 2024.\\n\\n[4] Sea Ice - NOAA Arctic\\nURL: https://arctic.noaa.gov/report-card/report-card-2024/sea-ice-2024/\\nExcerpt: Sea ice extent Sea ice extent, defined as the total area covered by ice of at least 15% concentration, is one of the most commonly used indicators of long-term Arctic sea ice conditions. The primary source of extent observations is the 46-year record (starting in 1979) derived from satellite-borne p\\n\\n[5] Arctic Sea Ice Decline (1979-2024) - ArcGIS StoryMaps\\nURL: https://storymaps.arcgis.com/stories/4530b4d3da454c7aa5c5af00b0412723\\nExcerpt: Jan 13, 2025 · However, when examining data from the past four decades, scientists have identified a concerning pattern: the long-term extent of summer sea ice in the Arctic is declining at an unprecedented pace. Arctic sea ice typically reaches its minimum extent in September and its maximum extent\\n\\n[6] Graph-Dashboard: Arctic Sea Ice | NOAA Climate.gov\\nURL: https://www.climate.gov/graph-dashboard-arctic-sea-ice\\nExcerpt: Since the start of the satellite era in 1979, the extent of ice covering the Arctic Ocean at the end of summer has shrunk by nearly 40 percent.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"According to continuous satellite observations recorded by NASA, NOAA, and the National Snow and Ice Data Center (NSIDC) since 1979, Arctic sea ice extent and volume have experienced a steep, statistically significant decline. NOAA reports that end-of-summer sea ice extent has decreased by over 40% between 1979 and recent years, with all of the lowest recorded extents occurring in the past two decades.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\"",
+        "Arctic sea ice decline since 1979",
+        "\"Arctic sea ice has declined significantly since satellite records began in 1979.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
+          "title": "Arctic sea ice decline - Wikipedia",
+          "snippet": "Sea ice in the Arctic region has declined in recent decades in area and volume due to climate change. It has been melting more in summer than it refreezes in winter. Global warming, caused by greenhouse gas forcing is responsible for the decline in Arctic sea ice."
+        },
+        {
+          "url": "https://globalocean.noaa.gov/the-ocean/arctic-sea-ice/",
+          "title": "Arctic Sea Ice - Global Ocean Monitoring and Observing",
+          "snippet": "Jul 23, 2026 · From 2007 to 2023, the sea ice extent was the lowest ever recorded in the satellite record, which dates back to 1979. In 2023, the September monthly average extent was 1.21 million square kilometers smaller than the 1991-2020 average, marking a 43 percent decrease since 1979."
+        },
+        {
+          "url": "https://svs.gsfc.nasa.gov/5395",
+          "title": "Annual Arctic Sea Ice Minimum Area 1979-2024, With Graph",
+          "snippet": "Oct 4, 2024 · Every summer the Arctic ice cap melts down to what scientists call its \"minimum\" before colder weather begins to cause ice cover to increase. This graph displays the area of the minimum sea ice coverage each year from 1979 through 2024."
+        },
+        {
+          "url": "https://arctic.noaa.gov/report-card/report-card-2024/sea-ice-2024/",
+          "title": "Sea Ice - NOAA Arctic",
+          "snippet": "Sea ice extent Sea ice extent, defined as the total area covered by ice of at least 15% concentration, is one of the most commonly used indicators of long-term Arctic sea ice conditions. The primary source of extent observations is the 46-year record (starting in 1979) derived from satellite-borne passive microwave sensors."
+        },
+        {
+          "url": "https://storymaps.arcgis.com/stories/4530b4d3da454c7aa5c5af00b0412723",
+          "title": "Arctic Sea Ice Decline (1979-2024) - ArcGIS StoryMaps",
+          "snippet": "Jan 13, 2025 · However, when examining data from the past four decades, scientists have identified a concerning pattern: the long-term extent of summer sea ice in the Arctic is declining at an unprecedented pace. Arctic sea ice typically reaches its minimum extent in September and its maximum extent in March."
+        },
+        {
+          "url": "https://www.climate.gov/graph-dashboard-arctic-sea-ice",
+          "title": "Graph-Dashboard: Arctic Sea Ice | NOAA Climate.gov",
+          "snippet": "Since the start of the satellite era in 1979, the extent of ice covering the Arctic Ocean at the end of summer has shrunk by nearly 40 percent."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-003",
+      "claim_title": "mRNA vaccines alter human DNA",
+      "claim_text": "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is biologically false",
+        "According to established scientific consensus and major health organizations (including the CDC, WHO, and NIH), messenger RNA (mRNA) from the vaccines remains in the cytoplasm of the cell to instruct ribosomes to produce the viral spike protein",
+        "It never enters the cell nucleus where genomic DNA is housed",
+        "Furthermore, mRNA degrades naturally within days and cannot integrate into or alter human DNA."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"mRNA COVID-19 vaccines alter or permanently change human DNA.\\\"\",\n  \"verification_notes\": \"Consult peer-reviewed molecular biology literature. Check CDC, WHO, and NIH statements. Key mechanism to verify: mRNA cannot be reverse-transcribed into DNA without reverse transcriptase enzyme. Check if any credible peer-reviewed evidence to the contrary has emerged.\",\n  \"search_results\": \"[1] You asked, we answered: Can mRNA vaccines alter human DNA?\\nURL: https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna\\nExcerpt: Do mRNA vaccines work by altering human DNA?Additionally, DNA is stored in the nucleus of your cells. mRNA vaccines are designed to do their work outside of the nucleus and have not been observed to interact with the nucleus. Learn more about how mRNA vaccines work.\\n\\n[2] mRNA Vaccines Are Able to Alter DNA\\nURL: https://www.angiesoptiongrm.org/blog/mrna-vaccines-are-able-to-alter-dna\\nExcerpt: For over two years, government agencies and pharmaceutical manufacturers have labeled as misinformation the idea that mRNA vaccines developed by Pfizer and Moderna could alter human DNA. A central tenet of molecular biology holds that DNA is transcribed into RNA which...\\n\\n[3] Anti-vaxxers say a new study claims mRNA vaccines can alter your...\\nURL: https://www.abc.net.au/news/2022-03-04/coronacheck-mrna-vaccines-not-genotoxic-pete-evans/100879220\\nExcerpt: Claims of mRNA vaccines altering human DNA have persisted throughout the pandemic, despite being debunked by fact checkers at Reuters, PolitiFact and AFP. As for the latest study, Traude Beilharz, an associate professor and RNA biologist at Monash University, told Fact Check...\\n\\n[4] Can mRNA Vaccines Alter Human DNA? New Study... - The Stream\\nURL: https://stream.org/can-mrna-vaccines-alter-human-dna-new-study-blows-debate-wide-open/\\nExcerpt: Both messenger RNA (mRNA) and viral vector COVID-19 vaccines work by delivering instructions (genetic material) to our cells to start building protection against the virus that causes COVID-19.\\n\\n[5] Will an mRNA vaccine alter my DNA?\\nURL: https://www.gavi.org/vaccineswork/will-mrna-vaccine-alter-my-dna\\nExcerpt: Some of the COVID-19 vaccines use messenger RNA to provoke an immune response. But what exactly is this genetic material, and how does it interact with the DNA in our cells?\\n\\n[6] Why COVID 19 mRNA vaccines cannot alter human DNA\\nURL: https://www.foundmyfitness.com/episodes/why-covid-19-mrna-vaccines-cannot-alter-human-dna\\nExcerpt: Thus, the series of steps that would result in mRNA incorporating into nuclear DNA is biologically implausible. In this clip, Dr. Roger Seheult and Dr. Rhonda Patrick describe why mRNA vaccines do not alter human genetics.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is biologically false. According to established scientific consensus and major health organizations (including the CDC, WHO, and NIH), messenger RNA (mRNA) from the vaccines remains in the cytoplasm of the cell to instruct ribosomes to produce the viral spike protein. It never enters the cell nucleus where genomic DNA is housed. Furthermore, mRNA degrades naturally within days and cannot integrate into or alter human DNA.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\"",
+        "mRNA vaccines alter human DNA",
+        "\"mRNA COVID-19 vaccines alter or permanently change human DNA.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna",
+          "title": "You asked, we answered: Can mRNA vaccines alter human DNA?",
+          "snippet": "Do mRNA vaccines work by altering human DNA?Additionally, DNA is stored in the nucleus of your cells. mRNA vaccines are designed to do their work outside of the nucleus and have not been observed to interact with the nucleus. Learn more about how mRNA vaccines work."
+        },
+        {
+          "url": "https://www.angiesoptiongrm.org/blog/mrna-vaccines-are-able-to-alter-dna",
+          "title": "mRNA Vaccines Are Able to Alter DNA",
+          "snippet": "For over two years, government agencies and pharmaceutical manufacturers have labeled as misinformation the idea that mRNA vaccines developed by Pfizer and Moderna could alter human DNA. A central tenet of molecular biology holds that DNA is transcribed into RNA which..."
+        },
+        {
+          "url": "https://www.abc.net.au/news/2022-03-04/coronacheck-mrna-vaccines-not-genotoxic-pete-evans/100879220",
+          "title": "Anti-vaxxers say a new study claims mRNA vaccines can alter your...",
+          "snippet": "Claims of mRNA vaccines altering human DNA have persisted throughout the pandemic, despite being debunked by fact checkers at Reuters, PolitiFact and AFP. As for the latest study, Traude Beilharz, an associate professor and RNA biologist at Monash University, told Fact Check..."
+        },
+        {
+          "url": "https://stream.org/can-mrna-vaccines-alter-human-dna-new-study-blows-debate-wide-open/",
+          "title": "Can mRNA Vaccines Alter Human DNA? New Study... - The Stream",
+          "snippet": "Both messenger RNA (mRNA) and viral vector COVID-19 vaccines work by delivering instructions (genetic material) to our cells to start building protection against the virus that causes COVID-19."
+        },
+        {
+          "url": "https://www.gavi.org/vaccineswork/will-mrna-vaccine-alter-my-dna",
+          "title": "Will an mRNA vaccine alter my DNA?",
+          "snippet": "Some of the COVID-19 vaccines use messenger RNA to provoke an immune response. But what exactly is this genetic material, and how does it interact with the DNA in our cells?"
+        },
+        {
+          "url": "https://www.foundmyfitness.com/episodes/why-covid-19-mrna-vaccines-cannot-alter-human-dna",
+          "title": "Why COVID 19 mRNA vaccines cannot alter human DNA",
+          "snippet": "Thus, the series of steps that would result in mRNA incorporating into nuclear DNA is biologically implausible. In this clip, Dr. Roger Seheult and Dr. Rhonda Patrick describe why mRNA vaccines do not alter human genetics."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-007",
+      "claim_title": "Great Wall of China visible from space",
+      "claim_text": "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 99,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim is a well-documented myth",
+        "The Great Wall of China is virtually invisible to the naked human eye from low Earth orbit because it is typically only 6 to 9 meters wide and constructed of materials that blend into the surrounding terrain",
+        "Furthermore, astronauts and space agencies like NASA have confirmed that it cannot be seen without magnification, whereas several other man-made structures (such as major highways, large airports, dams, and city lights at night) can be seen from orbit."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\\\"\",\n  \"verification_notes\": \"Check astronaut accounts, NASA statements, and optical physics. The wall is roughly 9 meters wide — compare to road widths. Verify what actually IS visible from low Earth orbit with the naked eye.\",\n  \"search_results\": \"[1] Fact-check: The Great Wall of China is the only man-made...\\nURL: https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31\\nExcerpt: The total length of the Great Wall, including all its components, is approximately 13,171 miles. The Great Wall was not completed during the reign of Qin Shi Huang. Key Claims.\\n\\n[2] Space Myths: Interactive Lesson on Astronomy... - Spelling Bee Ninja\\nURL: https://spellingbee.ninja/science/space-myths-lesson-and-quiz/\\nExcerpt: Myth: The Great Wall of China is the only man-made structure visible from space with the naked eye. Fact: The Great Wall is not visible from low Earth orbit (where the International Space Station orbits) without magnification.\\n\\n[3] Common Misconceptions: Unveiling the Truth Behind Commonly Held...\\nURL: https://www.linkedin.com/pulse/common-misconceptions-unveiling-truth-behind-commonly-gokhan-unal-q5o0f\\nExcerpt: 5. Misconception: \\\"The Great Wall of China is the Only Man-Made Object Visible from Space\\\". Origins and Belief: This myth suggests that the Great Wall of China is the only man-made structure visible from space with the naked eye.\\n\\n[4] Did You Know? The Great Wall Isn't Visible From Space With the...\\nURL: https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/\\nExcerpt: And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands of kilometers across diverse terrain—it’s also quite narrow, only about 6 to 9 meters wide on average.\\n\\n[5] Influence: Harnessing psychology to create a better world Introductions...\\nURL: https://sites.uni.edu/harton/honors1.pptx\\nExcerpt: The Great Wall of China is the only man-made structure visible from space with the naked eye.\\n\\n[6] 30 Surprising Facts That Will Make You Go ‘Whoa | Medium\\nURL: https://jeniferclark1.medium.com/30-surprising-facts-that-will-make-you-go-whoa-3c5c4b5e1aa\\nExcerpt: Did you know that the Great Wall of China is the only man-made structure visible from space with the naked eye? That’s right, this massive wall stretches over 13,000 miles and was built over the course of several centuries to protect the Chinese empire from invaders.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 99,\n  \"reasoning\": \"The claim is a well-documented myth. The Great Wall of China is virtually invisible to the naked human eye from low Earth orbit because it is typically only 6 to 9 meters wide and constructed of materials that blend into the surrounding terrain. Furthermore, astronauts and space agencies like NASA have confirmed that it cannot be seen without magnification, whereas several other man-made structures (such as major highways, large airports, dams, and city lights at night) can be seen from orbit.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+        "Great Wall of China visible from space",
+        "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
+          "title": "Fact-check: The Great Wall of China is the only man-made...",
+          "snippet": "The total length of the Great Wall, including all its components, is approximately 13,171 miles. The Great Wall was not completed during the reign of Qin Shi Huang. Key Claims."
+        },
+        {
+          "url": "https://spellingbee.ninja/science/space-myths-lesson-and-quiz/",
+          "title": "Space Myths: Interactive Lesson on Astronomy... - Spelling Bee Ninja",
+          "snippet": "Myth: The Great Wall of China is the only man-made structure visible from space with the naked eye. Fact: The Great Wall is not visible from low Earth orbit (where the International Space Station orbits) without magnification."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/common-misconceptions-unveiling-truth-behind-commonly-gokhan-unal-q5o0f",
+          "title": "Common Misconceptions: Unveiling the Truth Behind Commonly Held...",
+          "snippet": "5. Misconception: \"The Great Wall of China is the Only Man-Made Object Visible from Space\". Origins and Belief: This myth suggests that the Great Wall of China is the only man-made structure visible from space with the naked eye."
+        },
+        {
+          "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
+          "title": "Did You Know? The Great Wall Isn't Visible From Space With the...",
+          "snippet": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands of kilometers across diverse terrain—it’s also quite narrow, only about 6 to 9 meters wide on average."
+        },
+        {
+          "url": "https://sites.uni.edu/harton/honors1.pptx",
+          "title": "Influence: Harnessing psychology to create a better world Introductions...",
+          "snippet": "The Great Wall of China is the only man-made structure visible from space with the naked eye."
+        },
+        {
+          "url": "https://jeniferclark1.medium.com/30-surprising-facts-that-will-make-you-go-whoa-3c5c4b5e1aa",
+          "title": "30 Surprising Facts That Will Make You Go ‘Whoa | Medium",
+          "snippet": "Did you know that the Great Wall of China is the only man-made structure visible from space with the naked eye? That’s right, this massive wall stretches over 13,000 miles and was built over the course of several centuries to protect the Chinese empire from invaders."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_title": "Napoleon was unusually short",
+      "claim_text": "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that Napoleon Bonaparte was unusually short is a well-documented historical myth",
+        "Following his death in 1821, his autopsy recorded his height as 5 pieds 2 pouces in pre-metric French units",
+        "A French inch (pouce) was longer than an English inch (approximately 2.7 cm compared to 2.54 cm)",
+        "When converted to modern imperial units, Napoleon was actually around 5 feet 6 inches to 5 feet 7 inches (approximately 1.68 to 1.69 meters) tall",
+        "This made him of average or slightly above average height for a French male in the early 19th century",
+        "The misconception of his shortness was perpetuated by the literal translation of the French measurements into English feet and inches, as well as contemporary British political propaganda (notably caricatures by James Gillray)."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\\\"\",\n  \"verification_notes\": \"Check historical records of Napoleon's height in French inches vs English inches. Verify average male height in early 19th century France. Look at accounts from contemporaries and his physician's records. The British caricaturist James Gillray's role in perpetuating the myth is worth examining.\",\n  \"search_results\": \"[1] Is \\\"Napoleon Bonaparte was unusually…\\\" true? | School Myths\\nURL: https://www.schoolmyths.com/fact/napoleon-was-short\\nExcerpt: Napoleon was not unusually short.Napoleon was not unusually short. Three French sources, including his physician Francesco Antommarchi at the 1821 autopsy, recorded him at just over 5 pieds 2 pouces.\\n\\n[2] How tall was Napoleon really? | Evidiant\\nURL: https://evidiant.com/t/napoleon-unusually-short\\nExcerpt: The image of Napoleon as unusually short is debunked. His recorded height of 5 feet 2 inches was in French units, where the inch (pouce) was longer than the English inch, converting to roughly 1.67 m, about average or slightly above average for French men of his era.\\n\\n[3] How Tall Was Napoleon? The Truth About His Height\\nURL: https://allthatsinteresting.com/how-tall-was-napoleon\\nExcerpt: One of the main reasons people believe Napoleon Bonaparte was unusually short stems from the discrepancy between French and English inches.\\n\\n[4] Debunked: Napoleon Was Not Actually Short | HistorIQly Blog\\nURL: https://blog.historiqly.com/blog/debunked-napoleon-was-short\\nExcerpt: Then there is the psychology. \\\"Napoleon complex\\\" is a genuinely useful shorthand that gets used constantly, in offices, in sports commentary, in casual conversation, and every use of it silently reinforces the premise that the historical Napoleon really was unusually short.\\n\\n[5] Fact Check: Napoleon was unusually short - False | FactSentinel\\nURL: https://factsentinel.com/check/napoleon-was-unusually-short\\nExcerpt: The claim that Napoleon Bonaparte was unusually short is a persistent historical myth that contradicts the actual evidence.\\n\\n[6] What the Napoleon Complex Actually Says About Insecurity\\nURL: https://www.reachlink.com/advice/personality/what-the-napoleon-complex-actually-says-about-insecurity/\\nExcerpt: Everything you think you know about the Napoleon complex is probably wrong. The man it's named after wasn't unusually short. The behavior it describes may be a rational response to real social bias, not a character flaw. And it has no clinical diagnosis.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim that Napoleon Bonaparte was unusually short is a well-documented historical myth. Following his death in 1821, his autopsy recorded his height as 5 pieds 2 pouces in pre-metric French units. A French inch (pouce) was longer than an English inch (approximately 2.7 cm compared to 2.54 cm). When converted to modern imperial units, Napoleon was actually around 5 feet 6 inches to 5 feet 7 inches (approximately 1.68 to 1.69 meters) tall. This made him of average or slightly above average height for a French male in the early 19th century. The misconception of his shortness was perpetuated by the literal translation of the French measurements into English feet and inches, as well as contemporary British political propaganda (notably caricatures by James Gillray).\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+        "Napoleon was unusually short",
+        "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.schoolmyths.com/fact/napoleon-was-short",
+          "title": "Is \"Napoleon Bonaparte was unusually…\" true? | School Myths",
+          "snippet": "Napoleon was not unusually short.Napoleon was not unusually short. Three French sources, including his physician Francesco Antommarchi at the 1821 autopsy, recorded him at just over 5 pieds 2 pouces."
+        },
+        {
+          "url": "https://evidiant.com/t/napoleon-unusually-short",
+          "title": "How tall was Napoleon really? | Evidiant",
+          "snippet": "The image of Napoleon as unusually short is debunked. His recorded height of 5 feet 2 inches was in French units, where the inch (pouce) was longer than the English inch, converting to roughly 1.67 m, about average or slightly above average for French men of his era."
+        },
+        {
+          "url": "https://allthatsinteresting.com/how-tall-was-napoleon",
+          "title": "How Tall Was Napoleon? The Truth About His Height",
+          "snippet": "One of the main reasons people believe Napoleon Bonaparte was unusually short stems from the discrepancy between French and English inches."
+        },
+        {
+          "url": "https://blog.historiqly.com/blog/debunked-napoleon-was-short",
+          "title": "Debunked: Napoleon Was Not Actually Short | HistorIQly Blog",
+          "snippet": "Then there is the psychology. \"Napoleon complex\" is a genuinely useful shorthand that gets used constantly, in offices, in sports commentary, in casual conversation, and every use of it silently reinforces the premise that the historical Napoleon really was unusually short."
+        },
+        {
+          "url": "https://factsentinel.com/check/napoleon-was-unusually-short",
+          "title": "Fact Check: Napoleon was unusually short - False | FactSentinel",
+          "snippet": "The claim that Napoleon Bonaparte was unusually short is a persistent historical myth that contradicts the actual evidence."
+        },
+        {
+          "url": "https://www.reachlink.com/advice/personality/what-the-napoleon-complex-actually-says-about-insecurity/",
+          "title": "What the Napoleon Complex Actually Says About Insecurity",
+          "snippet": "Everything you think you know about the Napoleon complex is probably wrong. The man it's named after wasn't unusually short. The behavior it describes may be a rational response to real social bias, not a character flaw. And it has no clinical diagnosis."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 92,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to analysis from the Cambridge Centre for Alternative Finance (Cambridge Bitcoin Electricity Consumption Index), Bitcoin's estimated annualized electricity consumption has reached between 120 and 150+ terawatt-hours (TWh)",
+        "This level of power usage exceeds the entire annual electricity consumption of countries such as Argentina (which consumes approximately 121–130 TWh per year), as widely reported by established media outlets including the BBC."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\\\"\",\n  \"verification_notes\": \"Check the Cambridge CBECI for current figures. Compare to IEA national electricity consumption data. Verify whether the comparison holds with current mining conditions. Note whether the claim refers to TWh/year.\",\n  \"search_results\": \"[1] Bitcoin consumes 'more electricity than Argentina'\\nURL: https://www.bbc.com/news/technology-56012952\\nExcerpt: Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \\\"Mining\\\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions.\\n\\n[2] Bitcoin consumes 'more electricity than Argentina' - BBC News\\nURL: https://www.bbc.co.uk/news/technology-56012952\\nExcerpt: Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \\\"Mining\\\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions.\\n\\n[3] What Uses More Power Than Argentina But... | Hackaday\\nURL: https://hackaday.com/2021/03/03/what-uses-more-power-than-argentina-but-doesnt-dance-the-tango/\\nExcerpt: It’s usual to hear criticism of Bitcoin for its volatility or its sometime association with shady deals, but what’s different this time is that the primary criticism is of its environmental credentials. The Bitcoin network, we are told, uses more electricity than the Netherlands, more than Argentina\\n\\n[4] Bitcoin consumes more electricity than Argentina, UAE, and the...\\nURL: https://ca.finance.yahoo.com/news/bitcoin-cryptocurrency-consumes-more-electricity-than-argentina-140323187.html\\nExcerpt: If Bitcoin (BTC-USD) were a country, it would be in the top 30 energy users worldwide, consuming more electricity than Argentina. That's according to analysis by Cambridge University's online tool, which showed that the virtual coin uses around 121.36 terawatt-hours (TWh) per year.\\n\\n[5] Bitcoin Consumes 'More Electricity Than Argentina'\\nURL: https://maineclimatehub.org/external-resources/bitcoin-consumes-more-electricity-than-argentina\\nExcerpt: This resource evaluates energy consumption from operating bitcoin as compared with Countries who consume terrawats of electricity, this is a good finding from Cambridge researchers as data in the chart depicts that using Bitcoin consumes more energy than Argentina...\\n\\n[6] We’re Going to Need More Energy. And That’s OK. | American... - AEI\\nURL: https://www.aei.org/economics/were-going-to-need-more-energy-and-thats-ok/\\nExcerpt: “Bitcoin consumes ‘more electricity than Argentina” – BBC. “Bitcoin’s wild ride renews worries about its massive carbon footprint” – CNBC. I mean, pick your country here. Do these mining operations consume as much as Argentina? Or is it Chile?\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 92,\n  \"reasoning\": \"According to analysis from the Cambridge Centre for Alternative Finance (Cambridge Bitcoin Electricity Consumption Index), Bitcoin's estimated annualized electricity consumption has reached between 120 and 150+ terawatt-hours (TWh). This level of power usage exceeds the entire annual electricity consumption of countries such as Argentina (which consumes approximately 121–130 TWh per year), as widely reported by established media outlets including the BBC.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+        "Bitcoin uses more electricity than Argentina",
+        "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.bbc.com/news/technology-56012952",
+          "title": "Bitcoin consumes 'more electricity than Argentina'",
+          "snippet": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \"Mining\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions."
+        },
+        {
+          "url": "https://www.bbc.co.uk/news/technology-56012952",
+          "title": "Bitcoin consumes 'more electricity than Argentina' - BBC News",
+          "snippet": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests. \"Mining\" for the cryptocurrency is power-hungry, involving heavy computer calculations to verify transactions."
+        },
+        {
+          "url": "https://hackaday.com/2021/03/03/what-uses-more-power-than-argentina-but-doesnt-dance-the-tango/",
+          "title": "What Uses More Power Than Argentina But... | Hackaday",
+          "snippet": "It’s usual to hear criticism of Bitcoin for its volatility or its sometime association with shady deals, but what’s different this time is that the primary criticism is of its environmental credentials. The Bitcoin network, we are told, uses more electricity than the Netherlands, more than Argentina..."
+        },
+        {
+          "url": "https://ca.finance.yahoo.com/news/bitcoin-cryptocurrency-consumes-more-electricity-than-argentina-140323187.html",
+          "title": "Bitcoin consumes more electricity than Argentina, UAE, and the...",
+          "snippet": "If Bitcoin (BTC-USD) were a country, it would be in the top 30 energy users worldwide, consuming more electricity than Argentina. That's according to analysis by Cambridge University's online tool, which showed that the virtual coin uses around 121.36 terawatt-hours (TWh) per year."
+        },
+        {
+          "url": "https://maineclimatehub.org/external-resources/bitcoin-consumes-more-electricity-than-argentina",
+          "title": "Bitcoin Consumes 'More Electricity Than Argentina'",
+          "snippet": "This resource evaluates energy consumption from operating bitcoin as compared with Countries who consume terrawats of electricity, this is a good finding from Cambridge researchers as data in the chart depicts that using Bitcoin consumes more energy than Argentina..."
+        },
+        {
+          "url": "https://www.aei.org/economics/were-going-to-need-more-energy-and-thats-ok/",
+          "title": "We’re Going to Need More Energy. And That’s OK. | American... - AEI",
+          "snippet": "“Bitcoin consumes ‘more electricity than Argentina” – BBC. “Bitcoin’s wild ride renews worries about its massive carbon footprint” – CNBC. I mean, pick your country here. Do these mining operations consume as much as Argentina? Or is it Chile?"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_title": "Octopuses have three hearts and blue blood",
+      "claim_text": "\"Octopuses have three hearts and their blood is blue.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 98,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "Octopuses possess three hearts: two branchial hearts that pump deoxygenated blood through the gills to collect oxygen, and one systemic heart that pumps the oxygenated blood throughout the rest of the body",
+        "Furthermore, their blood is blue because it uses the copper-based protein hemocyanin rather than the iron-based hemoglobin found in vertebrates to transport oxygen, which appears blue when oxygenated and is adapted for cold, low-oxygen marine environments."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Octopuses have three hearts and their blood is blue.\\\"\",\n  \"verification_notes\": \"Check marine biology sources. Verify the function of each heart (two branchial hearts, one systemic). Confirm the copper-based hemocyanin mechanism that makes blood blue. Check whether the blood turns colorless when deoxygenated.\",\n  \"search_results\": \"[1] Octopuses Have Three Hearts and Blue Blood – Here’s Why ...\\nURL: https://wowtoknow.com/octopuses-have-three-hearts-and-blue-blood/\\nExcerpt: Mar 29, 2025 · Octopuses have three hearts and blue blood, and those two traits aren’t random. They evolved to help these animals survive in the cold, high-pressure world of the deep sea. Let’s break down how this works and why it’s more than just a cool fact – it’s key to understanding one of the m\\n\\n[2] Octopus Hearts: How Many Hearts Does An Octopus Have?\\nURL: https://www.scienceabc.com/nature/animals/why-do-octopuses-have-three-hearts\\nExcerpt: Feb 29, 2020 · Octopuses have three hearts: two branchial hearts that pump blood through the gills, and one systemic heart that circulates oxygenated blood to the body. They need this extra pumping power because their copper-based hemocyanin blood is far less efficient at carrying oxygen than our ir\\n\\n[3] Do Octopus Bleed? The Science of Their Blue Blood & 3 Hearts\\nURL: https://biologyinsights.com/do-octopus-bleed-the-science-of-their-blue-blood-3-hearts/\\nExcerpt: Aug 26, 2025 · Octopuses indeed bleed, and their blood is distinctly blue. The unusual color of their blood, along with their specialized circulatory system, plays a significant role in their survival and active lifestyle beneath the waves. The striking blue color of octopus blood comes from a coppe\\n\\n[4] Octopuses Have Three Hearts and Nine Brains—Here’s Why\\nURL: https://discoverwildscience.com/octopuses-have-three-hearts-and-nine-brains-heres-why-4-297069/\\nExcerpt: Apr 27, 2026 · Unlike humans, whose blood is red because of iron-based hemoglobin, octopus blood uses copper-based hemocyanin to carry oxygen. This blue pigment is more efficient at transporting oxygen in cold, low-oxygen environments, which is where many octopus species live.\\n\\n[5] Ten Wild Facts About Octopuses: They Have Three Hearts, Big ...\\nURL: https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/\\nExcerpt: Mar 13, 2024 · Octopuses have three hearts. Two of the hearts work exclusively to move blood past the animal’s gills, where it releases carbon dioxide and gains oxygen. Then, the third heart...\\n\\n[6] Why Octopuses Have Three Hearts - The Prodigious\\nURL: https://theprodigious.com/the-odd-beat-of-the-ocean-why-octopuses-have-three-hearts-and-two-stop-when-they-swim/\\nExcerpt: Aug 13, 2025 · Each heart has its own job. Two of them are branchial hearts, one at the base of each gill. They pump oxygen-poor blood through the gills. The third is the systemic heart. Once blood has picked up fresh oxygen in the gills, the systemic heart pumps it out to the rest of the body: the\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 98,\n  \"reasoning\": \"Octopuses possess three hearts: two branchial hearts that pump deoxygenated blood through the gills to collect oxygen, and one systemic heart that pumps the oxygenated blood throughout the rest of the body. Furthermore, their blood is blue because it uses the copper-based protein hemocyanin rather than the iron-based hemoglobin found in vertebrates to transport oxygen, which appears blue when oxygenated and is adapted for cold, low-oxygen marine environments.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Octopuses have three hearts and their blood is blue.\"",
+        "Octopuses have three hearts and blue blood",
+        "\"Octopuses have three hearts and their blood is blue.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://wowtoknow.com/octopuses-have-three-hearts-and-blue-blood/",
+          "title": "Octopuses Have Three Hearts and Blue Blood – Here’s Why ...",
+          "snippet": "Mar 29, 2025 · Octopuses have three hearts and blue blood, and those two traits aren’t random. They evolved to help these animals survive in the cold, high-pressure world of the deep sea. Let’s break down how this works and why it’s more than just a cool fact – it’s key to understanding one of the most bizarrely intelligent animals on the planet."
+        },
+        {
+          "url": "https://www.scienceabc.com/nature/animals/why-do-octopuses-have-three-hearts",
+          "title": "Octopus Hearts: How Many Hearts Does An Octopus Have?",
+          "snippet": "Feb 29, 2020 · Octopuses have three hearts: two branchial hearts that pump blood through the gills, and one systemic heart that circulates oxygenated blood to the body. They need this extra pumping power because their copper-based hemocyanin blood is far less efficient at carrying oxygen than our iron-based hemoglobin."
+        },
+        {
+          "url": "https://biologyinsights.com/do-octopus-bleed-the-science-of-their-blue-blood-3-hearts/",
+          "title": "Do Octopus Bleed? The Science of Their Blue Blood & 3 Hearts",
+          "snippet": "Aug 26, 2025 · Octopuses indeed bleed, and their blood is distinctly blue. The unusual color of their blood, along with their specialized circulatory system, plays a significant role in their survival and active lifestyle beneath the waves. The striking blue color of octopus blood comes from a copper-containing protein called hemocyanin."
+        },
+        {
+          "url": "https://discoverwildscience.com/octopuses-have-three-hearts-and-nine-brains-heres-why-4-297069/",
+          "title": "Octopuses Have Three Hearts and Nine Brains—Here’s Why",
+          "snippet": "Apr 27, 2026 · Unlike humans, whose blood is red because of iron-based hemoglobin, octopus blood uses copper-based hemocyanin to carry oxygen. This blue pigment is more efficient at transporting oxygen in cold, low-oxygen environments, which is where many octopus species live."
+        },
+        {
+          "url": "https://www.smithsonianmag.com/science-nature/ten-wild-facts-about-octopuses-they-have-three-hearts-big-brains-and-blue-blood-7625828/",
+          "title": "Ten Wild Facts About Octopuses: They Have Three Hearts, Big ...",
+          "snippet": "Mar 13, 2024 · Octopuses have three hearts. Two of the hearts work exclusively to move blood past the animal’s gills, where it releases carbon dioxide and gains oxygen. Then, the third heart..."
+        },
+        {
+          "url": "https://theprodigious.com/the-odd-beat-of-the-ocean-why-octopuses-have-three-hearts-and-two-stop-when-they-swim/",
+          "title": "Why Octopuses Have Three Hearts - The Prodigious",
+          "snippet": "Aug 13, 2025 · Each heart has its own job. Two of them are branchial hearts, one at the base of each gill. They pump oxygen-poor blood through the gills. The third is the systemic heart. Once blood has picked up fresh oxygen in the gills, the systemic heart pumps it out to the rest of the body: the arms, the brain and every other organ."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 3
+}
