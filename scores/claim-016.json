@@ -3,33 +3,25 @@
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
   "confidence": 90,
-  "last_checked_at": "2026-11-01T12:38:44Z",
+  "last_checked_at": "2026-11-08T13:07:22Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-11-01T123242Z",
+  "run_id": "run-2026-11-08T123844Z",
   "sources": [
     {
-      "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
-      "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
-      "domain": "nexford.edu",
+      "url": "https://min.news/en/tech/d188f9f308a1334ecc839a78de64cf4e.html",
+      "title": "AI may replace 300 million jobs! Don't panic, ordinary people, the...",
+      "domain": "min.news",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by"
+      "excerpt": "Recently, the claim that ' AI will replace 300 million jobs' has gone viral online,"
     },
     {
-      "url": "https://www.businessinsider.com/ai-taking-jobs-fears-artists-say-already-happening-2023-10",
-      "title": "Workers Fear AI Taking Their Jobs, but Artists Say... - Business Insider",
-      "domain": "businessinsider.com",
+      "url": "https://www.youtube.com/watch?v=PzRDmok1xgY",
+      "title": "If AI Takes All The Jobs, This Is What Society Looks Like - YouTube",
+      "domain": "youtube.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Goldman Sachs predict that 300 million jobs could be disrupted by AI, with workers worrying"
-    },
-    {
-      "url": "https://www.linkedin.com/pulse/generative-ai-my-daughters-future-work-ben-pouladian-y6ouc",
-      "title": "Amazon CEO Andy Jassy’s Generative AI Message—and How It...",
-      "domain": "linkedin.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "A Generation Facing an AI-Powered Job Market. My daughters’ generation – Generation Alpha – will"
+      "excerpt": "AI Will Erase 300 Million Jobs By 2030 (Do This NOW To Survive)Tom Bilyeu724K •"
     },
     {
       "url": "https://therealbradlea.libsyn.com/ai-will-replace-300-million-jobs-by-2030-how-to-survive-the-shift",
@@ -40,23 +32,31 @@
       "excerpt": "Perry drops hard truths about the AI apocalypse barreling toward us: how Microsoft, Amazon, and"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Z1U9CS8Z-2U",
-      "title": "Will AI take your job? | Start Here - YouTube",
-      "domain": "youtube.com",
+      "url": "https://www.ai-jarvis.eu/ai-taking-jobs-and-unemployment-rising-how-prepare-while-theres-still-time",
+      "title": "AI Is Taking Jobs and Unemployment Is Rising. How to Prepare While...",
+      "domain": "ai-jarvis.eu",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AI can now do things we used to think only humans could do. So how"
+      "excerpt": "AI is disrupting the labor market faster than most people realize. And it's only getting"
     },
     {
-      "url": "https://yourstory.com/2025/04/generative-ai-is-not-a-magic-wand--its-a-strategic-tool",
-      "title": "Generative AI is not a magic wand, it’s a strategic tool | YourStory",
-      "domain": "yourstory.com",
+      "url": "https://damonnewmanpbdwec.storage.googleapis.com/how-will-artificial-intelligence-affect-jobs-20262030.html",
+      "title": "The Complete How Will Artificial Intelligence Affect Jobs 20262030...",
+      "domain": "damonnewmanpbdwec.storage.googleapis.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "McKinsey puts the contribution of generative AI (GenAI) to the global economy at up to"
+      "excerpt": "How Will AI Affect Jobs - How many jobs will AI replace by 2030.The impact"
+    },
+    {
+      "url": "https://www.itpro.com/technology/artificial-intelligence/tech-workers-fear-generative-ai-could-drive-women-out-the-workforce",
+      "title": "Tech workers fear generative AI could \"drive women out the...\" | IT Pr...",
+      "domain": "itpro.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "\"So with concerns about the growth of generative AI potentially pushing more women out of"
     }
   ],
-  "reasoning": "The claim misrepresents the findings of a widely cited March 2023 report by Goldman Sachs economists (Hatzius et al.). The report did not predict that generative AI \"will replace\" 300 million jobs. Rather, it estimated that generative AI could expose the equivalent of roughly 300 million full-time jobs globally to automation. \n\nCrucially, the authors distinguished between tasks being automated and workers being replaced. The report noted that for most workers, AI would serve as a complement rather than a substitute, partially automating tasks while enhancing overall productivity. Transforming an economic estimate of potential task exposure into a definitive prediction of 300 million job losses exaggerates and distorts the source's actual conclusions.",
+  "reasoning": "The widely cited figure originates from a March 2023 Goldman Sachs research report authored by Jan Hatzius and colleagues. The report estimated that generative AI could expose roughly 300 million full-time jobs worldwide to automation, based on an analysis of occupational task databases in the US and Europe. However, the study explicitly distinguished between \"exposure to automation\" and outright job replacement. Goldman Sachs noted that for most occupations, generative AI would partially automate specific tasks and act as a complement to human labor rather than replace whole jobs. Furthermore, the report highlighted that technological displacement has historically been offset by the creation of new employment and productivity gains. Stating definitively that generative AI \"will replace 300 million jobs\" distorts the findings by conflating task exposure with total job destruction.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -183,6 +183,12 @@
       "confidence": 88,
       "checked_at": "2026-10-25T10:43:07Z",
       "run_id": "run-2026-10-25T103432Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 90,
+      "checked_at": "2026-11-01T12:38:44Z",
+      "run_id": "run-2026-11-01T123242Z"
     }
   ],
   "agent_flags": {

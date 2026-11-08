@@ -3,10 +3,18 @@
   "claim_id": "claim-011",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-11-01T12:33:16Z",
+  "last_checked_at": "2026-11-08T12:54:25Z",
   "last_changed_at": "2026-07-10T09:35:32Z",
-  "run_id": "run-2026-11-01T123242Z",
+  "run_id": "run-2026-11-08T123844Z",
   "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Glutamate_flavoring",
+      "title": "Glutamate flavoring - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "That MSG causes health problems may have thrived on racially charged biases from the outset."
+    },
     {
       "url": "https://www.verdik.co/claims/msg-causes-chinese-restaurant-syndrome-headaches-most-adults-typical-food-doses",
       "title": "Is it true that mSG causes 'Chinese restaurant syndrome... | Verdik",
@@ -16,12 +24,12 @@
       "excerpt": "Review of alleged health hazards and preclinical studies; does not specifically address headaches or Chinese"
     },
     {
-      "url": "https://edition.cnn.com/2020/01/18/asia/chinese-restaurant-syndrome-msg-intl-hnk-scli/index.html",
-      "title": "MSG in Chinese restaurants isn’t unhealthy – you’re just racist...",
-      "domain": "edition.cnn.com",
+      "url": "https://www.bbc.com/news/world-us-canada-51139005",
+      "title": "'Chinese Restaurant Syndrome' - what is it and is it racist?",
+      "domain": "bbc.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "“Chinese Restaurant Syndrome isn’t just scientifically false — it’s xenophobic.”A 1969 scientific paper identified MSG"
+      "excerpt": "What is 'Chinese Restaurant Syndrome'? Tucked between \"Chinese red\" and \"Chinese rose\", the disputed entry"
     },
     {
       "url": "https://www.sciencehistory.org/stories/magazine/the-rotten-science-behind-the-msg-scare/",
@@ -32,31 +40,23 @@
       "excerpt": "As a result, the panic over Chinese Restaurant Syndrome kept building and building. Ralph Nader"
     },
     {
-      "url": "https://www.sciencenews.org/article/50-years-ago-msg-chinese-restaurant-syndrome",
-      "title": "50 years ago, MSG in Chinese food got a bad rap | Science News",
-      "domain": "sciencenews.org",
+      "url": "https://www.researchgate.net/publication/312341697_Chinese_Restaurant_Syndrome",
+      "title": "(PDF) Chinese Restaurant Syndrome",
+      "domain": "researchgate.net",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "March 8, 1969 cover Chinese Restaurant syndrome varies —.In the Feb. 21 Science, [researchers] report"
+      "excerpt": "evaluating causal relationship between MSG and headache. was inconclusive and suggested the need of more"
     },
     {
-      "url": "https://zoe.com/learn/msg",
-      "title": "MSG: All You Need To Know",
-      "domain": "zoe.com",
+      "url": "https://blogs.ubc.ca/communicatingchemistry2022w209/2023/03/21/msg-a-story-of-how-bad-science-led-to-a-bad-reputation/",
+      "title": "MSG: A Story of how Bad Science Led to a Bad Reputation...",
+      "domain": "blogs.ubc.ca",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The term “Chinese restaurant syndrome” has racist connotations and, after some pressure from Ajinomoto via"
-    },
-    {
-      "url": "https://www.bbc.com/future/article/20151106-is-msg-as-bad-as-its-made-out-to-be",
-      "title": "Is MSG as bad as it’s made out to be?",
-      "domain": "bbc.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Researchers found the so-called Chinese Restaurant Syndrome symptoms occurred at roughly the same rate, regardless"
+      "excerpt": "Added to most bagged potato chips, fast foods, taco seasonings, and soups. The negative view"
     }
   ],
-  "reasoning": "Extensive scientific research, including rigorous double-blind placebo-controlled trials, has repeatedly failed to establish a causal link between dietary MSG consumption and symptoms such as headaches, numbness, or \"Chinese restaurant syndrome.\" The term originated from an anecdotal 1968 letter published in the New England Journal of Medicine, which sparked widespread public panic and xenophobic stigma rather than scientifically validated findings. Major food safety and health authorities worldwide, including the US Food and Drug Administration (FDA) and the World Health Organization (WHO), classify MSG as \"generally recognized as safe\" (GRAS), noting that the human body metabolizes added MSG identically to the naturally occurring glutamates found in foods like tomatoes and aged cheese. Placebo-controlled studies show that reported symptoms occur at similar rates between MSG and placebo groups.",
+  "reasoning": "The claim that monosodium glutamate (MSG) causes headaches, numbness, and other symptoms collectively referred to as \"Chinese restaurant syndrome\" is false. The concept originated from an anecdotal 1968 letter to the New England Journal of Medicine, which led to widespread public panic and racially biased perceptions. Decades of subsequent rigorous, double-blind, placebo-controlled studies have consistently failed to demonstrate a causal link between dietary MSG consumption and these symptoms. Major scientific and regulatory bodies worldwide, including the US Food and Drug Administration (FDA) and the World Health Organization (WHO), classify MSG as \"generally recognized as safe\" (GRAS). Furthermore, chemically, the body metabolizes added glutamate in MSG in the exact same manner as naturally occurring glutamate found abundantly in foods like tomatoes, mushrooms, and aged cheeses.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -183,6 +183,12 @@
       "confidence": 95,
       "checked_at": "2026-10-25T10:37:52Z",
       "run_id": "run-2026-10-25T103432Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-11-01T12:33:16Z",
+      "run_id": "run-2026-11-01T123242Z"
     }
   ],
   "agent_flags": {
