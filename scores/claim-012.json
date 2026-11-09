@@ -3,60 +3,60 @@
   "claim_id": "claim-012",
   "verdict": "FALSE",
   "confidence": 100,
-  "last_checked_at": "2026-10-26T12:25:36Z",
+  "last_checked_at": "2026-11-09T15:25:04Z",
   "last_changed_at": "2026-06-09T23:47:23Z",
-  "run_id": "run-2026-10-26T120739Z",
+  "run_id": "run-2026-11-09T145742Z",
   "sources": [
     {
-      "url": "https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html",
-      "title": "'Lightning Never Strikes the Same Place Twice'... Or Does It?",
-      "domain": "learningenglish.voanews.com",
+      "url": "https://www.britannica.com/story/can-lightning-strike-the-same-place-twice",
+      "title": "Can Lightning Strike the Same Place Twice? | Britannica",
+      "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Anything that comes to represent something that people criticize can be called a lightning rod."
+      "excerpt": "In reality, lightning can and will strike the same place twice, whether it be during"
+    },
+    {
+      "url": "https://www.merriam-webster.com/dictionary/lightning+never+strikes+(the+same+place)+twice",
+      "title": "LIGHTNING NEVER STRIKES (THE SAME PLACE) TWICE Definition ...",
+      "domain": "merriam-webster.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Jul 10, 2018 · The meaning of LIGHTNING NEVER STRIKES (THE SAME PLACE) TWICE is"
     },
     {
       "url": "https://idioms.thefreedictionary.com/lightning+never+strikes+the+same+place+twice",
-      "title": "Lightning never strikes the same place twice - Idioms by The Free...",
+      "title": "Lightning never strikes the same place twice - Idioms by The ...",
       "domain": "idioms.thefreedictionary.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "ˌlightning never strikes (in the same place) ˈtwice.In a copy of the resolution uploaded on"
+      "excerpt": "proverb Something that's very extraordinary and unlikely to happen will never happen to the same"
     },
     {
-      "url": "https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html",
-      "title": "VOA Special English - 'Lightning Never Strikes the Same Place...",
-      "domain": "21voa.com",
+      "url": "https://www.weather.gov/safety/lightning-myths",
+      "title": "Lightning Myths - National Weather Service",
+      "domain": "weather.gov",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "You know, lightning never strikes twice!\" That probably will not make your head feel any"
+      "excerpt": "Fact: Lightning often strikes the same place repeatedly, especially if it's a tall, pointy, isolated"
     },
     {
-      "url": "https://weather.com/science/weather-explainers/news/2025-03-17-lightning-never-strikes-twice-fact-fiction",
-      "title": "Lightning Never Strikes Twice – Or Does It? | Weather.com",
-      "domain": "weather.com",
+      "url": "https://discoverwildscience.com/lightning-doesnt-strike-the-same-place-twice-it-definitely-does-4-326178/",
+      "title": "Lightning Doesn’t Strike the Same Place Twice? It Definitely ...",
+      "domain": "discoverwildscience.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "“Lightning never strikes the same place twice” is a common idiom used to mean that"
+      "excerpt": "Jul 21, 2026 · The saying “lightning never strikes the same place twice” didn’t come"
     },
     {
-      "url": "https://www.shazam.com/song/6774828478/lightning-never-strike-twice",
-      "title": "Lightning Never Strike Twice - Andre Lattimore: Song Lyrics, Music...",
-      "domain": "shazam.com",
+      "url": "https://debunked.info/terms/lightning-never-twice/",
+      "title": "Lightning never strikes the same place twice: False",
+      "domain": "debunked.info",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Lightning never strikes the same place twice. Oh, the same place twice. Oh, I tried"
-    },
-    {
-      "url": "https://englishpluspodcast.com/dispelling-the-myth-lightning-strikes-the-same-place-twice/",
-      "title": "Dispelling the Myth: Lightning Strikes the Same Place Twice",
-      "domain": "englishpluspodcast.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Myth 1: Lightning never strikes the same place twice.Lightning, with its dazzling displays of electric"
+      "excerpt": "Jun 1, 2026 · Common claims Lightning never strikes the same place twice.Not supported Tall"
     }
   ],
-  "reasoning": "The claim that \"lightning never strikes the same place twice\" is a common myth and scientifically false. Lightning naturally follows the path of least electrical resistance to ground, meaning tall, isolated, and conductive structures are struck repeatedly. For instance, according to meteorological data from NOAA and the National Weather Service, tall buildings like the Empire State Building are struck by lightning dozens of times every year, and individual lightning flashes can also strike the ground in multiple places or re-strike the same channel during a single event.",
+  "reasoning": "The claim that lightning never strikes the same place twice is a widespread myth and scientifically false. According to the National Weather Service (NWS) and Britannica, lightning frequently strikes the exact same location multiple times, particularly tall, pointed, or isolated structures that offer a path of least resistance for electrical discharge. For instance, the NWS notes that the Empire State Building is struck by lightning an average of 23 times each year. While the phrase is commonly used as an idiom meaning an unusual event is unlikely to recur, it is physically inaccurate.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -177,6 +177,12 @@
       "confidence": 100,
       "checked_at": "2026-10-19T11:55:43Z",
       "run_id": "run-2026-10-19T115426Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-10-26T12:25:36Z",
+      "run_id": "run-2026-10-26T120739Z"
     }
   ],
   "agent_flags": {
