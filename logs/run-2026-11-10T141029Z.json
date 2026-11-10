@@ -1,0 +1,23 @@
+{
+  "run_id": "run-2026-11-10T141029Z",
+  "started_at": "2026-11-10T14:10:29Z",
+  "finished_at": "2026-11-10T14:15:40Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 1
+}
