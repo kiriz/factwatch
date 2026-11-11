@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-014",
   "verdict": "TRUE",
-  "confidence": 95,
-  "last_checked_at": "2026-10-26T12:29:36Z",
+  "confidence": 100,
+  "last_checked_at": "2026-11-11T13:31:42Z",
   "last_changed_at": "2026-06-09T23:47:39Z",
-  "run_id": "run-2026-10-26T120739Z",
+  "run_id": "run-2026-11-11T132627Z",
   "sources": [
     {
       "url": "https://www.tiktok.com/discover/why-is-the-moon-moving-away-from-earth",
@@ -14,6 +14,14 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "The earth is leaving moon #shorts #The Moon is slowly moving away from Earth at"
+    },
+    {
+      "url": "https://studyfinds.com/moon-not-geologically-dead/",
+      "title": "Moon not 'geologically dead world' after all. Why that might be a prob...",
+      "domain": "studyfinds.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Additionally, the Moon is slowly moving away from Earth at a rate of about 3.8"
     },
     {
       "url": "https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069",
@@ -46,17 +54,9 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "Yes, the Moon is slowly moving away from Earth at a rate of about 3.8"
-    },
-    {
-      "url": "https://enviroliteracy.org/how-many-feet-is-the-moon-away-from-earth/",
-      "title": "How Many Feet Is the Moon Away From Earth? - The Environmental...",
-      "domain": "enviroliteracy.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "The Moon is slowly moving away from Earth, at a rate of about 3.8 centimeters"
     }
   ],
-  "reasoning": "The claim is accurate and scientifically well-established. Measurements obtained primarily through the Lunar Laser Ranging experiments (using retroreflectors placed on the lunar surface during the Apollo missions) show that the Moon is receding from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This recession is caused by tidal interactions between Earth and the Moon, where tidal friction gradually slows Earth's rotation and transfers angular momentum to the Moon's orbit.",
+  "reasoning": "The claim is a well-established astronomical fact. Measurements obtained using Lunar Laser Ranging experiments—bouncing lasers off retroreflectors placed on the lunar surface during the Apollo missions—have determined that the Moon recedes from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This gradual recession is caused by tidal interactions between Earth and the Moon, which transfer angular momentum from Earth's rotation to the Moon's orbit.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -177,6 +177,12 @@
       "confidence": 100,
       "checked_at": "2026-10-19T11:55:58Z",
       "run_id": "run-2026-10-19T115426Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-10-26T12:29:36Z",
+      "run_id": "run-2026-10-26T120739Z"
     }
   ],
   "agent_flags": {

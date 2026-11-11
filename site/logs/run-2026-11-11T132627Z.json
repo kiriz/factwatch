@@ -1,0 +1,80 @@
+{
+  "run_id": "run-2026-11-11T132627Z",
+  "started_at": "2026-11-11T13:26:27Z",
+  "finished_at": "2026-11-11T13:31:45Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim is a well-established astronomical fact",
+        "Measurements obtained using Lunar Laser Ranging experiments—bouncing lasers off retroreflectors placed on the lunar surface during the Apollo missions—have determined that the Moon recedes from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year",
+        "This gradual recession is caused by tidal interactions between Earth and the Moon, which transfer angular momentum from Earth's rotation to the Moon's orbit."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\\\"\",\n  \"verification_notes\": \"Check NASA and Lunar Laser Ranging experiment data. Verify the mechanism (tidal friction transferring angular momentum). Confirm the rate is ~3.8 cm/year. Calculate implications: how long until the Moon is too far for total solar eclipses?\",\n  \"search_results\": \"[1] Why Is The Moon Moving Away from Earth | TikTok\\nURL: https://www.tiktok.com/discover/why-is-the-moon-moving-away-from-earth\\nExcerpt: The earth is leaving moon #shorts #The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year due to tidal interactions between the two bodies.\\n\\n[2] Moon not 'geologically dead world' after all. Why that might be a prob...\\nURL: https://studyfinds.com/moon-not-geologically-dead/\\nExcerpt: Additionally, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year, while also experiencing regular tugs from Earth’s gravity. These combined forces create stresses that can cause the lunar surface to buckle and form ridges.\\n\\n[3] Blue and Purple Illustrated Night Sky Group Project...\\nURL: https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069\\nExcerpt: INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about 3.8 centimeters per year, which may slightly affect tides in the far future. •\\n\\n[4] Understanding Earth's Rotation: Speed and Implications\\nURL: https://nabado.co.ke/understanding-earths-rotation-speed-effects-and-implications/\\nExcerpt: Over time, the Moon has slowly pulled on Earth’s oceans, creating friction that has gradually slowed down the Earth’s rotation. In return, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\\n\\n[5] Facts about the moon - jeanglass.com\\nURL: https://jeanglass.com/facts-about-the-moon/\\nExcerpt: Worth knowing: The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This gradual recession is caused by the same tidal forces that once slowed Earth’s rotation.\\n\\n[6] How Is the Earth and Moon Alike? - The Institute for Environmental...\\nURL: https://iere.org/how-is-the-earth-and-moon-alike/\\nExcerpt: Yes, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This is due to the tidal forces between the Earth and the Moon. As the Moon pulls on Earth’s oceans, it creates a bulge.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim is a well-established astronomical fact. Measurements obtained using Lunar Laser Ranging experiments—bouncing lasers off retroreflectors placed on the lunar surface during the Apollo missions—have determined that the Moon recedes from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This gradual recession is caused by tidal interactions between Earth and the Moon, which transfer angular momentum from Earth's rotation to the Moon's orbit.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+        "The Moon is drifting away from Earth",
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.tiktok.com/discover/why-is-the-moon-moving-away-from-earth",
+          "title": "Why Is The Moon Moving Away from Earth | TikTok",
+          "snippet": "The earth is leaving moon #shorts #The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year due to tidal interactions between the two bodies."
+        },
+        {
+          "url": "https://studyfinds.com/moon-not-geologically-dead/",
+          "title": "Moon not 'geologically dead world' after all. Why that might be a prob...",
+          "snippet": "Additionally, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year, while also experiencing regular tugs from Earth’s gravity. These combined forces create stresses that can cause the lunar surface to buckle and form ridges."
+        },
+        {
+          "url": "https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069",
+          "title": "Blue and Purple Illustrated Night Sky Group Project...",
+          "snippet": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about 3.8 centimeters per year, which may slightly affect tides in the far future. •"
+        },
+        {
+          "url": "https://nabado.co.ke/understanding-earths-rotation-speed-effects-and-implications/",
+          "title": "Understanding Earth's Rotation: Speed and Implications",
+          "snippet": "Over time, the Moon has slowly pulled on Earth’s oceans, creating friction that has gradually slowed down the Earth’s rotation. In return, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year."
+        },
+        {
+          "url": "https://jeanglass.com/facts-about-the-moon/",
+          "title": "Facts about the moon - jeanglass.com",
+          "snippet": "Worth knowing: The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This gradual recession is caused by the same tidal forces that once slowed Earth’s rotation."
+        },
+        {
+          "url": "https://iere.org/how-is-the-earth-and-moon-alike/",
+          "title": "How Is the Earth and Moon Alike? - The Institute for Environmental...",
+          "snippet": "Yes, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This is due to the tidal forces between the Earth and the Moon. As the Moon pulls on Earth’s oceans, it creates a bulge."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 0
+}
