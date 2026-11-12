@@ -1,13 +1,62 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-002",
-  "verdict": "UNVERIFIED",
-  "confidence": 0,
-  "last_checked_at": "2026-11-04T13:47:03Z",
-  "last_changed_at": "2026-10-28T12:05:06Z",
-  "run_id": "run-2026-11-04T134031Z",
-  "sources": [],
-  "reasoning": "Fact-check failed: API error after retry",
+  "verdict": "TRUE",
+  "confidence": 95,
+  "last_checked_at": "2026-11-12T14:36:54Z",
+  "last_changed_at": "2026-11-12T14:36:54Z",
+  "run_id": "run-2026-11-12T143058Z",
+  "sources": [
+    {
+      "url": "https://unn.ua/en/news/the-us-national-debt-has-reached-a-record-dollar34-trillion",
+      "title": "The US national debt has reached a record $34 trillion | УНН",
+      "domain": "unn.ua",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The gross national debt of the US federal government has set a new record, exceeding"
+    },
+    {
+      "url": "https://amac.us/newsline/economy/amac-magazine-exclusive-americas-debt-calamity/",
+      "title": "AMAC Magazine Exclusive: America’s Debt Calamity | AMAC",
+      "domain": "amac.us",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Most frustrating, this excessive $34 trillion federal debt was just a trillion dollars under President"
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/34-trillion-debt-bomb-sitting-under-global-markets-insiderindex-fcwkc",
+      "title": "The $34 Trillion Debt Bomb Sitting Under Global Markets",
+      "domain": "linkedin.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The United States now carries more than $34 trillion in federal debt. Interest costs alone"
+    },
+    {
+      "url": "https://www.npr.org/2024/04/30/1197964071/federal-debt-national-deficit",
+      "title": "$34 trillion of federal debt and counting... should we be worried? : NPR",
+      "domain": "npr.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "And that debt number? It just keeps ticking up. How deep in the hole are"
+    },
+    {
+      "url": "https://www.binance.com/en/square/post/8011328368026",
+      "title": "America's debt exceeds $34 trillion, but it seems that the",
+      "domain": "binance.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Associated Press: For Mike Johnson, this was a priority on day one. It is time,"
+    },
+    {
+      "url": "https://brainly.com/question/50114026",
+      "title": "[FREE] True or False: The U.S. government's total debt exceeded $34...",
+      "domain": "brainly.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "To determine whether the U.S. government's total debt exceeded $34 trillion by the end of"
+    }
+  ],
+  "reasoning": "According to data from the U.S. Department of the Treasury, the total U.S. gross federal debt officially surpassed the $34 trillion mark in late December 2023 and early January 2024. Reporting across major news outlets and financial analysis confirms that the national debt has exceeded $34 trillion and continues to rise.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -146,13 +195,19 @@
       "confidence": 20,
       "checked_at": "2026-10-28T12:05:06Z",
       "run_id": "run-2026-10-28T115923Z"
+    },
+    {
+      "verdict": "UNVERIFIED",
+      "confidence": 0,
+      "checked_at": "2026-11-04T13:47:03Z",
+      "run_id": "run-2026-11-04T134031Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": true,
-    "low_source_quality": true
+    "requires_human_review": false,
+    "low_source_quality": false
   },
   "title": "US federal debt exceeds $34 trillion",
   "category": "economics",

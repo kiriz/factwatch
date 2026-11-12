@@ -3,9 +3,9 @@
   "claim_id": "claim-005",
   "verdict": "UNVERIFIED",
   "confidence": 0,
-  "last_checked_at": "2026-11-04T13:49:38Z",
+  "last_checked_at": "2026-11-12T14:52:47Z",
   "last_changed_at": "2026-10-28T12:15:08Z",
-  "run_id": "run-2026-11-04T134031Z",
+  "run_id": "run-2026-11-12T143058Z",
   "sources": [],
   "reasoning": "Fact-check failed: API error after retry",
   "verdict_history": [
@@ -140,6 +140,12 @@
       "confidence": 20,
       "checked_at": "2026-10-28T12:15:08Z",
       "run_id": "run-2026-10-28T115923Z"
+    },
+    {
+      "verdict": "UNVERIFIED",
+      "confidence": 0,
+      "checked_at": "2026-11-04T13:49:38Z",
+      "run_id": "run-2026-11-04T134031Z"
     }
   ],
   "agent_flags": {

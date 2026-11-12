@@ -1,0 +1,150 @@
+{
+  "run_id": "run-2026-11-12T143058Z",
+  "started_at": "2026-11-12T14:30:58Z",
+  "finished_at": "2026-11-12T14:52:50Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": true,
+      "previous_verdict": "UNVERIFIED",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to data from the U.S",
+        "Department of the Treasury, the total U.S",
+        "gross federal debt officially surpassed the $34 trillion mark in late December 2023 and early January 2024",
+        "Reporting across major news outlets and financial analysis confirms that the national debt has exceeded $34 trillion and continues to rise."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The United States national debt has surpassed $34 trillion.\\\"\",\n  \"verification_notes\": \"Check US Treasury Fiscal Data (fiscaldata.treasury.gov). Note distinction between gross debt and debt held by the public. Verify current figure — may have grown beyond $34T by time of verification.\",\n  \"search_results\": \"[1] The US national debt has reached a record $34 trillion | УНН\\nURL: https://unn.ua/en/news/the-us-national-debt-has-reached-a-record-dollar34-trillion\\nExcerpt: The gross national debt of the US federal government has set a new record, exceeding $34 trillion, according to the Treasury Department, UNN reports citing Voice of America.\\n\\n[2] AMAC Magazine Exclusive: America’s Debt Calamity | AMAC\\nURL: https://amac.us/newsline/economy/amac-magazine-exclusive-americas-debt-calamity/\\nExcerpt: Most frustrating, this excessive $34 trillion federal debt was just a trillion dollars under President Ronald Reagan, who used debt to collapse the Soviet Union and seed 18 million new jobs. Under President Obama, federal debt exploded by 74 percent.\\n\\n[3] The $34 Trillion Debt Bomb Sitting Under Global Markets\\nURL: https://www.linkedin.com/pulse/34-trillion-debt-bomb-sitting-under-global-markets-insiderindex-fcwkc\\nExcerpt: The United States now carries more than $34 trillion in federal debt. Interest costs alone approach $1 trillion each year. Debt markets rarely panic early. They tighten slowly until financing costs start reshaping everything.\\n\\n[4] $34 trillion of federal debt and counting... should we be worried? : NPR\\nURL: https://www.npr.org/2024/04/30/1197964071/federal-debt-national-deficit\\nExcerpt: And that debt number? It just keeps ticking up. How deep in the hole are we? Nearly a hundred percent of gross domestic product. And counting. Today on the show, the federal debt. Is it time to freak out?\\n\\n[5] America's debt exceeds $34 trillion, but it seems that the\\nURL: https://www.binance.com/en/square/post/8011328368026\\nExcerpt: Associated Press: For Mike Johnson, this was a priority on day one. It is time, as the newly elected Speaker of the House called for in October, to create a bipartisan commission to address the federal government's mounting $34.6 trillion debt.\\n\\n[6] [FREE] True or False: The U.S. government's total debt exceeded $34...\\nURL: https://brainly.com/question/50114026\\nExcerpt: To determine whether the U.S. government's total debt exceeded $34 trillion by the end of 2023, we need to look at the trends in national debt leading up to that point. The U.S. debt has been consistently rising over the past several years.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to data from the U.S. Department of the Treasury, the total U.S. gross federal debt officially surpassed the $34 trillion mark in late December 2023 and early January 2024. Reporting across major news outlets and financial analysis confirms that the national debt has exceeded $34 trillion and continues to rise.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The United States national debt has surpassed $34 trillion.\"",
+        "US federal debt exceeds $34 trillion",
+        "\"The United States national debt has surpassed $34 trillion.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://unn.ua/en/news/the-us-national-debt-has-reached-a-record-dollar34-trillion",
+          "title": "The US national debt has reached a record $34 trillion | УНН",
+          "snippet": "The gross national debt of the US federal government has set a new record, exceeding $34 trillion, according to the Treasury Department, UNN reports citing Voice of America."
+        },
+        {
+          "url": "https://amac.us/newsline/economy/amac-magazine-exclusive-americas-debt-calamity/",
+          "title": "AMAC Magazine Exclusive: America’s Debt Calamity | AMAC",
+          "snippet": "Most frustrating, this excessive $34 trillion federal debt was just a trillion dollars under President Ronald Reagan, who used debt to collapse the Soviet Union and seed 18 million new jobs. Under President Obama, federal debt exploded by 74 percent."
+        },
+        {
+          "url": "https://www.linkedin.com/pulse/34-trillion-debt-bomb-sitting-under-global-markets-insiderindex-fcwkc",
+          "title": "The $34 Trillion Debt Bomb Sitting Under Global Markets",
+          "snippet": "The United States now carries more than $34 trillion in federal debt. Interest costs alone approach $1 trillion each year. Debt markets rarely panic early. They tighten slowly until financing costs start reshaping everything."
+        },
+        {
+          "url": "https://www.npr.org/2024/04/30/1197964071/federal-debt-national-deficit",
+          "title": "$34 trillion of federal debt and counting... should we be worried? : NPR",
+          "snippet": "And that debt number? It just keeps ticking up. How deep in the hole are we? Nearly a hundred percent of gross domestic product. And counting. Today on the show, the federal debt. Is it time to freak out?"
+        },
+        {
+          "url": "https://www.binance.com/en/square/post/8011328368026",
+          "title": "America's debt exceeds $34 trillion, but it seems that the",
+          "snippet": "Associated Press: For Mike Johnson, this was a priority on day one. It is time, as the newly elected Speaker of the House called for in October, to create a bipartisan commission to address the federal government's mounting $34.6 trillion debt."
+        },
+        {
+          "url": "https://brainly.com/question/50114026",
+          "title": "[FREE] True or False: The U.S. government's total debt exceeded $34...",
+          "snippet": "To determine whether the U.S. government's total debt exceeded $34 trillion by the end of 2023, we need to look at the trends in national debt leading up to that point. The U.S. debt has been consistently rising over the past several years."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "UNVERIFIED",
+      "confidence": 0,
+      "verdict_changed": false,
+      "previous_verdict": "UNVERIFIED",
+      "new_verdict": "UNVERIFIED",
+      "requires_human_review": true,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": true,
+        "low_source_quality": true
+      },
+      "sources_found": 6,
+      "sources_used": 0,
+      "reasoning_steps": [
+        "Fact-check failed: API error after retry"
+      ],
+      "error": true,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "Claim title: US Congress passed no budget on time since 1997\n\nClaim to verify: \"The US Congress has not passed a complete federal budget on time since 1997.\"\n\nHuman context: Often cited to illustrate Congressional dysfunction. The claim hinges on the definition of \"on time\" (before October 1, the start of the fiscal year) and \"complete\" (all 12 appropriations bills passed before the deadline).\n\nVerification guidance: Check Congressional Research Service records. Fiscal year starts October 1. Verify if any year between 1998 and present had all 12 appropriations bills enacted before the deadline. Note distinction between omnibus packages and individual bills.\n\nWeb search results:\n\n[1] List of United States federal funding gaps - Wikipedia\n    URL: https://en.wikipedia.org/wiki/List_of_United_States_federal_funding_gaps\n    Excerpt: On October 1, the Democratic-controlled Congress overrode Ford's veto but it took until October 11 for a continuing resolution ending funding gaps for other parts of government to become law.\n\n[2] 1997 United States federal budget - Wikipedia\n    URL: https://en.wikipedia.org/wiki/1997_United_States_federal_budget\n    Excerpt: Figures shown in the spending request do not reflect the actual appropriations for Fiscal Year 1997, which must be authorized by Congress. The requested budget was submitted to Congress on February 5, 1996.\n\n[3] What Happens after 28 Years without a Real Budget?\n    URL: https://www.youngresearch.com/researchandanalysis/economy-researchandanalysis/what-happens-after-28-years-without-a-real-budget/\n    Excerpt: May 28, 2024 · Regular Reason readers know this fact well: Since 1996, Congress has never—yes, not even once—passed a budget on time and in full. It’s probably not a coincidence that the late ’90s were also the last time the federal budget was anywhere close to balancing.\n\n[4] Opinion: Congress hasn’t passed a budget on time since 1997 ...\n    URL: https://www.msn.com/en-us/news/politics/opinion-congress-hasn-t-passed-a-budget-on-time-since-1997-we-should-fix-that/ar-AA1SBWSG\n    Excerpt: The “textbook” legislative process requires Congress to pass approximately 12 appropriations bills by Oct. 1 for the following fiscal year — something Congress hasn’t done since 1996.\n\n[5] Congress has long struggled to pass spending bills on time\n    URL: https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/\n    Excerpt: Oct 1, 2025 · In the nearly five decades that the current system for budgeting and spending tax dollars has been in place, Congress has passed all its required appropriations measures on time only four times: fiscal 1977 (the first full fiscal year under the current system), 1989, 1995 and 1997.\n\n[6] Congress Hasn't Passed a Budget on Time in 27 Years - Reason.comFour Times in Fifty Years: The Spending Deadline Congress ...List of United States federal funding gaps - Wikipedia1997 United States federal budget - Wikipedia\n    URL: https://reason.com/2023/03/21/the-budget-battle-book/\n    Excerpt: Mar 21, 2023 · To avert a partial government shutdown, the spending bill was supposed to be passed by Friday, December 16. But on Thursday, December 15, with just a day left before the dreaded quasi-shutdown,... Jul 21, 2026 · Since the current budget process took effect with fiscal year 1977, Congr\n\nReturn ONLY a JSON object with exactly this shape:\n{\n  \"verdict\": \"TRUE|FALSE|MISLEADING|UNVERIFIED|OUTDATED|DISPUTED\",\n  \"confidence\": <0-100 integer>,\n  \"sources\": [\n    {\"url\": \"<url>\", \"title\": \"<title>\", \"relevance\": \"high|medium|low\",\n     \"supports_claim\": <bool>, \"excerpt\": \"<under 15 words>\"}\n  ],\n  \"reasoning\": \"<multi-sentence explanation>\",\n  \"agent_flags\": {\n    \"conflicting_sources\": <bool>, \"outdated_evidence\": <bool>,\n    \"requires_human_review\": <bool>, \"low_source_quality\": <bool>\n  }\n}",
+      "raw_response": "",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": false,
+      "search_queries": [
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+        "US Congress passed no budget on time since 1997",
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_United_States_federal_funding_gaps",
+          "title": "List of United States federal funding gaps - Wikipedia",
+          "snippet": "On October 1, the Democratic-controlled Congress overrode Ford's veto but it took until October 11 for a continuing resolution ending funding gaps for other parts of government to become law."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/1997_United_States_federal_budget",
+          "title": "1997 United States federal budget - Wikipedia",
+          "snippet": "Figures shown in the spending request do not reflect the actual appropriations for Fiscal Year 1997, which must be authorized by Congress. The requested budget was submitted to Congress on February 5, 1996."
+        },
+        {
+          "url": "https://www.youngresearch.com/researchandanalysis/economy-researchandanalysis/what-happens-after-28-years-without-a-real-budget/",
+          "title": "What Happens after 28 Years without a Real Budget?",
+          "snippet": "May 28, 2024 · Regular Reason readers know this fact well: Since 1996, Congress has never—yes, not even once—passed a budget on time and in full. It’s probably not a coincidence that the late ’90s were also the last time the federal budget was anywhere close to balancing."
+        },
+        {
+          "url": "https://www.msn.com/en-us/news/politics/opinion-congress-hasn-t-passed-a-budget-on-time-since-1997-we-should-fix-that/ar-AA1SBWSG",
+          "title": "Opinion: Congress hasn’t passed a budget on time since 1997 ...",
+          "snippet": "The “textbook” legislative process requires Congress to pass approximately 12 appropriations bills by Oct. 1 for the following fiscal year — something Congress hasn’t done since 1996."
+        },
+        {
+          "url": "https://www.pewresearch.org/short-reads/2025/10/01/congress-has-long-struggled-to-pass-spending-bills-on-time/",
+          "title": "Congress has long struggled to pass spending bills on time",
+          "snippet": "Oct 1, 2025 · In the nearly five decades that the current system for budgeting and spending tax dollars has been in place, Congress has passed all its required appropriations measures on time only four times: fiscal 1977 (the first full fiscal year under the current system), 1989, 1995 and 1997."
+        },
+        {
+          "url": "https://reason.com/2023/03/21/the-budget-battle-book/",
+          "title": "Congress Hasn't Passed a Budget on Time in 27 Years - Reason.comFour Times in Fifty Years: The Spending Deadline Congress ...List of United States federal funding gaps - Wikipedia1997 United States federal budget - Wikipedia",
+          "snippet": "Mar 21, 2023 · To avert a partial government shutdown, the spending bill was supposed to be passed by Friday, December 16. But on Thursday, December 15, with just a day left before the dreaded quasi-shutdown,... Jul 21, 2026 · Since the current budget process took effect with fiscal year 1977, Congress has passed all twelve regular appropriations bills by the October 1 deadline exactly four times: for fiscal years 1977, 1989, 1995, and 1997 (Pew Research Center, October 1, 2025). On October 1, the Democratic-controlled Congress overrode Ford's veto but it took until October 11 for a continuing resolution ending funding gaps for other parts of government to become law. Figures shown in the spending request do not reflect the actual appropriations for Fiscal Year 1997, which must be authorized by Congress. The requested budget was submitted to Congress on February 5, 1996."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 1,
+  "errors": 1
+}
