@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-013",
   "verdict": "DISPUTED",
-  "confidence": 90,
-  "last_checked_at": "2026-11-08T12:56:44Z",
+  "confidence": 85,
+  "last_checked_at": "2026-11-15T13:29:41Z",
   "last_changed_at": "2026-11-08T12:56:44Z",
-  "run_id": "run-2026-11-08T123844Z",
+  "run_id": "run-2026-11-15T131954Z",
   "sources": [
     {
       "url": "https://www.leidenpsychologyblog.nl/articles/is-social-media-making-our-kids-depressed",
@@ -40,12 +40,12 @@
       "excerpt": "Is social media causing the mental health challenges? Finally, research can answer that question.Murky picture"
     },
     {
-      "url": "https://www.nbcnews.com/health/health-news/social-media-mental-health-anxiety-depression-teens-surgeon-general-rcna85575",
-      "title": "Social media is driving teen mental health crisis, surgeon general warns",
-      "domain": "nbcnews.com",
+      "url": "https://childmind.org/article/how-using-social-media-affects-teenagers/",
+      "title": "Effects of Social Media on Teenagers' Mental... - Child Mind Institute",
+      "domain": "childmind.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "How social media is impacting mental health among teens.Up to 95% of teens between the"
+      "excerpt": "How does social media affect teens?Social media affects social skills by replacing some of kids’"
     },
     {
       "url": "https://www.brightpathbh.com/teen-depression/",
@@ -72,7 +72,7 @@
       "excerpt": "Social Media Depression. Depression is a severe and common mental health disorder, affecting over 300"
     }
   ],
-  "reasoning": "The claim that social media use directly causes depression and anxiety in teenagers is heavily disputed among researchers and mental health professionals. While researchers like Jonathan Haidt and Jean Twenge argue that longitudinal, observational, and some experimental studies indicate a causal link between digital media use and rising adolescent mental health crises, other researchers (such as Amy Orben and Andrew Przybylski) point to large-scale data showing that effect sizes are extremely small and largely correlational. Major reviews by organizations such as the American Psychological Association (APA) and the U.S. Surgeon General conclude that social media is neither inherently harmful nor beneficial; its effects depend heavily on individual vulnerabilities, how platforms are used (e.g., passive scrolling vs. active connection), and displaced activities like sleep and exercise. Consequently, asserting a blanket, direct causal relationship remains a subject of ongoing scientific debate.",
+  "reasoning": "The claim that social media use directly causes depression and anxiety in teenagers is a subject of significant ongoing scientific debate. While some prominent researchers (such as Jonathan Haidt and Jean Twenge) argue that increasing social media use is a primary driver of the rising rates of adolescent mental health issues, major systematic reviews, meta-analyses, and skeptical researchers (such as Amy Orben and Andrew Przybylski) emphasize that the majority of evidence is correlational, not causal. Large-scale analyses consistently find that the overall statistical effect sizes are very small, and the relationship is complex—confounded by preexisting vulnerabilities, socioeconomic factors, whether usage is passive or active, and reverse causality (depressed or anxious teens turning to social media). Reports from bodies like the National Academies of Sciences, Engineering, and Medicine and the U.S. Surgeon General conclude that while potential harms exist for certain vulnerable youth, evidence is insufficient to claim a blanket causal link.",
   "verdict_history": [
     {
       "verdict": "DISPUTED",
@@ -205,6 +205,12 @@
       "confidence": 85,
       "checked_at": "2026-11-01T12:35:27Z",
       "run_id": "run-2026-11-01T123242Z"
+    },
+    {
+      "verdict": "DISPUTED",
+      "confidence": 90,
+      "checked_at": "2026-11-08T12:56:44Z",
+      "run_id": "run-2026-11-08T123844Z"
     }
   ],
   "agent_flags": {

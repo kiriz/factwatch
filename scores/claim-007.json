@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-007",
   "verdict": "FALSE",
-  "confidence": 99,
-  "last_checked_at": "2026-11-07T12:30:05Z",
+  "confidence": 95,
+  "last_checked_at": "2026-11-15T13:27:53Z",
   "last_changed_at": "2026-06-04T01:03:50Z",
-  "run_id": "run-2026-11-07T121906Z",
+  "run_id": "run-2026-11-15T131954Z",
   "sources": [
     {
       "url": "https://consensise.com/p/the-great-wall-of-china-is-the-only-man-made-structure-dGFY31",
@@ -24,12 +24,12 @@
       "excerpt": "Myth: The Great Wall of China is the only man-made structure visible from space with"
     },
     {
-      "url": "https://www.linkedin.com/pulse/common-misconceptions-unveiling-truth-behind-commonly-gokhan-unal-q5o0f",
-      "title": "Common Misconceptions: Unveiling the Truth Behind Commonly Held...",
-      "domain": "linkedin.com",
+      "url": "https://popsci.blog/great-wall-china-satellite-picture-myth",
+      "title": "Satellite Picture of Great Wall of China: Fact vs. Myth - PopSCI.blog",
+      "domain": "popsci.blog",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "5. Misconception: \"The Great Wall of China is the Only Man-Made Object Visible from Space\"."
+      "excerpt": "The persistent myth that the Great Wall of China is the only man-made structure visible"
     },
     {
       "url": "https://aibrainbites.com/blog/en/posts/did-you-know-the-great-wall-isnt-visible-from-space-with-the-naked-eye/",
@@ -40,23 +40,23 @@
       "excerpt": "And while the Great Wall is undeniably massive and an astonishing feat of engineering—stretching thousands"
     },
     {
-      "url": "https://sites.uni.edu/harton/honors1.pptx",
-      "title": "Influence: Harnessing psychology to create a better world Introductions...",
-      "domain": "sites.uni.edu",
+      "url": "https://smarterwatches.net/the-art-of-balancing-work-and-leisure-a-guide-to-a-fulfilling-lifestyle/",
+      "title": "The Art of Balancing Work and Leisure: A Guide to a Fulfilling Lifestyle...",
+      "domain": "smarterwatches.net",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The Great Wall of China is the only man-made structure visible from space with the"
+      "excerpt": "4. The Great Wall of China is the only man-made structure visible from space with"
     },
     {
-      "url": "https://jeniferclark1.medium.com/30-surprising-facts-that-will-make-you-go-whoa-3c5c4b5e1aa",
-      "title": "30 Surprising Facts That Will Make You Go ‘Whoa | Medium",
-      "domain": "jeniferclark1.medium.com",
+      "url": "https://gdz.ru/ai-solution/solution/69edb5b6e7fc1fa007289df3/",
+      "title": "Read the statements. Decide whether they are True or False.",
+      "domain": "gdz.ru",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Did you know that the Great Wall of China is the only man-made structure visible"
+      "excerpt": "5. **The Great Wall of China is the only man-made structure visible from space with"
     }
   ],
-  "reasoning": "The claim is a well-documented myth. The Great Wall of China is virtually invisible to the naked human eye from low Earth orbit because it is typically only 6 to 9 meters wide and constructed of materials that blend into the surrounding terrain. Furthermore, astronauts and space agencies like NASA have confirmed that it cannot be seen without magnification, whereas several other man-made structures (such as major highways, large airports, dams, and city lights at night) can be seen from orbit.",
+  "reasoning": "The claim that the Great Wall of China is visible from space with the naked eye—let alone the only man-made structure visible—is a well-documented myth. According to NASA and astronaut accounts (including China's first astronaut, Yang Liwei), the Great Wall is virtually impossible to see with the unaided eye from low Earth orbit because it is typically only a few meters wide and constructed from local stone and soil that blends into the surrounding landscape. In contrast, several other man-made structures, such as major highways, large airports, dams, and city lights at night, can be seen with the naked eye from low Earth orbit under appropriate conditions.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -189,6 +189,12 @@
       "confidence": 98,
       "checked_at": "2026-10-30T12:03:48Z",
       "run_id": "run-2026-10-30T120008Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 99,
+      "checked_at": "2026-11-07T12:30:05Z",
+      "run_id": "run-2026-11-07T121906Z"
     }
   ],
   "agent_flags": {

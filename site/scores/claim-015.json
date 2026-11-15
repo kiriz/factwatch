@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-015",
   "verdict": "TRUE",
-  "confidence": 98,
-  "last_checked_at": "2026-11-08T13:02:06Z",
+  "confidence": 95,
+  "last_checked_at": "2026-11-15T13:30:19Z",
   "last_changed_at": "2026-06-09T23:45:43Z",
-  "run_id": "run-2026-11-08T123844Z",
+  "run_id": "run-2026-11-15T131954Z",
   "sources": [
     {
-      "url": "https://www.theguardian.com/technology/2016/mar/09/google-deepmind-alphago-ai-defeats-human-lee-sedol-first-game-go-contest",
-      "title": "Google's AlphaGo AI defeats human in first game of Go contest",
+      "url": "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+      "title": "AlphaGo versus Lee Sedol - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "AlphaGo versus Lee Sedol, also known as the DeepMind Challenge Match, was a five-game Go"
+    },
+    {
+      "url": "https://www.bbc.com/news/technology-35785875",
+      "title": "Artificial intelligence: Google's AlphaGo beats Go master Lee ...",
+      "domain": "bbc.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Mar 12, 2016 · Google's AlphaGo program wins a competition against a human Go master,"
+    },
+    {
+      "url": "https://aiws.net/the-history-of-ai/aiws-house/march-2016-alphago-defeats-lee-sedol/",
+      "title": "March 2016: AlphaGo Defeats Lee Sedol - aiws.net",
+      "domain": "aiws.net",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Mar 3, 2025 · One of the most celebrated AI achievements occurred when Google DeepMind’s"
+    },
+    {
+      "url": "https://www.theatlantic.com/technology/archive/2016/03/the-invisible-opponent/475611/",
+      "title": "How Google's AlphaGo Beat a Go World ChampionGoogle’s Computer Program Beats Lee Se-dol in Go TournamentAlphaGo seals 4-1 victory over Go grandmaster Lee SedolThe Go Files: AI computer wraps up 4-1 victory ... - Nature",
+      "domain": "theatlantic.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Mar 28, 2016 · On March 19, 2016, the strongest Go player in the world,"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2016/mar/15/googles-alphago-seals-4-1-victory-over-grandmaster-lee-sedol",
+      "title": "AlphaGo seals 4-1 victory over Go grandmaster Lee Sedol",
       "domain": "theguardian.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The world champion at Go – an ancient Chinese board game – looked nervous. His"
+      "excerpt": "Mar 15, 2016 · Google DeepMind’s AlphaGo program triumphed in its final game against South"
     },
     {
-      "url": "https://vitalab.github.io/article/2020/11/19/AlphaMuGoZero.html",
-      "title": "AlphaGo/AlphaGoZero/AlphaZero/MuZero: Mastering games using...",
-      "domain": "vitalab.github.io",
+      "url": "https://www.nature.com/articles/nature.2016.19575",
+      "title": "The Go Files: AI computer wraps up 4-1 victory ... - Nature",
+      "domain": "nature.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AlphaGo defeated the Go champion Lee Sedol in 2016 in a best-of-five tournament. Since then,"
-    },
-    {
-      "url": "https://www.eurekalert.org/news-releases/730838",
-      "title": "ACM Prize in Computing awarded to AlphaGo developer | EurekAlert!",
-      "domain": "eurekalert.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "AlphaGo's defeat of world Go champion Lee Sedol in March 2016 was hailed as a"
-    },
-    {
-      "url": "https://oge.mit.edu/confronting-alphago/",
-      "title": "Confronting AlphaGo | Office of Graduate Education",
-      "domain": "oge.mit.edu",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "In March 2016, world champion Go player Lee Sedol was defeated by the computer program"
-    },
-    {
-      "url": "https://www.voanews.com/a/google-alphago-wins-first-game-in-matchup-with-human/3227479.html",
-      "title": "Google's AlphaGo Wins First Game of Go in Matchup With Human",
-      "domain": "voanews.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "South Korea and Go fans are in shock after Google's computer program, AlphaGo, defeated world"
-    },
-    {
-      "url": "https://www.linkedin.com/pulse/ai-creative-force-transforming-our-future-embracing-autonomous-nair-8kaef",
-      "title": "AI: The Creative Force Transforming Our Future – Embracing...",
-      "domain": "linkedin.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "In 2016, AlphaGo defeated the world champion Go player, Lee Sedol, in a game renowned"
+      "excerpt": "Mar 15, 2016 · Nature reports from AlphaGo's victory in Seoul. News Published: 15 March"
     }
   ],
-  "reasoning": "In March 2016, Google DeepMind's AlphaGo played a historic five-game match against South Korean Go master Lee Sedol, winning 4 games to 1 (Lee Sedol won the fourth game). Lee Sedol held 18 international titles and was widely recognized as the world's top Go player of the era. The victory was widely noted by artificial intelligence and Go experts as occurring roughly a decade ahead of expectations, given the immense complexity of Go compared to chess.",
+  "reasoning": "In March 2016, Google DeepMind's AI program AlphaGo played a historic five-game match against 9-dan Go grandmaster Lee Sedol in Seoul, defeating him 4 games to 1. Lee Sedol was widely celebrated as the preeminent Go champion of his generation (holding 18 world titles). Prior to DeepMind's breakthrough, computer science and AI experts widely predicted that creating an artificial intelligence capable of defeating an elite human Go player was at least a decade away due to the immense complexity and intuition required by the game.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -189,6 +189,12 @@
       "confidence": 100,
       "checked_at": "2026-11-01T12:36:20Z",
       "run_id": "run-2026-11-01T123242Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-11-08T13:02:06Z",
+      "run_id": "run-2026-11-08T123844Z"
     }
   ],
   "agent_flags": {

@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-010",
   "verdict": "TRUE",
-  "confidence": 92,
-  "last_checked_at": "2026-11-07T12:31:01Z",
+  "confidence": 95,
+  "last_checked_at": "2026-11-15T13:28:30Z",
   "last_changed_at": "2026-06-09T23:44:37Z",
-  "run_id": "run-2026-11-07T121906Z",
+  "run_id": "run-2026-11-15T131954Z",
   "sources": [
     {
       "url": "https://www.bbc.com/news/technology-56012952",
@@ -24,17 +24,9 @@
       "excerpt": "Bitcoin uses more electricity annually than the whole of Argentina, analysis by Cambridge University suggests."
     },
     {
-      "url": "https://hackaday.com/2021/03/03/what-uses-more-power-than-argentina-but-doesnt-dance-the-tango/",
-      "title": "What Uses More Power Than Argentina But... | Hackaday",
-      "domain": "hackaday.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "It’s usual to hear criticism of Bitcoin for its volatility or its sometime association with"
-    },
-    {
-      "url": "https://ca.finance.yahoo.com/news/bitcoin-cryptocurrency-consumes-more-electricity-than-argentina-140323187.html",
+      "url": "https://uk.finance.yahoo.com/news/bitcoin-cryptocurrency-consumes-more-electricity-than-argentina-140323187.html",
       "title": "Bitcoin consumes more electricity than Argentina, UAE, and the...",
-      "domain": "ca.finance.yahoo.com",
+      "domain": "uk.finance.yahoo.com",
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "If Bitcoin (BTC-USD) were a country, it would be in the top 30 energy users"
@@ -48,15 +40,23 @@
       "excerpt": "This resource evaluates energy consumption from operating bitcoin as compared with Countries who consume terrawats"
     },
     {
-      "url": "https://www.aei.org/economics/were-going-to-need-more-energy-and-thats-ok/",
-      "title": "We’re Going to Need More Energy. And That’s OK. | American... - AEI",
-      "domain": "aei.org",
+      "url": "https://hackaday.com/2021/03/03/what-uses-more-power-than-argentina-but-doesnt-dance-the-tango/",
+      "title": "What Uses More Power Than Argentina But... | Hackaday",
+      "domain": "hackaday.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "“Bitcoin consumes ‘more electricity than Argentina” – BBC. “Bitcoin’s wild ride renews worries about its"
+      "excerpt": "It’s usual to hear criticism of Bitcoin for its volatility or its sometime association with"
+    },
+    {
+      "url": "https://www.tweaktown.com/news/77821/bitcoin-mining-uses-more-electricity-than-netherlands-and-argentina/index.html",
+      "title": "Bitcoin mining uses more electricity than Netherlands and Argentina",
+      "domain": "tweaktown.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Bitcoin mining uses an estimated 121 terawatt-hours (TWh) of electricity per year, more than Argentina,"
     }
   ],
-  "reasoning": "According to analysis from the Cambridge Centre for Alternative Finance (Cambridge Bitcoin Electricity Consumption Index), Bitcoin's estimated annualized electricity consumption has reached between 120 and 150+ terawatt-hours (TWh). This level of power usage exceeds the entire annual electricity consumption of countries such as Argentina (which consumes approximately 121–130 TWh per year), as widely reported by established media outlets including the BBC.",
+  "reasoning": "According to research by the Cambridge Centre for Alternative Finance (Cambridge Bitcoin Electricity Consumption Index - CBECI), Bitcoin's estimated annualized electricity consumption surpassed 120 terawatt-hours (TWh), exceeding the annual electricity consumption of countries such as Argentina, the United Arab Emirates, and the Netherlands. Multiple reputable sources, including BBC News, have confirmed this comparison based on Cambridge's energy models.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -183,6 +183,12 @@
       "confidence": 95,
       "checked_at": "2026-10-26T12:11:25Z",
       "run_id": "run-2026-10-26T120739Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 92,
+      "checked_at": "2026-11-07T12:31:01Z",
+      "run_id": "run-2026-11-07T121906Z"
     }
   ],
   "agent_flags": {

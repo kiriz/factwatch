@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-003",
   "verdict": "FALSE",
-  "confidence": 100,
-  "last_checked_at": "2026-11-07T12:21:29Z",
+  "confidence": 99,
+  "last_checked_at": "2026-11-15T13:24:06Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-11-07T121906Z",
+  "run_id": "run-2026-11-15T131954Z",
   "sources": [
+    {
+      "url": "https://hcrl.wustl.edu/claims-that-mrna-vaccines-change-human-dna-are-back/",
+      "title": "Claims that mRNA vaccines change human DNA are back",
+      "domain": "hcrl.wustl.edu",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Feb 1, 2024 · However, mRNA only enters the cell cytoplasm and does not enter"
+    },
+    {
+      "url": "https://publichealthcollaborative.org/alerts/posts-claim-that-mrna-vaccines-are-modified-mrna-meant-to-alter-human-dna/",
+      "title": "Posts claim that mRNA vaccines are “modified mRNA” meant to ...",
+      "domain": "publichealthcollaborative.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Aug 19, 2023 · The persistence of the misinformation that mRNA vaccines alter DNA elevates"
+    },
+    {
+      "url": "https://biologyinsights.com/can-the-covid-vaccine-change-your-dna-a-scientific-look/",
+      "title": "Can the COVID Vaccine Change Your DNA? A Scientific Look",
+      "domain": "biologyinsights.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Sep 18, 2026 · The mRNA in Pfizer and Moderna shots never needs to enter"
+    },
     {
       "url": "https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna",
       "title": "You asked, we answered: Can mRNA vaccines alter human DNA?",
       "domain": "nebraskamed.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Do mRNA vaccines work by altering human DNA?Additionally, DNA is stored in the nucleus of"
+      "excerpt": "Dec 21, 2020 · Do mRNA vaccines work by altering human DNA? Answer from infectious"
     },
     {
-      "url": "https://www.angiesoptiongrm.org/blog/mrna-vaccines-are-able-to-alter-dna",
-      "title": "mRNA Vaccines Are Able to Alter DNA",
-      "domain": "angiesoptiongrm.org",
+      "url": "https://nurse.org/articles/mrna-vaccines-dna-myth/",
+      "title": "Do mRNA Vaccines Change Your DNA? An ER Physician Explains ...",
+      "domain": "nurse.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "For over two years, government agencies and pharmaceutical manufacturers have labeled as misinformation the idea"
+      "excerpt": "6 days ago · Key Takeaways mRNA was discovered in 1961, and mRNA vaccines for"
     },
     {
-      "url": "https://www.abc.net.au/news/2022-03-04/coronacheck-mrna-vaccines-not-genotoxic-pete-evans/100879220",
-      "title": "Anti-vaxxers say a new study claims mRNA vaccines can alter your...",
-      "domain": "abc.net.au",
+      "url": "https://factually.co/fact-checks/health/do-mrna-vaccines-alter-dna-or-make-you-genetically-modified-de2fa3",
+      "title": "Do mRNA Vaccines Alter Human DNA or Make Recipients ...",
+      "domain": "factually.co",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Claims of mRNA vaccines altering human DNA have persisted throughout the pandemic, despite being debunked"
-    },
-    {
-      "url": "https://stream.org/can-mrna-vaccines-alter-human-dna-new-study-blows-debate-wide-open/",
-      "title": "Can mRNA Vaccines Alter Human DNA? New Study... - The Stream",
-      "domain": "stream.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Both messenger RNA (mRNA) and viral vector COVID-19 vaccines work by delivering instructions (genetic material)"
-    },
-    {
-      "url": "https://www.gavi.org/vaccineswork/will-mrna-vaccine-alter-my-dna",
-      "title": "Will an mRNA vaccine alter my DNA?",
-      "domain": "gavi.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Some of the COVID-19 vaccines use messenger RNA to provoke an immune response. But what"
-    },
-    {
-      "url": "https://www.foundmyfitness.com/episodes/why-covid-19-mrna-vaccines-cannot-alter-human-dna",
-      "title": "Why COVID 19 mRNA vaccines cannot alter human DNA",
-      "domain": "foundmyfitness.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Thus, the series of steps that would result in mRNA incorporating into nuclear DNA is"
+      "excerpt": "Jun 9, 2026 · Executive summary mRNA vaccines do not alter a recipient’s DNA and"
     }
   ],
-  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is biologically false. According to established scientific consensus and major health organizations (including the CDC, WHO, and NIH), messenger RNA (mRNA) from the vaccines remains in the cytoplasm of the cell to instruct ribosomes to produce the viral spike protein. It never enters the cell nucleus where genomic DNA is housed. Furthermore, mRNA degrades naturally within days and cannot integrate into or alter human DNA.",
+  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false. According to overwhelming medical consensus and public health organizations (including the CDC, WHO, and peer-reviewed studies), mRNA delivered by the vaccines remains in the cytoplasm of human cells and never enters the cell nucleus, where genomic DNA is housed. Furthermore, mRNA cannot integrate into the human genome because it degrades rapidly after protein translation and human cells lack the enzymatic machinery (such as reverse transcriptase and integrase) required to convert vaccine mRNA into DNA and integrate it.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -195,6 +195,12 @@
       "confidence": 98,
       "checked_at": "2026-10-28T12:08:44Z",
       "run_id": "run-2026-10-28T115923Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 100,
+      "checked_at": "2026-11-07T12:21:29Z",
+      "run_id": "run-2026-11-07T121906Z"
     }
   ],
   "agent_flags": {
@@ -205,5 +211,5 @@
   },
   "title": "mRNA vaccines alter human DNA",
   "category": "health",
-  "trending_score": 0
+  "trending_score": 10
 }

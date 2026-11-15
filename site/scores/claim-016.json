@@ -3,10 +3,18 @@
   "claim_id": "claim-016",
   "verdict": "MISLEADING",
   "confidence": 90,
-  "last_checked_at": "2026-11-08T13:07:22Z",
+  "last_checked_at": "2026-11-15T13:30:50Z",
   "last_changed_at": "2026-06-04T21:10:11Z",
-  "run_id": "run-2026-11-08T123844Z",
+  "run_id": "run-2026-11-15T131954Z",
   "sources": [
+    {
+      "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
+      "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
+      "domain": "nexford.edu",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by"
+    },
     {
       "url": "https://min.news/en/tech/d188f9f308a1334ecc839a78de64cf4e.html",
       "title": "AI may replace 300 million jobs! Don't panic, ordinary people, the...",
@@ -16,47 +24,39 @@
       "excerpt": "Recently, the claim that ' AI will replace 300 million jobs' has gone viral online,"
     },
     {
-      "url": "https://www.youtube.com/watch?v=PzRDmok1xgY",
-      "title": "If AI Takes All The Jobs, This Is What Society Looks Like - YouTube",
-      "domain": "youtube.com",
+      "url": "https://theaineighbor.com/will-ai-take-my-job/",
+      "title": "Will AI Take My Job?",
+      "domain": "theaineighbor.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AI Will Erase 300 Million Jobs By 2030 (Do This NOW To Survive)Tom Bilyeu724K •"
+      "excerpt": "Worried about AI taking your job? Here's an honest, friendly look at what's really at"
     },
     {
-      "url": "https://therealbradlea.libsyn.com/ai-will-replace-300-million-jobs-by-2030-how-to-survive-the-shift",
-      "title": "Dropping Bombs: AI Will Replace 300 Million Jobs By 2030...",
-      "domain": "therealbradlea.libsyn.com",
+      "url": "https://cio.economictimes.indiatimes.com/news/artificial-intelligence/ais-impact-on-jobs-techs-touchy-topic/119630008",
+      "title": "Artificial Intelligence: AI's impact on jobs, tech's touchy topic, ETC...",
+      "domain": "cio.economictimes.indiatimes.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Perry drops hard truths about the AI apocalypse barreling toward us: how Microsoft, Amazon, and"
+      "excerpt": "Goldman Sachs estimates AI could eliminate 300 million jobs globally through automation. An 2024 Metrigy"
     },
     {
-      "url": "https://www.ai-jarvis.eu/ai-taking-jobs-and-unemployment-rising-how-prepare-while-theres-still-time",
-      "title": "AI Is Taking Jobs and Unemployment Is Rising. How to Prepare While...",
-      "domain": "ai-jarvis.eu",
+      "url": "https://www.siliconrepublic.com/careers/generative-ai-ireland-work-deloitte-survey",
+      "title": "The generative AI hype is taking hold among Irish workers",
+      "domain": "siliconrepublic.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "AI is disrupting the labor market faster than most people realize. And it's only getting"
+      "excerpt": "A report by Goldman Sachs from earlier this year suggested that generative AI could lead"
     },
     {
-      "url": "https://damonnewmanpbdwec.storage.googleapis.com/how-will-artificial-intelligence-affect-jobs-20262030.html",
-      "title": "The Complete How Will Artificial Intelligence Affect Jobs 20262030...",
-      "domain": "damonnewmanpbdwec.storage.googleapis.com",
+      "url": "https://www.diverseboards.co.uk/how-to-boost-productivity-at-work-and-make-generative-ai-work-for-youtravis-orourkeon-april-18-2023-at-1114-am-career-advice-career-tips/",
+      "title": "How to boost productivity at work and make generative AI work for...",
+      "domain": "diverseboards.co.uk",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "How Will AI Affect Jobs - How many jobs will AI replace by 2030.The impact"
-    },
-    {
-      "url": "https://www.itpro.com/technology/artificial-intelligence/tech-workers-fear-generative-ai-could-drive-women-out-the-workforce",
-      "title": "Tech workers fear generative AI could \"drive women out the...\" | IT Pr...",
-      "domain": "itpro.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "\"So with concerns about the growth of generative AI potentially pushing more women out of"
+      "excerpt": "Similarly, a report published by Goldman Sachs in late March 2023 predicted that 300 million"
     }
   ],
-  "reasoning": "The widely cited figure originates from a March 2023 Goldman Sachs research report authored by Jan Hatzius and colleagues. The report estimated that generative AI could expose roughly 300 million full-time jobs worldwide to automation, based on an analysis of occupational task databases in the US and Europe. However, the study explicitly distinguished between \"exposure to automation\" and outright job replacement. Goldman Sachs noted that for most occupations, generative AI would partially automate specific tasks and act as a complement to human labor rather than replace whole jobs. Furthermore, the report highlighted that technological displacement has historically been offset by the creation of new employment and productivity gains. Stating definitively that generative AI \"will replace 300 million jobs\" distorts the findings by conflating task exposure with total job destruction.",
+  "reasoning": "The claim originates from a widely cited March 2023 report by Goldman Sachs economists (Hatzius et al.). However, stating that generative AI \"will replace 300 million jobs worldwide\" misrepresents the report's actual findings. \n\nGoldman Sachs estimated that generative AI could *expose* the equivalent of roughly 300 million full-time jobs to automation globally. Crucially, the authors emphasized that exposure does not equate to outright job replacement. The report noted that for the vast majority of occupations, generative AI would partially automate tasks and complement workers rather than substitute them entirely. Additionally, the authors noted that technological displacement historically leads to new job creation and estimated a significant boost to global GDP over time. Presenting a scenario of task exposure as a definitive prediction of 300 million lost jobs is misleading.",
   "verdict_history": [
     {
       "verdict": "MISLEADING",
@@ -189,6 +189,12 @@
       "confidence": 90,
       "checked_at": "2026-11-01T12:38:44Z",
       "run_id": "run-2026-11-01T123242Z"
+    },
+    {
+      "verdict": "MISLEADING",
+      "confidence": 90,
+      "checked_at": "2026-11-08T13:07:22Z",
+      "run_id": "run-2026-11-08T123844Z"
     }
   ],
   "agent_flags": {
