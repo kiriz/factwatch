@@ -1,0 +1,366 @@
+{
+  "run_id": "run-2026-11-19T150608Z",
+  "started_at": "2026-11-19T15:06:08Z",
+  "finished_at": "2026-11-19T15:33:30Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 7,
+      "reasoning_steps": [
+        "United States Department of the Treasury data confirmed that the total gross national debt exceeded $34 trillion in late December 2023 / early January 2024, and continued to climb beyond $34.9 trillion in 2024",
+        "Therefore, the claim that the national debt has surpassed $34 trillion is accurate."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The United States national debt has surpassed $34 trillion.\\\"\",\n  \"verification_notes\": \"Check US Treasury Fiscal Data (fiscaldata.treasury.gov). Note distinction between gross debt and debt held by the public. Verify current figure — may have grown beyond $34T by time of verification.\",\n  \"search_results\": \"[1] National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...\\nURL: https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/\\nExcerpt: The United States national debt has surpassed $34.9 trillion for the first time, marking a somber milestone in the nation’s fiscal history. This figure, released by the Treasury Department, reflects a substantial increase from the $30 trillion threshold crossed just last year.\\n\\n[2] US national debt exceeds $34 trillion: How did we get here?\\nURL: https://finance.yahoo.com/video/us-national-debt-exceeds-34-201043086.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAAQyd5BilEgZRTq-9gxJUD2p041HU0LuaQlwtVfi2zWE1p89elxYsPuHn69FQBTV8R0WssMBGdBEYoMmnZV4W229SPdkUSTtk-edvZprOia9cbG8dMFTs43jHUWEMhJCZ2wAdkLaJ4-vjxPX_9bSfw-EFmhl92mMMuBEvhIUaRxa\\nExcerpt: The US national debt has ballooned to over $34.1 trillion, as of February 2. Yahoo Finance Senior Columnist Rick Newman joins the Live show to explain who could be responsible for this gargantuan debt...\\n\\n[3] AMAC Magazine Exclusive: America’s Debt Calamity | AMAC\\nURL: https://amac.us/newsline/economy/amac-magazine-exclusive-americas-debt-calamity/\\nExcerpt: Most frustrating, this excessive $34 trillion federal debt was just a trillion dollars under President Ronald Reagan, who used debt to collapse the Soviet Union and seed 18 million new jobs. Under President Obama, federal debt exploded by 74 percent.\\n\\n[4] US National Debt Surpasses $34 Trillion Amid Emergency... | LinkedIn\\nURL: https://www.linkedin.com/posts/unboxfactory_unboxfactory-nationaldebt-uscongress-activity-7431193576488890368-kEKs\\nExcerpt: The United States’ federal debt has now surpassed $37 trillion, raising serious concerns about fiscal stability, economic sustainability, and long-term global financial impacts.\\n\\n[5] $34 Trillion and Climbing – Ahead of the Herd\\nURL: https://aheadoftheherd.com/34-trillion-and-climbing/\\nExcerpt: In 2023 the US added $2.65 trillion in debt, the second largest annual increase in history after the 2020 increase of $4.5 trillion. Going back to 1995, Federal Debt has increased by just over $1 trillion per year, but since 2010 that number has jumped to $1.7 trillion annually.\\n\\n[6] Finance Professor Says $34 Trillion in Federal Debt Could Trigger...\\nURL: https://www.theepochtimes.com/business/finance-professor-says-34-trillion-in-federal-debt-could-trigger-meltdown-derail-the-next-administration-5599745\\nExcerpt: National debt reached a record high of $34 trillion at the end of 2023, with the federal government’s total debt going up by $2.65 trillion.\\n\\n[7] $34 trillion of federal debt and counting... should we be worried? : NPR\\nURL: https://www.npr.org/2024/04/30/1197964071/federal-debt-national-deficit\\nExcerpt: And that debt number? It just keeps ticking up. How deep in the hole are we? Nearly a hundred percent of gross domestic product. And counting. Today on the show, the federal debt. Is it time to freak out?\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"United States Department of the Treasury data confirmed that the total gross national debt exceeded $34 trillion in late December 2023 / early January 2024, and continued to climb beyond $34.9 trillion in 2024. Therefore, the claim that the national debt has surpassed $34 trillion is accurate.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The United States national debt has surpassed $34 trillion.\"",
+        "US federal debt exceeds $34 trillion",
+        "\"The United States national debt has surpassed $34 trillion.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/",
+          "title": "National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...",
+          "snippet": "The United States national debt has surpassed $34.9 trillion for the first time, marking a somber milestone in the nation’s fiscal history. This figure, released by the Treasury Department, reflects a substantial increase from the $30 trillion threshold crossed just last year."
+        },
+        {
+          "url": "https://finance.yahoo.com/video/us-national-debt-exceeds-34-201043086.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAAQyd5BilEgZRTq-9gxJUD2p041HU0LuaQlwtVfi2zWE1p89elxYsPuHn69FQBTV8R0WssMBGdBEYoMmnZV4W229SPdkUSTtk-edvZprOia9cbG8dMFTs43jHUWEMhJCZ2wAdkLaJ4-vjxPX_9bSfw-EFmhl92mMMuBEvhIUaRxa",
+          "title": "US national debt exceeds $34 trillion: How did we get here?",
+          "snippet": "The US national debt has ballooned to over $34.1 trillion, as of February 2. Yahoo Finance Senior Columnist Rick Newman joins the Live show to explain who could be responsible for this gargantuan debt..."
+        },
+        {
+          "url": "https://amac.us/newsline/economy/amac-magazine-exclusive-americas-debt-calamity/",
+          "title": "AMAC Magazine Exclusive: America’s Debt Calamity | AMAC",
+          "snippet": "Most frustrating, this excessive $34 trillion federal debt was just a trillion dollars under President Ronald Reagan, who used debt to collapse the Soviet Union and seed 18 million new jobs. Under President Obama, federal debt exploded by 74 percent."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/unboxfactory_unboxfactory-nationaldebt-uscongress-activity-7431193576488890368-kEKs",
+          "title": "US National Debt Surpasses $34 Trillion Amid Emergency... | LinkedIn",
+          "snippet": "The United States’ federal debt has now surpassed $37 trillion, raising serious concerns about fiscal stability, economic sustainability, and long-term global financial impacts."
+        },
+        {
+          "url": "https://aheadoftheherd.com/34-trillion-and-climbing/",
+          "title": "$34 Trillion and Climbing – Ahead of the Herd",
+          "snippet": "In 2023 the US added $2.65 trillion in debt, the second largest annual increase in history after the 2020 increase of $4.5 trillion. Going back to 1995, Federal Debt has increased by just over $1 trillion per year, but since 2010 that number has jumped to $1.7 trillion annually."
+        },
+        {
+          "url": "https://www.theepochtimes.com/business/finance-professor-says-34-trillion-in-federal-debt-could-trigger-meltdown-derail-the-next-administration-5599745",
+          "title": "Finance Professor Says $34 Trillion in Federal Debt Could Trigger...",
+          "snippet": "National debt reached a record high of $34 trillion at the end of 2023, with the federal government’s total debt going up by $2.65 trillion."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-004",
+      "claim_title": "AI systems now pass the bar exam",
+      "claim_text": "\"AI language models can now pass the US bar examination at above-average scores.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim is accurate",
+        "In a landmark 2023 study by legal scholars Daniel Martin Katz and Michael Bommarito (\"GPT-4 Passes the Bar Exam\"), OpenAI's GPT-4 was evaluated on the Uniform Bar Examination (UBE)",
+        "The model achieved an overall scaled score of 297 out of 400, well above the passing score required in any UBE jurisdiction (which ranges between 260 and 270)",
+        "While OpenAI initially claimed this placed GPT-4 in the 90th percentile (based on comparison to February administrations), subsequent scrutiny by legal researchers noted that compared to first-time test takers in July administrations, the score ranks around the 68th percentile",
+        "Under either benchmark, the score is solidly above average (greater than the 50th percentile)."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"AI language models can now pass the US bar examination at above-average scores.\\\"\",\n  \"verification_notes\": \"Verify the original GPT-4 bar exam study (Bommarito & Katz, 2023). Check if results have been replicated or updated with newer models. Note: passing score and top-10% are different claims — verify which is accurate.\",\n  \"search_results\": \"[1] How to Use Ai to Study for The Bar Exam | TikTok\\nURL: https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam\\nExcerpt: “Are you ready to pass the 2026 Bar Exams using 227 real cases penned by Justice Gaerlan?” This AI-powered reviewer compiles full texts, audio digests, and simplified formats. But can you really afford to skip the very cases the Bar Chair personally decided?\\n\\n[2] The Study Techniques I Used to Pass the NY Bar Exam - YouTube\\nURL: https://www.youtube.com/watch?v=yfhMXwPDfIw\\nExcerpt: Why Pass the Bar Exam.I passed the NY bar exam first try as a foreign lawyer! I didn't use Barbri. My experience and tips.\\n\\n[3] Free Bar Exam Practice Test 2026 – Pass First Try\\nURL: https://barprephero.com/\\nExcerpt: Try a free full-length bar exam practice test and 5-question quizzes. Upgrade anytime for 1,715 real NCBE MBE questions and unlimited mock exams.One MBE-style practice question, answer, and rationale in your inbox. Use it as a small daily warm-up before the bar exam.\\n\\n[4] 183 | Wait, GPT-4 Didn't Pass the Bar? | The Brainyacts\\nURL: https://thebrainyacts.beehiiv.com/p/183-wait-gpt4-didnt-pass-bar\\nExcerpt: Introducing Decentralized AI. Doubting GPT-4’s Bar Score. OpenAI Voice Cloning and other AI model news.GPT-4's Performance on the Bar Exam: OpenAI claimed that GPT-4 scored in the top 10% of candidates on the bar exam, which is the test required for law practice in most U.S. states.\\n\\n[5] List: Here Are the Exams ChatGPT and GPT-4 Have Passed so Far\\nURL: https://www.businessinsider.com/list-here-are-the-exams-chatgpt-has-passed-so-far-2023-1\\nExcerpt: The threshold for passing the bar varies from state to state. In New York though, exam takers need a score of 266, around the 50th percentile, to pass, according to The New York State Board of Law Examiners.\\n\\n[6] All India Bar Examination\\nURL: https://www.allindiabarexamination.com/\\nExcerpt: The Bar Council of India (BCI) is pleased to announce that the result of the All India Bar Examination (AIBE-XXI), conducted on 07 June 2026, has been declared.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"The claim is accurate. In a landmark 2023 study by legal scholars Daniel Martin Katz and Michael Bommarito (\\\"GPT-4 Passes the Bar Exam\\\"), OpenAI's GPT-4 was evaluated on the Uniform Bar Examination (UBE). The model achieved an overall scaled score of 297 out of 400, well above the passing score required in any UBE jurisdiction (which ranges between 260 and 270). While OpenAI initially claimed this placed GPT-4 in the 90th percentile (based on comparison to February administrations), subsequent scrutiny by legal researchers noted that compared to first-time test takers in July administrations, the score ranks around the 68th percentile. Under either benchmark, the score is solidly above average (greater than the 50th percentile).\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"AI language models can now pass the US bar examination at above-average scores.\"",
+        "AI systems now pass the bar exam",
+        "\"AI language models can now pass the US bar examination at above-average scores.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam",
+          "title": "How to Use Ai to Study for The Bar Exam | TikTok",
+          "snippet": "“Are you ready to pass the 2026 Bar Exams using 227 real cases penned by Justice Gaerlan?” This AI-powered reviewer compiles full texts, audio digests, and simplified formats. But can you really afford to skip the very cases the Bar Chair personally decided?"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yfhMXwPDfIw",
+          "title": "The Study Techniques I Used to Pass the NY Bar Exam - YouTube",
+          "snippet": "Why Pass the Bar Exam.I passed the NY bar exam first try as a foreign lawyer! I didn't use Barbri. My experience and tips."
+        },
+        {
+          "url": "https://barprephero.com/",
+          "title": "Free Bar Exam Practice Test 2026 – Pass First Try",
+          "snippet": "Try a free full-length bar exam practice test and 5-question quizzes. Upgrade anytime for 1,715 real NCBE MBE questions and unlimited mock exams.One MBE-style practice question, answer, and rationale in your inbox. Use it as a small daily warm-up before the bar exam."
+        },
+        {
+          "url": "https://thebrainyacts.beehiiv.com/p/183-wait-gpt4-didnt-pass-bar",
+          "title": "183 | Wait, GPT-4 Didn't Pass the Bar? | The Brainyacts",
+          "snippet": "Introducing Decentralized AI. Doubting GPT-4’s Bar Score. OpenAI Voice Cloning and other AI model news.GPT-4's Performance on the Bar Exam: OpenAI claimed that GPT-4 scored in the top 10% of candidates on the bar exam, which is the test required for law practice in most U.S. states."
+        },
+        {
+          "url": "https://www.businessinsider.com/list-here-are-the-exams-chatgpt-has-passed-so-far-2023-1",
+          "title": "List: Here Are the Exams ChatGPT and GPT-4 Have Passed so Far",
+          "snippet": "The threshold for passing the bar varies from state to state. In New York though, exam takers need a score of 266, around the 50th percentile, to pass, according to The New York State Board of Law Examiners."
+        },
+        {
+          "url": "https://www.allindiabarexamination.com/",
+          "title": "All India Bar Examination",
+          "snippet": "The Bar Council of India (BCI) is pleased to announce that the result of the All India Bar Examination (AIBE-XXI), conducted on 07 June 2026, has been declared."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "TRUE",
+      "confidence": 95,
+      "verdict_changed": true,
+      "previous_verdict": "UNVERIFIED",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "According to historical records from the Congressional Research Service (CRS) and analyses by organizations such as the Pew Research Center, the last time Congress enacted all regular appropriations bills prior to the start of the fiscal year was for Fiscal Year 1997 (which began on October 1, 1996)",
+        "Under the Congressional Budget Act of 1974, Congress is intended to pass all 12 regular appropriations bills by the October 1 deadline",
+        "Since FY 1997, Congress has consistently relied on continuing resolutions (stopgap spending measures) or omnibus packages passed well after the start of the fiscal year to fully fund the federal government."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The US Congress has not passed a complete federal budget on time since 1997.\\\"\",\n  \"verification_notes\": \"Check Congressional Research Service records. Fiscal year starts October 1. Verify if any year between 1998 and present had all 12 appropriations bills enacted before the deadline. Note distinction between omnibus packages and individual bills.\",\n  \"search_results\": \"[1] United States Congress - Wikipedia\\nURL: https://en.wikipedia.org/wiki/United_States_Congress\\nExcerpt: The United States Congress is the legislative branch of the federal government of the United States. It is a bicameral legislature, including a lower body, the U.S. House of Representatives, and an upper body, the U.S. Senate. They both meet in the United States Capitol in Washington, D.C.\\n\\n[2] Sen. Mike Enzi: My plan to put Congress on a 'diet' and fix... | Fox N...\\nURL: https://www.foxnews.com/opinion/sen-mike-enzi-my-plan-to-put-congress-on-a-diet-and-fix-our-broken-budget-process\\nExcerpt: The congressional budget is easily ignored in the Senate because it takes the same number of votes in the Senate to waive a budget violation that it does to overcome filibuster and pass a bill. The fiscal year 2016 budget was tossed aside in less than 5 weeks.\\n\\n[3] Congress of the United States | Members, Seats, Term... | Britannica\\nURL: https://www.britannica.com/topic/Congress-of-the-United-States\\nExcerpt: Of common interest to both houses of Congress are also such matters as government printing, general accounting, and the congressional budget. Congress has established individual agencies to serve these specific interests.\\n\\n[4] Mattis: ‘No Enemy’ Has Done More Harm Than Congress\\nURL: https://www.thedailybeast.com/mattis-no-enemy-has-done-more-harm-than-congress/\\nExcerpt: Congress. Mattis blasted the legislative branch for failing to pass budgets on time and refusing to repeal the arbitrary budget caps that lawmakers passed into law in 2011 as part of the Budget Control Act, aka “sequestration.”\\n\\n[5] When will this do-nothing Congress wake up to... | The Guardian\\nURL: https://www.theguardian.com/commentisfree/2013/apr/05/do-nothing-congress-america-jobs-crisis\\nExcerpt: While the unemployment rate is dropping, and the number of jobs goes up and down, the labor force participation rate has been steadily falling since the economy started weakening in 2007. Here is what the chart looks like\\n\\n[6] Congress Passes and President Trump Signs into Law Year-Long...\\nURL: https://nlihc.org/resource/congress-passes-and-president-trump-signs-law-year-long-stopgap-funding-bill-underfunding\\nExcerpt: Congress passed and President Donald Trump signed into law a year-long stopgap funding bill, known as a continuing resolution (CR), to extend funding for the federal government through September.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 95,\n  \"reasoning\": \"According to historical records from the Congressional Research Service (CRS) and analyses by organizations such as the Pew Research Center, the last time Congress enacted all regular appropriations bills prior to the start of the fiscal year was for Fiscal Year 1997 (which began on October 1, 1996). Under the Congressional Budget Act of 1974, Congress is intended to pass all 12 regular appropriations bills by the October 1 deadline. Since FY 1997, Congress has consistently relied on continuing resolutions (stopgap spending measures) or omnibus packages passed well after the start of the fiscal year to fully fund the federal government.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+        "US Congress passed no budget on time since 1997",
+        "\"The US Congress has not passed a complete federal budget on time since 1997.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://en.wikipedia.org/wiki/United_States_Congress",
+          "title": "United States Congress - Wikipedia",
+          "snippet": "The United States Congress is the legislative branch of the federal government of the United States. It is a bicameral legislature, including a lower body, the U.S. House of Representatives, and an upper body, the U.S. Senate. They both meet in the United States Capitol in Washington, D.C."
+        },
+        {
+          "url": "https://www.foxnews.com/opinion/sen-mike-enzi-my-plan-to-put-congress-on-a-diet-and-fix-our-broken-budget-process",
+          "title": "Sen. Mike Enzi: My plan to put Congress on a 'diet' and fix... | Fox N...",
+          "snippet": "The congressional budget is easily ignored in the Senate because it takes the same number of votes in the Senate to waive a budget violation that it does to overcome filibuster and pass a bill. The fiscal year 2016 budget was tossed aside in less than 5 weeks."
+        },
+        {
+          "url": "https://www.britannica.com/topic/Congress-of-the-United-States",
+          "title": "Congress of the United States | Members, Seats, Term... | Britannica",
+          "snippet": "Of common interest to both houses of Congress are also such matters as government printing, general accounting, and the congressional budget. Congress has established individual agencies to serve these specific interests."
+        },
+        {
+          "url": "https://www.thedailybeast.com/mattis-no-enemy-has-done-more-harm-than-congress/",
+          "title": "Mattis: ‘No Enemy’ Has Done More Harm Than Congress",
+          "snippet": "Congress. Mattis blasted the legislative branch for failing to pass budgets on time and refusing to repeal the arbitrary budget caps that lawmakers passed into law in 2011 as part of the Budget Control Act, aka “sequestration.”"
+        },
+        {
+          "url": "https://www.theguardian.com/commentisfree/2013/apr/05/do-nothing-congress-america-jobs-crisis",
+          "title": "When will this do-nothing Congress wake up to... | The Guardian",
+          "snippet": "While the unemployment rate is dropping, and the number of jobs goes up and down, the labor force participation rate has been steadily falling since the economy started weakening in 2007. Here is what the chart looks like"
+        },
+        {
+          "url": "https://nlihc.org/resource/congress-passes-and-president-trump-signs-law-year-long-stopgap-funding-bill-underfunding",
+          "title": "Congress Passes and President Trump Signs into Law Year-Long...",
+          "snippet": "Congress passed and President Donald Trump signed into law a year-long stopgap funding bill, known as a continuing resolution (CR), to extend funding for the federal government through September."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim that \"lightning never strikes the same place twice\" is a well-known scientific myth",
+        "According to atmospheric scientists, the National Weather Service (NWS), and NOAA, lightning frequently strikes the exact same location multiple times",
+        "Tall, isolated, and conductive objects (such as skyscrapers, towers, and trees) are struck repeatedly; for example, the Empire State Building is struck by lightning an average of 25 times each year",
+        "Furthermore, a single lightning flash often consists of multiple strokes following the identical ionized channel in rapid succession."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Lightning never strikes the same place twice.\\\"\",\n  \"verification_notes\": \"Check National Weather Service and NOAA data on lightning strike patterns. Verify how many times the Empire State Building is struck per year. Explain the physics of why tall conductors are repeatedly targeted.\",\n  \"search_results\": \"[1] 'Lightning Never Strikes the Same Place Twice'... Or Does It?\\nURL: https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html\\nExcerpt: Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice.\\n\\n[2] What Does Lightning Never Strikes The Same Place Twice Mean?\\nURL: https://writingexplained.org/idiom-dictionary/lightning-never-strikes-the-same-place-twice\\nExcerpt: lightning never strikes twice in the same place This idiom likely originated in the book Thrilling Adventures of the Prisoner of the Border, published in the year 1860 by P. Hamilton Myer.\\n\\n[3] Lightning never strikes twice in the same place - Idioms by The...\\nURL: https://idioms.thefreedictionary.com/lightning+never+strikes+twice+in+the+same+place\\nExcerpt: Something that's very extraordinary and unlikely to happen will never happen to the same person twice. (Said especially of tragic or unfortunate events.)There's no way we could get hit by such a devastating storm like that again—lightning never strikes twice in the same place.\\n\\n[4] Can Lightning Strike the Same Place Twice? | Britannica\\nURL: https://www.britannica.com/story/can-lightning-strike-the-same-place-twice\\nExcerpt: “Lightning never strikes the same place twice” is a common phrase you’ve probably heard before, often used to reassure someone that whatever bad thing has happened, it won’t happen again.\\n\\n[5] Definition & Meaning of \\\"Lightning never strikes the same place...\\\"...\\nURL: https://dictionary.langeek.co/en/word/215698?entry=lightning+never+strikes+the+same+place+twice\\nExcerpt: The origin of the proverb \\\"lightning never strikes the same place twice\\\" is believed to come from common folk wisdom and has been used in various cultures to explain the rarity of unusual events or accidents.\\n\\n[6] VOA Special English - 'Lightning Never Strikes the Same Place...\\nURL: https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html\\nExcerpt: You know, lightning never strikes twice!\\\" That probably will not make your head feel any better. And you can tell your friend that scientists. say that lightning can and will strike the same place twice. Whether for something good or bad, the underlying truth remains the same\"\n}",
+      "raw_response": "{\n  \"verdict\": \"FALSE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim that \\\"lightning never strikes the same place twice\\\" is a well-known scientific myth. According to atmospheric scientists, the National Weather Service (NWS), and NOAA, lightning frequently strikes the exact same location multiple times. Tall, isolated, and conductive objects (such as skyscrapers, towers, and trees) are struck repeatedly; for example, the Empire State Building is struck by lightning an average of 25 times each year. Furthermore, a single lightning flash often consists of multiple strokes following the identical ionized channel in rapid succession.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Lightning never strikes the same place twice.\"",
+        "Lightning never strikes the same place twice",
+        "\"Lightning never strikes the same place twice.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://learningenglish.voanews.com/a/lightning-never-strikes-the-same-place-twice-or-does-it-/5495172.html",
+          "title": "'Lightning Never Strikes the Same Place Twice'... Or Does It?",
+          "snippet": "Anything that comes to represent something that people criticize can be called a lightning rod. When speaking about lightning, we have another common expression: Lightning never strikes the same place twice."
+        },
+        {
+          "url": "https://writingexplained.org/idiom-dictionary/lightning-never-strikes-the-same-place-twice",
+          "title": "What Does Lightning Never Strikes The Same Place Twice Mean?",
+          "snippet": "lightning never strikes twice in the same place This idiom likely originated in the book Thrilling Adventures of the Prisoner of the Border, published in the year 1860 by P. Hamilton Myer."
+        },
+        {
+          "url": "https://idioms.thefreedictionary.com/lightning+never+strikes+twice+in+the+same+place",
+          "title": "Lightning never strikes twice in the same place - Idioms by The...",
+          "snippet": "Something that's very extraordinary and unlikely to happen will never happen to the same person twice. (Said especially of tragic or unfortunate events.)There's no way we could get hit by such a devastating storm like that again—lightning never strikes twice in the same place."
+        },
+        {
+          "url": "https://www.britannica.com/story/can-lightning-strike-the-same-place-twice",
+          "title": "Can Lightning Strike the Same Place Twice? | Britannica",
+          "snippet": "“Lightning never strikes the same place twice” is a common phrase you’ve probably heard before, often used to reassure someone that whatever bad thing has happened, it won’t happen again."
+        },
+        {
+          "url": "https://dictionary.langeek.co/en/word/215698?entry=lightning+never+strikes+the+same+place+twice",
+          "title": "Definition & Meaning of \"Lightning never strikes the same place...\"...",
+          "snippet": "The origin of the proverb \"lightning never strikes the same place twice\" is believed to come from common folk wisdom and has been used in various cultures to explain the rarity of unusual events or accidents."
+        },
+        {
+          "url": "https://www.21voa.com/Special_English/lightning-never-strikes-the-same-place-twice-or-does-it-84930.html",
+          "title": "VOA Special English - 'Lightning Never Strikes the Same Place...",
+          "snippet": "You know, lightning never strikes twice!\" That probably will not make your head feel any better. And you can tell your friend that scientists. say that lightning can and will strike the same place twice. Whether for something good or bad, the underlying truth remains the same"
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "confidence": 100,
+      "verdict_changed": false,
+      "previous_verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim is scientifically accurate and widely documented",
+        "Data from the Lunar Laser Ranging experiment—which bounces lasers off retroreflectors left on the Moon by Apollo missions—has precisely measured that the Moon recedes from Earth at an average rate of approximately 3.78 to 3.8 centimeters (about 1.5 inches) per year",
+        "This gradual recession occurs because tidal friction created by the Moon's pull on Earth's oceans slows Earth's rotation and transfers angular momentum into the Moon's orbit, pushing it slowly outward."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\\\"\",\n  \"verification_notes\": \"Check NASA and Lunar Laser Ranging experiment data. Verify the mechanism (tidal friction transferring angular momentum). Confirm the rate is ~3.8 cm/year. Calculate implications: how long until the Moon is too far for total solar eclipses?\",\n  \"search_results\": \"[1] Why Is The Moon Moving Away from Earth | TikTok\\nURL: https://www.tiktok.com/discover/why-is-the-moon-moving-away-from-earth\\nExcerpt: The earth is leaving moon #shorts #The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year due to tidal interactions between the two bodies.\\n\\n[2] Moon not 'geologically dead world' after all. Why that might be a prob...\\nURL: https://studyfinds.com/moon-not-geologically-dead/\\nExcerpt: Additionally, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year, while also experiencing regular tugs from Earth’s gravity. These combined forces create stresses that can cause the lunar surface to buckle and form ridges.\\n\\n[3] Blue and Purple Illustrated Night Sky Group Project...\\nURL: https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069\\nExcerpt: INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about 3.8 centimeters per year, which may slightly affect tides in the far future. •\\n\\n[4] Understanding Earth's Rotation: Speed and Implications\\nURL: https://nabado.co.ke/2024/12/22/understanding-earths-rotation-speed-effects-and-implications/\\nExcerpt: Over time, the Moon has slowly pulled on Earth’s oceans, creating friction that has gradually slowed down the Earth’s rotation. In return, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\\n\\n[5] Facts about the moon - jeanglass.com\\nURL: https://jeanglass.com/facts-about-the-moon/\\nExcerpt: Worth knowing: The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This gradual recession is caused by the same tidal forces that once slowed Earth’s rotation.\\n\\n[6] How Does Moon Revolve Around Earth? - The Institute for...\\nURL: https://iere.org/how-does-moon-revolve-around-earth/\\nExcerpt: The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This is due to the tidal interaction between Earth and the Moon.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"TRUE\",\n  \"confidence\": 100,\n  \"reasoning\": \"The claim is scientifically accurate and widely documented. Data from the Lunar Laser Ranging experiment—which bounces lasers off retroreflectors left on the Moon by Apollo missions—has precisely measured that the Moon recedes from Earth at an average rate of approximately 3.78 to 3.8 centimeters (about 1.5 inches) per year. This gradual recession occurs because tidal friction created by the Moon's pull on Earth's oceans slows Earth's rotation and transfers angular momentum into the Moon's orbit, pushing it slowly outward.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+        "The Moon is drifting away from Earth",
+        "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.tiktok.com/discover/why-is-the-moon-moving-away-from-earth",
+          "title": "Why Is The Moon Moving Away from Earth | TikTok",
+          "snippet": "The earth is leaving moon #shorts #The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year due to tidal interactions between the two bodies."
+        },
+        {
+          "url": "https://studyfinds.com/moon-not-geologically-dead/",
+          "title": "Moon not 'geologically dead world' after all. Why that might be a prob...",
+          "snippet": "Additionally, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year, while also experiencing regular tugs from Earth’s gravity. These combined forces create stresses that can cause the lunar surface to buckle and form ridges."
+        },
+        {
+          "url": "https://www.slideshare.net/slideshow/blue-and-purple-illustrated-night-sky-group-project-presentation_20260114_190602_0000-pptx/285816069",
+          "title": "Blue and Purple Illustrated Night Sky Group Project...",
+          "snippet": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about 3.8 centimeters per year, which may slightly affect tides in the far future. •"
+        },
+        {
+          "url": "https://nabado.co.ke/2024/12/22/understanding-earths-rotation-speed-effects-and-implications/",
+          "title": "Understanding Earth's Rotation: Speed and Implications",
+          "snippet": "Over time, the Moon has slowly pulled on Earth’s oceans, creating friction that has gradually slowed down the Earth’s rotation. In return, the Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year."
+        },
+        {
+          "url": "https://jeanglass.com/facts-about-the-moon/",
+          "title": "Facts about the moon - jeanglass.com",
+          "snippet": "Worth knowing: The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This gradual recession is caused by the same tidal forces that once slowed Earth’s rotation."
+        },
+        {
+          "url": "https://iere.org/how-does-moon-revolve-around-earth/",
+          "title": "How Does Moon Revolve Around Earth? - The Institute for...",
+          "snippet": "The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year. This is due to the tidal interaction between Earth and the Moon."
+        }
+      ]
+    }
+  ],
+  "verdicts_changed": 1,
+  "errors": 0
+}

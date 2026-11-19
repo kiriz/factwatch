@@ -3,17 +3,25 @@
   "claim_id": "claim-002",
   "verdict": "TRUE",
   "confidence": 95,
-  "last_checked_at": "2026-11-12T14:36:54Z",
+  "last_checked_at": "2026-11-19T15:11:39Z",
   "last_changed_at": "2026-11-12T14:36:54Z",
-  "run_id": "run-2026-11-12T143058Z",
+  "run_id": "run-2026-11-19T150608Z",
   "sources": [
     {
-      "url": "https://unn.ua/en/news/the-us-national-debt-has-reached-a-record-dollar34-trillion",
-      "title": "The US national debt has reached a record $34 trillion | УНН",
-      "domain": "unn.ua",
+      "url": "https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/",
+      "title": "National Debt Soars Past $34.9 Trillion, Raising Economic Concerns...",
+      "domain": "tampafp.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The gross national debt of the US federal government has set a new record, exceeding"
+      "excerpt": "The United States national debt has surpassed $34.9 trillion for the first time, marking a"
+    },
+    {
+      "url": "https://finance.yahoo.com/video/us-national-debt-exceeds-34-201043086.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAAQyd5BilEgZRTq-9gxJUD2p041HU0LuaQlwtVfi2zWE1p89elxYsPuHn69FQBTV8R0WssMBGdBEYoMmnZV4W229SPdkUSTtk-edvZprOia9cbG8dMFTs43jHUWEMhJCZ2wAdkLaJ4-vjxPX_9bSfw-EFmhl92mMMuBEvhIUaRxa",
+      "title": "US national debt exceeds $34 trillion: How did we get here?",
+      "domain": "finance.yahoo.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The US national debt has ballooned to over $34.1 trillion, as of February 2. Yahoo"
     },
     {
       "url": "https://amac.us/newsline/economy/amac-magazine-exclusive-americas-debt-calamity/",
@@ -24,12 +32,28 @@
       "excerpt": "Most frustrating, this excessive $34 trillion federal debt was just a trillion dollars under President"
     },
     {
-      "url": "https://www.linkedin.com/pulse/34-trillion-debt-bomb-sitting-under-global-markets-insiderindex-fcwkc",
-      "title": "The $34 Trillion Debt Bomb Sitting Under Global Markets",
+      "url": "https://www.linkedin.com/posts/unboxfactory_unboxfactory-nationaldebt-uscongress-activity-7431193576488890368-kEKs",
+      "title": "US National Debt Surpasses $34 Trillion Amid Emergency... | LinkedIn",
       "domain": "linkedin.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The United States now carries more than $34 trillion in federal debt. Interest costs alone"
+      "excerpt": "The United States’ federal debt has now surpassed $37 trillion, raising serious concerns about fiscal"
+    },
+    {
+      "url": "https://aheadoftheherd.com/34-trillion-and-climbing/",
+      "title": "$34 Trillion and Climbing – Ahead of the Herd",
+      "domain": "aheadoftheherd.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "In 2023 the US added $2.65 trillion in debt, the second largest annual increase in"
+    },
+    {
+      "url": "https://www.theepochtimes.com/business/finance-professor-says-34-trillion-in-federal-debt-could-trigger-meltdown-derail-the-next-administration-5599745",
+      "title": "Finance Professor Says $34 Trillion in Federal Debt Could Trigger...",
+      "domain": "theepochtimes.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "National debt reached a record high of $34 trillion at the end of 2023, with"
     },
     {
       "url": "https://www.npr.org/2024/04/30/1197964071/federal-debt-national-deficit",
@@ -38,25 +62,9 @@
       "relevance": "medium",
       "supports_claim": true,
       "excerpt": "And that debt number? It just keeps ticking up. How deep in the hole are"
-    },
-    {
-      "url": "https://www.binance.com/en/square/post/8011328368026",
-      "title": "America's debt exceeds $34 trillion, but it seems that the",
-      "domain": "binance.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Associated Press: For Mike Johnson, this was a priority on day one. It is time,"
-    },
-    {
-      "url": "https://brainly.com/question/50114026",
-      "title": "[FREE] True or False: The U.S. government's total debt exceeded $34...",
-      "domain": "brainly.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "To determine whether the U.S. government's total debt exceeded $34 trillion by the end of"
     }
   ],
-  "reasoning": "According to data from the U.S. Department of the Treasury, the total U.S. gross federal debt officially surpassed the $34 trillion mark in late December 2023 and early January 2024. Reporting across major news outlets and financial analysis confirms that the national debt has exceeded $34 trillion and continues to rise.",
+  "reasoning": "United States Department of the Treasury data confirmed that the total gross national debt exceeded $34 trillion in late December 2023 / early January 2024, and continued to climb beyond $34.9 trillion in 2024. Therefore, the claim that the national debt has surpassed $34 trillion is accurate.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -201,6 +209,12 @@
       "confidence": 0,
       "checked_at": "2026-11-04T13:47:03Z",
       "run_id": "run-2026-11-04T134031Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-11-12T14:36:54Z",
+      "run_id": "run-2026-11-12T143058Z"
     }
   ],
   "agent_flags": {

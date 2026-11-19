@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-004",
   "verdict": "TRUE",
-  "confidence": 90,
-  "last_checked_at": "2026-11-09T15:07:22Z",
+  "confidence": 95,
+  "last_checked_at": "2026-11-19T15:15:41Z",
   "last_changed_at": "2026-06-09T23:46:29Z",
-  "run_id": "run-2026-11-09T145742Z",
+  "run_id": "run-2026-11-19T150608Z",
   "sources": [
     {
       "url": "https://www.tiktok.com/discover/how-to-use-ai-to-study-for-the-bar-exam",
@@ -16,36 +16,36 @@
       "excerpt": "“Are you ready to pass the 2026 Bar Exams using 227 real cases penned by"
     },
     {
-      "url": "https://forum.effectivealtruism.org/posts/gQMM9vFbRjvBzgnBS/ai-and-the-feeling-of-living-in-two-worlds",
-      "title": "AI and the feeling of living in two worlds — EA Forum",
-      "domain": "forum.effectivealtruism.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "I can imagine this sounds intuitively far-fetched to some. But remember, 5 years ago AI"
-    },
-    {
-      "url": "https://www.linkedin.com/posts/bommarito_can-gemini-3-pass-the-bar-exam-at-this-activity-7396575232737767424-0rLz",
-      "title": "Can Gemini 3 pass the Bar Exam? At this point, who cares.",
-      "domain": "linkedin.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "More interestingly, what does Gemini 3 think about its ability to pass the Bar Exam?"
-    },
-    {
-      "url": "https://www.themisbar.com/themis-vs-barbri",
-      "title": "Themis vs. BARBRI: Which Bar Prep Course Is Best? | Themis",
-      "domain": "themisbar.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Compare Themis vs. BARBRI bar review courses. See differences in price, pass rates, study materials,"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=scBwdIGWH5k",
-      "title": "REJECTING HER TO PASS THE BAR EXAM - YouTube",
+      "url": "https://www.youtube.com/watch?v=yfhMXwPDfIw",
+      "title": "The Study Techniques I Used to Pass the NY Bar Exam - YouTube",
       "domain": "youtube.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "REJECTING HER TO PASS THE BAR EXAM. Jaé The Fade."
+      "excerpt": "Why Pass the Bar Exam.I passed the NY bar exam first try as a foreign"
+    },
+    {
+      "url": "https://barprephero.com/",
+      "title": "Free Bar Exam Practice Test 2026 – Pass First Try",
+      "domain": "barprephero.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Try a free full-length bar exam practice test and 5-question quizzes. Upgrade anytime for 1,715"
+    },
+    {
+      "url": "https://thebrainyacts.beehiiv.com/p/183-wait-gpt4-didnt-pass-bar",
+      "title": "183 | Wait, GPT-4 Didn't Pass the Bar? | The Brainyacts",
+      "domain": "thebrainyacts.beehiiv.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Introducing Decentralized AI. Doubting GPT-4’s Bar Score. OpenAI Voice Cloning and other AI model news.GPT-4's"
+    },
+    {
+      "url": "https://www.businessinsider.com/list-here-are-the-exams-chatgpt-has-passed-so-far-2023-1",
+      "title": "List: Here Are the Exams ChatGPT and GPT-4 Have Passed so Far",
+      "domain": "businessinsider.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The threshold for passing the bar varies from state to state. In New York though,"
     },
     {
       "url": "https://www.allindiabarexamination.com/",
@@ -56,7 +56,7 @@
       "excerpt": "The Bar Council of India (BCI) is pleased to announce that the result of the"
     }
   ],
-  "reasoning": "The claim is accurate. In a widely cited 2023 study by Daniel Martin Katz, Michael Bommarito, et al. (\"GPT-4 Passes the Bar Exam\"), OpenAI's GPT-4 was evaluated on the Uniform Bar Examination (UBE) and achieved a total scaled score of 297. Passing thresholds in all UBE jurisdictions range from 260 to 272, meaning the model comfortably passed in every jurisdiction. While OpenAI initially reported this score placed the model around the 90th percentile, subsequent peer-reviewed critique (e.g., Martinez, 2023) clarified that compared to first-time test-takers who passed the July exam, the score corresponds to approximately the 68th to 69th percentile. Under either evaluation, a score in the ~68th percentile is definitively above average (the 50th percentile).",
+  "reasoning": "The claim is accurate. In a landmark 2023 study by legal scholars Daniel Martin Katz and Michael Bommarito (\"GPT-4 Passes the Bar Exam\"), OpenAI's GPT-4 was evaluated on the Uniform Bar Examination (UBE). The model achieved an overall scaled score of 297 out of 400, well above the passing score required in any UBE jurisdiction (which ranges between 260 and 270). While OpenAI initially claimed this placed GPT-4 in the 90th percentile (based on comparison to February administrations), subsequent scrutiny by legal researchers noted that compared to first-time test takers in July administrations, the score ranks around the 68th percentile. Under either benchmark, the score is solidly above average (greater than the 50th percentile).",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -195,13 +195,19 @@
       "confidence": 95,
       "checked_at": "2026-11-01T12:40:58Z",
       "run_id": "run-2026-11-01T123242Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 90,
+      "checked_at": "2026-11-09T15:07:22Z",
+      "run_id": "run-2026-11-09T145742Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
     "requires_human_review": false,
-    "low_source_quality": true
+    "low_source_quality": false
   },
   "title": "AI systems now pass the bar exam",
   "category": "technology",

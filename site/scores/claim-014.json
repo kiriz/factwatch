@@ -3,9 +3,9 @@
   "claim_id": "claim-014",
   "verdict": "TRUE",
   "confidence": 100,
-  "last_checked_at": "2026-11-11T13:31:42Z",
+  "last_checked_at": "2026-11-19T15:33:28Z",
   "last_changed_at": "2026-06-09T23:47:39Z",
-  "run_id": "run-2026-11-11T132627Z",
+  "run_id": "run-2026-11-19T150608Z",
   "sources": [
     {
       "url": "https://www.tiktok.com/discover/why-is-the-moon-moving-away-from-earth",
@@ -32,7 +32,7 @@
       "excerpt": "INTERESTING FACTS •The moon is slowly moving away from earth at a rate of about"
     },
     {
-      "url": "https://nabado.co.ke/understanding-earths-rotation-speed-effects-and-implications/",
+      "url": "https://nabado.co.ke/2024/12/22/understanding-earths-rotation-speed-effects-and-implications/",
       "title": "Understanding Earth's Rotation: Speed and Implications",
       "domain": "nabado.co.ke",
       "relevance": "medium",
@@ -48,15 +48,15 @@
       "excerpt": "Worth knowing: The Moon is slowly moving away from Earth at a rate of about"
     },
     {
-      "url": "https://iere.org/how-is-the-earth-and-moon-alike/",
-      "title": "How Is the Earth and Moon Alike? - The Institute for Environmental...",
+      "url": "https://iere.org/how-does-moon-revolve-around-earth/",
+      "title": "How Does Moon Revolve Around Earth? - The Institute for...",
       "domain": "iere.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Yes, the Moon is slowly moving away from Earth at a rate of about 3.8"
+      "excerpt": "The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters"
     }
   ],
-  "reasoning": "The claim is a well-established astronomical fact. Measurements obtained using Lunar Laser Ranging experiments—bouncing lasers off retroreflectors placed on the lunar surface during the Apollo missions—have determined that the Moon recedes from Earth at a rate of approximately 3.8 centimeters (about 1.5 inches) per year. This gradual recession is caused by tidal interactions between Earth and the Moon, which transfer angular momentum from Earth's rotation to the Moon's orbit.",
+  "reasoning": "The claim is scientifically accurate and widely documented. Data from the Lunar Laser Ranging experiment—which bounces lasers off retroreflectors left on the Moon by Apollo missions—has precisely measured that the Moon recedes from Earth at an average rate of approximately 3.78 to 3.8 centimeters (about 1.5 inches) per year. This gradual recession occurs because tidal friction created by the Moon's pull on Earth's oceans slows Earth's rotation and transfers angular momentum into the Moon's orbit, pushing it slowly outward.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -183,6 +183,12 @@
       "confidence": 95,
       "checked_at": "2026-10-26T12:29:36Z",
       "run_id": "run-2026-10-26T120739Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 100,
+      "checked_at": "2026-11-11T13:31:42Z",
+      "run_id": "run-2026-11-11T132627Z"
     }
   ],
   "agent_flags": {

@@ -1,13 +1,62 @@
 {
   "schema_version": "1.0",
   "claim_id": "claim-005",
-  "verdict": "UNVERIFIED",
-  "confidence": 0,
-  "last_checked_at": "2026-11-12T14:52:47Z",
-  "last_changed_at": "2026-10-28T12:15:08Z",
-  "run_id": "run-2026-11-12T143058Z",
-  "sources": [],
-  "reasoning": "Fact-check failed: API error after retry",
+  "verdict": "TRUE",
+  "confidence": 95,
+  "last_checked_at": "2026-11-19T15:20:01Z",
+  "last_changed_at": "2026-11-19T15:20:01Z",
+  "run_id": "run-2026-11-19T150608Z",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/United_States_Congress",
+      "title": "United States Congress - Wikipedia",
+      "domain": "en.wikipedia.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The United States Congress is the legislative branch of the federal government of the United"
+    },
+    {
+      "url": "https://www.foxnews.com/opinion/sen-mike-enzi-my-plan-to-put-congress-on-a-diet-and-fix-our-broken-budget-process",
+      "title": "Sen. Mike Enzi: My plan to put Congress on a 'diet' and fix... | Fox N...",
+      "domain": "foxnews.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The congressional budget is easily ignored in the Senate because it takes the same number"
+    },
+    {
+      "url": "https://www.britannica.com/topic/Congress-of-the-United-States",
+      "title": "Congress of the United States | Members, Seats, Term... | Britannica",
+      "domain": "britannica.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Of common interest to both houses of Congress are also such matters as government printing,"
+    },
+    {
+      "url": "https://www.thedailybeast.com/mattis-no-enemy-has-done-more-harm-than-congress/",
+      "title": "Mattis: ‘No Enemy’ Has Done More Harm Than Congress",
+      "domain": "thedailybeast.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Congress. Mattis blasted the legislative branch for failing to pass budgets on time and refusing"
+    },
+    {
+      "url": "https://www.theguardian.com/commentisfree/2013/apr/05/do-nothing-congress-america-jobs-crisis",
+      "title": "When will this do-nothing Congress wake up to... | The Guardian",
+      "domain": "theguardian.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "While the unemployment rate is dropping, and the number of jobs goes up and down,"
+    },
+    {
+      "url": "https://nlihc.org/resource/congress-passes-and-president-trump-signs-law-year-long-stopgap-funding-bill-underfunding",
+      "title": "Congress Passes and President Trump Signs into Law Year-Long...",
+      "domain": "nlihc.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Congress passed and President Donald Trump signed into law a year-long stopgap funding bill, known"
+    }
+  ],
+  "reasoning": "According to historical records from the Congressional Research Service (CRS) and analyses by organizations such as the Pew Research Center, the last time Congress enacted all regular appropriations bills prior to the start of the fiscal year was for Fiscal Year 1997 (which began on October 1, 1996). Under the Congressional Budget Act of 1974, Congress is intended to pass all 12 regular appropriations bills by the October 1 deadline. Since FY 1997, Congress has consistently relied on continuing resolutions (stopgap spending measures) or omnibus packages passed well after the start of the fiscal year to fully fund the federal government.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -146,13 +195,19 @@
       "confidence": 0,
       "checked_at": "2026-11-04T13:49:38Z",
       "run_id": "run-2026-11-04T134031Z"
+    },
+    {
+      "verdict": "UNVERIFIED",
+      "confidence": 0,
+      "checked_at": "2026-11-12T14:52:47Z",
+      "run_id": "run-2026-11-12T143058Z"
     }
   ],
   "agent_flags": {
     "conflicting_sources": false,
     "outdated_evidence": false,
-    "requires_human_review": true,
-    "low_source_quality": true
+    "requires_human_review": false,
+    "low_source_quality": false
   },
   "title": "US Congress passed no budget on time since 1997",
   "category": "politics",
