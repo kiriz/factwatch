@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-003",
   "verdict": "FALSE",
-  "confidence": 99,
-  "last_checked_at": "2026-11-15T13:24:06Z",
+  "confidence": 98,
+  "last_checked_at": "2026-11-22T14:15:22Z",
   "last_changed_at": "2026-06-09T23:43:28Z",
-  "run_id": "run-2026-11-15T131954Z",
+  "run_id": "run-2026-11-22T135629Z",
   "sources": [
     {
-      "url": "https://hcrl.wustl.edu/claims-that-mrna-vaccines-change-human-dna-are-back/",
-      "title": "Claims that mRNA vaccines change human DNA are back",
-      "domain": "hcrl.wustl.edu",
+      "url": "https://www.sgh.com.sg/news/tomorrows-medicine/whats-fact-mrna-like-body-of-a-car-without-the-engine-expert",
+      "title": "sgh.com.sg/news/tomorrows-medicine/whats-fact-mrna-like-body-of...",
+      "domain": "sgh.com.sg",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Feb 1, 2024 · However, mRNA only enters the cell cytoplasm and does not enter"
+      "excerpt": "The mRNA vaccines can alter human DNA.mRNA (messenger ribonucleic acid) is a molecule that instructs"
     },
     {
-      "url": "https://publichealthcollaborative.org/alerts/posts-claim-that-mrna-vaccines-are-modified-mrna-meant-to-alter-human-dna/",
-      "title": "Posts claim that mRNA vaccines are “modified mRNA” meant to ...",
-      "domain": "publichealthcollaborative.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Aug 19, 2023 · The persistence of the misinformation that mRNA vaccines alter DNA elevates"
-    },
-    {
-      "url": "https://biologyinsights.com/can-the-covid-vaccine-change-your-dna-a-scientific-look/",
-      "title": "Can the COVID Vaccine Change Your DNA? A Scientific Look",
-      "domain": "biologyinsights.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Sep 18, 2026 · The mRNA in Pfizer and Moderna shots never needs to enter"
-    },
-    {
-      "url": "https://www.nebraskamed.com/COVID/you-asked-we-answered-can-mrna-vaccines-alter-human-dna",
-      "title": "You asked, we answered: Can mRNA vaccines alter human DNA?",
-      "domain": "nebraskamed.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Dec 21, 2020 · Do mRNA vaccines work by altering human DNA? Answer from infectious"
-    },
-    {
-      "url": "https://nurse.org/articles/mrna-vaccines-dna-myth/",
-      "title": "Do mRNA Vaccines Change Your DNA? An ER Physician Explains ...",
-      "domain": "nurse.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "6 days ago · Key Takeaways mRNA was discovered in 1961, and mRNA vaccines for"
-    },
-    {
-      "url": "https://factually.co/fact-checks/health/do-mrna-vaccines-alter-dna-or-make-you-genetically-modified-de2fa3",
-      "title": "Do mRNA Vaccines Alter Human DNA or Make Recipients ...",
+      "url": "https://factually.co/fact-checks/science/do-mrna-vaccines-alter-human-dna-scientific-consensus-2b7a7a",
+      "title": "Do Mainstream Scientific Sources Say mRNA Alters Human",
       "domain": "factually.co",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Jun 9, 2026 · Executive summary mRNA vaccines do not alter a recipient’s DNA and"
+      "excerpt": "Should I avoid mRNA vaccines because of DNA‑integration concerns?What experimental evidence suggests SARS‑CoV‑2 RNA can"
+    },
+    {
+      "url": "https://medlineplus.gov/genetics/understanding/therapy/mrnavaccines/",
+      "title": "What are mRNA vaccines and how do they work?: MedlinePlus...",
+      "domain": "medlineplus.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Messenger RNA is a type of RNA that is necessary for protein production. Once cells"
+    },
+    {
+      "url": "https://matternews.org/voices/opinion-essay-mrna-vaccines-are-an-essential-technology/",
+      "title": "Opinion essay: mRNA vaccines are an essential technology – Matter...",
+      "domain": "matternews.org",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The U.S. Department of Health and Human Services announced in early August that it would"
+    },
+    {
+      "url": "https://elcolectivodeuno.wordpress.com/2021/02/19/study-finds-it-possible-that-rna-from-an-mrna-injection-can-be-integrated-into-our-dna/",
+      "title": "Study finds it possible that RNA from an mRNA injection can be...",
+      "domain": "elcolectivodeuno.wordpress.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "That said, these data can be used to make a conjecture as to whether RNA"
+    },
+    {
+      "url": "https://theconversation.com/what-is-mrna-the-messenger-molecule-thats-been-in-every-living-cell-for-billions-of-years-is-the-key-ingredient-in-some-covid-19-vaccines-158511",
+      "title": "What is mRNA? The messenger molecule that’s been in every living...",
+      "domain": "theconversation.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "Harnessing mRNA for vaccination. All of mRNA’s characteristics made it of great interest to vaccine"
     }
   ],
-  "reasoning": "The claim that mRNA COVID-19 vaccines alter or permanently change human DNA is scientifically false. According to overwhelming medical consensus and public health organizations (including the CDC, WHO, and peer-reviewed studies), mRNA delivered by the vaccines remains in the cytoplasm of human cells and never enters the cell nucleus, where genomic DNA is housed. Furthermore, mRNA cannot integrate into the human genome because it degrades rapidly after protein translation and human cells lack the enzymatic machinery (such as reverse transcriptase and integrase) required to convert vaccine mRNA into DNA and integrate it.",
+  "reasoning": "According to established molecular biology principles and authoritative health bodies including the NIH and CDC, mRNA from COVID-19 vaccines does not alter or integrate into human DNA. The vaccine-delivered mRNA remains in the cell cytoplasm, cannot enter the nucleus where genomic DNA is stored, and is naturally degraded by cellular enzymes shortly after delivering instructions to produce the spike protein.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -201,6 +201,12 @@
       "confidence": 100,
       "checked_at": "2026-11-07T12:21:29Z",
       "run_id": "run-2026-11-07T121906Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 99,
+      "checked_at": "2026-11-15T13:24:06Z",
+      "run_id": "run-2026-11-15T131954Z"
     }
   ],
   "agent_flags": {
