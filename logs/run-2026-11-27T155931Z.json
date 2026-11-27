@@ -1,0 +1,264 @@
+{
+  "run_id": "run-2026-11-27T155931Z",
+  "started_at": "2026-11-27T15:59:31Z",
+  "finished_at": "2026-11-27T16:13:48Z",
+  "claim_traces": [
+    {
+      "claim_id": "claim-002",
+      "claim_title": "US federal debt exceeds $34 trillion",
+      "claim_text": "\"The United States national debt has surpassed $34 trillion.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-006",
+      "claim_title": "Humans only use 10% of their brains",
+      "claim_text": "\"Humans only use 10% of their brain capacity — the other 90% remains dormant and untapped.\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-007",
+      "claim_title": "Great Wall of China visible from space",
+      "claim_text": "\"The Great Wall of China is the only man-made structure visible from space with the naked eye.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-009",
+      "claim_title": "Napoleon was unusually short",
+      "claim_text": "\"Napoleon Bonaparte was unusually short — around 5 feet 2 inches tall.\"",
+      "category": "history",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-010",
+      "claim_title": "Bitcoin uses more electricity than Argentina",
+      "claim_text": "\"Bitcoin's annual electricity consumption exceeds that of entire countries like Argentina.\"",
+      "category": "economics",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-011",
+      "claim_title": "MSG causes headaches — 'Chinese restaurant syndrome'",
+      "claim_text": "\"MSG (monosodium glutamate) causes headaches, numbness, and other symptoms — so-called 'Chinese restaurant syndrome.'\"",
+      "category": "health",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-013",
+      "claim_title": "Social media causes depression in teenagers",
+      "claim_text": "\"Social media use causes depression and anxiety in teenagers.\"",
+      "category": "health",
+      "verdict": "DISPUTED",
+      "new_verdict": "DISPUTED",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict DISPUTED."
+      ]
+    },
+    {
+      "claim_id": "claim-015",
+      "claim_title": "AlphaGo defeated the world Go champion in 2016",
+      "claim_text": "\"In 2016, Google DeepMind's AlphaGo defeated Lee Sedol — the world's top Go player — 4 games to 1, a result experts said was a decade ahead of schedule.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-016",
+      "claim_title": "Generative AI will replace 300 million jobs",
+      "claim_text": "\"Generative AI will replace 300 million jobs worldwide.\"",
+      "category": "economics",
+      "verdict": "MISLEADING",
+      "confidence": 92,
+      "verdict_changed": false,
+      "previous_verdict": "MISLEADING",
+      "new_verdict": "MISLEADING",
+      "requires_human_review": false,
+      "agent_flags": {
+        "conflicting_sources": false,
+        "outdated_evidence": false,
+        "requires_human_review": false,
+        "low_source_quality": false
+      },
+      "sources_found": 6,
+      "sources_used": 6,
+      "reasoning_steps": [
+        "The claim distorts the findings of a widely cited March 2023 Goldman Sachs report authored by Joseph Briggs and Devesh Kodnani (and Jan Hatzius et al.)",
+        "The report did not predict that generative AI \"will replace 300 million jobs.\" Instead, it estimated that generative AI could expose the equivalent of roughly 300 million full-time jobs across major economies to automation",
+        "Crucially, the authors distinguished between job replacement and task automation, noting that most occupations and workers are only partially exposed and are more likely to be complemented by AI rather than substituted",
+        "The study also emphasized that technological displacement is historically balanced by the creation of new occupations, predicting a potential boost in global GDP rather than a net loss of 300 million positions",
+        "Presenting this figure as a definitive prediction of direct job losses mischaracterizes the report's methodology and conclusions."
+      ],
+      "error": false,
+      "model_name": "gemini-flash-latest",
+      "model_version": "",
+      "prompt": "{\n  \"claim_text\": \"\\\"Generative AI will replace 300 million jobs worldwide.\\\"\",\n  \"verification_notes\": \"Check the primary source: the Goldman Sachs Global Economics Analyst (Hatzius et al., 26 March 2023). Verify the exact wording — the report estimates roughly 300 million full-time jobs could be \\\"exposed to automation,\\\" and that ~two-thirds of occupations could see *some* automation, not full replacement. Distinguish \\\"exposed to,\\\" \\\"complemented by,\\\" and \\\"replaced by.\\\" Note the report also projected AI could raise global GDP. Cross-check with later labour-economics commentary (e.g. MIT, Brookings) on automation creating as well as displacing jobs. Expected nuance: the bare \\\"will replace 300 million jobs\\\" framing overstates the source.\",\n  \"search_results\": \"[1] How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University\\nURL: https://www.nexford.edu/insights/how-will-ai-affect-jobs\\nExcerpt: Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom.\\n\\n[2] Generative AI: Adoption versus Doom and Gloom - Centific\\nURL: https://centwp-prod.azurewebsites.net/generative-ai-adoption-versus-doom-and-gloom\\nExcerpt: Generative AI is getting a black eye. Actually, two back eyes. And some deep cuts on the nose. On March 29, a group of high-profile technology pundits signed a public letter calling for an immediate “pause for at least 6 months the training of AI systems more powerful than GPT-4.”\\n\\n[3] Will AI Take My Job?\\nURL: https://theaineighbor.com/will-ai-take-my-job/\\nExcerpt: Worried about AI taking your job? Here's an honest, friendly look at what's really at risk — and how to stay ahead.The headlines don’t help. “AI Will Replace 300 Million Jobs!” doesn’t exactly make for a peaceful night’s sleep.\\n\\n[4] Ai vs women\\nURL: https://www.hcadvisors.net/post/ai-vs-women\\nExcerpt: \\\"The latest generative AI products — think ChatGPT, Bing Chat and Bard — could replace the equivalent of 300 million full-time jobs over the next decade, according to a new report by Goldman Sachs.\\n\\n[5] AI in Marketing: Why It Won't Steal Your Job | TBCC\\nURL: https://thebettercontentclub.com/ai-in-marketing\\nExcerpt: “AI Will Replace 300 Million Jobs by 2030.” “Marketing Teams Cut by 30% Due to AI.” “Is Your Job Next?“Marketing and advertising lead AI adoption with 37% of companies already using generative AI, but only 4% of surveyed marketing leaders felt that AI will lead to increased job losses.\\n\\n[6] Is AI going to take my marketing job? - af selection\\nURL: https://www.afselection.co.uk/ai-vs-marketers-is-ai-going-to-take-my-marketing-job/\\nExcerpt: Those were the words to come from Sam Altman, the Founder of ChatGPT. This is also coupled with a recent report published by Goldman Sachs that predicts AI will replace 300 million full-time jobs.\"\n}",
+      "raw_response": "{\n  \"verdict\": \"MISLEADING\",\n  \"confidence\": 92,\n  \"reasoning\": \"The claim distorts the findings of a widely cited March 2023 Goldman Sachs report authored by Joseph Briggs and Devesh Kodnani (and Jan Hatzius et al.). The report did not predict that generative AI \\\"will replace 300 million jobs.\\\" Instead, it estimated that generative AI could expose the equivalent of roughly 300 million full-time jobs across major economies to automation. \\n\\nCrucially, the authors distinguished between job replacement and task automation, noting that most occupations and workers are only partially exposed and are more likely to be complemented by AI rather than substituted. The study also emphasized that technological displacement is historically balanced by the creation of new occupations, predicting a potential boost in global GDP rather than a net loss of 300 million positions. Presenting this figure as a definitive prediction of direct job losses mischaracterizes the report's methodology and conclusions.\",\n  \"conflicting_sources\": false,\n  \"outdated_evidence\": false,\n  \"requires_human_review\": false,\n  \"low_source_quality\": false\n}",
+      "prompt_tokens": null,
+      "response_tokens": null,
+      "total_tokens": null,
+      "dspy_used": true,
+      "search_queries": [
+        "\"Generative AI will replace 300 million jobs worldwide.\"",
+        "Generative AI will replace 300 million jobs",
+        "\"Generative AI will replace 300 million jobs worldwide.\" fact check evidence"
+      ],
+      "search_results": [
+        {
+          "url": "https://www.nexford.edu/insights/how-will-ai-affect-jobs",
+          "title": "How will Artificial Intelligence Affect Jobs 2026-2030 | Nexford University",
+          "snippet": "Artificial intelligence (AI) could replace the equivalent of 300 million full-time jobs, a report by investment bank Goldman Sachs says. It could replace a quarter of work tasks in the US and Europe but may also mean new jobs and a productivity boom."
+        },
+        {
+          "url": "https://centwp-prod.azurewebsites.net/generative-ai-adoption-versus-doom-and-gloom",
+          "title": "Generative AI: Adoption versus Doom and Gloom - Centific",
+          "snippet": "Generative AI is getting a black eye. Actually, two back eyes. And some deep cuts on the nose. On March 29, a group of high-profile technology pundits signed a public letter calling for an immediate “pause for at least 6 months the training of AI systems more powerful than GPT-4.”"
+        },
+        {
+          "url": "https://theaineighbor.com/will-ai-take-my-job/",
+          "title": "Will AI Take My Job?",
+          "snippet": "Worried about AI taking your job? Here's an honest, friendly look at what's really at risk — and how to stay ahead.The headlines don’t help. “AI Will Replace 300 Million Jobs!” doesn’t exactly make for a peaceful night’s sleep."
+        },
+        {
+          "url": "https://www.hcadvisors.net/post/ai-vs-women",
+          "title": "Ai vs women",
+          "snippet": "\"The latest generative AI products — think ChatGPT, Bing Chat and Bard — could replace the equivalent of 300 million full-time jobs over the next decade, according to a new report by Goldman Sachs."
+        },
+        {
+          "url": "https://thebettercontentclub.com/ai-in-marketing",
+          "title": "AI in Marketing: Why It Won't Steal Your Job | TBCC",
+          "snippet": "“AI Will Replace 300 Million Jobs by 2030.” “Marketing Teams Cut by 30% Due to AI.” “Is Your Job Next?“Marketing and advertising lead AI adoption with 37% of companies already using generative AI, but only 4% of surveyed marketing leaders felt that AI will lead to increased job losses."
+        },
+        {
+          "url": "https://www.afselection.co.uk/ai-vs-marketers-is-ai-going-to-take-my-marketing-job/",
+          "title": "Is AI going to take my marketing job? - af selection",
+          "snippet": "Those were the words to come from Sam Altman, the Founder of ChatGPT. This is also coupled with a recent report published by Goldman Sachs that predicts AI will replace 300 million full-time jobs."
+        }
+      ]
+    },
+    {
+      "claim_id": "claim-004",
+      "claim_title": "AI systems now pass the bar exam",
+      "claim_text": "\"AI language models can now pass the US bar examination at above-average scores.\"",
+      "category": "technology",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-005",
+      "claim_title": "US Congress passed no budget on time since 1997",
+      "claim_text": "\"The US Congress has not passed a complete federal budget on time since 1997.\"",
+      "category": "politics",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-008",
+      "claim_title": "Octopuses have three hearts and blue blood",
+      "claim_text": "\"Octopuses have three hearts and their blood is blue.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    },
+    {
+      "claim_id": "claim-012",
+      "claim_title": "Lightning never strikes the same place twice",
+      "claim_text": "\"Lightning never strikes the same place twice.\"",
+      "category": "science",
+      "verdict": "FALSE",
+      "new_verdict": "FALSE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict FALSE."
+      ]
+    },
+    {
+      "claim_id": "claim-014",
+      "claim_title": "The Moon is drifting away from Earth",
+      "claim_text": "\"The Moon is slowly moving away from Earth at a rate of about 3.8 centimeters per year.\"",
+      "category": "science",
+      "verdict": "TRUE",
+      "new_verdict": "TRUE",
+      "verdict_changed": false,
+      "error": true,
+      "error_detail": "Fact-check failed: API error after retry",
+      "reasoning_steps": [
+        "Re-check failed; kept prior verdict TRUE."
+      ]
+    }
+  ],
+  "verdicts_changed": 0,
+  "errors": 13
+}
