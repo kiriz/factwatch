@@ -3,9 +3,9 @@
   "claim_id": "claim-009",
   "verdict": "FALSE",
   "confidence": 95,
-  "last_checked_at": "2026-11-15T13:28:11Z",
+  "last_checked_at": "2026-11-28T15:21:41Z",
   "last_changed_at": "2026-06-09T23:44:21Z",
-  "run_id": "run-2026-11-15T131954Z",
+  "run_id": "run-2026-11-28T145634Z",
   "sources": [
     {
       "url": "https://www.britannica.com/story/was-napoleon-short",
@@ -13,7 +13,7 @@
       "domain": "britannica.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Napoleon was thus average or taller, no matter the interpretation. Although Napoleon’s death certificate seems"
+      "excerpt": "2 days ago · Although the range may seem short by 21st-century standards, it was"
     },
     {
       "url": "https://www.history.com/articles/napoleon-complex-short",
@@ -21,7 +21,7 @@
       "domain": "history.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Nov 13, 2019 · One of the world’s most instantly recognizable cultural icons, Napoleon Bonaparte"
+      "excerpt": "Nov 13, 2019 · His supposedly small stature and fiery temper has inspired the term"
     },
     {
       "url": "https://www.thecollector.com/how-tall-was-napoleon/",
@@ -29,15 +29,7 @@
       "domain": "thecollector.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Apr 4, 2026 · How tall was Napoleon Bonaparte? This article dispels the myth of"
-    },
-    {
-      "url": "https://www.nationalgeographic.com/history/article/napoleon-complex-height-discrimination-men-history",
-      "title": "Was Napoleon even short? Inside the history of discrimination ...",
-      "domain": "nationalgeographic.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "Nov 22, 2023 · He was a French dictator—the original short king. Napoleon's supposedly short"
+      "excerpt": "Apr 4, 2026 · Contrary to popular belief, Napoleon was not exceptionally short. Recent scholarly"
     },
     {
       "url": "https://historiacorner.com/people/was-napoleon-short/",
@@ -45,7 +37,15 @@
       "domain": "historiacorner.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Oct 4, 2026 · Why was Napoleon considered short? French and British units, caricatures, and"
+      "excerpt": "Oct 4, 2026 · Napoleon Bonaparte was not actually short by the standards of his"
+    },
+    {
+      "url": "https://www.thoughtco.com/was-napoleon-bonaparte-short-1221108",
+      "title": "Napoleon's Height Revealed - ThoughtCo",
+      "domain": "thoughtco.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "May 13, 2025 · Napoleon's height is often debated with myths suggesting he was very"
     },
     {
       "url": "https://debunked.info/terms/napoleon-was-short/",
@@ -56,7 +56,7 @@
       "excerpt": "Jun 1, 2026 · Napoleon Bonaparte was not unusually short for his era. His recorded"
     }
   ],
-  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a persistent historical myth. At the time of his death, Napoleon's height was recorded as 5 feet 2 inches in pre-metric French units (*pouces* and *pieds de roi*). When converted to modern standard or British imperial units, this equals approximately 5 feet 6 to 5 feet 7 inches (about 168–170 cm). This was considered average or slightly above average height for an adult French male in the early 19th century. The misconception of his diminutive stature was largely popularized by British political propaganda, caricatures by satirists such as James Gillray, and the unit conversion confusion.",
+  "reasoning": "The claim that Napoleon Bonaparte was unusually short at around 5 feet 2 inches is a well-documented historical misconception. At the time of his autopsy, his height was recorded as 5 pieds 2 pouces in pre-metric French units. Because a French inch (pouce) was longer than an English inch (approximately 2.71 cm versus 2.54 cm), 5 pieds 2 pouces equates to approximately 5 feet 6 to 7 inches (around 168–170 cm) in modern/English imperial measurements. Historical consensus confirms that this height was average or even slightly above average for French men in the early 19th century. The myth of his diminutive stature was largely popularized by British propaganda and political caricaturists like James Gillray.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -195,6 +195,12 @@
       "confidence": 95,
       "checked_at": "2026-11-07T12:30:23Z",
       "run_id": "run-2026-11-07T121906Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 95,
+      "checked_at": "2026-11-15T13:28:11Z",
+      "run_id": "run-2026-11-15T131954Z"
     }
   ],
   "agent_flags": {

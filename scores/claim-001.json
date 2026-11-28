@@ -3,9 +3,9 @@
   "claim_id": "claim-001",
   "verdict": "TRUE",
   "confidence": 98,
-  "last_checked_at": "2026-11-21T14:11:43Z",
+  "last_checked_at": "2026-11-28T15:01:35Z",
   "last_changed_at": "2026-06-09T23:42:49Z",
-  "run_id": "run-2026-11-21T140307Z",
+  "run_id": "run-2026-11-28T145634Z",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Arctic_sea_ice_decline",
@@ -40,12 +40,12 @@
       "excerpt": "Arctic sea ice has been in steep decline since the late 1970s, when satellite images"
     },
     {
-      "url": "https://www.ou.edu/news/articles/2025/february/arctic-cyclones-sea-ice-depletion",
-      "title": "Arctic Cyclones Could Be Missing Link in Sea Ice Depletion Models",
-      "domain": "ou.edu",
+      "url": "https://phys.org/news/2025-02-arctic-cyclones-link-sea-ice.html",
+      "title": "Arctic cyclones could be missing link in sea ice depletion models",
+      "domain": "phys.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Since 1979, Arctic sea ice extent, a term that describes the area of the Arctic"
+      "excerpt": "Since 1979, Arctic sea ice extent has decreased by 40% in late summer, with rapid"
     },
     {
       "url": "https://www.natureworldnews.com/articles/73352/20260923/why-typical-arctic-sea-ice-minimum-would-have-been-record-low-just-two-decades-ago.htm",
@@ -56,7 +56,7 @@
       "excerpt": "Has Arctic sea ice stopped declining? The September minimum extent has shown no significant trend"
     }
   ],
-  "reasoning": "Scientific data and observational records from organizations such as NASA and the National Snow and Ice Data Center (NSIDC) confirm that Arctic sea ice extent and volume have experienced a significant, downward long-term trend since continuous satellite monitoring began in 1979. Across the satellite era, sea ice extent (particularly the September minimum) has declined at an approximate rate of 10 to 13 percent per decade, representing a loss of roughly 40 percent of late-summer ice cover.",
+  "reasoning": "Continuous satellite monitoring of Arctic sea ice began in 1979. Data from scientific agencies including the National Snow and Ice Data Center (NSIDC) and NASA show a statistically significant, long-term downward trend in both Arctic sea ice extent and volume. Late-summer sea ice extent has declined by approximately 10% to 13% per decade since 1979.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -207,6 +207,12 @@
       "confidence": 98,
       "checked_at": "2026-11-14T12:57:32Z",
       "run_id": "run-2026-11-14T125219Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 98,
+      "checked_at": "2026-11-21T14:11:43Z",
+      "run_id": "run-2026-11-21T140307Z"
     }
   ],
   "agent_flags": {

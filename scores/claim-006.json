@@ -2,61 +2,61 @@
   "schema_version": "1.0",
   "claim_id": "claim-006",
   "verdict": "FALSE",
-  "confidence": 98,
-  "last_checked_at": "2026-11-15T13:25:57Z",
+  "confidence": 99,
+  "last_checked_at": "2026-11-28T15:10:37Z",
   "last_changed_at": "2026-06-09T23:43:44Z",
-  "run_id": "run-2026-11-15T131954Z",
+  "run_id": "run-2026-11-28T145634Z",
   "sources": [
     {
-      "url": "https://www.tiktok.com/discover/how-much-of-our-brain-do-we-use",
-      "title": "How Much of Our Brain Do We Use | TikTok",
-      "domain": "tiktok.com",
+      "url": "https://www.scientificamerican.com/article/do-people-only-use-10-percent-of-their-brains/",
+      "title": "Do People Only Use 10 Percent of Their Brains? | Scientific American",
+      "domain": "scientificamerican.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Humans use 10% of their brains.You’ve probably heard that humans only use 10% of their"
+      "excerpt": "Adding to that mystery is the contention that humans \"only\" employ 10 percent of their"
     },
     {
-      "url": "https://studyx.ai/questions/4lui7gq/use-prompts-to-complete-the-text-using-passive-structures-it-often-report-that-we-only",
-      "title": "Use prompts to complete the text using",
-      "domain": "studyx.ai",
+      "url": "https://www.snopes.com/fact-check/the-ten-percent-myth/",
+      "title": "Do We Only Use 10% of our Brains? | Snopes.com",
+      "domain": "snopes.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "It ¹ (often / report) that we only use.The passive voice is formed using a"
+      "excerpt": "Humans only use 10% of their brains.Well, not taken your brain away, exactly, but decided"
     },
     {
-      "url": "https://abcnews.com/Technology/story?id=119766&page=1",
-      "title": "Men Use Only Half of Brain to Listen - ABC News",
-      "domain": "abcnews.com",
+      "url": "https://brainly.com/question/59412926",
+      "title": "[FREE] True or False: Humans only use about 10% of their brains.",
+      "domain": "brainly.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "28 -- Score one for exasperated women: New researchsuggests men really do listen with just"
+      "excerpt": "Humans do not only use 10% of their brains; this statement is false. Scientific evidence"
     },
     {
-      "url": "https://www.frontiersin.org/journals/integrative-neuroscience/articles/10.3389/fnint.2011.00057/full",
-      "title": "Frontiers | Male or Female? Brains are Intersex",
-      "domain": "frontiersin.org",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/people-really-use-10-brains-use-entire-brain-although-individual-tasks-might-rely-primaril-q191836172",
+      "title": "Solved Do people really use only 10% of their brains? | Chegg.com",
+      "domain": "chegg.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "More specifically, here I argue that human brains are composed of an ever-changing heterogeneous mosaic"
+      "excerpt": ", we use our entire brain. ( although individual tasks might rely primarily on specialized"
     },
     {
-      "url": "https://tvtropes.org/pmwiki/pmwiki.php/Main/ThisIsYourBrainOnTropes",
-      "title": "This Is Your Brain on Tropes - TV Tropes",
-      "domain": "tvtropes.org",
+      "url": "https://thealexcrowley.medium.com/humans-use-more-than-10-of-their-power-a259eaf12173",
+      "title": "Humans Use More Than 10% of Their Power | by Alex... | Medium",
+      "domain": "thealexcrowley.medium.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "90% of Your Brain: Supposedly, humans only use 10% of their total brainpower, so something"
+      "excerpt": "The idea that humans only use 10% of their brain power is a myth that"
     },
     {
-      "url": "https://maxmymoney.org/people-continuously-fall-for-these-obvious-lies-every-day/",
-      "title": "People Continuously Fall For These Obvious Lies... - Max My Money",
-      "domain": "maxmymoney.org",
+      "url": "https://prezi.com/dwksxu2db1lr/humans-only-use-ten-percent-of-their-brains/",
+      "title": "Humans Only Use Ten Percent Of Their Brains by on Prezi",
+      "domain": "prezi.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "3. Humans Only Use 10% Of Their Brain.10. Using Paper Straws, Reusable Bags, Reusable Containers,"
+      "excerpt": "We can only utilize 10% of our brain power. Barry Gordon. \"It turns out though,"
     }
   ],
-  "reasoning": "The claim that humans only use 10% of their brain capacity is a widely debunked neuroscientific myth. Modern neuroimaging techniques, such as functional Magnetic Resonance Imaging (fMRI) and Positron Emission Tomography (PET), demonstrate that virtually the entire brain is active throughout the day, even during simple tasks or sleep. Furthermore, evolutionary biology and clinical neurology show that the brain consumes approximately 20% of the body's energy despite accounting for only 2% of its mass; unused or dormant brain tissue naturally undergoes degeneration or atrophy. There is no large, dormant 90% region of the human brain.",
+  "reasoning": "The claim that humans only use 10% of their brain capacity is a widely debunked neuroscientific myth. Brain imaging studies, such as functional magnetic resonance imaging (fMRI) and positron emission tomography (PET), demonstrate that virtually all regions of the brain are active and serve dedicated functions throughout the day, even during sleep. If 90% of the brain were truly dormant, damage to those areas would cause no noticeable deficit, whereas in reality, damage to almost any area of the brain results in measurable functional or cognitive loss.",
   "verdict_history": [
     {
       "verdict": "FALSE",
@@ -195,6 +195,12 @@
       "confidence": 99,
       "checked_at": "2026-11-08T12:45:15Z",
       "run_id": "run-2026-11-08T123844Z"
+    },
+    {
+      "verdict": "FALSE",
+      "confidence": 98,
+      "checked_at": "2026-11-15T13:25:57Z",
+      "run_id": "run-2026-11-15T131954Z"
     }
   ],
   "agent_flags": {

@@ -2,10 +2,10 @@
   "schema_version": "1.0",
   "claim_id": "claim-002",
   "verdict": "TRUE",
-  "confidence": 95,
-  "last_checked_at": "2026-11-19T15:11:39Z",
+  "confidence": 100,
+  "last_checked_at": "2026-11-28T15:06:57Z",
   "last_changed_at": "2026-11-12T14:36:54Z",
-  "run_id": "run-2026-11-19T150608Z",
+  "run_id": "run-2026-11-28T145634Z",
   "sources": [
     {
       "url": "https://www.tampafp.com/national-debt-soars-past-34-9-trillion-raising-economic-concerns/",
@@ -16,55 +16,55 @@
       "excerpt": "The United States national debt has surpassed $34.9 trillion for the first time, marking a"
     },
     {
-      "url": "https://finance.yahoo.com/video/us-national-debt-exceeds-34-201043086.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAAQyd5BilEgZRTq-9gxJUD2p041HU0LuaQlwtVfi2zWE1p89elxYsPuHn69FQBTV8R0WssMBGdBEYoMmnZV4W229SPdkUSTtk-edvZprOia9cbG8dMFTs43jHUWEMhJCZ2wAdkLaJ4-vjxPX_9bSfw-EFmhl92mMMuBEvhIUaRxa",
-      "title": "US national debt exceeds $34 trillion: How did we get here?",
+      "url": "https://fiscaldata.treasury.gov/americas-finance-guide/national-debt/",
+      "title": "Understanding the National Debt | U.S. Treasury Fiscal Data",
+      "domain": "fiscaldata.treasury.gov",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "The National Debt Explained The national debt is the amount of money the federal government"
+    },
+    {
+      "url": "https://apnews.com/article/national-debt-deficits-biden-economy-inflation-record-b4258704f830c7f6e9c5e693748216cb",
+      "title": "US national debt hits record $34 trillion | AP News",
+      "domain": "apnews.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "WASHINGTON (AP) — The federal government’s gross national debt has surpassed $34 trillion, a record"
+    },
+    {
+      "url": "https://www.cbsnews.com/news/us-debt-exceeds-gdp-first-time-since-wwii/",
+      "title": "The U.S. debt now exceeds the country's GDP. Should we worry?",
+      "domain": "cbsnews.com",
+      "relevance": "medium",
+      "supports_claim": true,
+      "excerpt": "May 5, 2026 · The nation's gross debt — which includes money the federal government"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/us-national-debt-hits-record-222459735.html?fr=sycsrp_catchall",
+      "title": "US national debt hits record $34 trillion as Congress gears ...",
       "domain": "finance.yahoo.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The US national debt has ballooned to over $34.1 trillion, as of February 2. Yahoo"
+      "excerpt": "Jan 2, 2024 · WASHINGTON (AP) — The federal government's gross national debt has surpassed"
     },
     {
-      "url": "https://amac.us/newsline/economy/amac-magazine-exclusive-americas-debt-calamity/",
-      "title": "AMAC Magazine Exclusive: America’s Debt Calamity | AMAC",
-      "domain": "amac.us",
+      "url": "https://fred.stlouisfed.org/series/GFDEBTN",
+      "title": "Federal Debt: Total Public Debt - FRED | St. Louis Fed",
+      "domain": "fred.stlouisfed.org",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "Most frustrating, this excessive $34 trillion federal debt was just a trillion dollars under President"
+      "excerpt": "Oct 1, 2026 · Graph and download economic data for Federal Debt: Total Public Debt"
     },
     {
-      "url": "https://www.linkedin.com/posts/unboxfactory_unboxfactory-nationaldebt-uscongress-activity-7431193576488890368-kEKs",
-      "title": "US National Debt Surpasses $34 Trillion Amid Emergency... | LinkedIn",
-      "domain": "linkedin.com",
+      "url": "https://www.usatoday.com/story/news/politics/2026/08/19/us-national-debt-surpasses-40-trillion/91377595007/",
+      "title": "US national debt surpasses $40T after doubling under Trump ...",
+      "domain": "usatoday.com",
       "relevance": "medium",
       "supports_claim": true,
-      "excerpt": "The United States’ federal debt has now surpassed $37 trillion, raising serious concerns about fiscal"
-    },
-    {
-      "url": "https://aheadoftheherd.com/34-trillion-and-climbing/",
-      "title": "$34 Trillion and Climbing – Ahead of the Herd",
-      "domain": "aheadoftheherd.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "In 2023 the US added $2.65 trillion in debt, the second largest annual increase in"
-    },
-    {
-      "url": "https://www.theepochtimes.com/business/finance-professor-says-34-trillion-in-federal-debt-could-trigger-meltdown-derail-the-next-administration-5599745",
-      "title": "Finance Professor Says $34 Trillion in Federal Debt Could Trigger...",
-      "domain": "theepochtimes.com",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "National debt reached a record high of $34 trillion at the end of 2023, with"
-    },
-    {
-      "url": "https://www.npr.org/2024/04/30/1197964071/federal-debt-national-deficit",
-      "title": "$34 trillion of federal debt and counting... should we be worried? : NPR",
-      "domain": "npr.org",
-      "relevance": "medium",
-      "supports_claim": true,
-      "excerpt": "And that debt number? It just keeps ticking up. How deep in the hole are"
+      "excerpt": "Aug 19, 2026 · Total U.S. debt has topped $40 trillion for the first time,"
     }
   ],
-  "reasoning": "United States Department of the Treasury data confirmed that the total gross national debt exceeded $34 trillion in late December 2023 / early January 2024, and continued to climb beyond $34.9 trillion in 2024. Therefore, the claim that the national debt has surpassed $34 trillion is accurate.",
+  "reasoning": "According to data released by the U.S. Department of the Treasury and reported by major news organizations such as the Associated Press, the gross national debt of the United States officially surpassed $34 trillion in early January 2024. Subsequent data indicates that total federal debt has continued to grow well beyond this threshold.",
   "verdict_history": [
     {
       "verdict": "TRUE",
@@ -215,6 +215,12 @@
       "confidence": 95,
       "checked_at": "2026-11-12T14:36:54Z",
       "run_id": "run-2026-11-12T143058Z"
+    },
+    {
+      "verdict": "TRUE",
+      "confidence": 95,
+      "checked_at": "2026-11-19T15:11:39Z",
+      "run_id": "run-2026-11-19T150608Z"
     }
   ],
   "agent_flags": {
